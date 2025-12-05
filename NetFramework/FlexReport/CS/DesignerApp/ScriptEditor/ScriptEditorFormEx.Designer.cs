@@ -36,34 +36,34 @@ namespace FlexReportDesignerApp.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScriptEditorFormEx));
-            this.chMain = new C1.Win.C1Command.C1CommandHolder();
-            this.cSelectAll = new C1.Win.C1Command.C1Command();
-            this.contextMenu = new C1.Win.C1Command.C1ContextMenu();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink19 = new C1.Win.C1Command.C1CommandLink();
-            this.cInsertC1Report = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink27 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink20 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink28 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink29 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink22 = new C1.Win.C1Command.C1CommandLink();
-            this.cInsertVBSCript = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink21 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink32 = new C1.Win.C1Command.C1CommandLink();
-            this.cOK = new C1.Win.C1Command.C1Command();
-            this.cCancel = new C1.Win.C1Command.C1Command();
-            this.cHistBack = new C1.Win.C1Command.C1Command();
-            this.cHistForward = new C1.Win.C1Command.C1Command();
-            this.cSwitchWindow = new C1.Win.C1Command.C1Command();
-            this.cPasteAlt = new C1.Win.C1Command.C1Command();
+            this.chMain = new C1.Win.Command.C1CommandHolder();
+            this.cSelectAll = new C1.Win.Command.C1Command();
+            this.contextMenu = new C1.Win.Command.C1ContextMenu();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink19 = new C1.Win.Command.C1CommandLink();
+            this.cInsertC1Report = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink27 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink20 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink28 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink29 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink22 = new C1.Win.Command.C1CommandLink();
+            this.cInsertVBSCript = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink21 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink32 = new C1.Win.Command.C1CommandLink();
+            this.cOK = new C1.Win.Command.C1Command();
+            this.cCancel = new C1.Win.Command.C1Command();
+            this.cHistBack = new C1.Win.Command.C1Command();
+            this.cHistForward = new C1.Win.Command.C1Command();
+            this.cSwitchWindow = new C1.Win.Command.C1Command();
+            this.cPasteAlt = new C1.Win.Command.C1Command();
             this._scriptEditor1 = new FlexReportDesignerApp.Forms.ScriptEditorControl();
             this._scriptEditor0 = new FlexReportDesignerApp.Forms.ScriptEditorControl();
             this._statusBar = new C1.Win.Ribbon.C1StatusBar();
@@ -98,7 +98,7 @@ namespace FlexReportDesignerApp.Forms
             this.rbDataSourceFilterWarning = new C1.Win.Ribbon.RibbonCheckBox();
             this.rbAutoSave = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this._slNote = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this._slNote = new C1.Win.SuperTooltip.C1SuperLabel();
             this._splitter = new System.Windows.Forms.SplitContainer();
             this.rbtnOK = new C1.Win.Ribbon.RibbonButton();
             this.rbtnCancel = new C1.Win.Ribbon.RibbonButton();
@@ -125,24 +125,24 @@ namespace FlexReportDesignerApp.Forms
             this.rbTextColor = new C1.Win.Ribbon.RibbonColorPicker();
             this.rbBackgroundColor = new C1.Win.Ribbon.RibbonColorPicker();
             this.rbtnError = new C1.Win.Ribbon.RibbonButton();
-            this.cCut = new C1.Win.C1Command.C1Command();
-            this.cCopy = new C1.Win.C1Command.C1Command();
-            this.cPaste = new C1.Win.C1Command.C1Command();
-            this.cDelete = new C1.Win.C1Command.C1Command();
-            this.cUndo = new C1.Win.C1Command.C1Command();
-            this.cRedo = new C1.Win.C1Command.C1Command();
-            this.cmnuReportParams = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.cmnuDataFields = new C1.Win.C1Command.C1CommandMenu();
-            this.cmnuCalculatedFields = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.cmnuReportFields = new C1.Win.C1Command.C1CommandMenu();
-            this.cmnuReportGlobals = new C1.Win.C1Command.C1CommandMenu();
-            this.cmnuReportMore = new C1.Win.C1Command.C1CommandMenu();
-            this.cmnuVBScriptFunc = new C1.Win.C1Command.C1CommandMenu();
-            this.cmnuVBScriptProg = new C1.Win.C1Command.C1CommandMenu();
-            this.cmnuReportGroups = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
+            this.cCut = new C1.Win.Command.C1Command();
+            this.cCopy = new C1.Win.Command.C1Command();
+            this.cPaste = new C1.Win.Command.C1Command();
+            this.cDelete = new C1.Win.Command.C1Command();
+            this.cUndo = new C1.Win.Command.C1Command();
+            this.cRedo = new C1.Win.Command.C1Command();
+            this.cmnuReportParams = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.cmnuDataFields = new C1.Win.Command.C1CommandMenu();
+            this.cmnuCalculatedFields = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.cmnuReportFields = new C1.Win.Command.C1CommandMenu();
+            this.cmnuReportGlobals = new C1.Win.Command.C1CommandMenu();
+            this.cmnuReportMore = new C1.Win.Command.C1CommandMenu();
+            this.cmnuVBScriptFunc = new C1.Win.Command.C1CommandMenu();
+            this.cmnuVBScriptProg = new C1.Win.Command.C1CommandMenu();
+            this.cmnuReportGroups = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
             ((System.ComponentModel.ISupportInitialize)(this.chMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._statusBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rbnMain)).BeginInit();
@@ -180,8 +180,8 @@ namespace FlexReportDesignerApp.Forms
             this.chMain.Commands.Add(this.cPasteAlt);
             this.chMain.Commands.Add(this.cmnuReportGroups);
             this.chMain.Owner = this;
-            this.chMain.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Blue;
-            this.chMain.CommandClick += new C1.Win.C1Command.CommandClickEventHandler(this.chMain_CommandClick);
+            this.chMain.VisualStyle = C1.Win.Command.VisualStyle.Office2007Blue;
+            this.chMain.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.chMain_CommandClick);
             // 
             // cSelectAll
             // 
@@ -192,7 +192,7 @@ namespace FlexReportDesignerApp.Forms
             // 
             // contextMenu
             // 
-            this.contextMenu.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.contextMenu.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink2,
             this.c1CommandLink3,
@@ -204,7 +204,7 @@ namespace FlexReportDesignerApp.Forms
             this.c1CommandLink22});
             this.contextMenu.Name = "contextMenu";
             this.contextMenu.ShortcutText = "";
-            this.contextMenu.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.contextMenu.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink1
             // 
@@ -249,7 +249,7 @@ namespace FlexReportDesignerApp.Forms
             // 
             // cInsertC1Report
             // 
-            this.cInsertC1Report.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cInsertC1Report.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink11,
             this.c1CommandLink27,
             this.c1CommandLink12,
@@ -297,7 +297,7 @@ namespace FlexReportDesignerApp.Forms
             // 
             // cInsertVBSCript
             // 
-            this.cInsertVBSCript.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cInsertVBSCript.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink21,
             this.c1CommandLink32});
             this.cInsertVBSCript.Name = "cInsertVBSCript";
@@ -608,7 +608,7 @@ namespace FlexReportDesignerApp.Forms
             this._slNote.TabIndex = 3;
             this._slNote.Text = resources.GetString("_slNote.Text");
             this._slNote.UseMnemonic = true;
-            this._slNote.LinkClicked += new C1.Win.C1SuperTooltip.C1SuperLabelLinkClickedEventHandler(this._slNote_LinkClicked);
+            this._slNote.LinkClicked += new C1.Win.SuperTooltip.C1SuperLabelLinkClickedEventHandler(this._slNote_LinkClicked);
             // 
             // _splitter
             // 
@@ -892,7 +892,7 @@ namespace FlexReportDesignerApp.Forms
             // 
             // cmnuReportParams
             // 
-            this.cmnuReportParams.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmnuReportParams.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink8});
             this.cmnuReportParams.Image = global::FlexReportDesignerApp.Img_ScriptEditor.ReportParameter_16;
             this.cmnuReportParams.Name = "cmnuReportParams";
@@ -912,7 +912,7 @@ namespace FlexReportDesignerApp.Forms
             // 
             // cmnuCalculatedFields
             // 
-            this.cmnuCalculatedFields.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmnuCalculatedFields.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink9});
             this.cmnuCalculatedFields.Image = global::FlexReportDesignerApp.Img_ScriptEditor.CalculatedFields_16;
             this.cmnuCalculatedFields.Name = "cmnuCalculatedFields";
@@ -960,7 +960,7 @@ namespace FlexReportDesignerApp.Forms
             // 
             // cmnuReportGroups
             // 
-            this.cmnuReportGroups.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmnuReportGroups.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink10});
             this.cmnuReportGroups.Image = global::FlexReportDesignerApp.Img_Home.Groups_16;
             this.cmnuReportGroups.Name = "cmnuReportGroups";
@@ -999,23 +999,23 @@ namespace FlexReportDesignerApp.Forms
 
         #endregion
 
-        private C1.Win.C1Command.C1CommandHolder chMain;
-        private C1.Win.C1Command.C1Command cCut;
-        private C1.Win.C1Command.C1Command cCopy;
-        private C1.Win.C1Command.C1Command cPaste;
-        private C1.Win.C1Command.C1Command cUndo;
-        private C1.Win.C1Command.C1Command cRedo;
+        private C1.Win.Command.C1CommandHolder chMain;
+        private C1.Win.Command.C1Command cCut;
+        private C1.Win.Command.C1Command cCopy;
+        private C1.Win.Command.C1Command cPaste;
+        private C1.Win.Command.C1Command cUndo;
+        private C1.Win.Command.C1Command cRedo;
         private C1.Win.Ribbon.C1StatusBar _statusBar;
-        private C1.Win.C1Command.C1ContextMenu contextMenu;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1Command cDelete;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1Command cSelectAll;
+        private C1.Win.Command.C1ContextMenu contextMenu;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1Command cDelete;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1Command cSelectAll;
         private C1.Win.Ribbon.RibbonLabel rlblRow;
         private C1.Win.Ribbon.RibbonLabel rlblCol;
         private C1.Win.Ribbon.RibbonButton rbtnError;
@@ -1039,8 +1039,8 @@ namespace FlexReportDesignerApp.Forms
         private C1.Win.Ribbon.RibbonButton rbtnRedo;
         private C1.Win.Ribbon.RibbonButton rbtnOK;
         private C1.Win.Ribbon.RibbonButton rbtnCancel;
-        private C1.Win.C1Command.C1Command cOK;
-        private C1.Win.C1Command.C1Command cCancel;
+        private C1.Win.Command.C1Command cOK;
+        private C1.Win.Command.C1Command cCancel;
         private C1.Win.Ribbon.RibbonGroup rgInsert;
         private C1.Win.Ribbon.RibbonMenu rmnuReportFields;
         private C1.Win.Ribbon.RibbonMenu rmnuDataFields;
@@ -1050,22 +1050,22 @@ namespace FlexReportDesignerApp.Forms
         private C1.Win.Ribbon.RibbonMenu rmnuVBScriptProgram;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator4;
         private C1.Win.Ribbon.RibbonMenu rmnuReportGlobals;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink19;
-        private C1.Win.C1Command.C1CommandMenu cInsertC1Report;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink20;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink22;
-        private C1.Win.C1Command.C1CommandMenu cInsertVBSCript;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink21;
-        private C1.Win.C1Command.C1CommandMenu cmnuReportFields;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink27;
-        private C1.Win.C1Command.C1CommandMenu cmnuDataFields;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink28;
-        private C1.Win.C1Command.C1CommandMenu cmnuReportGlobals;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink29;
-        private C1.Win.C1Command.C1CommandMenu cmnuReportMore;
-        private C1.Win.C1Command.C1CommandMenu cmnuVBScriptFunc;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink32;
-        private C1.Win.C1Command.C1CommandMenu cmnuVBScriptProg;
+        private C1.Win.Command.C1CommandLink c1CommandLink19;
+        private C1.Win.Command.C1CommandMenu cInsertC1Report;
+        private C1.Win.Command.C1CommandLink c1CommandLink20;
+        private C1.Win.Command.C1CommandLink c1CommandLink22;
+        private C1.Win.Command.C1CommandMenu cInsertVBSCript;
+        private C1.Win.Command.C1CommandLink c1CommandLink21;
+        private C1.Win.Command.C1CommandMenu cmnuReportFields;
+        private C1.Win.Command.C1CommandLink c1CommandLink27;
+        private C1.Win.Command.C1CommandMenu cmnuDataFields;
+        private C1.Win.Command.C1CommandLink c1CommandLink28;
+        private C1.Win.Command.C1CommandMenu cmnuReportGlobals;
+        private C1.Win.Command.C1CommandLink c1CommandLink29;
+        private C1.Win.Command.C1CommandMenu cmnuReportMore;
+        private C1.Win.Command.C1CommandMenu cmnuVBScriptFunc;
+        private C1.Win.Command.C1CommandLink c1CommandLink32;
+        private C1.Win.Command.C1CommandMenu cmnuVBScriptProg;
         private C1.Win.Ribbon.RibbonTab rtView;
         private C1.Win.Ribbon.RibbonGroup rgDisplay;
         private C1.Win.Ribbon.RibbonToolBar ribbonToolBar1;
@@ -1077,7 +1077,7 @@ namespace FlexReportDesignerApp.Forms
         private C1.Win.Ribbon.RibbonButton rbtnFontSizeUp;
         private C1.Win.Ribbon.RibbonButton rbtnFontSizeDown;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator6;
-        private C1.Win.C1SuperTooltip.C1SuperLabel _slNote;
+        private C1.Win.SuperTooltip.C1SuperLabel _slNote;
         private C1.Win.Ribbon.RibbonGroup rgOptions;
         private C1.Win.Ribbon.RibbonCheckBox rbSyntaxHighlight;
         private C1.Win.Ribbon.RibbonCheckBox rbSyntaxAutoCheck;
@@ -1088,22 +1088,22 @@ namespace FlexReportDesignerApp.Forms
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator5;
         private C1.Win.Ribbon.RibbonButton rbtnGoBack;
         private C1.Win.Ribbon.RibbonButton rbtnGoForward;
-        private C1.Win.C1Command.C1Command cHistBack;
-        private C1.Win.C1Command.C1Command cHistForward;
+        private C1.Win.Command.C1Command cHistBack;
+        private C1.Win.Command.C1Command cHistForward;
         private ScriptEditorControl _scriptEditor0;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Command.C1Command cSwitchWindow;
+        private C1.Win.Command.C1Command cSwitchWindow;
         private System.Windows.Forms.SplitContainer _splitter;
-        private C1.Win.C1Command.C1Command cPasteAlt;
+        private C1.Win.Command.C1Command cPasteAlt;
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Command.C1CommandMenu cmnuReportParams;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1CommandMenu cmnuCalculatedFields;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1CommandMenu cmnuReportGroups;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1CommandMenu cmnuReportParams;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1CommandMenu cmnuCalculatedFields;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1CommandMenu cmnuReportGroups;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
         private C1.Win.Ribbon.RibbonMenu rmnuReportParams;
         private C1.Win.Ribbon.RibbonMenu rmnuCalculatedFields;
     }

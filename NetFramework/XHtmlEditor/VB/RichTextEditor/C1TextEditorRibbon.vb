@@ -8,7 +8,7 @@ Imports System.Drawing.Printing
 Imports System.Text
 Imports System.Windows.Forms
 Imports C1.Win.Ribbon
-Imports C1.Win.C1SpellChecker
+Imports C1.Win.SpellChecker
 Imports C1.Win.C1Editor
 
 Imports Resources = RichTextEditor.Resources

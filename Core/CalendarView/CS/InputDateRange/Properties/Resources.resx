@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Button text for canceling date selection   </comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_CultureSelection" xml:space="preserve">
+    <value>Culture Selection</value>
+    <comment>Label text for culture selection section</comment>
+  </data>
+  <data name="ListBoxItem_CustomRange" xml:space="preserve">
+    <value>Custom Range</value>
+    <comment>List item text for custom date range option</comment>
+  </data>
+  <data name="Label_DateLimit" xml:space="preserve">
+    <value>Date Limit</value>
+    <comment>Label text for date limit section </comment>
+  </data>
+  <data name="Label_EndDate" xml:space="preserve">
+    <value>End Date:</value>
+    <comment>Label text for end date field </comment>
+  </data>
+  <data name="Label_Placeholder_DateSelected" xml:space="preserve">
+    <value>Start Date    -    End Date</value>
+    <comment>Placeholder text shown when no dates are selected</comment>
+  </data>
+  <data name="ListBoxItem_LastMonth" xml:space="preserve">
+    <value>Last Month</value>
+    <comment>List item text for last month range option</comment>
+  </data>
+  <data name="ListBoxItem_LastWeek" xml:space="preserve">
+    <value>Last Week</value>
+    <comment>List item text for last week range option</comment>
+  </data>
+  <data name="Button_Apply" xml:space="preserve">
+    <value>Apply</value>
+    <comment>Button text for applying date selection</comment>
+  </data>
+  <data name="ListBoxItem_LastYear" xml:space="preserve">
+    <value>Last Year</value>
+    <comment>List item text for last year range option</comment>
+  </data>
+  <data name="Label_MaxDate" xml:space="preserve">
+    <value>Max Date</value>
+    <comment>Label text for maximum date input</comment>
+  </data>
+  <data name="Label_MinDate" xml:space="preserve">
+    <value>Min Date</value>
+    <comment>Label text for minimum date input</comment>
+  </data>
+  <data name="ListBoxItem_NextMonth" xml:space="preserve">
+    <value>Next Month</value>
+    <comment>List item text for next month range option</comment>
+  </data>
+  <data name="ListBoxItem_NextWeek" xml:space="preserve">
+    <value>Next Week</value>
+    <comment>List item text for next week range option</comment>
+  </data>
+  <data name="ListBoxItem_NextYear" xml:space="preserve">
+    <value>Next Year</value>
+    <comment>List item text for next year range option</comment>
+  </data>
+  <data name="Label_RangeLimit" xml:space="preserve">
+    <value>Range Limit</value>
+    <comment>Label text for range limit input</comment>
+  </data>
+  <data name="Label_Reset" xml:space="preserve">
+    <value>Reset</value>
+    <comment>Label text for reset button</comment>
+  </data>
+  <data name="Label_SampleDescription" xml:space="preserve">
+    <value>This sample demonstrates an interactive date range picker using C1CalendarView 
+with multi-cultural support. Select date ranges using predefined options or the calendar interface. 
+</value>
+    <comment>Description text explaining the sample's functionality</comment>
+  </data>
+  <data name="Label_SamplesTitle" xml:space="preserve">
+    <value>Input Date Range</value>
+    <comment>Main title of the sample</comment>
+  </data>
+  <data name="Label_StartDate" xml:space="preserve">
+    <value>Start Date:</value>
+    <comment>Label text for start date field</comment>
+  </data>
+  <data name="ListBoxItem_ThisMonth" xml:space="preserve">
+    <value>This Month</value>
+    <comment>List item text for this month range option</comment>
+  </data>
+  <data name="ListBoxItem_ThisWeek" xml:space="preserve">
+    <value>This Week</value>
+    <comment>List item text for this week range option</comment>
+  </data>
+  <data name="ListBoxItem_ThisYear" xml:space="preserve">
+    <value>This Year</value>
+    <comment>List item text for this year range option</comment>
+  </data>
+  <data name="Label_YourDateSelection" xml:space="preserve">
+    <value>Your Date Selection</value>
+    <comment>Label text for date selection panel header</comment>
+  </data>
+  <data name="Laabel_Feature" xml:space="preserve">
+    <value>Feature</value>
+    <comment>Label text for Feature section header </comment>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="c1PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO9JREFUKFOtkDFOAzEQRfcIHCFHiJQGRTNmDwAHSEe1LdwgdJFYe0y71RbrP22k
+        XCBSJAokqhS0XAXZQlmNoUJ8aeSx/d+Mx03zX1pHLClObX3+qzikR5b0QSFpCcE7R41tHK9qb5ETvJDH
+        QB4rEz2eXNBT7W844J4Eh4tRMFDEdobV572FIvYU0u3FlPN+auduU+tEDxWkR/OkH52wYsFbBWFvKgu6
+        AppCyc5FggcS9bNJN87O2HHAaKD8pSw4m7m8bsra6x0Hfb3ejQsDFXA3Lpzg87tDl8MJBg44r5+xrP1G
+        LHpTPiFim/P6/s/6Ana6ol3GhAqzAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="c1PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO9JREFUKFOtkDFOAzEQRfcIHCFHiJQGRTNmDwAHSEe1LdwgdJFYe0y71RbrP22k
+        XCBSJAokqhS0XAXZQlmNoUJ8aeSx/d+Mx03zX1pHLClObX3+qzikR5b0QSFpCcE7R41tHK9qb5ETvJDH
+        QB4rEz2eXNBT7W844J4Eh4tRMFDEdobV572FIvYU0u3FlPN+auduU+tEDxWkR/OkH52wYsFbBWFvKgu6
+        AppCyc5FggcS9bNJN87O2HHAaKD8pSw4m7m8bsra6x0Hfb3ejQsDFXA3Lpzg87tDl8MJBg44r5+xrP1G
+        LHpTPiFim/P6/s/6Ana6ol3GhAqzAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="c1PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO9JREFUKFOtkDFOAzEQRfcIHCFHiJQGRTNmDwAHSEe1LdwgdJFYe0y71RbrP22k
+        XCBSJAokqhS0XAXZQlmNoUJ8aeSx/d+Mx03zX1pHLClObX3+qzikR5b0QSFpCcE7R41tHK9qb5ETvJDH
+        QB4rEz2eXNBT7W844J4Eh4tRMFDEdobV572FIvYU0u3FlPN+auduU+tEDxWkR/OkH52wYsFbBWFvKgu6
+        AppCyc5FggcS9bNJN87O2HHAaKD8pSw4m7m8bsra6x0Hfb3ejQsDFXA3Lpzg87tDl8MJBg44r5+xrP1G
+        LHpTPiFim/P6/s/6Ana6ol3GhAqzAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ToolTip_CultureSelection" xml:space="preserve">
+    <value>Changes the display language and date format. 
+Switch between English, Korean, and Japanese</value>
+    <comment>Tooltip for culture selection picture box</comment>
+  </data>
+  <data name="ToolTip_DateLimit" xml:space="preserve">
+    <value>Sets the minimum and maximum selectable dates in the calendar. 
+Dates outside this range will be disabled</value>
+    <comment>Tooltip for date limit picture box </comment>
+  </data>
+  <data name="ToolTip_RangeLimit" xml:space="preserve">
+    <value>Controls the maximum number of days that can be selected at once.
+Prevents selecting more dates than the specified</value>
+    <comment>Tooltip for range limit picture box</comment>
+  </data>
+  <data name="Label_NoStartDate" xml:space="preserve">
+    <value>No selected start date</value>
+    <comment>Label text for end date field </comment>
+  </data>
+  <data name="Label_NoEndDate" xml:space="preserve">
+    <value>No selected end date</value>
+    <comment>Label text for end date field </comment>
+  </data>
+</root>

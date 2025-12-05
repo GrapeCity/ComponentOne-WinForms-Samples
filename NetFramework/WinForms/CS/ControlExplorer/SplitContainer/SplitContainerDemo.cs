@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using C1.Win.C1SplitContainer;
+using C1.Win.SplitContainer;
 
 namespace ControlExplorer.SplitContainer
 {

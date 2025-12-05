@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this._btnRightToLeft = new System.Windows.Forms.ToolStripButton();
             this._btnPrint = new System.Windows.Forms.ToolStripButton();
@@ -43,6 +43,7 @@
             this._btnBelow = new System.Windows.Forms.ToolStripButton();
             this._btnCellLabels = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -56,14 +57,15 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(433, 404);
+            this.dataGridView1.Size = new System.Drawing.Size(433, 387);
             this.dataGridView1.TabIndex = 0;
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 25);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 42);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -73,7 +75,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this._flex);
-            this.splitContainer1.Size = new System.Drawing.Size(890, 404);
+            this.splitContainer1.Size = new System.Drawing.Size(890, 387);
             this.splitContainer1.SplitterDistance = 433;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 2;
@@ -81,24 +83,26 @@
             // _flex
             // 
             this._flex.AllowAddNew = true;
-            this._flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.Both;
+            this._flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.Both;
             this._flex.AllowFiltering = true;
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flex.ColumnInfo = "10,1,0,0,0,120,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.NewRowWatermark = "Type here to create a new row...";
             this._flex.Rows.DefaultSize = 24;
             this._flex.ShowCursor = true;
             this._flex.ShowErrors = true;
-            this._flex.Size = new System.Drawing.Size(452, 404);
+            this._flex.Size = new System.Drawing.Size(452, 387);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._btnRightToLeft,
             this._btnPrint,
@@ -111,7 +115,7 @@
             this._btnCellLabels});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(890, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(890, 42);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -122,7 +126,7 @@
             this._btnRightToLeft.Image = ((System.Drawing.Image)(resources.GetObject("_btnRightToLeft.Image")));
             this._btnRightToLeft.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnRightToLeft.Name = "_btnRightToLeft";
-            this._btnRightToLeft.Size = new System.Drawing.Size(38, 22);
+            this._btnRightToLeft.Size = new System.Drawing.Size(55, 36);
             this._btnRightToLeft.Text = "RTL";
             this._btnRightToLeft.Click += new System.EventHandler(this._btnRightToLeft_Click);
             // 
@@ -132,7 +136,7 @@
             this._btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("_btnPrint.Image")));
             this._btnPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnPrint.Name = "_btnPrint";
-            this._btnPrint.Size = new System.Drawing.Size(40, 22);
+            this._btnPrint.Size = new System.Drawing.Size(67, 36);
             this._btnPrint.Text = "Print";
             this._btnPrint.Click += new System.EventHandler(this._btnPrint_Click);
             // 
@@ -142,7 +146,7 @@
             this._btnScrollHome.Image = ((System.Drawing.Image)(resources.GetObject("_btnScrollHome.Image")));
             this._btnScrollHome.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnScrollHome.Name = "_btnScrollHome";
-            this._btnScrollHome.Size = new System.Drawing.Size(88, 22);
+            this._btnScrollHome.Size = new System.Drawing.Size(148, 36);
             this._btnScrollHome.Text = "Scroll Home";
             this._btnScrollHome.Click += new System.EventHandler(this._btnScrollHome_Click);
             // 
@@ -152,7 +156,7 @@
             this._btnSelectHome.Image = ((System.Drawing.Image)(resources.GetObject("_btnSelectHome.Image")));
             this._btnSelectHome.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnSelectHome.Name = "_btnSelectHome";
-            this._btnSelectHome.Size = new System.Drawing.Size(94, 22);
+            this._btnSelectHome.Size = new System.Drawing.Size(154, 36);
             this._btnSelectHome.Text = "Select Home";
             this._btnSelectHome.Click += new System.EventHandler(this._btnSelectHome_Click);
             // 
@@ -162,7 +166,7 @@
             this._btnSelectEnd.Image = ((System.Drawing.Image)(resources.GetObject("_btnSelectEnd.Image")));
             this._btnSelectEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnSelectEnd.Name = "_btnSelectEnd";
-            this._btnSelectEnd.Size = new System.Drawing.Size(79, 22);
+            this._btnSelectEnd.Size = new System.Drawing.Size(129, 36);
             this._btnSelectEnd.Text = "Select End";
             this._btnSelectEnd.Click += new System.EventHandler(this._btnSelectEnd_Click);
             // 
@@ -173,7 +177,7 @@
             this._btnRenderMode.Image = ((System.Drawing.Image)(resources.GetObject("_btnRenderMode.Image")));
             this._btnRenderMode.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnRenderMode.Name = "_btnRenderMode";
-            this._btnRenderMode.Size = new System.Drawing.Size(102, 22);
+            this._btnRenderMode.Size = new System.Drawing.Size(157, 36);
             this._btnRenderMode.Text = "TextRenderer";
             this._btnRenderMode.Click += new System.EventHandler(this._btnRenderMode_Click);
             // 
@@ -184,7 +188,7 @@
             this._btnOutlineTree.Image = ((System.Drawing.Image)(resources.GetObject("_btnOutlineTree.Image")));
             this._btnOutlineTree.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnOutlineTree.Name = "_btnOutlineTree";
-            this._btnOutlineTree.Size = new System.Drawing.Size(43, 22);
+            this._btnOutlineTree.Size = new System.Drawing.Size(63, 36);
             this._btnOutlineTree.Text = "Tree";
             this._btnOutlineTree.Click += new System.EventHandler(this._btnOutlineTree_Click);
             // 
@@ -195,7 +199,7 @@
             this._btnBelow.Image = ((System.Drawing.Image)(resources.GetObject("_btnBelow.Image")));
             this._btnBelow.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnBelow.Name = "_btnBelow";
-            this._btnBelow.Size = new System.Drawing.Size(49, 22);
+            this._btnBelow.Size = new System.Drawing.Size(82, 36);
             this._btnBelow.Text = "Below";
             this._btnBelow.Click += new System.EventHandler(this._btnBelow_Click);
             // 
@@ -206,24 +210,26 @@
             this._btnCellLabels.Image = ((System.Drawing.Image)(resources.GetObject("_btnCellLabels.Image")));
             this._btnCellLabels.ImageTransparentColor = System.Drawing.Color.Magenta;
             this._btnCellLabels.Name = "_btnCellLabels";
-            this._btnCellLabels.Size = new System.Drawing.Size(78, 22);
+            this._btnCellLabels.Size = new System.Drawing.Size(131, 36);
             this._btnCellLabels.Text = "Cell Labels";
             this._btnCellLabels.Click += new System.EventHandler(this._btnCellLabels_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 429);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
             this.toolStrip1.ResumeLayout(false);
@@ -236,7 +242,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton _btnRightToLeft;

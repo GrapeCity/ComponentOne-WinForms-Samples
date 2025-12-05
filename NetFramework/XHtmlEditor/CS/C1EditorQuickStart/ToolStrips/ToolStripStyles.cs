@@ -7,7 +7,7 @@ using System.Data;
 using System.Xml;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1SpellChecker;
+using C1.Win.SpellChecker;
 using C1.Win.C1Editor;
 
 using HtmlList = C1.Win.C1Editor.List;

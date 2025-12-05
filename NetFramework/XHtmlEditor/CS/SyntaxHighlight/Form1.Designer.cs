@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Editor1 = new C1.Win.C1Editor.C1Editor();
             ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).BeginInit();
             this.SuspendLayout();

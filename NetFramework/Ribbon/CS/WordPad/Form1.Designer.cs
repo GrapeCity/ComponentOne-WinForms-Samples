@@ -1,4 +1,4 @@
-namespace WordPad
+﻿namespace WordPad
 {
     partial class Form1
     {
@@ -33,6 +33,7 @@ namespace WordPad
             C1.Framework.C1FontIcon c1FontIcon3 = new C1.Framework.C1FontIcon();
             C1.Framework.C1CompositeIcon c1CompositeIcon1 = new C1.Framework.C1CompositeIcon();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Framework.C1PathIcon c1PathIcon1 = new C1.Framework.C1PathIcon();
             C1.Framework.C1CompositeIcon c1CompositeIcon2 = new C1.Framework.C1CompositeIcon();
             C1.Framework.C1PathIcon c1PathIcon2 = new C1.Framework.C1PathIcon();
@@ -97,7 +98,7 @@ namespace WordPad
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.DocumentModifiedLabel = new C1.Win.Ribbon.RibbonLabel();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1BackstageView1 = new C1.Win.Ribbon.C1BackstageView();
             this.NewDocumentButton = new C1.Win.Ribbon.RibbonButton();
             this.OpenDocumentTab = new C1.Win.Ribbon.BackstageViewTab();
@@ -709,7 +710,7 @@ namespace WordPad
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox ribbonStyleCombo;
         private C1.Win.Ribbon.RibbonButton F1HelpButton;
         private C1.Win.Ribbon.RibbonButton UndoButton;

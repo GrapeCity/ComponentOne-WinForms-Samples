@@ -48,7 +48,7 @@ Partial Class Form1
         Me.label3 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.c1CalendarView1 = New C1.Win.Calendar.C1CalendarView()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.splitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer1.Panel1.SuspendLayout()
         Me.splitContainer1.Panel2.SuspendLayout()
@@ -561,5 +561,5 @@ Partial Class Form1
     Private WithEvents cmbMonthTitlePosition As C1.Win.C1Input.C1ComboBox
     Private WithEvents cmbAlignment As C1.Win.C1Input.C1ComboBox
     Private WithEvents cmbDayTitlePosition As C1.Win.C1Input.C1ComboBox
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

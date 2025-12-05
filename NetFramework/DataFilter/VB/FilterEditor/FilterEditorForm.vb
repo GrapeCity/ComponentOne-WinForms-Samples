@@ -4,7 +4,7 @@ Imports System.Xml.Serialization
 Imports C1.DataCollection
 Imports C1.DataFilter
 Imports C1.Win.C1Input
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 
 Public Class FilterEditorForm
     Private Const xmlFileName As String = "FilterExpression.xml"

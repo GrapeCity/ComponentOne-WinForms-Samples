@@ -30,45 +30,45 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C1OutBar));
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
-            this.c1OutBar1 = new C1.Win.C1Command.C1OutBar();
-            this.c1OutPage1 = new C1.Win.C1Command.C1OutPage();
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1Command1 = new C1.Win.C1Command.C1Command();
-            this.c1Command2 = new C1.Win.C1Command.C1Command();
-            this.c1Command3 = new C1.Win.C1Command.C1Command();
-            this.c1Command4 = new C1.Win.C1Command.C1Command();
-            this.c1Command5 = new C1.Win.C1Command.C1Command();
-            this.c1Command6 = new C1.Win.C1Command.C1Command();
-            this.c1Command7 = new C1.Win.C1Command.C1Command();
-            this.c1Command8 = new C1.Win.C1Command.C1Command();
-            this.c1Command9 = new C1.Win.C1Command.C1Command();
-            this.c1Command10 = new C1.Win.C1Command.C1Command();
-            this.c1Command11 = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1OutPage3 = new C1.Win.C1Command.C1OutPage();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1OutPage2 = new C1.Win.C1Command.C1OutPage();
-            this.c1ToolBar2 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
+            this.c1OutBar1 = new C1.Win.Command.C1OutBar();
+            this.c1OutPage1 = new C1.Win.Command.C1OutPage();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1Command1 = new C1.Win.Command.C1Command();
+            this.c1Command2 = new C1.Win.Command.C1Command();
+            this.c1Command3 = new C1.Win.Command.C1Command();
+            this.c1Command4 = new C1.Win.Command.C1Command();
+            this.c1Command5 = new C1.Win.Command.C1Command();
+            this.c1Command6 = new C1.Win.Command.C1Command();
+            this.c1Command7 = new C1.Win.Command.C1Command();
+            this.c1Command8 = new C1.Win.Command.C1Command();
+            this.c1Command9 = new C1.Win.Command.C1Command();
+            this.c1Command10 = new C1.Win.Command.C1Command();
+            this.c1Command11 = new C1.Win.Command.C1Command();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1OutPage3 = new C1.Win.Command.C1OutPage();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1OutPage2 = new C1.Win.Command.C1OutPage();
+            this.c1ToolBar2 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -99,7 +99,7 @@
             this.c1OutBar1.PageTitleHeight = 22;
             this.c1OutBar1.ShowToolTips = true;
             this.c1OutBar1.Size = new System.Drawing.Size(300, 549);
-            this.c1OutBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1OutBar1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1OutPage1
             // 
@@ -114,9 +114,9 @@
             // 
             this.c1ToolBar1.AccessibleName = "Tool Bar";
             this.c1ToolBar1.AutoSize = false;
-            this.c1ToolBar1.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1ToolBar1.ButtonLookVert = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1ToolBar1.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink2,
             this.c1CommandLink3,
@@ -132,7 +132,7 @@
             this.c1ToolBar1.Name = "c1ToolBar1";
             this.c1ToolBar1.Size = new System.Drawing.Size(300, 483);
             this.c1ToolBar1.Text = "Page1";
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1ToolBar1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandHolder1
             // 
@@ -148,7 +148,7 @@
             this.c1CommandHolder1.Commands.Add(this.c1Command10);
             this.c1CommandHolder1.Commands.Add(this.c1Command11);
             this.c1CommandHolder1.Owner = this;
-            this.c1CommandHolder1.CommandClick += new C1.Win.C1Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
+            this.c1CommandHolder1.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
             // 
             // c1Command1
             // 
@@ -217,7 +217,7 @@
             // 
             // c1CommandLink1
             // 
-            this.c1CommandLink1.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink1.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink1.Command = this.c1Command1;
             // 
             // c1CommandLink2
@@ -293,12 +293,12 @@
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -312,7 +312,7 @@
             this.c1Schedule1.ShowTitle = false;
             this.c1Schedule1.Size = new System.Drawing.Size(300, 305);
             this.c1Schedule1.TabIndex = 1;
-            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver;
+            this.c1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Silver;
             // 
             // c1CommandDock1
             // 
@@ -335,9 +335,9 @@
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.Size = new System.Drawing.Size(300, 219);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1DockingTabPage1
             // 
@@ -360,7 +360,7 @@
             this.c1Calendar1.ShowWeekNumbers = false;
             this.c1Calendar1.Size = new System.Drawing.Size(300, 187);
             this.c1Calendar1.TabIndex = 0;
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver;
+            this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Silver;
             // 
             // c1OutPage2
             // 
@@ -376,10 +376,10 @@
             this.c1ToolBar2.AccessibleName = "Tool Bar";
             this.c1ToolBar2.AutoSize = false;
             this.c1ToolBar2.ButtonAlign = System.Drawing.StringAlignment.Near;
-            this.c1ToolBar2.ButtonLayoutVert = C1.Win.C1Command.ButtonLayoutEnum.TextOnRight;
-            this.c1ToolBar2.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1ToolBar2.ButtonLayoutVert = C1.Win.Command.ButtonLayoutEnum.TextOnRight;
+            this.c1ToolBar2.ButtonLookVert = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1ToolBar2.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar2.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar2.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink7,
             this.c1CommandLink8,
             this.c1CommandLink9,
@@ -394,11 +394,11 @@
             this.c1ToolBar2.Name = "c1ToolBar2";
             this.c1ToolBar2.Size = new System.Drawing.Size(300, 461);
             this.c1ToolBar2.Text = "Page2";
-            this.c1ToolBar2.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1ToolBar2.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink7
             // 
-            this.c1CommandLink7.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink7.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink7.Command = this.c1Command7;
             // 
             // c1CommandLink8
@@ -418,7 +418,7 @@
             // 
             // c1CommandLink11
             // 
-            this.c1CommandLink11.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
+            this.c1CommandLink11.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
             this.c1CommandLink11.Command = this.c1Command11;
             this.c1CommandLink11.Delimiter = true;
             this.c1CommandLink11.SortOrder = 4;
@@ -484,42 +484,42 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1OutBar c1OutBar1;
-        private C1.Win.C1Command.C1OutPage c1OutPage1;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1OutBar c1OutBar1;
+        private C1.Win.Command.C1OutPage c1OutPage1;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1Command c1Command1;
-        private C1.Win.C1Command.C1Command c1Command2;
-        private C1.Win.C1Command.C1Command c1Command3;
-        private C1.Win.C1Command.C1Command c1Command4;
-        private C1.Win.C1Command.C1Command c1Command5;
-        private C1.Win.C1Command.C1Command c1Command6;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1OutPage c1OutPage2;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar2;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1Command c1Command1;
+        private C1.Win.Command.C1Command c1Command2;
+        private C1.Win.Command.C1Command c1Command3;
+        private C1.Win.Command.C1Command c1Command4;
+        private C1.Win.Command.C1Command c1Command5;
+        private C1.Win.Command.C1Command c1Command6;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1OutPage c1OutPage2;
+        private C1.Win.Command.C1ToolBar c1ToolBar2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private C1.Win.C1Command.C1Command c1Command7;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1Command c1Command8;
-        private C1.Win.C1Command.C1Command c1Command9;
-        private C1.Win.C1Command.C1Command c1Command10;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1OutPage c1OutPage3;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
-        private C1.Win.C1Command.C1Command c1Command11;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1Command c1Command7;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1Command c1Command8;
+        private C1.Win.Command.C1Command c1Command9;
+        private C1.Win.Command.C1Command c1Command10;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1OutPage c1OutPage3;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Command.C1Command c1Command11;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
         private System.Windows.Forms.ImageList imageList1;
     }
 }

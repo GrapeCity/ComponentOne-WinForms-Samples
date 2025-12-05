@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace Renderer
 {
@@ -50,7 +50,7 @@ namespace Renderer
             _flex.AutoSizeCol(0);
         }
 
-        void _flex_CellChanged(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void _flex_CellChanged(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             var value = _flex[e.Row, e.Col];
             if (value is Color)

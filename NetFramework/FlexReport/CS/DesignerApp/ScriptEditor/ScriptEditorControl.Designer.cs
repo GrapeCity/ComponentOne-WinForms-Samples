@@ -36,16 +36,16 @@ namespace FlexReportDesignerApp.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScriptEditorControl));
-            this.inpPanel = new C1.Win.C1InputPanel.C1InputPanel();
-            this.ilDirty = new C1.Win.C1InputPanel.InputLabel();
-            this.lblField = new C1.Win.C1InputPanel.InputLabel();
-            this.imScriptExprs = new C1.Win.C1InputPanel.InputComboBox();
-            this.chkIsTextMode = new C1.Win.C1InputPanel.InputCheckBox();
-            this.lblScript = new C1.Win.C1InputPanel.InputLabel();
-            this.imScriptSubs = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputButton1 = new C1.Win.C1InputPanel.InputButton();
-            this.inputButton2 = new C1.Win.C1InputPanel.InputButton();
-            this.inputButton3 = new C1.Win.C1InputPanel.InputButton();
+            this.inpPanel = new C1.Win.InputPanel.C1InputPanel();
+            this.ilDirty = new C1.Win.InputPanel.InputLabel();
+            this.lblField = new C1.Win.InputPanel.InputLabel();
+            this.imScriptExprs = new C1.Win.InputPanel.InputComboBox();
+            this.chkIsTextMode = new C1.Win.InputPanel.InputCheckBox();
+            this.lblScript = new C1.Win.InputPanel.InputLabel();
+            this.imScriptSubs = new C1.Win.InputPanel.InputComboBox();
+            this.inputButton1 = new C1.Win.InputPanel.InputButton();
+            this.inputButton2 = new C1.Win.InputPanel.InputButton();
+            this.inputButton3 = new C1.Win.InputPanel.InputButton();
             this.pbGlyph = new System.Windows.Forms.PictureBox();
             this._txtScript = new FlexReportDesignerApp.Util.RegexTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.inpPanel)).BeginInit();
@@ -72,11 +72,11 @@ namespace FlexReportDesignerApp.Forms
             // ilDirty
             // 
             this.ilDirty.AutoEllipsis = false;
-            this.ilDirty.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.ilDirty.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.ilDirty.Name = "ilDirty";
             this.ilDirty.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.ilDirty.Text = "*";
-            this.ilDirty.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.ilDirty.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.ilDirty.Width = 16;
             // 
             // lblField
@@ -84,12 +84,12 @@ namespace FlexReportDesignerApp.Forms
             this.lblField.Name = "lblField";
             this.lblField.Text = "Expression:";
             this.lblField.ToolTipText = resources.GetString("lblField.ToolTipText");
-            this.lblField.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.lblField.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // imScriptExprs
             // 
-            this.imScriptExprs.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.imScriptExprs.DropDownStyle = C1.Win.C1InputPanel.InputComboBoxStyle.DropDownList;
+            this.imScriptExprs.Break = C1.Win.InputPanel.BreakType.None;
+            this.imScriptExprs.DropDownStyle = C1.Win.InputPanel.InputComboBoxStyle.DropDownList;
             this.imScriptExprs.MaxDropDownItems = 16;
             this.imScriptExprs.Name = "imScriptExprs";
             this.imScriptExprs.TabStop = false;
@@ -98,12 +98,12 @@ namespace FlexReportDesignerApp.Forms
             // 
             // chkIsTextMode
             // 
-            this.chkIsTextMode.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.chkIsTextMode.Break = C1.Win.InputPanel.BreakType.None;
             this.chkIsTextMode.Name = "chkIsTextMode";
             this.chkIsTextMode.TabStop = false;
             this.chkIsTextMode.Text = "Text Mode";
             this.chkIsTextMode.ToolTipText = resources.GetString("chkIsTextMode.ToolTipText");
-            this.chkIsTextMode.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.chkIsTextMode.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // lblScript
             // 
@@ -111,12 +111,12 @@ namespace FlexReportDesignerApp.Forms
             this.lblScript.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.lblScript.Text = "Script:";
             this.lblScript.ToolTipText = resources.GetString("lblScript.ToolTipText");
-            this.lblScript.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.lblScript.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // imScriptSubs
             // 
-            this.imScriptSubs.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.imScriptSubs.DropDownStyle = C1.Win.C1InputPanel.InputComboBoxStyle.DropDownList;
+            this.imScriptSubs.Break = C1.Win.InputPanel.BreakType.None;
+            this.imScriptSubs.DropDownStyle = C1.Win.InputPanel.InputComboBoxStyle.DropDownList;
             this.imScriptSubs.Items.Add(this.inputButton1);
             this.imScriptSubs.Items.Add(this.inputButton2);
             this.imScriptSubs.Items.Add(this.inputButton3);
@@ -190,17 +190,17 @@ namespace FlexReportDesignerApp.Forms
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel inpPanel;
-        private C1.Win.C1InputPanel.InputLabel lblScript;
+        private C1.Win.InputPanel.C1InputPanel inpPanel;
+        private C1.Win.InputPanel.InputLabel lblScript;
         private Util.RegexTextBox _txtScript;
-        private C1.Win.C1InputPanel.InputLabel lblField;
-        private C1.Win.C1InputPanel.InputComboBox imScriptSubs;
-        private C1.Win.C1InputPanel.InputButton inputButton1;
-        private C1.Win.C1InputPanel.InputButton inputButton2;
-        private C1.Win.C1InputPanel.InputButton inputButton3;
-        private C1.Win.C1InputPanel.InputComboBox imScriptExprs;
-        private C1.Win.C1InputPanel.InputLabel ilDirty;
+        private C1.Win.InputPanel.InputLabel lblField;
+        private C1.Win.InputPanel.InputComboBox imScriptSubs;
+        private C1.Win.InputPanel.InputButton inputButton1;
+        private C1.Win.InputPanel.InputButton inputButton2;
+        private C1.Win.InputPanel.InputButton inputButton3;
+        private C1.Win.InputPanel.InputComboBox imScriptExprs;
+        private C1.Win.InputPanel.InputLabel ilDirty;
         private System.Windows.Forms.PictureBox pbGlyph;
-        private C1.Win.C1InputPanel.InputCheckBox chkIsTextMode;
+        private C1.Win.InputPanel.InputCheckBox chkIsTextMode;
     }
 }

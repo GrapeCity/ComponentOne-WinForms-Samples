@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-using C1.Win.C1InputPanel;
+using C1.Win.InputPanel;
 using C1.Win.TouchToolKit;
 
 namespace ControlExplorer.ZoomPolicies

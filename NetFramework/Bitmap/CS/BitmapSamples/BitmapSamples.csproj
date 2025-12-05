@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="CropPage.resx">
       <DependentUpon>CropPage.cs</DependentUpon>
     </EmbeddedResource>

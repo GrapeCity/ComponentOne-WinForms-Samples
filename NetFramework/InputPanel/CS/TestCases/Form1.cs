@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Xml;
 using System.IO;
 
-using C1.Win.C1InputPanel;
+using C1.Win.InputPanel;
 
 namespace TestCases
 {
@@ -277,7 +277,7 @@ namespace TestCases
                         ReadCommonProperties(node, htmlLabel);
                         string linkHRef = XmlUtil.Read(node, "href", String.Empty);
                         htmlLabel.Text = "<a href='" + linkHRef + "'>" + linkText + "</a>";
-                        htmlLabel.LinkClicked += new C1.Win.C1InputPanel.LinkClickedEventHandler(htmlLabel_LinkClicked);
+                        htmlLabel.LinkClicked += new C1.Win.InputPanel.LinkClickedEventHandler(htmlLabel_LinkClicked);
                         c1InputPanel1.Items.Add(htmlLabel);
                     }
                     break;
@@ -294,7 +294,7 @@ namespace TestCases
                     break;
             }
         }
-        private void htmlLabel_LinkClicked(object sender, C1.Win.C1InputPanel.LinkClickedEventArgs e)
+        private void htmlLabel_LinkClicked(object sender, C1.Win.InputPanel.LinkClickedEventArgs e)
         {
             MessageBox.Show("Open URL: '" + e.HRef + "'", "Link Clicked");
         }

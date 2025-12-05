@@ -59,12 +59,12 @@
             // 
             // c1FlexPivotGrid1
             // 
-            this.c1FlexPivotGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
-            this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Default;
+            this.c1FlexPivotGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
+            this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Default;
             this.c1FlexPivotGrid1.ColumnInfo = "10,1,0,0,0,95,Columns:0{Width:95;}\t";
             this.c1FlexPivotGrid1.DataSource = this.c1FlexPivotPanel1;
             this.c1FlexPivotGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexPivotGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.c1FlexPivotGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexPivotGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexPivotGrid1.Name = "c1FlexPivotGrid1";
             this.c1FlexPivotGrid1.Rows.DefaultSize = -1;

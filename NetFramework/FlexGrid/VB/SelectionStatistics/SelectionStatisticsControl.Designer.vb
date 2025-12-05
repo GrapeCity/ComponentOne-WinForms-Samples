@@ -26,7 +26,7 @@ Partial Class SelectionStatisticsControl
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SelectionStatisticsControl))
         Me.tsSelectionStatistics = New System.Windows.Forms.ToolStrip()
         Me.tslSelectionStatistics = New System.Windows.Forms.ToolStripLabel()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.C1NWindDataSet1 = New SelectionStatistics.C1NWindDataSet()
         Me.OrdersTableAdapter1 = New SelectionStatistics.C1NWindDataSetTableAdapters.OrdersTableAdapter()
         Me.OrdersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -97,7 +97,7 @@ Partial Class SelectionStatisticsControl
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Friend tslSelectionStatistics As System.Windows.Forms.ToolStripLabel
     Friend tsSelectionStatistics As System.Windows.Forms.ToolStrip
     Friend WithEvents C1NWindDataSet1 As C1NWindDataSet

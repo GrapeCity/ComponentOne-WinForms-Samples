@@ -18,19 +18,25 @@ namespace BaseExplorer.Components
         #endregion
 
         #region Object Model
+
+        [DefaultValue("")]
         public new string Text
         {
             get { return lblCardName.Text; }
             set { lblCardName.Text = value; }
         }
+
+        [DefaultValue(null)]
         public string Description { get; set; }
 
+        [DefaultValue(null)]
         public Image Image
         {
             get { return picBox.Image; }
             set { picBox.Image = value; }
         }
 
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverColor
         {
             get
@@ -46,8 +52,8 @@ namespace BaseExplorer.Components
             }
         }
 
-        public TileGroup TileGroup
-        { get; set; }
+        [DefaultValue(null)]
+        public TileGroup TileGroup { get; set; }
         #endregion
 
         public TileView()

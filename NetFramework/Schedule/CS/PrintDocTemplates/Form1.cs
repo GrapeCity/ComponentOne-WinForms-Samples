@@ -6,8 +6,8 @@ using System.IO;
 
 namespace PrintDocTemplates
 {
-	using C1.Win.C1Schedule;
-	using C1.C1Schedule;
+	using C1.Win.Schedule;
+	using C1.Schedule;
 	using C1.C1Preview;
     using C1.Win.RibbonPreview;
 
@@ -97,9 +97,12 @@ namespace PrintDocTemplates
 		{
 			// add references needed for document scripts execution 
             _printDoc.ScriptingOptions.ExternalAssemblies.Add(System.Reflection.Assembly.GetAssembly(typeof(C1Schedule)).Location);
+            _printDoc.ScriptingOptions.ExternalAssemblies.Add(System.Reflection.Assembly.GetAssembly(typeof(Appointment)).Location);
+            _printDoc.ScriptingOptions.ExternalAssemblies.Add(System.Reflection.Assembly.GetAssembly(typeof(C1.Win.Schedule.C1ScheduleStorage)).Location);
+            _printDoc.ScriptingOptions.ExternalAssemblies.Add("netstandard.dll");
 
-			// initialize document tags
-			DateTime start = c1Schedule1.SelectedDates[0].Date;
+            // initialize document tags
+            DateTime start = c1Schedule1.SelectedDates[0].Date;
 			DateTime end = c1Schedule1.SelectedDates[c1Schedule1.SelectedDates.Length - 1].Date;
 
 			Tag tag = _printDoc.Tags["StartDate"];

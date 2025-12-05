@@ -28,69 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
-            this._btnGo = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this._reportList = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.c1FlexViewer1)).BeginInit();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
+            _btnGo = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            _reportList = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)c1FlexViewer1).BeginInit();
+            SuspendLayout();
             // 
             // c1FlexViewer1
             // 
-            this.c1FlexViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1FlexViewer1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.c1FlexViewer1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.c1FlexViewer1.Location = new System.Drawing.Point(227, 9);
-            this.c1FlexViewer1.Name = "c1FlexViewer1";
-            this.c1FlexViewer1.Size = new System.Drawing.Size(493, 530);
-            this.c1FlexViewer1.TabIndex = 3;
-            this.c1FlexViewer1.UseAsyncRendering = false;
+            c1FlexViewer1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            c1FlexViewer1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            c1FlexViewer1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            c1FlexViewer1.Location = new System.Drawing.Point(265, 11);
+            c1FlexViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            c1FlexViewer1.Name = "c1FlexViewer1";
+            c1FlexViewer1.Size = new System.Drawing.Size(575, 662);
+            c1FlexViewer1.TabIndex = 3;
+            c1FlexViewer1.UseAsyncRendering = false;
             // 
             // _btnGo
             // 
-            this._btnGo.Location = new System.Drawing.Point(146, 168);
-            this._btnGo.Name = "_btnGo";
-            this._btnGo.Size = new System.Drawing.Size(75, 21);
-            this._btnGo.TabIndex = 2;
-            this._btnGo.Text = "Go";
-            this._btnGo.UseVisualStyleBackColor = true;
-            this._btnGo.Click += new System.EventHandler(this._btnGo_Click);
+            _btnGo.Location = new System.Drawing.Point(170, 210);
+            _btnGo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            _btnGo.Name = "_btnGo";
+            _btnGo.Size = new System.Drawing.Size(88, 26);
+            _btnGo.TabIndex = 2;
+            _btnGo.Text = "Go";
+            _btnGo.UseVisualStyleBackColor = true;
+            _btnGo.Click += _btnGo_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Select a report in the list below,\r\nclick \"Go\" to render:";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(14, 11);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(171, 30);
+            label1.TabIndex = 0;
+            label1.Text = "Select a report in the list below,\r\nclick \"Go\" to render:";
             // 
             // _reportList
             // 
-            this._reportList.FormattingEnabled = true;
-            this._reportList.ItemHeight = 12;
-            this._reportList.Location = new System.Drawing.Point(14, 38);
-            this._reportList.Name = "_reportList";
-            this._reportList.Size = new System.Drawing.Size(207, 124);
-            this._reportList.TabIndex = 1;
+            _reportList.FormattingEnabled = true;
+            _reportList.Location = new System.Drawing.Point(16, 48);
+            _reportList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            _reportList.Name = "_reportList";
+            _reportList.Size = new System.Drawing.Size(241, 154);
+            _reportList.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 551);
-            this.Controls.Add(this._btnGo);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this._reportList);
-            this.Controls.Add(this.c1FlexViewer1);
-            this.Name = "Form1";
-            this.Text = "Map Reports";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.c1FlexViewer1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(854, 689);
+            Controls.Add(_btnGo);
+            Controls.Add(label1);
+            Controls.Add(_reportList);
+            Controls.Add(c1FlexViewer1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            Name = "Form1";
+            Text = "Map Reports";
+            FormClosing += Form1_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)c1FlexViewer1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

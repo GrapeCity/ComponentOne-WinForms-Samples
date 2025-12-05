@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this._toolStrip = new System.Windows.Forms.ToolStrip();
             this._chkActiveSpelling = new System.Windows.Forms.ToolStripButton();
             this._chkModalSpellCheck = new System.Windows.Forms.ToolStripButton();
             this._webBrowser = new System.Windows.Forms.WebBrowser();
-            this._spellChecker = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this._spellChecker = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this._toolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._spellChecker)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +105,7 @@
 
         private System.Windows.Forms.WebBrowser _webBrowser;
         private System.Windows.Forms.ToolStrip _toolStrip;
-        private C1.Win.C1SpellChecker.C1SpellChecker _spellChecker;
+        private C1.Win.SpellChecker.C1SpellChecker _spellChecker;
         private System.Windows.Forms.ToolStripButton _chkActiveSpelling;
         private System.Windows.Forms.ToolStripButton _chkModalSpellCheck;
     }

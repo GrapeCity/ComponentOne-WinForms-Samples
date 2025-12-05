@@ -26,7 +26,7 @@ Partial Class Form1
         Me.splitter1 = New System.Windows.Forms.Splitter()
         Me.groupBox1 = New System.Windows.Forms.GroupBox()
         Me.label1 = New System.Windows.Forms.Label()
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.groupBox1.SuspendLayout()
         CType(Me.C1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -102,5 +102,5 @@ Partial Class Form1
     Private WithEvents splitter1 As Splitter
     Private WithEvents groupBox1 As GroupBox
     Private WithEvents label1 As Label
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
 End Class

@@ -27,7 +27,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.C1FlexViewer1 = New C1.Win.FlexViewer.C1FlexViewer()
-        Me.C1PdfDocumentSource1 = New C1.Win.C1Document.C1PdfDocumentSource(Me.components)
+        Me.C1PdfDocumentSource1 = New C1.Win.Document.C1PdfDocumentSource(Me.components)
         Me.ilLarge = New System.Windows.Forms.ImageList(Me.components)
         Me.ilSmall = New System.Windows.Forms.ImageList(Me.components)
         Me.ofdOpen = New System.Windows.Forms.OpenFileDialog()
@@ -76,7 +76,7 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents C1FlexViewer1 As C1.Win.FlexViewer.C1FlexViewer
-    Friend WithEvents C1PdfDocumentSource1 As C1.Win.C1Document.C1PdfDocumentSource
+    Friend WithEvents C1PdfDocumentSource1 As C1.Win.Document.C1PdfDocumentSource
     Friend WithEvents ilLarge As ImageList
     Friend WithEvents ilSmall As ImageList
     Private WithEvents ofdOpen As OpenFileDialog

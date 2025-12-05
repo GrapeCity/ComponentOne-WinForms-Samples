@@ -50,9 +50,9 @@ namespace FlexGridExplorer.Samples
                 col.TextAlign = TextAlignEnum.CenterCenter;
             }
 
-            var groups = new List<GroupDescription>();
-            var group1 = new GroupDescription("ShipRegion", ListSortDirection.Descending, true);
-            var group2 = new GroupDescription("CustomerID", ListSortDirection.Ascending, true);
+            var groups = new List<C1.Win.FlexGrid.GroupDescription>();
+            var group1 = new C1.Win.FlexGrid.GroupDescription("ShipRegion", ListSortDirection.Descending, true);
+            var group2 = new C1.Win.FlexGrid.GroupDescription("CustomerID", ListSortDirection.Ascending, true);
             groups.Add(group1);
             groups.Add(group2);
             flexGrid1.GroupDescriptions = groups;

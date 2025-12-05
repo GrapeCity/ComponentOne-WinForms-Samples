@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomAlign
 {
@@ -13,7 +13,7 @@ namespace CustomAlign
 	/// </summary>
     public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+		private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -53,7 +53,7 @@ namespace CustomAlign
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,13 +61,13 @@ namespace CustomAlign
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 19;
             this._flex.Size = new System.Drawing.Size(552, 340);
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
@@ -113,7 +113,7 @@ namespace CustomAlign
 			_flex.Rows.DefaultSize = 3 * _flex.Rows.DefaultSize;
 		}
 
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			object value = _flex[e.Row, e.Col];
 

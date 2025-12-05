@@ -35,9 +35,9 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1CmdToolType = new C1.Win.C1Input.C1ComboBox();
+            this.c1CmdToolType = new C1.Win.Input.C1ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.c1CmbLabelPosition = new C1.Win.C1Input.C1ComboBox();
+            this.c1CmbLabelPosition = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.nudStartX = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,8 +46,8 @@ namespace FinancialChartExplorer.Samples
             this.nudStartY = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label5 = new System.Windows.Forms.Label();
             this.nudEndY = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
-            this.c1CbUptrend = new C1.Win.C1Input.C1CheckBox();
-            this.c1CbRangeSelector = new C1.Win.C1Input.C1CheckBox();
+            this.c1CbUptrend = new C1.Win.Input.C1CheckBox();
+            this.c1CbRangeSelector = new C1.Win.Input.C1CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -195,7 +195,6 @@ namespace FinancialChartExplorer.Samples
             this.c1CmdToolType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1CmdToolType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CmdToolType.GapHeight = 5;
-            this.c1CmdToolType.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1CmdToolType.Location = new System.Drawing.Point(72, 18);
             this.c1CmdToolType.Name = "c1CmdToolType";
             this.c1CmdToolType.Size = new System.Drawing.Size(160, 37);
@@ -222,7 +221,6 @@ namespace FinancialChartExplorer.Samples
             this.c1CmbLabelPosition.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1CmbLabelPosition.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CmbLabelPosition.GapHeight = 5;
-            this.c1CmbLabelPosition.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1CmbLabelPosition.Location = new System.Drawing.Point(404, 18);
             this.c1CmbLabelPosition.Name = "c1CmbLabelPosition";
             this.c1CmbLabelPosition.Size = new System.Drawing.Size(107, 37);
@@ -246,8 +244,6 @@ namespace FinancialChartExplorer.Samples
             // nudStartX
             // 
             this.nudStartX.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.nudStartX.GapHeight = 0;
-            this.nudStartX.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudStartX.Location = new System.Drawing.Point(610, 23);
             this.nudStartX.Minimum = -100;
             this.nudStartX.Name = "nudStartX";
@@ -260,7 +256,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudStartX.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudStartX.ValueChanged += new System.EventHandler(this.nudStartX_ValueChanged_1);
             // 
             // label3
@@ -278,8 +273,6 @@ namespace FinancialChartExplorer.Samples
             // nudEndX
             // 
             this.nudEndX.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.nudEndX.GapHeight = 0;
-            this.nudEndX.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudEndX.Location = new System.Drawing.Point(3, 66);
             this.nudEndX.Minimum = -100;
             this.nudEndX.Name = "nudEndX";
@@ -292,7 +285,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudEndX.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudEndX.ValueChanged += new System.EventHandler(this.nudEndX_ValueChanged_1);
             // 
             // label4
@@ -310,8 +302,6 @@ namespace FinancialChartExplorer.Samples
             // nudStartY
             // 
             this.nudStartY.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.nudStartY.GapHeight = 0;
-            this.nudStartY.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudStartY.Location = new System.Drawing.Point(166, 66);
             this.nudStartY.Minimum = -100;
             this.nudStartY.Name = "nudStartY";
@@ -324,7 +314,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudStartY.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudStartY.ValueChanged += new System.EventHandler(this.nudStartY_ValueChanged_1);
             // 
             // label5
@@ -342,8 +331,6 @@ namespace FinancialChartExplorer.Samples
             // nudEndY
             // 
             this.nudEndY.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.nudEndY.GapHeight = 0;
-            this.nudEndY.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudEndY.Location = new System.Drawing.Point(319, 66);
             this.nudEndY.Minimum = -100;
             this.nudEndY.Name = "nudEndY";
@@ -356,27 +343,23 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudEndY.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudEndY.ValueChanged += new System.EventHandler(this.nudEndY_ValueChanged_1);
             // 
             // c1CbUptrend
             // 
             this.c1CbUptrend.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.c1CbUptrend.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1CbUptrend.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CbUptrend.Location = new System.Drawing.Point(387, 62);
             this.c1CbUptrend.Name = "c1CbUptrend";
             this.c1CbUptrend.Size = new System.Drawing.Size(104, 35);
             this.c1CbUptrend.TabIndex = 16;
             this.c1CbUptrend.Text = "Uptrend";
-            this.c1CbUptrend.UseVisualStyleBackColor = false;
             this.c1CbUptrend.Value = null;
             this.c1CbUptrend.CheckedChanged += new System.EventHandler(this.c1CbUptrend_CheckedChanged);
             // 
             // c1CbRangeSelector
             // 
             this.c1CbRangeSelector.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.c1CbRangeSelector.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1CbRangeSelector.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CbRangeSelector.Location = new System.Drawing.Point(497, 61);
             this.c1CbRangeSelector.Name = "c1CbRangeSelector";
@@ -384,7 +367,6 @@ namespace FinancialChartExplorer.Samples
             this.c1CbRangeSelector.Size = new System.Drawing.Size(104, 37);
             this.c1CbRangeSelector.TabIndex = 17;
             this.c1CbRangeSelector.Text = "Range Selector";
-            this.c1CbRangeSelector.UseVisualStyleBackColor = false;
             this.c1CbRangeSelector.Value = null;
             this.c1CbRangeSelector.CheckedChanged += new System.EventHandler(this.c1CbRangeSelector_CheckedChanged);
             // 
@@ -426,10 +408,10 @@ namespace FinancialChartExplorer.Samples
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private C1.Win.C1Input.C1ComboBox c1CmdToolType;
-        private C1.Win.C1Input.C1ComboBox c1CmbLabelPosition;
-        private C1.Win.C1Input.C1CheckBox c1CbUptrend;
-        private C1.Win.C1Input.C1CheckBox c1CbRangeSelector;
+        private C1.Win.Input.C1ComboBox c1CmdToolType;
+        private C1.Win.Input.C1ComboBox c1CmbLabelPosition;
+        private C1.Win.Input.C1CheckBox c1CbUptrend;
+        private C1.Win.Input.C1CheckBox c1CbRangeSelector;
         private C1NumericEditEx nudStartX;
         private C1NumericEditEx nudEndX;
         private C1NumericEditEx nudStartY;

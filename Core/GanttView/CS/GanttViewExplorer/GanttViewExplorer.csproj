@@ -2,14 +2,15 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.GanttView" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.GanttView" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +31,10 @@
     <Compile Update="Samples\FilterSample\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

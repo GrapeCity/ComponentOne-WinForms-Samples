@@ -22,21 +22,21 @@ namespace ColumnBandsOrderManagment
         }
 
         #region Component Designer generated code
-        private C1.Win.C1FlexGrid.Band band1;
-        private C1.Win.C1FlexGrid.Band band2;
-        private C1.Win.C1FlexGrid.Band band3;
-        private C1.Win.C1FlexGrid.Band band4;
-        private C1.Win.C1FlexGrid.Band band5;
-        private C1.Win.C1FlexGrid.Band band6;
-        private C1.Win.C1FlexGrid.Band band7;
-        private C1.Win.C1FlexGrid.Band band8;
-        private C1.Win.C1FlexGrid.Band band9;
-        private C1.Win.C1FlexGrid.Band band10;
-        private C1.Win.C1FlexGrid.Band band11;
-        private C1.Win.C1FlexGrid.Band band12;
-        private C1.Win.C1FlexGrid.Band band13;
-        private C1.Win.C1FlexGrid.Band band14;
-        private C1.Win.C1FlexGrid.Band band15;
+        private C1.Win.FlexGrid.Band band1;
+        private C1.Win.FlexGrid.Band band2;
+        private C1.Win.FlexGrid.Band band3;
+        private C1.Win.FlexGrid.Band band4;
+        private C1.Win.FlexGrid.Band band5;
+        private C1.Win.FlexGrid.Band band6;
+        private C1.Win.FlexGrid.Band band7;
+        private C1.Win.FlexGrid.Band band8;
+        private C1.Win.FlexGrid.Band band9;
+        private C1.Win.FlexGrid.Band band10;
+        private C1.Win.FlexGrid.Band band11;
+        private C1.Win.FlexGrid.Band band12;
+        private C1.Win.FlexGrid.Band band13;
+        private C1.Win.FlexGrid.Band band14;
+        private C1.Win.FlexGrid.Band band15;
 
         /// <summary> 
         /// Required method for Designer support - do not modify 
@@ -45,25 +45,25 @@ namespace ColumnBandsOrderManagment
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsUserControl));
-            band1 = new C1.Win.C1FlexGrid.Band();
-            band2 = new C1.Win.C1FlexGrid.Band();
-            band3 = new C1.Win.C1FlexGrid.Band();
-            band4 = new C1.Win.C1FlexGrid.Band();
-            band5 = new C1.Win.C1FlexGrid.Band();
-            band6 = new C1.Win.C1FlexGrid.Band();
-            band7 = new C1.Win.C1FlexGrid.Band();
-            band8 = new C1.Win.C1FlexGrid.Band();
-            band9 = new C1.Win.C1FlexGrid.Band();
-            band10 = new C1.Win.C1FlexGrid.Band();
-            band11 = new C1.Win.C1FlexGrid.Band();
-            band12 = new C1.Win.C1FlexGrid.Band();
-            band13 = new C1.Win.C1FlexGrid.Band();
-            band14 = new C1.Win.C1FlexGrid.Band();
-            band15 = new C1.Win.C1FlexGrid.Band();
-            this.flexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGridBandedView1 = new C1.Win.C1FlexGrid.C1FlexGridBandedView();
+            band1 = new C1.Win.FlexGrid.Band();
+            band2 = new C1.Win.FlexGrid.Band();
+            band3 = new C1.Win.FlexGrid.Band();
+            band4 = new C1.Win.FlexGrid.Band();
+            band5 = new C1.Win.FlexGrid.Band();
+            band6 = new C1.Win.FlexGrid.Band();
+            band7 = new C1.Win.FlexGrid.Band();
+            band8 = new C1.Win.FlexGrid.Band();
+            band9 = new C1.Win.FlexGrid.Band();
+            band10 = new C1.Win.FlexGrid.Band();
+            band11 = new C1.Win.FlexGrid.Band();
+            band12 = new C1.Win.FlexGrid.Band();
+            band13 = new C1.Win.FlexGrid.Band();
+            band14 = new C1.Win.FlexGrid.Band();
+            band15 = new C1.Win.FlexGrid.Band();
+            this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.c1FlexGridGroupPanel1 = new C1.Win.C1FlexGrid.C1FlexGridGroupPanel();
+            this.c1FlexGridGroupPanel1 = new C1.Win.FlexGrid.C1FlexGridGroupPanel();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGridBandedView1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -75,7 +75,7 @@ namespace ColumnBandsOrderManagment
             this.flexGrid1.ColumnContextMenuEnabled = true;
             this.flexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:8{Visible:False;}\t9{Visible:False;}\t";
             this.flexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.flexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.flexGrid1.Location = new System.Drawing.Point(3, 120);
             this.flexGrid1.Name = "flexGrid1";
             this.flexGrid1.Rows.Count = 3;
@@ -163,9 +163,9 @@ namespace ColumnBandsOrderManagment
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid1;
+        private C1.Win.FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private C1.Win.C1FlexGrid.C1FlexGridGroupPanel c1FlexGridGroupPanel1;
+        private C1.Win.FlexGrid.C1FlexGridGroupPanel c1FlexGridGroupPanel1;
     }
 }

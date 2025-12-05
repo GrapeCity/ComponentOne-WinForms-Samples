@@ -105,7 +105,7 @@ namespace FlexReportDesignerApp.Controls.Background.Editors
         #endregion
 
         #region Protected properties
-        protected override C1.Win.C1Command.C1DockingTab DockingTab
+        protected override C1.Win.Command.C1DockingTab DockingTab
         {
             get { return dtMain; }
         }

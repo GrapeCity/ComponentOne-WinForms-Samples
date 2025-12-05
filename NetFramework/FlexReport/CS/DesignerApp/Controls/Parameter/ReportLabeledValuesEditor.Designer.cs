@@ -35,7 +35,7 @@ namespace FlexReportDesignerApp.Controls.Parameter
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.btnUp = new C1.Win.C1Input.C1Button();
             this.btnDown = new C1.Win.C1Input.C1Button();
             this.btnAdd = new C1.Win.C1Input.C1Button();
@@ -49,8 +49,8 @@ namespace FlexReportDesignerApp.Controls.Parameter
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None;
-            this.c1FlexGrid1.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
+            this.c1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
+            this.c1FlexGrid1.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -61,7 +61,7 @@ namespace FlexReportDesignerApp.Controls.Parameter
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 20;
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
             this.c1FlexGrid1.ShowCursor = true;
             this.c1FlexGrid1.Size = new System.Drawing.Size(346, 155);
             this.c1FlexGrid1.TabIndex = 0;
@@ -136,7 +136,7 @@ namespace FlexReportDesignerApp.Controls.Parameter
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.C1Input.C1Button btnUp;
         private C1.Win.C1Input.C1Button btnDown;
         private C1.Win.C1Input.C1Button btnAdd;

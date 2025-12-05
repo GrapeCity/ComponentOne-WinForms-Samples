@@ -29,14 +29,14 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1List1 As C1.Win.C1List.C1List
+    Friend WithEvents C1List1 As C1.Win.List.C1List
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.C1List1 = New C1.Win.C1List.C1List()
+        Me.C1List1 = New C1.Win.List.C1List()
         CType(Me.C1List1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,18 +66,18 @@ Public Class Form1
         Me.C1List1.CaptionHeight = 17
         Me.C1List1.ColumnCaptionHeight = 17
         Me.C1List1.ColumnFooterHeight = 17
-        Me.C1List1.DataMode = C1.Win.C1List.DataModeEnum.AddItem
+        Me.C1List1.DataMode = C1.Win.List.DataModeEnum.AddItem
         Me.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1List1.ItemHeight = 15
         Me.C1List1.Location = New System.Drawing.Point(48, 16)
-        Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List1.MatchEntryTimeout = CType(2000, Long)
         Me.C1List1.Name = "C1List1"
         Me.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List1.ScrollTips = False
         Me.C1List1.Size = New System.Drawing.Size(440, 344)
@@ -134,13 +134,13 @@ Public Class Form1
     End Sub
 
 
-    Private Sub C1List1_FetchCellStyle(ByVal sender As Object, ByVal e As C1.Win.C1List.FetchCellStyleEventArgs) Handles C1List1.FetchCellStyle
+    Private Sub C1List1_FetchCellStyle(ByVal sender As Object, ByVal e As C1.Win.List.FetchCellStyleEventArgs) Handles C1List1.FetchCellStyle
         If e.Col = 1 Then
             'Get the image name
             Dim file As String
             file = Me.C1List1.Splits(0).DisplayColumns(0).DataColumn.CellText(e.Row)
             file = Me.TextBox1.Text.Trim() & "\" & file
-            e.CellStyle.ForeGroundPicturePosition = C1.Win.C1List.ForeGroundPicturePositionEnum.PictureOnly
+            e.CellStyle.ForeGroundPicturePosition = C1.Win.List.ForeGroundPicturePositionEnum.PictureOnly
             e.CellStyle.ForegroundImage = Image.FromFile(file)
         End If
     End Sub

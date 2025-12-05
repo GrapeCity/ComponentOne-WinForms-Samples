@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -24,7 +24,7 @@ namespace Tutorial19
         private System.Data.OleDb.OleDbCommand oleDbUpdateCommand2;
         private System.Data.OleDb.OleDbCommand oleDbDeleteCommand2;
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter2;
-        private C1.Win.C1List.C1Combo c1Combo1;
+        private C1.Win.List.C1Combo c1Combo1;
         private DataSet1 dataSet11;
         private DataGrid dataGrid1;
         /// <summary>
@@ -67,6 +67,8 @@ namespace Tutorial19
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.button1 = new System.Windows.Forms.Button();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -79,7 +81,7 @@ namespace Tutorial19
             this.oleDbUpdateCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
-            this.c1Combo1 = new C1.Win.C1List.C1Combo();
+            this.c1Combo1 = new C1.Win.List.C1Combo();
             this.dataSet11 = new Tutorial19.DataSet1();
             this.dataGrid1 = new System.Windows.Forms.DataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1Combo1)).BeginInit();
@@ -244,7 +246,7 @@ namespace Tutorial19
             this.c1Combo1.EditorBackColor = System.Drawing.SystemColors.Window;
             this.c1Combo1.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.c1Combo1.EditorForeColor = System.Drawing.SystemColors.WindowText;
-            this.c1Combo1.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+            this.c1Combo1.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
             this.c1Combo1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1Combo1.Images"))));
             this.c1Combo1.ItemHeight = 15;
             this.c1Combo1.Location = new System.Drawing.Point(48, 323);
@@ -253,7 +255,7 @@ namespace Tutorial19
             this.c1Combo1.MaxLength = 32767;
             this.c1Combo1.MouseCursor = System.Windows.Forms.Cursors.Default;
             this.c1Combo1.Name = "c1Combo1";
-            this.c1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+            this.c1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
             this.c1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1Combo1.Size = new System.Drawing.Size(240, 24);
             this.c1Combo1.TabIndex = 1;

@@ -6,7 +6,7 @@ Imports System.Windows.Forms
 Imports System.Threading
 
 
-Namespace C1.Win.C1FlexGrid
+Namespace C1.Win.FlexGrid
     Public Class C1PrintProgress
         Inherits System.Windows.Forms.Form
 

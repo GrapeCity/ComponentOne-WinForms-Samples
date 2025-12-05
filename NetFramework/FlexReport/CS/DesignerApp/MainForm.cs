@@ -31,14 +31,14 @@ using System.Linq;
 
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.Localization;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Util.Licensing;
 
 using C1.Report;
 using C1.Win.FlexReport;
-using Doc = C1.Win.C1Document;
+using Doc = C1.Win.Document;
 using Flex = C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 
@@ -312,7 +312,7 @@ namespace FlexReportDesignerApp
                         byte[] data = System.Convert.FromBase64String(dps);
                         ms.Write(data, 0, data.Length);
                         ms.Seek(0, SeekOrigin.Begin);
-                        C1.Win.C1Command.C1DockingTab.RestoreLayout(this, ms);
+                        C1.Win.Command.C1DockingTab.RestoreLayout(this, ms);
                     }
                 };
             restore();

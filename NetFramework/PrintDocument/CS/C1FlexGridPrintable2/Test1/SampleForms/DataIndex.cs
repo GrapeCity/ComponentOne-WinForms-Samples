@@ -13,7 +13,7 @@ namespace DataIndex
     public class Form1 : System.Windows.Forms.Form
     {
 		private System.Windows.Forms.StatusBar _stBar;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -54,7 +54,7 @@ namespace DataIndex
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._stBar = new System.Windows.Forms.StatusBar();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +70,7 @@ namespace DataIndex
             this._flex.Size = new System.Drawing.Size(457, 229);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.AfterDragColumn += new C1.Win.C1FlexGrid.DragRowColEventHandler(this._flex_AfterDragColumn);
+            this._flex.AfterDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this._flex_AfterDragColumn);
             this._flex.RowColChange += new System.EventHandler(this._flex_RowColChange);
             this._flex.AfterDataRefresh += new System.ComponentModel.ListChangedEventHandler(this._flex_AfterDataRefresh);
             // 
@@ -133,14 +133,14 @@ namespace DataIndex
 			_flex.Cols["Date"].AllowDragging = false;
 			_flex.AutoSizeCols();
 			_flex.Cols[1].Width += 40;
-			_flex.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.MultiColumn;
+			_flex.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.MultiColumn;
 		}
 
 		private void _flex_AfterDataRefresh(object sender, System.ComponentModel.ListChangedEventArgs e)
 		{
 			UpdateTotals();
 		}
-		private void _flex_AfterDragColumn(object sender, C1.Win.C1FlexGrid.DragRowColEventArgs e)
+		private void _flex_AfterDragColumn(object sender, C1.Win.FlexGrid.DragRowColEventArgs e)
 		{
 			UpdateTotals();
 		}
@@ -155,12 +155,12 @@ namespace DataIndex
 			_flex.Tree.Column = 1;
 
 			// clear existing totals
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear);
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear);
 
 			// total amounts per product and customer
 			int totalOn = _flex.Cols["Amount"].Index;
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 0, 1, totalOn);
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 1, 2, totalOn);
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 0, 1, totalOn);
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 1, 2, totalOn);
 
 			// update status
 			UpdateStatus();

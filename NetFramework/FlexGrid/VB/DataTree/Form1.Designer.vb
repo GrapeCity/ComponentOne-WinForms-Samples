@@ -65,7 +65,7 @@ Partial Class Form1
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me._flex.ColumnInfo = "10,1,0,0,0,130,Columns:0{Width:52;Style:""ImageAlign:RightCenter;"";}" & Global.Microsoft.VisualBasic.ChrW(9)
-        Me._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        Me._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
         Me._flex.Location = New System.Drawing.Point(12, 57)
         Me._flex.Name = "_flex"
         Me._flex.Rows.Count = 51
@@ -73,7 +73,7 @@ Partial Class Form1
         Me._flex.Size = New System.Drawing.Size(751, 383)
         Me._flex.StyleInfo = resources.GetString("_flex.StyleInfo")
         Me._flex.TabIndex = 0
-        Me._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Black
+        Me._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2010Black
         '
         'Form1
         '

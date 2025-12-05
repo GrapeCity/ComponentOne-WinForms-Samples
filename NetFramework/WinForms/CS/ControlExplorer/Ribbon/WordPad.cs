@@ -30,7 +30,7 @@ namespace ControlExplorer.Ribbon
             this.InitializeRecentDocumentList();
 
             // handle visual style (why special need?)
-            // C1.Win.C1Themes.C1ThemeController.ApplyThemeToControlTree(c1Ribbon1, MainForm.Theme);
+            // C1.Win.Themes.C1ThemeController.ApplyThemeToControlTree(c1Ribbon1, MainForm.Theme);
 
             // uncomment the next line to save application settings on exit.
             // this.FormClosed += delegate { ControlExplorer.Properties.Settings.Default.Save(); };

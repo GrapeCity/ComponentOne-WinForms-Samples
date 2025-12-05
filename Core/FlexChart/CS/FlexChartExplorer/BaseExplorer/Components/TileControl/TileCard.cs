@@ -1,6 +1,7 @@
 ﻿using BaseExplorer.Core;
 using C1.Win.Themes;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -15,23 +16,28 @@ namespace BaseExplorer.Components
         #endregion
 
         #region Object Model
+        [DefaultValue("")]
         public new string Text
         {
             get { return lblCardName.Text; }
             set { lblCardName.Text = value; }
         }
+
+        [DefaultValue("")]
         public string Description 
         {
             get { return lblDesc.Text; }
             set { lblDesc.Text = value; }
         }
 
+        [DefaultValue(null)]
         public Image Image
         {
             get { return picBox.Image; }
             set { picBox.Image = value; }
         }
 
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverColor
         {
             get
@@ -47,6 +53,7 @@ namespace BaseExplorer.Components
             }
         }
 
+        [DefaultValue("Office365White")]
         public string Theme
         {
             get
@@ -67,9 +74,8 @@ namespace BaseExplorer.Components
             }
         }
 
-
-        public TileGroup TileGroup
-        { get; set; }
+        [DefaultValue(null)]
+        public TileGroup TileGroup { get; set; }
         #endregion
 
         public TileCard()

@@ -30,42 +30,42 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataBinding));
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1DemoDataSet = new ControlExplorer.C1DemoDataSet();
-            this.hdrEmployees = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.navEmployees = new C1.Win.C1InputPanel.InputDataNavigator();
-            this.hdrPersonal = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.lblName = new C1.Win.C1InputPanel.InputLabel();
-            this.txtTitleOfCourtesy = new C1.Win.C1InputPanel.InputTextBox();
-            this.txtFirstName = new C1.Win.C1InputPanel.InputTextBox();
-            this.txtLastName = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblBirthDate = new C1.Win.C1InputPanel.InputLabel();
-            this.dtpBirthDate = new C1.Win.C1InputPanel.InputDatePicker();
-            this.lblNotes = new C1.Win.C1InputPanel.InputLabel();
-            this.txtNotes = new C1.Win.C1InputPanel.InputTextBox();
-            this.imgPhoto = new C1.Win.C1InputPanel.InputImage();
-            this.hdrJobInfo = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.lblTitle = new C1.Win.C1InputPanel.InputLabel();
-            this.txtTitle = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblReportsTo = new C1.Win.C1InputPanel.InputLabel();
-            this.cbReportsTo = new C1.Win.C1InputPanel.InputComboBox();
-            this.lblHireDate = new C1.Win.C1InputPanel.InputLabel();
-            this.dtpHireDate = new C1.Win.C1InputPanel.InputDatePicker();
-            this.hdrAddress = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.lblAddress = new C1.Win.C1InputPanel.InputLabel();
-            this.txtAddress = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblCity = new C1.Win.C1InputPanel.InputLabel();
-            this.txtCity = new C1.Win.C1InputPanel.InputTextBox();
-            this.txtRegion = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblCountry = new C1.Win.C1InputPanel.InputLabel();
-            this.txtCountry = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblPostalCode = new C1.Win.C1InputPanel.InputLabel();
-            this.txtPostalCode = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblHomePhone = new C1.Win.C1InputPanel.InputLabel();
-            this.txtPhone = new C1.Win.C1InputPanel.InputMaskedTextBox();
-            this.lblExtension = new C1.Win.C1InputPanel.InputLabel();
-            this.txtExtension = new C1.Win.C1InputPanel.InputTextBox();
+            this.hdrEmployees = new C1.Win.InputPanel.InputGroupHeader();
+            this.navEmployees = new C1.Win.InputPanel.InputDataNavigator();
+            this.hdrPersonal = new C1.Win.InputPanel.InputGroupHeader();
+            this.lblName = new C1.Win.InputPanel.InputLabel();
+            this.txtTitleOfCourtesy = new C1.Win.InputPanel.InputTextBox();
+            this.txtFirstName = new C1.Win.InputPanel.InputTextBox();
+            this.txtLastName = new C1.Win.InputPanel.InputTextBox();
+            this.lblBirthDate = new C1.Win.InputPanel.InputLabel();
+            this.dtpBirthDate = new C1.Win.InputPanel.InputDatePicker();
+            this.lblNotes = new C1.Win.InputPanel.InputLabel();
+            this.txtNotes = new C1.Win.InputPanel.InputTextBox();
+            this.imgPhoto = new C1.Win.InputPanel.InputImage();
+            this.hdrJobInfo = new C1.Win.InputPanel.InputGroupHeader();
+            this.lblTitle = new C1.Win.InputPanel.InputLabel();
+            this.txtTitle = new C1.Win.InputPanel.InputTextBox();
+            this.lblReportsTo = new C1.Win.InputPanel.InputLabel();
+            this.cbReportsTo = new C1.Win.InputPanel.InputComboBox();
+            this.lblHireDate = new C1.Win.InputPanel.InputLabel();
+            this.dtpHireDate = new C1.Win.InputPanel.InputDatePicker();
+            this.hdrAddress = new C1.Win.InputPanel.InputGroupHeader();
+            this.lblAddress = new C1.Win.InputPanel.InputLabel();
+            this.txtAddress = new C1.Win.InputPanel.InputTextBox();
+            this.lblCity = new C1.Win.InputPanel.InputLabel();
+            this.txtCity = new C1.Win.InputPanel.InputTextBox();
+            this.txtRegion = new C1.Win.InputPanel.InputTextBox();
+            this.lblCountry = new C1.Win.InputPanel.InputLabel();
+            this.txtCountry = new C1.Win.InputPanel.InputTextBox();
+            this.lblPostalCode = new C1.Win.InputPanel.InputLabel();
+            this.txtPostalCode = new C1.Win.InputPanel.InputTextBox();
+            this.lblHomePhone = new C1.Win.InputPanel.InputLabel();
+            this.txtPhone = new C1.Win.InputPanel.InputMaskedTextBox();
+            this.lblExtension = new C1.Win.InputPanel.InputLabel();
+            this.txtExtension = new C1.Win.InputPanel.InputTextBox();
             this.employeesTableAdapter = new ControlExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
@@ -172,14 +172,14 @@
             // 
             // txtTitleOfCourtesy
             // 
-            this.txtTitleOfCourtesy.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.txtTitleOfCourtesy.Break = C1.Win.InputPanel.BreakType.None;
             this.txtTitleOfCourtesy.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "TitleOfCourtesy", true));
             this.txtTitleOfCourtesy.Name = "txtTitleOfCourtesy";
             this.txtTitleOfCourtesy.Width = 50;
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.txtFirstName.Break = C1.Win.InputPanel.BreakType.None;
             this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "FirstName", true));
             this.txtFirstName.Name = "txtFirstName";
             // 
@@ -207,12 +207,12 @@
             // 
             // txtNotes
             // 
-            this.txtNotes.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.txtNotes.Break = C1.Win.InputPanel.BreakType.Column;
             this.txtNotes.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Notes", true));
             this.txtNotes.Height = 75;
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread;
+            this.txtNotes.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Spread;
             this.txtNotes.Width = 260;
             // 
             // imgPhoto
@@ -248,8 +248,8 @@
             // 
             // cbReportsTo
             // 
-            this.cbReportsTo.AutoCompleteMode = C1.Win.C1InputPanel.InputAutoCompleteMode.Suggest;
-            this.cbReportsTo.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.cbReportsTo.AutoCompleteMode = C1.Win.InputPanel.InputAutoCompleteMode.Suggest;
+            this.cbReportsTo.Break = C1.Win.InputPanel.BreakType.Column;
             this.cbReportsTo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.employeesBindingSource, "ReportsTo", true));
             this.cbReportsTo.DataSource = this.employeesBindingSource;
             this.cbReportsTo.DisplayMember = "LastName";
@@ -297,7 +297,7 @@
             // 
             // txtCity
             // 
-            this.txtCity.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.txtCity.Break = C1.Win.InputPanel.BreakType.None;
             this.txtCity.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "City", true));
             this.txtCity.Name = "txtCity";
             // 
@@ -315,7 +315,7 @@
             // 
             // txtCountry
             // 
-            this.txtCountry.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.txtCountry.Break = C1.Win.InputPanel.BreakType.Column;
             this.txtCountry.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Country", true));
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Width = 150;
@@ -377,42 +377,42 @@
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
         private C1DemoDataSet c1DemoDataSet;
         private System.Windows.Forms.BindingSource employeesBindingSource;
         private ControlExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrEmployees;
-        private C1.Win.C1InputPanel.InputDataNavigator navEmployees;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrPersonal;
-        private C1.Win.C1InputPanel.InputLabel lblName;
-        private C1.Win.C1InputPanel.InputTextBox txtLastName;
-        private C1.Win.C1InputPanel.InputTextBox txtFirstName;
-        private C1.Win.C1InputPanel.InputTextBox txtTitle;
-        private C1.Win.C1InputPanel.InputLabel lblTitle;
-        private C1.Win.C1InputPanel.InputTextBox txtTitleOfCourtesy;
-        private C1.Win.C1InputPanel.InputLabel lblBirthDate;
-        private C1.Win.C1InputPanel.InputDatePicker dtpBirthDate;
-        private C1.Win.C1InputPanel.InputLabel lblHireDate;
-        private C1.Win.C1InputPanel.InputDatePicker dtpHireDate;
-        private C1.Win.C1InputPanel.InputLabel lblAddress;
-        private C1.Win.C1InputPanel.InputTextBox txtAddress;
-        private C1.Win.C1InputPanel.InputLabel lblCity;
-        private C1.Win.C1InputPanel.InputTextBox txtCity;
-        private C1.Win.C1InputPanel.InputTextBox txtRegion;
-        private C1.Win.C1InputPanel.InputLabel lblPostalCode;
-        private C1.Win.C1InputPanel.InputTextBox txtPostalCode;
-        private C1.Win.C1InputPanel.InputLabel lblCountry;
-        private C1.Win.C1InputPanel.InputTextBox txtCountry;
-        private C1.Win.C1InputPanel.InputLabel lblHomePhone;
-        private C1.Win.C1InputPanel.InputLabel lblExtension;
-        private C1.Win.C1InputPanel.InputTextBox txtExtension;
-        private C1.Win.C1InputPanel.InputImage imgPhoto;
-        private C1.Win.C1InputPanel.InputLabel lblNotes;
-        private C1.Win.C1InputPanel.InputTextBox txtNotes;
-        private C1.Win.C1InputPanel.InputLabel lblReportsTo;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrJobInfo;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrAddress;
-        private C1.Win.C1InputPanel.InputMaskedTextBox txtPhone;
-        private C1.Win.C1InputPanel.InputComboBox cbReportsTo;
+        private C1.Win.InputPanel.InputGroupHeader hdrEmployees;
+        private C1.Win.InputPanel.InputDataNavigator navEmployees;
+        private C1.Win.InputPanel.InputGroupHeader hdrPersonal;
+        private C1.Win.InputPanel.InputLabel lblName;
+        private C1.Win.InputPanel.InputTextBox txtLastName;
+        private C1.Win.InputPanel.InputTextBox txtFirstName;
+        private C1.Win.InputPanel.InputTextBox txtTitle;
+        private C1.Win.InputPanel.InputLabel lblTitle;
+        private C1.Win.InputPanel.InputTextBox txtTitleOfCourtesy;
+        private C1.Win.InputPanel.InputLabel lblBirthDate;
+        private C1.Win.InputPanel.InputDatePicker dtpBirthDate;
+        private C1.Win.InputPanel.InputLabel lblHireDate;
+        private C1.Win.InputPanel.InputDatePicker dtpHireDate;
+        private C1.Win.InputPanel.InputLabel lblAddress;
+        private C1.Win.InputPanel.InputTextBox txtAddress;
+        private C1.Win.InputPanel.InputLabel lblCity;
+        private C1.Win.InputPanel.InputTextBox txtCity;
+        private C1.Win.InputPanel.InputTextBox txtRegion;
+        private C1.Win.InputPanel.InputLabel lblPostalCode;
+        private C1.Win.InputPanel.InputTextBox txtPostalCode;
+        private C1.Win.InputPanel.InputLabel lblCountry;
+        private C1.Win.InputPanel.InputTextBox txtCountry;
+        private C1.Win.InputPanel.InputLabel lblHomePhone;
+        private C1.Win.InputPanel.InputLabel lblExtension;
+        private C1.Win.InputPanel.InputTextBox txtExtension;
+        private C1.Win.InputPanel.InputImage imgPhoto;
+        private C1.Win.InputPanel.InputLabel lblNotes;
+        private C1.Win.InputPanel.InputTextBox txtNotes;
+        private C1.Win.InputPanel.InputLabel lblReportsTo;
+        private C1.Win.InputPanel.InputGroupHeader hdrJobInfo;
+        private C1.Win.InputPanel.InputGroupHeader hdrAddress;
+        private C1.Win.InputPanel.InputMaskedTextBox txtPhone;
+        private C1.Win.InputPanel.InputComboBox cbReportsTo;
     }
 }

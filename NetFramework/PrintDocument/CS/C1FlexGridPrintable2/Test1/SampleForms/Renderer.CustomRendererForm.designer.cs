@@ -38,7 +38,7 @@
             this._btnHeaders = new System.Windows.Forms.Button();
             this._btnSelection = new System.Windows.Forms.Button();
             this._btnHot = new System.Windows.Forms.Button();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,7 +145,7 @@
             this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,95,Columns:0{Width:38;}\t";
             this.c1FlexGrid1.Location = new System.Drawing.Point(113, 11);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
@@ -192,6 +192,6 @@
         private System.Windows.Forms.Button _btnHeaders;
         private System.Windows.Forms.Button _btnSelection;
         private System.Windows.Forms.Button _btnHot;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

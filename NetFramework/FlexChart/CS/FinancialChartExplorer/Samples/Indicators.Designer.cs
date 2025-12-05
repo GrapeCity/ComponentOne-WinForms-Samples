@@ -37,7 +37,7 @@ namespace FinancialChartExplorer.Samples
             this.financialChart2 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1IndicatorType = new C1.Win.C1Input.C1ComboBox();
+            this.c1IndicatorType = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.period = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
@@ -278,7 +278,6 @@ namespace FinancialChartExplorer.Samples
             this.c1IndicatorType.AllowSpinLoop = false;
             this.c1IndicatorType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1IndicatorType.GapHeight = 5;
-            this.c1IndicatorType.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1IndicatorType.Location = new System.Drawing.Point(164, 18);
             this.c1IndicatorType.Name = "c1IndicatorType";
             this.c1IndicatorType.Size = new System.Drawing.Size(259, 37);
@@ -301,8 +300,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // period
             // 
-            this.period.GapHeight = 0;
-            this.period.ImagePadding = new System.Windows.Forms.Padding(0);
             this.period.Location = new System.Drawing.Point(524, 18);
             this.period.Minimum = 1;
             this.period.Name = "period";
@@ -315,7 +312,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.period.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.period.ValueChanged += new System.EventHandler(this.period_ValueChanged_1);
             // 
             // label3
@@ -332,8 +328,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudFastPeriod
             // 
-            this.nudFastPeriod.GapHeight = 0;
-            this.nudFastPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudFastPeriod.Location = new System.Drawing.Point(731, 18);
             this.nudFastPeriod.Minimum = 2;
             this.nudFastPeriod.Name = "nudFastPeriod";
@@ -346,7 +340,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudFastPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudFastPeriod.ValueChanged += new System.EventHandler(this.nudFastPeriod_ValueChanged_1);
             // 
             // label4
@@ -363,8 +356,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudSlowPeriod
             // 
-            this.nudSlowPeriod.GapHeight = 0;
-            this.nudSlowPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudSlowPeriod.Location = new System.Drawing.Point(154, 62);
             this.nudSlowPeriod.Minimum = 2;
             this.nudSlowPeriod.Name = "nudSlowPeriod";
@@ -377,7 +368,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudSlowPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudSlowPeriod.ValueChanged += new System.EventHandler(this.nudSlowPeriod_ValueChanged_1);
             // 
             // label5
@@ -394,8 +384,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudMacdSignalSmoothingPeriod
             // 
-            this.nudMacdSignalSmoothingPeriod.GapHeight = 0;
-            this.nudMacdSignalSmoothingPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudMacdSignalSmoothingPeriod.Location = new System.Drawing.Point(490, 62);
             this.nudMacdSignalSmoothingPeriod.Minimum = 2;
             this.nudMacdSignalSmoothingPeriod.Name = "nudMacdSignalSmoothingPeriod";
@@ -408,7 +396,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudMacdSignalSmoothingPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudMacdSignalSmoothingPeriod.ValueChanged += new System.EventHandler(this.nudMacdSignalSmoothingPeriod_ValueChanged_1);
             // 
             // label6
@@ -425,8 +412,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudKPeriod
             // 
-            this.nudKPeriod.GapHeight = 0;
-            this.nudKPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudKPeriod.Location = new System.Drawing.Point(671, 62);
             this.nudKPeriod.Minimum = 2;
             this.nudKPeriod.Name = "nudKPeriod";
@@ -439,7 +424,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudKPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudKPeriod.ValueChanged += new System.EventHandler(this.nudKPeriod_ValueChanged_1);
             // 
             // label7
@@ -456,8 +440,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudDPeriod
             // 
-            this.nudDPeriod.GapHeight = 0;
-            this.nudDPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudDPeriod.Location = new System.Drawing.Point(123, 106);
             this.nudDPeriod.Minimum = 2;
             this.nudDPeriod.Name = "nudDPeriod";
@@ -470,7 +452,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudDPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudDPeriod.ValueChanged += new System.EventHandler(this.nudDPeriod_ValueChanged_1);
             // 
             // label8
@@ -487,8 +468,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudStochasticSmoothingPeriod
             // 
-            this.nudStochasticSmoothingPeriod.GapHeight = 0;
-            this.nudStochasticSmoothingPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudStochasticSmoothingPeriod.Location = new System.Drawing.Point(459, 106);
             this.nudStochasticSmoothingPeriod.Minimum = 2;
             this.nudStochasticSmoothingPeriod.Name = "nudStochasticSmoothingPeriod";
@@ -501,7 +480,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudStochasticSmoothingPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudStochasticSmoothingPeriod.ValueChanged += new System.EventHandler(this.nudStochasticSmoothingPeriod_ValueChanged);
             // 
             // Indicators
@@ -545,7 +523,7 @@ namespace FinancialChartExplorer.Samples
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private C1.Win.C1Input.C1ComboBox c1IndicatorType;
+        private C1.Win.Input.C1ComboBox c1IndicatorType;
         private C1NumericEditEx period;
         private C1NumericEditEx nudFastPeriod;
         private C1NumericEditEx nudSlowPeriod;

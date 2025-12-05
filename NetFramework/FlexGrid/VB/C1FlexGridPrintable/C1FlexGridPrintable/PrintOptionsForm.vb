@@ -6,7 +6,7 @@ Imports System.Windows.Forms
 
 Imports C1.C1Preview
 
-Namespace C1.Win.C1FlexGrid
+Namespace C1.Win.FlexGrid
     ''' <summary>
     ''' Provides UI for printing, exporting or previewing C1FlexGridPrintable.
     ''' </summary>

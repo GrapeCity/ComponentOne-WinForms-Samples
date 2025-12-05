@@ -30,25 +30,25 @@ namespace DashboardWinForms
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings7 = new C1.Win.C1Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings7 = new C1.Win.Themes.C1MaterialThemeSettings();
             C1.DataEngine.Workspace workspace2 = C1.Win.FlexPivot.C1FlexPivotPanel.CreateWorkspace();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analysis));
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings8 = new C1.Win.C1Themes.C1MaterialThemeSettings();
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings9 = new C1.Win.C1Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings8 = new C1.Win.Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings9 = new C1.Win.Themes.C1MaterialThemeSettings();
             C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings10 = new C1.Win.C1Themes.C1MaterialThemeSettings();
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings11 = new C1.Win.C1Themes.C1MaterialThemeSettings();
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings12 = new C1.Win.C1Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings10 = new C1.Win.Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings11 = new C1.Win.Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings12 = new C1.Win.Themes.C1MaterialThemeSettings();
             this.OlapPanel = new C1.Win.FlexPivot.C1FlexPivotPanel();
             this.OlapGrid = new C1.Win.FlexPivot.C1FlexPivotGrid();
             this.Map = new C1.Win.Map.C1Map();
-            this.c1SplitContainerMain = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanelGrid = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitContainerMain = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanelGrid = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.chartOpportunities = new C1.Win.Chart.FlexChart();
             this.labProdWise = new System.Windows.Forms.Label();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.dfOlap = new C1.Win.DataFilter.C1DataFilter();
             ((System.ComponentModel.ISupportInitialize)(this.OlapPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OlapGrid)).BeginInit();
@@ -84,19 +84,19 @@ namespace DashboardWinForms
             // 
             // OlapGrid
             // 
-            this.OlapGrid.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
-            this.OlapGrid.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Default;
+            this.OlapGrid.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
+            this.OlapGrid.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Default;
             this.OlapGrid.BackColor = System.Drawing.Color.White;
-            this.OlapGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.OlapGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.OlapGrid.ColumnInfo = resources.GetString("OlapGrid.ColumnInfo");
             this.OlapGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OlapGrid.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.OlapGrid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.OlapGrid.Font = new System.Drawing.Font("Segoe UI", 11.5F);
             this.OlapGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.OlapGrid.Location = new System.Drawing.Point(0, 0);
             this.OlapGrid.Name = "OlapGrid";
             this.OlapGrid.Rows.DefaultSize = 37;
-            this.OlapGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.OlapGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.OlapGrid.Size = new System.Drawing.Size(434, 542);
             this.OlapGrid.StyleInfo = resources.GetString("OlapGrid.StyleInfo");
             this.OlapGrid.SubtotalBackground = System.Drawing.Color.Empty;
@@ -107,7 +107,7 @@ namespace DashboardWinForms
             c1MaterialThemeSettings8.SecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
             this.c1ThemeController1.SetThemeSettings(this.OlapGrid, c1MaterialThemeSettings8);
             this.OlapGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
-            this.OlapGrid.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+            this.OlapGrid.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
             // 
             // Map
             // 
@@ -208,7 +208,7 @@ namespace DashboardWinForms
             // 
             this.c1SplitterPanelGrid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.c1SplitterPanelGrid.Controls.Add(this.OlapGrid);
-            this.c1SplitterPanelGrid.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanelGrid.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanelGrid.Location = new System.Drawing.Point(0, 0);
             this.c1SplitterPanelGrid.Name = "c1SplitterPanel2";
             this.c1SplitterPanelGrid.Size = new System.Drawing.Size(434, 542);
@@ -376,12 +376,12 @@ namespace DashboardWinForms
         private C1.Win.FlexPivot.C1FlexPivotPanel OlapPanel;
         private C1.Win.FlexPivot.C1FlexPivotGrid OlapGrid;
         private C1.Win.Map.C1Map Map;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainerMain;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanelGrid;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainerMain;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanelGrid;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
         private C1.Win.Chart.FlexChart chartOpportunities;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Label labProdWise;
         private C1.Win.DataFilter.C1DataFilter dfOlap;
     }

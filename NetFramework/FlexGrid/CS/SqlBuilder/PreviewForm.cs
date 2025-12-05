@@ -24,7 +24,7 @@ namespace SqlBuilder
 	/// </summary>
 	public class PreviewForm : System.Windows.Forms.Form
 	{
-		public C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		public C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.StatusBar _status;
 		/// <summary>
 		/// Required designer variable.
@@ -65,7 +65,7 @@ namespace SqlBuilder
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._status = new System.Windows.Forms.StatusBar();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
@@ -73,7 +73,7 @@ namespace SqlBuilder
 			// _flex
 			// 
 			this._flex.AllowEditing = false;
-			this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+			this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
 			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:23;}\t";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._flex.Name = "_flex";

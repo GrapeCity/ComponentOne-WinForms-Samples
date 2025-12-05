@@ -458,7 +458,7 @@
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxRangeSelector;
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxCondition;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        //private C1.Win.C1SuperTooltip.SuperTooltip superTooltip;
+        //private C1.Win.SuperTooltip.SuperTooltip superTooltip;
     }
 }
 

@@ -19,7 +19,7 @@ using System.Globalization;
 
 using C1.Report;
 using NSD = C1.Win.Interop;
-using Doc = C1.Win.C1Document;
+using Doc = C1.Win.Document;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

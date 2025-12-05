@@ -29,7 +29,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
@@ -37,7 +37,7 @@ Public Class Form1
     Friend WithEvents DataSet11 As CustomSorting.DataSet1
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection
@@ -122,7 +122,7 @@ Public Class Form1
         ' we're going to handle the sorting ourselves in the grids headclick event
         Me.C1TrueDBGrid1.AllowSort = False
 
-        Dim dc As C1.Win.C1TrueDBGrid.C1DisplayColumn
+        Dim dc As C1.Win.TrueDBGrid.C1DisplayColumn
         For Each dc In Me.C1TrueDBGrid1.Splits(0).DisplayColumns
             ' make the column headers act like buttons
             dc.ButtonHeader = True
@@ -139,9 +139,9 @@ Public Class Form1
 
     End Sub
 
-    Private Sub C1TrueDBGrid1_HeadClick(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.ColEventArgs) Handles C1TrueDBGrid1.HeadClick
+    Private Sub C1TrueDBGrid1_HeadClick(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.ColEventArgs) Handles C1TrueDBGrid1.HeadClick
         ' get the display column that was clicked
-        Dim dc As C1.Win.C1TrueDBGrid.C1DisplayColumn = Me.C1TrueDBGrid1.Splits(0).DisplayColumns(e.ColIndex)
+        Dim dc As C1.Win.TrueDBGrid.C1DisplayColumn = Me.C1TrueDBGrid1.Splits(0).DisplayColumns(e.ColIndex)
 
         ' new sort order
         Dim newsort As SortDir = SortDir.None
@@ -153,7 +153,7 @@ Public Class Form1
         End Select
 
         ' clear all sort states and our sort indicators
-        Dim col As C1.Win.C1TrueDBGrid.C1DisplayColumn
+        Dim col As C1.Win.TrueDBGrid.C1DisplayColumn
         For Each col In Me.C1TrueDBGrid1.Splits(0).DisplayColumns
             col.DataColumn.Tag = SortDir.None
             col.HeadingStyle.ForegroundImage = Nothing
@@ -175,7 +175,7 @@ Public Class Form1
         Else
             dc.HeadingStyle.ForegroundImage = Me._sortdn
         End If ' indicators go to the right of text
-        dc.HeadingStyle.ForeGroundPicturePosition = C1.Win.C1TrueDBGrid.ForeGroundPicturePositionEnum.RightOfText
+        dc.HeadingStyle.ForeGroundPicturePosition = C1.Win.TrueDBGrid.ForeGroundPicturePositionEnum.RightOfText
 
     End Sub
 

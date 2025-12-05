@@ -13,7 +13,7 @@ using System.Drawing;
 using System.Linq;
 using C1.Document;
 using C1.Win.C1Input;
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.Localization;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Controls.Background.BackgroundEditor.GradientEditors;

@@ -12,7 +12,7 @@ namespace Tutorial_20
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
@@ -62,7 +62,7 @@ namespace Tutorial_20
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsCustomers1 = new Tutorial_20.DsCustomers();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -86,14 +86,14 @@ namespace Tutorial_20
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 48);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(432, 296);
@@ -172,7 +172,7 @@ namespace Tutorial_20
 				"\"Style5\" me=\"Style41\" /><GroupHeaderStyle parent=\"Style1\" me=\"Style57\" /><GroupF" +
 				"ooterStyle parent=\"Style1\" me=\"Style56\" /><Visible>True</Visible><ColumnDivider>" +
 				"DarkGray,Single</ColumnDivider><Height>15</Height><DCIdx>6</DCIdx></C1DisplayCol" +
-				"umn></internalCols></C1.Win.C1TrueDBGrid.MergeView></Splits><NamedStyles><Style " +
+				"umn></internalCols></C1.Win.TrueDBGrid.MergeView></Splits><NamedStyles><Style " +
 				"parent=\"\" me=\"Normal\" /><Style parent=\"Normal\" me=\"Heading\" /><Style parent=\"Hea" +
 				"ding\" me=\"Footer\" /><Style parent=\"Heading\" me=\"Caption\" /><Style parent=\"Headin" +
 				"g\" me=\"Inactive\" /><Style parent=\"Normal\" me=\"Selected\" /><Style parent=\"Normal\"" +
@@ -320,7 +320,7 @@ namespace Tutorial_20
 			{
 				this.oleDbConnection1.ConnectionString = GetModifiedConnectionString(this.oleDbConnection1.ConnectionString);
 				oleDbDataAdapter1.Fill(dsCustomers1);
-				c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal;
+				c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal;
 				comboBox1.SelectedIndex = 0;
 			}
 			catch(System.Exception eLoad)
@@ -335,27 +335,27 @@ namespace Tutorial_20
 			{
 				case 0:
 				{
-					c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal;
+					c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal;
 					break;
 				}
 				case 1:
 				{
-					c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Inverted;
+					c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Inverted;
 					break;
 				}
 				case 2:
 				{
-					c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Form;
+					c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Form;
 					break;
 				}
 				case 3:
 				{
-					c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy;
+					c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy;
 					break;
 				}
 				case 4:
 				{
-					c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.MultipleLines;
+					c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.MultipleLines;
 					break;
 				} 
 				case 5:

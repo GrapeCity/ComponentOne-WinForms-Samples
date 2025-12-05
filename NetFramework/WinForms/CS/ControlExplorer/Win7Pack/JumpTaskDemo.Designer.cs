@@ -42,7 +42,7 @@
             C1.Win.C1Win7Pack.C1JumpTask c1JumpTask6 = new C1.Win.C1Win7Pack.C1JumpTask();
             this.signInDialog = new C1.Win.C1Win7Pack.C1TaskDialog(this.components);
             this.taskbarButton = new C1.Win.C1Win7Pack.C1TaskbarButton(this.components);
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -143,6 +143,6 @@
         private C1.Win.C1Win7Pack.C1TaskDialog signInDialog;
         private C1.Win.C1Win7Pack.C1TaskbarButton taskbarButton;
         private System.Windows.Forms.Button button1;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
     }
 }

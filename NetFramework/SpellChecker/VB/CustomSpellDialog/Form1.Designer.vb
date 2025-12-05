@@ -28,7 +28,7 @@ Partial Class Form1
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip
         Me.status = New System.Windows.Forms.ToolStripStatusLabel
-        Me.C1SpellChecker1 = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
+        Me.C1SpellChecker1 = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
         Me.Button1 = New System.Windows.Forms.Button
         Me.Button2 = New System.Windows.Forms.Button
         Me.StatusStrip1.SuspendLayout()
@@ -110,7 +110,7 @@ Partial Class Form1
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
-    Friend WithEvents C1SpellChecker1 As C1.Win.C1SpellChecker.C1SpellChecker
+    Friend WithEvents C1SpellChecker1 As C1.Win.SpellChecker.C1SpellChecker
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Private WithEvents status As System.Windows.Forms.ToolStripStatusLabel

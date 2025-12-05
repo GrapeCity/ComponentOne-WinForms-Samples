@@ -176,6 +176,7 @@ namespace FlexReportDesignerApp.Controls
             OnSelectionChanged();
         }
 
+        [DefaultValue("")]
         public string Settings
         {
             get

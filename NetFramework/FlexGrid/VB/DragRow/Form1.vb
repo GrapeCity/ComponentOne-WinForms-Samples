@@ -4,7 +4,7 @@ Imports System.Drawing
 Imports System.Windows.Forms
 Imports System.Collections
 Imports System.ComponentModel
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -37,11 +37,11 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents _flexLeft As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents _flexRight As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flexLeft As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents _flexRight As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me._flexLeft = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me._flexRight = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flexLeft = New C1.Win.FlexGrid.C1FlexGrid()
+        Me._flexRight = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flexLeft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._flexRight, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,7 +52,7 @@ Public Class Form1
         Me._flexLeft.Location = New System.Drawing.Point(7, 8)
         Me._flexLeft.Name = "_flexLeft"
         Me._flexLeft.Size = New System.Drawing.Size(329, 242)
-        Me._flexLeft.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flexLeft.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -69,7 +69,7 @@ Public Class Form1
         Me._flexRight.Location = New System.Drawing.Point(343, 8)
         Me._flexRight.Name = "_flexRight"
         Me._flexRight.Size = New System.Drawing.Size(329, 242)
-        Me._flexRight.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flexRight.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -125,7 +125,7 @@ Public Class Form1
 
     Dim _src As C1FlexGrid = Nothing
 
-    Private Sub _flex_BeforeMouseDown(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.BeforeMouseDownEventArgs) Handles _flexLeft.BeforeMouseDown, _flexRight.BeforeMouseDown
+    Private Sub _flex_BeforeMouseDown(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.BeforeMouseDownEventArgs) Handles _flexLeft.BeforeMouseDown, _flexRight.BeforeMouseDown
         'start dragging when the user clicks the row headers
         Dim flex As C1FlexGrid = CType(sender, C1FlexGrid)
         Dim hti As HitTestInfo = flex.HitTest(e.X, e.Y)

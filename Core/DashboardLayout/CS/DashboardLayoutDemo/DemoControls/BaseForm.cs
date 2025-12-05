@@ -21,8 +21,10 @@ namespace DashboardLayoutDemo.Controls
 
         #region Properties
 
+        [DefaultValue(ToolIconAppearance.None)]
         public ToolIconAppearance ToolIconAppearance { get; set; }
 
+        [DefaultValue(LayoutType.Split)]
         public LayoutType LayoutType
         {
             get { return _layoutType; }

@@ -85,362 +85,361 @@ namespace CreatePdf
 			base.Dispose(disposing);
 		}
 
-		#region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.status1 = new System.Windows.Forms.StatusStrip();
-            this.statusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.status1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+        #region Windows Form Designer generated code
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
+            button1 = new Button();
+            label1 = new Label();
+            button2 = new Button();
+            label2 = new Label();
+            status1 = new StatusStrip();
+            statusLabel1 = new ToolStripStatusLabel();
+            button3 = new Button();
+            label3 = new Label();
+            button4 = new Button();
+            label4 = new Label();
+            button5 = new Button();
+            label5 = new Label();
+            pictureBox1 = new PictureBox();
+            button6 = new Button();
+            label6 = new Label();
+            button8 = new Button();
+            label8 = new Label();
+            _c1pdf = new C1.Win.Pdf.C1PdfDocument();
+            button9 = new Button();
+            label9 = new Label();
+            label10 = new Label();
+            button10 = new Button();
+            label7 = new Label();
+            button7 = new Button();
+            status1.SuspendLayout();
+            ((ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.Location = new System.Drawing.Point(14, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 59);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Quotes";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.BackColor = Color.LightSteelBlue;
+            button1.Location = new Point(19, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(326, 79);
+            button1.TabIndex = 0;
+            button1.Text = "Quotes";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(274, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(465, 59);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Create a document with quotations from www.quoteland.com. Shows DrawString, Measu" +
-    "reString, NewPage. (** requires web connection **)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label1.BackColor = SystemColors.Control;
+            label1.Location = new Point(365, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(368, 79);
+            label1.TabIndex = 1;
+            label1.Text = "Create a document with quotations from www.quoteland.com. Shows DrawString, MeasureString, NewPage. (** requires web connection **)";
+            label1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button2.Location = new System.Drawing.Point(14, 74);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(245, 59);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "NorthWind Tables";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.BackColor = Color.LightSteelBlue;
+            button2.Location = new Point(19, 99);
+            button2.Name = "button2";
+            button2.Size = new Size(326, 78);
+            button2.TabIndex = 0;
+            button2.Text = "NorthWind Tables";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(274, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(465, 59);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Create a document with NorthWind information. Shows how to do tables with indenta" +
-    "tion and alignment.";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label2.BackColor = SystemColors.Control;
+            label2.Location = new Point(365, 99);
+            label2.Name = "label2";
+            label2.Size = new Size(368, 78);
+            label2.TabIndex = 1;
+            label2.Text = "Create a document with NorthWind information. Shows how to do tables with indentation and alignment.";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // status1
             // 
-            this.status1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.status1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statusLabel1});
-            this.status1.Location = new System.Drawing.Point(0, 616);
-            this.status1.Name = "status1";
-            this.status1.Size = new System.Drawing.Size(757, 32);
-            this.status1.SizingGrip = false;
-            this.status1.TabIndex = 2;
+            status1.ImageScalingSize = new Size(24, 24);
+            status1.Items.AddRange(new ToolStripItem[] { statusLabel1 });
+            status1.Location = new Point(0, 606);
+            status1.Name = "status1";
+            status1.Size = new Size(757, 42);
+            status1.SizingGrip = false;
+            status1.TabIndex = 2;
             // 
             // statusLabel1
             // 
-            this.statusLabel1.Name = "statusLabel1";
-            this.statusLabel1.Size = new System.Drawing.Size(64, 25);
-            this.statusLabel1.Text = "Ready.";
+            statusLabel1.Name = "statusLabel1";
+            statusLabel1.Size = new Size(83, 32);
+            statusLabel1.Text = "Ready.";
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button3.Location = new System.Drawing.Point(14, 133);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(245, 59);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Images";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.BackColor = Color.LightSteelBlue;
+            button3.Location = new Point(19, 177);
+            button3.Name = "button3";
+            button3.Size = new Size(326, 79);
+            button3.TabIndex = 0;
+            button3.Text = "Images";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(274, 133);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(465, 59);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Create a document with several images, saves into high and low-quality Pdfs. Show" +
-    "s the effect of the ImageQuality property.";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label3.BackColor = SystemColors.Control;
+            label3.Location = new Point(365, 177);
+            label3.Name = "label3";
+            label3.Size = new Size(368, 79);
+            label3.TabIndex = 1;
+            label3.Text = "Create a document with several images, saves into high and low-quality Pdfs. Shows the effect of the ImageQuality property.";
+            label3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button4.Location = new System.Drawing.Point(14, 192);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(245, 59);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Image Alignment";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.BackColor = Color.LightSteelBlue;
+            button4.Location = new Point(19, 256);
+            button4.Name = "button4";
+            button4.Size = new Size(326, 79);
+            button4.TabIndex = 0;
+            button4.Text = "Image Alignment";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(274, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(465, 59);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Create a document that shows more image alignment settings.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label4.BackColor = SystemColors.Control;
+            label4.Location = new Point(365, 256);
+            label4.Name = "label4";
+            label4.Size = new Size(368, 79);
+            label4.TabIndex = 1;
+            label4.Text = "Create a document that shows more image alignment settings.";
+            label4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button5.Location = new System.Drawing.Point(14, 251);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(245, 59);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Fonts, fonts";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.BackColor = Color.LightSteelBlue;
+            button5.Location = new Point(19, 335);
+            button5.Name = "button5";
+            button5.Size = new Size(326, 78);
+            button5.TabIndex = 4;
+            button5.Text = "Fonts, fonts";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(274, 251);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(465, 59);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Create a document containing all fonts installed in the computer.";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label5.BackColor = SystemColors.Control;
+            label5.Location = new Point(365, 335);
+            label5.Name = "label5";
+            label5.Size = new Size(368, 78);
+            label5.TabIndex = 1;
+            label5.Text = "Create a document containing all fonts installed in the computer.";
+            label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(16, 16);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            pictureBox1.Visible = false;
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button6.Location = new System.Drawing.Point(14, 310);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(245, 59);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Page Sizes";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            button6.BackColor = Color.LightSteelBlue;
+            button6.Location = new Point(19, 413);
+            button6.Name = "button6";
+            button6.Size = new Size(326, 79);
+            button6.TabIndex = 4;
+            button6.Text = "Page Sizes";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(274, 310);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(465, 59);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Create a document containing multiple page sizes and orientations.";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label6.BackColor = SystemColors.Control;
+            label6.Location = new Point(365, 413);
+            label6.Name = "label6";
+            label6.Size = new Size(368, 79);
+            label6.TabIndex = 1;
+            label6.Text = "Create a document containing multiple page sizes and orientations.";
+            label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button8.Location = new System.Drawing.Point(14, 369);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(245, 59);
-            this.button8.TabIndex = 4;
-            this.button8.Text = "Table of Contents";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            button8.BackColor = Color.LightSteelBlue;
+            button8.Location = new Point(19, 492);
+            button8.Name = "button8";
+            button8.Size = new Size(326, 79);
+            button8.TabIndex = 4;
+            button8.Text = "Table of Contents";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(274, 369);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(465, 59);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Create a document with a Table of Contents. Shows how to move pages within the do" +
-    "cument.";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label8.BackColor = SystemColors.Control;
+            label8.Location = new Point(365, 492);
+            label8.Name = "label8";
+            label8.Size = new Size(368, 79);
+            label8.TabIndex = 1;
+            label8.Text = "Create a document with a Table of Contents. Shows how to move pages within the document.";
+            label8.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // _c1pdf
             // 
-            this._c1pdf.DocumentInfo.Author = "";
-            this._c1pdf.DocumentInfo.CreationDate = new System.DateTime(((long)(0)));
-            this._c1pdf.DocumentInfo.Creator = "";
-            this._c1pdf.DocumentInfo.Keywords = "";
-            this._c1pdf.DocumentInfo.Producer = "ComponentOne C1Pdf";
-            this._c1pdf.DocumentInfo.Subject = "";
-            this._c1pdf.DocumentInfo.Title = "";
-            this._c1pdf.PdfVersion = "1.3";
-            this._c1pdf.RefDC = null;
-            this._c1pdf.RotateAngle = 0F;
-            this._c1pdf.UseFontShaping = true;
+            _c1pdf.ClipRectPath = (RectangleF)resources.GetObject("_c1pdf.ClipRectPath");
+            _c1pdf.CurrentFontIndex = 0;
+            _c1pdf.CustomCallback = null;
+            _c1pdf.DocumentInfo.Author = "";
+            _c1pdf.DocumentInfo.CreationDate = new DateTime(0L);
+            _c1pdf.DocumentInfo.Creator = "";
+            _c1pdf.DocumentInfo.Keywords = "";
+            _c1pdf.DocumentInfo.Producer = "ComponentOne C1Pdf";
+            _c1pdf.DocumentInfo.Subject = "";
+            _c1pdf.DocumentInfo.Title = "";
+            _c1pdf.PathState = PdfPathState.None;
+            _c1pdf.PdfVersion = "1.3";
+            _c1pdf.RefDC = null;
+            _c1pdf.RotateAngle = 0F;
+            _c1pdf.StopPathClip = false;
+            _c1pdf.UseFontShaping = true;
+            _c1pdf.ViewerPreferences.DisplayDocTitle = false;
+            _c1pdf.ViewerPreferences.Duplex = C1.Pdf.Duplex.Simplex;
+            _c1pdf.ViewerPreferences.HideWindowUI = false;
+            _c1pdf.ViewerPreferences.NonFullScreenPageMode = PageMode.UseNone;
+            _c1pdf.ViewerPreferences.NumCopies = 0;
+            _c1pdf.ViewerPreferences.PickTrayByPDFSize = null;
+            _c1pdf.ViewerPreferences.PrintPageRange = "";
+            _c1pdf.ViewerPreferences.PrintScaling = PrintScaling.AppDefault;
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button9.Location = new System.Drawing.Point(14, 428);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(245, 59);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "File Attachments";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            button9.BackColor = Color.LightSteelBlue;
+            button9.Location = new Point(19, 571);
+            button9.Name = "button9";
+            button9.Size = new Size(326, 78);
+            button9.TabIndex = 4;
+            button9.Text = "File Attachments";
+            button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(274, 428);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(465, 59);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Create a document with file attachments.";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label9.BackColor = SystemColors.Control;
+            label9.Location = new Point(365, 571);
+            label9.Name = "label9";
+            label9.Size = new Size(368, 78);
+            label9.TabIndex = 1;
+            label9.Text = "Create a document with file attachments.";
+            label9.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.BackColor = System.Drawing.SystemColors.Control;
-            this.label10.Location = new System.Drawing.Point(274, 487);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(465, 59);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Shows how to flows text into columns and pages.";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label10.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label10.BackColor = SystemColors.Control;
+            label10.Location = new Point(365, 649);
+            label10.Name = "label10";
+            label10.Size = new Size(368, 79);
+            label10.TabIndex = 1;
+            label10.Text = "Shows how to flows text into columns and pages.";
+            label10.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button10.Location = new System.Drawing.Point(14, 487);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(245, 59);
-            this.button10.TabIndex = 4;
-            this.button10.Text = "Text Flow";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            button10.BackColor = Color.LightSteelBlue;
+            button10.Location = new Point(19, 649);
+            button10.Name = "button10";
+            button10.Size = new Size(326, 79);
+            button10.TabIndex = 4;
+            button10.Text = "Text Flow";
+            button10.UseVisualStyleBackColor = false;
+            button10.Click += button10_Click;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(274, 546);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(465, 60);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Shows how to position and align text (regular text and Rtf).";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label7.BackColor = SystemColors.Control;
+            label7.Location = new Point(365, 728);
+            label7.Name = "label7";
+            label7.Size = new Size(368, 80);
+            label7.TabIndex = 1;
+            label7.Text = "Shows how to position and align text (regular text and Rtf).";
+            label7.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button7.Location = new System.Drawing.Point(14, 546);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(245, 60);
-            this.button7.TabIndex = 4;
-            this.button7.Text = "Text Position";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            button7.BackColor = Color.LightSteelBlue;
+            button7.Location = new Point(19, 728);
+            button7.Name = "button7";
+            button7.Size = new Size(326, 80);
+            button7.TabIndex = 4;
+            button7.Text = "Text Position";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(9, 24);
-            this.ClientSize = new System.Drawing.Size(757, 648);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.status1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.button7);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C1Pdf Demo";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.status1.ResumeLayout(false);
-            this.status1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleBaseSize = new Size(12, 32);
+            ClientSize = new Size(757, 648);
+            Controls.Add(button5);
+            Controls.Add(pictureBox1);
+            Controls.Add(status1);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(button2);
+            Controls.Add(label2);
+            Controls.Add(button3);
+            Controls.Add(label3);
+            Controls.Add(button4);
+            Controls.Add(label4);
+            Controls.Add(label5);
+            Controls.Add(button6);
+            Controls.Add(label6);
+            Controls.Add(button8);
+            Controls.Add(label8);
+            Controls.Add(button9);
+            Controls.Add(label9);
+            Controls.Add(label10);
+            Controls.Add(button10);
+            Controls.Add(label7);
+            Controls.Add(button7);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "C1Pdf Demo";
+            Load += Form1_Load;
+            status1.ResumeLayout(false);
+            status1.PerformLayout();
+            ((ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
-		}
-		#endregion
+        }
+        #endregion
 
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
-		[STAThread]
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
 		static void Main()
 		{
 			Application.Run(new Form1());
@@ -452,6 +451,7 @@ namespace CreatePdf
 			_rnd = new Random();
 		}
 
+		[DefaultValue("")]
 		internal string StatusText
 		{
 			get { return statusLabel1.Text; }

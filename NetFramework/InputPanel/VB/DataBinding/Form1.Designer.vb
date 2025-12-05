@@ -27,36 +27,36 @@ Partial Class Form1
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.NWINDDataSet = New DataBinding.NWINDDataSet
         Me.EmployeesTableAdapter = New DataBinding.NWINDDataSetTableAdapters.EmployeesTableAdapter
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel
-        Me.InputGroupHeader4 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.InputDataNavigator1 = New C1.Win.C1InputPanel.InputDataNavigator
-        Me.inputGroupHeader1 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel1 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTextBox1 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputTextBox2 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputComboBox2 = New C1.Win.C1InputPanel.InputComboBox
-        Me.inputOption1 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption2 = New C1.Win.C1InputPanel.InputOption
-        Me.inputLabel2 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputDatePicker1 = New C1.Win.C1InputPanel.InputDatePicker
-        Me.inputLabel9 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTimePicker1 = New C1.Win.C1InputPanel.InputTimePicker
-        Me.inputImage1 = New C1.Win.C1InputPanel.InputImage
-        Me.inputGroupHeader2 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel3 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTextBox3 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputLabel4 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputDatePicker2 = New C1.Win.C1InputPanel.InputDatePicker
-        Me.inputLabel5 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputComboBox1 = New C1.Win.C1InputPanel.InputComboBox
-        Me.inputGroupHeader3 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel6 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTextBox5 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputLabel7 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTextBox6 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputTextBox7 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputLabel8 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTextBox8 = New C1.Win.C1InputPanel.InputTextBox
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel
+        Me.InputGroupHeader4 = New C1.Win.InputPanel.InputGroupHeader
+        Me.InputDataNavigator1 = New C1.Win.InputPanel.InputDataNavigator
+        Me.inputGroupHeader1 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel1 = New C1.Win.InputPanel.InputLabel
+        Me.inputTextBox1 = New C1.Win.InputPanel.InputTextBox
+        Me.inputTextBox2 = New C1.Win.InputPanel.InputTextBox
+        Me.inputComboBox2 = New C1.Win.InputPanel.InputComboBox
+        Me.inputOption1 = New C1.Win.InputPanel.InputOption
+        Me.inputOption2 = New C1.Win.InputPanel.InputOption
+        Me.inputLabel2 = New C1.Win.InputPanel.InputLabel
+        Me.inputDatePicker1 = New C1.Win.InputPanel.InputDatePicker
+        Me.inputLabel9 = New C1.Win.InputPanel.InputLabel
+        Me.inputTimePicker1 = New C1.Win.InputPanel.InputTimePicker
+        Me.inputImage1 = New C1.Win.InputPanel.InputImage
+        Me.inputGroupHeader2 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel3 = New C1.Win.InputPanel.InputLabel
+        Me.inputTextBox3 = New C1.Win.InputPanel.InputTextBox
+        Me.inputLabel4 = New C1.Win.InputPanel.InputLabel
+        Me.inputDatePicker2 = New C1.Win.InputPanel.InputDatePicker
+        Me.inputLabel5 = New C1.Win.InputPanel.InputLabel
+        Me.inputComboBox1 = New C1.Win.InputPanel.InputComboBox
+        Me.inputGroupHeader3 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel6 = New C1.Win.InputPanel.InputLabel
+        Me.inputTextBox5 = New C1.Win.InputPanel.InputTextBox
+        Me.inputLabel7 = New C1.Win.InputPanel.InputLabel
+        Me.inputTextBox6 = New C1.Win.InputPanel.InputTextBox
+        Me.inputTextBox7 = New C1.Win.InputPanel.InputTextBox
+        Me.inputLabel8 = New C1.Win.InputPanel.InputLabel
+        Me.inputTextBox8 = New C1.Win.InputPanel.InputTextBox
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NWINDDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -159,14 +159,14 @@ Partial Class Form1
         '
         'inputTextBox1
         '
-        Me.inputTextBox1.Break = C1.Win.C1InputPanel.BreakType.None
+        Me.inputTextBox1.Break = C1.Win.InputPanel.BreakType.None
         Me.inputTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("BoundValue", Me.BindingSource1, "FirstName", True))
         Me.inputTextBox1.Name = "inputTextBox1"
         Me.inputTextBox1.Width = 120
         '
         'inputTextBox2
         '
-        Me.inputTextBox2.Break = C1.Win.C1InputPanel.BreakType.None
+        Me.inputTextBox2.Break = C1.Win.InputPanel.BreakType.None
         Me.inputTextBox2.DataBindings.Add(New System.Windows.Forms.Binding("BoundValue", Me.BindingSource1, "LastName", True))
         Me.inputTextBox2.Name = "inputTextBox2"
         Me.inputTextBox2.Width = 120
@@ -196,20 +196,20 @@ Partial Class Form1
         '
         'inputDatePicker1
         '
-        Me.inputDatePicker1.Break = C1.Win.C1InputPanel.BreakType.None
+        Me.inputDatePicker1.Break = C1.Win.InputPanel.BreakType.None
         Me.inputDatePicker1.DataBindings.Add(New System.Windows.Forms.Binding("BoundValue", Me.BindingSource1, "BirthDate", True))
         Me.inputDatePicker1.Name = "inputDatePicker1"
         '
         'inputLabel9
         '
-        Me.inputLabel9.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel9.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.inputLabel9.Name = "inputLabel9"
         Me.inputLabel9.Text = "Birth Time:"
         Me.inputLabel9.Width = 68
         '
         'inputTimePicker1
         '
-        Me.inputTimePicker1.Break = C1.Win.C1InputPanel.BreakType.Column
+        Me.inputTimePicker1.Break = C1.Win.InputPanel.BreakType.Column
         Me.inputTimePicker1.DataBindings.Add(New System.Windows.Forms.Binding("BoundValue", Me.BindingSource1, "BirthDate", True))
         Me.inputTimePicker1.Name = "inputTimePicker1"
         '
@@ -257,7 +257,7 @@ Partial Class Form1
         '
         'inputComboBox1
         '
-        Me.inputComboBox1.AutoCompleteMode = C1.Win.C1InputPanel.InputAutoCompleteMode.Suggest
+        Me.inputComboBox1.AutoCompleteMode = C1.Win.InputPanel.InputAutoCompleteMode.Suggest
         Me.inputComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.BindingSource1, "ReportsTo", True))
         Me.inputComboBox1.DataSource = Me.BindingSource1
         Me.inputComboBox1.DisplayMember = "LastName"
@@ -285,7 +285,7 @@ Partial Class Form1
         Me.inputTextBox5.Height = 40
         Me.inputTextBox5.Multiline = True
         Me.inputTextBox5.Name = "inputTextBox5"
-        Me.inputTextBox5.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread
+        Me.inputTextBox5.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Spread
         Me.inputTextBox5.Width = 272
         '
         'inputLabel7
@@ -296,7 +296,7 @@ Partial Class Form1
         '
         'inputTextBox6
         '
-        Me.inputTextBox6.Break = C1.Win.C1InputPanel.BreakType.None
+        Me.inputTextBox6.Break = C1.Win.InputPanel.BreakType.None
         Me.inputTextBox6.DataBindings.Add(New System.Windows.Forms.Binding("BoundValue", Me.BindingSource1, "City", True))
         Me.inputTextBox6.Name = "inputTextBox6"
         Me.inputTextBox6.Width = 182
@@ -336,35 +336,35 @@ Partial Class Form1
     Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents NWINDDataSet As DataBinding.NWINDDataSet
     Friend WithEvents EmployeesTableAdapter As DataBinding.NWINDDataSetTableAdapters.EmployeesTableAdapter
-    Private WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Private WithEvents inputGroupHeader1 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel1 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTextBox1 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputTextBox2 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputComboBox2 As C1.Win.C1InputPanel.InputComboBox
-    Private WithEvents inputOption1 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption2 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputLabel2 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputDatePicker1 As C1.Win.C1InputPanel.InputDatePicker
-    Private WithEvents inputLabel9 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTimePicker1 As C1.Win.C1InputPanel.InputTimePicker
-    Private WithEvents inputImage1 As C1.Win.C1InputPanel.InputImage
-    Private WithEvents inputGroupHeader2 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel3 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTextBox3 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputLabel4 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputDatePicker2 As C1.Win.C1InputPanel.InputDatePicker
-    Private WithEvents inputLabel5 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputComboBox1 As C1.Win.C1InputPanel.InputComboBox
-    Private WithEvents inputGroupHeader3 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel6 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTextBox5 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputLabel7 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTextBox6 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputTextBox7 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputLabel8 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTextBox8 As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents InputDataNavigator1 As C1.Win.C1InputPanel.InputDataNavigator
-    Friend WithEvents InputGroupHeader4 As C1.Win.C1InputPanel.InputGroupHeader
+    Private WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Private WithEvents inputGroupHeader1 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel1 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTextBox1 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputTextBox2 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputComboBox2 As C1.Win.InputPanel.InputComboBox
+    Private WithEvents inputOption1 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption2 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputLabel2 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputDatePicker1 As C1.Win.InputPanel.InputDatePicker
+    Private WithEvents inputLabel9 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTimePicker1 As C1.Win.InputPanel.InputTimePicker
+    Private WithEvents inputImage1 As C1.Win.InputPanel.InputImage
+    Private WithEvents inputGroupHeader2 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel3 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTextBox3 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputLabel4 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputDatePicker2 As C1.Win.InputPanel.InputDatePicker
+    Private WithEvents inputLabel5 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputComboBox1 As C1.Win.InputPanel.InputComboBox
+    Private WithEvents inputGroupHeader3 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel6 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTextBox5 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputLabel7 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTextBox6 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputTextBox7 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputLabel8 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTextBox8 As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents InputDataNavigator1 As C1.Win.InputPanel.InputDataNavigator
+    Friend WithEvents InputGroupHeader4 As C1.Win.InputPanel.InputGroupHeader
 
 End Class

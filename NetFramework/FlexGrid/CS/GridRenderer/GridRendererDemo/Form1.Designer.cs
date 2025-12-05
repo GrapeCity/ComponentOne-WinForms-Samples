@@ -30,14 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this._pgDesignTime = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.c1FlexGrid5 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGrid4 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGrid3 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGrid2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid5 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGrid4 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGrid3 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGrid2 = new C1.Win.FlexGrid.C1FlexGrid();
             this._pgRunTime = new System.Windows.Forms.TabPage();
             this._btnEditRenderer = new System.Windows.Forms.Button();
             this.gridRenderer1 = new GridRenderer.GridRenderer(this.components);
@@ -58,14 +59,14 @@
             this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this.c1FlexGrid1.Location = new System.Drawing.Point(8, 6);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 17;
             this.c1FlexGrid1.Size = new System.Drawing.Size(562, 332);
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // tabControl1
             // 
@@ -110,7 +111,7 @@
             // 
             // c1FlexGrid5
             // 
-            this.c1FlexGrid5.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid5.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid5.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this.c1FlexGrid5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid5.Location = new System.Drawing.Point(333, 186);
@@ -119,11 +120,11 @@
             this.c1FlexGrid5.Rows.DefaultSize = 17;
             this.c1FlexGrid5.Size = new System.Drawing.Size(324, 178);
             this.c1FlexGrid5.TabIndex = 4;
-            this.c1FlexGrid5.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexGrid5.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // c1FlexGrid4
             // 
-            this.c1FlexGrid4.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid4.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid4.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this.c1FlexGrid4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid4.Location = new System.Drawing.Point(333, 3);
@@ -132,11 +133,11 @@
             this.c1FlexGrid4.Rows.DefaultSize = 17;
             this.c1FlexGrid4.Size = new System.Drawing.Size(324, 177);
             this.c1FlexGrid4.TabIndex = 3;
-            this.c1FlexGrid4.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexGrid4.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // c1FlexGrid3
             // 
-            this.c1FlexGrid3.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid3.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid3.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this.c1FlexGrid3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid3.Location = new System.Drawing.Point(3, 186);
@@ -145,11 +146,11 @@
             this.c1FlexGrid3.Rows.DefaultSize = 17;
             this.c1FlexGrid3.Size = new System.Drawing.Size(324, 178);
             this.c1FlexGrid3.TabIndex = 2;
-            this.c1FlexGrid3.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexGrid3.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // c1FlexGrid2
             // 
-            this.c1FlexGrid2.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid2.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid2.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this.c1FlexGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid2.Location = new System.Drawing.Point(3, 3);
@@ -158,7 +159,7 @@
             this.c1FlexGrid2.Rows.DefaultSize = 17;
             this.c1FlexGrid2.Size = new System.Drawing.Size(324, 177);
             this.c1FlexGrid2.TabIndex = 1;
-            this.c1FlexGrid2.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexGrid2.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _pgRunTime
             // 
@@ -215,16 +216,16 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage _pgRunTime;
         private System.Windows.Forms.Button _btnEditRenderer;
         private System.Windows.Forms.TabPage _pgDesignTime;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid5;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid4;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid3;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid2;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid5;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid4;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid3;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid2;
         private GridRenderer.GridRenderer gridRenderer1;
         private GridRenderer.GridRenderer gridRenderer2;
     }

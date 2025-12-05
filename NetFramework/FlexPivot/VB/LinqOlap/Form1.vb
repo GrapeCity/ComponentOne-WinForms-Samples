@@ -43,25 +43,25 @@ Namespace LinqFlexPivot
             doc.LoadXml(My.Resources.FlexPivotViews)
 
             ' build menu with default FlexPivot views
-            Dim menuView = New C1.Win.C1Command.C1CommandMenu()
+            Dim menuView = New C1.Win.Command.C1CommandMenu()
             menuView.Text = "&View"
             menuView.Image = My.Resources.Views_small
             For Each nd As System.Xml.XmlNode In doc.SelectNodes("FlexPivotViews/C1FlexPivot")
-                Dim cmd = New C1.Win.C1Command.C1Command()
+                Dim cmd = New C1.Win.Command.C1Command()
                 cmd.Text = nd.Attributes("id").Value
                 cmd.UserData = nd
                 AddHandler cmd.Click, AddressOf MenuView_DropDownItemClicked
-                Dim link = New C1.Win.C1Command.C1CommandLink(cmd)
+                Dim link = New C1.Win.Command.C1CommandLink(cmd)
                 menuView.CommandLinks.Add(link)
             Next nd
 
             ' add the new view menu to the toolstrip
-            Dim menuLink = New C1.Win.C1Command.C1CommandLink(menuView)
+            Dim menuLink = New C1.Win.Command.C1CommandLink(menuView)
             _c1FlexPivotPage.ToolBar.CommandLinks.Insert(3, menuLink)
         End Sub
 
         ' select a predefined FlexPivot view
-        Private Sub MenuView_DropDownItemClicked(ByVal sender As Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+        Private Sub MenuView_DropDownItemClicked(ByVal sender As Object, ByVal e As C1.Win.Command.ClickEventArgs)
             Dim nd = TryCast(e.CallerLink.Command.UserData, System.Xml.XmlNode)
             If nd IsNot Nothing Then
                 _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="PreviewPage.ComponentOneControlPane.Label.Text" xml:space="preserve">
+    <value>C1 Schedule</value>
+    <comment>Label text for the ComponentOne control selection pane, identifying the C1 Schedule control.</comment>
+  </data>
+	<data name="PreviewPage.ViewCulturesPane.Label.Text" xml:space="preserve">
+    <value>Culture Selection</value>
+    <comment>Title text for the culture selection pane within the Preview page.</comment>
+  </data>
+	<data name="PreviewPage.ViewCulturePane.CustomAddedCultures.Label.Text" xml:space="preserve">
+    <value>Custom Added Cultures</value>
+    <comment>Label text for the list box or section displaying cultures that have been manually added by the user.</comment>
+  </data>
+	<data name="PreviewPage.ViewCulturePane.OveridenCultures.Label.Text" xml:space="preserve">
+    <value>Overridden</value>
+    <comment>Label text for the list of cultures whose default resources have been overridden with custom translations.</comment>
+  </data>
+	<data name="PreviewPage.ViewCulturePane.PreSupportedCultures.Label.Text" xml:space="preserve">
+    <value>Pre-Supported Cultures</value>
+    <comment>Label text for the list of cultures that are supported by ComponentOne controls by default.</comment>
+  </data>
+	<data name="Form.TopNavigationBar.Heading.Title.VerticalBar" xml:space="preserve">
+    <value>|</value>
+    <comment>A vertical bar character used as a visual separator in the application's top navigation header.</comment>
+  </data>
+	<data name="ViewSourcePage.ResourceViewerPane.Label.Text" xml:space="preserve">
+    <value>Resource Viewer</value>
+    <comment>Title for the pane that displays the contents of resource files.</comment>
+  </data>
+	<data name="ViewSourcePage.ProjectDirectoryViewerPane.Label.Text" xml:space="preserve">
+    <value>Project Directory Viewer</value>
+    <comment>Title for the pane that displays the project's file and directory structure.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.Label.Text" xml:space="preserve">
+    <value>Instruction List</value>
+    <comment>Section header label for the guide containing localization instructions.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.Title.Text" xml:space="preserve">
+    <value>Add and Customize Localization Resources</value>
+    <comment>Main heading title for the entire localization guide section on the View Source page.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.Intro.Description.Text" xml:space="preserve">
+    <value>Follow the steps below to add and customize localization resources:</value>
+    <comment>Introductory text that precedes the step-by-step instructions in the localization guide.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Title.Text" xml:space="preserve">
+    <value>📁 Resource Files:</value>
+    <comment>Section title introducing the topic of resource files, accompanied by a folder icon emoji.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Bullet1.Text" xml:space="preserve">
+    <value>All localization resource files are available in the official GitHub repository.</value>
+    <comment>First bullet point stating the location of the original resource files.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Bullet2.Text" xml:space="preserve">
+    <value>Each ComponentOne control (e.g., C1 Schedule, FlexGrid, FlexChart) includes culture-specific .resx files.</value>
+    <comment>Second bullet point explaining that each control has its own set of localizable resource files.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Example.Label.Text" xml:space="preserve">
+    <value>Example:</value>
+    <comment>Label text used to introduce an example filename.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Example.FileName.Text" xml:space="preserve">
+    <value>C1.Win.Schedule.Localization.Strings.en.resx (For C1Schedule)</value>
+    <comment>An example resource file name for the C1Schedule control's English strings.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Title.Text" xml:space="preserve">
+    <value>🛠️ Create Your Custom Localization:</value>
+    <comment>Section title for the custom localization steps, accompanied by a tool emoji.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Step1.Text" xml:space="preserve">
+    <value>Copy the existing .resx file from GitHub.</value>
+    <comment>Step 1 instruction: Duplicate a base resource file to use as a starting point.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Step2.Text" xml:space="preserve">
+    <value>Rename it using the desired culture code (e.g. fr for French).</value>
+    <comment>Step 2 instruction: Rename the copied file to match the target culture's naming convention.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Example.Label.Text" xml:space="preserve">
+    <value>Example:</value>
+    <comment>Label text used to introduce an example of a culture-specific filename.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Example.FileName.Text" xml:space="preserve">
+    <value>Strings.fr.resx</value>
+    <comment>An example of a correctly renamed resource file for French culture.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Step3.Text" xml:space="preserve">
+    <value>Edit the resource file and replace values with translated text.</value>
+    <comment>Step 3 instruction: Localize the content by translating the string values in the resource file.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.FinalStep.Title.Text" xml:space="preserve">
+    <value>✅ Final Step:</value>
+    <comment>Section title for the final instructions, accompanied by a checkmark emoji.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.FinalStep.Bullet1.Text" xml:space="preserve">
+    <value>Add the modified file to your project.</value>
+    <comment>First final step: Integrate the new culture resource file into the project.</comment>
+  </data>
+	<data name="ViewSourcePage.LocalizationGuidePane.FinalStep.Bullet2.Text" xml:space="preserve">
+    <value>The control will automatically detect and use your custom localization.</value>
+    <comment>Second final step: Explains that the ComponentOne control will automatically use the new resources.</comment>
+  </data>
+	<data name="Form.TopNavigationBar.ToggleButton.PreviewLabel.Text" xml:space="preserve">
+    <value>Preview</value>
+    <comment>Text for the navigation button that switches the application view to the Preview page.</comment>
+  </data>
+	<data name="Form.TopNavigationBar.Heading.Title.Text" xml:space="preserve">
+    <value>Custom Localization Sample</value>
+    <comment>The main title text displayed in the application's top navigation bar.</comment>
+  </data>
+	<data name="Form.TopNavigationBar.ToggleButton.ViewSourceLabel.Text" xml:space="preserve">
+    <value>View Source</value>
+    <comment>Text for the navigation button that switches the application view to the View Source page.</comment>
+  </data>
+	<data name="Form.TopNavigationBar.Heading.ComponentOneTitle.Text" xml:space="preserve">
+    <value>Component One</value>
+    <comment>Brand name 'Component One' displayed in the top navigation bar.</comment>
+  </data>
+</root>

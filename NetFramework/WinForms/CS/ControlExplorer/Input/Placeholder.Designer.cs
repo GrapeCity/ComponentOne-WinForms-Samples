@@ -44,9 +44,9 @@ namespace ControlExplorer.Input
             this.c1Label3 = new C1.Win.C1Input.C1Label();
             this.c1Label4 = new C1.Win.C1Input.C1Label();
             this.c1Label5 = new C1.Win.C1Input.C1Label();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.c1Label6 = new C1.Win.C1Input.C1Label();
             this.c1Label7 = new C1.Win.C1Input.C1Label();
             this.c1DropDownControl2 = new C1.Win.C1Input.C1DropDownControl();
@@ -259,8 +259,8 @@ namespace ControlExplorer.Input
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.Size = new System.Drawing.Size(785, 439);
             this.c1DockingTab1.TabIndex = 12;
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // c1DockingTabPage1
             // 
@@ -529,9 +529,9 @@ namespace ControlExplorer.Input
         private C1.Win.C1Input.C1Label c1Label3;
         private C1.Win.C1Input.C1Label c1Label4;
         private C1.Win.C1Input.C1Label c1Label5;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
         private C1.Win.C1Input.C1Label c1Label6;
         private C1.Win.C1Input.C1Label c1Label7;
         private C1.Win.C1Input.C1DropDownControl c1DropDownControl2;

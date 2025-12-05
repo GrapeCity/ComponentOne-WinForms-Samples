@@ -12,7 +12,7 @@ namespace Outline
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+		private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
 		/// Required designer variable.
@@ -54,7 +54,7 @@ namespace Outline
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -106,7 +106,7 @@ namespace Outline
 			_flex.Cols.Fixed = 0;
 			_flex.Rows.Count = 1;
 			
-			C1.Win.C1FlexGrid.CellStyle s = _flex.Styles[C1.Win.C1FlexGrid.CellStyleEnum.Subtotal0];
+			C1.Win.FlexGrid.CellStyle s = _flex.Styles[C1.Win.FlexGrid.CellStyleEnum.Subtotal0];
 			s.BackColor = _flex.Styles.Normal.BackColor;
 			s.ForeColor = _flex.Styles.Normal.ForeColor;
 
@@ -127,12 +127,12 @@ namespace Outline
 			_flex.AddItem("Salad\tSpinach");
 
             #region C1FlexGridPrinter
-            _flex.PrintCell += new C1.Win.C1FlexGrid.C1FlexGridPrintable2.PrintCellEventHandler(_flex_PrintCell);
+            _flex.PrintCell += new C1.Win.FlexGrid.C1FlexGridPrintable2.PrintCellEventHandler(_flex_PrintCell);
             #endregion
         }
 
         #region C1FlexGridPrinter
-        void _flex_PrintCell(object sender, C1.Win.C1FlexGrid.C1FlexGridPrintable2.PrintCellEventArgs e)
+        void _flex_PrintCell(object sender, C1.Win.FlexGrid.C1FlexGridPrintable2.PrintCellEventArgs e)
         {
             if (_flex.Rows[e.Row].IsNode && e.Col == _flex.Tree.Column)
             {
@@ -149,11 +149,11 @@ namespace Outline
 
 			// move outline tree to first visible column
 			_flex.Tree.Column = 1;
-			_flex.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.SimpleLeaf;
+			_flex.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.SimpleLeaf;
 
 			// build the outline
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear);
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.None, 0, 0, 0, "{0}");
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear);
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.None, 0, 0, 0, "{0}");
 		}
 	}
 }

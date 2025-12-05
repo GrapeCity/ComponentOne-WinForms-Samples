@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this.btnPrint = new C1.Win.C1Input.C1Button();
             this.lRowsPerPage = new C1.Win.C1Input.C1Label();
             this.lColsPerPage = new C1.Win.C1Input.C1Label();
@@ -159,7 +159,7 @@
         }
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private C1.Win.C1Input.C1Button btnPrint;
         private C1.Win.C1Input.C1Label lRowsPerPage;
         private C1.Win.C1Input.C1Label lColsPerPage;

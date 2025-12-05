@@ -57,6 +57,7 @@ namespace CoolPrintPreview
         /// <summary>
         /// Gets or sets the <see cref="PrintDocument"/> to preview.
         /// </summary>
+        [DefaultValue(null)]
         public PrintDocument Document
         {
             get { return _doc; }

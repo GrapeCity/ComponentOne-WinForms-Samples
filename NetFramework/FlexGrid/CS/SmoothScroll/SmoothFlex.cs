@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SmoothScroll
 {
-    public class SmoothFlex : C1.Win.C1FlexGrid.C1FlexGrid
+    public class SmoothFlex : C1.Win.FlexGrid.C1FlexGrid
     {
         // ** fields
         const double SCROLL_STEP = 0.2;

@@ -53,10 +53,10 @@ namespace SortDataMap
         const string SORT_COL_NAME = "_dtSort";
 
         // column being used as a source for the hidden source column
-        C1.Win.C1FlexGrid.Column _sourceColumn;
+        C1.Win.FlexGrid.Column _sourceColumn;
 
         // apply custom sort (use mapped values instead of raw)
-        void _flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)
+        void _flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
         {
             // if the column contains a data map
             _sourceColumn = _flex.Cols[e.Col];
@@ -82,7 +82,7 @@ namespace SortDataMap
 
                 // apply the new sort
                 var sort = SORT_COL_NAME;
-                if ((e.Order & C1.Win.C1FlexGrid.SortFlags.Descending) != 0)
+                if ((e.Order & C1.Win.FlexGrid.SortFlags.Descending) != 0)
                 {
                     sort += " DESC";
                 }
@@ -94,7 +94,7 @@ namespace SortDataMap
         }
 
         // update sort when user edits the sorted column
-        void _flex_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void _flex_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             // if the user edited the column being sorted on
             if (_flex.Cols[e.Col] == _sourceColumn)

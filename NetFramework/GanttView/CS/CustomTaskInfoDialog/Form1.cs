@@ -15,9 +15,9 @@ namespace CustomTaskInfoDialog
             InitializeComponent();
         }
 
-        private void c1GanttView1_ShowDialog(object sender, C1.Win.C1GanttView.ShowDialogEventArgs e)
+        private void c1GanttView1_ShowDialog(object sender, C1.Win.GanttView.ShowDialogEventArgs e)
         {
-            if (e.DialogType == C1.Win.C1GanttView.DialogType.TaskInfo)
+            if (e.DialogType == C1.Win.GanttView.DialogType.TaskInfo)
             {
                 TaskInfoDialog dlg = new TaskInfoDialog(c1GanttView1);
                 e.Dialog = dlg;

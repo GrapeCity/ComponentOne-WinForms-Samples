@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.Chart;
 using DashboardModel;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 using C1.Win.Layout;
 
 namespace DashboardWinForms

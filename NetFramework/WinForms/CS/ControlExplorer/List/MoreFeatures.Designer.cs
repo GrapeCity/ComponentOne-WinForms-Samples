@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoreFeatures));
-            this.c1List1 = new C1.Win.C1List.C1List();
-            this.c1Combo1 = new C1.Win.C1List.C1Combo();
+            this.c1List1 = new C1.Win.List.C1List();
+            this.c1Combo1 = new C1.Win.List.C1Combo();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -48,7 +48,7 @@
             this.c1List1.AllowVerticalSplit = true;
             this.c1List1.AlternatingRows = true;
             this.c1List1.Caption = "Suppliers";
-            this.c1List1.CellTips = C1.Win.C1List.CellTipEnum.Floating;
+            this.c1List1.CellTips = C1.Win.List.CellTipEnum.Floating;
             this.c1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark;
             this.c1List1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1List1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1List1.Images"))));
@@ -61,8 +61,8 @@
             this.c1List1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1List1.Images7"))));
             this.c1List1.Location = new System.Drawing.Point(0, 57);
             this.c1List1.Margin = new System.Windows.Forms.Padding(5);
-            this.c1List1.MatchCol = C1.Win.C1List.MatchColEnum.AllCols;
-            this.c1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.Standard;
+            this.c1List1.MatchCol = C1.Win.List.MatchColEnum.AllCols;
+            this.c1List1.MatchEntry = C1.Win.List.MatchEntryEnum.Standard;
             this.c1List1.MatchEntryTimeout = ((long)(2000));
             this.c1List1.Name = "c1List1";
             this.c1List1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
@@ -72,13 +72,13 @@
             this.c1List1.PropBag = resources.GetString("c1List1.PropBag");
             this.c1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1List1.ScrollTips = true;
-            this.c1List1.SelectionMode = C1.Win.C1List.SelectionModeEnum.CheckBox;
+            this.c1List1.SelectionMode = C1.Win.List.SelectionModeEnum.CheckBox;
             this.c1List1.ShowHeaderCheckBox = false;
             this.c1List1.Size = new System.Drawing.Size(1045, 533);
             this.c1List1.TabIndex = 0;
             this.c1List1.Text = "c1List1";
-            this.c1List1.UnboundColumnFetch += new C1.Win.C1List.UnboundColumnFetchEventHandler(this.c1List1_UnboundColumnFetch);
-            this.c1List1.FetchScrollTips += new C1.Win.C1List.FetchScrollTipsEventHandler(this.c1List1_FetchScrollTips);
+            this.c1List1.UnboundColumnFetch += new C1.Win.List.UnboundColumnFetchEventHandler(this.c1List1_UnboundColumnFetch);
+            this.c1List1.FetchScrollTips += new C1.Win.List.FetchScrollTipsEventHandler(this.c1List1_FetchScrollTips);
             // 
             // c1Combo1
             // 
@@ -177,8 +177,8 @@
 
         #endregion
 
-        private C1.Win.C1List.C1List c1List1;
-        private C1.Win.C1List.C1Combo c1Combo1;
+        private C1.Win.List.C1List c1List1;
+        private C1.Win.List.C1Combo c1Combo1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;

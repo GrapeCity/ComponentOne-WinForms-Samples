@@ -1,11 +1,11 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
-using System.IO;
+﻿using C1.Chart;
 using C1.Win.Chart;
-using C1.Chart;
 using C1.Win.Themes;
-using System.Diagnostics;
+using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 namespace FlexChartExplorer.Samples
 {
@@ -14,6 +14,7 @@ namespace FlexChartExplorer.Samples
     /// </summary>
     public partial class FlexChartBaseSample : BaseExplorer.Components.BaseSample
     {
+        [DefaultValue(null)]
         public FlexChartBase Chart
         {
             get;

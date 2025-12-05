@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace C1CommandBasedApp
 {

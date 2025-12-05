@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@
 
         }
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
 
         #endregion
     }

@@ -59,11 +59,11 @@ Namespace SqlFilter
 			Dim items = _c1FlexPivotPage.MenuGrid.CommandLinks
 			Dim i As Integer
 			For Each nd As System.Xml.XmlNode In doc.SelectNodes("FlexPivotViews/C1FlexPivot")
-				Dim cmd = New C1.Win.C1Command.C1Command()
+				Dim cmd = New C1.Win.Command.C1Command()
 				cmd.Text = nd.Attributes("id").Value
 				cmd.UserData = nd
 				AddHandler cmd.Click, AddressOf MenuView_DropDownItemClicked
-				Dim link = New C1.Win.C1Command.C1CommandLink(cmd)
+				Dim link = New C1.Win.Command.C1CommandLink(cmd)
 				If (i = 0) Then link.Delimiter = True
 				items.Add(link)
 				i += 1
@@ -131,7 +131,7 @@ Namespace SqlFilter
 		End Sub
 
         ' select a predefined FlexPivot view
-        Private Sub MenuView_DropDownItemClicked(ByVal sender As Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+        Private Sub MenuView_DropDownItemClicked(ByVal sender As Object, ByVal e As C1.Win.Command.ClickEventArgs)
             Dim nd = TryCast(e.CallerLink.Command.UserData, System.Xml.XmlNode)
             If nd IsNot Nothing Then
                 _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml

@@ -28,7 +28,7 @@ namespace ControlExplorer.FlexGrid
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            foreach (C1.Win.C1FlexGrid.Column c in c1FlexGrid1.Cols)
+            foreach (C1.Win.FlexGrid.Column c in c1FlexGrid1.Cols)
             {
                 c.AllowMerging = true;
             }

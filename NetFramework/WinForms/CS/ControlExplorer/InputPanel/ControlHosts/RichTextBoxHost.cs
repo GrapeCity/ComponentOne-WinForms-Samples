@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ControlExplorer.InputPanel.ControlHosts
 {
-    public class RichTextBoxHost : C1.Win.C1InputPanel.InputControlHost
+    public class RichTextBoxHost : C1.Win.InputPanel.InputControlHost
     {
         public RichTextBoxHost() : base(new System.Windows.Forms.RichTextBox())
         {

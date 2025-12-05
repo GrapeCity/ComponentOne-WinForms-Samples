@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption19 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption20 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption21 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption22 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption23 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption24 = new C1.Win.C1Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption19 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption20 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption21 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption22 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption23 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption24 = new C1.Win.Gauge.C1GaugeCaption();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.c1BulletGraph10 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph9 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph8 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph7 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph6 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph1 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph2 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph3 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph4 = new C1.Win.C1Gauge.C1BulletGraph();
-            this.c1BulletGraph5 = new C1.Win.C1Gauge.C1BulletGraph();
+            this.c1BulletGraph10 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph9 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph8 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph7 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph6 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph1 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph2 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph3 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph4 = new C1.Win.Gauge.C1BulletGraph();
+            this.c1BulletGraph5 = new C1.Win.Gauge.C1BulletGraph();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1LinearGauge1 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge2 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge3 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge4 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge5 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge6 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge7 = new C1.Win.C1Gauge.C1LinearGauge();
-            this.c1LinearGauge8 = new C1.Win.C1Gauge.C1LinearGauge();
+            this.c1LinearGauge1 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge2 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge3 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge4 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge5 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge6 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge7 = new C1.Win.Gauge.C1LinearGauge();
+            this.c1LinearGauge8 = new C1.Win.Gauge.C1LinearGauge();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1BulletGraph10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1BulletGraph9)).BeginInit();
@@ -122,7 +122,7 @@
             // c1BulletGraph10
             // 
             this.c1BulletGraph10.Bad.To = 3D;
-            this.c1BulletGraph10.Caption.Position = C1.Win.C1Gauge.BulletGraphCaptionPosition.Left;
+            this.c1BulletGraph10.Caption.Position = C1.Win.Gauge.BulletGraphCaptionPosition.Left;
             this.c1BulletGraph10.Caption.Text = "Customer Satisfaction";
             this.c1BulletGraph10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1BulletGraph10.Good.To = 4D;
@@ -133,7 +133,7 @@
             this.c1BulletGraph10.Margin = new System.Windows.Forms.Padding(10, 3, 5, 3);
             this.c1BulletGraph10.Maximum = 5D;
             this.c1BulletGraph10.Name = "c1BulletGraph10";
-            this.c1BulletGraph10.Orientation = C1.Win.C1Gauge.C1GaugeOrientation.Vertical;
+            this.c1BulletGraph10.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
             this.c1BulletGraph10.Origin = double.NaN;
             this.tableLayoutPanel1.SetRowSpan(this.c1BulletGraph10, 5);
             this.c1BulletGraph10.Size = new System.Drawing.Size(290, 1170);
@@ -145,7 +145,7 @@
             // c1BulletGraph9
             // 
             this.c1BulletGraph9.Bad.To = 320D;
-            this.c1BulletGraph9.Caption.Position = C1.Win.C1Gauge.BulletGraphCaptionPosition.Left;
+            this.c1BulletGraph9.Caption.Position = C1.Win.Gauge.BulletGraphCaptionPosition.Left;
             this.c1BulletGraph9.Caption.Text = "Avg Order Size, $";
             this.c1BulletGraph9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1BulletGraph9.Good.To = 500D;
@@ -157,7 +157,7 @@
             this.c1BulletGraph9.Margin = new System.Windows.Forms.Padding(10, 3, 5, 3);
             this.c1BulletGraph9.Maximum = 600D;
             this.c1BulletGraph9.Name = "c1BulletGraph9";
-            this.c1BulletGraph9.Orientation = C1.Win.C1Gauge.C1GaugeOrientation.Vertical;
+            this.c1BulletGraph9.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
             this.c1BulletGraph9.Origin = double.NaN;
             this.tableLayoutPanel1.SetRowSpan(this.c1BulletGraph9, 5);
             this.c1BulletGraph9.Size = new System.Drawing.Size(289, 1170);
@@ -183,7 +183,7 @@
             this.c1BulletGraph8.Maximum = 250D;
             this.c1BulletGraph8.Minimum = -50D;
             this.c1BulletGraph8.Name = "c1BulletGraph8";
-            this.c1BulletGraph8.Orientation = C1.Win.C1Gauge.C1GaugeOrientation.Vertical;
+            this.c1BulletGraph8.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
             this.c1BulletGraph8.Origin = double.NaN;
             this.tableLayoutPanel1.SetRowSpan(this.c1BulletGraph8, 5);
             this.c1BulletGraph8.Size = new System.Drawing.Size(289, 1170);
@@ -205,7 +205,7 @@
             this.c1BulletGraph7.Margin = new System.Windows.Forms.Padding(10, 3, 5, 3);
             this.c1BulletGraph7.Maximum = 120D;
             this.c1BulletGraph7.Name = "c1BulletGraph7";
-            this.c1BulletGraph7.Orientation = C1.Win.C1Gauge.C1GaugeOrientation.Vertical;
+            this.c1BulletGraph7.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
             this.c1BulletGraph7.Origin = double.NaN;
             this.tableLayoutPanel1.SetRowSpan(this.c1BulletGraph7, 5);
             this.c1BulletGraph7.Size = new System.Drawing.Size(289, 1170);
@@ -228,7 +228,7 @@
             this.c1BulletGraph6.Margin = new System.Windows.Forms.Padding(10, 3, 5, 3);
             this.c1BulletGraph6.Maximum = 300D;
             this.c1BulletGraph6.Name = "c1BulletGraph6";
-            this.c1BulletGraph6.Orientation = C1.Win.C1Gauge.C1GaugeOrientation.Vertical;
+            this.c1BulletGraph6.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
             this.c1BulletGraph6.Origin = double.NaN;
             this.tableLayoutPanel1.SetRowSpan(this.c1BulletGraph6, 5);
             this.c1BulletGraph6.Size = new System.Drawing.Size(289, 1170);
@@ -241,7 +241,7 @@
             // 
             this.c1BulletGraph1.Bad.To = 180D;
             this.c1BulletGraph1.Caption.Alignment = System.Drawing.StringAlignment.Far;
-            this.c1BulletGraph1.Caption.Position = C1.Win.C1Gauge.BulletGraphCaptionPosition.Left;
+            this.c1BulletGraph1.Caption.Position = C1.Win.Gauge.BulletGraphCaptionPosition.Left;
             this.c1BulletGraph1.Caption.Text = "Revenue (1000$)";
             this.c1BulletGraph1.Caption.Width = 60D;
             this.c1BulletGraph1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -264,7 +264,7 @@
             this.c1BulletGraph2.Bad.From = 80D;
             this.c1BulletGraph2.Bad.To = 120D;
             this.c1BulletGraph2.Caption.Alignment = System.Drawing.StringAlignment.Far;
-            this.c1BulletGraph2.Caption.Position = C1.Win.C1Gauge.BulletGraphCaptionPosition.Left;
+            this.c1BulletGraph2.Caption.Position = C1.Win.Gauge.BulletGraphCaptionPosition.Left;
             this.c1BulletGraph2.Caption.Text = "Expenses (1000$)";
             this.c1BulletGraph2.Caption.Width = 60D;
             this.c1BulletGraph2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -285,7 +285,7 @@
             // 
             this.c1BulletGraph3.Bad.To = 0.15D;
             this.c1BulletGraph3.Caption.Alignment = System.Drawing.StringAlignment.Far;
-            this.c1BulletGraph3.Caption.Position = C1.Win.C1Gauge.BulletGraphCaptionPosition.Left;
+            this.c1BulletGraph3.Caption.Position = C1.Win.Gauge.BulletGraphCaptionPosition.Left;
             this.c1BulletGraph3.Caption.Text = "Profit";
             this.c1BulletGraph3.Caption.Width = 60D;
             this.c1BulletGraph3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -362,7 +362,7 @@
             c1GaugeCaption19.Height = 108.33333333333334D;
             c1GaugeCaption19.Text = "Revenue (1000$)";
             c1GaugeCaption19.Width = 102.56410256410255D;
-            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption19});
             this.c1LinearGauge1.Name = "c1LinearGauge1";
             this.c1LinearGauge1.Pointer.Visible = false;
@@ -375,7 +375,7 @@
             c1GaugeCaption20.Height = 108.33333333333334D;
             c1GaugeCaption20.Text = "Expenses (1000$)";
             c1GaugeCaption20.Width = 102.56410256410255D;
-            this.c1LinearGauge2.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge2.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption20});
             this.c1LinearGauge2.Name = "c1LinearGauge2";
             this.c1LinearGauge2.Pointer.Visible = false;
@@ -395,7 +395,7 @@
             c1GaugeCaption21.Height = 108.33333333333334D;
             c1GaugeCaption21.Text = "Profit, %";
             c1GaugeCaption21.Width = 102.56410256410255D;
-            this.c1LinearGauge4.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge4.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption21});
             this.c1LinearGauge4.Name = "c1LinearGauge4";
             this.c1LinearGauge4.Pointer.Visible = false;
@@ -407,7 +407,7 @@
             c1GaugeCaption22.Height = 66.666666666666671D;
             c1GaugeCaption22.Text = "Revenue (1000$)";
             c1GaugeCaption22.Width = 166.66666666666666D;
-            this.c1LinearGauge5.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge5.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption22});
             this.c1LinearGauge5.Name = "c1LinearGauge5";
             this.c1LinearGauge5.Pointer.Visible = false;
@@ -419,7 +419,7 @@
             c1GaugeCaption23.Height = 66.666666666666671D;
             c1GaugeCaption23.Text = "Expenses (1000$)";
             c1GaugeCaption23.Width = 166.66666666666666D;
-            this.c1LinearGauge6.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge6.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption23});
             this.c1LinearGauge6.Name = "c1LinearGauge6";
             this.c1LinearGauge6.Pointer.Visible = false;
@@ -431,7 +431,7 @@
             c1GaugeCaption24.Height = 66.666666666666671D;
             c1GaugeCaption24.Text = "Profit (1000%)";
             c1GaugeCaption24.Width = 137.25490196078431D;
-            this.c1LinearGauge7.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge7.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption24});
             this.c1LinearGauge7.Name = "c1LinearGauge7";
             this.c1LinearGauge7.Pointer.Visible = false;
@@ -475,24 +475,24 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph1;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph10;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph9;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph8;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph7;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph6;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph2;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph3;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph4;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph5;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge1;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge2;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge3;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge4;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge5;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge6;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge7;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge8;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph1;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph10;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph9;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph8;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph7;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph6;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph2;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph3;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph4;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph5;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge2;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge3;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge4;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge5;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge6;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge7;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

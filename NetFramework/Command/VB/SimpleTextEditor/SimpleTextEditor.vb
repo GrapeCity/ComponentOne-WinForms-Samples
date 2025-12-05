@@ -1,4 +1,4 @@
-Imports C1.Win.C1Command
+Imports C1.Win.Command
 
 Public Class SimpleTextEditor
     Inherits System.Windows.Forms.Form
@@ -35,162 +35,162 @@ Public Class SimpleTextEditor
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
-    Friend WithEvents C1MainMenu1 As C1.Win.C1Command.C1MainMenu
-    Friend WithEvents C1CommandLink1 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents menuFile As C1.Win.C1Command.C1CommandMenu
-    Friend WithEvents C1CommandLink2 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink4 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink6 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdFileClose As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandLink7 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdExit As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandLink8 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents menuEdit As C1.Win.C1Command.C1ContextMenu
-    Friend WithEvents C1CommandLink9 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink10 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink11 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink12 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink13 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdUndo As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdRedo As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdCut As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdCopy As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdPaste As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandDock1 As C1.Win.C1Command.C1CommandDock
-    Friend WithEvents tbEdit As C1.Win.C1Command.C1ToolBar
-    Friend WithEvents C1CommandLink15 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink16 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink17 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink18 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink19 As C1.Win.C1Command.C1CommandLink
+    Friend WithEvents C1MainMenu1 As C1.Win.Command.C1MainMenu
+    Friend WithEvents C1CommandLink1 As C1.Win.Command.C1CommandLink
+    Friend WithEvents menuFile As C1.Win.Command.C1CommandMenu
+    Friend WithEvents C1CommandLink2 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink4 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink6 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdFileClose As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandLink7 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdExit As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandLink8 As C1.Win.Command.C1CommandLink
+    Friend WithEvents menuEdit As C1.Win.Command.C1ContextMenu
+    Friend WithEvents C1CommandLink9 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink10 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink11 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink12 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink13 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdUndo As C1.Win.Command.C1Command
+    Friend WithEvents cmdRedo As C1.Win.Command.C1Command
+    Friend WithEvents cmdCut As C1.Win.Command.C1Command
+    Friend WithEvents cmdCopy As C1.Win.Command.C1Command
+    Friend WithEvents cmdPaste As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandDock1 As C1.Win.Command.C1CommandDock
+    Friend WithEvents tbEdit As C1.Win.Command.C1ToolBar
+    Friend WithEvents C1CommandLink15 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink16 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink17 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink18 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink19 As C1.Win.Command.C1CommandLink
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
-    Friend WithEvents tbFile As C1.Win.C1Command.C1ToolBar
-    Friend WithEvents C1CommandLink20 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink21 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink22 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdFileSave As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdFileNew As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdFileOpen As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandLink3 As C1.Win.C1Command.C1CommandLink
+    Friend WithEvents tbFile As C1.Win.Command.C1ToolBar
+    Friend WithEvents C1CommandLink20 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink21 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink22 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdFileSave As C1.Win.Command.C1Command
+    Friend WithEvents cmdFileNew As C1.Win.Command.C1Command
+    Friend WithEvents cmdFileOpen As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandLink3 As C1.Win.Command.C1CommandLink
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents C1CommandLink5 As C1.Win.C1Command.C1CommandLink
+    Friend WithEvents C1CommandLink5 As C1.Win.Command.C1CommandLink
     Friend WithEvents SaveFileDialog1 As System.Windows.Forms.SaveFileDialog
-    Friend WithEvents C1CommandLink23 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink24 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink25 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink26 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink27 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents menuFormat As C1.Win.C1Command.C1CommandMenu
-    Friend WithEvents cmdBullet As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandLink28 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink29 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents menuCharOffset As C1.Win.C1Command.C1CommandMenu
-    Friend WithEvents C1CommandLink30 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink31 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink32 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdCharOffsetNormal As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdCharOffsetSuper As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdCharOffsetSub As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandLink33 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink34 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink35 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdBold As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdItalic As C1.Win.C1Command.C1Command
-    Friend WithEvents cmdUnderline As C1.Win.C1Command.C1Command
-    Friend WithEvents C1CommandLink36 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink37 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink38 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink39 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents menuFont As C1.Win.C1Command.C1CommandMenu
-    Friend WithEvents C1CommandLink40 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink41 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink42 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents C1CommandLink43 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents cmdFont As C1.Win.C1Command.C1Command
+    Friend WithEvents C1CommandLink23 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink24 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink25 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink26 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink27 As C1.Win.Command.C1CommandLink
+    Friend WithEvents menuFormat As C1.Win.Command.C1CommandMenu
+    Friend WithEvents cmdBullet As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandLink28 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink29 As C1.Win.Command.C1CommandLink
+    Friend WithEvents menuCharOffset As C1.Win.Command.C1CommandMenu
+    Friend WithEvents C1CommandLink30 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink31 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink32 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdCharOffsetNormal As C1.Win.Command.C1Command
+    Friend WithEvents cmdCharOffsetSuper As C1.Win.Command.C1Command
+    Friend WithEvents cmdCharOffsetSub As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandLink33 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink34 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink35 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdBold As C1.Win.Command.C1Command
+    Friend WithEvents cmdItalic As C1.Win.Command.C1Command
+    Friend WithEvents cmdUnderline As C1.Win.Command.C1Command
+    Friend WithEvents C1CommandLink36 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink37 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink38 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink39 As C1.Win.Command.C1CommandLink
+    Friend WithEvents menuFont As C1.Win.Command.C1CommandMenu
+    Friend WithEvents C1CommandLink40 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink41 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink42 As C1.Win.Command.C1CommandLink
+    Friend WithEvents C1CommandLink43 As C1.Win.Command.C1CommandLink
+    Friend WithEvents cmdFont As C1.Win.Command.C1Command
     Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
-    Friend WithEvents C1CommandHolder1 As C1.Win.C1Command.C1CommandHolder
-    Friend WithEvents C1CommandLink14 As C1.Win.C1Command.C1CommandLink
-    Friend WithEvents Format As C1.Win.C1Command.C1ToolBar
+    Friend WithEvents C1CommandHolder1 As C1.Win.Command.C1CommandHolder
+    Friend WithEvents C1CommandLink14 As C1.Win.Command.C1CommandLink
+    Friend WithEvents Format As C1.Win.Command.C1ToolBar
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(SimpleTextEditor))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.C1MainMenu1 = New C1.Win.C1Command.C1MainMenu()
-        Me.C1CommandLink1 = New C1.Win.C1Command.C1CommandLink()
-        Me.menuFile = New C1.Win.C1Command.C1CommandMenu()
-        Me.C1CommandLink2 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdFileNew = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink4 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdFileOpen = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink6 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdFileClose = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink5 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdFileSave = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink7 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdExit = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink8 = New C1.Win.C1Command.C1CommandLink()
-        Me.menuEdit = New C1.Win.C1Command.C1ContextMenu()
-        Me.C1CommandLink9 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdUndo = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink10 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdRedo = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink11 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdCut = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink12 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdCopy = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink13 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdPaste = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink26 = New C1.Win.C1Command.C1CommandLink()
-        Me.menuFormat = New C1.Win.C1Command.C1CommandMenu()
-        Me.C1CommandLink27 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdBullet = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink29 = New C1.Win.C1Command.C1CommandLink()
-        Me.menuCharOffset = New C1.Win.C1Command.C1CommandMenu()
-        Me.C1CommandLink30 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdCharOffsetNormal = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink31 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdCharOffsetSuper = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink32 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdCharOffsetSub = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink39 = New C1.Win.C1Command.C1CommandLink()
-        Me.menuFont = New C1.Win.C1Command.C1CommandMenu()
-        Me.C1CommandLink40 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdBold = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink41 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdItalic = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink42 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdUnderline = New C1.Win.C1Command.C1Command()
-        Me.C1CommandLink43 = New C1.Win.C1Command.C1CommandLink()
-        Me.cmdFont = New C1.Win.C1Command.C1Command()
+        Me.C1MainMenu1 = New C1.Win.Command.C1MainMenu()
+        Me.C1CommandLink1 = New C1.Win.Command.C1CommandLink()
+        Me.menuFile = New C1.Win.Command.C1CommandMenu()
+        Me.C1CommandLink2 = New C1.Win.Command.C1CommandLink()
+        Me.cmdFileNew = New C1.Win.Command.C1Command()
+        Me.C1CommandLink4 = New C1.Win.Command.C1CommandLink()
+        Me.cmdFileOpen = New C1.Win.Command.C1Command()
+        Me.C1CommandLink6 = New C1.Win.Command.C1CommandLink()
+        Me.cmdFileClose = New C1.Win.Command.C1Command()
+        Me.C1CommandLink5 = New C1.Win.Command.C1CommandLink()
+        Me.cmdFileSave = New C1.Win.Command.C1Command()
+        Me.C1CommandLink7 = New C1.Win.Command.C1CommandLink()
+        Me.cmdExit = New C1.Win.Command.C1Command()
+        Me.C1CommandLink8 = New C1.Win.Command.C1CommandLink()
+        Me.menuEdit = New C1.Win.Command.C1ContextMenu()
+        Me.C1CommandLink9 = New C1.Win.Command.C1CommandLink()
+        Me.cmdUndo = New C1.Win.Command.C1Command()
+        Me.C1CommandLink10 = New C1.Win.Command.C1CommandLink()
+        Me.cmdRedo = New C1.Win.Command.C1Command()
+        Me.C1CommandLink11 = New C1.Win.Command.C1CommandLink()
+        Me.cmdCut = New C1.Win.Command.C1Command()
+        Me.C1CommandLink12 = New C1.Win.Command.C1CommandLink()
+        Me.cmdCopy = New C1.Win.Command.C1Command()
+        Me.C1CommandLink13 = New C1.Win.Command.C1CommandLink()
+        Me.cmdPaste = New C1.Win.Command.C1Command()
+        Me.C1CommandLink26 = New C1.Win.Command.C1CommandLink()
+        Me.menuFormat = New C1.Win.Command.C1CommandMenu()
+        Me.C1CommandLink27 = New C1.Win.Command.C1CommandLink()
+        Me.cmdBullet = New C1.Win.Command.C1Command()
+        Me.C1CommandLink29 = New C1.Win.Command.C1CommandLink()
+        Me.menuCharOffset = New C1.Win.Command.C1CommandMenu()
+        Me.C1CommandLink30 = New C1.Win.Command.C1CommandLink()
+        Me.cmdCharOffsetNormal = New C1.Win.Command.C1Command()
+        Me.C1CommandLink31 = New C1.Win.Command.C1CommandLink()
+        Me.cmdCharOffsetSuper = New C1.Win.Command.C1Command()
+        Me.C1CommandLink32 = New C1.Win.Command.C1CommandLink()
+        Me.cmdCharOffsetSub = New C1.Win.Command.C1Command()
+        Me.C1CommandLink39 = New C1.Win.Command.C1CommandLink()
+        Me.menuFont = New C1.Win.Command.C1CommandMenu()
+        Me.C1CommandLink40 = New C1.Win.Command.C1CommandLink()
+        Me.cmdBold = New C1.Win.Command.C1Command()
+        Me.C1CommandLink41 = New C1.Win.Command.C1CommandLink()
+        Me.cmdItalic = New C1.Win.Command.C1Command()
+        Me.C1CommandLink42 = New C1.Win.Command.C1CommandLink()
+        Me.cmdUnderline = New C1.Win.Command.C1Command()
+        Me.C1CommandLink43 = New C1.Win.Command.C1CommandLink()
+        Me.cmdFont = New C1.Win.Command.C1Command()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.C1CommandDock1 = New C1.Win.C1Command.C1CommandDock()
-        Me.Format = New C1.Win.C1Command.C1ToolBar()
-        Me.C1CommandLink28 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink33 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink34 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink35 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink36 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink37 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink38 = New C1.Win.C1Command.C1CommandLink()
-        Me.tbFile = New C1.Win.C1Command.C1ToolBar()
-        Me.C1CommandLink20 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink21 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink3 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink22 = New C1.Win.C1Command.C1CommandLink()
-        Me.tbEdit = New C1.Win.C1Command.C1ToolBar()
-        Me.C1CommandLink15 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink16 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink17 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink18 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink19 = New C1.Win.C1Command.C1CommandLink()
+        Me.C1CommandDock1 = New C1.Win.Command.C1CommandDock()
+        Me.Format = New C1.Win.Command.C1ToolBar()
+        Me.C1CommandLink28 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink33 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink34 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink35 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink36 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink37 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink38 = New C1.Win.Command.C1CommandLink()
+        Me.tbFile = New C1.Win.Command.C1ToolBar()
+        Me.C1CommandLink20 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink21 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink3 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink22 = New C1.Win.Command.C1CommandLink()
+        Me.tbEdit = New C1.Win.Command.C1ToolBar()
+        Me.C1CommandLink15 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink16 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink17 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink18 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink19 = New C1.Win.Command.C1CommandLink()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.C1CommandLink23 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink24 = New C1.Win.C1Command.C1CommandLink()
-        Me.C1CommandLink25 = New C1.Win.C1Command.C1CommandLink()
+        Me.C1CommandLink23 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink24 = New C1.Win.Command.C1CommandLink()
+        Me.C1CommandLink25 = New C1.Win.Command.C1CommandLink()
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
-        Me.C1CommandHolder1 = New C1.Win.C1Command.C1CommandHolder()
-        Me.C1CommandLink14 = New C1.Win.C1Command.C1CommandLink()
+        Me.C1CommandHolder1 = New C1.Win.Command.C1CommandHolder()
+        Me.C1CommandLink14 = New C1.Win.Command.C1CommandLink()
         CType(Me.C1CommandDock1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.C1CommandDock1.SuspendLayout()
         CType(Me.C1CommandHolder1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -734,7 +734,7 @@ Public Class SimpleTextEditor
         Me.RichTextBox1.Undo()
     End Sub
 
-    Private Sub cmdUndo_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdUndo.CommandStateQuery
+    Private Sub cmdUndo_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdUndo.CommandStateQuery
         e.Enabled = Me.RichTextBox1.CanUndo
     End Sub
 
@@ -742,7 +742,7 @@ Public Class SimpleTextEditor
         Me.RichTextBox1.Redo()
     End Sub
 
-    Private Sub cmdRedo_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdRedo.CommandStateQuery
+    Private Sub cmdRedo_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdRedo.CommandStateQuery
         e.Enabled = Me.RichTextBox1.CanRedo
     End Sub
 
@@ -750,7 +750,7 @@ Public Class SimpleTextEditor
         Me.RichTextBox1.Cut()
     End Sub
 
-    Private Sub cmdCut_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdCut.CommandStateQuery
+    Private Sub cmdCut_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdCut.CommandStateQuery
         e.Enabled = Me.RichTextBox1.SelectionType <> RichTextBoxSelectionTypes.Empty
     End Sub
 
@@ -758,7 +758,7 @@ Public Class SimpleTextEditor
         Me.RichTextBox1.Copy()
     End Sub
 
-    Private Sub cmdCopy_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdCopy.CommandStateQuery
+    Private Sub cmdCopy_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdCopy.CommandStateQuery
         e.Enabled = Me.RichTextBox1.SelectionType <> RichTextBoxSelectionTypes.Empty
     End Sub
 
@@ -766,7 +766,7 @@ Public Class SimpleTextEditor
         Me.RichTextBox1.Paste()
     End Sub
 
-    Private Sub cmdPaste_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdPaste.CommandStateQuery
+    Private Sub cmdPaste_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdPaste.CommandStateQuery
         Dim fmts As String() = Clipboard.GetDataObject().GetFormats()
         Dim fmt As String
         For Each fmt In fmts
@@ -896,11 +896,11 @@ Public Class SimpleTextEditor
         End If
     End Sub
 
-    Private Sub cmdBullet_CheckedChanged(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.CheckedChangedEventArgs) Handles cmdBullet.CheckedChanged
+    Private Sub cmdBullet_CheckedChanged(ByVal sender As System.Object, ByVal e As C1.Win.Command.CheckedChangedEventArgs) Handles cmdBullet.CheckedChanged
         Me.RichTextBox1.SelectionBullet = e.NewValue
     End Sub
 
-    Private Sub cmdBullet_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdBullet.CommandStateQuery
+    Private Sub cmdBullet_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdBullet.CommandStateQuery
         e.Checked = Me.RichTextBox1.SelectionBullet
     End Sub
 
@@ -920,15 +920,15 @@ Public Class SimpleTextEditor
     ' of Command.Checked, just to show that Pressed can be used as a toggle
     ' in the same manner as Checked, if desired (with slightly different
     ' visual result, more like a radiobutton).
-    Private Sub cmdCharOffsetNormal_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdCharOffsetNormal.CommandStateQuery
+    Private Sub cmdCharOffsetNormal_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdCharOffsetNormal.CommandStateQuery
         e.Pressed = Me.RichTextBox1.SelectionCharOffset = 0
     End Sub
 
-    Private Sub cmdCharOffsetSuper_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdCharOffsetSuper.CommandStateQuery
+    Private Sub cmdCharOffsetSuper_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdCharOffsetSuper.CommandStateQuery
         e.Pressed = Me.RichTextBox1.SelectionCharOffset > 0
     End Sub
 
-    Private Sub cmdCharOffsetSub_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdCharOffsetSub.CommandStateQuery
+    Private Sub cmdCharOffsetSub_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdCharOffsetSub.CommandStateQuery
         e.Pressed = Me.RichTextBox1.SelectionCharOffset < 0
     End Sub
 
@@ -962,17 +962,17 @@ Public Class SimpleTextEditor
         Me.RichTextBox1.SelectionFont = New Font(Me.RichTextBox1.SelectionFont, fs)
     End Sub
 
-    Private Sub cmdBold_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdBold.CommandStateQuery
+    Private Sub cmdBold_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdBold.CommandStateQuery
         e.Checked = Not IsNothing(Me.RichTextBox1.SelectionFont) AndAlso Me.RichTextBox1.SelectionFont.Bold
         e.Enabled = Not IsNothing(Me.RichTextBox1.SelectionFont)
     End Sub
 
-    Private Sub cmdItalic_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdItalic.CommandStateQuery
+    Private Sub cmdItalic_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdItalic.CommandStateQuery
         e.Checked = Not IsNothing(Me.RichTextBox1.SelectionFont) AndAlso Me.RichTextBox1.SelectionFont.Italic
         e.Enabled = Not IsNothing(Me.RichTextBox1.SelectionFont)
     End Sub
 
-    Private Sub cmdUnderline_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) Handles cmdUnderline.CommandStateQuery
+    Private Sub cmdUnderline_CommandStateQuery(ByVal sender As Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs) Handles cmdUnderline.CommandStateQuery
         e.Checked = Not IsNothing(Me.RichTextBox1.SelectionFont) AndAlso Me.RichTextBox1.SelectionFont.Underline
         e.Enabled = Not IsNothing(Me.RichTextBox1.SelectionFont)
     End Sub

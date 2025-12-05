@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
@@ -61,6 +61,7 @@ namespace PdfChart
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._c1c = new C1.Win.C1Chart.C1Chart();
             this.button1 = new System.Windows.Forms.Button();
             this._pdf = new C1.Win.Pdf.C1PdfDocument();

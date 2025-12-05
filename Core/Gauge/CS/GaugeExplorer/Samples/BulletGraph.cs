@@ -1,8 +1,9 @@
-﻿using System;
+﻿using C1.Win.Gauge;
+using System;
 using System.Collections.Generic;
-using C1.Win.Gauge;
-using System.Windows.Forms;
+using System.ComponentModel;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace SampleExplorer
 {
@@ -18,6 +19,7 @@ namespace SampleExplorer
             InitializeComponent();
         }
 
+        [DefaultValue(true)]
         public bool ShowScaleLabels
         {
             get { return _showScaleLabels; }
@@ -33,6 +35,7 @@ namespace SampleExplorer
             }
         }
 
+        [DefaultValue(true)]
         public bool ShowScaleMarks
         {
             get { return _showScaleMarks; }
@@ -48,6 +51,7 @@ namespace SampleExplorer
             }
         }
 
+        [DefaultValue(false)]
         public bool ShowValueText
         {
             get { return _showValueText; }

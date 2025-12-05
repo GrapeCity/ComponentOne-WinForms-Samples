@@ -36,29 +36,29 @@ namespace ControlExplorer.Sizer
             System.Drawing.Drawing2D.Blend blend4 = new System.Drawing.Drawing2D.Blend();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SizerNewFeatures));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer9 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer4 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer9 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer4 = new C1.Win.Sizer.C1Sizer();
             this.button13 = new C1.Win.C1Input.C1Button();
             this.button12 = new C1.Win.C1Input.C1Button();
             this.button11 = new C1.Win.C1Input.C1Button();
             this.button10 = new C1.Win.C1Input.C1Button();
             this.button9 = new C1.Win.C1Input.C1Button();
             this.button8 = new C1.Win.C1Input.C1Button();
-            this.c1Sizer6 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer6 = new C1.Win.Sizer.C1Sizer();
             this.button7 = new C1.Win.C1Input.C1Button();
             this.button6 = new C1.Win.C1Input.C1Button();
             this.button5 = new C1.Win.C1Input.C1Button();
             this.button4 = new C1.Win.C1Input.C1Button();
-            this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer3 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer2 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer3 = new C1.Win.Sizer.C1Sizer();
             this.button25 = new C1.Win.C1Input.C1Button();
             this.button24 = new C1.Win.C1Input.C1Button();
             this.button23 = new C1.Win.C1Input.C1Button();
             this.button22 = new C1.Win.C1Input.C1Button();
             this.button3 = new C1.Win.C1Input.C1Button();
             this.button2 = new C1.Win.C1Input.C1Button();
-            this.c1Sizer5 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer5 = new C1.Win.Sizer.C1Sizer();
             this.button21 = new C1.Win.C1Input.C1Button();
             this.button20 = new C1.Win.C1Input.C1Button();
             this.button19 = new C1.Win.C1Input.C1Button();
@@ -108,7 +108,7 @@ namespace ControlExplorer.Sizer
             this.c1Sizer1.Size = new System.Drawing.Size(592, 446);
             this.c1Sizer1.TabIndex = 2;
             this.c1Sizer1.Text = "c1Sizer1";
-            this.c1Sizer1.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer1_SplitterMoved);
+            this.c1Sizer1.SplitterMoved += new C1.Win.Sizer.C1SizerEventHandler(this.c1Sizer1_SplitterMoved);
             // 
             // c1Sizer9
             // 
@@ -121,13 +121,13 @@ namespace ControlExplorer.Sizer
             this.c1Sizer9.Size = new System.Drawing.Size(592, 174);
             this.c1Sizer9.TabIndex = 6;
             this.c1Sizer9.Text = "c1Sizer9";
-            this.c1Sizer9.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer9_SplitterMoved);
+            this.c1Sizer9.SplitterMoved += new C1.Win.Sizer.C1SizerEventHandler(this.c1Sizer9_SplitterMoved);
             // 
             // c1Sizer4
             // 
             this.c1Sizer4.BackColor = System.Drawing.Color.Black;
             this.c1Sizer4.Border.Color = System.Drawing.Color.SteelBlue;
-            this.c1Sizer4.Border.Corners = new C1.Win.C1Sizer.Corners(20, 20, 0, 0);
+            this.c1Sizer4.Border.Corners = new C1.Win.Sizer.Corners(20, 20, 0, 0);
             this.c1Sizer4.Border.Thickness = new System.Windows.Forms.Padding(5);
             this.c1Sizer4.Controls.Add(this.button13);
             this.c1Sizer4.Controls.Add(this.button12);
@@ -143,7 +143,7 @@ namespace ControlExplorer.Sizer
         0F,
         1F};
             this.c1Sizer4.Gradient.Blend = blend1;
-            this.c1Sizer4.Gradient.Mode = C1.Win.C1Sizer.GradientMode.Radial;
+            this.c1Sizer4.Gradient.Mode = C1.Win.Sizer.GradientMode.Radial;
             this.c1Sizer4.GridDefinition = "13.7931034482759:False:False;35.0574712643678:False:False;13.7931034482759:False:" +
                 "True;15.5172413793103:False:True;\t28.4960422163588:False:True;19.5250659630607:F" +
                 "alse:False;43.0079155672823:False:True;";
@@ -212,7 +212,7 @@ namespace ControlExplorer.Sizer
             // 
             this.c1Sizer6.BackColor = System.Drawing.Color.LavenderBlush;
             this.c1Sizer6.Border.Color = System.Drawing.Color.SteelBlue;
-            this.c1Sizer6.Border.Corners = new C1.Win.C1Sizer.Corners(20, 20, 0, 0);
+            this.c1Sizer6.Border.Corners = new C1.Win.Sizer.Corners(20, 20, 0, 0);
             this.c1Sizer6.Border.Thickness = new System.Windows.Forms.Padding(5);
             this.c1Sizer6.Controls.Add(this.button7);
             this.c1Sizer6.Controls.Add(this.button6);
@@ -237,7 +237,7 @@ namespace ControlExplorer.Sizer
         1F};
             this.c1Sizer6.Gradient.Blend = blend2;
             this.c1Sizer6.Gradient.Center = new System.Drawing.Point(51, 55);
-            this.c1Sizer6.Gradient.Mode = C1.Win.C1Sizer.GradientMode.Radial;
+            this.c1Sizer6.Gradient.Mode = C1.Win.Sizer.GradientMode.Radial;
             this.c1Sizer6.GridDefinition = "12.0689655172414:False:True;46.551724137931:False:False;21.8390804597701:False:Tr" +
                 "ue;\t49.7607655502392:False:True;35.8851674641148:False:False;";
             this.c1Sizer6.Location = new System.Drawing.Point(383, 0);
@@ -294,13 +294,13 @@ namespace ControlExplorer.Sizer
             this.c1Sizer2.Size = new System.Drawing.Size(592, 268);
             this.c1Sizer2.TabIndex = 5;
             this.c1Sizer2.Text = "c1Sizer2";
-            this.c1Sizer2.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer2_SplitterMoved);
+            this.c1Sizer2.SplitterMoved += new C1.Win.Sizer.C1SizerEventHandler(this.c1Sizer2_SplitterMoved);
             // 
             // c1Sizer3
             // 
             this.c1Sizer3.BackColor = System.Drawing.Color.OrangeRed;
             this.c1Sizer3.Border.Color = System.Drawing.Color.SteelBlue;
-            this.c1Sizer3.Border.Corners = new C1.Win.C1Sizer.Corners(10, 10, 10, 10);
+            this.c1Sizer3.Border.Corners = new C1.Win.Sizer.Corners(10, 10, 10, 10);
             this.c1Sizer3.Border.Thickness = new System.Windows.Forms.Padding(5);
             this.c1Sizer3.Controls.Add(this.button25);
             this.c1Sizer3.Controls.Add(this.button24);
@@ -316,7 +316,7 @@ namespace ControlExplorer.Sizer
         0F,
         1F};
             this.c1Sizer3.Gradient.Blend = blend3;
-            this.c1Sizer3.Gradient.Mode = C1.Win.C1Sizer.GradientMode.DiagonalUp;
+            this.c1Sizer3.Gradient.Mode = C1.Win.Sizer.GradientMode.DiagonalUp;
             this.c1Sizer3.GridDefinition = "39.5522388059701:False:True;6.71641791044776:False:False;8.2089552238806:False:Tr" +
                 "ue;13.4328358208955:False:True;16.4179104477612:False:False;\t35.672514619883:Fal" +
                 "se:False;46.7836257309942:False:True;";
@@ -385,7 +385,7 @@ namespace ControlExplorer.Sizer
             // 
             this.c1Sizer5.BackColor = System.Drawing.Color.LightCyan;
             this.c1Sizer5.Border.Color = System.Drawing.Color.SteelBlue;
-            this.c1Sizer5.Border.Corners = new C1.Win.C1Sizer.Corners(0, 30, 30, 0);
+            this.c1Sizer5.Border.Corners = new C1.Win.Sizer.Corners(0, 30, 30, 0);
             this.c1Sizer5.Border.Thickness = new System.Windows.Forms.Padding(6);
             this.c1Sizer5.Controls.Add(this.button21);
             this.c1Sizer5.Controls.Add(this.button20);
@@ -411,7 +411,7 @@ namespace ControlExplorer.Sizer
         0.75F,
         1F};
             this.c1Sizer5.Gradient.Blend = blend4;
-            this.c1Sizer5.Gradient.Mode = C1.Win.C1Sizer.GradientMode.DiagonalDown;
+            this.c1Sizer5.Gradient.Mode = C1.Win.Sizer.GradientMode.DiagonalDown;
             this.c1Sizer5.GridDefinition = resources.GetString("c1Sizer5.GridDefinition");
             this.c1Sizer5.Location = new System.Drawing.Point(175, 0);
             this.c1Sizer5.Name = "c1Sizer5";
@@ -521,29 +521,29 @@ namespace ControlExplorer.Sizer
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer9;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer4;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer9;
+        private C1.Win.Sizer.C1Sizer c1Sizer4;
         private C1.Win.C1Input.C1Button button13;
         private C1.Win.C1Input.C1Button button12;
         private C1.Win.C1Input.C1Button button11;
         private C1.Win.C1Input.C1Button button10;
         private C1.Win.C1Input.C1Button button9;
         private C1.Win.C1Input.C1Button button8;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer6;
+        private C1.Win.Sizer.C1Sizer c1Sizer6;
         private C1.Win.C1Input.C1Button button7;
         private C1.Win.C1Input.C1Button button6;
         private C1.Win.C1Input.C1Button button5;
         private C1.Win.C1Input.C1Button button4;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer2;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer3;
+        private C1.Win.Sizer.C1Sizer c1Sizer2;
+        private C1.Win.Sizer.C1Sizer c1Sizer3;
         private C1.Win.C1Input.C1Button button25;
         private C1.Win.C1Input.C1Button button24;
         private C1.Win.C1Input.C1Button button23;
         private C1.Win.C1Input.C1Button button22;
         private C1.Win.C1Input.C1Button button3;
         private C1.Win.C1Input.C1Button button2;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer5;
+        private C1.Win.Sizer.C1Sizer c1Sizer5;
         private C1.Win.C1Input.C1Button button21;
         private C1.Win.C1Input.C1Button button20;
         private C1.Win.C1Input.C1Button button19;

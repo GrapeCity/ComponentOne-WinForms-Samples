@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DashboardModel;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 using System.Windows.Data;
 using System.Globalization;
 

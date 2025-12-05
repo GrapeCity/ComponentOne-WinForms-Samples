@@ -22,19 +22,19 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.c1SplitContainer1 = New C1.Win.C1SplitContainer.C1SplitContainer
-        Me.c1SplitterPanel1 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1SplitterPanel2 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1SplitContainer2 = New C1.Win.C1SplitContainer.C1SplitContainer
-        Me.c1SplitterPanel6 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1SplitterPanel7 = New C1.Win.C1SplitContainer.C1SplitterPanel
+        Me.c1SplitContainer1 = New C1.Win.SplitContainer.C1SplitContainer
+        Me.c1SplitterPanel1 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1SplitterPanel2 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1SplitContainer2 = New C1.Win.SplitContainer.C1SplitContainer
+        Me.c1SplitterPanel6 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1SplitterPanel7 = New C1.Win.SplitContainer.C1SplitterPanel
         Me.button1 = New System.Windows.Forms.Button
-        Me.c1SplitterPanel3 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1SplitterPanel4 = New C1.Win.C1SplitContainer.C1SplitterPanel
+        Me.c1SplitterPanel3 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1SplitterPanel4 = New C1.Win.SplitContainer.C1SplitterPanel
         Me.monthCalendar1 = New System.Windows.Forms.MonthCalendar
-        Me.c1SplitterPanel5 = New C1.Win.C1SplitContainer.C1SplitterPanel
+        Me.c1SplitterPanel5 = New C1.Win.SplitContainer.C1SplitterPanel
         Me.label1 = New System.Windows.Forms.Label
-        Me.c1SplitContainer3 = New C1.Win.C1SplitContainer.C1SplitContainer
+        Me.c1SplitContainer3 = New C1.Win.SplitContainer.C1SplitContainer
         CType(Me.c1SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.c1SplitContainer1.SuspendLayout()
         Me.c1SplitterPanel2.SuspendLayout()
@@ -69,7 +69,7 @@ Partial Class Form1
         '
         'c1SplitterPanel1
         '
-        Me.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left
+        Me.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left
         Me.c1SplitterPanel1.KeepRelativeSize = False
         Me.c1SplitterPanel1.Location = New System.Drawing.Point(0, 21)
         Me.c1SplitterPanel1.Name = "c1SplitterPanel1"
@@ -83,7 +83,7 @@ Partial Class Form1
         'c1SplitterPanel2
         '
         Me.c1SplitterPanel2.Controls.Add(Me.c1SplitContainer2)
-        Me.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left
+        Me.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Left
         Me.c1SplitterPanel2.Location = New System.Drawing.Point(81, 0)
         Me.c1SplitterPanel2.MinWidth = 80
         Me.c1SplitterPanel2.Name = "c1SplitterPanel2"
@@ -148,7 +148,7 @@ Partial Class Form1
         'c1SplitterPanel3
         '
         Me.c1SplitterPanel3.Collapsible = True
-        Me.c1SplitterPanel3.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left
+        Me.c1SplitterPanel3.Dock = C1.Win.SplitContainer.PanelDockStyle.Left
         Me.c1SplitterPanel3.KeepRelativeSize = False
         Me.c1SplitterPanel3.Location = New System.Drawing.Point(314, 21)
         Me.c1SplitterPanel3.Name = "c1SplitterPanel3"
@@ -237,18 +237,18 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents c1SplitContainer1 As C1.Win.C1SplitContainer.C1SplitContainer
-    Private WithEvents c1SplitterPanel1 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1SplitterPanel2 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1SplitContainer2 As C1.Win.C1SplitContainer.C1SplitContainer
-    Private WithEvents c1SplitterPanel6 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1SplitterPanel7 As C1.Win.C1SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitContainer1 As C1.Win.SplitContainer.C1SplitContainer
+    Private WithEvents c1SplitterPanel1 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitterPanel2 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitContainer2 As C1.Win.SplitContainer.C1SplitContainer
+    Private WithEvents c1SplitterPanel6 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitterPanel7 As C1.Win.SplitContainer.C1SplitterPanel
     Private WithEvents button1 As System.Windows.Forms.Button
-    Private WithEvents c1SplitterPanel3 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1SplitterPanel4 As C1.Win.C1SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitterPanel3 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitterPanel4 As C1.Win.SplitContainer.C1SplitterPanel
     Private WithEvents monthCalendar1 As System.Windows.Forms.MonthCalendar
-    Private WithEvents c1SplitterPanel5 As C1.Win.C1SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitterPanel5 As C1.Win.SplitContainer.C1SplitterPanel
     Private WithEvents label1 As System.Windows.Forms.Label
-    Private WithEvents c1SplitContainer3 As C1.Win.C1SplitContainer.C1SplitContainer
+    Private WithEvents c1SplitContainer3 As C1.Win.SplitContainer.C1SplitContainer
 
 End Class

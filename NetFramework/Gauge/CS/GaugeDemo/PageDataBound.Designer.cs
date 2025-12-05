@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Gauge.C1GaugeLabels c1GaugeLabels1 = new C1.Win.C1Gauge.C1GaugeLabels();
-            C1.Win.C1Gauge.C1GaugeMarks c1GaugeMarks1 = new C1.Win.C1Gauge.C1GaugeMarks();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange3 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption1 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption2 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption3 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugeCaption c1GaugeCaption4 = new C1.Win.C1Gauge.C1GaugeCaption();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer1 = new C1.Win.C1Gauge.C1GaugePointer();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer2 = new C1.Win.C1Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels1 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks1 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange3 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption1 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption2 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption3 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption4 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer1 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer2 = new C1.Win.Gauge.C1GaugePointer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1LinearGauge1 = new C1.Win.C1Gauge.C1LinearGauge();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1LinearGauge1 = new C1.Win.Gauge.C1LinearGauge();
             this.gaugePanel.SuspendLayout();
             this.gridPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,7 +87,7 @@
             this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(9, 225);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -103,28 +103,28 @@
             c1GaugeLabels1.Interval = 25;
             c1GaugeLabels1.Location = 0;
             c1GaugeLabels1.ViewTag = ((long)(641069907430065399));
-            c1GaugeMarks1.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out;
+            c1GaugeMarks1.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
             c1GaugeMarks1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            c1GaugeMarks1.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.None;
+            c1GaugeMarks1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.None;
             c1GaugeMarks1.Interval = 25;
             c1GaugeMarks1.Length = 95;
             c1GaugeMarks1.Location = 5;
             c1GaugeMarks1.ViewTag = ((long)(643884661361599274));
             c1GaugeMarks1.Width = 0.01;
-            c1GaugeRange1.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out;
+            c1GaugeRange1.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
             c1GaugeRange1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             c1GaugeRange1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             c1GaugeRange1.Location = 15;
             c1GaugeRange1.ToPointerIndex = 100;
             c1GaugeRange1.ViewTag = ((long)(638536618060574778));
             c1GaugeRange1.Width = 20;
-            c1GaugeRange2.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out;
+            c1GaugeRange2.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
             c1GaugeRange2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             c1GaugeRange2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             c1GaugeRange2.ToPointerIndex = 0;
             c1GaugeRange2.ViewTag = ((long)(639099568095428233));
             c1GaugeRange2.Width = 20;
-            c1GaugeRange3.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out;
+            c1GaugeRange3.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
             c1GaugeRange3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             c1GaugeRange3.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             c1GaugeRange3.Location = 75;
@@ -149,7 +149,7 @@
             c1GaugeSingleLabel3.Position = -0.15;
             c1GaugeSingleLabel3.TextAngle = -30;
             c1GaugeSingleLabel3.ViewTag = ((long)(655706618222616595));
-            this.c1LinearGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
+            this.c1LinearGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
             c1GaugeLabels1,
             c1GaugeMarks1,
             c1GaugeRange1,
@@ -182,7 +182,7 @@
             c1GaugeCaption4.CenterPointY = 1.07;
             c1GaugeCaption4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             c1GaugeCaption4.Text = "fixed viewport size";
-            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeCaption1,
             c1GaugeCaption2,
             c1GaugeCaption3,
@@ -192,7 +192,7 @@
             c1GaugePointer1.Visible = false;
             c1GaugePointer2.ViewTag = ((long)(635158893673981477));
             c1GaugePointer2.Visible = false;
-            this.c1LinearGauge1.MorePointers.AddRange(new C1.Win.C1Gauge.C1GaugePointer[] {
+            this.c1LinearGauge1.MorePointers.AddRange(new C1.Win.Gauge.C1GaugePointer[] {
             c1GaugePointer1,
             c1GaugePointer2});
             this.c1LinearGauge1.Name = "c1LinearGauge1";
@@ -221,7 +221,7 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
     }
 }

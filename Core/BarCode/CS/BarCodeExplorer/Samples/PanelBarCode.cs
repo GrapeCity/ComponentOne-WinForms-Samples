@@ -1,18 +1,14 @@
-﻿using System;
+﻿using C1.BarCode;
+using C1.Win.BarCode;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Drawing;
 using System.ComponentModel;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace BarCodeExplorer.Samples
 {
-    using C1.BarCode;
-    using C1.Win.BarCode;
-    using System.Security.Cryptography.X509Certificates;
-
     public delegate void SelectBarCodeEventHandler(object sender, EventArgs e);
     public class PanelBarCode : Panel
     {
@@ -154,12 +150,15 @@ namespace BarCodeExplorer.Samples
         }
 
         [Description("The frame color"), Category("ComponentOne")]
+        [DefaultValue(typeof(Color), "51, 102, 204")]
         public Color FrameColor { get => _frameColor; set => _frameColor = value; }
 
         [Description("The activity status"), Category("ComponentOne")]
+        [DefaultValue(false)]
         public bool IsActive { get => _isActive; set => _isActive = value; }
 
         [Description("The status is select"), Category("ComponentOne")]
+        [DefaultValue(false)]
         public bool IsSelect
         {
             get => _isSelect;

@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.DataFilter;
 using C1.Win.Ribbon;
 

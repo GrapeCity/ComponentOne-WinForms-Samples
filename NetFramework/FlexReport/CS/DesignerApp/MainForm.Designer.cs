@@ -37,6 +37,7 @@ namespace FlexReportDesignerApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.sbMain = new C1.Win.Ribbon.C1StatusBar();
             this.rbtnCloseSearch = new C1.Win.Ribbon.RibbonButton();
             this.rebSearchText = new C1.Win.Ribbon.RibbonTextBox();
@@ -291,126 +292,126 @@ namespace FlexReportDesignerApp
             this.rbtnPreviewStop = new C1.Win.Ribbon.RibbonButton();
             this.rbtnPreviewRefresh = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
-            this.dtpProperties = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab2 = new C1.Win.Command.C1DockingTab();
+            this.dtpProperties = new C1.Win.Command.C1DockingTabPage();
             this._propGrid = new System.Windows.Forms.PropertyGrid();
-            this.c1ToolBar2 = new C1.Win.C1Command.C1ToolBar();
-            this.chMain = new C1.Win.C1Command.C1CommandHolder();
-            this.cAddDataSource = new C1.Win.C1Command.C1Command();
-            this.cPreviewStop = new C1.Win.C1Command.C1Command();
-            this.cmNewReport = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
-            this.cNewReportWizard = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.cNewReportEmpty = new C1.Win.C1Command.C1Command();
-            this.cPasteReport = new C1.Win.C1Command.C1Command();
-            this.cCutReport = new C1.Win.C1Command.C1Command();
-            this.cCopyReport = new C1.Win.C1Command.C1Command();
-            this.cDeleteReport = new C1.Win.C1Command.C1Command();
-            this.cMoveReportUp = new C1.Win.C1Command.C1Command();
-            this.cMoveReportDown = new C1.Win.C1Command.C1Command();
-            this.cPropertiesCategorized = new C1.Win.C1Command.C1Command();
-            this.cPropertiesAlphabetical = new C1.Win.C1Command.C1Command();
-            this.cmSelectAll = new C1.Win.C1Command.C1Command();
-            this.cmCutField = new C1.Win.C1Command.C1Command();
-            this.cmCopyField = new C1.Win.C1Command.C1Command();
-            this.cmPasteField = new C1.Win.C1Command.C1Command();
-            this.cmDeleteField = new C1.Win.C1Command.C1Command();
-            this.cmBringToFront = new C1.Win.C1Command.C1Command();
-            this.cmSendToBack = new C1.Win.C1Command.C1Command();
-            this.cmReport = new C1.Win.C1Command.C1ContextMenu();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink25 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink26 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink27 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this._cmDesigner = new C1.Win.C1Command.C1ContextMenu();
-            this.c1CommandLink14 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink15 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink16 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink17 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink13 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink18 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink19 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink28 = new C1.Win.C1Command.C1CommandLink();
-            this.cLockFields = new C1.Win.C1Command.C1Command();
-            this._clContextPlaceholderTop = new C1.Win.C1Command.C1CommandLink();
-            this._cContextPlaceholderTop = new C1.Win.C1Command.C1Command();
-            this._clContextPlaceholderBot = new C1.Win.C1Command.C1CommandLink();
-            this._cContextPlaceholderBot = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.cmProperties = new C1.Win.C1Command.C1Command();
-            this.cPreviewRefresh = new C1.Win.C1Command.C1Command();
-            this.cScriptEditor = new C1.Win.C1Command.C1Command();
-            this.cmDataTree = new C1.Win.C1Command.C1ContextMenu();
-            this.clAddParameter = new C1.Win.C1Command.C1CommandLink();
-            this.cAddParameter = new C1.Win.C1Command.C1Command();
-            this.clAddDataSource = new C1.Win.C1Command.C1CommandLink();
-            this.clAddCalculatedField = new C1.Win.C1Command.C1CommandLink();
-            this.cAddCalculatedField = new C1.Win.C1Command.C1Command();
-            this.clAddSort = new C1.Win.C1Command.C1CommandLink();
-            this.cAddSort = new C1.Win.C1Command.C1Command();
-            this.clDataTreeEdit = new C1.Win.C1Command.C1CommandLink();
-            this.cDataTreeEdit = new C1.Win.C1Command.C1Command();
-            this.clDataTreeChangeSortOrder = new C1.Win.C1Command.C1CommandLink();
-            this.cDataTreeChangeSortOrder = new C1.Win.C1Command.C1Command();
-            this.clDataTreeInplaceEdit = new C1.Win.C1Command.C1CommandLink();
-            this.cDataTreeInplaceEdit = new C1.Win.C1Command.C1Command();
-            this.clDataTreeMoveUp = new C1.Win.C1Command.C1CommandLink();
-            this.cDataTreeMoveUp = new C1.Win.C1Command.C1Command();
-            this.clDataTreeMoveDown = new C1.Win.C1Command.C1CommandLink();
-            this.cDataTreeMoveDown = new C1.Win.C1Command.C1Command();
-            this.clDataTreeDelete = new C1.Win.C1Command.C1CommandLink();
-            this.cDataTreeDelete = new C1.Win.C1Command.C1Command();
-            this.cDataTreeInsert = new C1.Win.C1Command.C1Command();
-            this.cmDataTreeAdd = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink37 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink38 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink39 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink40 = new C1.Win.C1Command.C1CommandLink();
-            this.cmPreview = new C1.Win.C1Command.C1ContextMenu();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.cPreviewCopy = new C1.Win.C1Command.C1Command();
-            this.cDataSourceRefresh = new C1.Win.C1Command.C1Command();
-            this.cmErrorList = new C1.Win.C1Command.C1ContextMenu();
-            this.c1CommandLink30 = new C1.Win.C1Command.C1CommandLink();
-            this.cErrorListHide = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink31 = new C1.Win.C1Command.C1CommandLink();
-            this.cErrorListClear = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink32 = new C1.Win.C1Command.C1CommandLink();
-            this.cErrorListCopy = new C1.Win.C1Command.C1Command();
-            this.cErrorListShow = new C1.Win.C1Command.C1Command();
+            this.c1ToolBar2 = new C1.Win.Command.C1ToolBar();
+            this.chMain = new C1.Win.Command.C1CommandHolder();
+            this.cAddDataSource = new C1.Win.Command.C1Command();
+            this.cPreviewStop = new C1.Win.Command.C1Command();
+            this.cmNewReport = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
+            this.cNewReportWizard = new C1.Win.Command.C1Command();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.cNewReportEmpty = new C1.Win.Command.C1Command();
+            this.cPasteReport = new C1.Win.Command.C1Command();
+            this.cCutReport = new C1.Win.Command.C1Command();
+            this.cCopyReport = new C1.Win.Command.C1Command();
+            this.cDeleteReport = new C1.Win.Command.C1Command();
+            this.cMoveReportUp = new C1.Win.Command.C1Command();
+            this.cMoveReportDown = new C1.Win.Command.C1Command();
+            this.cPropertiesCategorized = new C1.Win.Command.C1Command();
+            this.cPropertiesAlphabetical = new C1.Win.Command.C1Command();
+            this.cmSelectAll = new C1.Win.Command.C1Command();
+            this.cmCutField = new C1.Win.Command.C1Command();
+            this.cmCopyField = new C1.Win.Command.C1Command();
+            this.cmPasteField = new C1.Win.Command.C1Command();
+            this.cmDeleteField = new C1.Win.Command.C1Command();
+            this.cmBringToFront = new C1.Win.Command.C1Command();
+            this.cmSendToBack = new C1.Win.Command.C1Command();
+            this.cmReport = new C1.Win.Command.C1ContextMenu();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink25 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink26 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink27 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this._cmDesigner = new C1.Win.Command.C1ContextMenu();
+            this.c1CommandLink14 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink15 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink16 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink17 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink13 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink18 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink19 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink28 = new C1.Win.Command.C1CommandLink();
+            this.cLockFields = new C1.Win.Command.C1Command();
+            this._clContextPlaceholderTop = new C1.Win.Command.C1CommandLink();
+            this._cContextPlaceholderTop = new C1.Win.Command.C1Command();
+            this._clContextPlaceholderBot = new C1.Win.Command.C1CommandLink();
+            this._cContextPlaceholderBot = new C1.Win.Command.C1Command();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.cmProperties = new C1.Win.Command.C1Command();
+            this.cPreviewRefresh = new C1.Win.Command.C1Command();
+            this.cScriptEditor = new C1.Win.Command.C1Command();
+            this.cmDataTree = new C1.Win.Command.C1ContextMenu();
+            this.clAddParameter = new C1.Win.Command.C1CommandLink();
+            this.cAddParameter = new C1.Win.Command.C1Command();
+            this.clAddDataSource = new C1.Win.Command.C1CommandLink();
+            this.clAddCalculatedField = new C1.Win.Command.C1CommandLink();
+            this.cAddCalculatedField = new C1.Win.Command.C1Command();
+            this.clAddSort = new C1.Win.Command.C1CommandLink();
+            this.cAddSort = new C1.Win.Command.C1Command();
+            this.clDataTreeEdit = new C1.Win.Command.C1CommandLink();
+            this.cDataTreeEdit = new C1.Win.Command.C1Command();
+            this.clDataTreeChangeSortOrder = new C1.Win.Command.C1CommandLink();
+            this.cDataTreeChangeSortOrder = new C1.Win.Command.C1Command();
+            this.clDataTreeInplaceEdit = new C1.Win.Command.C1CommandLink();
+            this.cDataTreeInplaceEdit = new C1.Win.Command.C1Command();
+            this.clDataTreeMoveUp = new C1.Win.Command.C1CommandLink();
+            this.cDataTreeMoveUp = new C1.Win.Command.C1Command();
+            this.clDataTreeMoveDown = new C1.Win.Command.C1CommandLink();
+            this.cDataTreeMoveDown = new C1.Win.Command.C1Command();
+            this.clDataTreeDelete = new C1.Win.Command.C1CommandLink();
+            this.cDataTreeDelete = new C1.Win.Command.C1Command();
+            this.cDataTreeInsert = new C1.Win.Command.C1Command();
+            this.cmDataTreeAdd = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink37 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink38 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink39 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink40 = new C1.Win.Command.C1CommandLink();
+            this.cmPreview = new C1.Win.Command.C1ContextMenu();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.cPreviewCopy = new C1.Win.Command.C1Command();
+            this.cDataSourceRefresh = new C1.Win.Command.C1Command();
+            this.cmErrorList = new C1.Win.Command.C1ContextMenu();
+            this.c1CommandLink30 = new C1.Win.Command.C1CommandLink();
+            this.cErrorListHide = new C1.Win.Command.C1Command();
+            this.c1CommandLink31 = new C1.Win.Command.C1CommandLink();
+            this.cErrorListClear = new C1.Win.Command.C1Command();
+            this.c1CommandLink32 = new C1.Win.Command.C1CommandLink();
+            this.cErrorListCopy = new C1.Win.Command.C1Command();
+            this.cErrorListShow = new C1.Win.Command.C1Command();
             this.ilReportList = new System.Windows.Forms.ImageList(this.components);
             this._flexDesigner = new C1.Win.FlexReport.C1FlexReportDesigner();
             this._reportList = new FlexReportDesignerApp.Util.ReportList();
             this._dataTree = new FlexReportDesignerApp.Controls.DataTree();
             this._errorList = new FlexReportDesignerApp.Controls.ErrorList();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
             this._fieldPicker = new FlexReportDesignerApp.Util.FieldPicker();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.dtpReports = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink23 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink24 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink22 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink20 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink21 = new C1.Win.C1Command.C1CommandLink();
-            this.dtpData = new C1.Win.C1Command.C1DockingTabPage();
-            this.toolbarData = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink36 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink41 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink35 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink34 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink42 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink43 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink29 = new C1.Win.C1Command.C1CommandLink();
-            this.dtpErrors = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.dtpReports = new C1.Win.Command.C1DockingTabPage();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink23 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink24 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink22 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink20 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink21 = new C1.Win.Command.C1CommandLink();
+            this.dtpData = new C1.Win.Command.C1DockingTabPage();
+            this.toolbarData = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink36 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink41 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink35 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink34 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink42 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink43 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink29 = new C1.Win.Command.C1CommandLink();
+            this.dtpErrors = new C1.Win.Command.C1DockingTabPage();
             this._flexViewer = new C1.Win.FlexViewer.C1FlexViewerPane();
             this._reportRender = new C1.Win.FlexReport.C1FlexReport();
             this.rbtnFieldFlexChart = new C1.Win.Ribbon.RibbonButton();
@@ -2621,9 +2622,9 @@ namespace FlexReportDesignerApp
             this.c1DockingTab2.ShowCaption = true;
             this.c1DockingTab2.Size = new System.Drawing.Size(274, 157);
             this.c1DockingTab2.TabIndex = 5;
-            this.c1DockingTab2.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
-            this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1DockingTab2.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1DockingTab2.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab2.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
+            this.c1DockingTab2.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // dtpProperties
             // 
@@ -2655,7 +2656,7 @@ namespace FlexReportDesignerApp
             this.c1ToolBar2.AccessibleName = "Tool Bar";
             this.c1ToolBar2.AutoSize = false;
             this.c1ToolBar2.CommandHolder = this.chMain;
-            this.c1ToolBar2.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar2.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink3,
             this.c1CommandLink4});
             this.c1ToolBar2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -2664,7 +2665,7 @@ namespace FlexReportDesignerApp
             this.c1ToolBar2.Name = "c1ToolBar2";
             this.c1ToolBar2.Size = new System.Drawing.Size(271, 26);
             this.c1ToolBar2.Text = "c1ToolBar2";
-            this.c1ToolBar2.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1ToolBar2.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // chMain
             // 
@@ -2719,7 +2720,7 @@ namespace FlexReportDesignerApp
             this.chMain.ImageList = this.ilReportList;
             this.chMain.Owner = this;
             this.chMain.StateUpdateOnIdle = false;
-            this.chMain.CommandClick += new C1.Win.C1Command.CommandClickEventHandler(this.chMain_CommandClick);
+            this.chMain.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.chMain_CommandClick);
             // 
             // cAddDataSource
             // 
@@ -2737,7 +2738,7 @@ namespace FlexReportDesignerApp
             // 
             // cmNewReport
             // 
-            this.cmNewReport.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmNewReport.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink11,
             this.c1CommandLink12});
             this.cmNewReport.HideNonRecentLinks = false;
@@ -2902,7 +2903,7 @@ namespace FlexReportDesignerApp
             // 
             // cmReport
             // 
-            this.cmReport.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmReport.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink6,
             this.c1CommandLink25,
             this.c1CommandLink26,
@@ -2912,8 +2913,8 @@ namespace FlexReportDesignerApp
             this.c1CommandLink9});
             this.cmReport.Name = "cmReport";
             this.cmReport.ShortcutText = "";
-            this.cmReport.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.cmReport.VisualStyleBase = C1.Win.C1Command.VisualStyle.Custom;
+            this.cmReport.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.cmReport.VisualStyleBase = C1.Win.Command.VisualStyle.Custom;
             // 
             // c1CommandLink6
             // 
@@ -2953,7 +2954,7 @@ namespace FlexReportDesignerApp
             // 
             // _cmDesigner
             // 
-            this._cmDesigner.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this._cmDesigner.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink14,
             this.c1CommandLink15,
             this.c1CommandLink16,
@@ -2967,7 +2968,7 @@ namespace FlexReportDesignerApp
             this.c1CommandLink10});
             this._cmDesigner.Name = "_cmDesigner";
             this._cmDesigner.ShortcutText = "";
-            this._cmDesigner.VisualStyleBase = C1.Win.C1Command.VisualStyle.Custom;
+            this._cmDesigner.VisualStyleBase = C1.Win.Command.VisualStyle.Custom;
             // 
             // c1CommandLink14
             // 
@@ -3067,7 +3068,7 @@ namespace FlexReportDesignerApp
             // 
             // cmDataTree
             // 
-            this.cmDataTree.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmDataTree.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.clAddParameter,
             this.clAddDataSource,
             this.clAddCalculatedField,
@@ -3080,8 +3081,8 @@ namespace FlexReportDesignerApp
             this.clDataTreeDelete});
             this.cmDataTree.Name = "cmDataTree";
             this.cmDataTree.ShortcutText = "";
-            this.cmDataTree.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.cmDataTree.VisualStyleBase = C1.Win.C1Command.VisualStyle.Custom;
+            this.cmDataTree.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.cmDataTree.VisualStyleBase = C1.Win.Command.VisualStyle.Custom;
             // 
             // clAddParameter
             // 
@@ -3211,7 +3212,7 @@ namespace FlexReportDesignerApp
             // 
             // cmDataTreeAdd
             // 
-            this.cmDataTreeAdd.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmDataTreeAdd.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink37,
             this.c1CommandLink38,
             this.c1CommandLink39,
@@ -3244,7 +3245,7 @@ namespace FlexReportDesignerApp
             // 
             // cmPreview
             // 
-            this.cmPreview.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmPreview.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink5});
             this.cmPreview.Name = "cmPreview";
             this.cmPreview.ShortcutText = "";
@@ -3270,7 +3271,7 @@ namespace FlexReportDesignerApp
             // 
             // cmErrorList
             // 
-            this.cmErrorList.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmErrorList.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink30,
             this.c1CommandLink31,
             this.c1CommandLink32});
@@ -3432,9 +3433,9 @@ namespace FlexReportDesignerApp
             this.c1DockingTab1.ShowCaption = true;
             this.c1DockingTab1.Size = new System.Drawing.Size(274, 501);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // dtpReports
             // 
@@ -3452,7 +3453,7 @@ namespace FlexReportDesignerApp
             this.c1ToolBar1.AccessibleName = "Tool Bar";
             this.c1ToolBar1.AutoSize = false;
             this.c1ToolBar1.CommandHolder = this.chMain;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink23,
             this.c1CommandLink24,
@@ -3466,48 +3467,48 @@ namespace FlexReportDesignerApp
             this.c1ToolBar1.Name = "c1ToolBar1";
             this.c1ToolBar1.Size = new System.Drawing.Size(271, 26);
             this.c1ToolBar1.Text = "c1ToolBar1";
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1ToolBar1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink1
             // 
-            this.c1CommandLink1.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink1.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink1.Command = this.cmNewReport;
             // 
             // c1CommandLink23
             // 
-            this.c1CommandLink23.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Image;
+            this.c1CommandLink23.ButtonLook = C1.Win.Command.ButtonLookFlags.Image;
             this.c1CommandLink23.Command = this.cCutReport;
             this.c1CommandLink23.Delimiter = true;
             this.c1CommandLink23.SortOrder = 1;
             // 
             // c1CommandLink24
             // 
-            this.c1CommandLink24.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Image;
+            this.c1CommandLink24.ButtonLook = C1.Win.Command.ButtonLookFlags.Image;
             this.c1CommandLink24.Command = this.cCopyReport;
             this.c1CommandLink24.SortOrder = 2;
             // 
             // c1CommandLink22
             // 
-            this.c1CommandLink22.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Image;
+            this.c1CommandLink22.ButtonLook = C1.Win.Command.ButtonLookFlags.Image;
             this.c1CommandLink22.Command = this.cPasteReport;
             this.c1CommandLink22.SortOrder = 3;
             // 
             // c1CommandLink2
             // 
-            this.c1CommandLink2.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Image;
+            this.c1CommandLink2.ButtonLook = C1.Win.Command.ButtonLookFlags.Image;
             this.c1CommandLink2.Command = this.cDeleteReport;
             this.c1CommandLink2.SortOrder = 4;
             // 
             // c1CommandLink20
             // 
-            this.c1CommandLink20.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Image;
+            this.c1CommandLink20.ButtonLook = C1.Win.Command.ButtonLookFlags.Image;
             this.c1CommandLink20.Command = this.cMoveReportUp;
             this.c1CommandLink20.Delimiter = true;
             this.c1CommandLink20.SortOrder = 5;
             // 
             // c1CommandLink21
             // 
-            this.c1CommandLink21.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Image;
+            this.c1CommandLink21.ButtonLook = C1.Win.Command.ButtonLookFlags.Image;
             this.c1CommandLink21.Command = this.cMoveReportDown;
             this.c1CommandLink21.SortOrder = 6;
             this.c1CommandLink21.Text = "`";
@@ -3528,7 +3529,7 @@ namespace FlexReportDesignerApp
             this.toolbarData.AccessibleName = "Tool Bar";
             this.toolbarData.AutoSize = false;
             this.toolbarData.CommandHolder = this.chMain;
-            this.toolbarData.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.toolbarData.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink36,
             this.c1CommandLink41,
             this.c1CommandLink35,
@@ -3542,7 +3543,7 @@ namespace FlexReportDesignerApp
             this.toolbarData.Name = "toolbarData";
             this.toolbarData.Size = new System.Drawing.Size(271, 26);
             this.toolbarData.Text = "c1ToolBar3";
-            this.toolbarData.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.toolbarData.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink36
             // 
@@ -3719,30 +3720,30 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonButton rbtnDecreaseVerticalSpacing;
         private C1.Win.Ribbon.RibbonGroup rgSize;
         private C1.Win.Ribbon.RibbonButton rbtnReportInfo;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage dtpReports;
-        private C1.Win.C1Command.C1DockingTabPage dtpProperties;
-        private C1.Win.C1Command.C1CommandHolder chMain;
-        private C1.Win.C1Command.C1Command cNewReportEmpty;
-        private C1.Win.C1Command.C1Command cDeleteReport;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1Command cPropertiesCategorized;
-        private C1.Win.C1Command.C1Command cPropertiesAlphabetical;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1Command cMoveReportUp;
-        private C1.Win.C1Command.C1Command cMoveReportDown;
-        private C1.Win.C1Command.C1Command cmSelectAll;
-        private C1.Win.C1Command.C1Command cmCutField;
-        private C1.Win.C1Command.C1Command cmCopyField;
-        private C1.Win.C1Command.C1Command cmPasteField;
-        private C1.Win.C1Command.C1Command cmDeleteField;
-        private C1.Win.C1Command.C1Command cmBringToFront;
-        private C1.Win.C1Command.C1Command cmSendToBack;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage dtpReports;
+        private C1.Win.Command.C1DockingTabPage dtpProperties;
+        private C1.Win.Command.C1CommandHolder chMain;
+        private C1.Win.Command.C1Command cNewReportEmpty;
+        private C1.Win.Command.C1Command cDeleteReport;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1ToolBar c1ToolBar2;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1Command cPropertiesCategorized;
+        private C1.Win.Command.C1Command cPropertiesAlphabetical;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1Command cMoveReportUp;
+        private C1.Win.Command.C1Command cMoveReportDown;
+        private C1.Win.Command.C1Command cmSelectAll;
+        private C1.Win.Command.C1Command cmCutField;
+        private C1.Win.Command.C1Command cmCopyField;
+        private C1.Win.Command.C1Command cmPasteField;
+        private C1.Win.Command.C1Command cmDeleteField;
+        private C1.Win.Command.C1Command cmBringToFront;
+        private C1.Win.Command.C1Command cmSendToBack;
         private C1.Win.Ribbon.RibbonGroup rgFields;
         private C1.Win.Ribbon.RibbonToggleButton rbtnFieldArrow;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator12;
@@ -3762,14 +3763,14 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonButton rbtnRenderError;
         private C1.Win.Ribbon.RibbonSeparator rsepRenderError;
         private C1.Win.Ribbon.RibbonButton rbtnDelete;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink20;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink21;
-        private C1.Win.C1Command.C1Command cPasteReport;
-        private C1.Win.C1Command.C1Command cCutReport;
-        private C1.Win.C1Command.C1Command cCopyReport;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink22;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink23;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink24;
+        private C1.Win.Command.C1CommandLink c1CommandLink20;
+        private C1.Win.Command.C1CommandLink c1CommandLink21;
+        private C1.Win.Command.C1Command cPasteReport;
+        private C1.Win.Command.C1Command cCutReport;
+        private C1.Win.Command.C1Command cCopyReport;
+        private C1.Win.Command.C1CommandLink c1CommandLink22;
+        private C1.Win.Command.C1CommandLink c1CommandLink23;
+        private C1.Win.Command.C1CommandLink c1CommandLink24;
         private C1.Win.Ribbon.RibbonButton rbtnUndo;
         private C1.Win.Ribbon.RibbonButton rbtnRedo;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator8;
@@ -3835,27 +3836,27 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonButton rbtnExportMetafiles;
         private C1.Win.Ribbon.RibbonButton rbtnExportBMP;
         private C1.Win.Ribbon.RibbonButton rbtnExportPNG;
-        private C1.Win.C1Command.C1DockingTabPage dtpData;
+        private C1.Win.Command.C1DockingTabPage dtpData;
         private C1.Win.Ribbon.RibbonButton rbtnShowDataTree;
         private C1.Win.Ribbon.RibbonSplitButton rbtnAbout;
         private C1.Win.Ribbon.RibbonButton rbtnAlignCenter;
         private C1.Win.Ribbon.RibbonButton rbtnAlignMiddle;
-        private C1.Win.C1Command.C1ContextMenu cmReport;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink25;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink26;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink27;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1ContextMenu _cmDesigner;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink13;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink14;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink15;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink16;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink17;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink18;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink19;
+        private C1.Win.Command.C1ContextMenu cmReport;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1CommandLink c1CommandLink25;
+        private C1.Win.Command.C1CommandLink c1CommandLink26;
+        private C1.Win.Command.C1CommandLink c1CommandLink27;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1ContextMenu _cmDesigner;
+        private C1.Win.Command.C1CommandLink c1CommandLink13;
+        private C1.Win.Command.C1CommandLink c1CommandLink14;
+        private C1.Win.Command.C1CommandLink c1CommandLink15;
+        private C1.Win.Command.C1CommandLink c1CommandLink16;
+        private C1.Win.Command.C1CommandLink c1CommandLink17;
+        private C1.Win.Command.C1CommandLink c1CommandLink18;
+        private C1.Win.Command.C1CommandLink c1CommandLink19;
         private C1.Win.Ribbon.RibbonButton rbtnFirstPage;
         private C1.Win.Ribbon.RibbonButton rbtnPreviousPage;
         private C1.Win.Ribbon.RibbonButton rbtnNextPage;
@@ -3873,8 +3874,8 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonToggleButton rbtnLockFields;
         private C1.Win.Ribbon.RibbonLabel rlblSelectedReport;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator17;
-        private C1.Win.C1Command.C1Command cLockFields;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink28;
+        private C1.Win.Command.C1Command cLockFields;
+        private C1.Win.Command.C1CommandLink c1CommandLink28;
         private C1.Win.Ribbon.RibbonTab rtInsert;
         private C1.Win.Ribbon.RibbonGroup rgBorder;
         private C1.Win.Ribbon.RibbonColorPicker rclrBorderColor;
@@ -3903,8 +3904,8 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonToggleButton rbtnScriptEditor;
         private C1.Win.Ribbon.RibbonGroup rgStopRefresh;
         private C1.Win.Ribbon.RibbonButton rbtnPreviewStop;
-        private C1.Win.C1Command.C1Command cPreviewStop;
-        private C1.Win.C1Command.C1Command cPreviewRefresh;
+        private C1.Win.Command.C1Command cPreviewStop;
+        private C1.Win.Command.C1Command cPreviewRefresh;
         private C1.Win.Ribbon.RibbonButton rbtnPreviewRefresh;
         private C1.Win.Ribbon.RibbonButton rbtnPreviewPrint;
         private System.Windows.Forms.ImageList ilReportList;
@@ -3914,16 +3915,16 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator13;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator20;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator21;
-        private C1.Win.C1Command.C1Command cScriptEditor;
+        private C1.Win.Command.C1Command cScriptEditor;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.FlexReport.C1FlexReportDesigner _flexDesigner;
-        private C1.Win.C1Command.C1ToolBar toolbarData;
-        private C1.Win.C1Command.C1ContextMenu cmDataTree;
-        private C1.Win.C1Command.C1CommandLink clAddDataSource;
-        private C1.Win.C1Command.C1CommandLink clAddParameter;
-        private C1.Win.C1Command.C1Command cAddDataSource;
-        private C1.Win.C1Command.C1Command cAddParameter;
+        private C1.Win.Command.C1ToolBar toolbarData;
+        private C1.Win.Command.C1ContextMenu cmDataTree;
+        private C1.Win.Command.C1CommandLink clAddDataSource;
+        private C1.Win.Command.C1CommandLink clAddParameter;
+        private C1.Win.Command.C1Command cAddDataSource;
+        private C1.Win.Command.C1Command cAddParameter;
         private C1.Win.Ribbon.RibbonGroup rgSubSection;
         private C1.Win.Ribbon.RibbonButton rbtnSubSectionAdd;
         private C1.Win.Ribbon.RibbonButton rbtnSubSectionRemove;
@@ -3935,47 +3936,47 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonToggleButton rbtnCaptionsVisibilitySection;
         private C1.Win.Ribbon.RibbonToggleButton rbtnCaptionsVisibilityHairline;
         private C1.Win.Ribbon.RibbonToggleButton rbtnCaptionsVisibilityHidden;
-        private C1.Win.C1Command.C1CommandLink _clContextPlaceholderTop;
-        private C1.Win.C1Command.C1Command _cContextPlaceholderTop;
-        private C1.Win.C1Command.C1CommandLink _clContextPlaceholderBot;
-        private C1.Win.C1Command.C1Command _cContextPlaceholderBot;
+        private C1.Win.Command.C1CommandLink _clContextPlaceholderTop;
+        private C1.Win.Command.C1Command _cContextPlaceholderTop;
+        private C1.Win.Command.C1CommandLink _clContextPlaceholderBot;
+        private C1.Win.Command.C1Command _cContextPlaceholderBot;
         private C1.Win.FlexViewer.C1FlexViewerPane _flexViewer;
-        private C1.Win.C1Command.C1Command cAddCalculatedField;
-        private C1.Win.C1Command.C1CommandLink clAddCalculatedField;
+        private C1.Win.Command.C1Command cAddCalculatedField;
+        private C1.Win.Command.C1CommandLink clAddCalculatedField;
         private C1.Win.Ribbon.RibbonButton rbtnStatusZoom;
         private C1.Win.Ribbon.RibbonSplitButton rbtnDataSources;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator22;
         private C1.Win.Ribbon.RibbonButton rbtnDataSourcesAdd;
         private Controls.DataTree _dataTree;
-        private C1.Win.C1Command.C1Command cAddSort;
-        private C1.Win.C1Command.C1Command cDataTreeDelete;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink34;
-        private C1.Win.C1Command.C1Command cDataTreeInsert;
-        private C1.Win.C1Command.C1CommandLink clAddSort;
-        private C1.Win.C1Command.C1CommandLink clDataTreeDelete;
-        private C1.Win.C1Command.C1Command cDataTreeInplaceEdit;
-        private C1.Win.C1Command.C1CommandLink clDataTreeInplaceEdit;
-        private C1.Win.C1Command.C1CommandLink clDataTreeChangeSortOrder;
-        private C1.Win.C1Command.C1Command cDataTreeChangeSortOrder;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink35;
-        private C1.Win.C1Command.C1Command cDataTreeEdit;
-        private C1.Win.C1Command.C1Command cDataTreeMoveUp;
-        private C1.Win.C1Command.C1Command cDataTreeMoveDown;
-        private C1.Win.C1Command.C1CommandMenu cmDataTreeAdd;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink37;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink38;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink39;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink40;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink36;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink41;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink42;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink43;
-        private C1.Win.C1Command.C1CommandLink clDataTreeEdit;
-        private C1.Win.C1Command.C1CommandLink clDataTreeMoveUp;
-        private C1.Win.C1Command.C1CommandLink clDataTreeMoveDown;
+        private C1.Win.Command.C1Command cAddSort;
+        private C1.Win.Command.C1Command cDataTreeDelete;
+        private C1.Win.Command.C1CommandLink c1CommandLink34;
+        private C1.Win.Command.C1Command cDataTreeInsert;
+        private C1.Win.Command.C1CommandLink clAddSort;
+        private C1.Win.Command.C1CommandLink clDataTreeDelete;
+        private C1.Win.Command.C1Command cDataTreeInplaceEdit;
+        private C1.Win.Command.C1CommandLink clDataTreeInplaceEdit;
+        private C1.Win.Command.C1CommandLink clDataTreeChangeSortOrder;
+        private C1.Win.Command.C1Command cDataTreeChangeSortOrder;
+        private C1.Win.Command.C1CommandLink c1CommandLink35;
+        private C1.Win.Command.C1Command cDataTreeEdit;
+        private C1.Win.Command.C1Command cDataTreeMoveUp;
+        private C1.Win.Command.C1Command cDataTreeMoveDown;
+        private C1.Win.Command.C1CommandMenu cmDataTreeAdd;
+        private C1.Win.Command.C1CommandLink c1CommandLink37;
+        private C1.Win.Command.C1CommandLink c1CommandLink38;
+        private C1.Win.Command.C1CommandLink c1CommandLink39;
+        private C1.Win.Command.C1CommandLink c1CommandLink40;
+        private C1.Win.Command.C1CommandLink c1CommandLink36;
+        private C1.Win.Command.C1CommandLink c1CommandLink41;
+        private C1.Win.Command.C1CommandLink c1CommandLink42;
+        private C1.Win.Command.C1CommandLink c1CommandLink43;
+        private C1.Win.Command.C1CommandLink clDataTreeEdit;
+        private C1.Win.Command.C1CommandLink clDataTreeMoveUp;
+        private C1.Win.Command.C1CommandLink clDataTreeMoveDown;
         private C1.Win.Ribbon.RibbonButton rbtnFieldParagraph;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1Command cmProperties;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1Command cmProperties;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator23;
         private C1.Win.Ribbon.RibbonButton rbtnCaptionsExpandAll;
         private C1.Win.Ribbon.RibbonButton rbtnCaptionsCollapseAll;
@@ -3984,14 +3985,14 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonToggleButton rbtnPreviewPaginated;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator24;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator25;
-        private C1.Win.C1Command.C1ContextMenu cmPreview;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1Command cPreviewCopy;
-        private C1.Win.C1Command.C1CommandMenu cmNewReport;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Command.C1Command cNewReportWizard;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab2;
+        private C1.Win.Command.C1ContextMenu cmPreview;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1Command cPreviewCopy;
+        private C1.Win.Command.C1CommandMenu cmNewReport;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1Command cNewReportWizard;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1DockingTab c1DockingTab2;
         private System.Windows.Forms.PropertyGrid _propGrid;
         private C1.Win.Ribbon.RibbonToggleButton rbtnPreviewParams;
         private C1.Win.Ribbon.RibbonSplitButton rbtnExportPdf;
@@ -4006,22 +4007,22 @@ namespace FlexReportDesignerApp
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator26;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator27;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator28;
-        private C1.Win.C1Command.C1Command cDataSourceRefresh;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink29;
+        private C1.Win.Command.C1Command cDataSourceRefresh;
+        private C1.Win.Command.C1CommandLink c1CommandLink29;
         private C1.Win.Ribbon.RibbonButton rbtnExportJPEG;
         private C1.Win.Ribbon.RibbonButton rbtnExportGIF;
-        private C1.Win.C1Command.C1DockingTabPage dtpErrors;
+        private C1.Win.Command.C1DockingTabPage dtpErrors;
         private Controls.ErrorList _errorList;
-        private C1.Win.C1Command.C1ContextMenu cmErrorList;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink30;
-        private C1.Win.C1Command.C1Command cErrorListHide;
-        private C1.Win.C1Command.C1Command cErrorListClear;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink31;
+        private C1.Win.Command.C1ContextMenu cmErrorList;
+        private C1.Win.Command.C1CommandLink c1CommandLink30;
+        private C1.Win.Command.C1Command cErrorListHide;
+        private C1.Win.Command.C1Command cErrorListClear;
+        private C1.Win.Command.C1CommandLink c1CommandLink31;
         private C1.Win.Ribbon.RibbonButton rbtnShowErrorList;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator29;
-        private C1.Win.C1Command.C1Command cErrorListShow;
-        private C1.Win.C1Command.C1Command cErrorListCopy;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink32;
+        private C1.Win.Command.C1Command cErrorListShow;
+        private C1.Win.Command.C1Command cErrorListCopy;
+        private C1.Win.Command.C1CommandLink c1CommandLink32;
         private C1.Win.Ribbon.RibbonButton rbtnRotateViewCCW;
         private C1.Win.Ribbon.RibbonButton rbtnRotateViewCW;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator30;

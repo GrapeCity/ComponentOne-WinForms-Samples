@@ -36,7 +36,7 @@
             C1.Win.Ribbon.RibbonToolBar ribbonToolBar3;
             C1.Win.Ribbon.RibbonToolBar ribbonToolBar4;
             C1.Win.Ribbon.RibbonToggleGroup ribbonToggleGroup1;
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.DocumentModifiedLabel = new C1.Win.Ribbon.RibbonLabel();
@@ -171,7 +171,7 @@
             this.c1Ribbon1.Size = new System.Drawing.Size(681, 156);
             this.c1Ribbon1.Tabs.Add(this.HomeTab);
             this.c1Ribbon1.Tabs.Add(this.ViewTab);
-            this.c1Ribbon1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Help.png", global::ControlExplorer.Properties.Resources.Help));
+            this.c1Ribbon1.ToolTipSettings.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Help.png", global::ControlExplorer.Properties.Resources.Help));
             this.c1Ribbon1.ToolTipSettings.MaximumWidth = 250;
             // 
             // ribbonApplicationMenu1
@@ -707,7 +707,7 @@
         private C1.Win.Ribbon.RibbonTrackBar ZoomTrackBar1;
         private C1.Win.Ribbon.RibbonGroup ProofingGroup;
         private C1.Win.Ribbon.RibbonButton btnSpelling;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private C1.Win.Ribbon.RibbonContextualTabGroup ribbonContextualTabGroup1;
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;

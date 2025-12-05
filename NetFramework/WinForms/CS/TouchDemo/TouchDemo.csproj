@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -23,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1TouchToolKit" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.TouchToolkit" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -182,9 +178,6 @@
 
   <ItemGroup>
     <EmbeddedResource Include=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="DemoBase.resx">
       <DependentUpon>DemoBase.cs</DependentUpon>
     </EmbeddedResource>

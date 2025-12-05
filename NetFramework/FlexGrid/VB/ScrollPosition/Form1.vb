@@ -39,12 +39,12 @@ Public Class Form1
     Friend WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents button1 As System.Windows.Forms.Button
     Friend WithEvents textBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.label1 = New System.Windows.Forms.Label()
         Me.button1 = New System.Windows.Forms.Button()
         Me.textBox1 = New System.Windows.Forms.TextBox()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,8 +74,8 @@ Public Class Form1
         '
         '_flex
         '
-        Me._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Rows
-        Me._flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both
+        Me._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Rows
+        Me._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both
         Me._flex.Anchor = (((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right)
@@ -84,7 +84,7 @@ Public Class Form1
         Me._flex.Location = New System.Drawing.Point(8, 56)
         Me._flex.Name = "_flex"
         Me._flex.Size = New System.Drawing.Size(520, 424)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -120,12 +120,12 @@ Public Class Form1
         Next
     End Sub
 
-    Private Sub _flex_AfterScroll(ByVal sender As System.Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs)
+    Private Sub _flex_AfterScroll(ByVal sender As System.Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs)
         Console.WriteLine("ScrollPosition.Y = {0}", _flex.ScrollPosition.Y)
     End Sub
 
 
-    Private Sub _flex_AfterResizeRow(ByVal sender As System.Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs)
+    Private Sub _flex_AfterResizeRow(ByVal sender As System.Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs)
         Dim i As Integer
         For i = 1 To _flex.Rows.Count - 1
             _flex(i, 1) = _flex.Rows(i).Top

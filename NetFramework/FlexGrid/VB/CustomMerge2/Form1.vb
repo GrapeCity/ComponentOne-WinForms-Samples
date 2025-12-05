@@ -5,7 +5,7 @@ Imports System.Drawing.Printing
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Namespace WindowsApplication1
     Public Class Form1
@@ -112,7 +112,7 @@ Namespace WindowsApplication1
             '
             '_flex
             '
-            Me._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both
+            Me._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both
             Me._flex.Anchor = (((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                         Or System.Windows.Forms.AnchorStyles.Left) _
                         Or System.Windows.Forms.AnchorStyles.Right)
@@ -121,7 +121,7 @@ Namespace WindowsApplication1
             Me._flex.Location = New System.Drawing.Point(8, 40)
             Me._flex.Name = "_flex"
             Me._flex.Size = New System.Drawing.Size(512, 248)
-            Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+            Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
             "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
             ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
             "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _

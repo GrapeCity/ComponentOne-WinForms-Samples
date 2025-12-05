@@ -6,8 +6,8 @@ Imports System.Data.OleDb
 Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1SpellChecker
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.SpellChecker
+Imports C1.Win.FlexGrid
 
 Partial Public Class Form1
     Inherits Form
@@ -161,19 +161,19 @@ End Class
     '----------------------------------------------------------------------------- 
 #Region "** ISpellCheckableEditor"
 
-    Public ReadOnly Property Control() As Control Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.Control
+    Public ReadOnly Property Control() As Control Implements C1.Win.SpellChecker.ISpellCheckableEditor.Control
         Get
             Return _flex
         End Get
     End Property
-    Public Property HideSelection() As Boolean Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.HideSelection
+    Public Property HideSelection() As Boolean Implements C1.Win.SpellChecker.ISpellCheckableEditor.HideSelection
         Get
             Return False
         End Get
         Set(ByVal value As Boolean)
         End Set
     End Property
-    Public Property Text() As String Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.Text
+    Public Property Text() As String Implements C1.Win.SpellChecker.ISpellCheckableEditor.Text
         Get
             Return _flex.GetDataDisplay(_row, _cols(_col))
         End Get
@@ -181,7 +181,7 @@ End Class
             _flex(_row, _cols(_col)) = value
         End Set
     End Property
-    Public Property SelectedText() As String Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.SelectedText
+    Public Property SelectedText() As String Implements C1.Win.SpellChecker.ISpellCheckableEditor.SelectedText
         Get
             Return Text.Substring(_selStart, _selLength)
         End Get
@@ -194,7 +194,7 @@ End Class
             Text = t
         End Set
     End Property
-    Public Property SelectionLength() As Integer Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.SelectionLength
+    Public Property SelectionLength() As Integer Implements C1.Win.SpellChecker.ISpellCheckableEditor.SelectionLength
         Get
             Return _selLength
         End Get
@@ -202,7 +202,7 @@ End Class
             _selLength = value
         End Set
     End Property
-    Public Property SelectionStart() As Integer Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.SelectionStart
+    Public Property SelectionStart() As Integer Implements C1.Win.SpellChecker.ISpellCheckableEditor.SelectionStart
         Get
             Return _selStart
         End Get
@@ -210,7 +210,7 @@ End Class
             _selStart = value
         End Set
     End Property
-    Public Sub [Select](ByVal start As Integer, ByVal length As Integer) Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.Select
+    Public Sub [Select](ByVal start As Integer, ByVal length As Integer) Implements C1.Win.SpellChecker.ISpellCheckableEditor.Select
         ' keep track of selection within the cell 
         _selStart = start
         _selLength = length
@@ -222,13 +222,13 @@ End Class
         _selStart = 0
         _selLength = Text.Length
     End Sub
-    Public Function HasMoreText() As Boolean Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.HasMoreText
+    Public Function HasMoreText() As Boolean Implements C1.Win.SpellChecker.ISpellCheckableEditor.HasMoreText
         Return MoveNext()
     End Function
-    Public Sub BeginSpell() Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.BeginSpell
+    Public Sub BeginSpell() Implements C1.Win.SpellChecker.ISpellCheckableEditor.BeginSpell
 
     End Sub
-    Public Sub EndSpell() Implements C1.Win.C1SpellChecker.ISpellCheckableEditor.EndSpell
+    Public Sub EndSpell() Implements C1.Win.SpellChecker.ISpellCheckableEditor.EndSpell
     End Sub
 #End Region
 

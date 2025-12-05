@@ -21,7 +21,7 @@ Partial Class MainForm
         Me.rgThemes = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
         Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.columnBandsUserControl1 = New ColumnBandsOrderManagment.ColumnBandsUserControl()
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,7 +91,7 @@ Partial Class MainForm
     Private rgThemes As C1.Win.Ribbon.RibbonGroup
     Private ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     Private WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
-    Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Private columnBandsUserControl1 As ColumnBandsUserControl
 End Class
 

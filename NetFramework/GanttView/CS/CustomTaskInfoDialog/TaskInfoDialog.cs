@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1GanttView;
+using C1.Win.GanttView;
 
 namespace CustomTaskInfoDialog
 {
@@ -56,7 +56,9 @@ namespace CustomTaskInfoDialog
             _selectedTask = (Task)cbTask.SelectedValue;
             tbTaskName.Text = _selectedTask.Name;
             tbResource.Text = _selectedTask.ResourceNames;
-            tbStart.Text = _selectedTask.Start.Value.ToShortDateString();
+            tbStart.Text = _selectedTask.Start.HasValue
+                ? _selectedTask.Start.Value.ToShortDateString()
+                : "N/A";
             tbDuration.Text = _selectedTask.GetDurationInDays() + " day(s)";
             tbPercentComplete.Text = (_selectedTask.PercentComplete * 100).ToString("0.00");
         }

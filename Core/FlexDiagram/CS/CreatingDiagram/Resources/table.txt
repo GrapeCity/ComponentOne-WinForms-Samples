@@ -1,0 +1,9 @@
+﻿// fetch data table
+var table = DataService.CreateSkillsTable();
+
+// set diagram data source
+diagram.DataSource = table;
+
+// specify names of columns
+// 1st level, 2nd level, 3d level, Node text
+diagram.Binding = "Field,Domain,Specialty,Skill";

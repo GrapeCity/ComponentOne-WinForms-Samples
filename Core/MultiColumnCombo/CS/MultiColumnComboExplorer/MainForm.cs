@@ -30,28 +30,33 @@ namespace MultiColumnComboExplorer
 
             if (_items is not null)
             {
-                lblSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
+                lbSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
                 if (_items.Any())
-                    lblSamples.SelectedIndex = 0;
+                    lbSamples.SelectedIndex = 0;
             }
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            pnlSample.Controls.Clear();
-            if (lblSamples.SelectedItem is not string sampleName)
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            if (lbSamples.SelectedItem is not string sampleName)
                 return;
 
-            var sample = _items.Where(x => x.Name == sampleName).FirstOrDefault();
-            if (sample == null)
+            SampleItem sampleItem = _items.Where(x => x.Name == sampleName).FirstOrDefault();
+            if (sampleItem == null)
                 return;
 
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
 
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
-            pnlSample.Controls.Add(control);
+            var sampleItemControl = sampleItem.Sample;
+            sampleItemControl.Dock = DockStyle.Fill;
+            pnlSample.Controls.Add(sampleItemControl);
             UpdateDescriptionSize();
         }
 

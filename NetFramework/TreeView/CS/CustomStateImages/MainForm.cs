@@ -1,5 +1,5 @@
 ﻿using C1.Win.Ribbon;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

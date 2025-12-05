@@ -2,7 +2,7 @@
 Imports System.Windows.Forms
 Imports System.Data
 Imports System.Data.SqlClient
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -41,7 +41,7 @@ Public Class Form1
     Friend WithEvents sqlSelectCommand1 As System.Data.SqlClient.SqlCommand
     Friend WithEvents _btnDataReader As System.Windows.Forms.Button
     Friend WithEvents sqlDataAdapter1 As System.Data.SqlClient.SqlDataAdapter
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me._btnTotals = New System.Windows.Forms.Button()
         Me._btnDataTable = New System.Windows.Forms.Button()
@@ -49,7 +49,7 @@ Public Class Form1
         Me.sqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
         Me._btnDataReader = New System.Windows.Forms.Button()
         Me.sqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -107,7 +107,7 @@ Public Class Form1
         Me._flex.Name = "_flex"
         Me._flex.Rows.Count = 1
         Me._flex.Size = New System.Drawing.Size(683, 345)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -210,7 +210,7 @@ Public Class Form1
         t.done(String.Format("Added subtotals to {0} rows", _flex.Rows.Count))
     End Sub
 
-    Private Sub _flex_BeforeSort(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.SortColEventArgs) Handles _flex.BeforeSort
+    Private Sub _flex_BeforeSort(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.SortColEventArgs) Handles _flex.BeforeSort
         'get rid of totals before sorting
         'when bound, this is automatic.
         'when loaded with DataReader, it isn't

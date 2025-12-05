@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel
-Imports C1.Win.C1SuperTooltip
+Imports C1.Win.SuperTooltip
 
 
 Public Class Form1

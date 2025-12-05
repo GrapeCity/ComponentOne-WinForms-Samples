@@ -174,7 +174,7 @@
   <data name="inputLabel8.Text" xml:space="preserve">
     <value>&amp;RadioButton</value>
   </data>
-  <assembly alias="C1.Win.C1InputPanel.4.5.2" name="C1.Win.C1InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.InputPanel.4.5.2" name="C1.Win.InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <data name="inputRadioButton1.Text" xml:space="preserve">
     <value>Option 1</value>
   </data>

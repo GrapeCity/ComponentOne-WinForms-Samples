@@ -60,7 +60,7 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.cbExport = new C1.Win.C1Input.C1ComboBox();
             this.txtSearchBox = new StockChart.ucSymbolSearchBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -588,6 +588,6 @@
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label lblPeriod;
         private ucSymbolSearchBox txtSearchBox;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }

@@ -30,21 +30,18 @@ namespace FinancialChartExplorer.CustomControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1NumericEdit1 = new C1.Win.C1Input.C1NumericEdit();
+            this.c1NumericEdit1 = new C1.Win.Input.C1NumericEdit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // c1NumericEdit1
             // 
-            this.c1NumericEdit1.GapHeight = 0;
-            this.c1NumericEdit1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1NumericEdit1.Location = new System.Drawing.Point(0, 3);
             this.c1NumericEdit1.Name = "c1NumericEdit1";
             this.c1NumericEdit1.Size = new System.Drawing.Size(60, 22);
             this.c1NumericEdit1.TabIndex = 0;
             this.c1NumericEdit1.Tag = null;
-            this.c1NumericEdit1.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             // 
             // C1NumericEditExx
             // 
@@ -57,6 +54,6 @@ namespace FinancialChartExplorer.CustomControls
 
         #endregion
 
-        private C1.Win.C1Input.C1NumericEdit c1NumericEdit1;
+        private C1.Win.Input.C1NumericEdit c1NumericEdit1;
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.deStartDate = new C1.Win.Calendar.C1DateEdit();
             this.deEndDate = new C1.Win.Calendar.C1DateEdit();
             this.lStartDate = new C1.Win.C1Input.C1Label();

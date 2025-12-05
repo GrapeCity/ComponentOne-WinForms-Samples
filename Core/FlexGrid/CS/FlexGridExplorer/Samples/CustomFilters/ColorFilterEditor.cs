@@ -51,6 +51,8 @@ namespace FlexGridExplorer.Samples.CustomFilters
                 _filter.Tolerance = (int)_threshold.Value;
             }
         }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool KeepFormOpen
         {
             get { return _keepFormOpen; }

@@ -1,4 +1,4 @@
-Imports C1.Win.C1Gauge
+Imports C1.Win.Gauge
 
 Public Class PageClock
 
@@ -21,7 +21,7 @@ Public Class PageClock
     End Sub
 
     Private Sub c1RadialGauge1_FormatLabel(ByVal sender As System.Object, _
-      ByVal e As C1.Win.C1Gauge.FormatLabelEventArgs) Handles c1RadialGauge1.FormatLabel
+      ByVal e As C1.Win.Gauge.FormatLabelEventArgs) Handles c1RadialGauge1.FormatLabel
         If _roman AndAlso e.Decorator.Name = "nums" Then
 
             Select Case Convert.ToInt32(e.ScaledValue)

@@ -310,4 +310,122 @@
   <data name="Zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CheckBox_ContextMenu_Text" xml:space="preserve">
+    <value>Attach C1Command to C1ContextMenu</value>
+    <comment>Checkbox's text to attach command to ContextMenu</comment>
+  </data>
+  <data name="CheckBox_Disable_Text" xml:space="preserve">
+    <value>Disable</value>
+    <comment>Checkbox's text to disable the command across all linked controls</comment>
+  </data>
+  <data name="CheckBox_DockingTab_Text" xml:space="preserve">
+    <value>Attach C1Command to C1DockingTab</value>
+    <comment>Checkbox's text to attach command to docking tab control</comment>
+  </data>
+  <data name="CheckBox_MainMenu_Text" xml:space="preserve">
+    <value>Attach C1Command to C1MainMenu</value>
+    <comment>Checkbox's text to attach command to main menu control</comment>
+  </data>
+  <data name="CheckBox_ToolBar_Text" xml:space="preserve">
+    <value>Attach C1Command to C1ToolBar</value>
+    <comment>Checkbox's text to attach command to toolbar control</comment>
+  </data>
+  <data name="Label_CommandDesc" xml:space="preserve">
+    <value>Attach C1Command to the Controls:</value>
+    <comment>Header label for the command attachment section</comment>
+  </data>
+  <data name="Label_ContextMenu" xml:space="preserve">
+    <value>C1ContextMenu:</value>
+    <comment>Label identifying the context menu control section</comment>
+  </data>
+  <data name="Label_ContextMenuDesc" xml:space="preserve">
+    <value>Right Click here to open Context Menu</value>
+    <comment>Instructions for opening the context menu via right-click</comment>
+  </data>
+  <data name="Label_Counter" xml:space="preserve">
+    <value>Counter:</value>
+    <comment>Label for the counter display showing command click count</comment>
+  </data>
+  <data name="Label_DisableDesc" xml:space="preserve">
+    <value>Disables ALL controls linked to the c1Command</value>
+    <comment>Description explaining the disable command functionality</comment>
+  </data>
+  <data name="Label_MainMenu" xml:space="preserve">
+    <value>C1MainMenu:</value>
+    <comment>Label identifying the main menu control section</comment>
+  </data>
+  <data name="Label_SampleDescription" xml:space="preserve">
+    <value>This sample demonstrates how ONE C1Command can be attached to multiple controls.
+All five methods trigger the SAME command, that is incrementing the Counter!
+
+Try the following actions based on where you attached the command:
+
+1. Checkboxes Panel:
+    - Check the boxes on the right side to attach the C1Command to specific controls.
+
+2. C1MainMenu:
+    - If you attached the command to the C1MainMenu, click the CommandLink's and the C1MainMenu.
+
+3. C1ToolBar:
+    - If you attached the command to the C1ToolBar, click the CommandLink's and the C1Toolbar.
+
+4. C1DockingTab:
+    - If you attached the command to the C1DockingTab, click it's tab.
+
+5. C1ContextMenu:
+    - If you attached the command to a context menu, right-click in the context menu area and click on the Command Link's.
+
+6. Keyboard Shortcut:
+     - Press Ctrl + C to trigger the command via its shortcut.
+
+
+</value>
+    <comment>Main instructional text displayed on the docking tab explaining how to use the sample</comment>
+  </data>
+  <data name="Label_ToolBar" xml:space="preserve">
+    <value>C1ToolBar:</value>
+    <comment>Label identifying the C1Toolbar control section</comment>
+  </data>
+  <data name="Label_Welcome" xml:space="preserve">
+    <value>Welcome to C1Command Demo!</value>
+    <comment>Welcome message displayed at the top of the C1DockingPage</comment>
+  </data>
+  <data name="ToolTip_MainMenu" xml:space="preserve">
+    <value>Attaches c1Command to c1MainMenu and its Command Links
+Click on the c1MainMenu and its Command Links to increment the counter
+
+</value>
+    <comment>Tooltip for main menu checkbox explaining command attachment behavior</comment>
+  </data>
+  <data name="ToolTip_ContextMenu" xml:space="preserve">
+    <value>Attaches c1Command to C1ContextualMenu's CommandLink
+Click on the C1ContextualMenu's CommandLink to increment the counter</value>
+    <comment>Tooltip for context menu checkbox explaining command attachment behavior</comment>
+  </data>
+  <data name="ToolTip_Disable" xml:space="preserve">
+    <value>Disables ALL controls linked to the c1Command</value>
+    <comment>Tooltip for disable checkbox explaining it affects all linked controls</comment>
+  </data>
+  <data name="ToolTip_DockingTab" xml:space="preserve">
+    <value>Attaches c1Command to C1DockingTab
+Click on the c1DockingTab's Tab to increment the counter</value>
+    <comment>Tooltip for docking tab checkbox explaining command attachment behavior</comment>
+  </data>
+  <data name="ToolTip_ToolBar" xml:space="preserve">
+    <value>Attaches c1Command to C1DockingTab
+Click on the c1DockingTab's Tab to increment the counter</value>
+    <comment>Tooltip for toolbar checkbox explaining command attachment behavior</comment>
+  </data>
+  <data name="SampleItem_Desc_C1Command" xml:space="preserve">
+    <value>This demo shows how a single C1Command links multiple UI controls (C1MainMenu, C1ToolBar, C1DockingTab, C1ContextMenu, and C1CommandLink) to execute a shared action, that is, incrementing a counter whenever any linked control is clicked.</value>
+    <comment>Sample description for C1Command</comment>
+  </data>
+  <data name="SampleItem_Name_C1Command" xml:space="preserve">
+    <value>C1Command</value>
+    <comment>Sample name for C1Command</comment>
+  </data>
+  <data name="SampleItem_Title_C1Command" xml:space="preserve">
+    <value>C1Command</value>
+    <comment>Sample title for C1Command</comment>
+  </data>
 </root>

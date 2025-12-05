@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid
-        Me.C1Schedule1 = New C1.Win.C1Schedule.C1Schedule
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid
+        Me.C1Schedule1 = New C1.Win.Schedule.C1Schedule
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1Schedule1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1Schedule1.DataStorage.AppointmentStorage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -37,10 +37,10 @@ Partial Class Form1
         '
         'C1FlexGrid1
         '
-        Me.C1FlexGrid1.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
         Me.C1FlexGrid1.ColumnInfo = "10,1,0,0,0,95,Columns:"
         Me.C1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.C1FlexGrid1.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Automatic
+        Me.C1FlexGrid1.DragMode = C1.Win.FlexGrid.DragModeEnum.Automatic
         Me.C1FlexGrid1.Location = New System.Drawing.Point(0, 0)
         Me.C1FlexGrid1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
@@ -91,7 +91,7 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1Schedule1 As C1.Win.C1Schedule.C1Schedule
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1Schedule1 As C1.Win.Schedule.C1Schedule
 
 End Class

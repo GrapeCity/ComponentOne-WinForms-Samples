@@ -55,7 +55,7 @@
 Imports System
 Imports System.Text
 Imports System.Data
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class FilterRow
 

@@ -33,7 +33,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -140,7 +140,7 @@
         }
 
         #endregion
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private C1.Win.TreeView.C1TreeView c1TreeView1;
         private C1.Win.DataFilter.C1DataFilter c1DataFilter1;

@@ -52,6 +52,7 @@ namespace ColumnEditor
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._myControl = new ColumnEditor.UserControl1();
             ((System.ComponentModel.ISupportInitialize)(this._myControl)).BeginInit();
             this.SuspendLayout();
@@ -64,15 +65,17 @@ namespace ColumnEditor
             this._myControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this._myControl.Location = new System.Drawing.Point(6, 6);
             this._myControl.Name = "_myControl";
+            this._myControl.Padding = new System.Windows.Forms.Padding(5);
             this._myControl.Size = new System.Drawing.Size(551, 389);
             this._myControl.TabIndex = 2;
             this._myControl.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(563, 401);
             this.Controls.Add(this._myControl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(6);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

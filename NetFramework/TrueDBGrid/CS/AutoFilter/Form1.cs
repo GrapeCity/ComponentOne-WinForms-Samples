@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace AutoFilter
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -21,7 +21,7 @@ namespace AutoFilter
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand2;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand2;
 		private AutoFilter.DataSet1 dataSet11;
-		private C1.Win.C1TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
+		private C1.Win.TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -62,15 +62,16 @@ namespace AutoFilter
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Win.C1TrueDBGrid.Style style1 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style2 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style3 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style4 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style5 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style6 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style7 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style8 = new C1.Win.C1TrueDBGrid.Style();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            C1.Win.TrueDBGrid.Style style1 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style2 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style3 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style4 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style5 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style6 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style7 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style8 = new C1.Win.TrueDBGrid.Style();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dataSet11 = new AutoFilter.DataSet1();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -79,7 +80,7 @@ namespace AutoFilter
             this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand2 = new System.Data.OleDb.OleDbCommand();
             this.oleDbSelectCommand2 = new System.Data.OleDb.OleDbCommand();
-            this.c1TrueDBDropdown1 = new C1.Win.C1TrueDBGrid.C1TrueDBDropdown();
+            this.c1TrueDBDropdown1 = new C1.Win.TrueDBGrid.C1TrueDBDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBDropdown1)).BeginInit();
@@ -186,7 +187,7 @@ namespace AutoFilter
             // 
             this.c1TrueDBDropdown1.AllowColMove = true;
             this.c1TrueDBDropdown1.AllowColSelect = true;
-            this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows;
+            this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows;
             this.c1TrueDBDropdown1.AlternatingRows = false;
             this.c1TrueDBDropdown1.CaptionStyle = style1;
             this.c1TrueDBDropdown1.ColumnCaptionHeight = 17;
@@ -205,7 +206,7 @@ namespace AutoFilter
             this.c1TrueDBDropdown1.OddRowStyle = style6;
             this.c1TrueDBDropdown1.RecordSelectorStyle = style7;
             this.c1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray;
-            this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.ScrollTips = false;
             this.c1TrueDBDropdown1.Size = new System.Drawing.Size(100, 104);

@@ -16,36 +16,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreviewForm));
-            this.rpc = new C1.Win.RibbonPreview.C1RibbonPreview();
-            ((System.ComponentModel.ISupportInitialize)(this.rpc)).BeginInit();
-            this.SuspendLayout();
+            rpc = new C1.Win.RibbonPreview.C1RibbonPreview();
+            ((System.ComponentModel.ISupportInitialize)rpc).BeginInit();
+            SuspendLayout();
             // 
             // rpc
             // 
-            this.rpc.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.rpc.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.rpc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpc.Location = new System.Drawing.Point(0, 0);
-            this.rpc.Name = "rpc";
-            this.rpc.Size = new System.Drawing.Size(735, 442);
-            this.rpc.TabIndex = 0;
-            this.rpc.TextSearchStyle = C1.Win.C1Preview.TextSearchUIStyle.ToolBar;
-            this.rpc.UserAction += new System.EventHandler<C1.Win.RibbonPreview.UserRibbonPreviewActionEventArgs>(this.rpc_UserAction);
+            rpc.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            rpc.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            rpc.Dock = System.Windows.Forms.DockStyle.Fill;
+            rpc.Location = new System.Drawing.Point(0, 0);
+            rpc.Name = "rpc";
+            rpc.Size = new System.Drawing.Size(735, 442);
+            rpc.TabIndex = 0;
+            rpc.TextSearchStyle = C1.Win.C1Preview.TextSearchUIStyle.ToolBar;
+            rpc.UserAction += rpc_UserAction;
             // 
             // PreviewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(735, 442);
-            this.Controls.Add(this.rpc);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "PreviewForm";
-            this.Text = "C1PrintDocument Viewer";
-            this.Shown += new System.EventHandler(this.PreviewForm_Shown);
-            ((System.ComponentModel.ISupportInitialize)(this.rpc)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            ClientSize = new System.Drawing.Size(735, 442);
+            Controls.Add(rpc);
+            Font = new System.Drawing.Font("Segoe UI", 9F);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            Name = "PreviewForm";
+            Text = "C1PrintDocument Viewer";
+            Shown += PreviewForm_Shown;
+            ((System.ComponentModel.ISupportInitialize)rpc).EndInit();
+            ResumeLayout(false);
 
         }
 

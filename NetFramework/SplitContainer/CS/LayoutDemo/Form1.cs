@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace LayoutDemo
 {
-    using C1.Win.C1SplitContainer;
+    using C1.Win.SplitContainer;
 
     public partial class Form1 : Form
     {

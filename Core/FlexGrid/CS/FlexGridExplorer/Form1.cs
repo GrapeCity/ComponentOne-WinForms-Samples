@@ -1,50 +1,77 @@
-﻿using SampleExplorer;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using FlexGridExplorer.Component.SideMenu;
+using FlexGridExplorer.Core;
+using FlexGridExplorer.Properties;
+using FlexGridExplorer.Utility;
 
 namespace FlexGridExplorer
 {
     public partial class Form1 : Form
     {
+        #region Private Variables
+        List<ItemInfo> _samples;
+        ItemInfo _selectedSample;
+
+        SampleLoader _sampleLoader;
+        TileImageGenerator _imageGenerator;
+        SampleNavigator _navigator; 
+        #endregion
+
         public Form1()
         {
             InitializeComponent();
-            foreach (SampleItem sample in SampleDataSource.AllItems)
+
+            this.Text = StringsEN.SampleTitle;
+            Init();
+            LoadSampleData();
+
+            sideBar1.SelectionChanged += OnSideBarSelectionChanged;
+            Application.AddMessageFilter(new FocusDismissalFilter(sideBar1));
+        }
+
+        private void Init()
+        {
+            _sampleLoader = new SampleLoader();
+            _imageGenerator = new TileImageGenerator();
+            _navigator = new SampleNavigator(sampleHost1, tileControl1, sideBar1, _imageGenerator);
+        }
+        private void LoadSampleData()
+        {
+            _samples = _sampleLoader.LoadSamples();
+            sideBar1.Samples = _samples;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var defaultSample = _samples?.FirstOrDefault();
+            if (defaultSample != null)
             {
-                lblSamples.Items.Add(sample);
+                _navigator.ShowSample(defaultSample);
             }
-            lblSamples.SelectedIndex = 0;
         }
+        private void OnSideBarSelectionChanged(object sender, SideBarEventArgs e)
+        {
+            if (e.SelectedSample == null || _selectedSample == e.SelectedSample)
+                return;
 
-        private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
-        {
-            this.pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
-            var control = sample.CreateSampleControl();
-            control.Dock = DockStyle.Fill;
-            this.pnlSample.Controls.Add(control);
-            UpdateDescriptionSize();
-        }
+            _selectedSample = e.SelectedSample;
 
-        private void UpdateDescriptionSize()
-        {
-            Size s = TextRenderer.MeasureText(lblDescription.Text, lblDescription.Font);
-            int height = Math.Max(s.Height + 6, (s.Height + 6) * (int)Math.Ceiling((decimal)(s.Width + 20) / lblDescription.Width));
-            this.lblDescription.Size = new Size(lblDescription.Width, height);
-        }
-        private void chkInfo_CheckedChanged(object sender, EventArgs e)
-        {
-            pnlDescription.Visible = chkInfo.Checked;
-            UpdateDescriptionSize();
+            Action navigationAction = _selectedSample.Depth switch
+            {
+                0 => () => _navigator.ShowSample(_selectedSample),
+
+                1 => () => _navigator.ShowTiles(_selectedSample),
+
+                _ => () =>
+               {
+                   var targetSample = _selectedSample.Items?.FirstOrDefault();
+                   if (targetSample != null)
+                   {
+                       _navigator.ShowTiles(targetSample);
+                   }
+               }
+                ,
+            };
+            navigationAction();
         }
     }
 }

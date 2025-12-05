@@ -24,270 +24,270 @@ Partial Class Form1
 	Private Sub InitializeComponent()
 		Me.components = New System.ComponentModel.Container()
 		Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-		Dim c1TopicPage3 As New C1.Win.C1Command.C1TopicPage()
-		Dim c1TopicLink10 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink11 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink12 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink13 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink14 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink15 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicPage4 As New C1.Win.C1Command.C1TopicPage()
-		Dim c1TopicLink16 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink17 As New C1.Win.C1Command.C1TopicLink()
-		Dim c1TopicLink18 As New C1.Win.C1Command.C1TopicLink()
-		Dim printStyle6 As New C1.C1Schedule.Printing.PrintStyle()
-		Dim printStyle7 As New C1.C1Schedule.Printing.PrintStyle()
-		Dim printStyle8 As New C1.C1Schedule.Printing.PrintStyle()
-		Dim printStyle9 As New C1.C1Schedule.Printing.PrintStyle()
-		Dim printStyle10 As New C1.C1Schedule.Printing.PrintStyle()
-		Dim calendarException16 As New C1.Win.C1GanttView.CalendarException()
-		Dim taskPropertyColumn211 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn212 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn213 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn214 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn215 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn216 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn217 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn218 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn219 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn220 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn221 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn222 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn223 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim taskPropertyColumn224 As New C1.Win.C1GanttView.TaskPropertyColumn()
-		Dim resource136 As New C1.Win.C1GanttView.Resource()
-		Dim resource137 As New C1.Win.C1GanttView.Resource()
-		Dim resource138 As New C1.Win.C1GanttView.Resource()
-		Dim resource139 As New C1.Win.C1GanttView.Resource()
-		Dim resource140 As New C1.Win.C1GanttView.Resource()
-		Dim resource141 As New C1.Win.C1GanttView.Resource()
-		Dim resource142 As New C1.Win.C1GanttView.Resource()
-		Dim resource143 As New C1.Win.C1GanttView.Resource()
-		Dim resource144 As New C1.Win.C1GanttView.Resource()
-		Dim task406 As New C1.Win.C1GanttView.Task()
-		Dim resourceRef166 As New C1.Win.C1GanttView.ResourceRef()
-		Dim resourceRef167 As New C1.Win.C1GanttView.ResourceRef()
-		Dim resourceRef168 As New C1.Win.C1GanttView.ResourceRef()
-		Dim task407 As New C1.Win.C1GanttView.Task()
-		Dim task408 As New C1.Win.C1GanttView.Task()
-		Dim barStyle31 As New C1.Win.C1GanttView.BarStyle()
-		Dim predecessor76 As New C1.Win.C1GanttView.Predecessor()
-		Dim resourceRef169 As New C1.Win.C1GanttView.ResourceRef()
-		Dim task409 As New C1.Win.C1GanttView.Task()
-		Dim task410 As New C1.Win.C1GanttView.Task()
-		Dim predecessor77 As New C1.Win.C1GanttView.Predecessor()
-		Dim resourceRef170 As New C1.Win.C1GanttView.ResourceRef()
-		Dim resourceRef171 As New C1.Win.C1GanttView.ResourceRef()
-		Dim task411 As New C1.Win.C1GanttView.Task()
-		Dim task412 As New C1.Win.C1GanttView.Task()
-		Dim predecessor78 As New C1.Win.C1GanttView.Predecessor()
-		Dim resourceRef172 As New C1.Win.C1GanttView.ResourceRef()
-		Dim resourceRef173 As New C1.Win.C1GanttView.ResourceRef()
-		Dim task413 As New C1.Win.C1GanttView.Task()
-		Dim task414 As New C1.Win.C1GanttView.Task()
-		Dim barStyle32 As New C1.Win.C1GanttView.BarStyle()
-		Dim predecessor79 As New C1.Win.C1GanttView.Predecessor()
-		Dim resourceRef174 As New C1.Win.C1GanttView.ResourceRef()
-		Dim resourceRef175 As New C1.Win.C1GanttView.ResourceRef()
-		Dim task415 As New C1.Win.C1GanttView.Task()
-		Dim task416 As New C1.Win.C1GanttView.Task()
-		Dim predecessor80 As New C1.Win.C1GanttView.Predecessor()
-		Dim resourceRef176 As New C1.Win.C1GanttView.ResourceRef()
-		Dim task417 As New C1.Win.C1GanttView.Task()
-		Dim task418 As New C1.Win.C1GanttView.Task()
-		Dim task419 As New C1.Win.C1GanttView.Task()
-		Dim task420 As New C1.Win.C1GanttView.Task()
-		Dim task421 As New C1.Win.C1GanttView.Task()
-		Dim task422 As New C1.Win.C1GanttView.Task()
-		Dim task423 As New C1.Win.C1GanttView.Task()
-		Dim task424 As New C1.Win.C1GanttView.Task()
-		Dim task425 As New C1.Win.C1GanttView.Task()
-		Dim task426 As New C1.Win.C1GanttView.Task()
-		Dim task427 As New C1.Win.C1GanttView.Task()
-		Dim task428 As New C1.Win.C1GanttView.Task()
-		Dim task429 As New C1.Win.C1GanttView.Task()
-		Dim task430 As New C1.Win.C1GanttView.Task()
-		Dim task431 As New C1.Win.C1GanttView.Task()
-		Dim task432 As New C1.Win.C1GanttView.Task()
+		Dim c1TopicPage3 As New C1.Win.Command.C1TopicPage()
+		Dim c1TopicLink10 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink11 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink12 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink13 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink14 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink15 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicPage4 As New C1.Win.Command.C1TopicPage()
+		Dim c1TopicLink16 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink17 As New C1.Win.Command.C1TopicLink()
+		Dim c1TopicLink18 As New C1.Win.Command.C1TopicLink()
+		Dim printStyle6 As New C1.Schedule.Printing.PrintStyle()
+		Dim printStyle7 As New C1.Schedule.Printing.PrintStyle()
+		Dim printStyle8 As New C1.Schedule.Printing.PrintStyle()
+		Dim printStyle9 As New C1.Schedule.Printing.PrintStyle()
+		Dim printStyle10 As New C1.Schedule.Printing.PrintStyle()
+		Dim calendarException16 As New C1.Win.GanttView.CalendarException()
+		Dim taskPropertyColumn211 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn212 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn213 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn214 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn215 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn216 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn217 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn218 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn219 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn220 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn221 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn222 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn223 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim taskPropertyColumn224 As New C1.Win.GanttView.TaskPropertyColumn()
+		Dim resource136 As New C1.Win.GanttView.Resource()
+		Dim resource137 As New C1.Win.GanttView.Resource()
+		Dim resource138 As New C1.Win.GanttView.Resource()
+		Dim resource139 As New C1.Win.GanttView.Resource()
+		Dim resource140 As New C1.Win.GanttView.Resource()
+		Dim resource141 As New C1.Win.GanttView.Resource()
+		Dim resource142 As New C1.Win.GanttView.Resource()
+		Dim resource143 As New C1.Win.GanttView.Resource()
+		Dim resource144 As New C1.Win.GanttView.Resource()
+		Dim task406 As New C1.Win.GanttView.Task()
+		Dim resourceRef166 As New C1.Win.GanttView.ResourceRef()
+		Dim resourceRef167 As New C1.Win.GanttView.ResourceRef()
+		Dim resourceRef168 As New C1.Win.GanttView.ResourceRef()
+		Dim task407 As New C1.Win.GanttView.Task()
+		Dim task408 As New C1.Win.GanttView.Task()
+		Dim barStyle31 As New C1.Win.GanttView.BarStyle()
+		Dim predecessor76 As New C1.Win.GanttView.Predecessor()
+		Dim resourceRef169 As New C1.Win.GanttView.ResourceRef()
+		Dim task409 As New C1.Win.GanttView.Task()
+		Dim task410 As New C1.Win.GanttView.Task()
+		Dim predecessor77 As New C1.Win.GanttView.Predecessor()
+		Dim resourceRef170 As New C1.Win.GanttView.ResourceRef()
+		Dim resourceRef171 As New C1.Win.GanttView.ResourceRef()
+		Dim task411 As New C1.Win.GanttView.Task()
+		Dim task412 As New C1.Win.GanttView.Task()
+		Dim predecessor78 As New C1.Win.GanttView.Predecessor()
+		Dim resourceRef172 As New C1.Win.GanttView.ResourceRef()
+		Dim resourceRef173 As New C1.Win.GanttView.ResourceRef()
+		Dim task413 As New C1.Win.GanttView.Task()
+		Dim task414 As New C1.Win.GanttView.Task()
+		Dim barStyle32 As New C1.Win.GanttView.BarStyle()
+		Dim predecessor79 As New C1.Win.GanttView.Predecessor()
+		Dim resourceRef174 As New C1.Win.GanttView.ResourceRef()
+		Dim resourceRef175 As New C1.Win.GanttView.ResourceRef()
+		Dim task415 As New C1.Win.GanttView.Task()
+		Dim task416 As New C1.Win.GanttView.Task()
+		Dim predecessor80 As New C1.Win.GanttView.Predecessor()
+		Dim resourceRef176 As New C1.Win.GanttView.ResourceRef()
+		Dim task417 As New C1.Win.GanttView.Task()
+		Dim task418 As New C1.Win.GanttView.Task()
+		Dim task419 As New C1.Win.GanttView.Task()
+		Dim task420 As New C1.Win.GanttView.Task()
+		Dim task421 As New C1.Win.GanttView.Task()
+		Dim task422 As New C1.Win.GanttView.Task()
+		Dim task423 As New C1.Win.GanttView.Task()
+		Dim task424 As New C1.Win.GanttView.Task()
+		Dim task425 As New C1.Win.GanttView.Task()
+		Dim task426 As New C1.Win.GanttView.Task()
+		Dim task427 As New C1.Win.GanttView.Task()
+		Dim task428 As New C1.Win.GanttView.Task()
+		Dim task429 As New C1.Win.GanttView.Task()
+		Dim task430 As New C1.Win.GanttView.Task()
+		Dim task431 As New C1.Win.GanttView.Task()
+		Dim task432 As New C1.Win.GanttView.Task()
 		Me.ilMain2 = New System.Windows.Forms.ImageList(Me.components)
 		Me.ilSmall = New System.Windows.Forms.ImageList(Me.components)
-		Me.cchMain = New C1.Win.C1Command.C1CommandHolder()
-		Me.ccmFile = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink2 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccmFileNew = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink5 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileNewWizard = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink3 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileNewEmpty = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink4 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileOpen = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink6 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileSave = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink7 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileSaveAs = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink9 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFilePrint = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink8 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileClose = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink10 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFileExit = New C1.Win.C1Command.C1Command()
-		Me.ccmEdit = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink11 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccUndo = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink13 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccRedo = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink14 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCut = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink15 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCopy = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink16 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccPaste = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink17 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccDelete = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink18 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFind = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink19 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccGoTo = New C1.Win.C1Command.C1Command()
-		Me.ccmFormat = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink20 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFormatFont = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink23 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccmFormatFontColor = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink21 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFormatFontBold = New C1.Win.C1Command.C1Command()
-		Me.ccFormatFontItalic = New C1.Win.C1Command.C1Command()
-		Me.ccFormatFontUnderline = New C1.Win.C1Command.C1Command()
-		Me.ccFormatFontStrikeout = New C1.Win.C1Command.C1Command()
-		Me.ccFormatAlignLeft = New C1.Win.C1Command.C1Command()
-		Me.ccFormatAlignCenter = New C1.Win.C1Command.C1Command()
-		Me.ccFormatAlignRight = New C1.Win.C1Command.C1Command()
-		Me.ccFormatAlignJustify = New C1.Win.C1Command.C1Command()
-		Me.ccmC1TrueDBGrid = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink24 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGViewNormal = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink26 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGViewInverted = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink27 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGViewForm = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink28 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGViewGroupBy = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink29 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGViewMultipleLines = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink30 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGViewHierarchical = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink31 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCTDBGShowCaption = New C1.Win.C1Command.C1Command()
-		Me.ccmC1FlexGrid = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink32 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCFGViewNormal = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink36 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCFGViewTree = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink37 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCFGViewSubtotals = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink38 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCFGFixedColCount = New C1.Win.C1Command.C1CommandControl()
+		Me.cchMain = New C1.Win.Command.C1CommandHolder()
+		Me.ccmFile = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink2 = New C1.Win.Command.C1CommandLink()
+		Me.ccmFileNew = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink5 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileNewWizard = New C1.Win.Command.C1Command()
+		Me.c1CommandLink3 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileNewEmpty = New C1.Win.Command.C1Command()
+		Me.c1CommandLink4 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileOpen = New C1.Win.Command.C1Command()
+		Me.c1CommandLink6 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileSave = New C1.Win.Command.C1Command()
+		Me.c1CommandLink7 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileSaveAs = New C1.Win.Command.C1Command()
+		Me.c1CommandLink9 = New C1.Win.Command.C1CommandLink()
+		Me.ccFilePrint = New C1.Win.Command.C1Command()
+		Me.c1CommandLink8 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileClose = New C1.Win.Command.C1Command()
+		Me.c1CommandLink10 = New C1.Win.Command.C1CommandLink()
+		Me.ccFileExit = New C1.Win.Command.C1Command()
+		Me.ccmEdit = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink11 = New C1.Win.Command.C1CommandLink()
+		Me.ccUndo = New C1.Win.Command.C1Command()
+		Me.c1CommandLink13 = New C1.Win.Command.C1CommandLink()
+		Me.ccRedo = New C1.Win.Command.C1Command()
+		Me.c1CommandLink14 = New C1.Win.Command.C1CommandLink()
+		Me.ccCut = New C1.Win.Command.C1Command()
+		Me.c1CommandLink15 = New C1.Win.Command.C1CommandLink()
+		Me.ccCopy = New C1.Win.Command.C1Command()
+		Me.c1CommandLink16 = New C1.Win.Command.C1CommandLink()
+		Me.ccPaste = New C1.Win.Command.C1Command()
+		Me.c1CommandLink17 = New C1.Win.Command.C1CommandLink()
+		Me.ccDelete = New C1.Win.Command.C1Command()
+		Me.c1CommandLink18 = New C1.Win.Command.C1CommandLink()
+		Me.ccFind = New C1.Win.Command.C1Command()
+		Me.c1CommandLink19 = New C1.Win.Command.C1CommandLink()
+		Me.ccGoTo = New C1.Win.Command.C1Command()
+		Me.ccmFormat = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink20 = New C1.Win.Command.C1CommandLink()
+		Me.ccFormatFont = New C1.Win.Command.C1Command()
+		Me.c1CommandLink23 = New C1.Win.Command.C1CommandLink()
+		Me.ccmFormatFontColor = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink21 = New C1.Win.Command.C1CommandLink()
+		Me.ccFormatFontBold = New C1.Win.Command.C1Command()
+		Me.ccFormatFontItalic = New C1.Win.Command.C1Command()
+		Me.ccFormatFontUnderline = New C1.Win.Command.C1Command()
+		Me.ccFormatFontStrikeout = New C1.Win.Command.C1Command()
+		Me.ccFormatAlignLeft = New C1.Win.Command.C1Command()
+		Me.ccFormatAlignCenter = New C1.Win.Command.C1Command()
+		Me.ccFormatAlignRight = New C1.Win.Command.C1Command()
+		Me.ccFormatAlignJustify = New C1.Win.Command.C1Command()
+		Me.ccmC1TrueDBGrid = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink24 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGViewNormal = New C1.Win.Command.C1Command()
+		Me.c1CommandLink26 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGViewInverted = New C1.Win.Command.C1Command()
+		Me.c1CommandLink27 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGViewForm = New C1.Win.Command.C1Command()
+		Me.c1CommandLink28 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGViewGroupBy = New C1.Win.Command.C1Command()
+		Me.c1CommandLink29 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGViewMultipleLines = New C1.Win.Command.C1Command()
+		Me.c1CommandLink30 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGViewHierarchical = New C1.Win.Command.C1Command()
+		Me.c1CommandLink31 = New C1.Win.Command.C1CommandLink()
+		Me.ccCTDBGShowCaption = New C1.Win.Command.C1Command()
+		Me.ccmC1FlexGrid = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink32 = New C1.Win.Command.C1CommandLink()
+		Me.ccCFGViewNormal = New C1.Win.Command.C1Command()
+		Me.c1CommandLink36 = New C1.Win.Command.C1CommandLink()
+		Me.ccCFGViewTree = New C1.Win.Command.C1Command()
+		Me.c1CommandLink37 = New C1.Win.Command.C1CommandLink()
+		Me.ccCFGViewSubtotals = New C1.Win.Command.C1Command()
+		Me.c1CommandLink38 = New C1.Win.Command.C1CommandLink()
+		Me.ccCFGFixedColCount = New C1.Win.Command.C1CommandControl()
 		Me.cneCFGFrozenColCount = New C1.Win.C1Input.C1NumericEdit()
-		Me.c1CommandLink39 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCFGFixedRowCount = New C1.Win.C1Command.C1CommandControl()
+		Me.c1CommandLink39 = New C1.Win.Command.C1CommandLink()
+		Me.ccCFGFixedRowCount = New C1.Win.Command.C1CommandControl()
 		Me.cneCFGFrozenRowCount = New C1.Win.C1Input.C1NumericEdit()
-		Me.c1CommandLink40 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccmCFGSelectionMode = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink33 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink41 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccmCFGFocusRect = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink34 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink42 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCFGShowCursor = New C1.Win.C1Command.C1Command()
-		Me.ccmC1Schedule = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink43 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSViewDay = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink45 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSViewWorkWeek = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink46 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSViewWeek = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink47 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSViewMonth = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink48 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSViewTimeLine = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink49 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSEnableGrouping = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink50 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccCSOffice2003WeekView = New C1.Win.C1Command.C1Command()
-		Me.cccFormatFontName = New C1.Win.C1Command.C1CommandControl()
+		Me.c1CommandLink40 = New C1.Win.Command.C1CommandLink()
+		Me.ccmCFGSelectionMode = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink33 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink41 = New C1.Win.Command.C1CommandLink()
+		Me.ccmCFGFocusRect = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink34 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink42 = New C1.Win.Command.C1CommandLink()
+		Me.ccCFGShowCursor = New C1.Win.Command.C1Command()
+		Me.ccmC1Schedule = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink43 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSViewDay = New C1.Win.Command.C1Command()
+		Me.c1CommandLink45 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSViewWorkWeek = New C1.Win.Command.C1Command()
+		Me.c1CommandLink46 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSViewWeek = New C1.Win.Command.C1Command()
+		Me.c1CommandLink47 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSViewMonth = New C1.Win.Command.C1Command()
+		Me.c1CommandLink48 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSViewTimeLine = New C1.Win.Command.C1Command()
+		Me.c1CommandLink49 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSEnableGrouping = New C1.Win.Command.C1Command()
+		Me.c1CommandLink50 = New C1.Win.Command.C1CommandLink()
+		Me.ccCSOffice2003WeekView = New C1.Win.Command.C1Command()
+		Me.cccFormatFontName = New C1.Win.Command.C1CommandControl()
 		Me.cddcFontName = New C1.Win.C1Input.C1DropDownControl()
-		Me.cccFormatFontSize = New C1.Win.C1Command.C1CommandControl()
+		Me.cccFormatFontSize = New C1.Win.Command.C1CommandControl()
 		Me.cddcFontSize = New C1.Win.C1Input.C1DropDownControl()
-		Me.ccmFormatBorders = New C1.Win.C1Command.C1CommandMenu()
-		Me.c1CommandLink73 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFormatBorderBottom = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink71 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFormatBorderTop = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink74 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFormatBorderLeft = New C1.Win.C1Command.C1Command()
-		Me.c1CommandLink75 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccFormatBorderRight = New C1.Win.C1Command.C1Command()
-		Me.ccStatesNormal = New C1.Win.C1Command.C1Command()
-		Me.ccStatesDisabled = New C1.Win.C1Command.C1Command()
-		Me.ccStatesPressed = New C1.Win.C1Command.C1Command()
-		Me.ccStatesChecked = New C1.Win.C1Command.C1Command()
-		Me.ccmTheme = New C1.Win.C1Command.C1CommandMenu()
-		Me.cmmMain = New C1.Win.C1Command.C1MainMenu()
-		Me.c1CommandLink1 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink12 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink22 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink25 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink35 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink44 = New C1.Win.C1Command.C1CommandLink()
-		Me.ccdTop = New C1.Win.C1Command.C1CommandDock()
-		Me.ctbStates = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink76 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink77 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink78 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink79 = New C1.Win.C1Command.C1CommandLink()
-		Me.ctbFormat = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink69 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink70 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink61 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink62 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink63 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink64 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink65 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink66 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink67 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink68 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink72 = New C1.Win.C1Command.C1CommandLink()
-		Me.ctbEdit = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink55 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink56 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink57 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink58 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink59 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink60 = New C1.Win.C1Command.C1CommandLink()
-		Me.ctbFile = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink80 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink51 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink52 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink53 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink54 = New C1.Win.C1Command.C1CommandLink()
+		Me.ccmFormatBorders = New C1.Win.Command.C1CommandMenu()
+		Me.c1CommandLink73 = New C1.Win.Command.C1CommandLink()
+		Me.ccFormatBorderBottom = New C1.Win.Command.C1Command()
+		Me.c1CommandLink71 = New C1.Win.Command.C1CommandLink()
+		Me.ccFormatBorderTop = New C1.Win.Command.C1Command()
+		Me.c1CommandLink74 = New C1.Win.Command.C1CommandLink()
+		Me.ccFormatBorderLeft = New C1.Win.Command.C1Command()
+		Me.c1CommandLink75 = New C1.Win.Command.C1CommandLink()
+		Me.ccFormatBorderRight = New C1.Win.Command.C1Command()
+		Me.ccStatesNormal = New C1.Win.Command.C1Command()
+		Me.ccStatesDisabled = New C1.Win.Command.C1Command()
+		Me.ccStatesPressed = New C1.Win.Command.C1Command()
+		Me.ccStatesChecked = New C1.Win.Command.C1Command()
+		Me.ccmTheme = New C1.Win.Command.C1CommandMenu()
+		Me.cmmMain = New C1.Win.Command.C1MainMenu()
+		Me.c1CommandLink1 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink12 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink22 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink25 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink35 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink44 = New C1.Win.Command.C1CommandLink()
+		Me.ccdTop = New C1.Win.Command.C1CommandDock()
+		Me.ctbStates = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink76 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink77 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink78 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink79 = New C1.Win.Command.C1CommandLink()
+		Me.ctbFormat = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink69 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink70 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink61 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink62 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink63 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink64 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink65 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink66 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink67 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink68 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink72 = New C1.Win.Command.C1CommandLink()
+		Me.ctbEdit = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink55 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink56 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink57 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink58 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink59 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink60 = New C1.Win.Command.C1CommandLink()
+		Me.ctbFile = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink80 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink51 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink52 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink53 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink54 = New C1.Win.Command.C1CommandLink()
 		Me.ilMain = New System.Windows.Forms.ImageList(Me.components)
-		Me.c1NavBar1 = New C1.Win.C1Command.C1NavBar()
-		Me.c1NavBarPanel5 = New C1.Win.C1Command.C1NavBarPanel()
-		Me.ctbMain = New C1.Win.C1Command.C1TopicBar()
-		Me.c1NavBarPanel2 = New C1.Win.C1Command.C1NavBarPanel()
-		Me.c1Calendar1 = New C1.Win.C1Schedule.C1Calendar()
-		Me.c1NavBarPanel3 = New C1.Win.C1Command.C1NavBarPanel()
+		Me.c1NavBar1 = New C1.Win.Command.C1NavBar()
+		Me.c1NavBarPanel5 = New C1.Win.Command.C1NavBarPanel()
+		Me.ctbMain = New C1.Win.Command.C1TopicBar()
+		Me.c1NavBarPanel2 = New C1.Win.Command.C1NavBarPanel()
+		Me.c1Calendar1 = New C1.Win.Schedule.C1Calendar()
+		Me.c1NavBarPanel3 = New C1.Win.Command.C1NavBarPanel()
 		Me.label1 = New System.Windows.Forms.Label()
-		Me.c1NavBarPanel4 = New C1.Win.C1Command.C1NavBarPanel()
+		Me.c1NavBarPanel4 = New C1.Win.Command.C1NavBarPanel()
 		Me.label2 = New System.Windows.Forms.Label()
-		Me.c1CommandDock1 = New C1.Win.C1Command.C1CommandDock()
-		Me.c1DockingTab1 = New C1.Win.C1Command.C1DockingTab()
-		Me.c1DockingTabPage1 = New C1.Win.C1Command.C1DockingTabPage()
-		Me.c1OutBar1 = New C1.Win.C1Command.C1OutBar()
-		Me.copC1FlexGrid = New C1.Win.C1Command.C1OutPage()
-		Me.ctbC1FlexGrid = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink81 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink82 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink83 = New C1.Win.C1Command.C1CommandLink()
+		Me.c1CommandDock1 = New C1.Win.Command.C1CommandDock()
+		Me.c1DockingTab1 = New C1.Win.Command.C1DockingTab()
+		Me.c1DockingTabPage1 = New C1.Win.Command.C1DockingTabPage()
+		Me.c1OutBar1 = New C1.Win.Command.C1OutBar()
+		Me.copC1FlexGrid = New C1.Win.Command.C1OutPage()
+		Me.ctbC1FlexGrid = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink81 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink82 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink83 = New C1.Win.Command.C1CommandLink()
         Me.tableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.c1Label4 = New C1.Win.C1Input.C1Label()
 		Me.c1Label3 = New C1.Win.C1Input.C1Label()
@@ -298,41 +298,41 @@ Partial Class Form1
 		Me.cneFixedRowCount = New C1.Win.C1Input.C1NumericEdit()
 		Me.cneFixedColCount = New C1.Win.C1Input.C1NumericEdit()
 		Me.c1Label1 = New C1.Win.C1Input.C1Label()
-		Me.copC1TrueDBGrid = New C1.Win.C1Command.C1OutPage()
-		Me.ctbC1TrueDBGridView = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink84 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink85 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink86 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink87 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink88 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink89 = New C1.Win.C1Command.C1CommandLink()
+		Me.copC1TrueDBGrid = New C1.Win.Command.C1OutPage()
+		Me.ctbC1TrueDBGridView = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink84 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink85 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink86 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink87 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink88 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink89 = New C1.Win.Command.C1CommandLink()
 		Me.panel2 = New System.Windows.Forms.Panel()
 		Me.ccbCTDBGShowFilterBar = New C1.Win.C1Input.C1CheckBox()
 		Me.ccbCTDBGShowCaption = New C1.Win.C1Input.C1CheckBox()
-		Me.copC1Schedule = New C1.Win.C1Command.C1OutPage()
-		Me.ctbC1ScheduleView = New C1.Win.C1Command.C1ToolBar()
-		Me.c1CommandLink90 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink91 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink92 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink93 = New C1.Win.C1Command.C1CommandLink()
-		Me.c1CommandLink94 = New C1.Win.C1Command.C1CommandLink()
+		Me.copC1Schedule = New C1.Win.Command.C1OutPage()
+		Me.ctbC1ScheduleView = New C1.Win.Command.C1ToolBar()
+		Me.c1CommandLink90 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink91 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink92 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink93 = New C1.Win.Command.C1CommandLink()
+		Me.c1CommandLink94 = New C1.Win.Command.C1CommandLink()
 		Me.panel3 = New System.Windows.Forms.Panel()
 		Me.ccbCSOffice2003WeekView = New C1.Win.C1Input.C1CheckBox()
 		Me.ccbCSEnableGrouping = New C1.Win.C1Input.C1CheckBox()
-		Me.c1DockingTabPage2 = New C1.Win.C1Command.C1DockingTabPage()
-		Me.c1DockingTab2 = New C1.Win.C1Command.C1DockingTab()
-		Me.c1DockingTabPage3 = New C1.Win.C1Command.C1DockingTabPage()
-		Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-		Me.c1DockingTabPage4 = New C1.Win.C1Command.C1DockingTabPage()
-		Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
-		Me.c1DockingTabPage5 = New C1.Win.C1Command.C1DockingTabPage()
-		Me.csMain = New C1.Win.C1Schedule.C1Schedule()
-		Me.c1DockingTabPage6 = New C1.Win.C1Command.C1DockingTabPage()
-		Me.c1GanttView1 = New C1.Win.C1GanttView.C1GanttView()
+		Me.c1DockingTabPage2 = New C1.Win.Command.C1DockingTabPage()
+		Me.c1DockingTab2 = New C1.Win.Command.C1DockingTab()
+		Me.c1DockingTabPage3 = New C1.Win.Command.C1DockingTabPage()
+		Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+		Me.c1DockingTabPage4 = New C1.Win.Command.C1DockingTabPage()
+		Me.c1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
+		Me.c1DockingTabPage5 = New C1.Win.Command.C1DockingTabPage()
+		Me.csMain = New C1.Win.Schedule.C1Schedule()
+		Me.c1DockingTabPage6 = New C1.Win.Command.C1DockingTabPage()
+		Me.c1GanttView1 = New C1.Win.GanttView.C1GanttView()
 		Me.c1NWINDDataSet = New C1CommandBasedApp.C1NWINDDataSet()
 		Me.employeesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
 		Me.employeesTableAdapter = New C1CommandBasedApp.C1NWINDDataSetTableAdapters.EmployeesTableAdapter()
-		Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+		Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
 		DirectCast(Me.cchMain, System.ComponentModel.ISupportInitialize).BeginInit()
 		DirectCast(Me.cneCFGFrozenColCount, System.ComponentModel.ISupportInitialize).BeginInit()
 		DirectCast(Me.cneCFGFrozenRowCount, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -536,7 +536,7 @@ Partial Class Form1
 		' 
 		' ccmFile
 		' 
-		Me.ccmFile.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink2, Me.c1CommandLink4, Me.c1CommandLink6, Me.c1CommandLink7, Me.c1CommandLink9, Me.c1CommandLink8, _
+		Me.ccmFile.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink2, Me.c1CommandLink4, Me.c1CommandLink6, Me.c1CommandLink7, Me.c1CommandLink9, Me.c1CommandLink8, _
 			Me.c1CommandLink10})
 		Me.ccmFile.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmFile.HideNonRecentLinks = False
@@ -545,8 +545,8 @@ Partial Class Form1
 		Me.ccmFile.SideCaption.Text = "File actions"
 		Me.ccmFile.Text = "&File"
 		Me.c1ThemeController1.SetTheme(Me.ccmFile, "(default)")
-		Me.ccmFile.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmFile.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmFile.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmFile.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink2
 		' 
@@ -554,15 +554,15 @@ Partial Class Form1
 		' 
 		' ccmFileNew
 		' 
-		Me.ccmFileNew.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink5, Me.c1CommandLink3})
+		Me.ccmFileNew.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink5, Me.c1CommandLink3})
 		Me.ccmFileNew.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmFileNew.HideNonRecentLinks = False
 		Me.ccmFileNew.Name = "ccmFileNew"
 		Me.ccmFileNew.ShortcutText = ""
 		Me.ccmFileNew.Text = "New"
 		Me.c1ThemeController1.SetTheme(Me.ccmFileNew, "(default)")
-		Me.ccmFileNew.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmFileNew.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmFileNew.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmFileNew.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink5
 		' 
@@ -665,11 +665,11 @@ Partial Class Form1
 		Me.ccFileExit.Shortcut = System.Windows.Forms.Shortcut.AltF4
 		Me.ccFileExit.ShortcutText = ""
 		Me.ccFileExit.Text = "E&xit"
-		AddHandler Me.ccFileExit.Click, New C1.Win.C1Command.ClickEventHandler(AddressOf Me.ccFileExit_Click)
+		AddHandler Me.ccFileExit.Click, New C1.Win.Command.ClickEventHandler(AddressOf Me.ccFileExit_Click)
 		' 
 		' ccmEdit
 		' 
-		Me.ccmEdit.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink11, Me.c1CommandLink13, Me.c1CommandLink14, Me.c1CommandLink15, Me.c1CommandLink16, Me.c1CommandLink17, _
+		Me.ccmEdit.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink11, Me.c1CommandLink13, Me.c1CommandLink14, Me.c1CommandLink15, Me.c1CommandLink16, Me.c1CommandLink17, _
 			Me.c1CommandLink18, Me.c1CommandLink19})
 		Me.ccmEdit.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmEdit.HideNonRecentLinks = False
@@ -677,8 +677,8 @@ Partial Class Form1
 		Me.ccmEdit.ShortcutText = ""
 		Me.ccmEdit.Text = "&Edit"
 		Me.c1ThemeController1.SetTheme(Me.ccmEdit, "(default)")
-		Me.ccmEdit.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmEdit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmEdit.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmEdit.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink11
 		' 
@@ -786,15 +786,15 @@ Partial Class Form1
 		' 
 		' ccmFormat
 		' 
-		Me.ccmFormat.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink20, Me.c1CommandLink23})
+		Me.ccmFormat.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink20, Me.c1CommandLink23})
 		Me.ccmFormat.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmFormat.HideNonRecentLinks = False
 		Me.ccmFormat.Name = "ccmFormat"
 		Me.ccmFormat.ShortcutText = ""
 		Me.ccmFormat.Text = "&Format"
 		Me.c1ThemeController1.SetTheme(Me.ccmFormat, "(default)")
-		Me.ccmFormat.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmFormat.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmFormat.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmFormat.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink20
 		' 
@@ -814,7 +814,7 @@ Partial Class Form1
 		' 
 		' ccmFormatFontColor
 		' 
-		Me.ccmFormatFontColor.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink21})
+		Me.ccmFormatFontColor.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink21})
 		Me.ccmFormatFontColor.Enabled = False
 		Me.ccmFormatFontColor.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmFormatFontColor.ImageIndex = 23
@@ -822,8 +822,8 @@ Partial Class Form1
 		Me.ccmFormatFontColor.ShortcutText = ""
 		Me.ccmFormatFontColor.Text = "Font Color"
 		Me.c1ThemeController1.SetTheme(Me.ccmFormatFontColor, "(default)")
-		Me.ccmFormatFontColor.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmFormatFontColor.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmFormatFontColor.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmFormatFontColor.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink21
 		' 
@@ -892,7 +892,7 @@ Partial Class Form1
 		' 
 		' ccmC1TrueDBGrid
 		' 
-		Me.ccmC1TrueDBGrid.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink24, Me.c1CommandLink26, Me.c1CommandLink27, Me.c1CommandLink28, Me.c1CommandLink29, Me.c1CommandLink30, _
+		Me.ccmC1TrueDBGrid.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink24, Me.c1CommandLink26, Me.c1CommandLink27, Me.c1CommandLink28, Me.c1CommandLink29, Me.c1CommandLink30, _
 			Me.c1CommandLink31})
 		Me.ccmC1TrueDBGrid.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmC1TrueDBGrid.HideNonRecentLinks = False
@@ -900,8 +900,8 @@ Partial Class Form1
 		Me.ccmC1TrueDBGrid.ShortcutText = ""
 		Me.ccmC1TrueDBGrid.Text = "C1TrueDBGrid"
 		Me.c1ThemeController1.SetTheme(Me.ccmC1TrueDBGrid, "(default)")
-		Me.ccmC1TrueDBGrid.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmC1TrueDBGrid.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmC1TrueDBGrid.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmC1TrueDBGrid.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink24
 		' 
@@ -994,7 +994,7 @@ Partial Class Form1
 		' 
 		' ccmC1FlexGrid
 		' 
-		Me.ccmC1FlexGrid.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink32, Me.c1CommandLink36, Me.c1CommandLink37, Me.c1CommandLink38, Me.c1CommandLink39, Me.c1CommandLink40, _
+		Me.ccmC1FlexGrid.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink32, Me.c1CommandLink36, Me.c1CommandLink37, Me.c1CommandLink38, Me.c1CommandLink39, Me.c1CommandLink40, _
 			Me.c1CommandLink41, Me.c1CommandLink42})
 		Me.ccmC1FlexGrid.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmC1FlexGrid.HideNonRecentLinks = False
@@ -1002,8 +1002,8 @@ Partial Class Form1
 		Me.ccmC1FlexGrid.ShortcutText = ""
 		Me.ccmC1FlexGrid.Text = "C1FlexGrid"
 		Me.c1ThemeController1.SetTheme(Me.ccmC1FlexGrid, "(default)")
-		Me.ccmC1FlexGrid.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmC1FlexGrid.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmC1FlexGrid.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmC1FlexGrid.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink32
 		' 
@@ -1118,15 +1118,15 @@ Partial Class Form1
 		' 
 		' ccmCFGSelectionMode
 		' 
-		Me.ccmCFGSelectionMode.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink33})
+		Me.ccmCFGSelectionMode.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink33})
 		Me.ccmCFGSelectionMode.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmCFGSelectionMode.HideNonRecentLinks = False
 		Me.ccmCFGSelectionMode.Name = "ccmCFGSelectionMode"
 		Me.ccmCFGSelectionMode.ShortcutText = ""
 		Me.ccmCFGSelectionMode.Text = "Selection Mode"
 		Me.c1ThemeController1.SetTheme(Me.ccmCFGSelectionMode, "(default)")
-		Me.ccmCFGSelectionMode.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmCFGSelectionMode.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmCFGSelectionMode.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmCFGSelectionMode.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink33
 		' 
@@ -1139,15 +1139,15 @@ Partial Class Form1
 		' 
 		' ccmCFGFocusRect
 		' 
-		Me.ccmCFGFocusRect.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink34})
+		Me.ccmCFGFocusRect.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink34})
 		Me.ccmCFGFocusRect.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmCFGFocusRect.HideNonRecentLinks = False
 		Me.ccmCFGFocusRect.Name = "ccmCFGFocusRect"
 		Me.ccmCFGFocusRect.ShortcutText = ""
 		Me.ccmCFGFocusRect.Text = "Focus Rect"
 		Me.c1ThemeController1.SetTheme(Me.ccmCFGFocusRect, "(default)")
-		Me.ccmCFGFocusRect.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmCFGFocusRect.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmCFGFocusRect.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmCFGFocusRect.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink34
 		' 
@@ -1167,7 +1167,7 @@ Partial Class Form1
 		' 
 		' ccmC1Schedule
 		' 
-		Me.ccmC1Schedule.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink43, Me.c1CommandLink45, Me.c1CommandLink46, Me.c1CommandLink47, Me.c1CommandLink48, Me.c1CommandLink49, _
+		Me.ccmC1Schedule.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink43, Me.c1CommandLink45, Me.c1CommandLink46, Me.c1CommandLink47, Me.c1CommandLink48, Me.c1CommandLink49, _
 			Me.c1CommandLink50})
 		Me.ccmC1Schedule.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmC1Schedule.HideNonRecentLinks = False
@@ -1175,8 +1175,8 @@ Partial Class Form1
 		Me.ccmC1Schedule.ShortcutText = ""
 		Me.ccmC1Schedule.Text = "C1Schedule"
 		Me.c1ThemeController1.SetTheme(Me.ccmC1Schedule, "(default)")
-		Me.ccmC1Schedule.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmC1Schedule.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmC1Schedule.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmC1Schedule.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink43
 		' 
@@ -1309,7 +1309,7 @@ Partial Class Form1
 		' 
 		' ccmFormatBorders
 		' 
-		Me.ccmFormatBorders.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink73, Me.c1CommandLink71, Me.c1CommandLink74, Me.c1CommandLink75})
+		Me.ccmFormatBorders.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink73, Me.c1CommandLink71, Me.c1CommandLink74, Me.c1CommandLink75})
 		Me.ccmFormatBorders.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmFormatBorders.HideNonRecentLinks = False
 		Me.ccmFormatBorders.ImageIndex = 41
@@ -1317,8 +1317,8 @@ Partial Class Form1
 		Me.ccmFormatBorders.ShortcutText = ""
 		Me.ccmFormatBorders.ShowToolTips = True
 		Me.c1ThemeController1.SetTheme(Me.ccmFormatBorders, "(default)")
-		Me.ccmFormatBorders.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmFormatBorders.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmFormatBorders.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmFormatBorders.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' c1CommandLink73
 		' 
@@ -1407,14 +1407,14 @@ Partial Class Form1
 		Me.ccmTheme.ShortcutText = ""
 		Me.ccmTheme.Text = "Theme: Office365White"
 		Me.c1ThemeController1.SetTheme(Me.ccmTheme, "(default)")
-		Me.ccmTheme.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
-		Me.ccmTheme.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue
+		Me.ccmTheme.VisualStyle = C1.Win.Command.VisualStyle.[Custom]
+		Me.ccmTheme.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue
 		' 
 		' cmmMain
 		' 
 		Me.cmmMain.AccessibleName = "Menu Bar"
 		Me.cmmMain.CommandHolder = Me.cchMain
-		Me.cmmMain.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink1, Me.c1CommandLink12, Me.c1CommandLink22, Me.c1CommandLink25, Me.c1CommandLink35, Me.c1CommandLink44})
+		Me.cmmMain.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink1, Me.c1CommandLink12, Me.c1CommandLink22, Me.c1CommandLink25, Me.c1CommandLink35, Me.c1CommandLink44})
 		Me.cmmMain.Dock = System.Windows.Forms.DockStyle.Top
 		Me.cmmMain.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.cmmMain.Location = New System.Drawing.Point(0, 0)
@@ -1470,7 +1470,7 @@ Partial Class Form1
 		' 
 		Me.ctbStates.AccessibleName = "Tool Bar"
 		Me.ctbStates.CommandHolder = Me.cchMain
-		Me.ctbStates.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink76, Me.c1CommandLink77, Me.c1CommandLink78, Me.c1CommandLink79})
+		Me.ctbStates.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink76, Me.c1CommandLink77, Me.c1CommandLink78, Me.c1CommandLink79})
 		Me.ctbStates.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ctbStates.Location = New System.Drawing.Point(923, 0)
 		Me.ctbStates.Name = "ctbStates"
@@ -1480,24 +1480,24 @@ Partial Class Form1
 		' 
 		' c1CommandLink76
 		' 
-		Me.c1CommandLink76.ButtonLook = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+		Me.c1CommandLink76.ButtonLook = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
 		Me.c1CommandLink76.Command = Me.ccStatesNormal
 		' 
 		' c1CommandLink77
 		' 
-		Me.c1CommandLink77.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text
+		Me.c1CommandLink77.ButtonLook = C1.Win.Command.ButtonLookFlags.Text
 		Me.c1CommandLink77.Command = Me.ccStatesDisabled
 		Me.c1CommandLink77.SortOrder = 1
 		' 
 		' c1CommandLink78
 		' 
-		Me.c1CommandLink78.ButtonLook = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+		Me.c1CommandLink78.ButtonLook = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
 		Me.c1CommandLink78.Command = Me.ccStatesPressed
 		Me.c1CommandLink78.SortOrder = 2
 		' 
 		' c1CommandLink79
 		' 
-		Me.c1CommandLink79.ButtonLook = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+		Me.c1CommandLink79.ButtonLook = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
 		Me.c1CommandLink79.Command = Me.ccStatesChecked
 		Me.c1CommandLink79.SortOrder = 3
 		' 
@@ -1505,7 +1505,7 @@ Partial Class Form1
 		' 
 		Me.ctbFormat.AccessibleName = "Tool Bar"
 		Me.ctbFormat.CommandHolder = Me.cchMain
-		Me.ctbFormat.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink69, Me.c1CommandLink70, Me.c1CommandLink61, Me.c1CommandLink62, Me.c1CommandLink63, Me.c1CommandLink64, _
+		Me.ctbFormat.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink69, Me.c1CommandLink70, Me.c1CommandLink61, Me.c1CommandLink62, Me.c1CommandLink63, Me.c1CommandLink64, _
 			Me.c1CommandLink65, Me.c1CommandLink66, Me.c1CommandLink67, Me.c1CommandLink68, Me.c1CommandLink72})
 		Me.ctbFormat.Controls.Add(Me.cddcFontName)
 		Me.ctbFormat.Controls.Add(Me.cddcFontSize)
@@ -1582,7 +1582,7 @@ Partial Class Form1
 		' 
 		Me.ctbEdit.AccessibleName = "Tool Bar"
 		Me.ctbEdit.CommandHolder = Me.cchMain
-		Me.ctbEdit.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink55, Me.c1CommandLink56, Me.c1CommandLink57, Me.c1CommandLink58, Me.c1CommandLink59, Me.c1CommandLink60})
+		Me.ctbEdit.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink55, Me.c1CommandLink56, Me.c1CommandLink57, Me.c1CommandLink58, Me.c1CommandLink59, Me.c1CommandLink60})
 		Me.ctbEdit.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ctbEdit.Location = New System.Drawing.Point(233, 0)
 		Me.ctbEdit.Name = "ctbEdit"
@@ -1624,7 +1624,7 @@ Partial Class Form1
 		' 
 		Me.ctbFile.AccessibleName = "Tool Bar"
 		Me.ctbFile.CommandHolder = Me.cchMain
-		Me.ctbFile.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink80, Me.c1CommandLink51, Me.c1CommandLink52, Me.c1CommandLink53, Me.c1CommandLink54})
+		Me.ctbFile.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink80, Me.c1CommandLink51, Me.c1CommandLink52, Me.c1CommandLink53, Me.c1CommandLink54})
 		Me.ctbFile.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ctbFile.Location = New System.Drawing.Point(2, 0)
 		Me.ctbFile.Movable = False
@@ -1635,7 +1635,7 @@ Partial Class Form1
 		' 
 		' c1CommandLink80
 		' 
-		Me.c1CommandLink80.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text
+		Me.c1CommandLink80.ButtonLook = C1.Win.Command.ButtonLookFlags.Text
 		Me.c1CommandLink80.Command = Me.ccmTheme
 		' 
 		' c1CommandLink51
@@ -1811,7 +1811,7 @@ Partial Class Form1
 		Me.c1Calendar1.Size = New System.Drawing.Size(263, 487)
 		Me.c1Calendar1.TabIndex = 0
 		Me.c1ThemeController1.SetTheme(Me.c1Calendar1, "(default)")
-		Me.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.[Custom]
+		Me.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.[Custom]
 		' 
 		' c1NavBarPanel3
 		' 
@@ -1897,9 +1897,9 @@ Partial Class Form1
 		Me.c1DockingTab1.ShowCaption = True
 		Me.c1DockingTab1.Size = New System.Drawing.Size(276, 637)
 		Me.c1DockingTab1.TabIndex = 0
-		Me.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+		Me.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
 		Me.c1DockingTab1.TabsSpacing = 7
-		Me.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+		Me.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
 		Me.c1ThemeController1.SetTheme(Me.c1DockingTab1, "(default)")
 		' 
 		' c1DockingTabPage1
@@ -1945,9 +1945,9 @@ Partial Class Form1
 		' 
 		Me.ctbC1FlexGrid.AccessibleName = "Tool Bar"
 		Me.ctbC1FlexGrid.AutoSize = False
-		Me.ctbC1FlexGrid.ButtonLookVert = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+		Me.ctbC1FlexGrid.ButtonLookVert = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
 		Me.ctbC1FlexGrid.CommandHolder = Me.cchMain
-		Me.ctbC1FlexGrid.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink81, Me.c1CommandLink82, Me.c1CommandLink83})
+		Me.ctbC1FlexGrid.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink81, Me.c1CommandLink82, Me.c1CommandLink83})
 		Me.ctbC1FlexGrid.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.ctbC1FlexGrid.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ctbC1FlexGrid.Horizontal = False
@@ -2155,9 +2155,9 @@ Partial Class Form1
 		' 
 		Me.ctbC1TrueDBGridView.AccessibleName = "Tool Bar"
 		Me.ctbC1TrueDBGridView.AutoSize = False
-		Me.ctbC1TrueDBGridView.ButtonLookVert = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+		Me.ctbC1TrueDBGridView.ButtonLookVert = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
 		Me.ctbC1TrueDBGridView.CommandHolder = Me.cchMain
-		Me.ctbC1TrueDBGridView.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink84, Me.c1CommandLink85, Me.c1CommandLink86, Me.c1CommandLink87, Me.c1CommandLink88, Me.c1CommandLink89})
+		Me.ctbC1TrueDBGridView.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink84, Me.c1CommandLink85, Me.c1CommandLink86, Me.c1CommandLink87, Me.c1CommandLink88, Me.c1CommandLink89})
 		Me.ctbC1TrueDBGridView.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.ctbC1TrueDBGridView.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ctbC1TrueDBGridView.Horizontal = False
@@ -2265,9 +2265,9 @@ Partial Class Form1
 		' 
 		Me.ctbC1ScheduleView.AccessibleName = "Tool Bar"
 		Me.ctbC1ScheduleView.AutoSize = False
-		Me.ctbC1ScheduleView.ButtonLookVert = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+		Me.ctbC1ScheduleView.ButtonLookVert = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
 		Me.ctbC1ScheduleView.CommandHolder = Me.cchMain
-		Me.ctbC1ScheduleView.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink90, Me.c1CommandLink91, Me.c1CommandLink92, Me.c1CommandLink93, Me.c1CommandLink94})
+		Me.ctbC1ScheduleView.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink90, Me.c1CommandLink91, Me.c1CommandLink92, Me.c1CommandLink93, Me.c1CommandLink94})
 		Me.ctbC1ScheduleView.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.ctbC1ScheduleView.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ctbC1ScheduleView.Horizontal = False
@@ -2378,7 +2378,7 @@ Partial Class Form1
 		Me.c1DockingTab2.Size = New System.Drawing.Size(715, 637)
 		Me.c1DockingTab2.TabIndex = 10
 		Me.c1DockingTab2.TabsSpacing = 7
-		Me.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+		Me.c1DockingTab2.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
 		Me.c1ThemeController1.SetTheme(Me.c1DockingTab2, "(default)")
 		AddHandler Me.c1DockingTab2.SelectedTabChanged, New System.EventHandler(AddressOf Me.c1DockingTab2_SelectedTabChanged)
 		' 
@@ -2403,7 +2403,7 @@ Partial Class Form1
 		Me.c1FlexGrid1.Name = "c1FlexGrid1"
 		Me.c1FlexGrid1.Rows.Count = 1
 		Me.c1FlexGrid1.Rows.DefaultSize = 21
-		Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+		Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
 		Me.c1FlexGrid1.Size = New System.Drawing.Size(713, 610)
 		Me.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo")
 		Me.c1FlexGrid1.TabIndex = 0
@@ -2436,7 +2436,7 @@ Partial Class Form1
 		Me.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0
 		Me.c1TrueDBGrid1.PrintInfo.PageSettings = DirectCast(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
 		Me.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(CInt(CByte(104)), CInt(CByte(87)), CInt(CByte(70)))
-		Me.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+		Me.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.[Single]
 		Me.c1TrueDBGrid1.RowHeight = 15
 		Me.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(CInt(CByte(104)), CInt(CByte(87)), CInt(CByte(70)))
 		Me.c1TrueDBGrid1.Size = New System.Drawing.Size(713, 610)
@@ -2490,12 +2490,12 @@ Partial Class Form1
 		printStyle9.PreviewImage = DirectCast(resources.GetObject("printStyle9.PreviewImage"), System.Drawing.Image)
 		printStyle9.StyleName = "Details"
 		printStyle9.StyleSource = "details.c1d"
-		printStyle10.Context = C1.C1Schedule.Printing.PrintContextType.Appointment
+		printStyle10.Context = C1.Schedule.Printing.PrintContextType.Appointment
 		printStyle10.Description = "Memo Style"
 		printStyle10.PreviewImage = DirectCast(resources.GetObject("printStyle10.PreviewImage"), System.Drawing.Image)
 		printStyle10.StyleName = "Memo"
 		printStyle10.StyleSource = "memo.c1d"
-		Me.csMain.PrintInfo.PrintStyles.AddRange(New C1.C1Schedule.Printing.PrintStyle() {printStyle6, printStyle7, printStyle8, printStyle9, printStyle10})
+		Me.csMain.PrintInfo.PrintStyles.AddRange(New C1.Schedule.Printing.PrintStyle() {printStyle6, printStyle7, printStyle8, printStyle9, printStyle10})
 		' 
 		' 
 		' 
@@ -2508,8 +2508,8 @@ Partial Class Form1
 		Me.csMain.Size = New System.Drawing.Size(713, 610)
 		Me.csMain.TabIndex = 5
 		Me.c1ThemeController1.SetTheme(Me.csMain, "(default)")
-		Me.csMain.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView
-		Me.csMain.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.[Custom]
+		Me.csMain.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView
+		Me.csMain.VisualStyle = C1.Win.Schedule.UI.VisualStyle.[Custom]
 		' 
 		' c1DockingTabPage6
 		' 
@@ -2532,63 +2532,63 @@ Partial Class Form1
 		Me.c1GanttView1.CellBorderColor = System.Drawing.SystemColors.WindowFrame
 		taskPropertyColumn211.Caption = "Task Mode"
 		taskPropertyColumn211.ID = 619243840
-		taskPropertyColumn211.[Property] = C1.Win.C1GanttView.TaskProperty.Mode
+		taskPropertyColumn211.[Property] = C1.Win.GanttView.TaskProperty.Mode
 		taskPropertyColumn211.Width = 90
 		taskPropertyColumn212.Caption = "Task Name"
 		taskPropertyColumn212.ID = 2099866733
-		taskPropertyColumn212.[Property] = C1.Win.C1GanttView.TaskProperty.Name
+		taskPropertyColumn212.[Property] = C1.Win.GanttView.TaskProperty.Name
 		taskPropertyColumn212.Width = 80
 		taskPropertyColumn213.Caption = "Duration"
 		taskPropertyColumn213.ID = 1358251825
-		taskPropertyColumn213.[Property] = C1.Win.C1GanttView.TaskProperty.Duration
+		taskPropertyColumn213.[Property] = C1.Win.GanttView.TaskProperty.Duration
 		taskPropertyColumn213.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		taskPropertyColumn213.Visible = False
 		taskPropertyColumn213.Width = 45
 		taskPropertyColumn214.Caption = "Duration Units"
 		taskPropertyColumn214.ID = 1827635185
-		taskPropertyColumn214.[Property] = C1.Win.C1GanttView.TaskProperty.DurationUnits
+		taskPropertyColumn214.[Property] = C1.Win.GanttView.TaskProperty.DurationUnits
 		taskPropertyColumn214.Visible = False
 		taskPropertyColumn214.Width = 51
 		taskPropertyColumn215.Caption = "Start"
 		taskPropertyColumn215.ID = 1435981949
-		taskPropertyColumn215.[Property] = C1.Win.C1GanttView.TaskProperty.Start
+		taskPropertyColumn215.[Property] = C1.Win.GanttView.TaskProperty.Start
 		taskPropertyColumn215.Visible = False
 		taskPropertyColumn216.Caption = "Finish"
 		taskPropertyColumn216.ID = 1177114106
-		taskPropertyColumn216.[Property] = C1.Win.C1GanttView.TaskProperty.Finish
+		taskPropertyColumn216.[Property] = C1.Win.GanttView.TaskProperty.Finish
 		taskPropertyColumn216.Visible = False
 		taskPropertyColumn217.Caption = "% Complete"
 		taskPropertyColumn217.ID = 705116663
-		taskPropertyColumn217.[Property] = C1.Win.C1GanttView.TaskProperty.PercentComplete
+		taskPropertyColumn217.[Property] = C1.Win.GanttView.TaskProperty.PercentComplete
 		taskPropertyColumn217.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
 		taskPropertyColumn217.Visible = False
 		taskPropertyColumn218.Caption = "Constraint Type"
 		taskPropertyColumn218.ID = 1424686126
-		taskPropertyColumn218.[Property] = C1.Win.C1GanttView.TaskProperty.ConstraintType
+		taskPropertyColumn218.[Property] = C1.Win.GanttView.TaskProperty.ConstraintType
 		taskPropertyColumn218.Visible = False
 		taskPropertyColumn219.Caption = "Constraint Date"
 		taskPropertyColumn219.ID = 1191399244
-		taskPropertyColumn219.[Property] = C1.Win.C1GanttView.TaskProperty.ConstraintDate
+		taskPropertyColumn219.[Property] = C1.Win.GanttView.TaskProperty.ConstraintDate
 		taskPropertyColumn219.Visible = False
 		taskPropertyColumn220.Caption = "Predecessors"
 		taskPropertyColumn220.ID = 502674747
-		taskPropertyColumn220.[Property] = C1.Win.C1GanttView.TaskProperty.Predecessors
+		taskPropertyColumn220.[Property] = C1.Win.GanttView.TaskProperty.Predecessors
 		taskPropertyColumn220.Visible = False
 		taskPropertyColumn221.Caption = "Deadline"
 		taskPropertyColumn221.ID = 166462627
-		taskPropertyColumn221.[Property] = C1.Win.C1GanttView.TaskProperty.Deadline
+		taskPropertyColumn221.[Property] = C1.Win.GanttView.TaskProperty.Deadline
 		taskPropertyColumn221.Visible = False
 		taskPropertyColumn222.Caption = "Calendar"
 		taskPropertyColumn222.ID = 997563278
-		taskPropertyColumn222.[Property] = C1.Win.C1GanttView.TaskProperty.Calendar
+		taskPropertyColumn222.[Property] = C1.Win.GanttView.TaskProperty.Calendar
 		taskPropertyColumn222.Visible = False
 		taskPropertyColumn223.Caption = "Resource Names"
 		taskPropertyColumn223.ID = 1673084976
-		taskPropertyColumn223.[Property] = C1.Win.C1GanttView.TaskProperty.ResourceNames
+		taskPropertyColumn223.[Property] = C1.Win.GanttView.TaskProperty.ResourceNames
 		taskPropertyColumn223.Visible = False
 		taskPropertyColumn224.Caption = "Notes"
 		taskPropertyColumn224.ID = 1052675343
-		taskPropertyColumn224.[Property] = C1.Win.C1GanttView.TaskProperty.Notes
+		taskPropertyColumn224.[Property] = C1.Win.GanttView.TaskProperty.Notes
 		taskPropertyColumn224.Visible = False
 		Me.c1GanttView1.Columns.Add(taskPropertyColumn211)
 		Me.c1GanttView1.Columns.Add(taskPropertyColumn212)
@@ -2618,7 +2618,7 @@ Partial Class Form1
 		Me.c1GanttView1.EmptyAreaBackColor = System.Drawing.Color.FromArgb(CInt(CByte(140)), CInt(CByte(140)), CInt(CByte(128)))
 		Me.c1GanttView1.FinishDate = New System.DateTime(2013, 6, 29, 0, 0, 0, _
 			0)
-		Me.c1GanttView1.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March
+		Me.c1GanttView1.FirstMonthOfFY = C1.Win.GanttView.FirstMonthOfFY.March
 		Me.c1GanttView1.FixedCellBorderColor = System.Drawing.SystemColors.WindowFrame
 		Me.c1GanttView1.FixedForeColor = System.Drawing.Color.Black
 		Me.c1GanttView1.Font = New System.Drawing.Font("Segoe UI", 8F)
@@ -2674,7 +2674,7 @@ Partial Class Form1
 		Me.c1GanttView1.Resources.Add(resource142)
 		Me.c1GanttView1.Resources.Add(resource143)
 		Me.c1GanttView1.Resources.Add(resource144)
-		Me.c1GanttView1.ScheduleFrom = C1.Win.C1GanttView.ScheduleFrom.ProjectFinishDate
+		Me.c1GanttView1.ScheduleFrom = C1.Win.GanttView.ScheduleFrom.ProjectFinishDate
 		Me.c1GanttView1.ShowToolbar = False
 		Me.c1GanttView1.Size = New System.Drawing.Size(713, 610)
 		Me.c1GanttView1.SplitterColor = System.Drawing.Color.FromArgb(CInt(CByte(124)), CInt(CByte(67)), CInt(CByte(0)))
@@ -2697,18 +2697,18 @@ Partial Class Form1
 			0)
 		task407.ID = 110002178
 		barStyle31.BarColor = System.Drawing.Color.PaleVioletRed
-		barStyle31.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-		barStyle31.BarType = C1.Win.C1GanttView.BarType.AutoTask
+		barStyle31.BarShape = C1.Win.GanttView.BarShape.ThickBar
+		barStyle31.BarType = C1.Win.GanttView.BarType.AutoTask
 		barStyle31.TopText1_ID = 1673084976
 		task408.BarStyles.Add(barStyle31)
 		task408.ConstraintDate = New System.DateTime(2013, 6, 7, 0, 0, 0, _
 			0)
-		task408.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+		task408.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
 		task408.Deadline = New System.DateTime(2013, 6, 15, 0, 0, 0, _
 			0)
 		task408.Duration = 4.0
 		task408.ID = 1179983348
-		task408.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+		task408.Mode = C1.Win.GanttView.TaskMode.Automatic
 		task408.Name = "Analysis"
 		task408.PercentComplete = 1.0
 		predecessor76.PredecessorTaskID = 362538391
@@ -2735,10 +2735,10 @@ Partial Class Form1
 		task411.ID = 1753282054
 		task412.ConstraintDate = New System.DateTime(2013, 6, 19, 0, 0, 0, _
 			0)
-		task412.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+		task412.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
 		task412.Duration = 4.0
 		task412.ID = 792666599
-		task412.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+		task412.Mode = C1.Win.GanttView.TaskMode.Automatic
 		task412.Name = "Implementation"
 		predecessor78.PredecessorTaskID = 2098269195
 		task412.Predecessors.Add(predecessor78)
@@ -2750,8 +2750,8 @@ Partial Class Form1
 		task412.ResourceRefs.Add(resourceRef173)
 		task413.ID = 1853855961
 		barStyle32.BarColor = System.Drawing.Color.Green
-		barStyle32.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-		barStyle32.BarType = C1.Win.C1GanttView.BarType.ManualTask
+		barStyle32.BarShape = C1.Win.GanttView.BarShape.ThickBar
+		barStyle32.BarType = C1.Win.GanttView.BarType.ManualTask
 		barStyle32.EndShape = 22
 		barStyle32.LeftText1_ID = 1673084976
 		barStyle32.StartShape = 21
@@ -2828,15 +2828,15 @@ Partial Class Form1
 		Me.c1GanttView1.Tasks.Add(task431)
 		Me.c1GanttView1.Tasks.Add(task432)
 		Me.c1ThemeController1.SetTheme(Me.c1GanttView1, "(default)")
-		Me.c1GanttView1.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center
+		Me.c1GanttView1.Timescale.BottomTier.Align = C1.Win.GanttView.ScaleLabelAlignment.Center
 		Me.c1GanttView1.Timescale.BottomTier.Format = "w"
 		Me.c1GanttView1.Timescale.BottomTier.Visible = True
 		Me.c1GanttView1.Timescale.MiddleTier.Format = "nnn d, \'yy"
 		Me.c1GanttView1.Timescale.MiddleTier.MinWidth = 62
-		Me.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks
+		Me.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.GanttView.TimescaleUnits.Weeks
 		Me.c1GanttView1.Timescale.MiddleTier.Visible = True
 		Me.c1GanttView1.ToolbarBackColor = System.Drawing.Color.FromArgb(CInt(CByte(255)), CInt(CByte(204)), CInt(CByte(0)))
-		Me.c1GanttView1.VisualStyle = C1.Win.C1GanttView.VisualStyle.[Custom]
+		Me.c1GanttView1.VisualStyle = C1.Win.GanttView.VisualStyle.[Custom]
 		' 
 		' c1NWINDDataSet
 		' 
@@ -2933,175 +2933,175 @@ Partial Class Form1
 	#End Region
 
 	Private ilSmall As System.Windows.Forms.ImageList
-	Private cchMain As C1.Win.C1Command.C1CommandHolder
-	Private ccmFile As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink2 As C1.Win.C1Command.C1CommandLink
-	Private ccmFileNew As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink5 As C1.Win.C1Command.C1CommandLink
-	Private ccFileNewWizard As C1.Win.C1Command.C1Command
-	Private c1CommandLink3 As C1.Win.C1Command.C1CommandLink
-	Private ccFileNewEmpty As C1.Win.C1Command.C1Command
-	Private c1CommandLink4 As C1.Win.C1Command.C1CommandLink
-	Private ccFileOpen As C1.Win.C1Command.C1Command
-	Private c1CommandLink6 As C1.Win.C1Command.C1CommandLink
-	Private ccFileSave As C1.Win.C1Command.C1Command
-	Private c1CommandLink7 As C1.Win.C1Command.C1CommandLink
-	Private ccFileSaveAs As C1.Win.C1Command.C1Command
-	Private c1CommandLink9 As C1.Win.C1Command.C1CommandLink
-	Private ccFilePrint As C1.Win.C1Command.C1Command
-	Private c1CommandLink8 As C1.Win.C1Command.C1CommandLink
-	Private ccFileClose As C1.Win.C1Command.C1Command
-	Private c1CommandLink10 As C1.Win.C1Command.C1CommandLink
-	Private ccFileExit As C1.Win.C1Command.C1Command
-	Private ccmEdit As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink11 As C1.Win.C1Command.C1CommandLink
-	Private ccUndo As C1.Win.C1Command.C1Command
-	Private c1CommandLink13 As C1.Win.C1Command.C1CommandLink
-	Private ccRedo As C1.Win.C1Command.C1Command
-	Private c1CommandLink14 As C1.Win.C1Command.C1CommandLink
-	Private ccCut As C1.Win.C1Command.C1Command
-	Private c1CommandLink15 As C1.Win.C1Command.C1CommandLink
-	Private ccCopy As C1.Win.C1Command.C1Command
-	Private c1CommandLink16 As C1.Win.C1Command.C1CommandLink
-	Private ccPaste As C1.Win.C1Command.C1Command
-	Private c1CommandLink17 As C1.Win.C1Command.C1CommandLink
-	Private ccDelete As C1.Win.C1Command.C1Command
-	Private c1CommandLink18 As C1.Win.C1Command.C1CommandLink
-	Private ccFind As C1.Win.C1Command.C1Command
-	Private c1CommandLink19 As C1.Win.C1Command.C1CommandLink
-	Private ccGoTo As C1.Win.C1Command.C1Command
-	Private ccmFormat As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink20 As C1.Win.C1Command.C1CommandLink
-	Private ccFormatFont As C1.Win.C1Command.C1Command
-	Private c1CommandLink23 As C1.Win.C1Command.C1CommandLink
-	Private ccmFormatFontColor As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink21 As C1.Win.C1Command.C1CommandLink
-	Private ccFormatFontBold As C1.Win.C1Command.C1Command
-	Private ccFormatFontItalic As C1.Win.C1Command.C1Command
-	Private ccFormatFontUnderline As C1.Win.C1Command.C1Command
-	Private ccFormatFontStrikeout As C1.Win.C1Command.C1Command
-	Private ccFormatAlignLeft As C1.Win.C1Command.C1Command
-	Private ccFormatAlignCenter As C1.Win.C1Command.C1Command
-	Private ccFormatAlignRight As C1.Win.C1Command.C1Command
-	Private ccFormatAlignJustify As C1.Win.C1Command.C1Command
-	Private ccmC1TrueDBGrid As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink24 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGViewNormal As C1.Win.C1Command.C1Command
-	Private c1CommandLink26 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGViewInverted As C1.Win.C1Command.C1Command
-	Private c1CommandLink27 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGViewForm As C1.Win.C1Command.C1Command
-	Private c1CommandLink28 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGViewGroupBy As C1.Win.C1Command.C1Command
-	Private c1CommandLink29 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGViewMultipleLines As C1.Win.C1Command.C1Command
-	Private c1CommandLink30 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGViewHierarchical As C1.Win.C1Command.C1Command
-	Private c1CommandLink31 As C1.Win.C1Command.C1CommandLink
-	Private ccCTDBGShowCaption As C1.Win.C1Command.C1Command
-	Private ccmC1FlexGrid As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink32 As C1.Win.C1Command.C1CommandLink
-	Private ccCFGViewNormal As C1.Win.C1Command.C1Command
-	Private c1CommandLink36 As C1.Win.C1Command.C1CommandLink
-	Private ccCFGViewTree As C1.Win.C1Command.C1Command
-	Private c1CommandLink37 As C1.Win.C1Command.C1CommandLink
-	Private ccCFGViewSubtotals As C1.Win.C1Command.C1Command
-	Private c1CommandLink38 As C1.Win.C1Command.C1CommandLink
-	Private ccCFGFixedColCount As C1.Win.C1Command.C1CommandControl
-	Private c1CommandLink39 As C1.Win.C1Command.C1CommandLink
-	Private ccCFGFixedRowCount As C1.Win.C1Command.C1CommandControl
-	Private c1CommandLink40 As C1.Win.C1Command.C1CommandLink
-	Private ccmCFGSelectionMode As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink33 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink41 As C1.Win.C1Command.C1CommandLink
-	Private ccmCFGFocusRect As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink34 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink42 As C1.Win.C1Command.C1CommandLink
-	Private ccCFGShowCursor As C1.Win.C1Command.C1Command
-	Private ccmC1Schedule As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink43 As C1.Win.C1Command.C1CommandLink
-	Private ccCSViewDay As C1.Win.C1Command.C1Command
-	Private c1CommandLink45 As C1.Win.C1Command.C1CommandLink
-	Private ccCSViewWorkWeek As C1.Win.C1Command.C1Command
-	Private c1CommandLink46 As C1.Win.C1Command.C1CommandLink
-	Private ccCSViewWeek As C1.Win.C1Command.C1Command
-	Private c1CommandLink47 As C1.Win.C1Command.C1CommandLink
-	Private ccCSViewMonth As C1.Win.C1Command.C1Command
-	Private c1CommandLink48 As C1.Win.C1Command.C1CommandLink
-	Private ccCSViewTimeLine As C1.Win.C1Command.C1Command
-	Private c1CommandLink49 As C1.Win.C1Command.C1CommandLink
-	Private ccCSEnableGrouping As C1.Win.C1Command.C1Command
-	Private c1CommandLink50 As C1.Win.C1Command.C1CommandLink
-	Private ccCSOffice2003WeekView As C1.Win.C1Command.C1Command
-	Private cccFormatFontName As C1.Win.C1Command.C1CommandControl
-	Private cccFormatFontSize As C1.Win.C1Command.C1CommandControl
-	Private ccmFormatBorders As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink73 As C1.Win.C1Command.C1CommandLink
-	Private ccFormatBorderBottom As C1.Win.C1Command.C1Command
-	Private c1CommandLink71 As C1.Win.C1Command.C1CommandLink
-	Private ccFormatBorderTop As C1.Win.C1Command.C1Command
-	Private c1CommandLink74 As C1.Win.C1Command.C1CommandLink
-	Private ccFormatBorderLeft As C1.Win.C1Command.C1Command
-	Private c1CommandLink75 As C1.Win.C1Command.C1CommandLink
-	Private ccFormatBorderRight As C1.Win.C1Command.C1Command
-	Private ccStatesNormal As C1.Win.C1Command.C1Command
-	Private ccStatesDisabled As C1.Win.C1Command.C1Command
-	Private ccStatesPressed As C1.Win.C1Command.C1Command
-	Private ccStatesChecked As C1.Win.C1Command.C1Command
-	Private ccdTop As C1.Win.C1Command.C1CommandDock
-	Private ctbStates As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink76 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink77 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink78 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink79 As C1.Win.C1Command.C1CommandLink
-	Private ctbFormat As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink69 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink70 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink61 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink62 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink63 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink64 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink65 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink66 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink67 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink68 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink72 As C1.Win.C1Command.C1CommandLink
-	Private ctbEdit As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink55 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink56 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink57 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink58 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink59 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink60 As C1.Win.C1Command.C1CommandLink
-	Private ctbFile As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink51 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink52 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink53 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink54 As C1.Win.C1Command.C1CommandLink
-	Private cmmMain As C1.Win.C1Command.C1MainMenu
-	Private c1CommandLink1 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink12 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink22 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink25 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink35 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink44 As C1.Win.C1Command.C1CommandLink
+	Private cchMain As C1.Win.Command.C1CommandHolder
+	Private ccmFile As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink2 As C1.Win.Command.C1CommandLink
+	Private ccmFileNew As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink5 As C1.Win.Command.C1CommandLink
+	Private ccFileNewWizard As C1.Win.Command.C1Command
+	Private c1CommandLink3 As C1.Win.Command.C1CommandLink
+	Private ccFileNewEmpty As C1.Win.Command.C1Command
+	Private c1CommandLink4 As C1.Win.Command.C1CommandLink
+	Private ccFileOpen As C1.Win.Command.C1Command
+	Private c1CommandLink6 As C1.Win.Command.C1CommandLink
+	Private ccFileSave As C1.Win.Command.C1Command
+	Private c1CommandLink7 As C1.Win.Command.C1CommandLink
+	Private ccFileSaveAs As C1.Win.Command.C1Command
+	Private c1CommandLink9 As C1.Win.Command.C1CommandLink
+	Private ccFilePrint As C1.Win.Command.C1Command
+	Private c1CommandLink8 As C1.Win.Command.C1CommandLink
+	Private ccFileClose As C1.Win.Command.C1Command
+	Private c1CommandLink10 As C1.Win.Command.C1CommandLink
+	Private ccFileExit As C1.Win.Command.C1Command
+	Private ccmEdit As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink11 As C1.Win.Command.C1CommandLink
+	Private ccUndo As C1.Win.Command.C1Command
+	Private c1CommandLink13 As C1.Win.Command.C1CommandLink
+	Private ccRedo As C1.Win.Command.C1Command
+	Private c1CommandLink14 As C1.Win.Command.C1CommandLink
+	Private ccCut As C1.Win.Command.C1Command
+	Private c1CommandLink15 As C1.Win.Command.C1CommandLink
+	Private ccCopy As C1.Win.Command.C1Command
+	Private c1CommandLink16 As C1.Win.Command.C1CommandLink
+	Private ccPaste As C1.Win.Command.C1Command
+	Private c1CommandLink17 As C1.Win.Command.C1CommandLink
+	Private ccDelete As C1.Win.Command.C1Command
+	Private c1CommandLink18 As C1.Win.Command.C1CommandLink
+	Private ccFind As C1.Win.Command.C1Command
+	Private c1CommandLink19 As C1.Win.Command.C1CommandLink
+	Private ccGoTo As C1.Win.Command.C1Command
+	Private ccmFormat As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink20 As C1.Win.Command.C1CommandLink
+	Private ccFormatFont As C1.Win.Command.C1Command
+	Private c1CommandLink23 As C1.Win.Command.C1CommandLink
+	Private ccmFormatFontColor As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink21 As C1.Win.Command.C1CommandLink
+	Private ccFormatFontBold As C1.Win.Command.C1Command
+	Private ccFormatFontItalic As C1.Win.Command.C1Command
+	Private ccFormatFontUnderline As C1.Win.Command.C1Command
+	Private ccFormatFontStrikeout As C1.Win.Command.C1Command
+	Private ccFormatAlignLeft As C1.Win.Command.C1Command
+	Private ccFormatAlignCenter As C1.Win.Command.C1Command
+	Private ccFormatAlignRight As C1.Win.Command.C1Command
+	Private ccFormatAlignJustify As C1.Win.Command.C1Command
+	Private ccmC1TrueDBGrid As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink24 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGViewNormal As C1.Win.Command.C1Command
+	Private c1CommandLink26 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGViewInverted As C1.Win.Command.C1Command
+	Private c1CommandLink27 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGViewForm As C1.Win.Command.C1Command
+	Private c1CommandLink28 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGViewGroupBy As C1.Win.Command.C1Command
+	Private c1CommandLink29 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGViewMultipleLines As C1.Win.Command.C1Command
+	Private c1CommandLink30 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGViewHierarchical As C1.Win.Command.C1Command
+	Private c1CommandLink31 As C1.Win.Command.C1CommandLink
+	Private ccCTDBGShowCaption As C1.Win.Command.C1Command
+	Private ccmC1FlexGrid As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink32 As C1.Win.Command.C1CommandLink
+	Private ccCFGViewNormal As C1.Win.Command.C1Command
+	Private c1CommandLink36 As C1.Win.Command.C1CommandLink
+	Private ccCFGViewTree As C1.Win.Command.C1Command
+	Private c1CommandLink37 As C1.Win.Command.C1CommandLink
+	Private ccCFGViewSubtotals As C1.Win.Command.C1Command
+	Private c1CommandLink38 As C1.Win.Command.C1CommandLink
+	Private ccCFGFixedColCount As C1.Win.Command.C1CommandControl
+	Private c1CommandLink39 As C1.Win.Command.C1CommandLink
+	Private ccCFGFixedRowCount As C1.Win.Command.C1CommandControl
+	Private c1CommandLink40 As C1.Win.Command.C1CommandLink
+	Private ccmCFGSelectionMode As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink33 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink41 As C1.Win.Command.C1CommandLink
+	Private ccmCFGFocusRect As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink34 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink42 As C1.Win.Command.C1CommandLink
+	Private ccCFGShowCursor As C1.Win.Command.C1Command
+	Private ccmC1Schedule As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink43 As C1.Win.Command.C1CommandLink
+	Private ccCSViewDay As C1.Win.Command.C1Command
+	Private c1CommandLink45 As C1.Win.Command.C1CommandLink
+	Private ccCSViewWorkWeek As C1.Win.Command.C1Command
+	Private c1CommandLink46 As C1.Win.Command.C1CommandLink
+	Private ccCSViewWeek As C1.Win.Command.C1Command
+	Private c1CommandLink47 As C1.Win.Command.C1CommandLink
+	Private ccCSViewMonth As C1.Win.Command.C1Command
+	Private c1CommandLink48 As C1.Win.Command.C1CommandLink
+	Private ccCSViewTimeLine As C1.Win.Command.C1Command
+	Private c1CommandLink49 As C1.Win.Command.C1CommandLink
+	Private ccCSEnableGrouping As C1.Win.Command.C1Command
+	Private c1CommandLink50 As C1.Win.Command.C1CommandLink
+	Private ccCSOffice2003WeekView As C1.Win.Command.C1Command
+	Private cccFormatFontName As C1.Win.Command.C1CommandControl
+	Private cccFormatFontSize As C1.Win.Command.C1CommandControl
+	Private ccmFormatBorders As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink73 As C1.Win.Command.C1CommandLink
+	Private ccFormatBorderBottom As C1.Win.Command.C1Command
+	Private c1CommandLink71 As C1.Win.Command.C1CommandLink
+	Private ccFormatBorderTop As C1.Win.Command.C1Command
+	Private c1CommandLink74 As C1.Win.Command.C1CommandLink
+	Private ccFormatBorderLeft As C1.Win.Command.C1Command
+	Private c1CommandLink75 As C1.Win.Command.C1CommandLink
+	Private ccFormatBorderRight As C1.Win.Command.C1Command
+	Private ccStatesNormal As C1.Win.Command.C1Command
+	Private ccStatesDisabled As C1.Win.Command.C1Command
+	Private ccStatesPressed As C1.Win.Command.C1Command
+	Private ccStatesChecked As C1.Win.Command.C1Command
+	Private ccdTop As C1.Win.Command.C1CommandDock
+	Private ctbStates As C1.Win.Command.C1ToolBar
+	Private c1CommandLink76 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink77 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink78 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink79 As C1.Win.Command.C1CommandLink
+	Private ctbFormat As C1.Win.Command.C1ToolBar
+	Private c1CommandLink69 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink70 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink61 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink62 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink63 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink64 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink65 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink66 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink67 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink68 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink72 As C1.Win.Command.C1CommandLink
+	Private ctbEdit As C1.Win.Command.C1ToolBar
+	Private c1CommandLink55 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink56 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink57 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink58 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink59 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink60 As C1.Win.Command.C1CommandLink
+	Private ctbFile As C1.Win.Command.C1ToolBar
+	Private c1CommandLink51 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink52 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink53 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink54 As C1.Win.Command.C1CommandLink
+	Private cmmMain As C1.Win.Command.C1MainMenu
+	Private c1CommandLink1 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink12 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink22 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink25 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink35 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink44 As C1.Win.Command.C1CommandLink
 	Private cneCFGFrozenColCount As C1.Win.C1Input.C1NumericEdit
 	Private cneCFGFrozenRowCount As C1.Win.C1Input.C1NumericEdit
 	Private cddcFontName As C1.Win.C1Input.C1DropDownControl
 	Private cddcFontSize As C1.Win.C1Input.C1DropDownControl
-	Private ccmTheme As C1.Win.C1Command.C1CommandMenu
-	Private c1CommandLink80 As C1.Win.C1Command.C1CommandLink
+	Private ccmTheme As C1.Win.Command.C1CommandMenu
+	Private c1CommandLink80 As C1.Win.Command.C1CommandLink
 	Private ilMain2 As System.Windows.Forms.ImageList
 	Private ilMain As System.Windows.Forms.ImageList
-	Private c1CommandDock1 As C1.Win.C1Command.C1CommandDock
-	Private c1DockingTab1 As C1.Win.C1Command.C1DockingTab
-	Private c1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
-	Private c1OutBar1 As C1.Win.C1Command.C1OutBar
-	Private copC1FlexGrid As C1.Win.C1Command.C1OutPage
-	Private ctbC1FlexGrid As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink81 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink82 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink83 As C1.Win.C1Command.C1CommandLink
+	Private c1CommandDock1 As C1.Win.Command.C1CommandDock
+	Private c1DockingTab1 As C1.Win.Command.C1DockingTab
+	Private c1DockingTabPage1 As C1.Win.Command.C1DockingTabPage
+	Private c1OutBar1 As C1.Win.Command.C1OutBar
+	Private copC1FlexGrid As C1.Win.Command.C1OutPage
+	Private ctbC1FlexGrid As C1.Win.Command.C1ToolBar
+	Private c1CommandLink81 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink82 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink83 As C1.Win.Command.C1CommandLink
     Private tableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Private c1Label4 As C1.Win.C1Input.C1Label
 	Private c1Label3 As C1.Win.C1Input.C1Label
@@ -3112,49 +3112,49 @@ Partial Class Form1
 	Private cneFixedRowCount As C1.Win.C1Input.C1NumericEdit
 	Private cneFixedColCount As C1.Win.C1Input.C1NumericEdit
 	Private c1Label1 As C1.Win.C1Input.C1Label
-	Private copC1TrueDBGrid As C1.Win.C1Command.C1OutPage
-	Private ctbC1TrueDBGridView As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink84 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink85 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink86 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink87 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink88 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink89 As C1.Win.C1Command.C1CommandLink
+	Private copC1TrueDBGrid As C1.Win.Command.C1OutPage
+	Private ctbC1TrueDBGridView As C1.Win.Command.C1ToolBar
+	Private c1CommandLink84 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink85 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink86 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink87 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink88 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink89 As C1.Win.Command.C1CommandLink
 	Private panel2 As System.Windows.Forms.Panel
 	Private ccbCTDBGShowFilterBar As C1.Win.C1Input.C1CheckBox
 	Private ccbCTDBGShowCaption As C1.Win.C1Input.C1CheckBox
-	Private copC1Schedule As C1.Win.C1Command.C1OutPage
-	Private ctbC1ScheduleView As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink90 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink91 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink92 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink93 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink94 As C1.Win.C1Command.C1CommandLink
+	Private copC1Schedule As C1.Win.Command.C1OutPage
+	Private ctbC1ScheduleView As C1.Win.Command.C1ToolBar
+	Private c1CommandLink90 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink91 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink92 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink93 As C1.Win.Command.C1CommandLink
+	Private c1CommandLink94 As C1.Win.Command.C1CommandLink
 	Private panel3 As System.Windows.Forms.Panel
 	Private ccbCSOffice2003WeekView As C1.Win.C1Input.C1CheckBox
 	Private ccbCSEnableGrouping As C1.Win.C1Input.C1CheckBox
-	Private c1DockingTabPage2 As C1.Win.C1Command.C1DockingTabPage
-	Private c1NavBar1 As C1.Win.C1Command.C1NavBar
-	Private c1NavBarPanel5 As C1.Win.C1Command.C1NavBarPanel
-	Private ctbMain As C1.Win.C1Command.C1TopicBar
-	Private c1NavBarPanel2 As C1.Win.C1Command.C1NavBarPanel
-	Private c1Calendar1 As C1.Win.C1Schedule.C1Calendar
-	Private c1NavBarPanel3 As C1.Win.C1Command.C1NavBarPanel
+	Private c1DockingTabPage2 As C1.Win.Command.C1DockingTabPage
+	Private c1NavBar1 As C1.Win.Command.C1NavBar
+	Private c1NavBarPanel5 As C1.Win.Command.C1NavBarPanel
+	Private ctbMain As C1.Win.Command.C1TopicBar
+	Private c1NavBarPanel2 As C1.Win.Command.C1NavBarPanel
+	Private c1Calendar1 As C1.Win.Schedule.C1Calendar
+	Private c1NavBarPanel3 As C1.Win.Command.C1NavBarPanel
 	Private label1 As System.Windows.Forms.Label
-	Private c1NavBarPanel4 As C1.Win.C1Command.C1NavBarPanel
+	Private c1NavBarPanel4 As C1.Win.Command.C1NavBarPanel
 	Private label2 As System.Windows.Forms.Label
-	Private c1DockingTab2 As C1.Win.C1Command.C1DockingTab
-	Private c1DockingTabPage3 As C1.Win.C1Command.C1DockingTabPage
-	Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-	Private c1DockingTabPage4 As C1.Win.C1Command.C1DockingTabPage
-	Private c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
-	Private c1DockingTabPage5 As C1.Win.C1Command.C1DockingTabPage
-	Private csMain As C1.Win.C1Schedule.C1Schedule
-	Private c1DockingTabPage6 As C1.Win.C1Command.C1DockingTabPage
-	Private c1GanttView1 As C1.Win.C1GanttView.C1GanttView
+	Private c1DockingTab2 As C1.Win.Command.C1DockingTab
+	Private c1DockingTabPage3 As C1.Win.Command.C1DockingTabPage
+	Private c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+	Private c1DockingTabPage4 As C1.Win.Command.C1DockingTabPage
+	Private c1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
+	Private c1DockingTabPage5 As C1.Win.Command.C1DockingTabPage
+	Private csMain As C1.Win.Schedule.C1Schedule
+	Private c1DockingTabPage6 As C1.Win.Command.C1DockingTabPage
+	Private c1GanttView1 As C1.Win.GanttView.C1GanttView
 	Private c1NWINDDataSet As C1NWINDDataSet
 	Private employeesBindingSource As System.Windows.Forms.BindingSource
 	Private employeesTableAdapter As C1NWINDDataSetTableAdapters.EmployeesTableAdapter
-	Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+	Private c1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class
 

@@ -36,8 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbFilter = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1FlexGridSearchPanel1 = new C1.Win.C1FlexGrid.C1FlexGridSearchPanel();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGridSearchPanel1 = new C1.Win.FlexGrid.C1FlexGridSearchPanel();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             this.SuspendLayout();
@@ -128,16 +128,16 @@
             this.c1FlexGridSearchPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.c1FlexGridSearchPanel1.Location = new System.Drawing.Point(0, 34);
             this.c1FlexGridSearchPanel1.Name = "c1FlexGridSearchPanel1";
-            this.c1FlexGridSearchPanel1.SearchMode = C1.Win.C1FlexGrid.SearchMode.Always;
+            this.c1FlexGridSearchPanel1.SearchMode = C1.Win.FlexGrid.SearchMode.Always;
             this.c1FlexGridSearchPanel1.Size = new System.Drawing.Size(1499, 30);
             this.c1FlexGridSearchPanel1.TabIndex = 5;
             // 
             // flexGrid
             // 
             this.flexGrid.BackColor = System.Drawing.Color.White;
-            this.flexGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.flexGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.flexGrid.ColumnInfo = "10,1,0,0,0,95,Columns:";
-            this.flexGrid.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.None;
+            this.flexGrid.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
             this.flexGrid.ColumnPickerInfo.ShowColumnMenuItem = false;
             this.flexGrid.ColumnPickerInfo.ShowToolButton = false;
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -145,7 +145,7 @@
             this.flexGrid.Location = new System.Drawing.Point(0, 64);
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.Rows.DefaultSize = 22;
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(1499, 828);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
@@ -169,7 +169,7 @@
 
         }
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private System.Windows.Forms.ComboBox cmbHlMode;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Panel panel;
@@ -179,7 +179,7 @@
         private System.Windows.Forms.ComboBox cmbFilter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbTemplates;
-        private C1.Win.C1FlexGrid.C1FlexGridSearchPanel c1FlexGridSearchPanel1;
+        private C1.Win.FlexGrid.C1FlexGridSearchPanel c1FlexGridSearchPanel1;
         private System.Windows.Forms.Label label2;
     }
 }

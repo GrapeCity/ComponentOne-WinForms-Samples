@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSegment c1GaugeSegment1 = new C1.Win.C1Gauge.C1GaugeSegment();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1RadialGauge1 = new C1.Win.C1Gauge.C1RadialGauge();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSegment c1GaugeSegment1 = new C1.Win.Gauge.C1GaugeSegment();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1RadialGauge1 = new C1.Win.Gauge.C1RadialGauge();
             this.gaugePanel.SuspendLayout();
             this.gridPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
@@ -53,7 +53,7 @@
             this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1RadialGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(12, 12);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -67,13 +67,13 @@
             this.c1RadialGauge1.Cap.Filling.Color = System.Drawing.Color.Black;
             this.c1RadialGauge1.Cap.HitTestable = false;
             this.c1RadialGauge1.Cap.Radius = 15;
-            c1GaugeRange1.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.In;
-            c1GaugeRange1.AntiAliasing = C1.Win.C1Gauge.C1GaugeRangeAntiAliasing.HighQuality;
-            c1GaugeRange1.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeRange1.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeRange1.AntiAliasing = C1.Win.Gauge.C1GaugeRangeAntiAliasing.HighQuality;
+            c1GaugeRange1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeRange1.Location = 85;
-            c1GaugeRange1.ValueColors.AddRange(new C1.Win.C1Gauge.C1GaugeValueColor[] {
-            new C1.Win.C1Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.Gold, 1, ((long)(636371842368652348))),
-            new C1.Win.C1Gauge.C1GaugeValueColor(100, -1, System.Drawing.Color.Red, 1, ((long)(636653317568599396)))});
+            c1GaugeRange1.ValueColors.AddRange(new C1.Win.Gauge.C1GaugeValueColor[] {
+            new C1.Win.Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.Gold, 1, ((long)(636371842368652348))),
+            new C1.Win.Gauge.C1GaugeValueColor(100, -1, System.Drawing.Color.Red, 1, ((long)(636653317568599396)))});
             c1GaugeRange1.ViewTag = ((long)(636090364653824882));
             c1GaugeRange1.Width = 0;
             c1GaugeRange1.Width2 = 21;
@@ -95,20 +95,20 @@
             c1GaugeSingleLabel3.Location = 26;
             c1GaugeSingleLabel3.Text = "Mb/s";
             c1GaugeSingleLabel3.ViewTag = ((long)(637779236517313508));
-            this.c1RadialGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
+            this.c1RadialGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
             c1GaugeRange1,
             c1GaugeSingleLabel1,
             c1GaugeSingleLabel2,
             c1GaugeSingleLabel3});
             c1GaugeSegment1.Border.Thickness = 1.5;
             c1GaugeSegment1.CornerRadius = 3;
-            c1GaugeSegment1.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.Hatch;
+            c1GaugeSegment1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Hatch;
             c1GaugeSegment1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            c1GaugeSegment1.Filling.HatchStyle = C1.Win.C1Gauge.C1GaugeHatchStyle.SmallGrid;
+            c1GaugeSegment1.Filling.HatchStyle = C1.Win.Gauge.C1GaugeHatchStyle.SmallGrid;
             c1GaugeSegment1.InnerRadius = 800;
             c1GaugeSegment1.StartAngle = -105;
             c1GaugeSegment1.SweepAngle = 210;
-            this.c1RadialGauge1.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1RadialGauge1.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeSegment1});
             this.c1RadialGauge1.Name = "c1RadialGauge1";
             this.c1RadialGauge1.Pointer.Border.Color = System.Drawing.Color.DarkRed;
@@ -117,17 +117,17 @@
             this.c1RadialGauge1.Pointer.CustomShape.EndWidth = 1;
             this.c1RadialGauge1.Pointer.CustomShape.StartAngle = 50;
             this.c1RadialGauge1.Pointer.CustomShape.StartWidth = 10;
-            this.c1RadialGauge1.Pointer.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.Gradient;
+            this.c1RadialGauge1.Pointer.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
             this.c1RadialGauge1.Pointer.Filling.Color = System.Drawing.Color.Pink;
             this.c1RadialGauge1.Pointer.Filling.Color2 = System.Drawing.Color.Red;
-            this.c1RadialGauge1.Pointer.Gradient.Direction = C1.Win.C1Gauge.C1GaugeGradientDirection.Horizontal;
-            this.c1RadialGauge1.Pointer.Gradient.Falloff = C1.Win.C1Gauge.C1GaugeGradientFalloff.SigmaBell;
+            this.c1RadialGauge1.Pointer.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
+            this.c1RadialGauge1.Pointer.Gradient.Falloff = C1.Win.Gauge.C1GaugeGradientFalloff.SigmaBell;
             this.c1RadialGauge1.Pointer.Gradient.ScaleX = 2;
             this.c1RadialGauge1.Pointer.HitTestable = false;
             this.c1RadialGauge1.Pointer.Length = 85;
             this.c1RadialGauge1.Pointer.Offset = -2;
             this.c1RadialGauge1.Pointer.Shadow.Visible = true;
-            this.c1RadialGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom;
+            this.c1RadialGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
             this.c1RadialGauge1.Pointer.Value = 70;
             this.c1RadialGauge1.PointerOriginY = 0.786;
             this.c1RadialGauge1.Radius = 0.77;
@@ -137,8 +137,8 @@
             this.c1RadialGauge1.Viewport.AspectPinY = 0.5;
             this.c1RadialGauge1.Viewport.AspectRatio = 1.58;
             this.c1RadialGauge1.ViewTag = ((long)(637777636476463374));
-            this.c1RadialGauge1.ItemMouseDown += new C1.Win.C1Gauge.ItemMouseEventHandler(this.c1RadialGauge1_ItemMouseMove);
-            this.c1RadialGauge1.ItemMouseMove += new C1.Win.C1Gauge.ItemMouseEventHandler(this.c1RadialGauge1_ItemMouseMove);
+            this.c1RadialGauge1.ItemMouseDown += new C1.Win.Gauge.ItemMouseEventHandler(this.c1RadialGauge1_ItemMouseMove);
+            this.c1RadialGauge1.ItemMouseMove += new C1.Win.Gauge.ItemMouseEventHandler(this.c1RadialGauge1_ItemMouseMove);
             // 
             // PageYandexGauge
             // 
@@ -153,7 +153,7 @@
 
         #endregion
 
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1RadialGauge c1RadialGauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1RadialGauge c1RadialGauge1;
     }
 }

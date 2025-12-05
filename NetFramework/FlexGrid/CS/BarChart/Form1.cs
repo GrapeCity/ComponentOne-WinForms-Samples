@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Collections;
@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using System.Globalization;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace BarChart
 {
@@ -16,7 +16,7 @@ namespace BarChart
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -56,7 +56,11 @@ namespace BarChart
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +73,7 @@ namespace BarChart
             this._flex.Rows.DefaultSize = 17;
             this._flex.Size = new System.Drawing.Size(808, 382);
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
@@ -124,7 +128,7 @@ namespace BarChart
             _flex.DrawMode = DrawModeEnum.OwnerDraw;
         }
 
-        void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (_flex.Cols[e.Col].UserData != null && e.Row >= _flex.Rows.Fixed)
             {

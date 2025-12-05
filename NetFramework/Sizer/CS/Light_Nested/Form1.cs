@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -53,7 +53,7 @@ namespace NestedCtls
 		private System.Windows.Forms.Button button9;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Button button10;
-        private C1.Win.C1Sizer.C1SizerLight c1SizerLight1;
+        private C1.Win.Sizer.C1SizerLight c1SizerLight1;
 		private System.ComponentModel.IContainer components;
 
 		public Form1()
@@ -92,6 +92,7 @@ namespace NestedCtls
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.toolBar1 = new System.Windows.Forms.ToolBar();
 			this.toolBarButton1 = new System.Windows.Forms.ToolBarButton();
 			this.toolBarButton2 = new System.Windows.Forms.ToolBarButton();
@@ -133,7 +134,7 @@ namespace NestedCtls
 			this.radioButton2 = new System.Windows.Forms.RadioButton();
 			this.radioButton3 = new System.Windows.Forms.RadioButton();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.c1SizerLight1 = new C1.Win.C1Sizer.C1SizerLight(this.components);
+			this.c1SizerLight1 = new C1.Win.Sizer.C1SizerLight(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.statusBarPanel3)).BeginInit();

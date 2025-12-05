@@ -34,13 +34,13 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.RibbonCMBThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.RibbonGroup2 = New C1.Win.Ribbon.RibbonGroup()
         Me.RibbonButton1 = New C1.Win.Ribbon.RibbonButton()
-        Me.C1CommandDock1 = New C1.Win.C1Command.C1CommandDock()
+        Me.C1CommandDock1 = New C1.Win.Command.C1CommandDock()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.C1DockingTab1 = New C1.Win.C1Command.C1DockingTab()
-        Me.C1DockingTabPage1 = New C1.Win.C1Command.C1DockingTabPage()
+        Me.C1DockingTab1 = New C1.Win.Command.C1DockingTab()
+        Me.C1DockingTabPage1 = New C1.Win.Command.C1DockingTabPage()
         Me.C1DataFilter1 = New C1.Win.DataFilter.C1DataFilter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,7 +155,7 @@ Partial Class MainForm
         Me.C1DockingTab1.ShowCaption = True
         Me.C1DockingTab1.Size = New System.Drawing.Size(300, 297)
         Me.C1DockingTab1.TabIndex = 0
-        Me.C1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.C1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.C1ThemeController1.SetTheme(Me.C1DockingTab1, "(default)")
         Me.C1ThemeController1.SetThemeSettings(Me.C1DockingTab1, Nothing)
         '
@@ -228,13 +228,13 @@ Partial Class MainForm
     Private WithEvents RibbonTab1 As RibbonTab
     Private WithEvents RibbonGroup1 As RibbonGroup
     Private WithEvents RibbonTopToolBar1 As RibbonTopToolBar
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents RibbonGroup2 As RibbonGroup
     Friend WithEvents RibbonButton1 As RibbonButton
-    Friend WithEvents C1CommandDock1 As C1.Win.C1Command.C1CommandDock
+    Friend WithEvents C1CommandDock1 As C1.Win.Command.C1CommandDock
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents C1DockingTab1 As C1.Win.C1Command.C1DockingTab
-    Friend WithEvents C1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
+    Friend WithEvents C1DockingTab1 As C1.Win.Command.C1DockingTab
+    Friend WithEvents C1DockingTabPage1 As C1.Win.Command.C1DockingTabPage
     Friend WithEvents C1DataFilter1 As C1.Win.DataFilter.C1DataFilter
     Friend WithEvents DataGridView1 As DataGridView
 End Class

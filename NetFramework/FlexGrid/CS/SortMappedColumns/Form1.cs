@@ -6,7 +6,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace SortMappedColumns
 {
@@ -89,14 +89,14 @@ namespace SortMappedColumns
             da = new OleDbDataAdapter("select * from customers", GetConnectionString());
             var dtCustomers = new DataTable();
             da.Fill(dtCustomers);
-            var dctCustomers = new C1.Win.C1FlexGrid.MultiColumnDictionary(dtCustomers, "CustomerID", new string[] { "CompanyName" }, 0);
+            var dctCustomers = new C1.Win.FlexGrid.MultiColumnDictionary(dtCustomers, "CustomerID", new string[] { "CompanyName" }, 0);
             _flex.Cols["CustomerID"].DataMap = dctCustomers;
 
             // map EmployeeID column
             da = new OleDbDataAdapter("select * from employees", GetConnectionString());
             var dtEmployees = new DataTable();
             da.Fill(dtEmployees);
-            var dctEmployees = new C1.Win.C1FlexGrid.MultiColumnDictionary(dtEmployees, "EmployeeID", new string[] { "LastName", "FirstName" }, 0);
+            var dctEmployees = new C1.Win.FlexGrid.MultiColumnDictionary(dtEmployees, "EmployeeID", new string[] { "LastName", "FirstName" }, 0);
             _flex.Cols["EmployeeID"].DataMap = dctEmployees;
 
             // create additional mapped columns (for sorting)
@@ -126,7 +126,7 @@ namespace SortMappedColumns
         }
 
         // intercept sort command and sort by mapped column instead
-        void _flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)
+        void _flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
         {
             if (_flex.Cols[e.Col].Name == "CustomerID")
             {

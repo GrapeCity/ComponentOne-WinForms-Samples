@@ -35,7 +35,7 @@ Partial Class MainForm
         Me.RibbonQat1 = New C1.Win.Ribbon.RibbonQat()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.btnExport = New C1.Win.C1Input.C1Button()
         Me.btnImport = New C1.Win.C1Input.C1Button()
@@ -186,7 +186,7 @@ Partial Class MainForm
     Friend WithEvents RibbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
     Friend WithEvents RibbonQat1 As C1.Win.Ribbon.RibbonQat
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As RibbonComboBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents btnImport As C1Button

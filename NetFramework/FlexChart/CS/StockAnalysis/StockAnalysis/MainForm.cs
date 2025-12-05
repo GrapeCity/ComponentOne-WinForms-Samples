@@ -33,7 +33,6 @@ namespace StockAnalysis
         public MainForm()
         {
             InitializeComponent();
-            Icon = ImageManager.GetC1LogoIcon();
 
             financialChart.BackColor = ViewModel.IndicatorPalettes.PaperWhite1000;
             rangeChart.BackColor = ViewModel.IndicatorPalettes.PaperWhite1000;

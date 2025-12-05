@@ -1,6 +1,6 @@
 ﻿
-Imports C1.Win.C1Themes
-Imports C1.Win.C1TrueDBGrid
+Imports C1.Win.Themes
+Imports C1.Win.TrueDBGrid
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,7 +39,7 @@ Public Class Form1
             c1TrueDBGrid1.Glyphs(GlyphType.CheckBoxIndeterminate) = My.Resources.IndeterminateIcon
         End If
 
-        c1TrueDBGrid1.Splits(0).DisplayColumns(1).Style.HorizontalAlignment = C1.Win.C1TrueDBGrid.AlignHorzEnum.Center
-        c1TrueDBGrid1.Splits(0).DisplayColumns(1).Style.VerticalAlignment = C1.Win.C1TrueDBGrid.AlignVertEnum.Center
+        c1TrueDBGrid1.Splits(0).DisplayColumns(1).Style.HorizontalAlignment = C1.Win.TrueDBGrid.AlignHorzEnum.Center
+        c1TrueDBGrid1.Splits(0).DisplayColumns(1).Style.VerticalAlignment = C1.Win.TrueDBGrid.AlignVertEnum.Center
     End Sub
 End Class

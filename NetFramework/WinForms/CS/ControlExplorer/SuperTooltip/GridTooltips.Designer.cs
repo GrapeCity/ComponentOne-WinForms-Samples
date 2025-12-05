@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridTooltips));
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -42,14 +42,14 @@
             this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1SuperTooltip1
             // 
-            this.c1SuperTooltip1.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Gold;
+            this.c1SuperTooltip1.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Gold;
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1SuperTooltip1.IsBalloon = true;
             this.c1SuperTooltip1.MaximumWidth = 250;
@@ -157,16 +157,16 @@
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:38;}\t";
             this.c1FlexGrid1.Location = new System.Drawing.Point(12, 28);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 17;
             this.c1FlexGrid1.Size = new System.Drawing.Size(568, 406);
             this.c1FlexGrid1.TabIndex = 3;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.System;
-            this.c1FlexGrid1.MouseEnterCell += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_MouseEnterCell);
-            this.c1FlexGrid1.MouseLeaveCell += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_MouseLeaveCell);
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.System;
+            this.c1FlexGrid1.MouseEnterCell += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_MouseEnterCell);
+            this.c1FlexGrid1.MouseLeaveCell += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_MouseLeaveCell);
             // 
             // GridTooltips
             // 
@@ -188,7 +188,7 @@
 
         #endregion
 
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton newToolStripButton;
         private System.Windows.Forms.ToolStripButton openToolStripButton;
@@ -200,6 +200,6 @@
         private System.Windows.Forms.ToolStripButton pasteToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

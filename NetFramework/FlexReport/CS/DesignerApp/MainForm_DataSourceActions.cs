@@ -31,15 +31,15 @@ using System.Linq;
 
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.Localization;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Util.Licensing;
 
 using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
-using Doc = C1.Win.C1Document;
+using Doc = C1.Win.Document;
 using Flex = C1.Win.FlexReport;
 using FlexReportDesignerApp.Controls;
 

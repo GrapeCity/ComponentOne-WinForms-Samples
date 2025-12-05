@@ -15,7 +15,7 @@
             Me.btnClose = New C1.Win.C1Input.C1Button()
             Me.btnRename = New C1.Win.C1Input.C1Button()
             Me.btnDelete = New C1.Win.C1Input.C1Button()
-            Me.c1List1 = New C1.Win.C1List.C1List()
+            Me.c1List1 = New C1.Win.List.C1List()
             Me.panel1 = New System.Windows.Forms.Panel()
             Me.panel2 = New System.Windows.Forms.Panel()
             CType((Me.btnClose), System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,7 +65,7 @@
             Me.c1List1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
             Me.c1List1.PreviewInfo.ZoomFactor = 75.0R
             Me.c1List1.PrintInfo.PageSettings = (CType((resources.GetObject("c1List1.PrintInfo.PageSettings")), System.Drawing.Printing.PageSettings))
-            Me.c1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+            Me.c1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
             Me.c1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
             Me.c1List1.ShowHeaderCheckBox = False
             Me.c1List1.Size = New System.Drawing.Size(442, 309)
@@ -106,7 +106,7 @@
         Private btnClose As C1.Win.C1Input.C1Button
         Private btnRename As C1.Win.C1Input.C1Button
         Private btnDelete As C1.Win.C1Input.C1Button
-        Private c1List1 As C1.Win.C1List.C1List
+        Private c1List1 As C1.Win.List.C1List
         Private panel1 As System.Windows.Forms.Panel
         Private panel2 As System.Windows.Forms.Panel
     End Class

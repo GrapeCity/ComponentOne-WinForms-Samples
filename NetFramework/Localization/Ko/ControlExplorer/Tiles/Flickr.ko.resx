@@ -126,7 +126,7 @@
   <data name="waitLabel.Text" xml:space="preserve">
     <value>Please wait...</value>
   </data>
-  <assembly alias="C1.Win.C1TileControl.4.5.2" name="C1.Win.C1TileControl.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.TileControl.4.5.2" name="C1.Win.TileControl.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <data name="textElement2.Text" xml:space="preserve">
     <value>Can't Load Images From Flickr</value>
   </data>

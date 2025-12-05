@@ -18,6 +18,7 @@ namespace TouchToolkitExplorer.C1ApplicationZoomPages
         }
         private int _selectIndex;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int _checkParam
         {
             get

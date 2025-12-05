@@ -1,4 +1,4 @@
-namespace SuperTooltips
+﻿namespace SuperTooltips
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace SuperTooltips
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("New");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Open");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Save");
@@ -109,7 +110,7 @@ namespace SuperTooltips
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this._groupHtml = new System.Windows.Forms.GroupBox();
-            this.c1SuperLabel2 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel2 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -120,7 +121,7 @@ namespace SuperTooltips
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this._groupToolBox = new System.Windows.Forms.GroupBox();
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -130,7 +131,7 @@ namespace SuperTooltips
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.C1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.C1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -923,7 +924,7 @@ namespace SuperTooltips
         private System.Windows.Forms.ToolStripButton helpToolStripButton;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TreeView treeView1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip C1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip C1SuperTooltip1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -945,8 +946,8 @@ namespace SuperTooltips
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox _groupToolBox;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel2;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

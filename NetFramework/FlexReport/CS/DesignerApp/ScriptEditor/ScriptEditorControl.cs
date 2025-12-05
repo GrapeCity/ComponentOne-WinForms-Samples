@@ -20,9 +20,9 @@ using System.Linq;
 #endif
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
-using C1.Win.C1InputPanel;
+using C1.Win.InputPanel;
 using C1.Util.Win;
-using C1.Win.C1SuperTooltip;
+using C1.Win.SuperTooltip;
 using FlexReportDesignerApp.Util;
 using C1.Report;
 
@@ -160,10 +160,10 @@ namespace FlexReportDesignerApp.Forms
 #if skip_dima // this for some reason makes the tooltip's background a non-removable gradient, investigate/report bug:
             if (!string.IsNullOrEmpty(mainForm.Theme))
             {
-                var tl = new C1.Win.C1Themes.C1ThemeLocator(mainForm.Theme);
+                var tl = new C1.Win.Themes.C1ThemeLocator(mainForm.Theme);
                 var theme = tl.GetTheme();
                 if (theme != null)
-                    C1.Win.C1Themes.C1ThemeController.ApplyThemeToObject(_tooltip, theme);
+                    C1.Win.Themes.C1ThemeController.ApplyThemeToObject(_tooltip, theme);
             }
 #else
             _tooltip.MaximumWidth = 500; // Note: this seems a nice value, not sure what would be better.
@@ -183,7 +183,7 @@ namespace FlexReportDesignerApp.Forms
         private void InitHiliteColors(MainForm mainForm)
         {
             // color for highlighting the active editor:
-            // Color c = inpPanel.InputStyle.ColorSet[C1.Win.C1InputPanel.StyleColor.ButtonText];
+            // Color c = inpPanel.InputStyle.ColorSet[C1.Win.InputPanel.StyleColor.ButtonText];
             bool darkTheme = mainForm != null && mainForm.Theme != null && mainForm.Theme.ToLowerInvariant().Contains("dark");
             if (!darkTheme)
             {

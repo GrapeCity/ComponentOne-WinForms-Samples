@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     /// <summary>
     /// Static utility methods.

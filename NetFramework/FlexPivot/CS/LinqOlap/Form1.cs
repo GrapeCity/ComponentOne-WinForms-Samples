@@ -67,26 +67,26 @@ namespace LinqFlexPivot
             doc.LoadXml(Properties.Resources.FlexPivotViews);
 
             // build menu with default FlexPivot views
-            var menuView = new C1.Win.C1Command.C1CommandMenu();
+            var menuView = new C1.Win.Command.C1CommandMenu();
             menuView.Text = "&View";
             menuView.Image = Properties.Resources.Views_small;
             foreach (XmlNode nd in doc.SelectNodes("FlexPivotViews/C1FlexPivot"))
             {
-                var cmd = new C1.Win.C1Command.C1Command();
+                var cmd = new C1.Win.Command.C1Command();
                 cmd.Text = nd.Attributes["id"].Value;
                 cmd.UserData = nd;
                 cmd.Click += MenuView_DropDownItemClicked;
-                var link = new C1.Win.C1Command.C1CommandLink(cmd);
+                var link = new C1.Win.Command.C1CommandLink(cmd);
                 menuView.CommandLinks.Add(link);
             }
 
             // add the new view menu to the toolstrip
-            var menuLink = new C1.Win.C1Command.C1CommandLink(menuView);
+            var menuLink = new C1.Win.Command.C1CommandLink(menuView);
             _c1FlexPivotPage.ToolBar.CommandLinks.Insert(3, menuLink);
         }
 
         // select a predefined FlexPivot view
-        void MenuView_DropDownItemClicked(object sender, C1.Win.C1Command.ClickEventArgs e)
+        void MenuView_DropDownItemClicked(object sender, C1.Win.Command.ClickEventArgs e)
         {
             var nd = e.CallerLink.Command.UserData as XmlNode;
             if (nd != null)

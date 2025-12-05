@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomDialog));
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.c1Calendar1.Schedule = this.c1Schedule1;
             this.c1Calendar1.Size = new System.Drawing.Size(592, 192);
             this.c1Calendar1.TabIndex = 0;
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
+            this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Blue;
             // 
             // c1Schedule1
             // 
@@ -113,12 +113,12 @@
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -126,11 +126,11 @@
             printStyle5});
             this.c1Schedule1.Size = new System.Drawing.Size(592, 250);
             this.c1Schedule1.TabIndex = 0;
-            this.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
+            this.c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView;
             this.c1Schedule1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1Schedule1.BeforeViewChange += new System.EventHandler<C1.Win.C1Schedule.BeforeViewChangeEventArgs>(this.c1Schedule1_BeforeViewChange);
-            this.c1Schedule1.BeforeAppointmentShow += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
-            this.c1Schedule1.BeforeAppointmentCreate += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
+            this.c1Schedule1.BeforeViewChange += new System.EventHandler<C1.Win.Schedule.BeforeViewChangeEventArgs>(this.c1Schedule1_BeforeViewChange);
+            this.c1Schedule1.BeforeAppointmentShow += new C1.Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
+            this.c1Schedule1.BeforeAppointmentCreate += new C1.Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
             // 
             // CustomDialog
             // 
@@ -154,7 +154,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
     }
 }

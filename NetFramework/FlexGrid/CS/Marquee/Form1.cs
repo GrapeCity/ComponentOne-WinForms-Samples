@@ -23,7 +23,7 @@ namespace Marquee
             cs.BackColor = Color.LemonChiffon;
         }
 
-        void c1FlexGrid1_CellChanged(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void c1FlexGrid1_CellChanged(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             // apply style to changed cells
             var cs = this.c1FlexGrid1.Styles["changed"];

@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.Win.C1Chart;
 
 namespace GridChart
@@ -15,7 +15,7 @@ namespace GridChart
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private C1.Win.C1Chart.C1Chart _chart;
 		private System.Windows.Forms.Splitter splitter1;
 		private System.Windows.Forms.Panel panel1;
@@ -62,7 +62,11 @@ namespace GridChart
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._chart = new C1.Win.C1Chart.C1Chart();
 			this.splitter1 = new System.Windows.Forms.Splitter();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -86,7 +90,7 @@ namespace GridChart
 			this._flex.ShowCursor = true;
 			this._flex.Size = new System.Drawing.Size(248, 309);
 			this._flex.TabIndex = 0;
-			this._flex.AfterEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_AfterEdit);
+			this._flex.AfterEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_AfterEdit);
 			// 
 			// _chart
 			// 
@@ -320,7 +324,7 @@ namespace GridChart
 		}
 
 		// update the chart after the user changed a value
-		private void _flex_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			UpdateChart();
 		}

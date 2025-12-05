@@ -7,7 +7,7 @@ using System.Globalization;
 using C1.C1Preview;
 using C1.Win.C1Preview;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     /// <summary>
     /// Represents a class that may be used to insert a C1FlexGrid into a C1PrintDocument.

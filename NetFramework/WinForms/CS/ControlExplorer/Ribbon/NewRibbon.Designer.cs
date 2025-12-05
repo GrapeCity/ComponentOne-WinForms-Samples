@@ -71,7 +71,7 @@
             this.ParagraphAlignLeftButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.ParagraphAlignCenterButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.ParagraphAlignRightButton = new C1.Win.Ribbon.RibbonToggleButton();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.DocumentModifiedLabel = new C1.Win.Ribbon.RibbonLabel();
@@ -440,7 +440,7 @@
             this.c1Ribbon1.Size = new System.Drawing.Size(1402, 105);
             this.c1Ribbon1.Tabs.Add(this.HomeTab);
             this.c1Ribbon1.Tabs.Add(this.ViewTab);
-            this.c1Ribbon1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Help.png", global::ControlExplorer.Properties.Resources.Help));
+            this.c1Ribbon1.ToolTipSettings.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Help.png", global::ControlExplorer.Properties.Resources.Help));
             this.c1Ribbon1.ToolTipSettings.MaximumWidth = 250;
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
@@ -999,7 +999,7 @@
         private C1.Win.Ribbon.RibbonTrackBar ZoomTrackBar1;
         private C1.Win.Ribbon.RibbonGroup ProofingGroup;
         private C1.Win.Ribbon.RibbonButton btnSpelling;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private C1.Win.Ribbon.RibbonToggleButton AzureStyleButton;
         private C1.Win.Ribbon.RibbonToggleButton BlueStyleButton;
         private C1.Win.Ribbon.RibbonToggleButton GreenStyleButton;

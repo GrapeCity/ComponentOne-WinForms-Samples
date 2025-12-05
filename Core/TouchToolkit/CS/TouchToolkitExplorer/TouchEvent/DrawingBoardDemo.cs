@@ -39,6 +39,7 @@ namespace TouchToolkitExplorer.TouchEvent
             }
         }
 
+        [DefaultValue(DrawMode.Draw)]
         public DrawMode DrawMode
         {
             get
@@ -185,6 +186,7 @@ namespace TouchToolkitExplorer.TouchEvent
             }
         }
 
+        [DefaultValue(null)]
         public DrawingBoardDemo Owner { get; set; }
 
         public int DrawSize
@@ -330,6 +332,8 @@ namespace TouchToolkitExplorer.TouchEvent
         }
 
         private Color _backColor;
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color BackgroundColor
         {
             get
@@ -345,6 +349,8 @@ namespace TouchToolkitExplorer.TouchEvent
         }
 
         private Color _foreColor;
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color ForegroundColor
         {
             get
@@ -484,6 +490,8 @@ namespace TouchToolkitExplorer.TouchEvent
     public class DrawModePanel : Panel
     {
         private DrawMode _drawMode;
+
+        [DefaultValue(DrawMode.Draw)]
         public DrawMode DrawMode
         {
             get
@@ -514,6 +522,7 @@ namespace TouchToolkitExplorer.TouchEvent
             }
         }
 
+        [DefaultValue(null)]
         public DrawingBoardDemo Owner { get; set; }
 
         private SelectableButton drawButton;
@@ -587,6 +596,8 @@ namespace TouchToolkitExplorer.TouchEvent
     public class DrawSizePanel : Panel
     {
         private int _drawSize;
+
+        [DefaultValue(0)]
         public int DrawSize
         {
             get
@@ -599,6 +610,7 @@ namespace TouchToolkitExplorer.TouchEvent
             }
         }
 
+        [DefaultValue(null)]
         public DrawingBoardDemo Owner { get; set; }
 
         private SizeButton sizeButton1;
@@ -704,6 +716,8 @@ namespace TouchToolkitExplorer.TouchEvent
     internal abstract class SelectableButton : Button
     {
         private bool _selected;
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool Selected
         {
             get
@@ -789,6 +803,8 @@ namespace TouchToolkitExplorer.TouchEvent
     internal class SizeButton : SelectableButton
     {
         private int _drawSize;
+
+        [DefaultValue(0)]
         public int DrawSize
         {
             get

@@ -1,40 +1,103 @@
-# ComponentOne WinForms Edition Samples 
+# **1. ComponentOne WinForms Edition Samples [grapecity/c1-winforms-samples](https://bitbucket.org/grapecity/c1-winforms-samples)**
 
-Deliver intuitive and beautiful Windows Forms applications in less time.
+Project Overview and Structure
 
-* Display and edit data with lightning-fast datagrids and input controls
-* Endless data visualization options with flexible charts and reporting components
-* Complete your apps with essential docking, ribbon, and dashboard layout controls
-* Extensive API and built-in customization options
-* Support for .NET Framework and .NET 6
+This repository contains the official sample applications for **ComponentOne WinForms Edition**. The samples demonstrate how to use various ComponentOne controls to build modern, responsive, and data focused Windows Forms applications.
 
-This repository contains the samples for [ComponentOne WinForms Edition](https://developer.mescius.com/componentone/winforms-ui-controls). There are several different projects that are organized in sub-folders. These sub-folders are organized similarly to the organization of the docs for .NET. Each sample has a readme.md file that explains the sample. 
+The purpose of this repository is to help developers explore features, understand common usage patterns, and implement ComponentOne controls effectively within their own applications.
 
-The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org or developer.mescius.com/componentone.
+---
 
-## Building a Sample 
+## **Key Features Demonstrated**
 
-* .NET Framework samples require Visual Studio 2012 and above. 
-* .NET 6 samples will require Visual Studio 2019 and above.
+The sample projects highlight a broad range of ComponentOne features, including:
 
-You can also build any .NET Core sample using the .NET Core CLI, which is installed with the [.NET Core SDK](https://www.microsoft.com/net/download). 
-Then run these commands from the CLI in the directory of any sample: 
+- Displaying and editing data through fast datagrids and input controls
+- Data visualization using charts, reporting tools, and analytical components
+- Application layout enhancements using docking, ribbon, and dashboard style UI components
+- Extensive API usage and customization scenarios
+- Support for both **.NET Framework** and **.NET Core** based WinForms applications
+
+Each sample includes a dedicated **readme.md** that explains the purpose of the sample and provides usage guidance.
+
+---
+
+## **Repository Structure**
+
+The repository is organized into multiple sub folders that group samples by platform and product area. The structure aligns with the ComponentOne documentation layout.
 
 ```
-dotnet build 
-dotnet run 
+c1 winforms samples
+│
+├── Core                  [Contains all .NET Core and .NET Core WinForms samples]
+│
+├── NetFramework          [Contains all .NET Framework WinForms samples]
+│
+└── Brand                 [Contains region specific samples or branding variations]
 ```
 
-This will install any needed dependencies, build the project, and run the project respectively. 
+### **Platforms**
 
-## Resources
+- **Core folder**
+    Includes WinForms samples built using .NET Core and .NET Core.
+- **NetFramework folder**
+    Includes samples targeting the .NET Framework platform.
+- **Brand folder**
+    Contains region based sample variations where applicable.
 
-* Product Details: https://developer.mescius.com/componentone/winforms-ui-controls
-* Demos: https://developer.mescius.com/componentone/demos
-* Documentation: https://developer.mescius.com/componentone/docs/win
-* Support Forum: https://developer.mescius.com/forums/winforms-edition
+You can find the full list of sample categories and modules in the internal documentation:
 
-If you see issues in specific samples or have requests for new samples, file issues in this repository.  
-If you see issues with the controls, file issues via our [official support channel](https://developer.mescius.com/support/contact).
- 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/dotnet/winforms/blob/master/LICENSE.TXT)
+[C1 WinForms Samples](https://grapecity.atlassian.net/wiki/spaces/C1/pages/4629725331)
+
+---
+
+## **External Dependencies**
+
+The samples reference ComponentOne control packages, but these packages are not included inside the repository.
+
+To run any sample, install the required NuGet packages from:
+
+- [NuGet Gallery | Home](http://nuget.org/)
+- [MESCIUS inc.](http://developer.mescius.com/componentone)
+- [c1-dev](https://pkgs.dev.azure.com/dt4dev/C1/_packaging/c1-dev/nuget/v3/index.json)
+
+Dependencies are automatically restored during build or restore operations.
+
+> For initial setup for c1-dev packages, [refer this](https://grapecity.atlassian.net/wiki/spaces/~7120208c038e0589664757aeac2d4aa84e274b/pages/4380721298/Setup+Devs)
+---
+
+## **Building the Samples**
+
+### **.NET Framework Samples**
+
+- Require Visual Studio 2012 or later.
+
+### **.NET Core Samples**
+
+- Require Visual Studio 2019 or later.
+
+### **Building with .NET CLI**
+
+For .NET 6 or .NET Core samples, you can build and run from the terminal:
+
+```shell
+dotnet build
+dotnet run
+```
+
+These commands restore dependencies, build the project, and run it.
+
+---
+
+## **Contribution and Pull Requests**
+
+When creating a pull request for this repository, follow the official internal checklist and guidelines:
+
+**PR Runbook:** [link here](https://grapecity.atlassian.net/wiki/spaces/C1/pages/4528668799)
+
+Important requirements:
+
+- Ensure changes align with repository structure and sample standards.
+- Follow naming, formatting, and code quality rules described in the internal guidelines.
+- Minimum of **two reviewer approvals** is required before merging any PR.
+- Include a clear description of what the sample change adds or improves.

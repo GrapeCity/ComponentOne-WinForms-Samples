@@ -1,5 +1,5 @@
-Imports C1.Win.C1Schedule
-Imports C1.C1Schedule
+Imports C1.Win.Schedule
+Imports C1.Schedule
 Imports System.Data
 Imports System.ComponentModel
 Imports System.IO
@@ -99,7 +99,7 @@ Public Class Form1
         e.Appointment.Label = C1Schedule1.DataStorage.LabelStorage.Labels(New Guid("{D3F876F9-881B-478C-8594-4941B92D6424}")) ' none
     End Sub
 
-    Private Sub C1Schedule1_BeforeGroupHeaderFormat(ByVal sender As System.Object, ByVal e As C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs) Handles C1Schedule1.BeforeGroupHeaderFormat
+    Private Sub C1Schedule1_BeforeGroupHeaderFormat(ByVal sender As System.Object, ByVal e As C1.Win.Schedule.BeforeGroupHeaderFormatEventArgs) Handles C1Schedule1.BeforeGroupHeaderFormat
         Dim contact As Contact = e.Group.Owner
         If contact IsNot Nothing Then
             Dim row As MultiUser.C1NWindDataSet.EmployeesRow = Me.C1NwindDataSet1.Employees.FindByEmployeeID(contact.Key(0))

@@ -34,20 +34,20 @@ namespace FinancialChartExplorer.Samples
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
+            this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.c1DataFields = new C1.Win.C1Input.C1ComboBox();
+            this.c1DataFields = new C1.Win.Input.C1ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.reversal = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
-            this.c1Scaling = new C1.Win.C1Input.C1ComboBox();
+            this.c1Scaling = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.boxSize = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label6 = new System.Windows.Forms.Label();
             this.period = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
-            this.c1SquareGrid = new C1.Win.C1Input.C1CheckBox();
+            this.c1SquareGrid = new C1.Win.Input.C1CheckBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
@@ -112,7 +112,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1ComboBox1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1ComboBox1.GapHeight = 5;
-            this.c1ComboBox1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1ComboBox1.ItemsDisplayMember = "Name";
             this.c1ComboBox1.ItemsValueMember = "Symbol";
             this.c1ComboBox1.Location = new System.Drawing.Point(96, 3);
@@ -122,7 +121,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.TabIndex = 2;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.c1ComboBox1.TextDetached = true;
             this.c1ComboBox1.TranslateValue = true;
             this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
             // 
@@ -242,7 +240,6 @@ namespace FinancialChartExplorer.Samples
             this.c1DataFields.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.c1DataFields.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1DataFields.GapHeight = 5;
-            this.c1DataFields.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1DataFields.Location = new System.Drawing.Point(132, 18);
             this.c1DataFields.Name = "c1DataFields";
             this.c1DataFields.Size = new System.Drawing.Size(109, 36);
@@ -266,8 +263,6 @@ namespace FinancialChartExplorer.Samples
             // reversal
             // 
             this.reversal.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.reversal.GapHeight = 0;
-            this.reversal.ImagePadding = new System.Windows.Forms.Padding(0);
             this.reversal.Location = new System.Drawing.Point(350, 23);
             this.reversal.Maximum = 5;
             this.reversal.Minimum = 2;
@@ -281,7 +276,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.reversal.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.reversal.ValueChanged += new System.EventHandler(this.reversal_ValueChanged_1);
             // 
             // label3
@@ -302,7 +296,6 @@ namespace FinancialChartExplorer.Samples
             this.c1Scaling.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1Scaling.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1Scaling.GapHeight = 5;
-            this.c1Scaling.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1Scaling.Location = new System.Drawing.Point(3, 60);
             this.c1Scaling.Name = "c1Scaling";
             this.c1Scaling.Size = new System.Drawing.Size(109, 36);
@@ -326,8 +319,6 @@ namespace FinancialChartExplorer.Samples
             // boxSize
             // 
             this.boxSize.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.boxSize.GapHeight = 0;
-            this.boxSize.ImagePadding = new System.Windows.Forms.Padding(0);
             this.boxSize.Location = new System.Drawing.Point(219, 65);
             this.boxSize.Name = "boxSize";
             this.boxSize.Size = new System.Drawing.Size(62, 26);
@@ -339,7 +330,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.boxSize.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.boxSize.ValueChanged += new System.EventHandler(this.boxSize_ValueChanged_1);
             // 
             // label6
@@ -357,8 +347,6 @@ namespace FinancialChartExplorer.Samples
             // period
             // 
             this.period.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.period.GapHeight = 0;
-            this.period.ImagePadding = new System.Windows.Forms.Padding(0);
             this.period.Location = new System.Drawing.Point(412, 65);
             this.period.Maximum = 30;
             this.period.Minimum = 7;
@@ -372,12 +360,10 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.period.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.period.ValueChanged += new System.EventHandler(this.period_ValueChanged_1);
             // 
             // c1SquareGrid
             // 
-            this.c1SquareGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1SquareGrid.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1SquareGrid.Location = new System.Drawing.Point(3, 107);
             this.c1SquareGrid.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
@@ -385,7 +371,6 @@ namespace FinancialChartExplorer.Samples
             this.c1SquareGrid.Size = new System.Drawing.Size(104, 28);
             this.c1SquareGrid.TabIndex = 14;
             this.c1SquareGrid.Text = "Square Grid";
-            this.c1SquareGrid.UseVisualStyleBackColor = false;
             this.c1SquareGrid.Value = null;
             this.c1SquareGrid.CheckedChanged += new System.EventHandler(this.c1SquareGrid_CheckedChanged);
             // 
@@ -430,10 +415,10 @@ namespace FinancialChartExplorer.Samples
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private C1.Win.C1Input.C1ComboBox c1ComboBox1;
-        private C1.Win.C1Input.C1ComboBox c1DataFields;
-        private C1.Win.C1Input.C1ComboBox c1Scaling;
-        private C1.Win.C1Input.C1CheckBox c1SquareGrid;
+        private C1.Win.Input.C1ComboBox c1ComboBox1;
+        private C1.Win.Input.C1ComboBox c1DataFields;
+        private C1.Win.Input.C1ComboBox c1Scaling;
+        private C1.Win.Input.C1CheckBox c1SquareGrid;
         private C1NumericEditEx reversal;
         private C1NumericEditEx boxSize;
         private C1NumericEditEx period;

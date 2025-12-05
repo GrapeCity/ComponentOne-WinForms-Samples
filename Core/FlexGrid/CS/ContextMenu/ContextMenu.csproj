@@ -9,15 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ContextMenu.gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="ContextMenu.gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.7" />
   </ItemGroup>
 
@@ -30,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

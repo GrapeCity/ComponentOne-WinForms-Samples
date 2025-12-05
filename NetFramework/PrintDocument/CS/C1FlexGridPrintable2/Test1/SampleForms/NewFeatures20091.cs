@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace NewFeatures20091
 {

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace Tutorial16
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
@@ -26,13 +26,13 @@ namespace Tutorial16
 		private DataTable tb;   //A copy of the data
 		private Color borderColor;
 		private int bLeft, bTop, bRight, bBottom;
-		private C1.Win.C1List.BorderTypeEnum bType;
+		private C1.Win.List.BorderTypeEnum bType;
 		private System.Windows.Forms.ColorDialog colorDialog1;
-		private C1.Win.C1List.C1Combo C1Combo4;
-		private C1.Win.C1List.C1Combo C1Combo3;
-		private C1.Win.C1List.C1Combo C1Combo2;
-		private C1.Win.C1List.C1Combo C1Combo1;
-		private C1.Win.C1List.C1Combo C1Combo5;
+		private C1.Win.List.C1Combo C1Combo4;
+		private C1.Win.List.C1Combo C1Combo3;
+		private C1.Win.List.C1Combo C1Combo2;
+		private C1.Win.List.C1Combo C1Combo1;
+		private C1.Win.List.C1Combo C1Combo5;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
@@ -77,61 +77,63 @@ namespace Tutorial16
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style9 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style10 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style11 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style12 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style13 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style14 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style15 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style16 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style17 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style18 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style19 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style20 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style21 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style22 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style23 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style24 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style25 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style26 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style27 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style28 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style29 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style30 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style31 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style32 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style33 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style34 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style35 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style36 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style37 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style38 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style39 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style40 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style41 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style42 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style43 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style44 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style45 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style46 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style47 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style48 = new C1.Win.C1List.Style();
-			this.C1List1 = new C1.Win.C1List.C1List();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
+			C1.Win.List.Style style9 = new C1.Win.List.Style();
+			C1.Win.List.Style style10 = new C1.Win.List.Style();
+			C1.Win.List.Style style11 = new C1.Win.List.Style();
+			C1.Win.List.Style style12 = new C1.Win.List.Style();
+			C1.Win.List.Style style13 = new C1.Win.List.Style();
+			C1.Win.List.Style style14 = new C1.Win.List.Style();
+			C1.Win.List.Style style15 = new C1.Win.List.Style();
+			C1.Win.List.Style style16 = new C1.Win.List.Style();
+			C1.Win.List.Style style17 = new C1.Win.List.Style();
+			C1.Win.List.Style style18 = new C1.Win.List.Style();
+			C1.Win.List.Style style19 = new C1.Win.List.Style();
+			C1.Win.List.Style style20 = new C1.Win.List.Style();
+			C1.Win.List.Style style21 = new C1.Win.List.Style();
+			C1.Win.List.Style style22 = new C1.Win.List.Style();
+			C1.Win.List.Style style23 = new C1.Win.List.Style();
+			C1.Win.List.Style style24 = new C1.Win.List.Style();
+			C1.Win.List.Style style25 = new C1.Win.List.Style();
+			C1.Win.List.Style style26 = new C1.Win.List.Style();
+			C1.Win.List.Style style27 = new C1.Win.List.Style();
+			C1.Win.List.Style style28 = new C1.Win.List.Style();
+			C1.Win.List.Style style29 = new C1.Win.List.Style();
+			C1.Win.List.Style style30 = new C1.Win.List.Style();
+			C1.Win.List.Style style31 = new C1.Win.List.Style();
+			C1.Win.List.Style style32 = new C1.Win.List.Style();
+			C1.Win.List.Style style33 = new C1.Win.List.Style();
+			C1.Win.List.Style style34 = new C1.Win.List.Style();
+			C1.Win.List.Style style35 = new C1.Win.List.Style();
+			C1.Win.List.Style style36 = new C1.Win.List.Style();
+			C1.Win.List.Style style37 = new C1.Win.List.Style();
+			C1.Win.List.Style style38 = new C1.Win.List.Style();
+			C1.Win.List.Style style39 = new C1.Win.List.Style();
+			C1.Win.List.Style style40 = new C1.Win.List.Style();
+			C1.Win.List.Style style41 = new C1.Win.List.Style();
+			C1.Win.List.Style style42 = new C1.Win.List.Style();
+			C1.Win.List.Style style43 = new C1.Win.List.Style();
+			C1.Win.List.Style style44 = new C1.Win.List.Style();
+			C1.Win.List.Style style45 = new C1.Win.List.Style();
+			C1.Win.List.Style style46 = new C1.Win.List.Style();
+			C1.Win.List.Style style47 = new C1.Win.List.Style();
+			C1.Win.List.Style style48 = new C1.Win.List.Style();
+			this.C1List1 = new C1.Win.List.C1List();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.C1Combo4 = new C1.Win.C1List.C1Combo();
-			this.C1Combo3 = new C1.Win.C1List.C1Combo();
-			this.C1Combo2 = new C1.Win.C1List.C1Combo();
-			this.C1Combo1 = new C1.Win.C1List.C1Combo();
+			this.C1Combo4 = new C1.Win.List.C1Combo();
+			this.C1Combo3 = new C1.Win.List.C1Combo();
+			this.C1Combo2 = new C1.Win.List.C1Combo();
+			this.C1Combo1 = new C1.Win.List.C1Combo();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -142,7 +144,7 @@ namespace Tutorial16
 			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-			this.C1Combo5 = new C1.Win.C1List.C1Combo();
+			this.C1Combo5 = new C1.Win.List.C1Combo();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -180,14 +182,14 @@ namespace Tutorial16
 			this.C1List1.Name = "C1List1";
 			this.C1List1.OddRowStyle = style6;
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.SelectedStyle = style7;
 			this.C1List1.Size = new System.Drawing.Size(536, 328);
 			this.C1List1.Style = style8;
 			this.C1List1.TabIndex = 0;
 			this.C1List1.Text = "C1List1";
-			this.C1List1.FetchScrollTips += new C1.Win.C1List.FetchScrollTipsEventHandler(this.C1List1_FetchScrollTips);
+			this.C1List1.FetchScrollTips += new C1.Win.List.FetchScrollTipsEventHandler(this.C1List1_FetchScrollTips);
 			this.C1List1.PropBag = resources.GetString("C1List1.PropBag");
 			// 
 			// groupBox1
@@ -216,16 +218,16 @@ namespace Tutorial16
 			this.C1Combo4.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.C1Combo4.ColumnCaptionHeight = 17;
 			this.C1Combo4.ColumnFooterHeight = 17;
-			this.C1Combo4.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList;
+			this.C1Combo4.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList;
 			this.C1Combo4.ContentHeight = 15;
-			this.C1Combo4.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1Combo4.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1Combo4.DeadAreaBackColor = System.Drawing.Color.Empty;
 			this.C1Combo4.EditorBackColor = System.Drawing.SystemColors.Window;
 			this.C1Combo4.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.C1Combo4.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.C1Combo4.EditorHeight = 15;
 			this.C1Combo4.EvenRowStyle = style10;
-			this.C1Combo4.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.C1Combo4.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.C1Combo4.FooterStyle = style11;
 			this.C1Combo4.GapHeight = 2;
 			this.C1Combo4.HeadingStyle = style12;
@@ -240,7 +242,7 @@ namespace Tutorial16
 			this.C1Combo4.Name = "C1Combo4";
 			this.C1Combo4.OddRowStyle = style14;
 			this.C1Combo4.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1Combo4.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1Combo4.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1Combo4.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1Combo4.SelectedStyle = style15;
 			this.C1Combo4.Size = new System.Drawing.Size(104, 21);
@@ -259,16 +261,16 @@ namespace Tutorial16
 			this.C1Combo3.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.C1Combo3.ColumnCaptionHeight = 17;
 			this.C1Combo3.ColumnFooterHeight = 17;
-			this.C1Combo3.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList;
+			this.C1Combo3.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList;
 			this.C1Combo3.ContentHeight = 15;
-			this.C1Combo3.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1Combo3.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1Combo3.DeadAreaBackColor = System.Drawing.Color.Empty;
 			this.C1Combo3.EditorBackColor = System.Drawing.SystemColors.Window;
 			this.C1Combo3.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.C1Combo3.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.C1Combo3.EditorHeight = 15;
 			this.C1Combo3.EvenRowStyle = style18;
-			this.C1Combo3.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.C1Combo3.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.C1Combo3.FooterStyle = style19;
 			this.C1Combo3.GapHeight = 2;
 			this.C1Combo3.HeadingStyle = style20;
@@ -283,7 +285,7 @@ namespace Tutorial16
 			this.C1Combo3.Name = "C1Combo3";
 			this.C1Combo3.OddRowStyle = style22;
 			this.C1Combo3.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1Combo3.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1Combo3.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1Combo3.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1Combo3.SelectedStyle = style23;
 			this.C1Combo3.Size = new System.Drawing.Size(104, 21);
@@ -302,16 +304,16 @@ namespace Tutorial16
 			this.C1Combo2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.C1Combo2.ColumnCaptionHeight = 17;
 			this.C1Combo2.ColumnFooterHeight = 17;
-			this.C1Combo2.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList;
+			this.C1Combo2.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList;
 			this.C1Combo2.ContentHeight = 15;
-			this.C1Combo2.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1Combo2.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1Combo2.DeadAreaBackColor = System.Drawing.Color.Empty;
 			this.C1Combo2.EditorBackColor = System.Drawing.SystemColors.Window;
 			this.C1Combo2.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.C1Combo2.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.C1Combo2.EditorHeight = 15;
 			this.C1Combo2.EvenRowStyle = style26;
-			this.C1Combo2.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.C1Combo2.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.C1Combo2.FooterStyle = style27;
 			this.C1Combo2.GapHeight = 2;
 			this.C1Combo2.HeadingStyle = style28;
@@ -326,7 +328,7 @@ namespace Tutorial16
 			this.C1Combo2.Name = "C1Combo2";
 			this.C1Combo2.OddRowStyle = style30;
 			this.C1Combo2.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1Combo2.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1Combo2.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1Combo2.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1Combo2.SelectedStyle = style31;
 			this.C1Combo2.Size = new System.Drawing.Size(104, 21);
@@ -345,16 +347,16 @@ namespace Tutorial16
 			this.C1Combo1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.C1Combo1.ColumnCaptionHeight = 17;
 			this.C1Combo1.ColumnFooterHeight = 17;
-			this.C1Combo1.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList;
+			this.C1Combo1.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList;
 			this.C1Combo1.ContentHeight = 15;
-			this.C1Combo1.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1Combo1.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty;
 			this.C1Combo1.EditorBackColor = System.Drawing.SystemColors.Window;
 			this.C1Combo1.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.C1Combo1.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.C1Combo1.EditorHeight = 15;
 			this.C1Combo1.EvenRowStyle = style34;
-			this.C1Combo1.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.C1Combo1.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.C1Combo1.FooterStyle = style35;
 			this.C1Combo1.GapHeight = 2;
 			this.C1Combo1.HeadingStyle = style36;
@@ -369,7 +371,7 @@ namespace Tutorial16
 			this.C1Combo1.Name = "C1Combo1";
 			this.C1Combo1.OddRowStyle = style38;
 			this.C1Combo1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1Combo1.SelectedStyle = style39;
 			this.C1Combo1.Size = new System.Drawing.Size(104, 21);
@@ -466,16 +468,16 @@ namespace Tutorial16
 			this.C1Combo5.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.C1Combo5.ColumnCaptionHeight = 17;
 			this.C1Combo5.ColumnFooterHeight = 17;
-			this.C1Combo5.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList;
+			this.C1Combo5.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList;
 			this.C1Combo5.ContentHeight = 15;
-			this.C1Combo5.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1Combo5.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1Combo5.DeadAreaBackColor = System.Drawing.Color.Empty;
 			this.C1Combo5.EditorBackColor = System.Drawing.SystemColors.Window;
 			this.C1Combo5.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.C1Combo5.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.C1Combo5.EditorHeight = 15;
 			this.C1Combo5.EvenRowStyle = style42;
-			this.C1Combo5.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.C1Combo5.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.C1Combo5.FooterStyle = style43;
 			this.C1Combo5.GapHeight = 2;
 			this.C1Combo5.HeadingStyle = style44;
@@ -490,7 +492,7 @@ namespace Tutorial16
 			this.C1Combo5.Name = "C1Combo5";
 			this.C1Combo5.OddRowStyle = style46;
 			this.C1Combo5.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1Combo5.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1Combo5.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1Combo5.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1Combo5.SelectedStyle = style47;
 			this.C1Combo5.Size = new System.Drawing.Size(120, 21);
@@ -582,11 +584,11 @@ namespace Tutorial16
 			this.bTop = 1;
 			this.bLeft = 1;
 			this.bRight = 1;
-			this.bType = C1.Win.C1List.BorderTypeEnum.None;
+			this.bType = C1.Win.List.BorderTypeEnum.None;
 		}
 
 		//Fill each comboBox with number 1 to 10
-		private void FillCombo(ref C1.Win.C1List.C1Combo  comb)
+		private void FillCombo(ref C1.Win.List.C1Combo  comb)
 		{
 			for (int i = 1; i < 11; i++)
 				comb.AddItem(i.ToString());
@@ -611,7 +613,7 @@ namespace Tutorial16
 
 		private void UpdateBorder()
 		{
-			C1.Win.C1List.CellBorders bds = this.C1List1.Splits[0].DisplayColumns[this.C1List1.Col].Style.Borders;
+			C1.Win.List.CellBorders bds = this.C1List1.Splits[0].DisplayColumns[this.C1List1.Col].Style.Borders;
 			bds.Color = this.borderColor;
 			bds.BorderType = this.bType;
 			bds.Bottom = this.bBottom;
@@ -642,15 +644,15 @@ namespace Tutorial16
 			this.C1List1.ScrollTrack = this.checkBox2.Checked;
 		}
 
-		private void C1List1_FetchScrollTips(object sender, C1.Win.C1List.FetchScrollTipsEventArgs e)
+		private void C1List1_FetchScrollTips(object sender, C1.Win.List.FetchScrollTipsEventArgs e)
 		{
 			 //set the ScrollTip depending on which scroll bar was moved
 			switch (e.ScrollBar)
 			{
-				case C1.Win.C1List.ScrollBarEnum.Horizontal:
+				case C1.Win.List.ScrollBarEnum.Horizontal:
 					e.ScrollTip = this.C1List1.Columns[e.ColIndex].Caption;
 					break;
-				case C1.Win.C1List.ScrollBarEnum.Vertical:
+				case C1.Win.List.ScrollBarEnum.Vertical:
 					e.ScrollTip = "Record: " + (e.Row + 1) + " of " +
 						this.C1List1.ListCount + "\n";
 					e.ScrollTip +=  "Company: " + this.tb.Rows[e.Row]["Company"] + "\n";
@@ -666,28 +668,28 @@ namespace Tutorial16
 			switch ((string)this.C1Combo5.Text)
 			{
 				case "Fillet":
-					this.bType = C1.Win.C1List.BorderTypeEnum.Fillet;
+					this.bType = C1.Win.List.BorderTypeEnum.Fillet;
 					break;
 				case "Flat":
-					this.bType = C1.Win.C1List.BorderTypeEnum.Flat;
+					this.bType = C1.Win.List.BorderTypeEnum.Flat;
 					break;
 				case "Groove":
-					this.bType = C1.Win.C1List.BorderTypeEnum.Groove;
+					this.bType = C1.Win.List.BorderTypeEnum.Groove;
 					break;
 				case "Inset":
-					this.bType = C1.Win.C1List.BorderTypeEnum.Inset;
+					this.bType = C1.Win.List.BorderTypeEnum.Inset;
 					break;
 				case "InsetBevel":
-					this.bType = C1.Win.C1List.BorderTypeEnum.InsetBevel;
+					this.bType = C1.Win.List.BorderTypeEnum.InsetBevel;
 					break;
 				case "None":
-					this.bType = C1.Win.C1List.BorderTypeEnum.None;
+					this.bType = C1.Win.List.BorderTypeEnum.None;
 					break;
 				case "Raised":
-					this.bType = C1.Win.C1List.BorderTypeEnum.Raised;
+					this.bType = C1.Win.List.BorderTypeEnum.Raised;
 					break;
 				case "RaisedBevel":
-					this.bType = C1.Win.C1List.BorderTypeEnum.RaisedBevel;
+					this.bType = C1.Win.List.BorderTypeEnum.RaisedBevel;
 					break;
 			}
 			this.UpdateBorder();

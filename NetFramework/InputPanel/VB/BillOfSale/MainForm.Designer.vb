@@ -25,31 +25,31 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ColumnDefinition1 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition2 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition3 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition4 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition5 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition6 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition7 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition8 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim ColumnDefinition9 As C1.Win.C1InputPanel.ColumnDefinition = New C1.Win.C1InputPanel.ColumnDefinition()
-        Dim RowDefinition1 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition2 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition3 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition4 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition5 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition6 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition7 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition8 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition9 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition10 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition11 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition12 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition13 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition14 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition15 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
-        Dim RowDefinition16 As C1.Win.C1InputPanel.RowDefinition = New C1.Win.C1InputPanel.RowDefinition()
+        Dim ColumnDefinition1 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition2 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition3 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition4 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition5 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition6 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition7 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition8 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim ColumnDefinition9 As C1.Win.InputPanel.ColumnDefinition = New C1.Win.InputPanel.ColumnDefinition()
+        Dim RowDefinition1 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition2 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition3 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition4 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition5 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition6 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition7 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition8 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition9 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition10 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition11 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition12 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition13 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition14 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition15 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
+        Dim RowDefinition16 As C1.Win.InputPanel.RowDefinition = New C1.Win.InputPanel.RowDefinition()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.C1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
         Me.RibbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
@@ -60,65 +60,65 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel()
-        Me.inputGroupHeader1 = New C1.Win.C1InputPanel.InputGroupHeader()
-        Me.inputGridPanel1 = New C1.Win.C1InputPanel.InputGridPanel()
-        Me.inputLabel19 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel1 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel2 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerPrintedName = New C1.Win.C1InputPanel.InputTextBox()
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel()
+        Me.inputGroupHeader1 = New C1.Win.InputPanel.InputGroupHeader()
+        Me.inputGridPanel1 = New C1.Win.InputPanel.InputGridPanel()
+        Me.inputLabel19 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel1 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel2 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerPrintedName = New C1.Win.InputPanel.InputTextBox()
         Me.billOfSaleBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.inputLabel3 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerAddress = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel4 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerCity = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel5 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerState = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel6 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerZip = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel7 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerHomePhone = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel8 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerCellPhone = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel9 = New C1.Win.C1InputPanel.InputLabel()
-        Me.sellerWork = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel10 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerPrintedName = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel11 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerAddress = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel12 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerCity = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel13 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerState = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel14 = New C1.Win.C1InputPanel.InputLabel()
-        Me.Zip = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel15 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel16 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerHomePhone = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel17 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerCellPhone = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel18 = New C1.Win.C1InputPanel.InputLabel()
-        Me.buyerWork = New C1.Win.C1InputPanel.InputTextBox()
-        Me.inputLabel20 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel21 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel23 = New C1.Win.C1InputPanel.InputLabel()
-        Me.formOfPayment = New C1.Win.C1InputPanel.InputTextBox()
+        Me.inputLabel3 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerAddress = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel4 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerCity = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel5 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerState = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel6 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerZip = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel7 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerHomePhone = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel8 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerCellPhone = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel9 = New C1.Win.InputPanel.InputLabel()
+        Me.sellerWork = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel10 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerPrintedName = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel11 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerAddress = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel12 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerCity = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel13 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerState = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel14 = New C1.Win.InputPanel.InputLabel()
+        Me.Zip = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel15 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel16 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerHomePhone = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel17 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerCellPhone = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel18 = New C1.Win.InputPanel.InputLabel()
+        Me.buyerWork = New C1.Win.InputPanel.InputTextBox()
+        Me.inputLabel20 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel21 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel23 = New C1.Win.InputPanel.InputLabel()
+        Me.formOfPayment = New C1.Win.InputPanel.InputTextBox()
         Me.itemsInfo = New BillOfSale.RichTextBoxHost()
-        Me.inputLabel24 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel25 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel26 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel27 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel28 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel22 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel29 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel30 = New C1.Win.C1InputPanel.InputLabel()
-        Me.inputLabel31 = New C1.Win.C1InputPanel.InputLabel()
-        Me.dateSold = New C1.Win.C1InputPanel.InputDatePicker()
-        Me.SellerDateSign = New C1.Win.C1InputPanel.InputDatePicker()
-        Me.BuyerDateSign = New C1.Win.C1InputPanel.InputDatePicker()
-        Me.inputLabel32 = New C1.Win.C1InputPanel.InputLabel()
-        Me.itemsValue = New C1.Win.C1InputPanel.InputNumericBox()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.inputLabel24 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel25 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel26 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel27 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel28 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel22 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel29 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel30 = New C1.Win.InputPanel.InputLabel()
+        Me.inputLabel31 = New C1.Win.InputPanel.InputLabel()
+        Me.dateSold = New C1.Win.InputPanel.InputDatePicker()
+        Me.SellerDateSign = New C1.Win.InputPanel.InputDatePicker()
+        Me.BuyerDateSign = New C1.Win.InputPanel.InputDatePicker()
+        Me.inputLabel32 = New C1.Win.InputPanel.InputLabel()
+        Me.itemsValue = New C1.Win.InputPanel.InputNumericBox()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.billOfSaleBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -204,7 +204,7 @@ Partial Class MainForm
         '
         'inputGridPanel1
         '
-        Me.inputGridPanel1.Break = C1.Win.C1InputPanel.BreakType.None
+        Me.inputGridPanel1.Break = C1.Win.InputPanel.BreakType.None
         ColumnDefinition1.SizeType = System.Windows.Forms.SizeType.Percent
         ColumnDefinition1.Width = 18
         ColumnDefinition2.SizeType = System.Windows.Forms.SizeType.Percent
@@ -324,11 +324,11 @@ Partial Class MainForm
         'inputLabel19
         '
         Me.inputLabel19.ColumnIndex = 6
-        Me.inputLabel19.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel19.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.inputLabel19.Name = "inputLabel19"
         Me.inputLabel19.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel19.Text = "Date Sold:"
-        Me.inputLabel19.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel19.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel1
         '
@@ -338,7 +338,7 @@ Partial Class MainForm
         Me.inputLabel1.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel1.RowIndex = 1
         Me.inputLabel1.Text = "SELLER'S"
-        Me.inputLabel1.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel1.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel2
         '
@@ -346,7 +346,7 @@ Partial Class MainForm
         Me.inputLabel2.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel2.RowIndex = 2
         Me.inputLabel2.Text = "Printed Name:"
-        Me.inputLabel2.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel2.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerPrintedName
         '
@@ -356,7 +356,7 @@ Partial Class MainForm
         Me.sellerPrintedName.Name = "sellerPrintedName"
         Me.sellerPrintedName.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerPrintedName.RowIndex = 2
-        Me.sellerPrintedName.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerPrintedName.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'billOfSaleBindingSource
         '
@@ -368,7 +368,7 @@ Partial Class MainForm
         Me.inputLabel3.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel3.RowIndex = 3
         Me.inputLabel3.Text = "Address:"
-        Me.inputLabel3.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel3.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerAddress
         '
@@ -378,7 +378,7 @@ Partial Class MainForm
         Me.sellerAddress.Name = "sellerAddress"
         Me.sellerAddress.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerAddress.RowIndex = 3
-        Me.sellerAddress.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerAddress.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel4
         '
@@ -386,7 +386,7 @@ Partial Class MainForm
         Me.inputLabel4.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel4.RowIndex = 4
         Me.inputLabel4.Text = "City:"
-        Me.inputLabel4.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel4.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerCity
         '
@@ -396,7 +396,7 @@ Partial Class MainForm
         Me.sellerCity.Name = "sellerCity"
         Me.sellerCity.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerCity.RowIndex = 4
-        Me.sellerCity.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerCity.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel5
         '
@@ -404,7 +404,7 @@ Partial Class MainForm
         Me.inputLabel5.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel5.RowIndex = 5
         Me.inputLabel5.Text = "State:"
-        Me.inputLabel5.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel5.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerState
         '
@@ -413,7 +413,7 @@ Partial Class MainForm
         Me.sellerState.Name = "sellerState"
         Me.sellerState.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerState.RowIndex = 5
-        Me.sellerState.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerState.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel6
         '
@@ -422,7 +422,7 @@ Partial Class MainForm
         Me.inputLabel6.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel6.RowIndex = 5
         Me.inputLabel6.Text = "Zip:"
-        Me.inputLabel6.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel6.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerZip
         '
@@ -432,7 +432,7 @@ Partial Class MainForm
         Me.sellerZip.Name = "sellerZip"
         Me.sellerZip.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerZip.RowIndex = 5
-        Me.sellerZip.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerZip.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel7
         '
@@ -440,7 +440,7 @@ Partial Class MainForm
         Me.inputLabel7.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel7.RowIndex = 6
         Me.inputLabel7.Text = "Home Phone:"
-        Me.inputLabel7.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel7.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerHomePhone
         '
@@ -450,7 +450,7 @@ Partial Class MainForm
         Me.sellerHomePhone.Name = "sellerHomePhone"
         Me.sellerHomePhone.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerHomePhone.RowIndex = 6
-        Me.sellerHomePhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerHomePhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel8
         '
@@ -458,7 +458,7 @@ Partial Class MainForm
         Me.inputLabel8.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel8.RowIndex = 7
         Me.inputLabel8.Text = "Cell Phone:"
-        Me.inputLabel8.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel8.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerCellPhone
         '
@@ -468,7 +468,7 @@ Partial Class MainForm
         Me.sellerCellPhone.Name = "sellerCellPhone"
         Me.sellerCellPhone.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerCellPhone.RowIndex = 7
-        Me.sellerCellPhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerCellPhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel9
         '
@@ -476,7 +476,7 @@ Partial Class MainForm
         Me.inputLabel9.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel9.RowIndex = 8
         Me.inputLabel9.Text = "Work:"
-        Me.inputLabel9.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel9.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'sellerWork
         '
@@ -486,7 +486,7 @@ Partial Class MainForm
         Me.sellerWork.Name = "sellerWork"
         Me.sellerWork.Padding = New System.Windows.Forms.Padding(2)
         Me.sellerWork.RowIndex = 8
-        Me.sellerWork.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.sellerWork.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel10
         '
@@ -496,7 +496,7 @@ Partial Class MainForm
         Me.inputLabel10.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel10.RowIndex = 1
         Me.inputLabel10.Text = "BUYER'S"
-        Me.inputLabel10.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel10.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerPrintedName
         '
@@ -506,7 +506,7 @@ Partial Class MainForm
         Me.buyerPrintedName.Name = "buyerPrintedName"
         Me.buyerPrintedName.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerPrintedName.RowIndex = 2
-        Me.buyerPrintedName.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerPrintedName.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel11
         '
@@ -515,7 +515,7 @@ Partial Class MainForm
         Me.inputLabel11.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel11.RowIndex = 2
         Me.inputLabel11.Text = "Printed Name:"
-        Me.inputLabel11.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel11.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerAddress
         '
@@ -525,7 +525,7 @@ Partial Class MainForm
         Me.buyerAddress.Name = "buyerAddress"
         Me.buyerAddress.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerAddress.RowIndex = 3
-        Me.buyerAddress.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerAddress.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel12
         '
@@ -534,7 +534,7 @@ Partial Class MainForm
         Me.inputLabel12.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel12.RowIndex = 3
         Me.inputLabel12.Text = "Address:"
-        Me.inputLabel12.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel12.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerCity
         '
@@ -544,7 +544,7 @@ Partial Class MainForm
         Me.buyerCity.Name = "buyerCity"
         Me.buyerCity.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerCity.RowIndex = 4
-        Me.buyerCity.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerCity.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel13
         '
@@ -553,7 +553,7 @@ Partial Class MainForm
         Me.inputLabel13.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel13.RowIndex = 4
         Me.inputLabel13.Text = "City:"
-        Me.inputLabel13.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel13.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerState
         '
@@ -562,7 +562,7 @@ Partial Class MainForm
         Me.buyerState.Name = "buyerState"
         Me.buyerState.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerState.RowIndex = 5
-        Me.buyerState.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerState.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel14
         '
@@ -571,7 +571,7 @@ Partial Class MainForm
         Me.inputLabel14.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel14.RowIndex = 5
         Me.inputLabel14.Text = "State:"
-        Me.inputLabel14.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel14.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'Zip
         '
@@ -581,7 +581,7 @@ Partial Class MainForm
         Me.Zip.Name = "Zip"
         Me.Zip.Padding = New System.Windows.Forms.Padding(2)
         Me.Zip.RowIndex = 5
-        Me.Zip.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.Zip.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel15
         '
@@ -590,7 +590,7 @@ Partial Class MainForm
         Me.inputLabel15.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel15.RowIndex = 5
         Me.inputLabel15.Text = "Zip:"
-        Me.inputLabel15.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel15.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel16
         '
@@ -599,7 +599,7 @@ Partial Class MainForm
         Me.inputLabel16.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel16.RowIndex = 6
         Me.inputLabel16.Text = "Home Phone:"
-        Me.inputLabel16.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel16.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerHomePhone
         '
@@ -609,7 +609,7 @@ Partial Class MainForm
         Me.buyerHomePhone.Name = "buyerHomePhone"
         Me.buyerHomePhone.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerHomePhone.RowIndex = 6
-        Me.buyerHomePhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerHomePhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel17
         '
@@ -618,7 +618,7 @@ Partial Class MainForm
         Me.inputLabel17.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel17.RowIndex = 7
         Me.inputLabel17.Text = "Cell Phone:"
-        Me.inputLabel17.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel17.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerCellPhone
         '
@@ -628,7 +628,7 @@ Partial Class MainForm
         Me.buyerCellPhone.Name = "buyerCellPhone"
         Me.buyerCellPhone.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerCellPhone.RowIndex = 7
-        Me.buyerCellPhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerCellPhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel18
         '
@@ -637,7 +637,7 @@ Partial Class MainForm
         Me.inputLabel18.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel18.RowIndex = 8
         Me.inputLabel18.Text = "Work:"
-        Me.inputLabel18.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel18.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'buyerWork
         '
@@ -647,28 +647,28 @@ Partial Class MainForm
         Me.buyerWork.Name = "buyerWork"
         Me.buyerWork.Padding = New System.Windows.Forms.Padding(2)
         Me.buyerWork.RowIndex = 8
-        Me.buyerWork.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.buyerWork.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel20
         '
         Me.inputLabel20.ColumnSpan = 9
         Me.inputLabel20.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.inputLabel20.Height = 30
-        Me.inputLabel20.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel20.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         Me.inputLabel20.Name = "inputLabel20"
         Me.inputLabel20.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel20.RowIndex = 9
         Me.inputLabel20.Text = "INFORMATION ON ITEM THAT WAS SOLD"
-        Me.inputLabel20.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel20.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel21
         '
-        Me.inputLabel21.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel21.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.inputLabel21.Name = "inputLabel21"
         Me.inputLabel21.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel21.RowIndex = 11
         Me.inputLabel21.Text = "For the sum of"
-        Me.inputLabel21.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel21.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel23
         '
@@ -678,7 +678,7 @@ Partial Class MainForm
         Me.inputLabel23.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel23.RowIndex = 11
         Me.inputLabel23.Text = ", Payment in form of"
-        Me.inputLabel23.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel23.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'formOfPayment
         '
@@ -688,7 +688,7 @@ Partial Class MainForm
         Me.formOfPayment.Name = "formOfPayment"
         Me.formOfPayment.Padding = New System.Windows.Forms.Padding(2)
         Me.formOfPayment.RowIndex = 11
-        Me.formOfPayment.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.formOfPayment.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'itemsInfo
         '
@@ -704,14 +704,14 @@ Partial Class MainForm
         '
         Me.inputLabel24.ColumnSpan = 9
         Me.inputLabel24.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.inputLabel24.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel24.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         Me.inputLabel24.Name = "inputLabel24"
         Me.inputLabel24.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel24.RowIndex = 13
         Me.inputLabel24.Text = "I,THE UNDERSIGNED, HEREBY SWEAROF AFFIRM THAT I THE SELLER OF THE ITEM " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DESCRIBE" &
     "D HEREIN AND THAT THE INFORMATION PROVIDED IN THIS BILL OF SALE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "IS TRUE AND COR" &
     "RECT TO THE BEST OF MY BELIEF."
-        Me.inputLabel24.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel24.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel25
         '
@@ -719,17 +719,17 @@ Partial Class MainForm
         Me.inputLabel25.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel25.RowIndex = 14
         Me.inputLabel25.Text = "Signature of Seller:"
-        Me.inputLabel25.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel25.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel26
         '
         Me.inputLabel26.ColumnIndex = 6
-        Me.inputLabel26.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel26.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.inputLabel26.Name = "inputLabel26"
         Me.inputLabel26.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel26.RowIndex = 14
         Me.inputLabel26.Text = "Date:"
-        Me.inputLabel26.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel26.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel27
         '
@@ -737,41 +737,41 @@ Partial Class MainForm
         Me.inputLabel27.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel27.RowIndex = 15
         Me.inputLabel27.Text = "Signature of Buyer:"
-        Me.inputLabel27.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel27.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel28
         '
         Me.inputLabel28.ColumnIndex = 6
-        Me.inputLabel28.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel28.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.inputLabel28.Name = "inputLabel28"
         Me.inputLabel28.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel28.RowIndex = 15
         Me.inputLabel28.Text = "Date:"
-        Me.inputLabel28.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel28.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel22
         '
         Me.inputLabel22.ColumnIndex = 1
         Me.inputLabel22.ColumnSpan = 2
         Me.inputLabel22.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.inputLabel22.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel22.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         Me.inputLabel22.Name = "inputLabel22"
         Me.inputLabel22.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel22.RowIndex = 12
         Me.inputLabel22.Text = "(Item\'s value)"
-        Me.inputLabel22.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        Me.inputLabel22.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near
         '
         'inputLabel29
         '
         Me.inputLabel29.ColumnIndex = 5
         Me.inputLabel29.ColumnSpan = 4
         Me.inputLabel29.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.inputLabel29.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel29.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         Me.inputLabel29.Name = "inputLabel29"
         Me.inputLabel29.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel29.RowIndex = 12
         Me.inputLabel29.Text = "(form of payment)"
-        Me.inputLabel29.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        Me.inputLabel29.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near
         '
         'inputLabel30
         '
@@ -781,7 +781,7 @@ Partial Class MainForm
         Me.inputLabel30.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel30.RowIndex = 14
         Me.inputLabel30.Text = "_____________________________________"
-        Me.inputLabel30.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel30.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         '
         'inputLabel31
         '
@@ -791,7 +791,7 @@ Partial Class MainForm
         Me.inputLabel31.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel31.RowIndex = 15
         Me.inputLabel31.Text = "_____________________________________"
-        Me.inputLabel31.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel31.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         '
         'dateSold
         '
@@ -801,7 +801,7 @@ Partial Class MainForm
         Me.dateSold.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.billOfSaleBindingSource, "DateSold", True, System.Windows.Forms.DataSourceUpdateMode.OnValidation, Nothing, "d"))
         Me.dateSold.Name = "dateSold"
         Me.dateSold.Padding = New System.Windows.Forms.Padding(2)
-        Me.dateSold.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.dateSold.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'SellerDateSign
         '
@@ -812,7 +812,7 @@ Partial Class MainForm
         Me.SellerDateSign.Name = "SellerDateSign"
         Me.SellerDateSign.Padding = New System.Windows.Forms.Padding(2)
         Me.SellerDateSign.RowIndex = 14
-        Me.SellerDateSign.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.SellerDateSign.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'BuyerDateSign
         '
@@ -823,17 +823,17 @@ Partial Class MainForm
         Me.BuyerDateSign.Name = "BuyerDateSign"
         Me.BuyerDateSign.Padding = New System.Windows.Forms.Padding(2)
         Me.BuyerDateSign.RowIndex = 15
-        Me.BuyerDateSign.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.BuyerDateSign.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'inputLabel32
         '
-        Me.inputLabel32.Break = C1.Win.C1InputPanel.BreakType.Group
+        Me.inputLabel32.Break = C1.Win.InputPanel.BreakType.Group
         Me.inputLabel32.ColumnIndex = 1
         Me.inputLabel32.Name = "inputLabel32"
         Me.inputLabel32.Padding = New System.Windows.Forms.Padding(2)
         Me.inputLabel32.RowIndex = 12
         Me.inputLabel32.Text = "Label"
-        Me.inputLabel32.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        Me.inputLabel32.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center
         '
         'itemsValue
         '
@@ -878,64 +878,64 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Friend WithEvents inputGroupHeader1 As C1.Win.C1InputPanel.InputGroupHeader
-    Friend WithEvents inputGridPanel1 As C1.Win.C1InputPanel.InputGridPanel
-    Friend WithEvents inputLabel1 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel2 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerPrintedName As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel3 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerAddress As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel4 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerCity As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel5 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerState As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel6 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerZip As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel7 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerHomePhone As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel8 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerCellPhone As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel9 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents sellerWork As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel10 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerPrintedName As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel11 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerAddress As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel12 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerCity As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel13 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerState As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel14 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents Zip As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel15 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel16 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerHomePhone As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel17 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerCellPhone As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel18 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents buyerWork As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel19 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel20 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel21 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel23 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents formOfPayment As C1.Win.C1InputPanel.InputTextBox
-    Friend WithEvents inputLabel24 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel25 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel26 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel27 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel28 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel22 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel29 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel30 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents inputLabel31 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents dateSold As C1.Win.C1InputPanel.InputDatePicker
-    Friend WithEvents SellerDateSign As C1.Win.C1InputPanel.InputDatePicker
-    Friend WithEvents BuyerDateSign As C1.Win.C1InputPanel.InputDatePicker
-    Friend WithEvents inputLabel32 As C1.Win.C1InputPanel.InputLabel
-    Friend WithEvents itemsValue As C1.Win.C1InputPanel.InputNumericBox
+    Friend WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Friend WithEvents inputGroupHeader1 As C1.Win.InputPanel.InputGroupHeader
+    Friend WithEvents inputGridPanel1 As C1.Win.InputPanel.InputGridPanel
+    Friend WithEvents inputLabel1 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel2 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerPrintedName As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel3 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerAddress As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel4 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerCity As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel5 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerState As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel6 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerZip As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel7 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerHomePhone As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel8 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerCellPhone As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel9 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents sellerWork As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel10 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerPrintedName As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel11 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerAddress As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel12 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerCity As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel13 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerState As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel14 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents Zip As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel15 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel16 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerHomePhone As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel17 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerCellPhone As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel18 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents buyerWork As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel19 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel20 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel21 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel23 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents formOfPayment As C1.Win.InputPanel.InputTextBox
+    Friend WithEvents inputLabel24 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel25 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel26 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel27 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel28 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel22 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel29 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel30 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents inputLabel31 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents dateSold As C1.Win.InputPanel.InputDatePicker
+    Friend WithEvents SellerDateSign As C1.Win.InputPanel.InputDatePicker
+    Friend WithEvents BuyerDateSign As C1.Win.InputPanel.InputDatePicker
+    Friend WithEvents inputLabel32 As C1.Win.InputPanel.InputLabel
+    Friend WithEvents itemsValue As C1.Win.InputPanel.InputNumericBox
     Friend WithEvents billOfSaleBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents itemsInfo As RichTextBoxHost
 End Class

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using DashboardModel;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 
 namespace DashboardWinForms
 {

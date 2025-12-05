@@ -5,10 +5,10 @@ Namespace TestSchedule
     ' ReminderForm is a custom form to show instead of C1Schedule's embedded one
     Public Class ReminderForm
 
-        Private _reminder As C1.C1Schedule.Reminder
+        Private _reminder As C1.Schedule.Reminder
         Private _owner As Form1
 
-        Public Sub New(ByVal reminder As C1.C1Schedule.Reminder, ByVal owner As Form1)
+        Public Sub New(ByVal reminder As C1.Schedule.Reminder, ByVal owner As Form1)
             _reminder = reminder
             _owner = owner
             Me.InitializeComponent()

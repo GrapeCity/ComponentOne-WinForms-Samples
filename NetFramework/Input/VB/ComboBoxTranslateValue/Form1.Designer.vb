@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.orderBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.C1NWindDataSet = New ComboBoxTranslateValue.C1NWindDataSet()
         Me.OrderTableAdapter = New ComboBoxTranslateValue.C1NWindDataSetTableAdapters.OrderTableAdapter()
@@ -43,7 +43,7 @@ Partial Class Form1
         Me.CustomerdemoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._themes = New C1.Win.C1Input.C1ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.Customer_demoTableAdapter = New ComboBoxTranslateValue.C1NWindDataSetTableAdapters.Customer_demoTableAdapter()
         CType(Me.C1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.orderBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,7 +79,7 @@ Partial Class Form1
         Me.C1TrueDBGrid1.PrintInfo.PageSettings = CType(resources.GetObject("C1TrueDBGrid1.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
         Me.C1TrueDBGrid1.PropBag = resources.GetString("C1TrueDBGrid1.PropBag")
         Me.C1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.C1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+        Me.C1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.[Single]
         Me.C1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(CType(CType(162, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(172, Byte), Integer))
         Me.C1TrueDBGrid1.Size = New System.Drawing.Size(340, 339)
         Me.C1TrueDBGrid1.TabIndex = 0
@@ -429,7 +429,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents C1NWindDataSet As C1NWindDataSet
     Friend WithEvents orderBindingSource As BindingSource
     Friend WithEvents OrderTableAdapter As C1NWindDataSetTableAdapters.OrderTableAdapter
@@ -447,7 +447,7 @@ Partial Class Form1
     Friend WithEvents _customerEdit As C1.Win.C1Input.C1ComboBox
     Friend WithEvents _themes As C1.Win.C1Input.C1ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents CustomerdemoBindingSource As BindingSource
     Friend WithEvents Customer_demoTableAdapter As C1NWindDataSetTableAdapters.Customer_demoTableAdapter
 End Class

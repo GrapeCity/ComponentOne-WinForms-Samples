@@ -4,11 +4,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Globalization;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace FlexCalc
 {
-    public class FlexCalc : C1.Win.C1FlexGrid.C1FlexGrid
+    public class FlexCalc : C1.Win.FlexGrid.C1FlexGrid
     {
         // ** fields
         FlexCalcEngine _ce;
@@ -27,7 +27,7 @@ namespace FlexCalc
             _ce = new FlexCalcEngine(this);
 
             // use owner-draw to render row and column headers
-            DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 
             // center align row and column headers
             _csHeader = this.Styles.Add("hdr");
@@ -84,11 +84,11 @@ namespace FlexCalc
         // ** overrides
 
         // get data for display (evaluates formulas)
-        public override string GetDataDisplay(int row, int col, out System.Drawing.Image img, out C1.Win.C1FlexGrid.CheckEnum chk)
+        public override string GetDataDisplay(int row, int col, out System.Drawing.Image img, out C1.Win.FlexGrid.CheckEnum chk)
         {
             // no image, no checkbox
             img = null;
-            chk = C1.Win.C1FlexGrid.CheckEnum.None;
+            chk = C1.Win.FlexGrid.CheckEnum.None;
 
             // get raw value
             object val = null;
@@ -149,7 +149,7 @@ namespace FlexCalc
         }
 
         // draw row and column headers
-        protected override void OnOwnerDrawCell(C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        protected override void OnOwnerDrawCell(C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (e.Col == 0 && e.Row >= Rows.Fixed)
             {

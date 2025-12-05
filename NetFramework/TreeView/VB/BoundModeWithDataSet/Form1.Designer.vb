@@ -23,21 +23,21 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim C1TreeColumn1 As C1.Win.TreeView.C1TreeColumn = New C1.Win.TreeView.C1TreeColumn()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.panel2 = New System.Windows.Forms.Panel()
         Me.c1TreeView1 = New C1.Win.TreeView.C1TreeView()
         Me.panel1 = New System.Windows.Forms.Panel()
-        Me.c1DockingTab1 = New C1.Win.C1Command.C1DockingTab()
-        Me.c1DockingTabPage1 = New C1.Win.C1Command.C1DockingTabPage()
+        Me.c1DockingTab1 = New C1.Win.Command.C1DockingTab()
+        Me.c1DockingTabPage1 = New C1.Win.Command.C1DockingTabPage()
         Me.pgTreeView = New System.Windows.Forms.PropertyGrid()
         Me.btnResetData = New C1.Win.C1Input.C1Button()
-        Me.c1DockingTabPage2 = New C1.Win.C1Command.C1DockingTabPage()
+        Me.c1DockingTabPage2 = New C1.Win.Command.C1DockingTabPage()
         Me.pgColumn = New System.Windows.Forms.PropertyGrid()
         Me.cmbSelectedColumn = New C1.Win.C1Input.C1ComboBox()
         Me.c1Label1 = New C1.Win.C1Input.C1Label()
         Me.btnAddNewColumn = New C1.Win.C1Input.C1Button()
         Me.btnRemoveColumn = New C1.Win.C1Input.C1Button()
-        Me.c1DockingTabPage3 = New C1.Win.C1Command.C1DockingTabPage()
+        Me.c1DockingTabPage3 = New C1.Win.Command.C1DockingTabPage()
         Me.pgNode = New System.Windows.Forms.PropertyGrid()
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,9 +131,9 @@ Partial Class Form1
         Me.c1DockingTab1.SelectedIndex = 2
         Me.c1DockingTab1.Size = New System.Drawing.Size(564, 935)
         Me.c1DockingTab1.TabIndex = 0
-        Me.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.c1DockingTab1.TabsShowFocusCues = False
-        Me.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.C1ThemeController1.SetTheme(Me.c1DockingTab1, "(default)")
         '
         'c1DockingTabPage1
@@ -385,21 +385,21 @@ Partial Class Form1
 
     End Sub
 
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Private WithEvents splitContainer1 As SplitContainer
     Private WithEvents panel2 As Panel
     Private WithEvents c1TreeView1 As C1.Win.TreeView.C1TreeView
     Private WithEvents panel1 As Panel
-    Private WithEvents c1DockingTab1 As C1.Win.C1Command.C1DockingTab
-    Private WithEvents c1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
+    Private WithEvents c1DockingTab1 As C1.Win.Command.C1DockingTab
+    Private WithEvents c1DockingTabPage1 As C1.Win.Command.C1DockingTabPage
     Private WithEvents pgTreeView As PropertyGrid
     Private WithEvents btnResetData As C1.Win.C1Input.C1Button
-    Private WithEvents c1DockingTabPage2 As C1.Win.C1Command.C1DockingTabPage
+    Private WithEvents c1DockingTabPage2 As C1.Win.Command.C1DockingTabPage
     Private WithEvents pgColumn As PropertyGrid
     Private WithEvents cmbSelectedColumn As C1.Win.C1Input.C1ComboBox
     Private WithEvents c1Label1 As C1.Win.C1Input.C1Label
     Private WithEvents btnAddNewColumn As C1.Win.C1Input.C1Button
     Private WithEvents btnRemoveColumn As C1.Win.C1Input.C1Button
-    Private WithEvents c1DockingTabPage3 As C1.Win.C1Command.C1DockingTabPage
+    Private WithEvents c1DockingTabPage3 As C1.Win.Command.C1DockingTabPage
     Private WithEvents pgNode As PropertyGrid
 End Class

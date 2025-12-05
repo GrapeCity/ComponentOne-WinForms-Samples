@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace ToggleGroupRows
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -63,7 +63,8 @@ namespace ToggleGroupRows
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dataSet11 = new ToggleGroupRows.DataSet1();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -82,20 +83,20 @@ namespace ToggleGroupRows
             // c1TrueDBGrid1
             // 
             this.c1TrueDBGrid1.DataSource = this.dataSet11.Orders;
-            this.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy;
+            this.c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(16, 16);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(536, 217);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.RowColChange += new C1.Win.C1TrueDBGrid.RowColChangeEventHandler(this.c1TrueDBGrid1_RowColChange);
+            this.c1TrueDBGrid1.RowColChange += new C1.Win.TrueDBGrid.RowColChangeEventHandler(this.c1TrueDBGrid1_RowColChange);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // dataSet11
@@ -249,7 +250,7 @@ namespace ToggleGroupRows
 			if( this.radioButton1.Checked )
 			{
 				int row = this.c1TrueDBGrid1.Row;
-				if( this.c1TrueDBGrid1.Splits[0].Rows[row].RowType == C1.Win.C1TrueDBGrid.RowTypeEnum.CollapsedGroupRow )
+				if( this.c1TrueDBGrid1.Splits[0].Rows[row].RowType == C1.Win.TrueDBGrid.RowTypeEnum.CollapsedGroupRow )
 					this.c1TrueDBGrid1.ExpandGroupRow(row);
 			}
 		}
@@ -260,7 +261,7 @@ namespace ToggleGroupRows
 			if( this.radioButton2.Checked )
 			{
 				int row = this.c1TrueDBGrid1.Row;
-				if( this.c1TrueDBGrid1.Splits[0].Rows[row].RowType == C1.Win.C1TrueDBGrid.RowTypeEnum.ExpandedGroupRow )
+				if( this.c1TrueDBGrid1.Splits[0].Rows[row].RowType == C1.Win.TrueDBGrid.RowTypeEnum.ExpandedGroupRow )
 					this.c1TrueDBGrid1.CollapseGroupRow(row);
 			}
 		}
@@ -272,7 +273,7 @@ namespace ToggleGroupRows
 			{
 				for(int i=0; i < this.c1TrueDBGrid1.Splits[0].Rows.Count; i++)
 				{
-					if( this.c1TrueDBGrid1.Splits[0].Rows[i].RowType != C1.Win.C1TrueDBGrid.RowTypeEnum.DataRow )
+					if( this.c1TrueDBGrid1.Splits[0].Rows[i].RowType != C1.Win.TrueDBGrid.RowTypeEnum.DataRow )
 						this.c1TrueDBGrid1.ExpandGroupRow(i);
 				}
 			}
@@ -285,24 +286,24 @@ namespace ToggleGroupRows
 			{
 				for(int i=0; i < this.c1TrueDBGrid1.Splits[0].Rows.Count; i++)
 				{
-					if( this.c1TrueDBGrid1.Splits[0].Rows[i].RowType != C1.Win.C1TrueDBGrid.RowTypeEnum.DataRow )
+					if( this.c1TrueDBGrid1.Splits[0].Rows[i].RowType != C1.Win.TrueDBGrid.RowTypeEnum.DataRow )
 						this.c1TrueDBGrid1.CollapseGroupRow(i);
 				}
 			}
 		}
 
 		// set the state of the expand/collapse radio button on row change
-		private void c1TrueDBGrid1_RowColChange(object sender, C1.Win.C1TrueDBGrid.RowColChangeEventArgs e)
+		private void c1TrueDBGrid1_RowColChange(object sender, C1.Win.TrueDBGrid.RowColChangeEventArgs e)
 		{
             if ((this.c1TrueDBGrid1.Splits[0].Rows.Count <= 0) || (this.c1TrueDBGrid1.Splits[0].Rows[this.c1TrueDBGrid1.Row] == null)) return; //#10989
             // get the type/state of the row
-			C1.Win.C1TrueDBGrid.RowTypeEnum rtype = this.c1TrueDBGrid1.Splits[0].Rows[this.c1TrueDBGrid1.Row].RowType;
+			C1.Win.TrueDBGrid.RowTypeEnum rtype = this.c1TrueDBGrid1.Splits[0].Rows[this.c1TrueDBGrid1.Row].RowType;
 			switch (rtype)
 			{
-				case C1.Win.C1TrueDBGrid.RowTypeEnum.CollapsedGroupRow:
+				case C1.Win.TrueDBGrid.RowTypeEnum.CollapsedGroupRow:
 					this.radioButton2.Checked = true;
 					break;
-				case C1.Win.C1TrueDBGrid.RowTypeEnum.ExpandedGroupRow:
+				case C1.Win.TrueDBGrid.RowTypeEnum.ExpandedGroupRow:
 					this.radioButton1.Checked = true;
 					break;
 			}

@@ -17,7 +17,7 @@ namespace ControlExplorer.Chart
             InitializeComponent();
         }
 
-        private void c1CommandHolder1_CommandClick(object sender, C1.Win.C1Command.CommandClickEventArgs e)
+        private void c1CommandHolder1_CommandClick(object sender, C1.Win.Command.CommandClickEventArgs e)
         {
             if (e.Command == c1Command_ChartWizard)
             {

@@ -117,11 +117,197 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddToTeam" xml:space="preserve">
+    <value>Add to Team</value>
+    <comment>Label for adding a selected member to the team</comment>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Label for canceling an operation</comment>
+  </data>
+  <data name="ClearEventLog" xml:space="preserve">
+    <value>Clear</value>
+    <comment>Button text for clearing the event log</comment>
+  </data>
+  <data name="ClearSelection" xml:space="preserve">
+    <value>Clear All</value>
+    <comment>Button text for clearing all selections</comment>
+  </data>
+  <data name="ColumnFilterName" xml:space="preserve">
+    <value>Contact Title</value>
+    <comment>Label for the FlexGrid column to filter</comment>
+  </data>
+  <data name="ColumnNameNullOrEmpty" xml:space="preserve">
+    <value>Column name cannot be null or empty.</value>
+    <comment>Error message shown when a column name is missing</comment>
+  </data>
+  <data name="ConfirmSelection" xml:space="preserve">
+    <value>Confirm Selection</value>
+    <comment>Label for confirming the current selection</comment>
+  </data>
+  <data name="DesignerDesc" xml:space="preserve">
+    <value>Demonstrates how to use the PropertyGrid control to design and modify object properties at runtime.</value>
+    <comment>Description for the designer feature demonstration</comment>
+  </data>
+  <data name="DesignerTxt" xml:space="preserve">
+    <value>Designer</value>
+    <comment>Label text for the Designer view</comment>
+  </data>
+  <data name="DropDownButtonClickDesc" xml:space="preserve">
+    <value>User clicked the dropdown button</value>
+    <comment>Description for when the dropdown button is clicke</comment>
+  </data>
+  <data name="DropDownButtonClickEvent" xml:space="preserve">
+    <value>DropDownButtonClick</value>
+    <comment>Event name for dropdown button click</comment>
+  </data>
+  <data name="DropDownClosedDesc" xml:space="preserve">
+    <value>Dropdown has been closed</value>
+    <comment>Description for when the dropdown closes</comment>
+  </data>
+  <data name="DropDownClosedEvent" xml:space="preserve">
+    <value>DropDownClosed</value>
+    <comment>Event name for dropdown closed</comment>
+  </data>
+  <data name="DropDownOpenedDesc" xml:space="preserve">
+    <value>Dropdown has been opened successfully</value>
+    <comment>Description for a successfully opened dropdown</comment>
+  </data>
+  <data name="DropDownOpenedEvent" xml:space="preserve">
+    <value>DropDownOpened</value>
+    <comment>Event name for dropdown opened</comment>
+  </data>
+  <data name="DropDownOpeningDesc" xml:space="preserve">
+    <value>Dropdown is opening</value>
+    <comment>Description for dropdown opening</comment>
+  </data>
+  <data name="DropDownOpeningEvent" xml:space="preserve">
+    <value>DropDownOpening</value>
+    <comment>Event name for dropdown opening</comment>
+  </data>
+  <data name="EventDesc" xml:space="preserve">
+    <value>Demonstrates how to handle and display C1MultiSelect events.</value>
+    <comment>Description for the event-handling demonstration</comment>
+  </data>
+  <data name="EventLogTitle" xml:space="preserve">
+    <value>Event Log</value>
+    <comment>Title of the event log section</comment>
+  </data>
+  <data name="EventTxt" xml:space="preserve">
+    <value>Event</value>
+    <comment>Label text for Event view</comment>
+  </data>
+  <data name="FilterDesc" xml:space="preserve">
+    <value>Demonstrates how to use the C1MultiSelect control to filter data displayed in a C1FlexGrid</value>
+    <comment>Description of filtering using MultiSelect and FlexGrid</comment>
+  </data>
+  <data name="FilterTxt" xml:space="preserve">
+    <value>Filter</value>
+    <comment>Label text for the Filter view</comment>
+  </data>
+  <data name="MailMessageFormDesc" xml:space="preserve">
+    <value>This sample illustrates one case of using C1MultiSelect and C1TagEditor controls.</value>
+    <comment>Description of the mail message sample using MultiSelect and TagEditor.</comment>
+  </data>
+  <data name="MailMessageFormTxt" xml:space="preserve">
+    <value>MailMessageForm</value>
+    <comment>Label text for MailMessageForm view</comment>
+  </data>
+  <data name="MemberAddedMessage" xml:space="preserve">
+    <value>{0} added to team!</value>
+    <comment>Message shown when a team member is added</comment>
+  </data>
+  <data name="NoTeamMemberSelectionMessage" xml:space="preserve">
+    <value>Please select at least one team member.</value>
+    <comment>Warning when no team member is selected</comment>
+  </data>
+  <data name="NoTeamMemberSelectionTitle" xml:space="preserve">
+    <value>No Selection</value>
+    <comment>Title for no-selection warning dialog</comment>
+  </data>
+  <data name="OverviewDesc" xml:space="preserve">
+    <value>This view shows the basic MultiSelect and TagEditor features.</value>
+    <comment>Description for the overview of MultiSelect and TagEditor features</comment>
+  </data>
+  <data name="OverviewTxt" xml:space="preserve">
+    <value>Overview</value>
+    <comment>Label text for Overview view</comment>
+  </data>
+  <data name="ProgrammingLanguages" xml:space="preserve">
+    <value>JavaScript,Python,Java,C#,TypeScript,Go,Rust,Swift</value>
+    <comment>List of programming languages used in the sample</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+    <comment>Label for resetting designer sample</comment>
+  </data>
+  <data name="SampleTypeNull" xml:space="preserve">
+    <value>sampleType can't be null</value>
+    <comment>Error message when sample type is null</comment>
+  </data>
+  <data name="SelectContactTitle" xml:space="preserve">
+    <value>Select "Contact Title" to filter ...</value>
+    <comment>Placeholder text for selecting a contact title in the multi-select control</comment>
+  </data>
+  <data name="SelectedMemberTitle" xml:space="preserve">
+    <value>You have selected {0} team member(s)</value>
+    <comment>Text showing number of selected team members</comment>
+  </data>
+  <data name="SelectionChangedDesc" xml:space="preserve">
+    <value>Selection changed in dropdown</value>
+    <comment>Description for selection changed event</comment>
+  </data>
+  <data name="SelectionChangedEvent" xml:space="preserve">
+    <value>SelectionChanged</value>
+    <comment>Event name for selection changed</comment>
+  </data>
+  <data name="SelectProgrammingLanguageValue" xml:space="preserve">
+    <value>Select Programming Language ...</value>
+    <comment>Placeholder text for selecting a programming language</comment>
+  </data>
+  <data name="SelectTeamMemberValue" xml:space="preserve">
+    <value>Select team members...</value>
+    <comment>Placeholder text for selecting team members</comment>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="send" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Button text for sending a message/action</comment>
+  </data>
+  <data name="TeamMembers" xml:space="preserve">
+    <value>John,Alex,Sean,Sam,Robert,Paul,Edward,Rob</value>
+    <comment>List of team members used in the sample</comment>
+  </data>
+  <data name="TeamMemberTitle" xml:space="preserve">
+    <value>Team Members</value>
+    <comment>Title for the team members section</comment>
+  </data>
+  <data name="TextChangedDesc" xml:space="preserve">
+    <value>Text changed</value>
+    <comment>Description for text changed event</comment>
+  </data>
+  <data name="TextChangedEvent" xml:space="preserve">
+    <value>TextChanged</value>
+    <comment>Event name for text changed</comment>
+  </data>
+  <data name="ThemeDesc" xml:space="preserve">
+    <value>Demonstrates how to apply and switch C1Themes to customize the appearance of controls.</value>
+    <comment>Description of theme customization demonstration</comment>
+  </data>
+  <data name="ThemeMultiSelectTitle" xml:space="preserve">
+    <value>Multiselect Control</value>
+    <comment>Title for the multiselect control theme demo</comment>
+  </data>
+  <data name="ThemeSelectionTitle" xml:space="preserve">
+    <value>Theme Selection</value>
+    <comment>Title for the theme selection section</comment>
+  </data>
+  <data name="ThemeTxt" xml:space="preserve">
+    <value>Theme</value>
+    <comment>Label text for Theme view</comment>
   </data>
   <data name="us-500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\us-500.csv;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+    <comment>US contacts csv file</comment>
   </data>
 </root>

@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DragDrop));
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle6 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle7 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle8 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle9 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle10 = new C1.C1Schedule.Printing.PrintStyle();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle6 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle7 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle8 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle9 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle10 = new C1.Schedule.Printing.PrintStyle();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.c1Schedule2 = new C1.Win.C1Schedule.C1Schedule();
+            this.c1Schedule2 = new C1.Win.Schedule.C1Schedule();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
             this.splitter1 = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1)).BeginInit();
@@ -87,19 +87,19 @@
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None;
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.c1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = "2,1,0,0,0,85,Columns:0{Width:25;}\t1{Width:145;}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Automatic;
+            this.c1FlexGrid1.DragMode = C1.Win.FlexGrid.DragModeEnum.Automatic;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
             this.c1FlexGrid1.Size = new System.Drawing.Size(196, 184);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Blue;
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2010Blue;
             // 
             // c1Schedule1
             // 
@@ -142,12 +142,12 @@
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -160,7 +160,7 @@
             this.c1Schedule1.ShowReminderForm = false;
             this.c1Schedule1.Size = new System.Drawing.Size(528, 460);
             this.c1Schedule1.TabIndex = 2;
-            this.c1Schedule1.SelectionChanged += new System.EventHandler<C1.Win.C1Schedule.SelectionChangedEventArgs>(this.c1Schedule1_SelectionChanged);
+            this.c1Schedule1.SelectionChanged += new System.EventHandler<C1.Win.Schedule.SelectionChangedEventArgs>(this.c1Schedule1_SelectionChanged);
             this.c1Schedule1.DragDrop += new System.Windows.Forms.DragEventHandler(this.c1Schedule1_DragDrop);
             this.c1Schedule1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.c1Schedule_MouseDown);
             // 
@@ -258,12 +258,12 @@
             printStyle9.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle9.PreviewImage")));
             printStyle9.StyleName = "Details";
             printStyle9.StyleSource = "details.c1d";
-            printStyle10.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle10.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle10.Description = "Memo Style";
             printStyle10.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle10.PreviewImage")));
             printStyle10.StyleName = "Memo";
             printStyle10.StyleSource = "memo.c1d";
-            this.c1Schedule2.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule2.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle6,
             printStyle7,
             printStyle8,
@@ -276,7 +276,8 @@
             this.c1Schedule2.ShowReminderForm = false;
             this.c1Schedule2.Size = new System.Drawing.Size(524, 460);
             this.c1Schedule2.TabIndex = 3;
-            this.c1Schedule2.SelectionChanged += new System.EventHandler<C1.Win.C1Schedule.SelectionChangedEventArgs>(this.c1Schedule2_SelectionChanged);
+            this.c1Schedule2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.c1Schedule2.SelectionChanged += new System.EventHandler<C1.Win.Schedule.SelectionChangedEventArgs>(this.c1Schedule2_SelectionChanged);
             this.c1Schedule2.DragDrop += new System.Windows.Forms.DragEventHandler(this.c1Schedule1_DragDrop);
             this.c1Schedule2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.c1Schedule_MouseDown);
             // 
@@ -406,12 +407,12 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule2;
+        private C1.Win.Schedule.C1Schedule c1Schedule2;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;

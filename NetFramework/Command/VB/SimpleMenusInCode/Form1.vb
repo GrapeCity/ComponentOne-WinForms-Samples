@@ -1,4 +1,4 @@
-Imports C1.Win.C1Command
+Imports C1.Win.Command
 
 Public Class Form1
     Inherits System.Windows.Forms.Form

@@ -2,6 +2,7 @@
 using ControlExplorer.Utilities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -17,7 +18,7 @@ namespace ControlExplorer.Controls
         private Color _selectionColor = Color.Red;
         private Color _selectionForeColor = Color.Black;
         private string _filterString = "";
-        private Boolean _collapsed = false;
+        private bool _collapsed = false;
         #endregion
 
         #region Static Methods 
@@ -41,7 +42,8 @@ namespace ControlExplorer.Controls
             set { _imageList = value; }
         }
 
-        public Boolean Collapsed
+        [DefaultValue(false)]
+        public bool Collapsed
         {
             get { return _collapsed; }
             set
@@ -60,8 +62,13 @@ namespace ControlExplorer.Controls
             }
         }
 
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverBackColor { get; set; }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverForeColor { get; set; }
+        
+        [DefaultValue(typeof(Color), "Red")]
         public Color SelectionColor
         {
             get { return _selectionColor; }
@@ -75,6 +82,8 @@ namespace ControlExplorer.Controls
                 }
             }
         }
+
+        [DefaultValue(typeof(Color), "Black")]
         public Color SelectionForeColor
         {
             get { return _selectionForeColor; }
@@ -88,6 +97,8 @@ namespace ControlExplorer.Controls
                 }
             }
         }
+        
+        [DefaultValue("")]
         public string FilterString
         {
             get { return _filterString; }
@@ -100,6 +111,8 @@ namespace ControlExplorer.Controls
                 Filter();
             }
         }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public StackNodeControl SelectedNode
         {
             get
@@ -114,6 +127,8 @@ namespace ControlExplorer.Controls
                 }
             }
         }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public StackNodeControl SelectedNodeRoot
         {
             get

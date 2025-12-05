@@ -31,15 +31,15 @@
             C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             C1.Win.Chart.Series series1 = new C1.Win.Chart.Series();
             C1.Win.Chart.Series series2 = new C1.Win.Chart.Series();
-            this.commandDock = new C1.Win.C1Command.C1CommandDock();
-            this.dockingTabConditionalFormatting = new C1.Win.C1Command.C1DockingTab();
-            this.dockingTabPageConditionalFormatting = new C1.Win.C1Command.C1DockingTabPage();
+            this.commandDock = new C1.Win.Command.C1CommandDock();
+            this.dockingTabConditionalFormatting = new C1.Win.Command.C1DockingTab();
+            this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
             this.rulesManager = new C1.Win.RulesManager.C1RulesManager();
             this.formattablePieChart = new ControlExplorer.RulesManager.FormattablePieChart();
             this.formattableFlexChart = new ControlExplorer.RulesManager.FormattableFlexChart();
-            this.dockingTabCharts = new C1.Win.C1Command.C1DockingTab();
-            this.dockingTabPagePieChart = new C1.Win.C1Command.C1DockingTabPage();
-            this.dockingTabPageFlexChart = new C1.Win.C1Command.C1DockingTabPage();
+            this.dockingTabCharts = new C1.Win.Command.C1DockingTab();
+            this.dockingTabPagePieChart = new C1.Win.Command.C1DockingTabPage();
+            this.dockingTabPageFlexChart = new C1.Win.Command.C1DockingTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).BeginInit();
             this.commandDock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dockingTabConditionalFormatting)).BeginInit();
@@ -74,10 +74,10 @@
             this.dockingTabConditionalFormatting.ShowSingleTab = false;
             this.dockingTabConditionalFormatting.Size = new System.Drawing.Size(200, 752);
             this.dockingTabConditionalFormatting.TabIndex = 0;
-            this.dockingTabConditionalFormatting.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.dockingTabConditionalFormatting.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTabConditionalFormatting.TabsSpacing = 2;
-            this.dockingTabConditionalFormatting.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.dockingTabConditionalFormatting.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.dockingTabConditionalFormatting.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.dockingTabConditionalFormatting.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -241,9 +241,9 @@
             this.dockingTabCharts.Name = "dockingTabCharts";
             this.dockingTabCharts.Size = new System.Drawing.Size(1192, 752);
             this.dockingTabCharts.TabIndex = 0;
-            this.dockingTabCharts.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
-            this.dockingTabCharts.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.dockingTabCharts.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.dockingTabCharts.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
+            this.dockingTabCharts.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.dockingTabCharts.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // dockingTabPagePieChart
             // 
@@ -289,14 +289,14 @@
         }
 
         #endregion
-        private C1.Win.C1Command.C1CommandDock commandDock;
-        private C1.Win.C1Command.C1DockingTab dockingTabConditionalFormatting;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPageConditionalFormatting;
+        private C1.Win.Command.C1CommandDock commandDock;
+        private C1.Win.Command.C1DockingTab dockingTabConditionalFormatting;
+        private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
-        private C1.Win.C1Command.C1DockingTab dockingTabCharts;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPagePieChart;
+        private C1.Win.Command.C1DockingTab dockingTabCharts;
+        private C1.Win.Command.C1DockingTabPage dockingTabPagePieChart;
         private ControlExplorer.RulesManager.FormattablePieChart formattablePieChart;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPageFlexChart;
+        private C1.Win.Command.C1DockingTabPage dockingTabPageFlexChart;
         private ControlExplorer.RulesManager.FormattableFlexChart formattableFlexChart;
     }
 }

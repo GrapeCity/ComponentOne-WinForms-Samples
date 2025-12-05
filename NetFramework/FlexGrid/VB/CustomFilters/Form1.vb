@@ -22,7 +22,7 @@ Namespace CustomFilters
 
 			' configure grid
 			_flex.DataSource = dt
-			_flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+			_flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
 			AddHandler _flex.OwnerDrawCell, AddressOf _flex_OwnerDrawCell
 			_flex.ExtendLastCol = True
 			_flex.AllowEditing = False
@@ -34,11 +34,11 @@ Namespace CustomFilters
 			_flex.Cols("KnownColor").Filter = New StringFilter()
 		End Sub
 
-		Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.OwnerDrawCellEventArgs)
+		Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.OwnerDrawCellEventArgs)
 			If TypeOf _flex(e.Row, e.Col) Is Color Then
 				Dim clr = CType(_flex(e.Row, e.Col), Color)
                 If clr <> Nothing Then
-                    e.DrawCell(C1.Win.C1FlexGrid.DrawCellFlags.Background Or C1.Win.C1FlexGrid.DrawCellFlags.Border)
+                    e.DrawCell(C1.Win.FlexGrid.DrawCellFlags.Background Or C1.Win.FlexGrid.DrawCellFlags.Border)
                     Dim rc = e.Bounds
                     rc.Inflate(-4, -2)
                     Using br = New SolidBrush(clr)

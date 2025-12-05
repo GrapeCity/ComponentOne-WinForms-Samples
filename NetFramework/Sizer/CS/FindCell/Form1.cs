@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace FindCell
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+		private C1.Win.Sizer.C1Sizer c1Sizer1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -52,7 +52,10 @@ namespace FindCell
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
 			((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -95,7 +98,7 @@ namespace FindCell
 		private void Form1_Load(object sender, System.EventArgs e)
 		{
 			// create the grid
-			C1.Win.C1Sizer.Grid g = this.c1Sizer1.Grid;
+			C1.Win.Sizer.Grid g = this.c1Sizer1.Grid;
 			g.Rows.Count = 8;
 			g.Columns.Count = 5;
 		}

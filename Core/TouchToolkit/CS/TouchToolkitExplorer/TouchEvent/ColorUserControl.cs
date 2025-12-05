@@ -41,6 +41,7 @@ namespace TouchToolkitExplorer.TouchEvent
             }
         }
 
+        [DefaultValue(true)]
         public bool IsNormalSize
         {
             get

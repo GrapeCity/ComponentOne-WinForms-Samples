@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,8 +39,8 @@
             this.flexGrid.Name = "_flex";
             this.flexGrid.Size = new System.Drawing.Size(472, 285);
             this.flexGrid.TabIndex = 0;
-            this.flexGrid.GetRowErrorInfo += new C1.Win.C1FlexGrid.GetErrorInfoEventHandler(this._flex_GetRowErrorInfo);
-            this.flexGrid.GetCellErrorInfo += new C1.Win.C1FlexGrid.GetErrorInfoEventHandler(this._flex_GetCellErrorInfo);
+            this.flexGrid.GetRowErrorInfo += new C1.Win.FlexGrid.GetErrorInfoEventHandler(this._flex_GetRowErrorInfo);
+            this.flexGrid.GetCellErrorInfo += new C1.Win.FlexGrid.GetErrorInfoEventHandler(this._flex_GetCellErrorInfo);
             // 
             // Form1
             // 
@@ -56,7 +56,7 @@
             this.ResumeLayout(false);
         }
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
 
         #endregion
     }

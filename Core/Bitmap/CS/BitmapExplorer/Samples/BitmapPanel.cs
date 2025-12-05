@@ -1,23 +1,14 @@
-﻿using System;
+﻿using C1.Win.Bitmap;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Drawing;
 using System.ComponentModel;
 using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace BitmapExplorer.Samples
 {
-    using C1.Win.Bitmap;
-    using C1.Framework;
-    using System.Runtime.CompilerServices;
-    using System.IO;
-    using System.Drawing.Imaging;
-    using System.Runtime.InteropServices;
-    using System.Drawing.Drawing2D;
-
     public delegate void SelectBimapPanelHandler(object sender, EventArgs e);
 
     public class BitmapPanel : Panel
@@ -26,11 +17,9 @@ namespace BitmapExplorer.Samples
 
         private bool _isSelect = false;
         private Color _selectColor = Color.FromArgb(102, 102, 153);        
-        static Random _random = new Random();
 
         // For size
         private const int _delta = 6;
-        private const int _defaultLabelWidth = 70;
         private const int _defaultLabelHeight = 23;
 
         private readonly C1Bitmap _bitmap;
@@ -170,6 +159,7 @@ namespace BitmapExplorer.Samples
 
         public string Caption => _caption;
 
+        [DefaultValue(false)]
         public bool IsSelect
         {
             get => _isSelect;

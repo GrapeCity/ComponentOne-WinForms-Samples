@@ -28,180 +28,169 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._pview = new C1.Win.C1Preview.C1PrintPreviewControl();
-            this.btnMultiDoc = new System.Windows.Forms.Button();
-            this.btnSingleDoc = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbDir = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbMask = new System.Windows.Forms.TextBox();
-            this.btnChooseDir = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnHelp = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this._pview)).BeginInit();
-            this._pview.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            _pview = new C1.Win.C1Preview.C1PrintPreviewControl();
+            btnMultiDoc = new System.Windows.Forms.Button();
+            btnSingleDoc = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            tbDir = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            tbMask = new System.Windows.Forms.TextBox();
+            btnChooseDir = new System.Windows.Forms.Button();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            btnHelp = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)_pview).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)_pview.PreviewPane).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // _pview
             // 
-            this._pview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pview.Location = new System.Drawing.Point(0, 29);
-            this._pview.Name = "_pview";
+            _pview.Dock = System.Windows.Forms.DockStyle.Fill;
+            _pview.Location = new System.Drawing.Point(0, 35);
+            _pview.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            _pview.Name = "_pview";
             // 
-            // _pview.OutlineView
             // 
-            this._pview.PreviewOutlineView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pview.PreviewOutlineView.Location = new System.Drawing.Point(0, 0);
-            this._pview.PreviewOutlineView.Name = "OutlineView";
-            this._pview.PreviewOutlineView.Size = new System.Drawing.Size(165, 427);
-            this._pview.PreviewOutlineView.TabIndex = 0;
             // 
-            // _pview.PreviewPane
-            // 
-            this._pview.PreviewPane.IntegrateExternalTools = true;
-            this._pview.PreviewPane.TabIndex = 0;
-            // 
-            // _pview.PreviewTextSearchPanel
-            // 
-            this._pview.PreviewTextSearchPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this._pview.PreviewTextSearchPanel.Location = new System.Drawing.Point(530, 0);
-            this._pview.PreviewTextSearchPanel.MinimumSize = new System.Drawing.Size(200, 240);
-            this._pview.PreviewTextSearchPanel.Name = "PreviewTextSearchPanel";
-            this._pview.PreviewTextSearchPanel.Size = new System.Drawing.Size(200, 453);
-            this._pview.PreviewTextSearchPanel.TabIndex = 0;
-            this._pview.PreviewTextSearchPanel.Visible = false;
-            // 
-            // _pview.ThumbnailView
-            // 
-            this._pview.PreviewThumbnailView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._pview.PreviewThumbnailView.Location = new System.Drawing.Point(0, 0);
-            this._pview.PreviewThumbnailView.Name = "ThumbnailView";
-            this._pview.PreviewThumbnailView.Size = new System.Drawing.Size(165, 549);
-            this._pview.PreviewThumbnailView.TabIndex = 0;
-            this._pview.PreviewThumbnailView.UseImageAsThumbnail = false;
-            this._pview.Size = new System.Drawing.Size(971, 622);
-            this._pview.TabIndex = 1;
-            this._pview.Text = "c1PrintPreviewControl1";
+            _pview.PreviewPane.IntegrateExternalTools = true;
+            _pview.PreviewPane.Location = new System.Drawing.Point(0, 0);
+            _pview.PreviewPane.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            _pview.PreviewPane.Name = "previewPane";
+            _pview.PreviewPane.Size = new System.Drawing.Size(233, 300);
+            _pview.PreviewPane.TabIndex = 0;
+            _pview.Size = new System.Drawing.Size(1133, 716);
+            _pview.TabIndex = 1;
+            _pview.Text = "c1PrintPreviewControl1";
             // 
             // btnMultiDoc
             // 
-            this.btnMultiDoc.AutoSize = true;
-            this.btnMultiDoc.Location = new System.Drawing.Point(616, 3);
-            this.btnMultiDoc.Name = "btnMultiDoc";
-            this.btnMultiDoc.Size = new System.Drawing.Size(101, 23);
-            this.btnMultiDoc.TabIndex = 5;
-            this.btnMultiDoc.Text = "C1MultiDocument";
-            this.btnMultiDoc.UseVisualStyleBackColor = true;
-            this.btnMultiDoc.Click += new System.EventHandler(this.MultiDocument_Click);
+            btnMultiDoc.AutoSize = true;
+            btnMultiDoc.Location = new System.Drawing.Point(706, 3);
+            btnMultiDoc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnMultiDoc.Name = "btnMultiDoc";
+            btnMultiDoc.Size = new System.Drawing.Size(134, 29);
+            btnMultiDoc.TabIndex = 5;
+            btnMultiDoc.Text = "C1MultiDocument";
+            btnMultiDoc.UseVisualStyleBackColor = true;
+            btnMultiDoc.Click += MultiDocument_Click;
             // 
             // btnSingleDoc
             // 
-            this.btnSingleDoc.AutoSize = true;
-            this.btnSingleDoc.Location = new System.Drawing.Point(723, 3);
-            this.btnSingleDoc.Name = "btnSingleDoc";
-            this.btnSingleDoc.Size = new System.Drawing.Size(100, 23);
-            this.btnSingleDoc.TabIndex = 6;
-            this.btnSingleDoc.Text = "C1PrintDocument";
-            this.btnSingleDoc.UseVisualStyleBackColor = true;
-            this.btnSingleDoc.Click += new System.EventHandler(this.SingleDocument_Click);
+            btnSingleDoc.AutoSize = true;
+            btnSingleDoc.Location = new System.Drawing.Point(848, 3);
+            btnSingleDoc.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnSingleDoc.Name = "btnSingleDoc";
+            btnSingleDoc.Size = new System.Drawing.Size(131, 29);
+            btnSingleDoc.TabIndex = 6;
+            btnSingleDoc.Text = "C1PrintDocument";
+            btnSingleDoc.UseVisualStyleBackColor = true;
+            btnSingleDoc.Click += SingleDocument_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 3);
-            this.label1.Size = new System.Drawing.Size(52, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Directory:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(4, 0);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 3);
+            label1.Size = new System.Drawing.Size(58, 24);
+            label1.TabIndex = 0;
+            label1.Text = "Directory:";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbDir
             // 
-            this.tbDir.Location = new System.Drawing.Point(61, 3);
-            this.tbDir.Name = "tbDir";
-            this.tbDir.Size = new System.Drawing.Size(358, 20);
-            this.tbDir.TabIndex = 1;
+            tbDir.Location = new System.Drawing.Point(70, 3);
+            tbDir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tbDir.Name = "tbDir";
+            tbDir.Size = new System.Drawing.Size(417, 23);
+            tbDir.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(457, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 3);
-            this.label2.Size = new System.Drawing.Size(94, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Mask (e.g. \"*.cs\"):";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(529, 0);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Padding = new System.Windows.Forms.Padding(0, 6, 0, 3);
+            label2.Size = new System.Drawing.Size(100, 24);
+            label2.TabIndex = 3;
+            label2.Text = "Mask (e.g. \"*.cs\"):";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tbMask
             // 
-            this.tbMask.Location = new System.Drawing.Point(557, 3);
-            this.tbMask.Name = "tbMask";
-            this.tbMask.Size = new System.Drawing.Size(53, 20);
-            this.tbMask.TabIndex = 4;
-            this.tbMask.Text = "*.cs";
+            tbMask.Location = new System.Drawing.Point(637, 3);
+            tbMask.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tbMask.Name = "tbMask";
+            tbMask.Size = new System.Drawing.Size(61, 23);
+            tbMask.TabIndex = 4;
+            tbMask.Text = "*.cs";
             // 
             // btnChooseDir
             // 
-            this.btnChooseDir.AutoSize = true;
-            this.btnChooseDir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnChooseDir.Location = new System.Drawing.Point(425, 3);
-            this.btnChooseDir.Name = "btnChooseDir";
-            this.btnChooseDir.Size = new System.Drawing.Size(26, 23);
-            this.btnChooseDir.TabIndex = 2;
-            this.btnChooseDir.Text = "...";
-            this.btnChooseDir.UseVisualStyleBackColor = true;
-            this.btnChooseDir.Click += new System.EventHandler(this.btnChooseDir_Click);
+            btnChooseDir.AutoSize = true;
+            btnChooseDir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            btnChooseDir.Location = new System.Drawing.Point(495, 3);
+            btnChooseDir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnChooseDir.Name = "btnChooseDir";
+            btnChooseDir.Size = new System.Drawing.Size(26, 25);
+            btnChooseDir.TabIndex = 2;
+            btnChooseDir.Text = "...";
+            btnChooseDir.UseVisualStyleBackColor = true;
+            btnChooseDir.Click += btnChooseDir_Click;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.tbDir);
-            this.flowLayoutPanel1.Controls.Add(this.btnChooseDir);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.tbMask);
-            this.flowLayoutPanel1.Controls.Add(this.btnMultiDoc);
-            this.flowLayoutPanel1.Controls.Add(this.btnSingleDoc);
-            this.flowLayoutPanel1.Controls.Add(this.btnHelp);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(971, 29);
-            this.flowLayoutPanel1.TabIndex = 0;
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Controls.Add(tbDir);
+            flowLayoutPanel1.Controls.Add(btnChooseDir);
+            flowLayoutPanel1.Controls.Add(label2);
+            flowLayoutPanel1.Controls.Add(tbMask);
+            flowLayoutPanel1.Controls.Add(btnMultiDoc);
+            flowLayoutPanel1.Controls.Add(btnSingleDoc);
+            flowLayoutPanel1.Controls.Add(btnHelp);
+            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new System.Drawing.Size(1133, 35);
+            flowLayoutPanel1.TabIndex = 0;
             // 
             // btnHelp
             // 
-            this.btnHelp.AutoSize = true;
-            this.btnHelp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnHelp.Location = new System.Drawing.Point(829, 3);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(39, 23);
-            this.btnHelp.TabIndex = 7;
-            this.btnHelp.Text = "Help";
-            this.btnHelp.UseVisualStyleBackColor = true;
-            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            btnHelp.AutoSize = true;
+            btnHelp.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            btnHelp.Location = new System.Drawing.Point(987, 3);
+            btnHelp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new System.Drawing.Size(42, 25);
+            btnHelp.TabIndex = 7;
+            btnHelp.Text = "Help";
+            btnHelp.UseVisualStyleBackColor = true;
+            btnHelp.Click += btnHelp_Click;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(971, 651);
-            this.Controls.Add(this._pview);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.HelpButton = true;
-            this.Name = "MainForm";
-            this.Text = "MultiDocumentFilesPrint";
-            ((System.ComponentModel.ISupportInitialize)(this._pview)).EndInit();
-            this._pview.ResumeLayout(false);
-            this._pview.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1133, 751);
+            Controls.Add(_pview);
+            Controls.Add(flowLayoutPanel1);
+            HelpButton = true;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "MainForm";
+            Text = "MultiDocumentFilesPrint";
+            ((System.ComponentModel.ISupportInitialize)_pview.PreviewPane).EndInit();
+            ((System.ComponentModel.ISupportInitialize)_pview).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

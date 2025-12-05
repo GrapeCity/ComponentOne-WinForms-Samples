@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._formulaBar = new System.Windows.Forms.Panel();
             this._txtFormula = new System.Windows.Forms.TextBox();
             this._lblFx = new System.Windows.Forms.Label();
@@ -114,14 +116,14 @@
             this._flex.ColumnInfo = "10,1,0,0,0,125,Columns:";
             this._flex.DataContext = null;
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flex.Location = new System.Drawing.Point(0, 26);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 25;
             this._flex.Size = new System.Drawing.Size(573, 322);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             this._flex.SelChange += new System.EventHandler(this._flex_SelChange);
             // 
             // Form1

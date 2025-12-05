@@ -1,5 +1,5 @@
-﻿using C1.Win.C1TrueDBGrid;
-using C1.Win.C1TrueDBGrid.BaseGrid;
+﻿using C1.Win.TrueDBGrid;
+using C1.Win.TrueDBGrid.BaseGrid;
 using C1.Win.TouchToolKit;
 using System;
 using System.Collections.Generic;

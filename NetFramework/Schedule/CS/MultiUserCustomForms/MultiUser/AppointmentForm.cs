@@ -6,10 +6,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win.Ribbon;
-using C1.C1Schedule;
-using C1.Win.C1Schedule;
+using C1.Schedule;
+using C1.Win.Schedule;
 using RibbonControls;
-using C1.Win.C1Schedule.Forms;
+using C1.Win.Schedule.Forms;
 
 namespace MultiUser
 {
@@ -117,7 +117,7 @@ namespace MultiUser
 			label.BindingComplete += delegate
 			{
 				_cmbLabel.SelectedValueChanged -= new EventHandler(_cmbLabel_SelectedValueChanged);
-				_appEdited.Label = (C1.C1Schedule.Label)_cmbLabel.SelectedItem;
+				_appEdited.Label = (C1.Schedule.Label)_cmbLabel.SelectedItem;
 				_cmbLabel.SelectedValueChanged += new EventHandler(_cmbLabel_SelectedValueChanged);
 			};
 
@@ -215,7 +215,7 @@ namespace MultiUser
 
 		#region ** public interface
 		/// <summary>
-		/// The <see cref="C1.C1Schedule.Appointment"/> object which is currently edited with the form.
+		/// The <see cref="C1.Schedule.Appointment"/> object which is currently edited with the form.
 		/// </summary>
 		public Appointment Appointment
 		{
@@ -260,7 +260,7 @@ namespace MultiUser
 				SaveAppointment();
 
 				_scheduler.Export(Appointment,
-					C1.Win.C1Schedule.Localization.Strings.AppointmentFormStrings.Item("SaveAppointment", _scheduler.CalendarInfo.CultureInfo));
+					C1.Win.Schedule.Localization.Strings.AppointmentFormStrings.Item("SaveAppointment", _scheduler.CalendarInfo.CultureInfo));
 			}
 			finally
 			{
@@ -474,7 +474,7 @@ namespace MultiUser
 		#region ** Tags
 		private void _cmbLabel_SelectedValueChanged(object sender, EventArgs e)
 		{
-			_appEdited.Label = (C1.C1Schedule.Label)_cmbLabel.SelectedItem;
+			_appEdited.Label = (C1.Schedule.Label)_cmbLabel.SelectedItem;
 		}
 		private void _togglePrivate_Click(object sender, EventArgs e)
 		{
@@ -553,7 +553,7 @@ namespace MultiUser
 					e.Graphics.DrawRectangle(pen, e.Bounds.X + 2, e.Bounds.Y + 2,
 											e.Bounds.Height - 4, e.Bounds.Height - 4);
 				}
-				e.Graphics.FillRectangle(bo.Brush.Brush, e.Bounds.X + 3, e.Bounds.Y + 3, e.Bounds.Height - 5, e.Bounds.Height - 5);
+				e.Graphics.FillRectangle(((C1.Win.Schedule.C1Brush)bo.Brush).Brush, e.Bounds.X + 3, e.Bounds.Y + 3, e.Bounds.Height - 5, e.Bounds.Height - 5);
 
 				// draw the current item text based on the current Font
 				using (Brush brush = new SolidBrush(e.ForeColor))

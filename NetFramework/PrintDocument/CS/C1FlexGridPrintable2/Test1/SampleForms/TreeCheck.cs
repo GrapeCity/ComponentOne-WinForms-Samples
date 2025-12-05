@@ -36,7 +36,7 @@ namespace TreeCheck
                 {
                     var node = c1FlexGrid1.Rows.AddNode(level);
                     node.Data = Path.GetFileName(file);
-                    node.Checked = C1.Win.C1FlexGrid.CheckEnum.Unchecked;
+                    node.Checked = C1.Win.FlexGrid.CheckEnum.Unchecked;
                     cnt++;
                     if (cnt > 20) break;
                 }
@@ -48,7 +48,7 @@ namespace TreeCheck
                 {
                     var node = c1FlexGrid1.Rows.AddNode(level);
                     node.Data = Path.GetFileName(subPath);
-                    node.Checked = C1.Win.C1FlexGrid.CheckEnum.Unchecked;
+                    node.Checked = C1.Win.FlexGrid.CheckEnum.Unchecked;
                     AddFolder(subPath, level + 1);
                     cnt++;
                     if (cnt > 20) break;
@@ -57,7 +57,7 @@ namespace TreeCheck
             catch { }
         }
 
-        void c1FlexGrid1_CellChecked(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void c1FlexGrid1_CellChecked(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             // apply check value to all children
             var node = this.c1FlexGrid1.Rows[e.Row].Node;
@@ -66,16 +66,16 @@ namespace TreeCheck
             // apply check value to parents
             UpdateCheckParent(node);
         }
-        void UpdateCheckChildren(C1.Win.C1FlexGrid.Node node)
+        void UpdateCheckChildren(C1.Win.FlexGrid.Node node)
         {
             var checkState = node.Checked;
-            foreach (C1.Win.C1FlexGrid.Node child in node.Nodes)
+            foreach (C1.Win.FlexGrid.Node child in node.Nodes)
             {
                 child.Checked = checkState;
                 UpdateCheckChildren(child);
             }
         }
-        void UpdateCheckParent(C1.Win.C1FlexGrid.Node node)
+        void UpdateCheckParent(C1.Win.FlexGrid.Node node)
         {
             // get this node's parent
             var parent = node.Parent;
@@ -85,17 +85,17 @@ namespace TreeCheck
                 int cntChecked = 0;
                 int cntUnchecked = 0;
                 int cntGrayed = 0;
-                foreach (C1.Win.C1FlexGrid.Node child in parent.Nodes)
+                foreach (C1.Win.FlexGrid.Node child in parent.Nodes)
                 {
                     switch (child.Checked)
                     {
-                        case C1.Win.C1FlexGrid.CheckEnum.Checked:
+                        case C1.Win.FlexGrid.CheckEnum.Checked:
                             cntChecked++;
                             break;
-                        case C1.Win.C1FlexGrid.CheckEnum.Unchecked:
+                        case C1.Win.FlexGrid.CheckEnum.Unchecked:
                             cntUnchecked++;
                             break;
-                        case C1.Win.C1FlexGrid.CheckEnum.Grayed:
+                        case C1.Win.FlexGrid.CheckEnum.Grayed:
                             cntGrayed++;
                             break;
                     }
@@ -104,15 +104,15 @@ namespace TreeCheck
                 // update parent's check state
                 if (cntGrayed > 0 || (cntChecked > 0 && cntUnchecked > 0))
                 {
-                    parent.Checked = C1.Win.C1FlexGrid.CheckEnum.Grayed;
+                    parent.Checked = C1.Win.FlexGrid.CheckEnum.Grayed;
                 }
                 else if (cntChecked > 0 && cntUnchecked == 0)
                 {
-                    parent.Checked = C1.Win.C1FlexGrid.CheckEnum.Checked;
+                    parent.Checked = C1.Win.FlexGrid.CheckEnum.Checked;
                 }
                 else if (cntUnchecked > 0 && cntChecked == 0)
                 {
-                    parent.Checked = C1.Win.C1FlexGrid.CheckEnum.Unchecked;
+                    parent.Checked = C1.Win.FlexGrid.CheckEnum.Unchecked;
                 }
 
                 // update grandparent as well

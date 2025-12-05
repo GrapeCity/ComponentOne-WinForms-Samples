@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
-using C1.Win.C1Document;
+using C1.Win.Document;
 using C1.Win.Ribbon;
 
 namespace ControlExplorer.SSRS

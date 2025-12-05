@@ -6,7 +6,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace OwnerDraw
 {
@@ -44,7 +44,7 @@ namespace OwnerDraw
 
         void grid_OwnerDrawCell(object sender, OwnerDrawCellEventArgs e)
         {
-            var grid = sender as C1.Win.C1FlexGrid.C1FlexGrid;
+            var grid = sender as C1.Win.FlexGrid.C1FlexGrid;
             if (e.Row >= grid.Rows.Fixed && 
                 e.Col >= grid.Cols.Fixed && 
                 grid[e.Row, e.Col] is double)

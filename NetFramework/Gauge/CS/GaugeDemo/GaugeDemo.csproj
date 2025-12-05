@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -120,6 +120,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="BaseGaugePage.resx">
       <DependentUpon>BaseGaugePage.cs</DependentUpon>
     </EmbeddedResource>

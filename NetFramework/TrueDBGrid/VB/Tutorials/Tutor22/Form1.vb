@@ -2,7 +2,7 @@ Public Class Form1
     Inherits System.Windows.Forms.Form
     Dim borderColor As Color
     Dim borderLeft As Integer, borderTop As Integer, borderRight As Integer, borderBottom As Integer
-    Dim borderType As C1.Win.C1TrueDBGrid.BorderTypeEnum
+    Dim borderType As C1.Win.TrueDBGrid.BorderTypeEnum
     Dim dbTable As DataTable  'a copy of the data
 
 #Region " Windows Form Designer generated code "
@@ -47,7 +47,7 @@ Public Class Form1
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbUpdateCommand1 As System.Data.OleDb.OleDbCommand
@@ -63,7 +63,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DsCustomers2 = New Tutor22.dsCustomers()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
@@ -99,7 +99,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.AllowAddNew = True
         Me.C1TrueDBGrid1.AllowArrows = False
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Anchor = (System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right)
         Me.C1TrueDBGrid1.Caption = "C1True DBGrid .Net"
@@ -111,7 +111,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(24, 4)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
@@ -459,13 +459,13 @@ Public Class Form1
         Me.C1TrueDBGrid1.ScrollTrack = Me.CheckBox2.Checked
     End Sub
 
-    Private Sub C1TrueDBGrid1_FetchScrollTips(ByVal sender As System.Object, ByVal e As C1.Win.C1TrueDBGrid.FetchScrollTipsEventArgs) Handles C1TrueDBGrid1.FetchScrollTips
+    Private Sub C1TrueDBGrid1_FetchScrollTips(ByVal sender As System.Object, ByVal e As C1.Win.TrueDBGrid.FetchScrollTipsEventArgs) Handles C1TrueDBGrid1.FetchScrollTips
         ' Set the ScrollTip depending on which
         ' scroll bar was moved
         Select Case e.ScrollBar
-            Case C1.Win.C1TrueDBGrid.ScrollBarEnum.Horizontal
+            Case C1.Win.TrueDBGrid.ScrollBarEnum.Horizontal
                 e.ScrollTip = Me.C1TrueDBGrid1.Columns(e.ColIndex).Caption
-            Case C1.Win.C1TrueDBGrid.ScrollBarEnum.Vertical
+            Case C1.Win.TrueDBGrid.ScrollBarEnum.Vertical
                 e.ScrollTip = "Record: " & CStr(e.Row + 1) & " of " & _
                     CStr(Me.dbTable.Rows.Count) & vbCrLf & "Company: " & _
                     Me.dbTable.Rows(e.Row).Item("Company") & vbCrLf & "User code: " & Me.dbTable.Rows(e.Row).Item("UserCode")
@@ -478,21 +478,21 @@ Public Class Form1
         Dim choice As String = Me.ComboBox1.SelectedItem
         Select Case choice
             Case "Fillet"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Fillet
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Fillet
             Case "Flat"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Flat
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Flat
             Case "Groove"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Groove
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Groove
             Case "Inset"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Inset
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Inset
             Case "InsetBevel"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.InsetBevel
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.InsetBevel
             Case "None"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.None
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.None
             Case "Raised"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Raised
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Raised
             Case "RaisedBevel"
-                Me.borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.RaisedBevel
+                Me.borderType = C1.Win.TrueDBGrid.BorderTypeEnum.RaisedBevel
         End Select
 
         Me.UpdateBorder()

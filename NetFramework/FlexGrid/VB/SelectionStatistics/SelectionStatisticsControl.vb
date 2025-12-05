@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class SelectionStatisticsControl
     Public Sub New()

@@ -33,7 +33,7 @@ namespace ControlExplorer.SuperTooltip
         }
 
         int _row;
-        private void c1FlexGrid1_MouseEnterCell(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_MouseEnterCell(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             if (e.Row < 1 || e.Row == _row)
                 return;
@@ -42,7 +42,7 @@ namespace ControlExplorer.SuperTooltip
             _row = e.Row;
         }
 
-        private void c1FlexGrid1_MouseLeaveCell(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_MouseLeaveCell(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             if (e.Row < 1 || e.Row == _row)
                 return;

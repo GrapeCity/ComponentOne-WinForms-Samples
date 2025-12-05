@@ -5,13 +5,13 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Imaging;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.C1Preview;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     /// <summary>
-    /// Represents a <see cref="C1.Win.C1FlexGrid.C1FlexGrid"/> that can be inserted
+    /// Represents a <see cref="C1.Win.FlexGrid.C1FlexGrid"/> that can be inserted
     /// into a <see cref="C1.C1Preview.C1PrintDocument"/> for printing, preview or export.
     /// </summary>
     /// <remarks>
@@ -30,7 +30,7 @@ namespace C1.Win.C1FlexGrid
     public class C1FlexGridPrintable2 : C1FlexGrid
     {
         #region Private data
-        private C1.Win.C1FlexGrid.C1FlexGridPrinter _printer;
+        private C1.Win.FlexGrid.C1FlexGridPrinter _printer;
         private bool _isPrinting = false;
         private event PrintCellEventHandler _printCellEventHandler = null;
         private event EventHandler _printStartingEventHandler = null;

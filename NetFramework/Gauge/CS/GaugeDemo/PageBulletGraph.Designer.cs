@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.c1BulletGraph1 = new C1.Win.C1Gauge.C1BulletGraph();
+            this.c1BulletGraph1 = new C1.Win.Gauge.C1BulletGraph();
             this.gaugePanel.SuspendLayout();
             this.gridPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -103,6 +103,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private C1.Win.C1Gauge.C1BulletGraph c1BulletGraph1;
+        private C1.Win.Gauge.C1BulletGraph c1BulletGraph1;
     }
 }

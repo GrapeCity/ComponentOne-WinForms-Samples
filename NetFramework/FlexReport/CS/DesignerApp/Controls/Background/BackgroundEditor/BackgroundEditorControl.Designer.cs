@@ -6,7 +6,7 @@
 // All rights reserved.
 //----------------------------------------------------------------------------
 using System;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor
 {
@@ -38,11 +38,11 @@ namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtMain = new C1.Win.C1Command.C1DockingTab();
-            this.dtpWebColors = new C1.Win.C1Command.C1DockingTabPage();
-            this.dtpSystemColors = new C1.Win.C1Command.C1DockingTabPage();
-            this.dtpCustom = new C1.Win.C1Command.C1DockingTabPage();
-            this.dtpGradient = new C1.Win.C1Command.C1DockingTabPage();
+            this.dtMain = new C1.Win.Command.C1DockingTab();
+            this.dtpWebColors = new C1.Win.Command.C1DockingTabPage();
+            this.dtpSystemColors = new C1.Win.Command.C1DockingTabPage();
+            this.dtpCustom = new C1.Win.Command.C1DockingTabPage();
+            this.dtpGradient = new C1.Win.Command.C1DockingTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.dtMain)).BeginInit();
             this.dtMain.SuspendLayout();
             this.SuspendLayout();
@@ -106,10 +106,10 @@ namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor
 
         #endregion
 
-        private C1.Win.C1Command.C1DockingTab dtMain;
-        private C1.Win.C1Command.C1DockingTabPage dtpWebColors;
-        private C1.Win.C1Command.C1DockingTabPage dtpSystemColors;
-        private C1.Win.C1Command.C1DockingTabPage dtpCustom;
-        private C1.Win.C1Command.C1DockingTabPage dtpGradient;
+        private C1.Win.Command.C1DockingTab dtMain;
+        private C1.Win.Command.C1DockingTabPage dtpWebColors;
+        private C1.Win.Command.C1DockingTabPage dtpSystemColors;
+        private C1.Win.Command.C1DockingTabPage dtpCustom;
+        private C1.Win.Command.C1DockingTabPage dtpGradient;
     }
 }

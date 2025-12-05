@@ -11,8 +11,8 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Xml;
 using System.Drawing.Imaging;
-using C1.Win.C1Command;
-using C1.Win.C1Themes;
+using C1.Win.Command;
+using C1.Win.Themes;
 
 namespace DashboardWinForms
 {
@@ -82,7 +82,7 @@ namespace DashboardWinForms
             _panToolBar.Width = _panToolBar.Width > _sizes[0] ? _sizes[0] : _sizes[1];
         }
 
-        private void cmd_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmd_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             if (_picSpinner.Visible)
                 return;

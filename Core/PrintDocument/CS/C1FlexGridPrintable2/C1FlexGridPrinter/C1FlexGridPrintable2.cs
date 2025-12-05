@@ -6,11 +6,12 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Imaging;
 using C1.C1Preview;
+using System.ComponentModel;
 
 namespace C1.Win.FlexGrid
 {
     /// <summary>
-    /// Represents a <see cref="C1.Win.C1FlexGrid.C1FlexGrid"/> that can be inserted
+    /// Represents a <see cref="C1.Win.FlexGrid.C1FlexGrid"/> that can be inserted
     /// into a <see cref="C1.C1Preview.C1PrintDocument"/> for printing, preview or export.
     /// </summary>
     /// <remarks>
@@ -102,6 +103,7 @@ namespace C1.Win.FlexGrid
         /// <summary>
         /// Gets the <see cref="C1FlexGridPrinter"/> that is being used to print the current <see cref="C1FlexGridPrintable2"/>.
         /// </summary>
+        [DefaultValue(null)]
         public C1FlexGridPrinter Printer
         {
             get { return _printer; }

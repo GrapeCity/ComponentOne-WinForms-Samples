@@ -34,10 +34,10 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.panel1 = New System.Windows.Forms.Panel()
         Me.c1Label1 = New C1.Win.C1Input.C1Label()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel1.SuspendLayout()
@@ -143,7 +143,7 @@ Partial Class MainForm
         Me.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.c1FlexGrid1.Location = New System.Drawing.Point(0, 98)
         Me.c1FlexGrid1.Name = "c1FlexGrid1"
-        Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.c1FlexGrid1.Size = New System.Drawing.Size(856, 402)
         Me.c1FlexGrid1.TabIndex = 6
         Me.C1ThemeController1.SetTheme(Me.c1FlexGrid1, "(default)")
@@ -178,9 +178,9 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
     Private WithEvents panel1 As Panel
     Private WithEvents c1Label1 As C1.Win.C1Input.C1Label
-    Private WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
 End Class

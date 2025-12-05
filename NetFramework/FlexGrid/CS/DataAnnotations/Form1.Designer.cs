@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,19 +39,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._flex.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this._flex.Location = new System.Drawing.Point(9, 10);
-            this._flex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this._flex.Location = new System.Drawing.Point(18, 19);
+            this._flex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._flex.Name = "_flex";
             this._flex.ShowErrors = true;
-            this._flex.Size = new System.Drawing.Size(396, 266);
+            this._flex.Size = new System.Drawing.Size(788, 508);
             this._flex.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 284);
+            this.ClientSize = new System.Drawing.Size(824, 546);
             this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: DataAnnotations";
@@ -61,7 +64,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
     }
 }
 

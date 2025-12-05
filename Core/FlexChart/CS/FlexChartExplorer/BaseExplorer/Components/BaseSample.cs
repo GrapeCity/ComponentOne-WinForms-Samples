@@ -1,9 +1,9 @@
-﻿using System;
+﻿using BaseExplorer.Core;
+using System;
+using System.ComponentModel;
 using System.Drawing;
-using System.Windows.Forms;
-using System.Threading;
-using BaseExplorer.Core;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 
 namespace BaseExplorer.Components
@@ -15,7 +15,10 @@ namespace BaseExplorer.Components
 
         public string Id { get; private set; }
 
+        [DefaultValue(null)]
         public string Title { get; set; }
+
+        [DefaultValue("Office365White")]
         public string Theme 
         { 
             get
@@ -37,6 +40,7 @@ namespace BaseExplorer.Components
             }
         }
 
+        [DefaultValue(true)]
         public bool ShowDescriptionPanel
         {
             get { return _showDescPanel; }

@@ -30,29 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Interaction));
             this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.label = new C1.Win.C1InputPanel.InputLabel();
-            this.inputSeparator1 = new C1.Win.C1InputPanel.InputSeparator();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            this.comboLocations = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputOption1 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption2 = new C1.Win.C1InputPanel.InputOption();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.checkConductivity = new C1.Win.C1InputPanel.InputCheckBox();
-            this.checkPh = new C1.Win.C1InputPanel.InputCheckBox();
-            this.checkTemperature = new C1.Win.C1InputPanel.InputCheckBox();
-            this.checkPressure = new C1.Win.C1InputPanel.InputCheckBox();
-            this.inputGroupHeader2 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputMenu1 = new C1.Win.C1InputPanel.InputMenu();
-            this.btnZoomIn = new C1.Win.C1InputPanel.InputButton();
-            this.btnZoomOut = new C1.Win.C1InputPanel.InputButton();
-            this.btnReset = new C1.Win.C1InputPanel.InputButton();
-            this.inputGroupHeader3 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.chkChartAreaInverted = new C1.Win.C1InputPanel.InputCheckBox();
-            this.chkAxisXReversed = new C1.Win.C1InputPanel.InputCheckBox();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.label = new C1.Win.InputPanel.InputLabel();
+            this.inputSeparator1 = new C1.Win.InputPanel.InputSeparator();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            this.comboLocations = new C1.Win.InputPanel.InputComboBox();
+            this.inputOption1 = new C1.Win.InputPanel.InputOption();
+            this.inputOption2 = new C1.Win.InputPanel.InputOption();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.checkConductivity = new C1.Win.InputPanel.InputCheckBox();
+            this.checkPh = new C1.Win.InputPanel.InputCheckBox();
+            this.checkTemperature = new C1.Win.InputPanel.InputCheckBox();
+            this.checkPressure = new C1.Win.InputPanel.InputCheckBox();
+            this.inputGroupHeader2 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            this.inputMenu1 = new C1.Win.InputPanel.InputMenu();
+            this.btnZoomIn = new C1.Win.InputPanel.InputButton();
+            this.btnZoomOut = new C1.Win.InputPanel.InputButton();
+            this.btnReset = new C1.Win.InputPanel.InputButton();
+            this.inputGroupHeader3 = new C1.Win.InputPanel.InputGroupHeader();
+            this.chkChartAreaInverted = new C1.Win.InputPanel.InputCheckBox();
+            this.chkAxisXReversed = new C1.Win.InputPanel.InputCheckBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.c1Chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
@@ -97,7 +97,7 @@
             // 
             // label
             // 
-            this.label.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.label.Break = C1.Win.InputPanel.BreakType.Row;
             this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Name = "label";
             this.label.Text = "Label";
@@ -114,7 +114,7 @@
             // 
             // comboLocations
             // 
-            this.comboLocations.DropDownStyle = C1.Win.C1InputPanel.InputComboBoxStyle.DropDownList;
+            this.comboLocations.DropDownStyle = C1.Win.InputPanel.InputComboBoxStyle.DropDownList;
             this.comboLocations.Items.Add(this.inputOption1);
             this.comboLocations.Items.Add(this.inputOption2);
             this.comboLocations.Name = "comboLocations";
@@ -170,19 +170,19 @@
             // 
             // inputLabel2
             // 
-            this.inputLabel2.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.inputLabel2.Break = C1.Win.InputPanel.BreakType.Row;
             this.inputLabel2.Name = "inputLabel2";
             this.inputLabel2.Text = "Zoom: Mouse";
             // 
             // inputLabel3
             // 
-            this.inputLabel3.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.inputLabel3.Break = C1.Win.InputPanel.BreakType.Row;
             this.inputLabel3.Name = "inputLabel3";
             this.inputLabel3.Text = "Scale: CTRL + Mouse";
             // 
             // inputLabel4
             // 
-            this.inputLabel4.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.inputLabel4.Break = C1.Win.InputPanel.BreakType.Row;
             this.inputLabel4.Name = "inputLabel4";
             this.inputLabel4.Text = "Translate: Shift + Mouse";
             // 
@@ -258,29 +258,29 @@
         #endregion
 
         private C1.Win.C1Chart.C1Chart c1Chart1;
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
-        private C1.Win.C1InputPanel.InputComboBox comboLocations;
-        private C1.Win.C1InputPanel.InputSeparator inputSeparator1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputCheckBox checkConductivity;
-        private C1.Win.C1InputPanel.InputCheckBox checkPh;
-        private C1.Win.C1InputPanel.InputCheckBox checkTemperature;
-        private C1.Win.C1InputPanel.InputCheckBox checkPressure;
-        private C1.Win.C1InputPanel.InputOption inputOption1;
-        private C1.Win.C1InputPanel.InputOption inputOption2;
-        private C1.Win.C1InputPanel.InputLabel label;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.InputComboBox comboLocations;
+        private C1.Win.InputPanel.InputSeparator inputSeparator1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputCheckBox checkConductivity;
+        private C1.Win.InputPanel.InputCheckBox checkPh;
+        private C1.Win.InputPanel.InputCheckBox checkTemperature;
+        private C1.Win.InputPanel.InputCheckBox checkPressure;
+        private C1.Win.InputPanel.InputOption inputOption1;
+        private C1.Win.InputPanel.InputOption inputOption2;
+        private C1.Win.InputPanel.InputLabel label;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader2;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1InputPanel.InputMenu inputMenu1;
-        private C1.Win.C1InputPanel.InputButton btnZoomIn;
-        private C1.Win.C1InputPanel.InputButton btnZoomOut;
-        private C1.Win.C1InputPanel.InputButton btnReset;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader3;
-        private C1.Win.C1InputPanel.InputCheckBox chkChartAreaInverted;
-        private C1.Win.C1InputPanel.InputCheckBox chkAxisXReversed;
+        private C1.Win.InputPanel.InputMenu inputMenu1;
+        private C1.Win.InputPanel.InputButton btnZoomIn;
+        private C1.Win.InputPanel.InputButton btnZoomOut;
+        private C1.Win.InputPanel.InputButton btnReset;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader3;
+        private C1.Win.InputPanel.InputCheckBox chkChartAreaInverted;
+        private C1.Win.InputPanel.InputCheckBox chkAxisXReversed;
     }
 }

@@ -51,23 +51,21 @@
             tableLayoutPanel1.Controls.Add(panel1, 1, 0);
             tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(1691, 948);
+            tableLayoutPanel1.Size = new System.Drawing.Size(2737, 1520);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // sidebar
             // 
             sidebar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            sidebar.Collapsed = false;
             sidebar.Dock = System.Windows.Forms.DockStyle.Fill;
-            sidebar.Location = new System.Drawing.Point(2, 3);
-            sidebar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            sidebar.Location = new System.Drawing.Point(3, 5);
+            sidebar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             sidebar.Name = "sidebar";
-            sidebar.Samples = null;
-            sidebar.Size = new System.Drawing.Size(474, 942);
+            sidebar.Size = new System.Drawing.Size(770, 1510);
             sidebar.TabIndex = 0;
             // 
             // panel1
@@ -76,30 +74,29 @@
             panel1.Controls.Add(homePageControl1);
             panel1.Controls.Add(demoViewer1);
             panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel1.Location = new System.Drawing.Point(481, 4);
-            panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            panel1.Location = new System.Drawing.Point(781, 6);
+            panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(1207, 940);
+            panel1.Size = new System.Drawing.Size(1951, 1508);
             panel1.TabIndex = 1;
             // 
             // homePageControl1
             // 
             homePageControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             homePageControl1.Location = new System.Drawing.Point(0, 0);
-            homePageControl1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            homePageControl1.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             homePageControl1.Name = "homePageControl1";
-            homePageControl1.Padding = new System.Windows.Forms.Padding(30, 29, 30, 29);
-            homePageControl1.Samples = null;
-            homePageControl1.Size = new System.Drawing.Size(1207, 940);
+            homePageControl1.Padding = new System.Windows.Forms.Padding(49, 46, 49, 46);
+            homePageControl1.Size = new System.Drawing.Size(1951, 1508);
             homePageControl1.TabIndex = 1;
             // 
             // demoViewer1
             // 
             demoViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             demoViewer1.Location = new System.Drawing.Point(0, 0);
-            demoViewer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            demoViewer1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             demoViewer1.Name = "demoViewer1";
-            demoViewer1.Size = new System.Drawing.Size(1207, 940);
+            demoViewer1.Size = new System.Drawing.Size(1951, 1508);
             demoViewer1.TabIndex = 0;
             // 
             // c1ThemeController1
@@ -112,13 +109,13 @@
             // 
             // Explorer
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1691, 948);
+            ClientSize = new System.Drawing.Size(2737, 1520);
             Controls.Add(tableLayoutPanel1);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            MinimumSize = new System.Drawing.Size(1699, 987);
+            Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            MinimumSize = new System.Drawing.Size(2745, 1537);
             Name = "Explorer";
             Text = "ComponentOne | Winforms Control Explorer";
             c1ThemeController1.SetTheme(this, "Office365White");

@@ -11,17 +11,17 @@ Partial Class RowDetail
     End Sub
 
     Private Sub InitializeComponent()
-        Me.dockingTab = New C1.Win.C1Command.C1DockingTab()
-        Me.pageInputPanel = New C1.Win.C1Command.C1DockingTabPage()
+        Me.dockingTab = New C1.Win.Command.C1DockingTab()
+        Me.pageInputPanel = New C1.Win.Command.C1DockingTabPage()
         Me.inputPanelSample = New RowDetails.InputPanelSample()
-        Me.pageFlexGrid = New C1.Win.C1Command.C1DockingTabPage()
+        Me.pageFlexGrid = New C1.Win.Command.C1DockingTabPage()
         Me.flexGridSample = New RowDetails.FlexGridSample()
-        Me.pageInheritance = New C1.Win.C1Command.C1DockingTabPage()
+        Me.pageInheritance = New C1.Win.Command.C1DockingTabPage()
         Me.inheritanceSample = New RowDetails.InheritanceSample()
-        Me.pageCustom = New C1.Win.C1Command.C1DockingTabPage()
+        Me.pageCustom = New C1.Win.Command.C1DockingTabPage()
         Me.customSample = New RowDetails.CustomSample()
-        Me.themePicker = New C1.Win.C1Themes.C1ThemePicker()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
+        Me.themePicker = New C1.Win.Themes.C1ThemePicker()
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
         CType(Me.dockingTab, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.dockingTab.SuspendLayout()
         Me.pageInputPanel.SuspendLayout()
@@ -48,9 +48,9 @@ Partial Class RowDetail
         Me.dockingTab.Padding = New System.Drawing.Point(6, 6)
         Me.dockingTab.Size = New System.Drawing.Size(779, 605)
         Me.dockingTab.TabIndex = 0
-        Me.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.dockingTab.TabsShowFocusCues = False
-        Me.dockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.themeController.SetTheme(Me.dockingTab, "(default)")
         '
         'pageInputPanel
@@ -144,20 +144,14 @@ Partial Class RowDetail
         'themePicker
         '
         Me.themePicker.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.themePicker.BorderColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer))
         Me.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.themePicker.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.themePicker.Location = New System.Drawing.Point(290, 0)
         Me.themePicker.Name = "themePicker"
         Me.themePicker.SelectedThemeName = "Office365White"
         Me.themePicker.Size = New System.Drawing.Size(199, 23)
-        Me.themePicker.Style.DropDownBackColor = System.Drawing.Color.White
-        Me.themePicker.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro
-        Me.themePicker.Style.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.themePicker.TabIndex = 0
         Me.themeController.SetTheme(Me.themePicker, "(default)")
-        Me.themePicker.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'RowDetails
         '
@@ -186,13 +180,13 @@ Partial Class RowDetail
 
     End Sub
 
-    Private dockingTab As C1.Win.C1Command.C1DockingTab
-    Private pageInputPanel As C1.Win.C1Command.C1DockingTabPage
-    Private pageFlexGrid As C1.Win.C1Command.C1DockingTabPage
-    Private pageInheritance As C1.Win.C1Command.C1DockingTabPage
-    Private pageCustom As C1.Win.C1Command.C1DockingTabPage
-    Private themePicker As C1.Win.C1Themes.C1ThemePicker
-    Private themeController As C1.Win.C1Themes.C1ThemeController
+    Private dockingTab As C1.Win.Command.C1DockingTab
+    Private pageInputPanel As C1.Win.Command.C1DockingTabPage
+    Private pageFlexGrid As C1.Win.Command.C1DockingTabPage
+    Private pageInheritance As C1.Win.Command.C1DockingTabPage
+    Private pageCustom As C1.Win.Command.C1DockingTabPage
+    Private themePicker As C1.Win.Themes.C1ThemePicker
+    Private themeController As C1.Win.Themes.C1ThemeController
     Friend WithEvents inputPanelSample As InputPanelSample
     Friend WithEvents flexGridSample As FlexGridSample
     Friend WithEvents inheritanceSample As InheritanceSample

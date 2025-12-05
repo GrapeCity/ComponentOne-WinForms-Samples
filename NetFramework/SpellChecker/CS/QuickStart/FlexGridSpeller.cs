@@ -1,8 +1,8 @@
 using System;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1SpellChecker;
+using C1.Win.FlexGrid;
+using C1.Win.SpellChecker;
 
 namespace QuickStart
 {

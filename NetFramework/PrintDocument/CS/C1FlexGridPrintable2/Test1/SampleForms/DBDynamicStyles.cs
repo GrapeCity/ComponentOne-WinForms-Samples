@@ -13,7 +13,7 @@ namespace DynamicStyles
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
     {
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -54,7 +54,7 @@ namespace DynamicStyles
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +68,7 @@ namespace DynamicStyles
             this._flex.Size = new System.Drawing.Size(596, 476);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
@@ -100,14 +100,14 @@ namespace DynamicStyles
             _flex.DataSource = dt;
 
             // create custom style and use OwnerDraw to apply them
-            C1.Win.C1FlexGrid.CellStyle s = _flex.Styles.Add("Critical");
+            C1.Win.FlexGrid.CellStyle s = _flex.Styles.Add("Critical");
             s.BackColor = Color.DarkOrchid;
             s.ForeColor = Color.White;
             s.Font = new Font(_flex.Font, FontStyle.Bold);
-            _flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            _flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
         }
 
-        void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             // ignore fixed cells
             if (e.Row < _flex.Rows.Fixed || e.Col < _flex.Cols.Fixed)

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel;
 
 namespace FlexChartEditableAnnotations
 {
@@ -740,6 +741,7 @@ namespace FlexChartEditableAnnotations
     {
         internal Action Reject, Accept;
 
+        [DefaultValue(null)]
         public AnnotationBase Annotation { get; set; }
 
         public void RejectChanges()

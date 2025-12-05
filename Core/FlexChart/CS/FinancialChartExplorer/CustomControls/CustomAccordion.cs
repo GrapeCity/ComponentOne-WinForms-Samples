@@ -31,7 +31,10 @@ namespace FinancialChartExplorer.CustomControls
 
         public event ChildClickedEventHandler ChildClicked;
 
+        [DefaultValue(40)]
         public int IndicatorSize { get => _indicatorSize; set => _indicatorSize = value; }
+
+        [DefaultValue(0)]
         public int GeneralControlHeight { get => _generalControlHeight; set => _generalControlHeight = value; }
 
         private GraphicsPath GetRoundedCornerPath(RectangleF rect, float radius)
@@ -46,6 +49,7 @@ namespace FinancialChartExplorer.CustomControls
             return path;
         }
 
+        [DefaultValue(null)]
         public string SetTheme
         {
             set
@@ -145,7 +149,10 @@ namespace FinancialChartExplorer.CustomControls
 
         private int _generalControlHeight;
 
+        [DefaultValue(0)]
         public int GeneralControlHeight { get => _generalControlHeight; set => _generalControlHeight = value; }
+
+        [DefaultValue(false)]
         public bool IsExpanded { get => _isExpanded; set => _isExpanded = value; }
 
         public void AddChild(AccordionChildCT child)
@@ -156,6 +163,7 @@ namespace FinancialChartExplorer.CustomControls
             }
         }
 
+        [DefaultValue(null)]
         public string SetTheme
         {
             set
@@ -330,6 +338,7 @@ namespace FinancialChartExplorer.CustomControls
         public delegate void FinalClickEventHandler(object sender, EventArgs e);
         public event FinalClickEventHandler Child_Clicked_Callback;
 
+        [DefaultValue(null)]
         public Font AccordionFont
         {
             get => Font;
@@ -356,6 +365,7 @@ namespace FinancialChartExplorer.CustomControls
             base.DoubleBuffered = true;
         }
 
+        [DefaultValue(null)]
         public string SetTheme
         {
             set

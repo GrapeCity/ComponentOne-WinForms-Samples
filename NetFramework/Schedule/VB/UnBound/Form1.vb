@@ -1,5 +1,5 @@
-Imports C1.Win.C1Schedule
-Imports C1.C1Schedule
+Imports C1.Win.Schedule
+Imports C1.Schedule
 Imports System.IO
 
 Public Class Form1

@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -43,8 +45,8 @@
             this.rbExportToExcel = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1NWindDataSet = new MultiRangeSelection.C1NWindDataSet();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -152,7 +154,7 @@
             this.c1FlexGrid1.AutoClipboard = true;
             this.c1FlexGrid1.BackColor = System.Drawing.Color.White;
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
-            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.None;
+            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
             this.c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = false;
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = false;
             this.c1FlexGrid1.DataSource = this.ordersBindingSource;
@@ -161,7 +163,7 @@
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 77);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.MultiRange;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.MultiRange;
             this.c1FlexGrid1.Size = new System.Drawing.Size(1016, 658);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 1;
@@ -236,9 +238,9 @@
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonButton rbCopyToClipboard;

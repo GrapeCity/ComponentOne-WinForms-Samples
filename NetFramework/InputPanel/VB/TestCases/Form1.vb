@@ -4,7 +4,7 @@ Imports System.Xml
 Imports System.Reflection
 Imports System.IO
 
-Imports C1.Win.C1InputPanel
+Imports C1.Win.InputPanel
 
 ''' <summary>
 ''' This is the main form, it shows an input panel that can read several
@@ -254,7 +254,7 @@ Public Class Form1
         End Select
     End Sub
 
-    Private Sub htmlLabel_LinkClicked(ByVal sender As Object, ByVal e As C1.Win.C1InputPanel.LinkClickedEventArgs)
+    Private Sub htmlLabel_LinkClicked(ByVal sender As Object, ByVal e As C1.Win.InputPanel.LinkClickedEventArgs)
         MessageBox.Show("Open URL: '" + e.HRef + "'", "Link Clicked")
     End Sub
 

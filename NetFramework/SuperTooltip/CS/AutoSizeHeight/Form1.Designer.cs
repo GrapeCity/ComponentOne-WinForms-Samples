@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._superLabel = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._superLabel = new C1.Win.SuperTooltip.C1SuperLabel();
             this.SuspendLayout();
             // 
             // _superLabel
@@ -60,7 +63,7 @@
 
         #endregion
 
-        private C1.Win.C1SuperTooltip.C1SuperLabel _superLabel;
+        private C1.Win.SuperTooltip.C1SuperLabel _superLabel;
     }
 }
 

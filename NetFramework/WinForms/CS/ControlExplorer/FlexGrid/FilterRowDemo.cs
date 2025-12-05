@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,7 +52,7 @@ namespace ControlExplorer.FlexGrid
 
         // ** ctor
 
-        public FilterRow(C1.Win.C1FlexGrid.C1FlexGrid flex)
+        public FilterRow(C1.Win.FlexGrid.C1FlexGrid flex)
         {
             // save reference to grid
             _flex = flex;

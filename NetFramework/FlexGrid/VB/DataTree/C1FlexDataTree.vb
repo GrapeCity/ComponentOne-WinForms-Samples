@@ -41,7 +41,7 @@
 '		If they don't, show an "add" glyph instead of the regular collapsed glyph 
 '      (user can still open the empty detail grid to add rows if AllowAddNew is true).
 ' --------------------------------------------------------------------------------------
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 Imports System.ComponentModel
 
 <ToolboxBitmap(GetType(C1FlexDataTree))>
@@ -388,7 +388,7 @@ Public Class C1FlexDataTree
 #Region "** overrides"
 
     ' collapse row before deleting it
-    Protected Overrides Sub OnBeforeDeleteRow(e As C1.Win.C1FlexGrid.RowColEventArgs)
+    Protected Overrides Sub OnBeforeDeleteRow(e As C1.Win.FlexGrid.RowColEventArgs)
         CollapseRow(e.Row)
         MyBase.OnBeforeDeleteRow(e)
     End Sub
@@ -605,7 +605,7 @@ Public Class C1FlexDataTree
 
             ' initialize
             Dock = DockStyle.Top
-            BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+            BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
             Height = Rows(Rows.Fixed - 1).Bottom
             ScrollBars = System.Windows.Forms.ScrollBars.None
             Select Case parent.BorderStyle

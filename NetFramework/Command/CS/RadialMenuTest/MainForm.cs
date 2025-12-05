@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace RadialMenuTest
 {

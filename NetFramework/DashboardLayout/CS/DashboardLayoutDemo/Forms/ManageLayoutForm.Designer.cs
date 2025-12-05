@@ -32,7 +32,7 @@
             this.btnClose = new C1.Win.C1Input.C1Button();
             this.btnRename = new C1.Win.C1Input.C1Button();
             this.btnDelete = new C1.Win.C1Input.C1Button();
-            this.c1List1 = new C1.Win.C1List.C1List();
+            this.c1List1 = new C1.Win.List.C1List();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -94,7 +94,7 @@
             this.c1List1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1List1.PreviewInfo.ZoomFactor = 75D;
             this.c1List1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1List1.PrintInfo.PageSettings")));
-            this.c1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+            this.c1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
             this.c1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1List1.ShowHeaderCheckBox = false;
             this.c1List1.Size = new System.Drawing.Size(442, 309);
@@ -147,7 +147,7 @@
         private C1.Win.C1Input.C1Button btnClose;
         private C1.Win.C1Input.C1Button btnRename;
         private C1.Win.C1Input.C1Button btnDelete;
-        private C1.Win.C1List.C1List c1List1;
+        private C1.Win.List.C1List c1List1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
     }

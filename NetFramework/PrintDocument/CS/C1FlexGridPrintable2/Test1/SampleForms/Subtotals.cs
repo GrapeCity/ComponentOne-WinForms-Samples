@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace Subtotals
 {
@@ -14,7 +14,7 @@ namespace Subtotals
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.CheckBox _chkAbove;
 		private System.Windows.Forms.CheckBox _chkGrand;
 		private System.Windows.Forms.CheckBox _chkDirection;
@@ -60,7 +60,7 @@ namespace Subtotals
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._chkAbove = new System.Windows.Forms.CheckBox();
             this._chkGrand = new System.Windows.Forms.CheckBox();
             this._chkDirection = new System.Windows.Forms.CheckBox();

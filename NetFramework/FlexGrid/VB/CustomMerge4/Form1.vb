@@ -4,7 +4,7 @@ Imports System.Data
 Imports System.Windows.Forms
 Imports System.Drawing
 Imports System.Collections
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 '//based on original sample by Mike Hoeffner
 
@@ -43,7 +43,7 @@ Namespace CustomMergeLogic
 
             'initialize merging
             _flex.AllowMerging = AllowMergingEnum.Free
-            Dim c As C1.Win.C1FlexGrid.Column
+            Dim c As C1.Win.FlexGrid.Column
 
             For Each c In _flex.Cols
                 c.AllowMerging = True
@@ -94,7 +94,7 @@ Namespace CustomMergeLogic
             Me._flex.Location = New System.Drawing.Point(8, 28)
             Me._flex.Name = "_flex"
             Me._flex.Size = New System.Drawing.Size(480, 212)
-            Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+            Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
             "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
             ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
             "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -143,7 +143,7 @@ Namespace CustomMergeLogic
         Private _doingMerge As Boolean = False
         Private _colIndex As Integer
 
-        Public Overrides Function GetMergedRange(row As Integer, col As Integer, clip As Boolean) As C1.Win.C1FlexGrid.CellRange
+        Public Overrides Function GetMergedRange(row As Integer, col As Integer, clip As Boolean) As C1.Win.FlexGrid.CellRange
 
             ' save index of ID column to use in merging logic
             _colIndex = MyBase.Cols("ID").Index

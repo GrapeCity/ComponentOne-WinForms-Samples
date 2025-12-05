@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using C1.Win.C1Input;
+using C1.Win.Input;
 
 namespace FinancialChartExplorer.CustomControls
 {
@@ -10,7 +10,6 @@ namespace FinancialChartExplorer.CustomControls
         public C1NumericEditEx()
         {
             InitializeComponent();
-            this.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.ValueChanged += ClampNumericValue;
         }
 

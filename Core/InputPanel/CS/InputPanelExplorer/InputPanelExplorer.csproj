@@ -2,31 +2,18 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="C1Demo.mdb" />
-    <None Remove="Data\Sample.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="C1Demo.mdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data\Sample.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-	<PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
-	<PackageReference Include="C1.Win.InputPanel" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
-	<PackageReference Include="System.Data.OleDb" Version="9.0.7" />
+    <PackageReference Include="System.Data.OleDb" Version="9.0.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,9 +35,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C1Demo.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Sample.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
@@ -63,6 +57,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Remove="C1Demo.mdb" />
+    <None Remove="Data\Sample.xml" />
   </ItemGroup>
 
 </Project>

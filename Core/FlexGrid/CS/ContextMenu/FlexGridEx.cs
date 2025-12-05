@@ -32,10 +32,14 @@ namespace ContextMenu
             ColumnContextMenuOpening += (sender, e) =>
             {
                 var hit = HitTest();
+
+                // Determine if the user clicked the "corner" area (fixed rows & fixed cols intersection).
+                bool isCorner =(hit.Row < this.Rows.Fixed && hit.Column < this.Cols.Fixed);
+
                 Select(-1, hit.Column, -1, hit.Column, false);
 
-                // Remove first two default items if they exist
-                if (e.ContextMenuStrip.Items.Count > 1)
+                // Only remove "Sort Asc/Desc" if NOT clicking on the top-left corner
+                if (!isCorner && e.ContextMenuStrip.Items.Count > 1)
                 {
                     e.ContextMenuStrip.Items.RemoveAt(1);
                     e.ContextMenuStrip.Items.RemoveAt(0);
@@ -70,6 +74,7 @@ namespace ContextMenu
                     );
                 }
             };
+
         }
 
         protected override void OnDataRefresh(ListChangedEventArgs e)

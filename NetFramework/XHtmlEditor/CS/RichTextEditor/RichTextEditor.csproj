@@ -9,14 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -29,14 +21,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Pdf" Version="9.0.20251.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SpellChecker" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,6 +69,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="BackstageTabs\PrintTab.resx">
       <DependentUpon>PrintTab.cs</DependentUpon>
     </EmbeddedResource>

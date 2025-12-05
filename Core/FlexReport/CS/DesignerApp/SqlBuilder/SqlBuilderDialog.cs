@@ -362,6 +362,7 @@ namespace SqlBuilder
 		//----------------------------------------------------------------
 		#region ** public stuff
 
+		[DefaultValue("")]
 		public string ConnectionString
 		{
 			get { return _qb.ConnectionString; }
@@ -371,6 +372,8 @@ namespace SqlBuilder
 				ResetUI();
 			}
 		}
+
+		[DefaultValue(null)]
 		public string Sql
 		{
 			get { return _qb.Sql; }

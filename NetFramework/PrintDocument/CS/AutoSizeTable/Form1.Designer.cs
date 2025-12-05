@@ -1,4 +1,4 @@
-namespace AutoSizeTable
+﻿namespace AutoSizeTable
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace AutoSizeTable
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
             ((System.ComponentModel.ISupportInitialize)(this.c1PrintPreviewControl1.PreviewPane)).BeginInit();
             this.c1PrintPreviewControl1.SuspendLayout();

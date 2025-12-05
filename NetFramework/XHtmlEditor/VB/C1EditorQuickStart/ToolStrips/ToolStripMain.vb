@@ -5,7 +5,7 @@ Imports System.Drawing
 Imports System.Data
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1SpellChecker
+Imports C1.Win.SpellChecker
 
 Namespace ToolStrips
 	Class ToolStripMain

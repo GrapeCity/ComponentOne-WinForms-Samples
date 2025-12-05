@@ -1,6 +1,6 @@
 ﻿Imports System
 Imports System.Xml
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Namespace AdvancedFiltering
     Friend Class InheritedFilter

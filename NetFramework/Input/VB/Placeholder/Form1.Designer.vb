@@ -42,10 +42,10 @@ Partial Class Form1
         Me.ribbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.C1DockingTab1 = New C1.Win.C1Command.C1DockingTab()
-        Me.C1DockingTabPage1 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.C1DockingTabPage2 = New C1.Win.C1Command.C1DockingTabPage()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
+        Me.C1DockingTab1 = New C1.Win.Command.C1DockingTab()
+        Me.C1DockingTabPage1 = New C1.Win.Command.C1DockingTabPage()
+        Me.C1DockingTabPage2 = New C1.Win.Command.C1DockingTabPage()
         Me.C1Label6 = New C1.Win.C1Input.C1Label()
         Me.C1Label7 = New C1.Win.C1Input.C1Label()
         Me.C1TextBox2 = New C1.Win.C1Input.C1TextBox()
@@ -327,8 +327,8 @@ Partial Class Form1
         Me.C1DockingTab1.Size = New System.Drawing.Size(595, 390)
         Me.C1DockingTab1.TabIndex = 23
         Me.C1ThemeController1.SetTheme(Me.C1DockingTab1, "(default)")
-        Me.C1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue
-        Me.C1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue
+        Me.C1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue
+        Me.C1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue
         '
         'C1DockingTabPage1
         '
@@ -618,10 +618,10 @@ Partial Class Form1
     Private WithEvents ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Private WithEvents ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     Private WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
-    Private WithEvents C1DockingTab1 As C1.Win.C1Command.C1DockingTab
-    Private WithEvents C1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
-    Private WithEvents C1DockingTabPage2 As C1.Win.C1Command.C1DockingTabPage
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
+    Private WithEvents C1DockingTab1 As C1.Win.Command.C1DockingTab
+    Private WithEvents C1DockingTabPage1 As C1.Win.Command.C1DockingTabPage
+    Private WithEvents C1DockingTabPage2 As C1.Win.Command.C1DockingTabPage
     Private WithEvents C1Label6 As C1.Win.C1Input.C1Label
     Private WithEvents C1Label7 As C1.Win.C1Input.C1Label
     Private WithEvents C1TextBox2 As C1.Win.C1Input.C1TextBox

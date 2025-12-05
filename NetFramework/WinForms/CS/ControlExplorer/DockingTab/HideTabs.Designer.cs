@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -40,21 +40,21 @@
             this.btnBack1 = new C1.Win.C1Input.C1Button();
             this.btnCancel1 = new C1.Win.C1Input.C1Button();
             this.btnNext1 = new C1.Win.C1Input.C1Button();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnBack2 = new C1.Win.C1Input.C1Button();
             this.btnCancel2 = new C1.Win.C1Input.C1Button();
             this.btnNext2 = new C1.Win.C1Input.C1Button();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnBack3 = new C1.Win.C1Input.C1Button();
             this.btnCancel3 = new C1.Win.C1Input.C1Button();
             this.btnNext3 = new C1.Win.C1Input.C1Button();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage4 = new C1.Win.Command.C1DockingTabPage();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -102,9 +102,9 @@
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.Size = new System.Drawing.Size(1142, 709);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Blue;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
+            this.c1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.Office2007Blue;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1DockingTabPage1
             // 
@@ -507,9 +507,9 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.C1Input.C1Button btnCancel1;
         private C1.Win.C1Input.C1Button btnNext1;
@@ -519,12 +519,12 @@
         private C1.Win.C1Input.C1Button btnNext2;
         private System.Windows.Forms.Panel panel5;
         private C1.Win.C1Input.C1Button btnBack1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
         private System.Windows.Forms.Panel panel3;
         private C1.Win.C1Input.C1Button btnBack3;
         private C1.Win.C1Input.C1Button btnCancel3;
         private C1.Win.C1Input.C1Button btnNext3;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage4;
         private System.Windows.Forms.Panel panel4;
         private C1.Win.C1Input.C1Button btnBack4;
         private C1.Win.C1Input.C1Button btnCancel4;

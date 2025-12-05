@@ -12,7 +12,7 @@ namespace PasswordChar
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -53,7 +53,7 @@ namespace PasswordChar
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,8 +67,8 @@ namespace PasswordChar
             this._flex.Size = new System.Drawing.Size(641, 474);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.SetupEditor += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_SetupEditor);
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.SetupEditor += new C1.Win.FlexGrid.RowColEventHandler(this._flex_SetupEditor);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
@@ -90,10 +90,10 @@ namespace PasswordChar
             _flex.Cols[0].Width = _flex.Rows[0].HeightDisplay;
             _flex.ShowCursor = true;
             _flex.Cols[1].Caption = _flex.Cols[1].Name = "Password";
-            _flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            _flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
         }
 
-        private void _flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void _flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             TextBox tb = _flex.Editor as TextBox;
             if (tb != null)
@@ -105,7 +105,7 @@ namespace PasswordChar
             }
         }
 
-        private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (e.Row >= _flex.Rows.Fixed && _flex.Cols[e.Col].Name == "Password")
             {

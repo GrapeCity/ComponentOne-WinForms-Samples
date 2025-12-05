@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Drawing;
 using System.Drawing.Text;
@@ -99,6 +99,7 @@ namespace WordCreator
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.btSimple = new System.Windows.Forms.Button();
             this._btRead = new System.Windows.Forms.Button();
             this._tbPicture = new System.Windows.Forms.Button();

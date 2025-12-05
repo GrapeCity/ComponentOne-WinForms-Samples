@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GroupPanelDemo));
-            this.groupPanel = new C1.Win.C1FlexGrid.C1FlexGridGroupPanel();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.groupPanel = new C1.Win.FlexGrid.C1FlexGridGroupPanel();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             this.tableLayoutPanel.SuspendLayout();
@@ -47,13 +47,13 @@
             // flexGrid
             // 
             this.flexGrid.BackColor = System.Drawing.Color.White;
-            this.flexGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.flexGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.flexGrid.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.Rows.DefaultSize = 22;
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 0;
             this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
@@ -91,8 +91,8 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridGroupPanel groupPanel;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGridGroupPanel groupPanel;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
     }
 }

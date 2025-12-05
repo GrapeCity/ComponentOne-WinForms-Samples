@@ -25,7 +25,7 @@ using System.Resources;
 using System.Reflection;
 using System.Globalization;
 
-namespace C1.Win.C1FlexGrid.Classic
+namespace C1.Win.FlexGrid.Classic
 {
     //----------------------------------------------------------
     #region ** enumerations
@@ -243,7 +243,7 @@ namespace C1.Win.C1FlexGrid.Classic
     ToolboxBitmap(typeof(C1FlexGridClassic), "C1FlexGridClassic.png")
 	]
 	public class C1FlexGridClassic :
-		C1.Win.C1FlexGrid.C1FlexGrid
+		C1.Win.FlexGrid.C1FlexGrid
 	{
         //----------------------------------------------------------
         #region ** member variables
@@ -1687,13 +1687,13 @@ namespace C1.Win.C1FlexGrid.Classic
 		{
 			get
 			{
-				return base.Styles.Normal.Display == C1.Win.C1FlexGrid.DisplayEnum.Overlay;
+				return base.Styles.Normal.Display == C1.Win.FlexGrid.DisplayEnum.Overlay;
 			}
 			set 
 			{
 				base.Styles.Normal.Display = (value)
-					? C1.Win.C1FlexGrid.DisplayEnum.Overlay
-					: C1.Win.C1FlexGrid.DisplayEnum.Stack;
+					? C1.Win.FlexGrid.DisplayEnum.Overlay
+					: C1.Win.FlexGrid.DisplayEnum.Stack;
 			}
 		}
 		[Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]

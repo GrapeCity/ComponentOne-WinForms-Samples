@@ -14,6 +14,7 @@ using System.IO;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel;
 
 
 namespace C1.Util.Licensing
@@ -87,6 +88,7 @@ namespace C1.Util.Licensing
             _txtVersionInfo.Text += additionalInfo;
         }
 
+        [DefaultValue("")]
         public string Info
         {
             get { return _txtVersionInfo.Text; }

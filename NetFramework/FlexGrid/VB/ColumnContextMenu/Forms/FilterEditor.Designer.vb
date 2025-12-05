@@ -28,7 +28,7 @@ Partial Class FilterEditor
         Me.btnCancel = New C1.Win.C1Input.C1Button()
         Me.panel1 = New System.Windows.Forms.Panel()
         Me.btnClear = New C1.Win.C1Input.C1Button()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.C1FilterEditor1 = New C1.Win.DataFilter.C1FilterEditor()
         CType(Me.btnOk, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCancel, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,5 +120,5 @@ Partial Class FilterEditor
     Private WithEvents panel1 As Panel
     Private WithEvents btnClear As C1.Win.C1Input.C1Button
     Private WithEvents C1FilterEditor1 As C1.Win.DataFilter.C1FilterEditor
-    Private WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using MultiSelectExplorer.Samples.Filter;
+using MultiSelectExplorer.Samples.Event;
+using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Windows.Forms;
+using MultiSelectExplorer.Samples.Designer;
+using MultiSelectExplorer.Properties;
 
 namespace MultiSelectExplorer.Samples
 {
@@ -29,7 +32,7 @@ namespace MultiSelectExplorer.Samples
         public SampleItem(string name, string title, string desc, Type sampleType)
         {
             if (sampleType == null)
-                throw new ArgumentException("sampleType can't be null");
+                throw new ArgumentException(Resources.SampleTypeNull, nameof(sampleType));
             Name = name;
             Title = title;
             Description = desc;
@@ -69,11 +72,27 @@ namespace MultiSelectExplorer.Samples
             {
                new SampleItem()
                {
-                    Name = "Overview", Description = "This view shows the basic MultiSelect and TagEditor features.", Title = "Overview", SampleType = typeof(Overview)
+                    Name = Resources.OverviewTxt, Description = Resources.OverviewDesc, Title = Resources.OverviewTxt, SampleType = typeof(Overview)
                },
                new SampleItem()
                {
-                    Name = "MailMessageForm", Description = "This sample illustrates one case of using C1MultiSelect and C1TagEditor controls.", Title = "MailMessage form", SampleType = typeof(MailMessageForm)
+                    Name = Resources.MailMessageFormTxt, Description = Resources.MailMessageFormDesc, Title = Resources.MailMessageFormTxt, SampleType = typeof(MailMessageForm)
+               },
+               new SampleItem()
+               {
+                    Name = Resources.FilterTxt, Description = Resources.FilterDesc, Title = Resources.FilterTxt, SampleType = typeof(FilterControl)
+               },
+               new SampleItem()
+               {
+                    Name = Resources.EventTxt, Description = Resources.EventDesc, Title = Resources.EventTxt, SampleType = typeof(EventControl)
+               },
+               new SampleItem()
+               {
+                    Name = Resources.ThemeTxt, Description = Resources.ThemeDesc, Title = Resources.ThemeTxt, SampleType = typeof(ThemeControl)
+               },
+               new SampleItem()
+               {
+                    Name = Resources.DesignerTxt, Description = Resources.DesignerDesc, Title = Resources.DesignerTxt, SampleType = typeof(DesignerControl)
                },
             };
         }

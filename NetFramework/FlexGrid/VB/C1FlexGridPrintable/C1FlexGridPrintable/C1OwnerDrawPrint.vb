@@ -2,9 +2,9 @@ Imports System
 Imports System.Drawing
 Imports System.Drawing.Printing
 Imports C1.C1Preview
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
-Namespace C1.Win.C1FlexGrid
+Namespace C1.Win.FlexGrid
     ''' <summary>
     ''' Object to manage custom page headers and footers when printing and previewing.
     ''' </summary>

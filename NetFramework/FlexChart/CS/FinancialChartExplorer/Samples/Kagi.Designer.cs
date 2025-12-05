@@ -34,15 +34,15 @@ namespace FinancialChartExplorer.Samples
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
+            this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.reversalAmount1 = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
-            this.c1RangeMode = new C1.Win.C1Input.C1ComboBox();
+            this.c1RangeMode = new C1.Win.Input.C1ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.c1DataFields = new C1.Win.C1Input.C1ComboBox();
+            this.c1DataFields = new C1.Win.Input.C1ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
@@ -101,7 +101,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.AllowSpinLoop = false;
             this.c1ComboBox1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1ComboBox1.GapHeight = 5;
-            this.c1ComboBox1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1ComboBox1.ItemsDisplayMember = "Name";
             this.c1ComboBox1.ItemsValueMember = "Symbol";
             this.c1ComboBox1.Location = new System.Drawing.Point(96, 3);
@@ -110,7 +109,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.TabIndex = 2;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.c1ComboBox1.TextDetached = true;
             this.c1ComboBox1.TranslateValue = true;
             this.c1ComboBox1.Value = "";
             this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
@@ -221,8 +219,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // reversalAmount1
             // 
-            this.reversalAmount1.GapHeight = 0;
-            this.reversalAmount1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.reversalAmount1.Location = new System.Drawing.Point(186, 18);
             this.reversalAmount1.Name = "reversalAmount1";
             this.reversalAmount1.Size = new System.Drawing.Size(65, 26);
@@ -234,7 +230,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.reversalAmount1.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.reversalAmount1.ValueChanged += new System.EventHandler(this.reversalAmount1_ValueChanged);
             // 
             // label3
@@ -254,14 +249,12 @@ namespace FinancialChartExplorer.Samples
             this.c1RangeMode.AllowSpinLoop = false;
             this.c1RangeMode.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1RangeMode.GapHeight = 5;
-            this.c1RangeMode.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1RangeMode.Location = new System.Drawing.Point(3, 51);
             this.c1RangeMode.Name = "c1RangeMode";
             this.c1RangeMode.Size = new System.Drawing.Size(109, 36);
             this.c1RangeMode.TabIndex = 6;
             this.c1RangeMode.Tag = null;
             this.c1RangeMode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.c1RangeMode.TextDetached = true;
             this.c1RangeMode.Value = "";
             this.c1RangeMode.SelectedIndexChanged += new System.EventHandler(this.c1RangeMode_SelectedIndexChanged);
             // 
@@ -282,7 +275,6 @@ namespace FinancialChartExplorer.Samples
             this.c1DataFields.AllowSpinLoop = false;
             this.c1DataFields.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1DataFields.GapHeight = 5;
-            this.c1DataFields.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1DataFields.Location = new System.Drawing.Point(257, 51);
             this.c1DataFields.Name = "c1DataFields";
             this.c1DataFields.Size = new System.Drawing.Size(99, 36);
@@ -327,9 +319,9 @@ namespace FinancialChartExplorer.Samples
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private C1.Win.C1Input.C1ComboBox c1ComboBox1;
-        private C1.Win.C1Input.C1ComboBox c1RangeMode;
-        private C1.Win.C1Input.C1ComboBox c1DataFields;
+        private C1.Win.Input.C1ComboBox c1ComboBox1;
+        private C1.Win.Input.C1ComboBox c1RangeMode;
+        private C1.Win.Input.C1ComboBox c1DataFields;
         private C1NumericEditEx reversalAmount1;
     }
 }

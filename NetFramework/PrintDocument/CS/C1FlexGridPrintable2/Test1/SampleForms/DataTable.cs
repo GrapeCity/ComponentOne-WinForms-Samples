@@ -17,7 +17,7 @@ namespace DataTableSample
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.DataGrid dataGrid1;
 		private System.Windows.Forms.Splitter splitter1;
-		private C1.Win.C1FlexGrid.C1FlexGrid flex;
+		private C1.Win.FlexGrid.C1FlexGrid flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -63,7 +63,7 @@ namespace DataTableSample
             this.button2 = new System.Windows.Forms.Button();
             this.dataGrid1 = new System.Windows.Forms.DataGrid();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();

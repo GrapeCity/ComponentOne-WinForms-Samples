@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.ribbon = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -92,12 +93,12 @@
             this.ribbonButtonClearRulesFromAllCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
             this.ribbonComboBoxTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.commandDock = new C1.Win.C1Command.C1CommandDock();
-            this.dockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.dockingTabPageConditionalFormatting = new C1.Win.C1Command.C1DockingTabPage();
+            this.commandDock = new C1.Win.Command.C1CommandDock();
+            this.dockingTab = new C1.Win.Command.C1DockingTab();
+            this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
             this.rulesManager = new C1.Win.RulesManager.C1RulesManager();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.themeController = new C1.Win.C1Themes.C1ThemeController();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
+            this.themeController = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).BeginInit();
             this.commandDock.SuspendLayout();
@@ -659,17 +660,17 @@
             this.dockingTab.ShowSingleTab = false;
             this.dockingTab.Size = new System.Drawing.Size(300, 675);
             this.dockingTab.TabIndex = 0;
-            this.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
             this.themeController.SetTheme(this.dockingTab, "(default)");
             // 
             // dockingTabPageConditionalFormatting
             // 
             this.dockingTabPageConditionalFormatting.CaptionText = "Conditional Formatting";
             this.dockingTabPageConditionalFormatting.CaptionVisible = true;
-            this.dockingTabPageConditionalFormatting.CloseTabBehavior = C1.Win.C1Command.CloseTabBehavior.Hide;
+            this.dockingTabPageConditionalFormatting.CloseTabBehavior = C1.Win.Command.CloseTabBehavior.Hide;
             this.dockingTabPageConditionalFormatting.Controls.Add(this.rulesManager);
             this.dockingTabPageConditionalFormatting.Location = new System.Drawing.Point(4, 1);
             this.dockingTabPageConditionalFormatting.Name = "dockingTabPageConditionalFormatting";
@@ -691,7 +692,7 @@
             // 
             // flexGrid
             // 
-            this.flexGrid.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
+            this.flexGrid.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.flexGrid.BackColor = System.Drawing.Color.White;
             this.rulesManager.SetC1RulesManager(this.flexGrid, this.rulesManager);
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
@@ -699,7 +700,7 @@
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Location = new System.Drawing.Point(0, 77);
             this.flexGrid.Name = "flexGrid";
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(792, 675);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
@@ -797,12 +798,12 @@
         private C1.Win.Ribbon.RibbonMenu ribbonMenuClearRules;
         private C1.Win.Ribbon.RibbonButton ribbonButtonClearRulesFromSelectedCells;
         private C1.Win.Ribbon.RibbonButton ribbonButtonClearRulesFromAllCells;
-        private C1.Win.C1Themes.C1ThemeController themeController;
-        private C1.Win.C1Command.C1CommandDock commandDock;
-        private C1.Win.C1Command.C1DockingTab dockingTab;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPageConditionalFormatting;
+        private C1.Win.Themes.C1ThemeController themeController;
+        private C1.Win.Command.C1CommandDock commandDock;
+        private C1.Win.Command.C1DockingTab dockingTab;
+        private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private C1.Win.Ribbon.RibbonComboBox ribbonComboBoxTheme;
     }
 }

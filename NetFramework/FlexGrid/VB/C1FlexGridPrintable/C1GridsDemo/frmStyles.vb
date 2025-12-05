@@ -34,7 +34,7 @@ Public Class frmStyles
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents tbrOpacityHighlight As System.Windows.Forms.TrackBar
     Friend WithEvents tbrOpacity As System.Windows.Forms.TrackBar
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
@@ -50,7 +50,7 @@ Public Class frmStyles
         Me.lbl1 = New System.Windows.Forms.Label
         Me.pGrid = New System.Windows.Forms.PropertyGrid
         Me.lbl2 = New System.Windows.Forms.Label
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.cmbSkins = New System.Windows.Forms.ComboBox
         Me.chkWallpaper = New System.Windows.Forms.CheckBox
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
@@ -253,16 +253,16 @@ Public Class frmStyles
 
         ' set default look and feel
         flex.BackColor = SystemColors.Window
-        flex.Styles.Alternate.Clear(C1.Win.C1FlexGrid.StyleElementFlags.Font)
+        flex.Styles.Alternate.Clear(C1.Win.FlexGrid.StyleElementFlags.Font)
         flex.Styles.Highlight.ForeColor = Color.Black
         flex.Styles.Highlight.BackColor = Color.FromArgb(tbrOpacityHighlight.Value, 255, 255, 192)
         flex.Styles.Normal.Margins.Right = 2
-        flex.Styles.Normal.Border.Style = C1.Win.C1FlexGrid.BorderStyleEnum.Flat
+        flex.Styles.Normal.Border.Style = C1.Win.FlexGrid.BorderStyleEnum.Flat
         flex.Styles.Normal.Border.Color = SystemColors.Control
         flex.Styles.Normal.BackColor() = Color.FromArgb(tbrOpacity.Value, 0, 125, 192)
 
-        flex.Styles.Focus.Clear(C1.Win.C1FlexGrid.StyleElementFlags.Font)
-        flex.Styles.Highlight.Clear(C1.Win.C1FlexGrid.StyleElementFlags.Font)
+        flex.Styles.Focus.Clear(C1.Win.FlexGrid.StyleElementFlags.Font)
+        flex.Styles.Highlight.Clear(C1.Win.FlexGrid.StyleElementFlags.Font)
 
         ' load data
         flex.Rows.Count = 1
@@ -282,10 +282,10 @@ Public Class frmStyles
         flex.AddItem("USA|Gold|Import|70")
 
         ' create custom styles
-        Dim s As C1.Win.C1FlexGrid.CellStyle
+        Dim s As C1.Win.FlexGrid.CellStyle
         s = flex.Styles.Add("Country")
         s.BackColor = Color.BlanchedAlmond
-        s.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter
+        s.TextAlign = C1.Win.FlexGrid.TextAlignEnum.CenterCenter
 
         ' create SmallNumber style
         s = flex.Styles.Add("SmallNumber")
@@ -369,8 +369,8 @@ Public Class frmStyles
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim printer As C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable
-        printer = New C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable(flex)
+        Dim printer As C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable
+        printer = New C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable(flex)
         printer.PrintPreview()
     End Sub
 End Class

@@ -53,7 +53,7 @@ using System.Collections;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace TemplateRow
 {
@@ -74,7 +74,7 @@ namespace TemplateRow
 
 		// ** ctor
 
-		public TemplateRow(C1.Win.C1FlexGrid.C1FlexGrid flex)
+		public TemplateRow(C1.Win.FlexGrid.C1FlexGrid flex)
 		{
 			// save reference to grid
 			_flex = flex;
@@ -86,7 +86,7 @@ namespace TemplateRow
 			// add template row
 			_row = _flex.Rows.Fixed;
 			_flex.Rows.Fixed++;
-			_flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			_flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 
 			// customize template row style
 			// note: customize margins to align checkboxes correctly in template cells,
@@ -181,7 +181,7 @@ namespace TemplateRow
 		{
 			if (e.Row == _row && e.Col == _flex.Cols.Fixed - 1)
 			{
-				e.Style.ImageAlign = C1.Win.C1FlexGrid.ImageAlignEnum.CenterCenter;
+				e.Style.ImageAlign = C1.Win.FlexGrid.ImageAlignEnum.CenterCenter;
 				e.Style.Render(e.Graphics, e.Bounds, _dirty ? _bmpAdd : _bmpBlank);
 				e.Handled = true;
 			}

@@ -37,6 +37,7 @@
             C1.Win.Chart.FlexPieSlice flexPieSlice3 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice4 = new C1.Win.Chart.FlexPieSlice();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1DashboardLayout1 = new C1.Win.Layout.C1DashboardLayout();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -48,19 +49,19 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.splitpanelSales = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.splitpanelSales = new C1.Win.SplitContainer.C1SplitterPanel();
             this.c1FlexGrid1 = new DashboardLayoutDemo.Controls.DemoFlexGrid();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.flexChart1 = new DashboardLayoutDemo.Controls.DemoFlexChart();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.flexPie1 = new DashboardLayoutDemo.Controls.DemoFlexPie();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.c1TrueDBGrid1 = new DashboardLayoutDemo.Controls.DemoTrueDBGrid();
-            this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.labelSales = new DashboardLayoutDemo.Controls.DemoLabel();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1DashboardLayout1)).BeginInit();
             this.c1DashboardLayout1.FlowLayoutControl.SuspendLayout();
             this.c1DashboardLayout1.GridLayoutControl.SuspendLayout();
@@ -168,7 +169,7 @@
             this.c1DashboardLayout1.SplitLayoutControl.Size = new System.Drawing.Size(1016, 517);
             this.c1DashboardLayout1.SplitLayoutControl.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(166)))), ((int)(((byte)(194)))));
             this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;
-            this.c1DashboardLayout1.SplitLayoutControl.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue;
+            this.c1DashboardLayout1.SplitLayoutControl.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;
             this.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = false;
             this.c1DashboardLayout1.TabIndex = 2;
             this.c1DashboardLayout1.Text = "c1DashboardLayout1";
@@ -319,7 +320,7 @@
             // 
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel1, "");
             this.c1SplitterPanel1.Controls.Add(this.c1SplitContainer1);
-            this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel1, "d01255ea-1089-4fb2-bec2-cfb3e5874880");
             this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 0);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
@@ -343,7 +344,7 @@
             this.c1SplitContainer1.Size = new System.Drawing.Size(486, 497);
             this.c1SplitContainer1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(166)))), ((int)(((byte)(194)))));
             this.c1SplitContainer1.TabIndex = 0;
-            this.c1SplitContainer1.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue;
+            this.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;
             this.c1SplitContainer1.UseParentVisualStyle = false;
             // 
             // splitpanelSales
@@ -366,7 +367,7 @@
             this.c1FlexGrid1.Location = new System.Drawing.Point(10, 10);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 19;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(466, 205);
             this.c1FlexGrid1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
@@ -481,7 +482,7 @@
             // 
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel3, "Customers");
             this.c1SplitterPanel3.Controls.Add(this.c1TrueDBGrid1);
-            this.c1SplitterPanel3.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel3.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel3.Height = 257;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel3, "d3c1bda0-485f-487b-8542-b073f9015f7b");
             this.c1SplitterPanel3.Location = new System.Drawing.Point(510, 281);
@@ -494,7 +495,7 @@
             // c1TrueDBGrid1
             // 
             this.c1TrueDBGrid1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Form;
+            this.c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Form;
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TrueDBGrid1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
@@ -515,7 +516,7 @@
             // 
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel5, "Total Sales");
             this.c1SplitterPanel5.Controls.Add(this.labelSales);
-            this.c1SplitterPanel5.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
+            this.c1SplitterPanel5.Dock = C1.Win.SplitContainer.PanelDockStyle.Right;
             this.c1SplitterPanel5.Height = 257;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel5, "90db4822-a7cd-4d1a-b7f5-b20177de2e58");
             this.c1SplitterPanel5.Location = new System.Drawing.Point(765, 281);
@@ -550,7 +551,7 @@
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.c1ThemeController1.SetTheme(this, "(default)");            
-            this.DemoThemeChanged += new System.EventHandler<C1.Win.C1Themes.ThemeEventArgs>(this.MainForm_DemoThemeChanged);
+            this.DemoThemeChanged += new System.EventHandler<C1.Win.Themes.ThemeEventArgs>(this.MainForm_DemoThemeChanged);
             this.ToolIconAppearanceChanged += new System.EventHandler<DashboardLayoutDemo.Controls.ToolIconAppearanceEventArgs>(this.MainForm_ToolIconAppearanceChanged);
             this.ApplyLayoutClicked += new System.EventHandler<DashboardLayoutDemo.Controls.FilePathEventArgs>(this.MainForm_ApplyLayoutClicked);
             this.SaveLayoutClicked += new System.EventHandler<DashboardLayoutDemo.Controls.FilePathEventArgs>(this.MainForm_SaveLayoutClicked);
@@ -586,14 +587,14 @@
         #endregion
 
         private C1.Win.Layout.C1DashboardLayout c1DashboardLayout1;        
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel splitpanelSales;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+        private C1.Win.SplitContainer.C1SplitterPanel splitpanelSales;
         private Controls.DemoFlexGrid c1FlexGrid1;
         private Controls.DemoFlexPie flexPie1;
         private Controls.DemoFlexChart flexChart1;
         private Controls.DemoLabel labelSales;
         private Controls.DemoTrueDBGrid c1TrueDBGrid1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
@@ -604,10 +605,10 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
     }
 }

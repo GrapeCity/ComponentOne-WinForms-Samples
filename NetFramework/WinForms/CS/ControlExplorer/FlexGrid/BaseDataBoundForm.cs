@@ -48,7 +48,7 @@ namespace ControlExplorer.FlexGrid
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,6 +75,6 @@ namespace ControlExplorer.FlexGrid
         }
         #endregion
 
-        protected C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        protected C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

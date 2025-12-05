@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing.Printing;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace Win_Flex_ExcelLikeCopy
 {
@@ -84,7 +84,7 @@ namespace Win_Flex_ExcelLikeCopy
             if (fg.Cursor == Cursors.Cross)
                 if (ModifierKeys == Keys.Control)
                 {
-                    C1.Win.C1FlexGrid.CellRange rg = fg.Selection;
+                    C1.Win.FlexGrid.CellRange rg = fg.Selection;
                     Object data = startCell.Data;
 
                     if (data != null)
@@ -207,7 +207,7 @@ namespace Win_Flex_ExcelLikeCopy
                 }
                 else
                 {
-                    C1.Win.C1FlexGrid.CellRange rg = fg.Selection;
+                    C1.Win.FlexGrid.CellRange rg = fg.Selection;
                     rg.Data = startCell.Data;
                 }
         }
@@ -275,7 +275,7 @@ namespace Win_Flex_ExcelLikeCopy
         /// Show Border Margins on the Cells 
         /// covered by the Cross cursor.
         /// </summary>
-        void fg_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        void fg_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (fg.IsCellHighlighted(e.Row, e.Col))
             {

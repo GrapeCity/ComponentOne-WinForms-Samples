@@ -26,10 +26,10 @@
         Me.btnAdd = New C1.Win.C1Input.C1Button()
         Me.btnRemove = New C1.Win.C1Input.C1Button()
         Me.btnSetAsApplicationTheme = New C1.Win.C1Input.C1Button()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.c1Label1 = New C1.Win.C1Input.C1Label()
         Me.tbApplicationTheme = New C1.Win.C1Input.C1TextBox()
-        Me.ctdbgThemes = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.ctdbgThemes = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.openFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.C1Label2 = New C1.Win.C1Input.C1Label()
         Me.C1Label3 = New C1.Win.C1Input.C1Label()
@@ -130,7 +130,7 @@
         Me.ctdbgThemes.PreviewInfo.ZoomFactor = 75.0R
         Me.ctdbgThemes.PrintInfo.PageSettings = CType(resources.GetObject("ctdbgThemes.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
         Me.ctdbgThemes.RowDivider.Color = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ctdbgThemes.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+        Me.ctdbgThemes.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.[Single]
         Me.ctdbgThemes.RowHeight = 15
         Me.ctdbgThemes.RowSubDividerColor = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ctdbgThemes.Size = New System.Drawing.Size(311, 265)
@@ -213,11 +213,11 @@
     Friend WithEvents btnAdd As C1.Win.C1Input.C1Button
     Friend WithEvents btnRemove As C1.Win.C1Input.C1Button
     Friend WithEvents btnSetAsApplicationTheme As C1.Win.C1Input.C1Button
-    Friend WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents c1Label1 As C1.Win.C1Input.C1Label
     Friend WithEvents tbApplicationTheme As C1.Win.C1Input.C1TextBox
     Friend WithEvents openFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Private WithEvents ctdbgThemes As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Private WithEvents ctdbgThemes As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents C1Label2 As C1.Win.C1Input.C1Label
     Friend WithEvents C1Label3 As C1.Win.C1Input.C1Label
 End Class

@@ -23,8 +23,8 @@ Partial Class CustomSample
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CustomSample))
-        Me.flexGrid = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
+        Me.flexGrid = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
         CType(Me.flexGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.themeController, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -35,17 +35,17 @@ Partial Class CustomSample
         Me.flexGrid.BackColor = System.Drawing.Color.White
         Me.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:"
         Me.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.flexGrid.EditOptions = CType((((((C1.Win.C1FlexGrid.EditFlags.AutoSearch Or C1.Win.C1FlexGrid.EditFlags.CycleOnDoubleClick) _
-            Or C1.Win.C1FlexGrid.EditFlags.MultiCheck) _
-            Or C1.Win.C1FlexGrid.EditFlags.UseNumericEditor) _
-            Or C1.Win.C1FlexGrid.EditFlags.ExitOnLeftRightKeys) _
-            Or C1.Win.C1FlexGrid.EditFlags.EditOnRequest), C1.Win.C1FlexGrid.EditFlags)
+        Me.flexGrid.EditOptions = CType((((((C1.Win.FlexGrid.EditFlags.AutoSearch Or C1.Win.FlexGrid.EditFlags.CycleOnDoubleClick) _
+            Or C1.Win.FlexGrid.EditFlags.MultiCheck) _
+            Or C1.Win.FlexGrid.EditFlags.UseNumericEditor) _
+            Or C1.Win.FlexGrid.EditFlags.ExitOnLeftRightKeys) _
+            Or C1.Win.FlexGrid.EditFlags.EditOnRequest), C1.Win.FlexGrid.EditFlags)
         Me.flexGrid.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.flexGrid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.flexGrid.Location = New System.Drawing.Point(0, 0)
         Me.flexGrid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.flexGrid.Name = "flexGrid"
-        Me.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.flexGrid.Size = New System.Drawing.Size(700, 523)
         Me.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo")
         Me.flexGrid.TabIndex = 0
@@ -69,6 +69,6 @@ Partial Class CustomSample
 
     End Sub
 
-    Friend WithEvents flexGrid As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents themeController As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents flexGrid As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents themeController As C1.Win.Themes.C1ThemeController
 End Class

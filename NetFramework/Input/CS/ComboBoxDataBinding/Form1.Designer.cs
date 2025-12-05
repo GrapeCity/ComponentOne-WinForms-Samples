@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
             this.deliveryBindingSource = new System.Windows.Forms.BindingSource(this.components);

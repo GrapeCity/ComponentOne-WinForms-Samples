@@ -141,7 +141,7 @@
   <data name="inputLabel3.Text" xml:space="preserve">
     <value>Check at least one box:</value>
   </data>
-  <assembly alias="C1.Win.C1InputPanel.4.5.2" name="C1.Win.C1InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.InputPanel.4.5.2" name="C1.Win.InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <data name="inputLabel12.Text" xml:space="preserve">
     <value>Enter at least 50 characters:</value>
   </data>

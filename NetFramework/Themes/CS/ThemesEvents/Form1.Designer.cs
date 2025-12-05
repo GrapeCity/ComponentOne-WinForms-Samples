@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Label1 = new C1.Win.C1Input.C1Label();
-            this.ctdbgThemes = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.ctdbgThemes = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.c1Label2 = new C1.Win.C1Input.C1Label();
             this.lblApplicationTheme = new C1.Win.C1Input.C1Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ctdbgThemes)).BeginInit();
@@ -78,18 +79,18 @@
             this.ctdbgThemes.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.ctdbgThemes.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.ctdbgThemes.PreviewInfo.ZoomFactor = 75D;
-            this.ctdbgThemes.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.ctdbgThemes.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.ctdbgThemes.PrintInfo.MeasurementPrinterName = null;
             this.ctdbgThemes.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("ctdbgThemes.PrintInfo.PageSettings")));
             this.ctdbgThemes.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(87)))), ((int)(((byte)(70)))));
-            this.ctdbgThemes.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.ctdbgThemes.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.ctdbgThemes.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(87)))), ((int)(((byte)(70)))));
             this.ctdbgThemes.Size = new System.Drawing.Size(326, 345);
             this.ctdbgThemes.TabIndex = 1;
             this.ctdbgThemes.Text = "c1TrueDBGrid1";
             this.c1ThemeController1.SetTheme(this.ctdbgThemes, "(default)");
             this.ctdbgThemes.UseCompatibleTextRendering = false;
-            this.ctdbgThemes.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Custom;
+            this.ctdbgThemes.VisualStyle = C1.Win.TrueDBGrid.VisualStyle.Custom;
             this.ctdbgThemes.DoubleClick += new System.EventHandler(this.ctdbgThemes_DoubleClick);
             this.ctdbgThemes.Resize += new System.EventHandler(this.ctdbgThemes_Resize);
             this.ctdbgThemes.PropBag = resources.GetString("ctdbgThemes.PropBag");
@@ -147,7 +148,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.ObjectThemeApplied += new C1.Win.C1Themes.ObjectThemeEventHandler(this.c1ThemeController1_ObjectThemeApplied);
+            this.c1ThemeController1.ObjectThemeApplied += new C1.Win.Themes.ObjectThemeEventHandler(this.c1ThemeController1_ObjectThemeApplied);
             // 
             // tableLayoutPanel1
             // 
@@ -200,11 +201,11 @@
         #endregion
 
         private C1.Win.C1Input.C1Label c1Label1;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid ctdbgThemes;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid ctdbgThemes;
         private C1.Win.C1Input.C1Label c1Label2;
         private C1.Win.C1Input.C1Label lblApplicationTheme;
         private System.Windows.Forms.TextBox textBox1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

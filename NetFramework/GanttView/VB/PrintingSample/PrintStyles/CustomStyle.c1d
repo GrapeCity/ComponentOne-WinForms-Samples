@@ -5,7 +5,7 @@
 #if CLR5
         C1.Win.GanttView.C1GanttView ganttView = Document.Tags["C1GanttView"].Value as  C1.Win.GanttView.C1GanttView;
 #else
-        C1.Win.C1GanttView.C1GanttView ganttView = Document.Tags["C1GanttView"].Value as  C1.Win.C1GanttView.C1GanttView;
+        C1.Win.GanttView.C1GanttView ganttView = Document.Tags["C1GanttView"].Value as  C1.Win.GanttView.C1GanttView;
 #endif        
         
             RenderTable notesTable = new RenderTable();
@@ -205,7 +205,7 @@
 #if CLR5
             C1.Win.GanttView
 #else
-            C1.Win.C1GanttView
+            C1.Win.GanttView
 #endif
 </System.String>
     </Namespaces>

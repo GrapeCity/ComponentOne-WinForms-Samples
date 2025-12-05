@@ -31,9 +31,9 @@ using System.Linq;
 
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.Localization;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Util.Licensing;
 
 using C1.Report;
@@ -732,7 +732,7 @@ namespace FlexReportDesignerApp
             var undo = _flexDesigner.Undo_CreateSavedState();
 
             var printerSettings = new PrinterSettings();
-            var c1PageSettings = _flexDesigner.Report.PageSettings as C1.Win.C1Document.C1PageSettings;
+            var c1PageSettings = _flexDesigner.Report.PageSettings as C1.Win.Document.C1PageSettings;
             var pageSettings = c1PageSettings.ToPageSettings(printerSettings);
             using (var pdoc = _makePageSettingsPrintDocument(pageSettings, printerSettings))
             using (var psd = new PageSetupDialog())

@@ -6,7 +6,7 @@ Imports System.Windows.Forms
 Imports System.Data
 Imports System.Windows.Forms.Control
 
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 Namespace CustomEditor
     Public Class Form1
         Inherits System.Windows.Forms.Form
@@ -39,9 +39,9 @@ Namespace CustomEditor
         'NOTE: The following procedure is required by the Windows Form Designer
         'It can be modified imports the Windows Form Designer.  
         'Do not modify it imports the code editor.
-        Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+        Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
         <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-            Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+            Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
             CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
@@ -87,7 +87,7 @@ Namespace CustomEditor
         End Sub
 
         'use custom editor to edit column 1
-        Private Sub _flex_StartEdit(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _flex.StartEdit
+        Private Sub _flex_StartEdit(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _flex.StartEdit
             If e.Col = 1 Then
                 'start editing the cell with the custom editor
                 _myEditor.StartEditing(e.Row, e.Col)
@@ -98,7 +98,7 @@ Namespace CustomEditor
         End Sub
 
         'if the custom editor is visible, make it follow the cell being edited
-        Private Sub _flex_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles _flex.AfterScroll
+        Private Sub _flex_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles _flex.AfterScroll
             If _myEditor.Visible Then
                 _myEditor.UpdatePosition()
             End If

@@ -114,12 +114,12 @@
             // 
             // pivotGrid
             // 
-            this.pivotGrid.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
-            this.pivotGrid.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Default;
+            this.pivotGrid.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
+            this.pivotGrid.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Default;
             this.pivotGrid.ColumnInfo = "1,1,0,0,0,125,Columns:0{Width:125;Caption:\" \";}\t";
             this.pivotGrid.DataSource = this.pivotPanel;
             this.pivotGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pivotGrid.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.pivotGrid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.pivotGrid.Location = new System.Drawing.Point(0, 0);
             this.pivotGrid.Name = "pivotGrid";
             this.pivotGrid.Rows.Count = 1;

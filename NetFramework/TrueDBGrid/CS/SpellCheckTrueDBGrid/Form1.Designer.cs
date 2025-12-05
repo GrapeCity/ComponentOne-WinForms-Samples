@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
@@ -47,13 +47,14 @@
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(240, 150);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.BeforeRowColChange += new C1.Win.C1TrueDBGrid.CancelEventHandler(this.c1TrueDBGrid1_BeforeRowColChange);
-            this.c1TrueDBGrid1.AfterColEdit += new C1.Win.C1TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_AfterColEdit);
-            this.c1TrueDBGrid1.ColEdit += new C1.Win.C1TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_ColEdit);
+            this.c1TrueDBGrid1.BeforeRowColChange += new C1.Win.TrueDBGrid.CancelEventHandler(this.c1TrueDBGrid1_BeforeRowColChange);
+            this.c1TrueDBGrid1.AfterColEdit += new C1.Win.TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_AfterColEdit);
+            this.c1TrueDBGrid1.ColEdit += new C1.Win.TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_ColEdit);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // button1
@@ -77,6 +78,7 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.c1TrueDBGrid1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).EndInit();
@@ -88,8 +90,8 @@
 
         #endregion
 
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
 

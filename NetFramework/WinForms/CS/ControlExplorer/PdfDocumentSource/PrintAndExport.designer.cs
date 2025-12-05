@@ -35,7 +35,7 @@
             this.cbAction = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExecute = new System.Windows.Forms.Button();
-            this.c1PdfDocumentSource1 = new C1.Win.C1Document.C1PdfDocumentSource(this.components);
+            this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -137,7 +137,7 @@
         private System.Windows.Forms.ComboBox cbAction;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnExecute;
-        private C1.Win.C1Document.C1PdfDocumentSource c1PdfDocumentSource1;
+        private C1.Win.Document.C1PdfDocumentSource c1PdfDocumentSource1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;

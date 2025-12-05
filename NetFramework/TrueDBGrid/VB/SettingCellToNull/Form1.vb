@@ -30,7 +30,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
@@ -38,7 +38,7 @@ Public Class Form1
     Friend WithEvents DataSet11 As SettingCellToNull.DataSet1
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         Me.DataSet11 = New SettingCellToNull.DataSet1
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand
@@ -118,9 +118,9 @@ Public Class Form1
 
 
     ' this event is raised prior to the data being written to the underlying datasource
-    Private Sub c1TrueDBGrid1_BeforeColUpdate(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.BeforeColUpdateEventArgs) Handles C1TrueDBGrid1.BeforeColUpdate
+    Private Sub c1TrueDBGrid1_BeforeColUpdate(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.BeforeColUpdateEventArgs) Handles C1TrueDBGrid1.BeforeColUpdate
         ' e.ColIndex is the index in the grid's Column collection
-        Dim dc As C1.Win.C1TrueDBGrid.C1DataColumn = Me.c1TrueDBGrid1.Columns(e.ColIndex)
+        Dim dc As C1.Win.TrueDBGrid.C1DataColumn = Me.c1TrueDBGrid1.Columns(e.ColIndex)
         ' if we're on the "OrderDate" column with an empty string then set it to null
         If dc.DataField = "OrderDate" AndAlso dc.Text.Length = 0 Then
             e.OldValue = System.DBNull.Value

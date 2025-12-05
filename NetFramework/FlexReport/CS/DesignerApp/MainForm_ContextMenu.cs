@@ -30,11 +30,11 @@ using System.Linq;
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 using C1.Win.FlexReport;
 using Flex = C1.Win.FlexReport;
-using Doc = C1.Win.C1Document;
+using Doc = C1.Win.Document;
 using C1.Win.FlexReport.FlexDesigner;
 
 namespace FlexReportDesignerApp

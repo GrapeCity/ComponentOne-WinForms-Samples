@@ -2,7 +2,7 @@
 
 Namespace CustomFilters
 	Friend Class DateFilter
-		Implements C1.Win.C1FlexGrid.IC1ColumnFilter
+		Implements C1.Win.FlexGrid.IC1ColumnFilter
 		'-------------------------------------------------------------------------------
 		#Region "** fields"
 
@@ -43,26 +43,26 @@ Namespace CustomFilters
 		#Region "** IC1ColumnFilter Members"
 
 		' filter is active if range doesn't cover all represetabla dates.
-		Public ReadOnly Property IsActive() As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilter.IsActive
+		Public ReadOnly Property IsActive() As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilter.IsActive
 			Get
                 Return _min <> Date.MinValue OrElse _max <> Date.MaxValue
 			End Get
 		End Property
 
 		' reset filter.
-		Public Sub Reset() Implements C1.Win.C1FlexGrid.IC1ColumnFilter.Reset
+		Public Sub Reset() Implements C1.Win.FlexGrid.IC1ColumnFilter.Reset
 			_min = Date.MinValue
 			_max = Date.MaxValue
 		End Sub
 
 		' apply filter to a given date
-		Public Function Apply(ByVal value As Object) As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilter.Apply
+		Public Function Apply(ByVal value As Object) As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilter.Apply
 			Dim dt = CDate(value)
 			Return dt >= _min AndAlso dt <= _max
 		End Function
 
 		' return editor control for this filter
-		Public Function GetEditor() As C1.Win.C1FlexGrid.IC1ColumnFilterEditor Implements C1.Win.C1FlexGrid.IC1ColumnFilter.GetEditor
+		Public Function GetEditor() As C1.Win.FlexGrid.IC1ColumnFilterEditor Implements C1.Win.FlexGrid.IC1ColumnFilter.GetEditor
 			Return New DateFilterEditor()
 		End Function
 

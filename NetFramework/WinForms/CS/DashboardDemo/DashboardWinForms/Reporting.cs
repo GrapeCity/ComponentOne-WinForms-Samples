@@ -10,7 +10,7 @@ using C1.Win.FlexReport;
 using System.IO;
 using System.Reflection;
 using C1.Win.FlexViewer;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace DashboardWinForms
 {
@@ -63,7 +63,7 @@ namespace DashboardWinForms
             }
         }
 
-        private void c1DockingTab1_MeasureTab(object sender, C1.Win.C1Command.MeasureTabEventArgs e)
+        private void c1DockingTab1_MeasureTab(object sender, C1.Win.Command.MeasureTabEventArgs e)
         {
             var tabs = (C1DockingTab)sender;
             tabs.ItemSize = new Size(250, 50);

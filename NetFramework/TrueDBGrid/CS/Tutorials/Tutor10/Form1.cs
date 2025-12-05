@@ -12,7 +12,7 @@ namespace Tutorial10
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
@@ -58,7 +58,7 @@ namespace Tutorial10
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
 			this.dsContacts1 = new Tutorial10.DsContacts();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -79,36 +79,36 @@ namespace Tutorial10
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images2"))));
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images3"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 8);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(616, 168);
 			this.c1TrueDBGrid1.TabIndex = 0;
 			this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.C1TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
+			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
 			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"Name\" DataF" +
 				"ield=\"\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Level=\"0\" Captio" +
 				"n=\"FirstName\" DataField=\"FirstName\"><ValueItems /><GroupInfo /></C1DataColumn><C" +
 				"1DataColumn Level=\"0\" Caption=\"LastName\" DataField=\"LastName\"><ValueItems /><Gro" +
 				"upInfo /></C1DataColumn><C1DataColumn Level=\"0\" Caption=\"CustType\" DataField=\"Cu" +
 				"stType\"><ValueItems Presentation=\"ComboBox\" Translate=\"True\"><internalValues><Va" +
-				"lueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"1\" dispVal=\"Prospective\" /><" +
-				"ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"2\" dispVal=\"Normal\" /><Val" +
-				"ueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"3\" dispVal=\"Buyer\" /><ValueIt" +
-				"em type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"4\" dispVal=\"Distributor\" /><Value" +
-				"Item type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"5\" dispVal=\"Other\" /></internal" +
+				"lueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"1\" dispVal=\"Prospective\" /><" +
+				"ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"2\" dispVal=\"Normal\" /><Val" +
+				"ueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"3\" dispVal=\"Buyer\" /><ValueIt" +
+				"em type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"4\" dispVal=\"Distributor\" /><Value" +
+				"Item type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"5\" dispVal=\"Other\" /></internal" +
 				"Values></ValueItems><GroupInfo /></C1DataColumn><C1DataColumn Level=\"0\" Caption=" +
 				"\"ContactType\" DataField=\"ContactType\"><ValueItems CycleOnClick=\"True\" Translate=" +
-				"\"True\"><internalValues><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"0\"" +
-				" ImgIdx=\"1\" /><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"1\" ImgIdx=\"" +
-				"2\" /><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"2\" ImgIdx=\"3\" /></in" +
+				"\"True\"><internalValues><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"0\"" +
+				" ImgIdx=\"1\" /><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"1\" ImgIdx=\"" +
+				"2\" /><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"2\" ImgIdx=\"3\" /></in" +
 				"ternalValues></ValueItems><GroupInfo /></C1DataColumn><C1DataColumn Level=\"0\" Ca" +
 				"ption=\"CallBack\" DataField=\"Callback\"><ValueItems CycleOnClick=\"True\" Presentati" +
 				"on=\"CheckBox\" Translate=\"True\" /><GroupInfo /></C1DataColumn><C1DataColumn Level" +
@@ -116,13 +116,13 @@ namespace Tutorial10
 				"C1DataColumn><C1DataColumn Level=\"0\" Caption=\"UserCode\" DataField=\"UserCode\"><Va" +
 				"lueItems /><GroupInfo /></C1DataColumn><C1DataColumn Level=\"0\" Caption=\"Expr1\" D" +
 				"ataField=\"Expr1\"><ValueItems Presentation=\"ComboBox\" Translate=\"True\"><internalV" +
-				"alues><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"1\" dispVal=\"Prospec" +
-				"tive\" /><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"2\" dispVal=\"Norma" +
-				"l\" /><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"3\" dispVal=\"Buyer\" /" +
-				"><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"4\" dispVal=\"Distributor\"" +
-				" /><ValueItem type=\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"5\" dispVal=\"Other\" /><" +
+				"alues><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"1\" dispVal=\"Prospec" +
+				"tive\" /><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"2\" dispVal=\"Norma" +
+				"l\" /><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"3\" dispVal=\"Buyer\" /" +
+				"><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"4\" dispVal=\"Distributor\"" +
+				" /><ValueItem type=\"C1.Win.TrueDBGrid.ValueItem\" Value=\"5\" dispVal=\"Other\" /><" +
 				"/internalValues></ValueItems><GroupInfo /></C1DataColumn></DataCols><Styles type" +
-				"=\"C1.Win.C1TrueDBGrid.Design.ContextWrapper\"><Data>HighlightRow{ForeColor:Highli" +
+				"=\"C1.Win.TrueDBGrid.Design.ContextWrapper\"><Data>HighlightRow{ForeColor:Highli" +
 				"ghtText;BackColor:Highlight;}Inactive{ForeColor:InactiveCaptionText;BackColor:In" +
 				"activeCaption;}Selected{ForeColor:HighlightText;BackColor:Highlight;}Editor{}Fil" +
 				"terBar{}Heading{Wrap:True;BackColor:Control;Border:Raised,,1, 1, 1, 1;ForeColor:" +
@@ -198,7 +198,7 @@ namespace Tutorial10
 				"le40\" /><EditorStyle parent=\"Style5\" me=\"Style41\" /><GroupHeaderStyle parent=\"St" +
 				"yle1\" me=\"Style67\" /><GroupFooterStyle parent=\"Style1\" me=\"Style66\" /><Visible>T" +
 				"rue</Visible><ColumnDivider>DarkGray,Single</ColumnDivider><Height>15</Height><D" +
-				"CIdx>7</DCIdx></C1DisplayColumn></internalCols></C1.Win.C1TrueDBGrid.MergeView><" +
+				"CIdx>7</DCIdx></C1DisplayColumn></internalCols></C1.Win.TrueDBGrid.MergeView><" +
 				"/Splits><NamedStyles><Style parent=\"\" me=\"Normal\" /><Style parent=\"Normal\" me=\"H" +
 				"eading\" /><Style parent=\"Heading\" me=\"Footer\" /><Style parent=\"Heading\" me=\"Capt" +
 				"ion\" /><Style parent=\"Heading\" me=\"Inactive\" /><Style parent=\"Normal\" me=\"Select" +
@@ -276,7 +276,7 @@ namespace Tutorial10
 		}
 
 
-		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs e)
+		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs e)
 		{
 			if(e.Col == 0 && e.Row < dtCopy.Rows.Count)
 			e.Value = dtCopy.Rows[e.Row].ItemArray.GetValue(0).ToString() + " " + dtCopy.Rows[e.Row].ItemArray.GetValue(1).ToString();

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -21,7 +21,7 @@ namespace Test
         private System.Windows.Forms.Label lblFolders;
         private System.Windows.Forms.RichTextBox rtxMessage;
         private System.Windows.Forms.Label lblFrom;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
         private System.Windows.Forms.Label lblInbox;
         private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.ImageList imageList1;
@@ -73,6 +73,7 @@ namespace Test
             "Headquarters",
             "Improve productivity"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Family");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Taxes");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Vacation");
@@ -108,7 +109,7 @@ namespace Test
             this.lblFolders = new System.Windows.Forms.Label();
             this.rtxMessage = new System.Windows.Forms.RichTextBox();
             this.lblFrom = new System.Windows.Forms.Label();
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblInbox = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();

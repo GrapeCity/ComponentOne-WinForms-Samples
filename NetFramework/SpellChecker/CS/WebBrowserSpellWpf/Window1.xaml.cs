@@ -30,7 +30,7 @@ namespace WebBrowserSpellWpf
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             webBrowser.NavigateToString("<html><body contentEditable=\"true\">Some missplled text.<body></html>");
-            _spell = new C1.Win.C1SpellChecker.C1SpellChecker();
+            _spell = new C1.Win.SpellChecker.C1SpellChecker();
 
             // Get IWebBrowser2 interface using reflection
             Type t = webBrowser.GetType();
@@ -48,7 +48,7 @@ namespace WebBrowserSpellWpf
         {
         }
 
-        private C1.Win.C1SpellChecker.C1SpellChecker _spell;
+        private C1.Win.SpellChecker.C1SpellChecker _spell;
 
     }
 }

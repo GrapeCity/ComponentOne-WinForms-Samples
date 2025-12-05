@@ -20,6 +20,8 @@ namespace DataFilterExplorer.Samples
         private Timer _delay;
         private double _lowerValue = double.NaN, _upperValue = double.NaN;
         private double _minValue = double.NaN, _maxValue = double.NaN;
+
+        [DefaultValue(double.NaN)]
         public double LowerValue
         {
             get { return _lowerValue; }
@@ -42,6 +44,8 @@ namespace DataFilterExplorer.Samples
                 }
             }
         }
+
+        [DefaultValue(double.NaN)]
         public double UpperValue
         {
             get { return _upperValue; }
@@ -64,6 +68,8 @@ namespace DataFilterExplorer.Samples
                 }
             }
         }
+
+        [DefaultValue(double.NaN)]
         public double Minimum
         {
             get { return _minValue; }
@@ -86,6 +92,8 @@ namespace DataFilterExplorer.Samples
                 }
             }
         }
+
+        [DefaultValue(double.NaN)]
         public double Maximum
         {
             get { return _maxValue; }

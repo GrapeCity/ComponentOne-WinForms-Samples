@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._pview = new C1.Win.C1Preview.C1PrintPreviewControl();
             this.btnMultiDoc = new System.Windows.Forms.Button();
             this.btnSingleDoc = new System.Windows.Forms.Button();

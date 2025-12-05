@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PdfView));
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
-            this.c1PdfDocumentSource1 = new C1.Win.C1Document.C1PdfDocumentSource();
+            this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource();
             this.ofdOpen = new System.Windows.Forms.OpenFileDialog();
             this.ilSmall = new System.Windows.Forms.ImageList(this.components);
             this.ilLarge = new System.Windows.Forms.ImageList(this.components);
@@ -82,7 +82,7 @@
         #endregion
 
         private C1.Win.FlexViewer.C1FlexViewer c1FlexViewer1;
-        private C1.Win.C1Document.C1PdfDocumentSource c1PdfDocumentSource1;
+        private C1.Win.Document.C1PdfDocumentSource c1PdfDocumentSource1;
         private System.Windows.Forms.OpenFileDialog ofdOpen;
         private System.Windows.Forms.ImageList ilSmall;
         private System.Windows.Forms.ImageList ilLarge;

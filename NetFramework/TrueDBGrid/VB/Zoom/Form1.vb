@@ -18,7 +18,7 @@ Imports System.Data
       Private oleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
       Private oleDbConnection1 As System.Data.OleDb.OleDbConnection
         Private dataSet11 As DataSet1
-      Private c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+      Private c1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
       Private mainMenu1 As System.Windows.Forms.MainMenu
       Private menuItem1 As System.Windows.Forms.MenuItem
       Private menuItem2 As System.Windows.Forms.MenuItem
@@ -68,7 +68,7 @@ Imports System.Data
         Me.oleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand
         Me.oleDbConnection1 = New System.Data.OleDb.OleDbConnection
         Me.oleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand
-        Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.c1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         Me.mainMenu1 = New System.Windows.Forms.MainMenu(Me.components)
         Me.menuItem1 = New System.Windows.Forms.MenuItem
         Me.menuItem2 = New System.Windows.Forms.MenuItem
@@ -189,7 +189,7 @@ Imports System.Data
         Me.oleDbConnection1.ConnectionString = GetModifiedConnectionString(Me.oleDbConnection1.ConnectionString)
         Me.oleDbDataAdapter1.Fill(Me.dataSet11)
         ' save the column widths
-        Dim dc As C1.Win.C1TrueDBGrid.C1DisplayColumn
+        Dim dc As C1.Win.TrueDBGrid.C1DisplayColumn
         For Each dc In Me.c1TrueDBGrid1.Splits(0).DisplayColumns
             _colWidths.Add(CSng(dc.Width))
         Next dc

@@ -127,25 +127,19 @@
             // c1DateEdit1
             // 
             this.c1DateEdit1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1DateEdit1.Calendar.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1DateEdit1.Calendar.VisualStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
-            this.c1DateEdit1.Calendar.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             this.c1DateEdit1.CustomFormat = "d";
             this.c1DateEdit1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.employeesBindingSource, "BirthDate", true));
             this.c1DateEdit1.DisplayFormat.CustomFormat = "d";
-            this.c1DateEdit1.DisplayFormat.FormatType = C1.Win.C1Input.FormatTypeEnum.CustomFormat;
-            this.c1DateEdit1.DisplayFormat.Inherit = ((C1.Win.C1Input.FormatInfoInheritFlags)((((C1.Win.C1Input.FormatInfoInheritFlags.NullText | C1.Win.C1Input.FormatInfoInheritFlags.EmptyAsNull) 
-            | C1.Win.C1Input.FormatInfoInheritFlags.TrimStart) 
-            | C1.Win.C1Input.FormatInfoInheritFlags.TrimEnd)));
-            this.c1DateEdit1.ImagePadding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.c1DateEdit1.DisplayFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.c1DateEdit1.DisplayFormat.Inherit = ((C1.Win.Input.FormatInfoInheritProperties)((((C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimStart) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimEnd)));
             this.c1DateEdit1.Location = new System.Drawing.Point(401, 133);
             this.c1DateEdit1.Margin = new System.Windows.Forms.Padding(4);
             this.c1DateEdit1.Name = "c1DateEdit1";
             this.c1DateEdit1.Size = new System.Drawing.Size(251, 20);
             this.c1DateEdit1.TabIndex = 1;
             this.c1DateEdit1.Tag = null;
-            this.c1DateEdit1.VisualStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
-            this.c1DateEdit1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             // 
             // c1Label1
             // 

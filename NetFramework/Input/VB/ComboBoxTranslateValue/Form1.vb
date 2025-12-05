@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Themes
+﻿Imports C1.Win.Themes
 
 Public Class Form1
     ''' <summary>

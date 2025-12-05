@@ -14,7 +14,10 @@ Included samples:
   - ToolbarsOverview - shows C1Menu, C1ContextMenu and C1Toolbar which share the same set of commands.
     Menus and Toolbars is a suite of controls including C1MainMenu, C1ContextMenu, and C1ToolBar. 
     The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. 
-    Other features include embedding arbitrary controls, run-time toolbar customization and more.
+    Other features include embedding arbitrary controls, run-time toolbar customization, toolbar mnemonics and more.
   - RadialMenuOverview - shows how to create and control a C1RadialMenu
     The form in this sample includes a C1RadialMenu with several items and submenus, all created in the Visual Studio forms designer.
     The form also includes controls that demonstrate how to control the radial menu from code: hide or show it, turn animation on or off etc.
+  - C1Command - This sample demonstrates how one C1Command can be shared across multiple UI controls (C1MainMenu, C1ToolBar, C1DockingTab, and C1ContextMenu) to trigger the same action.
+    When you click on any linked control that has the command attached to it, the same command executes and increments a counter. 
+    The sample also demonstrates centralized state management - disabling the command automatically disables all linked controls simultaneously.

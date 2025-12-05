@@ -1,4 +1,4 @@
-namespace DemoTables
+﻿namespace DemoTables
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace DemoTables
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();

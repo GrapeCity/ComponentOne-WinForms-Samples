@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -25,6 +26,7 @@ namespace ControlExplorer.Controls
             btnViewCode.Icon = text == "View Demo" ? ControlIcons.Demo : ControlIcons.Code;
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string SelectedItem
         {
             get { return _selectedItem; }

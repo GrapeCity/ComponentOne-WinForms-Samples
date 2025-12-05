@@ -4,7 +4,7 @@ Imports System.Collections
 Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Namespace CustomMerge
     Public Class Form1
@@ -131,7 +131,7 @@ Namespace CustomMerge
     'control will slow down or paint in really strange ways.
 
     Public Class FlexSchedule
-        Inherits C1.Win.C1FlexGrid.C1FlexGrid
+        Inherits C1.Win.FlexGrid.C1FlexGrid
 
         Public Overrides Function GetMergedRange(ByVal row As Integer, ByVal col As Integer, ByVal clip As Boolean) As CellRange
             'create basic cell range

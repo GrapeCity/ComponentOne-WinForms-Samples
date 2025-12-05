@@ -29,10 +29,10 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         CType(Me.C1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,7 +119,7 @@ Public Class Form1
     End Sub
 
       ' color the link properly
-    Private Sub C1TrueDBGrid1_FetchCellStyle(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.FetchCellStyleEventArgs) Handles C1TrueDBGrid1.FetchCellStyle
+    Private Sub C1TrueDBGrid1_FetchCellStyle(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.FetchCellStyleEventArgs) Handles C1TrueDBGrid1.FetchCellStyle
         Dim link As Hyperlink = CType(Me.C1TrueDBGrid1(e.Row, "Link"), Hyperlink)
         If Not (link Is Nothing) Then
             e.CellStyle.Font = New Font(Me.C1TrueDBGrid1.Font, FontStyle.Underline)
@@ -137,7 +137,7 @@ Public Class Form1
         If Me.C1TrueDBGrid1.Cursor Is Cursors.Hand Then
             Dim row, col As Integer
             If Me.C1TrueDBGrid1.CellContaining(e.X, e.Y, row, col) Then
-                Dim dispcol As C1.Win.C1TrueDBGrid.C1DisplayColumn = Me.C1TrueDBGrid1.FocusedSplit.DisplayColumns(col)
+                Dim dispcol As C1.Win.TrueDBGrid.C1DisplayColumn = Me.C1TrueDBGrid1.FocusedSplit.DisplayColumns(col)
                 Dim link As Hyperlink = CType(Me.C1TrueDBGrid1(row, dispcol.DataColumn.DataField), Hyperlink)
                 If Not (link Is Nothing) Then
                     link.Activate()
@@ -153,7 +153,7 @@ Public Class Form1
          
          Dim row, col As Integer
          If Me.c1TrueDBGrid1.CellContaining(e.X, e.Y, row, col) Then
-            Dim dispcol As C1.Win.C1TrueDBGrid.C1DisplayColumn = Me.C1TrueDBGrid1.FocusedSplit.DisplayColumns(col)
+            Dim dispcol As C1.Win.TrueDBGrid.C1DisplayColumn = Me.C1TrueDBGrid1.FocusedSplit.DisplayColumns(col)
             'fix for 17718 [30063-139][VBSample] InvalidCastException is raised on hovering the mouse over Name or Description column
             Dim link As Hyperlink = TryCast(Me.C1TrueDBGrid1(row, dispcol.DataColumn.DataField), Hyperlink)
             If Not (link Is Nothing) Then

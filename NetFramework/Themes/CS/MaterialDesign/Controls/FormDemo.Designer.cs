@@ -112,7 +112,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.c1DateEdit1.Calendar.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
             this.c1DateEdit1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.c1DateEdit1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1DateEdit1.Location = new System.Drawing.Point(27, 140);
             this.c1DateEdit1.Name = "c1DateEdit1";
             this.c1DateEdit1.Padding = new System.Windows.Forms.Padding(4);

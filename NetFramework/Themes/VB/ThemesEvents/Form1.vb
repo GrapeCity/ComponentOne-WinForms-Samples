@@ -5,7 +5,7 @@ Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
 
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 
 Public Partial Class Form1
 	Inherits Form
@@ -55,7 +55,7 @@ Public Partial Class Form1
         End If
     End Sub
 
-    Private Sub c1ThemeController1_ObjectThemeApplied(sender As C1.Win.C1Themes.C1ThemeController, e As C1.Win.C1Themes.ObjectThemeEventArgs) Handles c1ThemeController1.ObjectThemeApplied
+    Private Sub c1ThemeController1_ObjectThemeApplied(sender As C1.Win.Themes.C1ThemeController, e As C1.Win.Themes.ObjectThemeEventArgs) Handles c1ThemeController1.ObjectThemeApplied
         If e.[Object] Is lblApplicationTheme Then
             lblApplicationTheme.Font = ApplicationThemeFont
         End If
@@ -63,7 +63,7 @@ Public Partial Class Form1
         If e.[Object] Is ctdbgThemes Then
             ctdbgThemes.EvenRowStyle.BackColor = Color.Red
             ctdbgThemes.EvenRowStyle.BackColor2 = Color.White
-            ctdbgThemes.EvenRowStyle.GradientMode = C1.Win.C1TrueDBGrid.GradientModeEnum.ForwardDiagonal
+            ctdbgThemes.EvenRowStyle.GradientMode = C1.Win.TrueDBGrid.GradientModeEnum.ForwardDiagonal
         End If
     End Sub
 End Class

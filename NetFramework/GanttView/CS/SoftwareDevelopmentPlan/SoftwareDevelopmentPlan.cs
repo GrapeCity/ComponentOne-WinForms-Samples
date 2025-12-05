@@ -1,4 +1,4 @@
-﻿using C1.Win.C1GanttView;
+﻿using C1.Win.GanttView;
 using C1.Win.Ribbon;
 using System;
 using System.Collections.Generic;
@@ -10,10 +10,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Linq;
-using C1.Win.C1Themes;
-using C1.Win.C1FlexGrid;
+using C1.Win.Themes;
+using C1.Win.FlexGrid;
 using System.Threading.Tasks;
-using static C1.Win.C1GanttView.Localization.Strings;
+using static C1.Win.GanttView.Localization.Strings;
 
 namespace SoftwareDevelopmentPlan
 {

@@ -32,7 +32,7 @@ namespace ThemeManager
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void c1ThemeController1_ObjectThemeApplied(C1.Win.C1Themes.C1ThemeController sender, C1.Win.C1Themes.ObjectThemeEventArgs e)
+        private void c1ThemeController1_ObjectThemeApplied(C1.Win.Themes.C1ThemeController sender, C1.Win.Themes.ObjectThemeEventArgs e)
         {           
             ScaleForm();
 

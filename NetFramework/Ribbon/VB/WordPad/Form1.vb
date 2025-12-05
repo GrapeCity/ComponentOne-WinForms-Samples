@@ -1,6 +1,6 @@
 Imports C1.Win.Ribbon
 Imports System.Collections.Specialized
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 Imports System.Linq
 Imports System.Windows.Forms
 

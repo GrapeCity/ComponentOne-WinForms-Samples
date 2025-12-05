@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,7 +40,7 @@
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Size = new System.Drawing.Size(901, 778);
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1FlexGrid1.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.Symbols;
+            this.c1FlexGrid1.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.Symbols;
             // 
             // YouTubeChannels
             // 
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

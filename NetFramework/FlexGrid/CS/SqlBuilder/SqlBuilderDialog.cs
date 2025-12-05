@@ -21,7 +21,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using System.Diagnostics;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace SqlBuilder
 {
@@ -35,7 +35,7 @@ namespace SqlBuilder
 		private System.Windows.Forms.ToolBarButton _tbSep1;
 		private System.Windows.Forms.ToolBarButton _tbViewResults;
 		private System.Windows.Forms.ToolBarButton _tbConnString;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.TreeView _tree;
 		private System.Windows.Forms.TextBox _txtSql;
 		private System.Windows.Forms.Splitter splitter1;
@@ -100,7 +100,7 @@ namespace SqlBuilder
 			this._tbSep2 = new System.Windows.Forms.ToolBarButton();
 			this._tbClearQuery = new System.Windows.Forms.ToolBarButton();
 			this._imgList = new System.Windows.Forms.ImageList(this.components);
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._txtSql = new System.Windows.Forms.TextBox();
 			this._tree = new System.Windows.Forms.TreeView();
 			this._treeMenu = new System.Windows.Forms.ContextMenu();
@@ -188,18 +188,18 @@ namespace SqlBuilder
 			// _flex
 			// 
 			this._flex.AllowDelete = true;
-			this._flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.Both;
-			this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Columns;
-			this._flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+			this._flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.Both;
+			this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Columns;
+			this._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
 			this._flex.ColumnInfo = "10,1,1,0,0,85,Columns:0{Width:27;}\t";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Top;
-			this._flex.DropMode = C1.Win.C1FlexGrid.DropModeEnum.Manual;
-			this._flex.EditOptions = (C1.Win.C1FlexGrid.EditFlags.AutoSearch | C1.Win.C1FlexGrid.EditFlags.MultiCheck);
+			this._flex.DropMode = C1.Win.FlexGrid.DropModeEnum.Manual;
+			this._flex.EditOptions = (C1.Win.FlexGrid.EditFlags.AutoSearch | C1.Win.FlexGrid.EditFlags.MultiCheck);
 			this._flex.ExtendLastCol = true;
 			this._flex.Location = new System.Drawing.Point(180, 25);
 			this._flex.Name = "_flex";
 			this._flex.Rows.DefaultSize = 17;
-			this._flex.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.ListBox;
+			this._flex.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.ListBox;
 			this._flex.ShowCursor = true;
 			this._flex.ShowErrors = true;
 			this._flex.Size = new System.Drawing.Size(460, 199);
@@ -208,8 +208,8 @@ namespace SqlBuilder
 			this._flex.AfterDataRefresh += new System.ComponentModel.ListChangedEventHandler(this._flex_AfterDataRefresh);
 			this._flex.DragDrop += new System.Windows.Forms.DragEventHandler(this._flex_DragDrop);
 			this._flex.DragEnter += new System.Windows.Forms.DragEventHandler(this._flex_DragEnter);
-			this._flex.BeforeEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
-			this._flex.CellButtonClick += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_CellButtonClick);
+			this._flex.BeforeEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
+			this._flex.CellButtonClick += new C1.Win.FlexGrid.RowColEventHandler(this._flex_CellButtonClick);
 			// 
 			// _txtSql
 			// 
@@ -707,7 +707,7 @@ namespace SqlBuilder
 		}
 
 		// show list of columns available on the selected table
-		private void _flex_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex_BeforeEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			_flex.ComboList = string.Empty;
 			if (_flex.Cols[e.Col].Name == "Column")
@@ -719,7 +719,7 @@ namespace SqlBuilder
 		}
 
 		// show criteria editor
-		private void _flex_CellButtonClick(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex_CellButtonClick(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			using (CriteriaForm f = new CriteriaForm())
 			{

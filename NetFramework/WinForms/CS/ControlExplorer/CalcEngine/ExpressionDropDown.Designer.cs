@@ -33,8 +33,8 @@
             this.btnAdd = new C1.Win.C1Input.C1Button();
             this.btnCancel = new C1.Win.C1Input.C1Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.c1FlexGridSearchPanel1 = new C1.Win.C1FlexGrid.C1FlexGridSearchPanel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGridSearchPanel1 = new C1.Win.FlexGrid.C1FlexGridSearchPanel();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
@@ -119,10 +119,10 @@
     "owEditing:False;}\t2{Name:\"Description\";Caption:\"Description\";}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.ExtendLastCol = true;
-            this.c1FlexGrid1.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.None;
+            this.c1FlexGrid1.FocusRect = C1.Win.FlexGrid.FocusRectEnum.None;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 49);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
             this.c1FlexGrid1.Size = new System.Drawing.Size(639, 275);
             this.c1FlexGrid1.TabIndex = 1;
             this.c1FlexGrid1.SelChange += new System.EventHandler(this.c1FlexGrid1_SelChange);
@@ -157,7 +157,7 @@
         private C1.Win.C1Input.C1Button btnAdd;
         private C1.Win.C1Input.C1Button btnCancel;
         private System.Windows.Forms.Panel panel2;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1FlexGrid.C1FlexGridSearchPanel c1FlexGridSearchPanel1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGridSearchPanel c1FlexGridSearchPanel1;
     }
 }

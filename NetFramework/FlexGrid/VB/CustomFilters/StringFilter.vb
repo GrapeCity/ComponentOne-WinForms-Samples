@@ -2,7 +2,7 @@
 
 Namespace CustomFilters
 	Friend Class StringFilter
-		Implements C1.Win.C1FlexGrid.IC1ColumnFilter
+		Implements C1.Win.FlexGrid.IC1ColumnFilter
 		'-------------------------------------------------------------------------------
 		#Region "** fields"
 
@@ -28,19 +28,19 @@ Namespace CustomFilters
 		#Region "** IC1ColumnFilter Members"
 
 		' filter is active if range list is not empty.
-		Public ReadOnly Property IsActive() As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilter.IsActive
+		Public ReadOnly Property IsActive() As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilter.IsActive
 			Get
 				Return _ranges.Count > 0
 			End Get
 		End Property
 
 		' reset filter.
-		Public Sub Reset() Implements C1.Win.C1FlexGrid.IC1ColumnFilter.Reset
+		Public Sub Reset() Implements C1.Win.FlexGrid.IC1ColumnFilter.Reset
 			_ranges.Clear()
 		End Sub
 
 		' apply filter to a given date
-		Public Function Apply(ByVal value As Object) As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilter.Apply
+		Public Function Apply(ByVal value As Object) As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilter.Apply
 			If value IsNot Nothing Then
 				Dim s = value.ToString()
 				If s.Length > 0 Then
@@ -56,7 +56,7 @@ Namespace CustomFilters
 		End Function
 
 		' return editor control for this filter
-		Public Function GetEditor() As C1.Win.C1FlexGrid.IC1ColumnFilterEditor Implements C1.Win.C1FlexGrid.IC1ColumnFilter.GetEditor
+		Public Function GetEditor() As C1.Win.FlexGrid.IC1ColumnFilterEditor Implements C1.Win.FlexGrid.IC1ColumnFilter.GetEditor
 			Return New StringFilterEditor()
 		End Function
 

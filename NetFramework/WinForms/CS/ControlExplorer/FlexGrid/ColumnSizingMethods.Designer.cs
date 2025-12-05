@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnSizingMethods));
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this.cmbMethod = new System.Windows.Forms.ComboBox();
             this.label = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
@@ -40,14 +40,14 @@
             // flexGrid
             // 
             this.flexGrid.BackColor = System.Drawing.Color.White;
-            this.flexGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.flexGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.flexGrid.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Location = new System.Drawing.Point(0, 34);
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.Rows.DefaultSize = 22;
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(1135, 595);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
@@ -97,7 +97,7 @@
 
         }
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private System.Windows.Forms.ComboBox cmbMethod;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Panel panel;

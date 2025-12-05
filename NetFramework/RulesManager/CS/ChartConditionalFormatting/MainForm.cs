@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.OleDb;
 using C1.Win.Ribbon;
 using System.ComponentModel;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Win.RulesManager;
 using System.Linq;
 using System.Drawing;

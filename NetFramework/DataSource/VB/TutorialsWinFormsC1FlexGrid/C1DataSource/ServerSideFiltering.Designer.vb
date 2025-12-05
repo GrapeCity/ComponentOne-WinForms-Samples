@@ -31,7 +31,7 @@ Partial Class ServerSideFiltering
         Me.C1DataSource1 = New C1.Win.Data.Entities.C1DataSource()
         Me.btnSaveChanges = New System.Windows.Forms.Button()
         Me.comboBox1 = New System.Windows.Forms.ComboBox()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.C1DataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -105,5 +105,5 @@ End Sub
     Private WithEvents btnSaveChanges As System.Windows.Forms.Button
     Private WithEvents comboBox1 As System.Windows.Forms.ComboBox
     Private WithEvents C1DataSource1 As C1.Win.Data.Entities.C1DataSource
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
 End Class

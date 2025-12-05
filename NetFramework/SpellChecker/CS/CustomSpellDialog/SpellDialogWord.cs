@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-using C1.Win.C1SpellChecker;
+using C1.Win.SpellChecker;
 
 namespace CustomSpellDialog
 {

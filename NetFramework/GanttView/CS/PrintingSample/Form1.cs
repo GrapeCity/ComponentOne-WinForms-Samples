@@ -11,8 +11,8 @@ using System.Drawing.Imaging;
 using System.Text;
 using System.Windows.Forms;
 using C1.C1Preview;
-using C1.Win.C1GanttView;
-using C1.Win.C1GanttView.Printing;
+using C1.Win.GanttView;
+using C1.Win.GanttView.Printing;
 using C1.Win.C1Preview;
 
 namespace PrintingSample
