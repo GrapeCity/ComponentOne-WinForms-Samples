@@ -14,8 +14,8 @@ using System.Globalization;
 using System.Linq;
 using System.Windows.Forms.Design;
 using C1.Document;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1Themes;
+using C1.Win.FlexGrid;
+using C1.Win.Themes;
 using C1.Report;
 
 namespace FlexReportDesignerApp.TypeEditors

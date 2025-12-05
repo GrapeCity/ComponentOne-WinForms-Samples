@@ -35,7 +35,7 @@ Partial Class MainForm
         Me.RibbonQat1 = New C1.Win.Ribbon.RibbonQat()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.C1TreeView1 = New C1.Win.TreeView.C1TreeView()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,7 +130,7 @@ Partial Class MainForm
     Friend WithEvents RibbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
     Friend WithEvents RibbonQat1 As C1.Win.Ribbon.RibbonQat
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As RibbonComboBox
     Friend WithEvents C1TreeView1 As C1.Win.TreeView.C1TreeView
 End Class

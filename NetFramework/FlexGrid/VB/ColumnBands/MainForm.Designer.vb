@@ -25,24 +25,24 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Band1 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band2 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band3 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band4 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band5 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band6 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band7 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band8 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band9 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band10 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band11 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band12 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band13 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band14 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band15 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band16 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band17 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim Band18 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
+        Dim Band1 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band2 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band3 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band4 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band5 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band6 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band7 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band8 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band9 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band10 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band11 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band12 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band13 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band14 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band15 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band16 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band17 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim Band18 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.C1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
         Me.RibbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
@@ -59,11 +59,11 @@ Partial Class MainForm
         Me.rbBandsColumnsRelation = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
-        Me.c1FlexGridBandedView1 = New C1.Win.C1FlexGrid.C1FlexGridBandedView()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1FlexGridBandedView1 = New C1.Win.FlexGrid.C1FlexGridBandedView()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.C1NWindDataSet = New ColumnBands.C1NWindDataSet()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.CarsTableAdapter1 = New ColumnBands.C1NWindDataSetTableAdapters.CarsTableAdapter()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1FlexGridBandedView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -231,19 +231,19 @@ Partial Class MainForm
         'C1FlexGrid1
         '
         Me.C1FlexGrid1.AllowEditing = False
-        Me.C1FlexGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Custom
+        Me.C1FlexGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Custom
         Me.C1FlexGrid1.BackColor = System.Drawing.Color.White
         Me.C1FlexGrid1.ColumnContextMenuEnabled = True
         Me.C1FlexGrid1.ColumnInfo = resources.GetString("C1FlexGrid1.ColumnInfo")
         Me.C1FlexGrid1.DataSource = Me.BindingSource1
         Me.C1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.C1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        Me.C1FlexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
         Me.C1FlexGrid1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.C1FlexGrid1.Location = New System.Drawing.Point(0, 77)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
         Me.C1FlexGrid1.Rows.Count = 3
         Me.C1FlexGrid1.Rows.Fixed = 3
-        Me.C1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.C1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.C1FlexGrid1.Size = New System.Drawing.Size(1016, 683)
         Me.C1FlexGrid1.StyleInfo = resources.GetString("C1FlexGrid1.StyleInfo")
         Me.C1FlexGrid1.TabIndex = 1
@@ -294,7 +294,7 @@ Partial Class MainForm
     End Sub
 
     Friend WithEvents C1Ribbon1 As C1.Win.Ribbon.C1Ribbon
-    Friend WithEvents c1FlexGridBandedView1 As C1.Win.C1FlexGrid.C1FlexGridBandedView
+    Friend WithEvents c1FlexGridBandedView1 As C1.Win.FlexGrid.C1FlexGridBandedView
     Friend WithEvents RibbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
     Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
     Friend WithEvents RibbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
@@ -302,9 +302,9 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents C1NWindDataSet As C1NWindDataSet
     Friend WithEvents BindingSource1 As BindingSource
     Friend WithEvents CarsTableAdapter1 As C1NWindDataSetTableAdapters.CarsTableAdapter

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -20,11 +20,11 @@ namespace FilterMultiEdit
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter2;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand2;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand2;
-		private C1.Win.C1TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
+		private C1.Win.TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
         private Panel panel1;
         private CheckedListBox checkedListBox1;
         private Label label1;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -65,14 +65,15 @@ namespace FilterMultiEdit
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Win.C1TrueDBGrid.Style style9 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style10 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style11 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style12 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style13 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style14 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style15 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style16 = new C1.Win.C1TrueDBGrid.Style();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            C1.Win.TrueDBGrid.Style style9 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style10 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style11 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style12 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style13 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style14 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style15 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style16 = new C1.Win.TrueDBGrid.Style();
             this.dataSet11 = new FilterMultiEdit.DataSet1();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -84,8 +85,8 @@ namespace FilterMultiEdit
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.c1TrueDBDropdown1 = new C1.Win.C1TrueDBGrid.C1TrueDBDropdown();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBDropdown1 = new C1.Win.TrueDBGrid.C1TrueDBDropdown();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBDropdown1)).BeginInit();
@@ -210,7 +211,7 @@ namespace FilterMultiEdit
             // 
             this.c1TrueDBDropdown1.AllowColMove = true;
             this.c1TrueDBDropdown1.AllowColSelect = true;
-            this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows;
+            this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows;
             this.c1TrueDBDropdown1.AlternatingRows = false;
             this.c1TrueDBDropdown1.CaptionStyle = style9;
             this.c1TrueDBDropdown1.ColumnCaptionHeight = 17;
@@ -229,7 +230,7 @@ namespace FilterMultiEdit
             this.c1TrueDBDropdown1.OddRowStyle = style14;
             this.c1TrueDBDropdown1.RecordSelectorStyle = style15;
             this.c1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray;
-            this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.ScrollTips = false;
             this.c1TrueDBDropdown1.Size = new System.Drawing.Size(100, 104);
@@ -302,7 +303,7 @@ namespace FilterMultiEdit
 			this.c1TrueDBDropdown1.ColumnHeaders = false;
 
             checkedListBox1.Items.Clear();
-            foreach(C1.Win.C1TrueDBGrid.C1DataColumn c in c1TrueDBGrid1.Columns)
+            foreach(C1.Win.TrueDBGrid.C1DataColumn c in c1TrueDBGrid1.Columns)
             {
                 c.FilterDropdown = true;
                 c.FilterMultiSelect = false;

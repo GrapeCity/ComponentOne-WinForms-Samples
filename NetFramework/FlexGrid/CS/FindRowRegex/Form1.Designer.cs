@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.Classic.C1FlexGridClassic();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._flex = new C1.Win.FlexGrid.Classic.C1FlexGridClassic();
             this._txtSearch = new System.Windows.Forms.TextBox();
             this._btnFind = new System.Windows.Forms.Button();
             this._btnFindRx = new System.Windows.Forms.Button();
@@ -50,7 +54,7 @@
             this._flex.Size = new System.Drawing.Size(672, 385);
             this._flex.TabIndex = 0;
             this._flex.TreeColor = System.Drawing.Color.DarkGray;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             // 
             // _txtSearch
             // 
@@ -99,7 +103,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.Classic.C1FlexGridClassic _flex;
+        private C1.Win.FlexGrid.Classic.C1FlexGridClassic _flex;
         private System.Windows.Forms.TextBox _txtSearch;
         private System.Windows.Forms.Button _btnFind;
         private System.Windows.Forms.Button _btnFindRx;

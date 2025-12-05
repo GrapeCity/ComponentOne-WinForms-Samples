@@ -4,7 +4,7 @@ Imports System.Text
 Imports System.Drawing
 Imports System.Windows.Forms
 Imports C1.Win.Ribbon
-Imports C1.Win.C1SpellChecker
+Imports C1.Win.SpellChecker
 Imports Resources = C1Words.Resources
 
 Namespace RichTextEditor

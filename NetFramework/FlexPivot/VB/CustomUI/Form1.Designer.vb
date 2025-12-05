@@ -218,9 +218,9 @@
 			' 
             ' c1FlexPivotGrid1
 			' 
-            Me.c1FlexPivotGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.None
-            Me.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.RestrictAll
-            Me.c1FlexPivotGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D
+            Me.c1FlexPivotGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.None
+            Me.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.RestrictAll
+            Me.c1FlexPivotGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D
             Me.c1FlexPivotGrid1.ColumnInfo = "1,1,0,0,0,120,Columns:0{Width:101;}" & vbTab
             Me.c1FlexPivotGrid1.DataSource = Me.c1FlexPivotPanel1
             Me.c1FlexPivotGrid1.Dock = DockStyle.Fill
@@ -232,7 +232,7 @@
             Me.c1FlexPivotGrid1.Size = New Size(380, 449)
             Me.c1FlexPivotGrid1.StyleInfo = resources.GetString("c1FlexPivotGrid1.StyleInfo")
             Me.c1FlexPivotGrid1.TabIndex = 1
-            Me.c1FlexPivotGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue
+            Me.c1FlexPivotGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue
 			' 
             ' c1FlexPivotPanel1
 			' 

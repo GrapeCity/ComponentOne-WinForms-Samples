@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1GanttView
+﻿Imports C1.Win.GanttView
 
 Public Class Form1
 

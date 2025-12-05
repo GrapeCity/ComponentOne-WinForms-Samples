@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1FontPicker1 = new C1.Win.C1Input.C1FontPicker();
             this.c1ColorPicker1 = new C1.Win.C1Input.C1ColorPicker();

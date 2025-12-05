@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer1 = new C1.Win.C1Gauge.C1GaugePointer();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer2 = new C1.Win.C1Gauge.C1GaugePointer();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer3 = new C1.Win.C1Gauge.C1GaugePointer();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1LinearGauge1 = new C1.Win.C1Gauge.C1LinearGauge();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer1 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer2 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer3 = new C1.Win.Gauge.C1GaugePointer();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1LinearGauge1 = new C1.Win.Gauge.C1LinearGauge();
             this.gaugePanel.SuspendLayout();
             this.gridPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
@@ -56,7 +56,7 @@
             this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(3, 3);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -75,7 +75,7 @@
             c1GaugePointer2.Visible = false;
             c1GaugePointer3.ViewTag = ((long)(648102824771747639));
             c1GaugePointer3.Visible = false;
-            this.c1LinearGauge1.MorePointers.AddRange(new C1.Win.C1Gauge.C1GaugePointer[] {
+            this.c1LinearGauge1.MorePointers.AddRange(new C1.Win.Gauge.C1GaugePointer[] {
             c1GaugePointer1,
             c1GaugePointer2,
             c1GaugePointer3});
@@ -98,7 +98,7 @@
 
         #endregion
 
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
     }
 }

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using System.IO;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace RTFGrid
 {
@@ -15,7 +15,7 @@ namespace RTFGrid
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+		private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -75,7 +75,7 @@ namespace RTFGrid
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +88,7 @@ namespace RTFGrid
             this._flex.Rows.DefaultSize = 19;
             this._flex.Size = new System.Drawing.Size(567, 330);
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
@@ -137,7 +137,7 @@ namespace RTFGrid
 
         // use this RTF control to render RTF cells
 		RTF _rtf = new RTF();
-		void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
             #region C1FlexGridPrinter
             // printing RTF text is handled by _flex_PrintCell handler:

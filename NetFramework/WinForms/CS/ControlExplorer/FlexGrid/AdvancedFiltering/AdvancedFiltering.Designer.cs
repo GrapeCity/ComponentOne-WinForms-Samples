@@ -40,7 +40,7 @@
             this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.c1TextBox1 = new C1.Win.C1Input.C1TextBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -130,7 +130,7 @@
             this.c1FlexGrid1.BackColor = System.Drawing.Color.White;
             this.c1FlexGrid1.ColumnContextMenuEnabled = true;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.None;
+            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
             this.c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = false;
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = false;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -218,7 +218,7 @@
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonButton rbSaveFiltersToXml;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private C1.Win.C1Input.C1TextBox c1TextBox1;

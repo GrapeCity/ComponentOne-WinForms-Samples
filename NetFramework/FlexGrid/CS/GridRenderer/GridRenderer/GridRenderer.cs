@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace GridRenderer
 {

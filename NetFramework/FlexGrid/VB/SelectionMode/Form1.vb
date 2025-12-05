@@ -46,14 +46,14 @@ Public Class Form1
     Friend WithEvents label7 As System.Windows.Forms.Label
     Friend WithEvents label8 As System.Windows.Forms.Label
     Friend WithEvents checkBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid2 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid3 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid4 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid5 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid6 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid7 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid8 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid2 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid3 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid4 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid5 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid6 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid7 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid8 As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.checkBox1 = New System.Windows.Forms.CheckBox()
         Me.label1 = New System.Windows.Forms.Label()
@@ -65,14 +65,14 @@ Public Class Form1
         Me.label7 = New System.Windows.Forms.Label()
         Me.label8 = New System.Windows.Forms.Label()
         Me.checkBox2 = New System.Windows.Forms.CheckBox()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid2 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid3 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid4 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid5 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid6 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid7 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid8 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid2 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid3 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid4 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid5 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid6 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid7 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid8 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -173,8 +173,8 @@ Public Class Form1
         '
         'C1FlexGrid1
         '
-        Me.C1FlexGrid1.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid1.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid1.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid1.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid1.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -182,7 +182,7 @@ Public Class Form1
         Me.C1FlexGrid1.Location = New System.Drawing.Point(8, 24)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
         Me.C1FlexGrid1.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid1.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid1.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -195,17 +195,17 @@ Public Class Form1
         '
         'C1FlexGrid2
         '
-        Me.C1FlexGrid2.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid2.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid2.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid2.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid2.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid2.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid2.Location = New System.Drawing.Point(272, 24)
         Me.C1FlexGrid2.Name = "C1FlexGrid2"
-        Me.C1FlexGrid2.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Cell
+        Me.C1FlexGrid2.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Cell
         Me.C1FlexGrid2.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid2.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid2.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -218,17 +218,17 @@ Public Class Form1
         '
         'C1FlexGrid3
         '
-        Me.C1FlexGrid3.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid3.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid3.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid3.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid3.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid3.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid3.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid3.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid3.Location = New System.Drawing.Point(272, 176)
         Me.C1FlexGrid3.Name = "C1FlexGrid3"
-        Me.C1FlexGrid3.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.RowRange
+        Me.C1FlexGrid3.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.RowRange
         Me.C1FlexGrid3.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid3.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid3.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -241,17 +241,17 @@ Public Class Form1
         '
         'C1FlexGrid4
         '
-        Me.C1FlexGrid4.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid4.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid4.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid4.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid4.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid4.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid4.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid4.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid4.Location = New System.Drawing.Point(8, 176)
         Me.C1FlexGrid4.Name = "C1FlexGrid4"
-        Me.C1FlexGrid4.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row
+        Me.C1FlexGrid4.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row
         Me.C1FlexGrid4.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid4.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid4.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -264,17 +264,17 @@ Public Class Form1
         '
         'C1FlexGrid5
         '
-        Me.C1FlexGrid5.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid5.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid5.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid5.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid5.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid5.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid5.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid5.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid5.Location = New System.Drawing.Point(272, 328)
         Me.C1FlexGrid5.Name = "C1FlexGrid5"
-        Me.C1FlexGrid5.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.ColumnRange
+        Me.C1FlexGrid5.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.ColumnRange
         Me.C1FlexGrid5.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid5.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid5.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -287,17 +287,17 @@ Public Class Form1
         '
         'C1FlexGrid6
         '
-        Me.C1FlexGrid6.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid6.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid6.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid6.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid6.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid6.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid6.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid6.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid6.Location = New System.Drawing.Point(8, 328)
         Me.C1FlexGrid6.Name = "C1FlexGrid6"
-        Me.C1FlexGrid6.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Column
+        Me.C1FlexGrid6.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Column
         Me.C1FlexGrid6.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid6.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid6.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -310,17 +310,17 @@ Public Class Form1
         '
         'C1FlexGrid7
         '
-        Me.C1FlexGrid7.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid7.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid7.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid7.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid7.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid7.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid7.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid7.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid7.Location = New System.Drawing.Point(536, 24)
         Me.C1FlexGrid7.Name = "C1FlexGrid7"
-        Me.C1FlexGrid7.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.CellRange
+        Me.C1FlexGrid7.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.CellRange
         Me.C1FlexGrid7.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid7.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid7.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -333,17 +333,17 @@ Public Class Form1
         '
         'C1FlexGrid8
         '
-        Me.C1FlexGrid8.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        Me.C1FlexGrid8.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
+        Me.C1FlexGrid8.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid8.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
         Me.C1FlexGrid8.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid8.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid8.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C1FlexGrid8.ForeColor = System.Drawing.SystemColors.WindowText
         Me.C1FlexGrid8.Location = New System.Drawing.Point(536, 176)
         Me.C1FlexGrid8.Name = "C1FlexGrid8"
-        Me.C1FlexGrid8.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.ListBox
+        Me.C1FlexGrid8.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.ListBox
         Me.C1FlexGrid8.Size = New System.Drawing.Size(256, 128)
-        Me.C1FlexGrid8.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid8.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -376,23 +376,23 @@ Public Class Form1
 #End Region
     Private _i As Integer = 0
 
-    Private Sub C1FlexGrid1_AfterSelChange(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles C1FlexGrid1.AfterSelChange, C1FlexGrid2.AfterSelChange, C1FlexGrid3.AfterSelChange, C1FlexGrid4.AfterSelChange, C1FlexGrid5.AfterSelChange, C1FlexGrid6.AfterSelChange, C1FlexGrid7.AfterSelChange, C1FlexGrid8.AfterSelChange
+    Private Sub C1FlexGrid1_AfterSelChange(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles C1FlexGrid1.AfterSelChange, C1FlexGrid2.AfterSelChange, C1FlexGrid3.AfterSelChange, C1FlexGrid4.AfterSelChange, C1FlexGrid5.AfterSelChange, C1FlexGrid6.AfterSelChange, C1FlexGrid7.AfterSelChange, C1FlexGrid8.AfterSelChange
         _i += 1
         Console.WriteLine("c1FlexGrid1_AfterSelChange " + _i.ToString())
         Console.WriteLine("-------------------\n")
     End Sub
 
-    Private Sub C1FlexGrid1_AfterRowColChange(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles C1FlexGrid1.AfterRowColChange, C1FlexGrid2.AfterRowColChange, C1FlexGrid3.AfterRowColChange, C1FlexGrid4.AfterRowColChange, C1FlexGrid5.AfterRowColChange, C1FlexGrid6.AfterRowColChange, C1FlexGrid7.AfterRowColChange, C1FlexGrid8.AfterRowColChange
+    Private Sub C1FlexGrid1_AfterRowColChange(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles C1FlexGrid1.AfterRowColChange, C1FlexGrid2.AfterRowColChange, C1FlexGrid3.AfterRowColChange, C1FlexGrid4.AfterRowColChange, C1FlexGrid5.AfterRowColChange, C1FlexGrid6.AfterRowColChange, C1FlexGrid7.AfterRowColChange, C1FlexGrid8.AfterRowColChange
         _i += 1
         Console.WriteLine("c1FlexGrid1_AfterRowColChange " + _i.ToString())
     End Sub
 
-    Private Sub C1FlexGrid1_BeforeRowColChange(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles C1FlexGrid1.BeforeRowColChange, C1FlexGrid2.BeforeRowColChange, C1FlexGrid3.BeforeRowColChange, C1FlexGrid4.BeforeRowColChange, C1FlexGrid5.BeforeRowColChange, C1FlexGrid6.BeforeRowColChange, C1FlexGrid7.BeforeRowColChange, C1FlexGrid8.BeforeRowColChange
+    Private Sub C1FlexGrid1_BeforeRowColChange(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles C1FlexGrid1.BeforeRowColChange, C1FlexGrid2.BeforeRowColChange, C1FlexGrid3.BeforeRowColChange, C1FlexGrid4.BeforeRowColChange, C1FlexGrid5.BeforeRowColChange, C1FlexGrid6.BeforeRowColChange, C1FlexGrid7.BeforeRowColChange, C1FlexGrid8.BeforeRowColChange
         _i += 1
         Console.WriteLine("c1FlexGrid1_BeforeRowColChange " + _i.ToString())
     End Sub
 
-    Private Sub C1FlexGrid1_BeforeSelChange(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles C1FlexGrid1.BeforeSelChange, C1FlexGrid2.BeforeSelChange, C1FlexGrid3.BeforeSelChange, C1FlexGrid4.BeforeSelChange, C1FlexGrid5.BeforeSelChange, C1FlexGrid6.BeforeSelChange, C1FlexGrid7.BeforeSelChange, C1FlexGrid8.BeforeSelChange
+    Private Sub C1FlexGrid1_BeforeSelChange(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles C1FlexGrid1.BeforeSelChange, C1FlexGrid2.BeforeSelChange, C1FlexGrid3.BeforeSelChange, C1FlexGrid4.BeforeSelChange, C1FlexGrid5.BeforeSelChange, C1FlexGrid6.BeforeSelChange, C1FlexGrid7.BeforeSelChange, C1FlexGrid8.BeforeSelChange
         _i += 1
         Console.WriteLine("c1FlexGrid1_BeforeSelChange " + _i.ToString())
     End Sub

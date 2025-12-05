@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace RowStateDisplay
 {
@@ -13,7 +13,7 @@ namespace RowStateDisplay
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
 		/// Required designer variable.
@@ -54,51 +54,52 @@ namespace RowStateDisplay
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this.button1 = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.AllowAddNew = true;
-			this._flex.AllowDelete = true;
-			this._flex.BackColor = System.Drawing.SystemColors.Window;
-			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:24;}\t";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-			this._flex.Location = new System.Drawing.Point(0, 40);
-			this._flex.Name = "_flex";
-			this._flex.Rows.Count = 51;
-			this._flex.ShowCursor = true;
-			this._flex.Size = new System.Drawing.Size(416, 253);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(8, 8);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(112, 24);
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Accept Changes";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(416, 293);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.button1,
-																		  this._flex});
-			this.DockPadding.Top = 40;
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Show RowStates";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.AllowAddNew = true;
+            this._flex.AllowDelete = true;
+            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:24;}\t";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.Location = new System.Drawing.Point(0, 40);
+            this._flex.Name = "_flex";
+            this._flex.Rows.Count = 51;
+            this._flex.ShowCursor = true;
+            this._flex.Size = new System.Drawing.Size(416, 253);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(14, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 40);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Accept Changes";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
+            this.ClientSize = new System.Drawing.Size(416, 293);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Show RowStates";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -165,7 +166,7 @@ namespace RowStateDisplay
 		}
 
 		// select style based on row state
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			// only apply styles to scrollable cells
 			if (e.Row < _flex.Rows.Fixed || e.Col < _flex.Cols.Fixed)

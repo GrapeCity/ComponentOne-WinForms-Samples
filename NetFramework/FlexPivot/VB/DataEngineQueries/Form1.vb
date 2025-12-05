@@ -271,7 +271,7 @@ Public Class Form1
     End Function
 
     ' fills the grid by the table name
-    Private Sub FillGrid(grid As C1.Win.C1FlexGrid.C1FlexGrid, tableName As String, Optional maxRows As Integer = 0)
+    Private Sub FillGrid(grid As C1.Win.FlexGrid.C1FlexGrid, tableName As String, Optional maxRows As Integer = 0)
         If String.IsNullOrEmpty(tableName) Then
             Return
         End If
@@ -279,7 +279,7 @@ Public Class Form1
     End Sub
 
     ' fills the grid with table data
-    Private Sub FillGrid(grid As C1.Win.C1FlexGrid.C1FlexGrid, source As IDataList)
+    Private Sub FillGrid(grid As C1.Win.FlexGrid.C1FlexGrid, source As IDataList)
         lblResultTotalRows.Text = "0"
         grid.DataSource = source
         Dim count As Long = 0

@@ -12,25 +12,25 @@ Partial Class ColumnBandsUserControl
 
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ColumnBandsUserControl))
-        Dim band1 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band2 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band3 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band4 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band5 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band6 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band7 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band8 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band9 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band10 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band11 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band12 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band13 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band14 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Dim band15 As C1.Win.C1FlexGrid.Band = New C1.Win.C1FlexGrid.Band()
-        Me.flexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.c1FlexGridBandedView1 = New C1.Win.C1FlexGrid.C1FlexGridBandedView()
+        Dim band1 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band2 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band3 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band4 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band5 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band6 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band7 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band8 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band9 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band10 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band11 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band12 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band13 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band14 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Dim band15 As C1.Win.FlexGrid.Band = New C1.Win.FlexGrid.Band()
+        Me.flexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.c1FlexGridBandedView1 = New C1.Win.FlexGrid.C1FlexGridBandedView()
         Me.tableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.c1FlexGridGroupPanel1 = New C1.Win.C1FlexGrid.C1FlexGridGroupPanel()
+        Me.c1FlexGridGroupPanel1 = New C1.Win.FlexGrid.C1FlexGridGroupPanel()
         CType((Me.flexGrid1), System.ComponentModel.ISupportInitialize).BeginInit()
         CType((Me.c1FlexGridBandedView1), System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tableLayoutPanel1.SuspendLayout()
@@ -39,7 +39,7 @@ Partial Class ColumnBandsUserControl
         Me.flexGrid1.ColumnContextMenuEnabled = True
         Me.flexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:8{Visible:False;}" & vbTab & "9{Visible:False;}" & vbTab
         Me.flexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.flexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        Me.flexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
         Me.flexGrid1.Location = New System.Drawing.Point(3, 120)
         Me.flexGrid1.Name = "flexGrid1"
         Me.flexGrid1.Rows.Count = 3
@@ -114,9 +114,9 @@ Partial Class ColumnBandsUserControl
         Me.ResumeLayout(False)
     End Sub
 
-    Private c1FlexGridBandedView1 As C1.Win.C1FlexGrid.C1FlexGridBandedView
-    Private flexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Private c1FlexGridBandedView1 As C1.Win.FlexGrid.C1FlexGridBandedView
+    Private flexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Private tableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
-    Private c1FlexGridGroupPanel1 As C1.Win.C1FlexGrid.C1FlexGridGroupPanel
+    Private c1FlexGridGroupPanel1 As C1.Win.FlexGrid.C1FlexGridGroupPanel
 End Class
 

@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="ColorFilterEditor.resx">
       <DependentUpon>ColorFilterEditor.cs</DependentUpon>
     </EmbeddedResource>

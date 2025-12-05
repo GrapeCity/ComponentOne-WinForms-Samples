@@ -30,44 +30,44 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MasterDetail));
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1DemoDataSet = new ControlExplorer.C1DemoDataSet();
-            this.hdrCategories = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.navCategories = new C1.Win.C1InputPanel.InputDataNavigator();
-            this.sepLine = new C1.Win.C1InputPanel.InputSeparator();
-            this.lblCategoryID = new C1.Win.C1InputPanel.InputLabel();
-            this.numCategoryID = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblCategoryName = new C1.Win.C1InputPanel.InputLabel();
-            this.txtCategoryName = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblDescription = new C1.Win.C1InputPanel.InputLabel();
-            this.txtDescription = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblPicture = new C1.Win.C1InputPanel.InputLabel();
-            this.imgPicture = new C1.Win.C1InputPanel.InputImage();
-            this.c1InputPanel2 = new C1.Win.C1InputPanel.C1InputPanel();
+            this.hdrCategories = new C1.Win.InputPanel.InputGroupHeader();
+            this.navCategories = new C1.Win.InputPanel.InputDataNavigator();
+            this.sepLine = new C1.Win.InputPanel.InputSeparator();
+            this.lblCategoryID = new C1.Win.InputPanel.InputLabel();
+            this.numCategoryID = new C1.Win.InputPanel.InputNumericBox();
+            this.lblCategoryName = new C1.Win.InputPanel.InputLabel();
+            this.txtCategoryName = new C1.Win.InputPanel.InputTextBox();
+            this.lblDescription = new C1.Win.InputPanel.InputLabel();
+            this.txtDescription = new C1.Win.InputPanel.InputTextBox();
+            this.lblPicture = new C1.Win.InputPanel.InputLabel();
+            this.imgPicture = new C1.Win.InputPanel.InputImage();
+            this.c1InputPanel2 = new C1.Win.InputPanel.C1InputPanel();
             this.categoriesProductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hdrIBindingList = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.navIBindingList = new C1.Win.C1InputPanel.InputDataNavigator();
-            this.sepLine1 = new C1.Win.C1InputPanel.InputSeparator();
-            this.lblProductID = new C1.Win.C1InputPanel.InputLabel();
-            this.numProductID = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblProductName = new C1.Win.C1InputPanel.InputLabel();
-            this.txtProductName = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblSupplierID = new C1.Win.C1InputPanel.InputLabel();
-            this.numSupplierID = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblCategoryID1 = new C1.Win.C1InputPanel.InputLabel();
-            this.numCategoryID1 = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblQuantityPerUnit = new C1.Win.C1InputPanel.InputLabel();
-            this.txtQuantityPerUnit = new C1.Win.C1InputPanel.InputTextBox();
-            this.lblUnitPrice = new C1.Win.C1InputPanel.InputLabel();
-            this.numUnitPrice = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblUnitsInStock = new C1.Win.C1InputPanel.InputLabel();
-            this.numUnitsInStock = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblUnitsOnOrder = new C1.Win.C1InputPanel.InputLabel();
-            this.numUnitsOnOrder = new C1.Win.C1InputPanel.InputNumericBox();
-            this.lblReorderLevel = new C1.Win.C1InputPanel.InputLabel();
-            this.numReorderLevel = new C1.Win.C1InputPanel.InputNumericBox();
-            this.chkDiscontinued = new C1.Win.C1InputPanel.InputCheckBox();
+            this.hdrIBindingList = new C1.Win.InputPanel.InputGroupHeader();
+            this.navIBindingList = new C1.Win.InputPanel.InputDataNavigator();
+            this.sepLine1 = new C1.Win.InputPanel.InputSeparator();
+            this.lblProductID = new C1.Win.InputPanel.InputLabel();
+            this.numProductID = new C1.Win.InputPanel.InputNumericBox();
+            this.lblProductName = new C1.Win.InputPanel.InputLabel();
+            this.txtProductName = new C1.Win.InputPanel.InputTextBox();
+            this.lblSupplierID = new C1.Win.InputPanel.InputLabel();
+            this.numSupplierID = new C1.Win.InputPanel.InputNumericBox();
+            this.lblCategoryID1 = new C1.Win.InputPanel.InputLabel();
+            this.numCategoryID1 = new C1.Win.InputPanel.InputNumericBox();
+            this.lblQuantityPerUnit = new C1.Win.InputPanel.InputLabel();
+            this.txtQuantityPerUnit = new C1.Win.InputPanel.InputTextBox();
+            this.lblUnitPrice = new C1.Win.InputPanel.InputLabel();
+            this.numUnitPrice = new C1.Win.InputPanel.InputNumericBox();
+            this.lblUnitsInStock = new C1.Win.InputPanel.InputLabel();
+            this.numUnitsInStock = new C1.Win.InputPanel.InputNumericBox();
+            this.lblUnitsOnOrder = new C1.Win.InputPanel.InputLabel();
+            this.numUnitsOnOrder = new C1.Win.InputPanel.InputNumericBox();
+            this.lblReorderLevel = new C1.Win.InputPanel.InputLabel();
+            this.numReorderLevel = new C1.Win.InputPanel.InputNumericBox();
+            this.chkDiscontinued = new C1.Win.InputPanel.InputCheckBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.categoriesTableAdapter = new ControlExplorer.C1DemoDataSetTableAdapters.CategoriesTableAdapter();
             this.productsTableAdapter = new ControlExplorer.C1DemoDataSetTableAdapters.ProductsTableAdapter();
@@ -142,7 +142,7 @@
             // 
             // sepLine
             // 
-            this.sepLine.Break = C1.Win.C1InputPanel.BreakType.Group;
+            this.sepLine.Break = C1.Win.InputPanel.BreakType.Group;
             this.sepLine.Height = 11;
             this.sepLine.Name = "sepLine";
             this.sepLine.Width = 520;
@@ -190,20 +190,20 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.txtDescription.Break = C1.Win.InputPanel.BreakType.Column;
             this.txtDescription.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.categoriesBindingSource, "Description", true));
             this.txtDescription.Height = 48;
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread;
+            this.txtDescription.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Spread;
             this.txtDescription.Width = 200;
             // 
             // lblPicture
             // 
-            this.lblPicture.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.lblPicture.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.lblPicture.Name = "lblPicture";
             this.lblPicture.Text = "Picture:";
-            this.lblPicture.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.lblPicture.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.lblPicture.Width = 91;
             // 
             // imgPicture
@@ -285,7 +285,7 @@
             // 
             // sepLine1
             // 
-            this.sepLine1.Break = C1.Win.C1InputPanel.BreakType.Group;
+            this.sepLine1.Break = C1.Win.InputPanel.BreakType.Group;
             this.sepLine1.Height = 11;
             this.sepLine1.Name = "sepLine1";
             this.sepLine1.Width = 520;
@@ -377,7 +377,7 @@
             // 
             // txtQuantityPerUnit
             // 
-            this.txtQuantityPerUnit.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.txtQuantityPerUnit.Break = C1.Win.InputPanel.BreakType.Column;
             this.txtQuantityPerUnit.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.categoriesProductsBindingSource, "QuantityPerUnit", true));
             this.txtQuantityPerUnit.Name = "txtQuantityPerUnit";
             this.txtQuantityPerUnit.Width = 200;
@@ -506,46 +506,46 @@
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel2;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel2;
         private System.Windows.Forms.Splitter splitter1;
         private C1DemoDataSet c1DemoDataSet;
         private System.Windows.Forms.BindingSource categoriesBindingSource;
         private ControlExplorer.C1DemoDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrCategories;
-        private C1.Win.C1InputPanel.InputDataNavigator navCategories;
-        private C1.Win.C1InputPanel.InputSeparator sepLine;
-        private C1.Win.C1InputPanel.InputLabel lblCategoryID;
-        private C1.Win.C1InputPanel.InputNumericBox numCategoryID;
-        private C1.Win.C1InputPanel.InputLabel lblCategoryName;
-        private C1.Win.C1InputPanel.InputTextBox txtCategoryName;
-        private C1.Win.C1InputPanel.InputLabel lblDescription;
-        private C1.Win.C1InputPanel.InputTextBox txtDescription;
-        private C1.Win.C1InputPanel.InputLabel lblPicture;
-        private C1.Win.C1InputPanel.InputImage imgPicture;
+        private C1.Win.InputPanel.InputGroupHeader hdrCategories;
+        private C1.Win.InputPanel.InputDataNavigator navCategories;
+        private C1.Win.InputPanel.InputSeparator sepLine;
+        private C1.Win.InputPanel.InputLabel lblCategoryID;
+        private C1.Win.InputPanel.InputNumericBox numCategoryID;
+        private C1.Win.InputPanel.InputLabel lblCategoryName;
+        private C1.Win.InputPanel.InputTextBox txtCategoryName;
+        private C1.Win.InputPanel.InputLabel lblDescription;
+        private C1.Win.InputPanel.InputTextBox txtDescription;
+        private C1.Win.InputPanel.InputLabel lblPicture;
+        private C1.Win.InputPanel.InputImage imgPicture;
         private System.Windows.Forms.BindingSource categoriesProductsBindingSource;
         private ControlExplorer.C1DemoDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrIBindingList;
-        private C1.Win.C1InputPanel.InputDataNavigator navIBindingList;
-        private C1.Win.C1InputPanel.InputSeparator sepLine1;
-        private C1.Win.C1InputPanel.InputLabel lblProductID;
-        private C1.Win.C1InputPanel.InputNumericBox numProductID;
-        private C1.Win.C1InputPanel.InputLabel lblProductName;
-        private C1.Win.C1InputPanel.InputTextBox txtProductName;
-        private C1.Win.C1InputPanel.InputLabel lblSupplierID;
-        private C1.Win.C1InputPanel.InputNumericBox numSupplierID;
-        private C1.Win.C1InputPanel.InputLabel lblCategoryID1;
-        private C1.Win.C1InputPanel.InputNumericBox numCategoryID1;
-        private C1.Win.C1InputPanel.InputLabel lblQuantityPerUnit;
-        private C1.Win.C1InputPanel.InputTextBox txtQuantityPerUnit;
-        private C1.Win.C1InputPanel.InputLabel lblUnitPrice;
-        private C1.Win.C1InputPanel.InputNumericBox numUnitPrice;
-        private C1.Win.C1InputPanel.InputLabel lblUnitsInStock;
-        private C1.Win.C1InputPanel.InputNumericBox numUnitsInStock;
-        private C1.Win.C1InputPanel.InputLabel lblUnitsOnOrder;
-        private C1.Win.C1InputPanel.InputNumericBox numUnitsOnOrder;
-        private C1.Win.C1InputPanel.InputLabel lblReorderLevel;
-        private C1.Win.C1InputPanel.InputNumericBox numReorderLevel;
-        private C1.Win.C1InputPanel.InputCheckBox chkDiscontinued;
+        private C1.Win.InputPanel.InputGroupHeader hdrIBindingList;
+        private C1.Win.InputPanel.InputDataNavigator navIBindingList;
+        private C1.Win.InputPanel.InputSeparator sepLine1;
+        private C1.Win.InputPanel.InputLabel lblProductID;
+        private C1.Win.InputPanel.InputNumericBox numProductID;
+        private C1.Win.InputPanel.InputLabel lblProductName;
+        private C1.Win.InputPanel.InputTextBox txtProductName;
+        private C1.Win.InputPanel.InputLabel lblSupplierID;
+        private C1.Win.InputPanel.InputNumericBox numSupplierID;
+        private C1.Win.InputPanel.InputLabel lblCategoryID1;
+        private C1.Win.InputPanel.InputNumericBox numCategoryID1;
+        private C1.Win.InputPanel.InputLabel lblQuantityPerUnit;
+        private C1.Win.InputPanel.InputTextBox txtQuantityPerUnit;
+        private C1.Win.InputPanel.InputLabel lblUnitPrice;
+        private C1.Win.InputPanel.InputNumericBox numUnitPrice;
+        private C1.Win.InputPanel.InputLabel lblUnitsInStock;
+        private C1.Win.InputPanel.InputNumericBox numUnitsInStock;
+        private C1.Win.InputPanel.InputLabel lblUnitsOnOrder;
+        private C1.Win.InputPanel.InputNumericBox numUnitsOnOrder;
+        private C1.Win.InputPanel.InputLabel lblReorderLevel;
+        private C1.Win.InputPanel.InputNumericBox numReorderLevel;
+        private C1.Win.InputPanel.InputCheckBox chkDiscontinued;
     }
 }

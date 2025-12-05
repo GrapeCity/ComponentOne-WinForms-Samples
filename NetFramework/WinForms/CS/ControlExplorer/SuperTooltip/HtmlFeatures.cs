@@ -31,12 +31,12 @@ namespace ControlExplorer.SuperTooltip
             splitContainer2.Panel2Collapsed = !checkBox1.Checked;
         }
 
-        private void c1SuperLabel3_LinkClicked(object sender, C1.Win.C1SuperTooltip.C1SuperLabelLinkClickedEventArgs e)
+        private void c1SuperLabel3_LinkClicked(object sender, C1.Win.SuperTooltip.C1SuperLabelLinkClickedEventArgs e)
         {
            Process.Start(e.HRef);
         }
 
-        private void c1SuperTooltip1_Popup(object sender, C1.Win.C1SuperTooltip.PopupEventArgs e)
+        private void c1SuperTooltip1_Popup(object sender, C1.Win.SuperTooltip.PopupEventArgs e)
         {
             e.Text = "<b>C1SuperTooltip</b>" + e.Text;
         }

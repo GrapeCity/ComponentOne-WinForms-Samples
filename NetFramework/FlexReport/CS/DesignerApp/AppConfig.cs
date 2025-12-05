@@ -424,7 +424,7 @@ namespace FlexReportDesignerApp
             {
                 using (MemoryStream ms = new MemoryStream())
                 {
-                    C1.Win.C1Command.C1DockingTab.SaveLayout(_owner, ms);
+                    C1.Win.Command.C1DockingTab.SaveLayout(_owner, ms);
                     return System.Convert.ToBase64String(ms.ToArray());
                 }
             }
@@ -441,7 +441,7 @@ namespace FlexReportDesignerApp
                         byte[] data = System.Convert.FromBase64String(value);
                         ms.Write(data, 0, data.Length);
                         ms.Seek(0, SeekOrigin.Begin);
-                        C1.Win.C1Command.C1DockingTab.RestoreLayout(_owner, ms);
+                        C1.Win.Command.C1DockingTab.RestoreLayout(_owner, ms);
                     }
                 }
             }

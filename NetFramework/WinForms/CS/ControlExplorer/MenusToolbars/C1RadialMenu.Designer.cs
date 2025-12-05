@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1RadialMenu1 = new C1.Win.C1Command.C1RadialMenu();
-            this.radialMenuItem1 = new C1.Win.C1Command.RadialMenuItem();
-            this.radialMenuCommandItem1 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem2 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem3 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem4 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem5 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem6 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem7 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.radialMenuCommandItem8 = new C1.Win.C1Command.RadialMenuCommandItem();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1RadialMenu1 = new C1.Win.Command.C1RadialMenu();
+            this.radialMenuItem1 = new C1.Win.Command.RadialMenuItem();
+            this.radialMenuCommandItem1 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem2 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem3 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem4 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem5 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem6 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem7 = new C1.Win.Command.RadialMenuCommandItem();
+            this.radialMenuCommandItem8 = new C1.Win.Command.RadialMenuCommandItem();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -54,7 +54,7 @@
             this.c1RadialMenu1.Items.Add(this.radialMenuCommandItem7);
             this.c1RadialMenu1.Items.Add(this.radialMenuCommandItem8);
             this.c1ThemeController1.SetTheme(this.c1RadialMenu1, "(default)");
-            this.c1RadialMenu1.ItemClick += new C1.Win.C1Command.RadialMenuItemClickEventHandler(this.c1RadialMenu1_ItemClick);
+            this.c1RadialMenu1.ItemClick += new C1.Win.Command.RadialMenuItemClickEventHandler(this.c1RadialMenu1_ItemClick);
             // 
             // radialMenuItem1
             // 
@@ -160,17 +160,17 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1RadialMenu c1RadialMenu1;
-        private C1.Win.C1Command.RadialMenuItem radialMenuItem1;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem1;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem2;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem3;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem4;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem5;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem6;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem7;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Command.RadialMenuCommandItem radialMenuCommandItem8;
+        private C1.Win.Command.C1RadialMenu c1RadialMenu1;
+        private C1.Win.Command.RadialMenuItem radialMenuItem1;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem1;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem2;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem3;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem4;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem5;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem6;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem7;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Command.RadialMenuCommandItem radialMenuCommandItem8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

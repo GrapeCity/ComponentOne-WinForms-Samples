@@ -1,5 +1,5 @@
 Imports C1.Framework
-Imports C1.C1Schedule
+Imports C1.Schedule
 
 Namespace TestSchedule
 	Partial Class Form1
@@ -35,8 +35,8 @@ Namespace TestSchedule
             Me.clearWeekToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
             Me.copyDayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
             Me.copyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-            Me.c1Schedule1 = New C1.Win.C1Schedule.C1Schedule
-            Me.c1Calendar1 = New C1.Win.C1Schedule.C1Calendar
+            Me.c1Schedule1 = New C1.Win.Schedule.C1Schedule
+            Me.c1Calendar1 = New C1.Win.Schedule.C1Calendar
             Me.menuStrip1.SuspendLayout()
             CType(Me.c1Schedule1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.c1Schedule1.DataStorage.AppointmentStorage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,7 +109,7 @@ Namespace TestSchedule
             Me.c1Schedule1.CalendarInfo.DateFormatString = "M/d/yyyy"
             Me.c1Schedule1.CalendarInfo.EndDayTime = System.TimeSpan.Parse("21:00:00")
             Me.c1Schedule1.CalendarInfo.StartDayTime = System.TimeSpan.Parse("09:00:00")
-            Me.c1Schedule1.CalendarInfo.TimeInterval = C1.C1Schedule.TimeScaleEnum.FifteenMinutes
+            Me.c1Schedule1.CalendarInfo.TimeInterval = C1.Schedule.TimeScaleEnum.FifteenMinutes
             Me.c1Schedule1.CalendarInfo.TimeScale = System.TimeSpan.Parse("00:15:00")
             Me.c1Schedule1.CalendarInfo.WeekStart = System.DayOfWeek.Monday
             Me.c1Schedule1.CalendarInfo.WorkDays.AddRange(New System.DayOfWeek() {System.DayOfWeek.Sunday, System.DayOfWeek.Monday, System.DayOfWeek.Tuesday, System.DayOfWeek.Wednesday, System.DayOfWeek.Thursday, System.DayOfWeek.Friday, System.DayOfWeek.Saturday})
@@ -125,8 +125,8 @@ Namespace TestSchedule
             Me.c1Schedule1.ShowWorkTimeOnly = True
             Me.c1Schedule1.Size = New System.Drawing.Size(601, 537)
             Me.c1Schedule1.TabIndex = 2
-            Me.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WeekView
-            Me.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2007Blue
+            Me.c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WeekView
+            Me.c1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2007Blue
             '
             'c1Calendar1
             '
@@ -141,7 +141,7 @@ Namespace TestSchedule
             Me.c1Calendar1.ShowWeekNumbers = True
             Me.c1Calendar1.Size = New System.Drawing.Size(272, 537)
             Me.c1Calendar1.TabIndex = 0
-            Me.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2007Blue
+            Me.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2007Blue
             '
             'Form1
             '
@@ -172,10 +172,10 @@ Namespace TestSchedule
 
 		#End Region
 
-        Friend WithEvents c1Calendar1 As C1.Win.C1Schedule.C1Calendar
+        Friend WithEvents c1Calendar1 As C1.Win.Schedule.C1Calendar
         Friend WithEvents splitter1 As System.Windows.Forms.Splitter
         Friend WithEvents menuStrip1 As System.Windows.Forms.MenuStrip
-        Friend WithEvents c1Schedule1 As C1.Win.C1Schedule.C1Schedule
+        Friend WithEvents c1Schedule1 As C1.Win.Schedule.C1Schedule
         Friend WithEvents _today As System.Windows.Forms.ToolStripMenuItem
         Friend WithEvents _exit As System.Windows.Forms.ToolStripMenuItem
         Friend WithEvents copyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

@@ -17,9 +17,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.Win.C1Input;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Controls;
@@ -210,7 +210,7 @@ namespace FlexReportDesignerApp.Forms
             scriptNamePrefix += ".ParameterValues";
         }
 
-        void c1FlexGrid1_KeyPressEdit(object sender, C1.Win.C1FlexGrid.KeyPressEditEventArgs e)
+        void c1FlexGrid1_KeyPressEdit(object sender, C1.Win.FlexGrid.KeyPressEditEventArgs e)
         {
             Debug.WriteLine(e.KeyChar);
         }
@@ -305,18 +305,18 @@ namespace FlexReportDesignerApp.Forms
             btnDown.Enabled = hasRowSelected && !isLastRowSelected;
         }
 
-        void c1FlexGrid1_AfterSelChange(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+        void c1FlexGrid1_AfterSelChange(object sender, C1.Win.FlexGrid.RangeEventArgs e)
         {
             UpdateButtonsSatus();
         }
 
-        void c1FlexGrid1_LeaveEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void c1FlexGrid1_LeaveEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             _editing = false;
             UpdateButtonsSatus();
         }
 
-        private void c1FlexGrid1_StartEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_StartEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             _editing = true;
             UpdateButtonsSatus();
@@ -345,7 +345,7 @@ namespace FlexReportDesignerApp.Forms
             }
         }
 
-        private void c1FlexGrid1_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             if (_updating) return;
 

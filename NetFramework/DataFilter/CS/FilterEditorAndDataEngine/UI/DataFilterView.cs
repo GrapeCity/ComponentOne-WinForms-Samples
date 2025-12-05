@@ -1,7 +1,7 @@
 ﻿using C1.DataCollection.BindingList;
 using C1.DataEngine;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1Themes;
+using C1.Win.FlexGrid;
+using C1.Win.Themes;
 using System;
 using System.Diagnostics;
 using System.Drawing;

@@ -250,7 +250,9 @@ namespace CustomMerge2
 		// ** custom merging property
 
 		protected bool _customMerging;
-		public bool CustomMerging
+
+        [DefaultValue(false)]
+        public bool CustomMerging
 		{
 			get { return _customMerging; }
 			set 

@@ -5,7 +5,7 @@ Namespace CustomizePage
 	Partial Public Class Form1
 		Inherits Form
 
-        Dim collapseAllView As C1.Win.C1Command.C1Command
+        Dim collapseAllView As C1.Win.Command.C1Command
 
 		Public Sub New()
 			InitializeComponent()
@@ -37,30 +37,30 @@ Namespace CustomizePage
 			' build menu with predefined views:
 			Dim doc = New System.Xml.XmlDocument()
             doc.LoadXml(My.Resources.FlexPivotViews)
-            Dim menuView = New C1.Win.C1Command.C1CommandMenu()
+            Dim menuView = New C1.Win.Command.C1CommandMenu()
             menuView.Text = "&View"
             menuView.Image = My.Resources.Views_small
             For Each nd As System.Xml.XmlNode In doc.SelectNodes("FlexPivotViews/C1FlexPivotPage")
-                Dim cmd = New C1.Win.C1Command.C1Command()
+                Dim cmd = New C1.Win.Command.C1Command()
                 cmd.Text = nd.Attributes("id").Value
                 cmd.UserData = nd
                 AddHandler cmd.Click, AddressOf menuView_DropDownItemClicked
-                Dim link = New C1.Win.C1Command.C1CommandLink(cmd)
+                Dim link = New C1.Win.Command.C1CommandLink(cmd)
                 menuView.CommandLinks.Add(link)
             Next nd
 
             AddHandler c1FlexPivotPage1.Updated, AddressOf c1FlexPivotPage1_Updated
 
             ' add new view menu to C1FlexPivotPage toolstrip
-            Dim menuLink = New C1.Win.C1Command.C1CommandLink(menuView)
+            Dim menuLink = New C1.Win.Command.C1CommandLink(menuView)
             c1FlexPivotPage1.ToolBar.CommandLinks.Insert(3, menuLink)
 
             ' add collapseall menu to C1FlexPivotPage toolstrip
-            collapseAllView = New C1.Win.C1Command.C1Command()
+            collapseAllView = New C1.Win.Command.C1Command()
             collapseAllView.Text = "&CollapseAll"
             collapseAllView.Image = My.Resources.CollapseAll
             AddHandler collapseAllView.Click, AddressOf collapseAllView_Click
-            Dim collapseAllViewLink = New C1.Win.C1Command.C1CommandLink(collapseAllView)
+            Dim collapseAllViewLink = New C1.Win.Command.C1CommandLink(collapseAllView)
             c1FlexPivotPage1.ToolBar.CommandLinks.Add(collapseAllViewLink)
 
         End Sub
@@ -81,7 +81,7 @@ Namespace CustomizePage
 		End Sub
 
 		' select a predefined view
-        Private Sub menuView_DropDownItemClicked(ByVal sender As Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+        Private Sub menuView_DropDownItemClicked(ByVal sender As Object, ByVal e As C1.Win.Command.ClickEventArgs)
             Dim nd = TryCast(e.CallerLink.Command.UserData, System.Xml.XmlNode)
             If nd IsNot Nothing Then
                 ' load view definition from XML

@@ -19,8 +19,8 @@ namespace CrossTabs
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Button button6;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexXTab;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flexXTab;
 		private System.Windows.Forms.Splitter splitter1;
 		private System.Windows.Forms.StatusBar _status;
 		/// <summary>
@@ -69,8 +69,8 @@ namespace CrossTabs
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flexXTab = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flexXTab = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this._status = new System.Windows.Forms.StatusBar();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
@@ -80,9 +80,9 @@ namespace CrossTabs
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(8, 8);
+            this.button1.Location = new System.Drawing.Point(16, 15);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 24);
+            this.button1.Size = new System.Drawing.Size(272, 44);
             this.button1.TabIndex = 0;
             this.button1.Text = "Country x Year";
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -90,9 +90,9 @@ namespace CrossTabs
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(160, 8);
+            this.button2.Location = new System.Drawing.Point(320, 15);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 24);
+            this.button2.Size = new System.Drawing.Size(272, 44);
             this.button2.TabIndex = 2;
             this.button2.Text = "SalesPerson x Year";
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -100,9 +100,9 @@ namespace CrossTabs
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Location = new System.Drawing.Point(160, 32);
+            this.button3.Location = new System.Drawing.Point(320, 59);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 24);
+            this.button3.Size = new System.Drawing.Size(272, 44);
             this.button3.TabIndex = 3;
             this.button3.Text = "SalesPerson x Category";
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -110,9 +110,9 @@ namespace CrossTabs
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Location = new System.Drawing.Point(8, 32);
+            this.button4.Location = new System.Drawing.Point(16, 59);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(136, 24);
+            this.button4.Size = new System.Drawing.Size(272, 44);
             this.button4.TabIndex = 4;
             this.button4.Text = "Country x Category";
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -120,9 +120,9 @@ namespace CrossTabs
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Location = new System.Drawing.Point(312, 32);
+            this.button5.Location = new System.Drawing.Point(624, 59);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 24);
+            this.button5.Size = new System.Drawing.Size(272, 44);
             this.button5.TabIndex = 5;
             this.button5.Text = "Customer x Category";
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -130,9 +130,9 @@ namespace CrossTabs
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button6.Location = new System.Drawing.Point(312, 8);
+            this.button6.Location = new System.Drawing.Point(624, 15);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(136, 24);
+            this.button6.Size = new System.Drawing.Size(272, 44);
             this.button6.TabIndex = 6;
             this.button6.Text = "Category x Quarter";
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -141,46 +141,48 @@ namespace CrossTabs
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:25;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Left;
+            this._flex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this._flex.Location = new System.Drawing.Point(0, 65);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
             this._flex.ShowCursor = true;
-            this._flex.Size = new System.Drawing.Size(192, 342);
+            this._flex.Size = new System.Drawing.Size(384, 323);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 7;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             // 
             // _flexXTab
             // 
             this._flexXTab.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:25;}\t";
             this._flexXTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flexXTab.Location = new System.Drawing.Point(200, 65);
+            this._flexXTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this._flexXTab.Location = new System.Drawing.Point(400, 65);
             this._flexXTab.Name = "_flexXTab";
             this._flexXTab.Rows.DefaultSize = 17;
             this._flexXTab.ShowCursor = true;
-            this._flexXTab.Size = new System.Drawing.Size(448, 342);
+            this._flexXTab.Size = new System.Drawing.Size(248, 323);
             this._flexXTab.StyleInfo = resources.GetString("_flexXTab.StyleInfo");
             this._flexXTab.TabIndex = 7;
-            this._flexXTab.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
+            this._flexXTab.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             // 
             // splitter1
             // 
-            this.splitter1.Location = new System.Drawing.Point(192, 65);
+            this.splitter1.Location = new System.Drawing.Point(384, 65);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(8, 342);
+            this.splitter1.Size = new System.Drawing.Size(16, 323);
             this.splitter1.TabIndex = 8;
             this.splitter1.TabStop = false;
             // 
             // _status
             // 
-            this._status.Location = new System.Drawing.Point(0, 407);
+            this._status.Location = new System.Drawing.Point(0, 388);
             this._status.Name = "_status";
-            this._status.Size = new System.Drawing.Size(648, 22);
+            this._status.Size = new System.Drawing.Size(648, 41);
             this._status.TabIndex = 9;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(648, 429);
             this.Controls.Add(this._flexXTab);
             this.Controls.Add(this.splitter1);
@@ -192,6 +194,7 @@ namespace CrossTabs
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this._status);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 65, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

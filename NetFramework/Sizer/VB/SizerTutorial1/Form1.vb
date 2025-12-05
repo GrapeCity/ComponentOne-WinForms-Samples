@@ -29,7 +29,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1Sizer1 As C1.Win.C1Sizer.C1Sizer
+    Friend WithEvents C1Sizer1 As C1.Win.Sizer.C1Sizer
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
@@ -48,7 +48,7 @@ Public Class Form1
     Friend WithEvents Label8 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1Sizer1 = New C1.Win.C1Sizer.C1Sizer()
+        Me.C1Sizer1 = New C1.Win.Sizer.C1Sizer()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()

@@ -1,4 +1,4 @@
-namespace CustomEditors
+﻿namespace CustomEditors
 {
     partial class Form1
     {
@@ -28,18 +28,21 @@ namespace CustomEditors
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
             this.formBackColorEditor = new ColorEditorHost();
-            this.inputLabel5 = new C1.Win.C1InputPanel.InputLabel();
+            this.inputLabel5 = new C1.Win.InputPanel.InputLabel();
             this.formForeColorEditor = new ColorEditorHost();
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
             this.labelColorEditor = new ColorEditorHost();
-            this.inputGroupHeader2 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
+            this.inputGroupHeader2 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
             this.formFontEditor = new FontEditorHost();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
             this.labelFontEditor = new FontEditorHost();
             this.btnSaveXml = new System.Windows.Forms.Button();
             this.btnLoadXml = new System.Windows.Forms.Button();
@@ -72,8 +75,8 @@ namespace CustomEditors
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Size = new System.Drawing.Size(364, 200);
             this.c1InputPanel1.TabIndex = 0;
-            this.c1InputPanel1.ControlHostFromXmlNode += new System.EventHandler<C1.Win.C1InputPanel.ControlHostFromXmlNodeEventArgs>(this.c1InputPanel1_ControlHostFromXmlNode);
-            this.c1InputPanel1.ItemDeserialized += new System.EventHandler<C1.Win.C1InputPanel.ItemDeserializedEventArgs>(this.c1InputPanel1_ItemDeserialized);
+            this.c1InputPanel1.ControlHostFromXmlNode += new System.EventHandler<C1.Win.InputPanel.ControlHostFromXmlNodeEventArgs>(this.c1InputPanel1_ControlHostFromXmlNode);
+            this.c1InputPanel1.ItemDeserialized += new System.EventHandler<C1.Win.InputPanel.ItemDeserializedEventArgs>(this.c1InputPanel1_ItemDeserialized);
             // 
             // inputGroupHeader1
             // 
@@ -240,21 +243,21 @@ namespace CustomEditors
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
         private ColorEditorHost formBackColorEditor;
         private System.Windows.Forms.Button btnSaveXml;
         private System.Windows.Forms.Button btnLoadXml;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
         private FontEditorHost formFontEditor;
         private System.Windows.Forms.Label demoLabel;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
         private ColorEditorHost labelColorEditor;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader2;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
         private FontEditorHost labelFontEditor;
-        private C1.Win.C1InputPanel.InputLabel inputLabel5;
+        private C1.Win.InputPanel.InputLabel inputLabel5;
         private ColorEditorHost formForeColorEditor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClear;

@@ -2,8 +2,8 @@
 Imports System.Data
 Imports System.Data.OleDb
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
-Imports C1.Win.C1Themes
+Imports C1.Win.FlexGrid
+Imports C1.Win.Themes
 Imports C1.Win.Ribbon
 
 Namespace HoverStyle

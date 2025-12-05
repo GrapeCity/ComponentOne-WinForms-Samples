@@ -47,7 +47,7 @@ using System.Drawing;
 using System.Collections;
 using System.Windows.Forms;
 using System.ComponentModel;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace DataTree
 {
@@ -699,7 +699,7 @@ namespace DataTree
 			{
 				// initialize
 				Dock = DockStyle.Top;
-				BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+				BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 				Height = parent.Rows[Rows.Fixed].Top;
 				ScrollBars = ScrollBars.None;
 

@@ -1,4 +1,4 @@
-Imports C1.Win.C1Command
+Imports C1.Win.Command
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -31,18 +31,18 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1OutBar1 As C1.Win.C1Command.C1OutBar
-    Friend WithEvents C1CommandHolder1 As C1.Win.C1Command.C1CommandHolder
+    Friend WithEvents C1OutBar1 As C1.Win.Command.C1OutBar
+    Friend WithEvents C1CommandHolder1 As C1.Win.Command.C1CommandHolder
     Friend WithEvents ImageList1 As System.Windows.Forms.ImageList
-    Friend WithEvents C1OutPage1 As C1.Win.C1Command.C1OutPage
-    Friend WithEvents C1OutPage2 As C1.Win.C1Command.C1OutPage
+    Friend WithEvents C1OutPage1 As C1.Win.Command.C1OutPage
+    Friend WithEvents C1OutPage2 As C1.Win.Command.C1OutPage
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1OutBar1 = New C1.Win.C1Command.C1OutBar
-        Me.C1OutPage1 = New C1.Win.C1Command.C1OutPage
-        Me.C1OutPage2 = New C1.Win.C1Command.C1OutPage
-        Me.C1CommandHolder1 = New C1.Win.C1Command.C1CommandHolder
+        Me.C1OutBar1 = New C1.Win.Command.C1OutBar
+        Me.C1OutPage1 = New C1.Win.Command.C1OutPage
+        Me.C1OutPage2 = New C1.Win.Command.C1OutPage
+        Me.C1CommandHolder1 = New C1.Win.Command.C1CommandHolder
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.C1OutBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.C1OutBar1.SuspendLayout()

@@ -4,7 +4,7 @@ Imports System.Collections
 Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 
 Public Class FlexFreezeBottom
@@ -27,11 +27,11 @@ Public Class FlexFreezeBottom
 
     Friend Class FlexFreezeBottom
         Inherits Panel
-        Dim WithEvents _frz As C1.Win.C1FlexGrid.C1FlexGrid
-        Dim WithEvents _main As C1.Win.C1FlexGrid.C1FlexGrid
+        Dim WithEvents _frz As C1.Win.FlexGrid.C1FlexGrid
+        Dim WithEvents _main As C1.Win.FlexGrid.C1FlexGrid
         Dim _rows As Integer
 
-        Friend Sub New(ByVal main As C1.Win.C1FlexGrid.C1FlexGrid, ByVal rows As Integer)
+        Friend Sub New(ByVal main As C1.Win.FlexGrid.C1FlexGrid, ByVal rows As Integer)
             MyBase.New()
 
             ' save info we'll need later
@@ -43,10 +43,10 @@ Public Class FlexFreezeBottom
             _frz.ScrollBars = ScrollBars.None
             _frz.BorderStyle = Util.BaseControls.BorderStyleEnum.None
             _frz.DrawMode = DrawModeEnum.OwnerDraw
-            '_frz.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(_frz_OwnerDrawCell);
-            '_frz.SetupEditor   += new C1.Win.C1FlexGrid.RowColEventHandler(_frz_SetupEditor);
-            '_frz.AfterScroll   += new C1.Win.C1FlexGrid.RangeEventHandler(_frz_AfterScroll);
-            '_frz.GridChanged   += new C1.Win.C1FlexGrid.GridChangedEventHandler(_main_GridChanged);
+            '_frz.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(_frz_OwnerDrawCell);
+            '_frz.SetupEditor   += new C1.Win.FlexGrid.RowColEventHandler(_frz_SetupEditor);
+            '_frz.AfterScroll   += new C1.Win.FlexGrid.RangeEventHandler(_frz_AfterScroll);
+            '_frz.GridChanged   += new C1.Win.FlexGrid.GridChangedEventHandler(_main_GridChanged);
             Controls.Add(_frz)
 
             ' bind frozen grid to main grid(share data, layout, styles,selection)
@@ -58,9 +58,9 @@ Public Class FlexFreezeBottom
             ' hook up the events we need to synchronize with the main grid
             'main.Resize      += new System.EventHandler(_main_Resize);
             'main.VisibleChanged += new System.EventHandler(_main_Resize);
-            'main.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(_main_AfterScroll);
+            'main.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(_main_AfterScroll);
             'main.SelChange   += new System.EventHandler(_main_SelChange);
-            'main.GridChanged += new C1.Win.C1FlexGrid.GridChangedEventHandler(_main_GridChanged);
+            'main.GridChanged += new C1.Win.FlexGrid.GridChangedEventHandler(_main_GridChanged);
 
             'initialize 
             AdjustLayout()
@@ -126,14 +126,14 @@ Public Class FlexFreezeBottom
 
         ' make normal and scrollable areas look different
         ' (when painting and when editing)
-        Private Sub _frz_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.OwnerDrawCellEventArgs) Handles _frz.OwnerDrawCell
+        Private Sub _frz_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.OwnerDrawCellEventArgs) Handles _frz.OwnerDrawCell
             If e.Style.BackColor.Equals(_frz.Styles.Normal.BackColor) Then
                 e.Graphics.FillRectangle(Brushes.Beige, e.Bounds)
                 e.DrawCell(DrawCellFlags.Border Or DrawCellFlags.Content)
             End If
         End Sub
 
-        Private Sub _frz_SetupEditor(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _frz.SetupEditor
+        Private Sub _frz_SetupEditor(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _frz.SetupEditor
             _frz.BackColor = Color.Beige
         End Sub
 
@@ -143,11 +143,11 @@ Public Class FlexFreezeBottom
         End Sub
 
         ' synchronize scrolling
-        Private Sub _main_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles _main.AfterScroll
+        Private Sub _main_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles _main.AfterScroll
             SynchScrollPosition(False)
         End Sub
 
-        Private Sub _frz_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles _frz.AfterScroll
+        Private Sub _frz_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles _frz.AfterScroll
 
             ' if the frozen grid has the focus and the user selects non-frozen
             ' cells, scroll main grid up.
@@ -181,7 +181,7 @@ Public Class FlexFreezeBottom
         End Sub
 
         ' adjust layout after massive changes (resize rows/cols, sort,etc)
-        Private Sub _main_GridChanged(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.GridChangedEventArgs) Handles _main.GridChanged, _frz.GridChanged
+        Private Sub _main_GridChanged(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.GridChangedEventArgs) Handles _main.GridChanged, _frz.GridChanged
 
             Select Case e.GridChangedType
                 Case GridChangedTypeEnum.GridChanged, GridChangedTypeEnum.LayoutChanged

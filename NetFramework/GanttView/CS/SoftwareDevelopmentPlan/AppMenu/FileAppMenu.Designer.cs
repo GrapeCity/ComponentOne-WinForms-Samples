@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.menuButton1 = new AppMenuButton();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             this.c1InputPanel1.Size = new System.Drawing.Size(854, 645);
             this.c1InputPanel1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1InputPanel1, "(default)");
-            this.c1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Custom;
+            this.c1InputPanel1.VisualStyle = C1.Win.InputPanel.VisualStyle.Custom;
             // 
             // menuButton1
             // 
@@ -89,8 +89,8 @@
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
         private AppMenuButton menuButton1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }

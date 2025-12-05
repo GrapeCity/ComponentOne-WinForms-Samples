@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Command;
+﻿using C1.Win.Command;
 using C1.Win.TouchToolKit;
 using System;
 using System.Collections.Generic;

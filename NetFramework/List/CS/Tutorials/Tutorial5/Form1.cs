@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -15,7 +15,7 @@ namespace Tutorial5
 	{
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Button button1;
-		private C1.Win.C1List.C1List c1List1;
+		private C1.Win.List.C1List c1List1;
 		private OleDbCommand oleDbSelectCommand1;
 		private OleDbConnection oleDbConnection1;
 		private OleDbCommand oleDbInsertCommand1;
@@ -62,18 +62,19 @@ namespace Tutorial5
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.c1List1 = new C1.Win.C1List.C1List();
+			this.c1List1 = new C1.Win.List.C1List();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbUpdateCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -125,7 +126,7 @@ namespace Tutorial5
 			this.c1List1.Name = "c1List1";
 			this.c1List1.OddRowStyle = style6;
 			this.c1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.c1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.c1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1List1.SelectedStyle = style7;
 			this.c1List1.Size = new System.Drawing.Size(416, 193);

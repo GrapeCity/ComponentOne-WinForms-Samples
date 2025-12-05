@@ -41,8 +41,8 @@ namespace FlexReportViewer
 
         static PreviewForm()
         {            
-            var ipStyle = (C1.Win.C1InputPanel.ThemeColor)((int)DefaultThemeColor);
-            C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray);
+            var ipStyle = (C1.Win.InputPanel.ThemeColor)((int)DefaultThemeColor);
+            C1.Win.InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.InputPanel.ThemeLightness.LightGray);
 
             var ov = new OSVERSIONINFO();
             ov.dwOSVersionInfoSize = Marshal.SizeOf(typeof(OSVERSIONINFO));
@@ -698,8 +698,8 @@ namespace FlexReportViewer
             _themeColor = (ThemeColor)tb.PressedButton.Tag;
             UpdateChildStyles(_themeColor, ThemeLightness.DarkGray);
 
-            var ipStyle = (C1.Win.C1InputPanel.ThemeColor)((int)_themeColor);
-            C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray);
+            var ipStyle = (C1.Win.InputPanel.ThemeColor)((int)_themeColor);
+            C1.Win.InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.InputPanel.ThemeLightness.LightGray);
         }
 
         #endregion

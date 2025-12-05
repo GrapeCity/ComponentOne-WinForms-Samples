@@ -37,7 +37,7 @@ Partial Class MainForm
         Me.RibbonGroup2 = New C1.Win.Ribbon.RibbonGroup()
         Me.RibbonTextBox1 = New C1.Win.Ribbon.RibbonTextBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.C1TreeView1 = New C1.Win.TreeView.C1TreeView()
         Me.DataSet1 = New CustomAutoSearch.DataSet1()
         Me.DataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -176,7 +176,7 @@ Partial Class MainForm
     Private WithEvents RibbonTab1 As RibbonTab
     Private WithEvents RibbonGroup1 As RibbonGroup
     Private WithEvents RibbonTopToolBar1 As RibbonTopToolBar
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents RibbonGroup2 As RibbonGroup
     Friend WithEvents RibbonTextBox1 As RibbonTextBox
     Friend WithEvents C1TreeView1 As C1.Win.TreeView.C1TreeView

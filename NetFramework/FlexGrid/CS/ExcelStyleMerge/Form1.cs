@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ExcelStyleMerge
 {
@@ -19,7 +19,7 @@ namespace ExcelStyleMerge
             InitializeComponent();
 
             // enable custom merging
-            _flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Custom;
+            _flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Custom;
 
             // some settings to make the marquee look nice
             _flex.Styles.Highlight.ForeColor = Color.Black;

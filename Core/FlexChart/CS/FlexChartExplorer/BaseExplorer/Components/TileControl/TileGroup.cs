@@ -15,6 +15,7 @@ namespace BaseExplorer.Components
 {
     public partial class TileGroup : UserControl
     {
+        [DefaultValue("")]
         public new string Name
         {
             get { return lblGroupName.Text; }
@@ -26,6 +27,7 @@ namespace BaseExplorer.Components
         private Color _hoverColor;
         private string _theme;
 
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverColor
         {
             get
@@ -41,7 +43,10 @@ namespace BaseExplorer.Components
             }
         }
 
+        [DefaultValue(null)]
         public TileControl TileControl { get; set; }
+
+        [DefaultValue(null)]
         public string Theme
         {
             get

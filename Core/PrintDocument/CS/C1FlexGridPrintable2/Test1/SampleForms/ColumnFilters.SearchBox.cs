@@ -29,6 +29,8 @@ namespace ColumnFilters
 	        get { return _txtSearch.Text; }
             set { _txtSearch.Text = value; }
         }
+
+        [DefaultValue(100)]
         public int Delay
         {
             get { return _timer.Interval; }

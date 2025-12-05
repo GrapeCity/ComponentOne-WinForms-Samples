@@ -1,4 +1,4 @@
-namespace AnimatedGif
+﻿namespace AnimatedGif
 {
     partial class Form1
     {
@@ -28,9 +28,13 @@ namespace AnimatedGif
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
@@ -43,7 +47,7 @@ namespace AnimatedGif
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+            this.c1FlexGrid1.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
             this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -53,7 +57,7 @@ namespace AnimatedGif
             this.c1FlexGrid1.Rows.DefaultSize = 17;
             this.c1FlexGrid1.Size = new System.Drawing.Size(662, 339);
             this.c1FlexGrid1.TabIndex = 2;
-            this.c1FlexGrid1.AfterDragColumn += new C1.Win.C1FlexGrid.DragRowColEventHandler(this.c1FlexGrid1_AfterDragColumn);
+            this.c1FlexGrid1.AfterDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this.c1FlexGrid1_AfterDragColumn);
             // 
             // button1
             // 
@@ -97,7 +101,7 @@ namespace AnimatedGif
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

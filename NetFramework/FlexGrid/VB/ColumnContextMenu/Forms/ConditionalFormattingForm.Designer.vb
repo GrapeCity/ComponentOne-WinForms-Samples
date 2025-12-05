@@ -29,7 +29,7 @@ Partial Class ConditionalFormattingForm
         Me.btnOk = New C1.Win.C1Input.C1Button()
         Me.btnCancel = New C1.Win.C1Input.C1Button()
         Me.c1RulesManager1 = New C1.Win.RulesManager.C1RulesManager()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.panel1.SuspendLayout()
         CType(Me.btnClear, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnOk, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -124,5 +124,5 @@ Partial Class ConditionalFormattingForm
     Private WithEvents btnOk As C1.Win.C1Input.C1Button
     Private WithEvents btnCancel As C1.Win.C1Input.C1Button
     Private WithEvents c1RulesManager1 As C1.Win.RulesManager.C1RulesManager
-    Private WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

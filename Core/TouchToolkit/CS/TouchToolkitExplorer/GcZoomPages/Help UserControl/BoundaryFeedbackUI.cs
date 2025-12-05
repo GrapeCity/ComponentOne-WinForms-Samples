@@ -17,6 +17,7 @@ namespace TouchToolkitExplorer.C1ZoomPages
             InitializeComponent();
         }
 
+        [DefaultValue(BoundaryFeedbackMode.Standard)]
         public BoundaryFeedbackMode BoundaryFeedbackMode
         {
             get

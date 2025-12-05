@@ -30,7 +30,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBDropdown1 As C1.Win.C1TrueDBGrid.C1TrueDBDropdown
+    Friend WithEvents C1TrueDBDropdown1 As C1.Win.TrueDBGrid.C1TrueDBDropdown
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
@@ -39,23 +39,23 @@ Public Class Form1
     Friend WithEvents OleDbSelectCommand2 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand2 As System.Data.OleDb.OleDbCommand
     Friend WithEvents DataSet11 As UsingC1TDBDropdown.DataSet1
-    Friend WithEvents c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents c1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim Style1 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style2 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style3 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style4 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style5 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style6 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style7 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style8 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style9 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style10 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Dim Style11 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
-        Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Dim Style1 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style2 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style3 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style4 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style5 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style6 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style7 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style8 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style9 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style10 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Dim Style11 As C1.Win.TrueDBGrid.Style = New C1.Win.TrueDBGrid.Style()
+        Me.c1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DataSet11 = New UsingC1TDBDropdown.DataSet1()
-        Me.C1TrueDBDropdown1 = New C1.Win.C1TrueDBGrid.C1TrueDBDropdown()
+        Me.C1TrueDBDropdown1 = New C1.Win.TrueDBGrid.C1TrueDBDropdown()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
@@ -78,7 +78,7 @@ Public Class Form1
         Me.c1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
-        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
         Me.c1TrueDBGrid1.Size = New System.Drawing.Size(480, 250)
         Me.c1TrueDBGrid1.TabIndex = 0
@@ -95,7 +95,7 @@ Public Class Form1
         '
         Me.C1TrueDBDropdown1.AllowColMove = True
         Me.C1TrueDBDropdown1.AllowColSelect = True
-        Me.C1TrueDBDropdown1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBDropdown1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBDropdown1.AlternatingRows = False
         Me.C1TrueDBDropdown1.CaptionStyle = Style1
         Me.C1TrueDBDropdown1.ColumnCaptionHeight = 17
@@ -114,7 +114,7 @@ Public Class Form1
         Me.C1TrueDBDropdown1.OddRowStyle = Style8
         Me.C1TrueDBDropdown1.RecordSelectorStyle = Style9
         Me.C1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+        Me.C1TrueDBDropdown1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.[Single]
         Me.C1TrueDBDropdown1.RowSelectorStyle = Style10
         Me.C1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1TrueDBDropdown1.ScrollTips = False
@@ -208,7 +208,7 @@ Public Class Form1
         Me.C1TrueDBDropdown1.ValueTranslate = True
 
         ' show checkboxes for the Discontinued column
-        Me.c1TrueDBGrid1.Columns("Discontinued").ValueItems.Presentation = C1.Win.C1TrueDBGrid.PresentationEnum.CheckBox
+        Me.c1TrueDBGrid1.Columns("Discontinued").ValueItems.Presentation = C1.Win.TrueDBGrid.PresentationEnum.CheckBox
     End Sub
 
     Private Function GetModifiedConnectionString(ByVal connstring As String) As String

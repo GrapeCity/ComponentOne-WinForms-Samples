@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 // based on original sample by Mike Hoeffner.
 // 
@@ -40,7 +40,7 @@ namespace CustomMergeLogic
 
 			// initialize merging
 			_flex.AllowMerging = AllowMergingEnum.Free;
-            foreach (C1.Win.C1FlexGrid.Column c in _flex.Cols)
+            foreach (C1.Win.FlexGrid.Column c in _flex.Cols)
             {
                 c.AllowMerging = true;
             }
@@ -128,10 +128,11 @@ namespace CustomMergeLogic
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:";
-            this._flex.Location = new System.Drawing.Point(10, 32);
+            this._flex.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this._flex.Location = new System.Drawing.Point(17, 51);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 21;
-            this._flex.Size = new System.Drawing.Size(507, 231);
+            this._flex.Size = new System.Drawing.Size(491, 207);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
             // 
@@ -139,20 +140,21 @@ namespace CustomMergeLogic
             // 
             this._chkMerge.Checked = true;
             this._chkMerge.CheckState = System.Windows.Forms.CheckState.Checked;
-            this._chkMerge.Location = new System.Drawing.Point(10, 0);
+            this._chkMerge.Location = new System.Drawing.Point(17, 0);
             this._chkMerge.Name = "_chkMerge";
-            this._chkMerge.Size = new System.Drawing.Size(158, 28);
+            this._chkMerge.Size = new System.Drawing.Size(263, 45);
             this._chkMerge.TabIndex = 1;
             this._chkMerge.Text = "Merge Cells";
             this._chkMerge.CheckedChanged += new System.EventHandler(this._chkMerge_CheckedChanged);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(531, 271);
             this.Controls.Add(this._flex);
             this.Controls.Add(this._chkMerge);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "C1FlexGrid: Custom Merging Logic";
             ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();

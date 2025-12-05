@@ -37,20 +37,24 @@
             // 
             this._smoothFlex.ColumnInfo = "10,1,0,0,0,120,Columns:";
             this._smoothFlex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._smoothFlex.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._smoothFlex.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this._smoothFlex.IsScrolling = false;
             this._smoothFlex.Location = new System.Drawing.Point(0, 0);
+            this._smoothFlex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._smoothFlex.Name = "_smoothFlex";
             this._smoothFlex.Rows.DefaultSize = 24;
-            this._smoothFlex.Size = new System.Drawing.Size(732, 392);
+            this._smoothFlex.Size = new System.Drawing.Size(1006, 588);
             this._smoothFlex.StyleInfo = resources.GetString("_smoothFlex.StyleInfo");
             this._smoothFlex.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(732, 392);
+            this.ClientSize = new System.Drawing.Size(1006, 588);
             this.Controls.Add(this._smoothFlex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1Flexgrid: Smooth Scrolling";

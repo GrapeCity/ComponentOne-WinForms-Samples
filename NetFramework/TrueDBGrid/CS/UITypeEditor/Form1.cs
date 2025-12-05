@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace CustomEditors
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -52,8 +52,11 @@ namespace CustomEditors
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
 			((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -71,7 +74,7 @@ namespace CustomEditors
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(560, 248);
 			this.c1TrueDBGrid1.TabIndex = 0;
 			this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><Styles type=\"C1.Win.C1TrueDBGrid.Design.ContextWrappe" +
+			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><Styles type=\"C1.Win.TrueDBGrid.Design.ContextWrappe" +
 				"r\"><Data>Group{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}E" +
 				"ditor{}Style2{}Style5{}Style4{}Style7{}Style6{}EvenRow{BackColor:Aqua;}Selected{" +
 				"ForeColor:HighlightText;BackColor:Highlight;}Style3{}Inactive{ForeColor:Inactive" +
@@ -80,7 +83,7 @@ namespace CustomEditors
 				"tyle9{}OddRow{}RecordSelector{AlignImage:Center;}Style15{}Heading{Wrap:True;Alig" +
 				"nVert:Center;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;BackColor:Control;}" +
 				"Style8{}Style10{AlignHorz:Near;}Style11{}Style12{}Style13{}Style1{}</Data></Styl" +
-				"es><Splits><C1.Win.C1TrueDBGrid.MergeView Name=\"\" CaptionHeight=\"17\" ColumnCapti" +
+				"es><Splits><C1.Win.TrueDBGrid.MergeView Name=\"\" CaptionHeight=\"17\" ColumnCapti" +
 				"onHeight=\"17\" ColumnFooterHeight=\"17\" MarqueeStyle=\"DottedCellBorder\" RecordSele" +
 				"ctorWidth=\"17\" DefRecSelWidth=\"17\" VerticalScrollGroup=\"1\" HorizontalScrollGroup" +
 				"=\"1\"><Height>244</Height><CaptionStyle parent=\"Style2\" me=\"Style10\" /><EditorSty" +
@@ -92,7 +95,7 @@ namespace CustomEditors
 				" /><RecordSelectorStyle parent=\"RecordSelector\" me=\"Style11\" /><SelectedStyle pa" +
 				"rent=\"Selected\" me=\"Style6\" /><Style parent=\"Normal\" me=\"Style1\" /><ClientRect>0" +
 				", 0, 556, 244</ClientRect><BorderSide>0</BorderSide><BorderStyle>Sunken</BorderS" +
-				"tyle></C1.Win.C1TrueDBGrid.MergeView></Splits><NamedStyles><Style parent=\"\" me=\"" +
+				"tyle></C1.Win.TrueDBGrid.MergeView></Splits><NamedStyles><Style parent=\"\" me=\"" +
 				"Normal\" /><Style parent=\"Normal\" me=\"Heading\" /><Style parent=\"Heading\" me=\"Foot" +
 				"er\" /><Style parent=\"Heading\" me=\"Caption\" /><Style parent=\"Heading\" me=\"Inactiv" +
 				"e\" /><Style parent=\"Normal\" me=\"Selected\" /><Style parent=\"Normal\" me=\"Editor\" /" +
@@ -131,11 +134,11 @@ namespace CustomEditors
 		// create an unbound grid
 		private void bindGrid()
 		{
-			this.c1TrueDBGrid1.Columns.Add(new C1.Win.C1TrueDBGrid.C1DataColumn("Color",typeof(System.Drawing.Color)));
-			this.c1TrueDBGrid1.Columns.Add(new C1.Win.C1TrueDBGrid.C1DataColumn("FileName",typeof(string)));
-			this.c1TrueDBGrid1.Columns.Add(new C1.Win.C1TrueDBGrid.C1DataColumn("Font",typeof(System.Drawing.Font)));
-			this.c1TrueDBGrid1.Columns.Add(new C1.Win.C1TrueDBGrid.C1DataColumn("DockStyle",typeof(System.Windows.Forms.DockStyle)));
-			this.c1TrueDBGrid1.Columns.Add(new C1.Win.C1TrueDBGrid.C1DataColumn("AnchorStyle",typeof(System.Windows.Forms.AnchorStyles)));
+			this.c1TrueDBGrid1.Columns.Add(new C1.Win.TrueDBGrid.C1DataColumn("Color",typeof(System.Drawing.Color)));
+			this.c1TrueDBGrid1.Columns.Add(new C1.Win.TrueDBGrid.C1DataColumn("FileName",typeof(string)));
+			this.c1TrueDBGrid1.Columns.Add(new C1.Win.TrueDBGrid.C1DataColumn("Font",typeof(System.Drawing.Font)));
+			this.c1TrueDBGrid1.Columns.Add(new C1.Win.TrueDBGrid.C1DataColumn("DockStyle",typeof(System.Windows.Forms.DockStyle)));
+			this.c1TrueDBGrid1.Columns.Add(new C1.Win.TrueDBGrid.C1DataColumn("AnchorStyle",typeof(System.Windows.Forms.AnchorStyles)));
 
 			this.c1TrueDBGrid1.SetDataBinding();
 

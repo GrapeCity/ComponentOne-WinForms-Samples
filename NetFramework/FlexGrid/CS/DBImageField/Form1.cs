@@ -14,7 +14,7 @@ namespace DBImageField
 	{
 		private System.Windows.Forms.ImageList _imgList;
 		private System.Windows.Forms.DataGrid dataGrid1;
-		private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+		private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
 		private System.Windows.Forms.Label label1;
 		private System.ComponentModel.IContainer components;
 
@@ -52,72 +52,81 @@ namespace DBImageField
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._imgList = new System.Windows.Forms.ImageList(this.components);
-			this.dataGrid1 = new System.Windows.Forms.DataGrid();
-			this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this.label1 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _imgList
-			// 
-			this._imgList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this._imgList.ImageSize = new System.Drawing.Size(16, 15);
-			this._imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imgList.ImageStream")));
-			this._imgList.TransparentColor = System.Drawing.Color.Red;
-			// 
-			// dataGrid1
-			// 
-			this.dataGrid1.CaptionText = "MSDataGrid";
-			this.dataGrid1.DataMember = "";
-			this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Left;
-			this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-			this.dataGrid1.Name = "dataGrid1";
-			this.dataGrid1.Size = new System.Drawing.Size(240, 237);
-			this.dataGrid1.TabIndex = 0;
-			// 
-			// c1FlexGrid1
-			// 
-			this.c1FlexGrid1.BackColor = System.Drawing.SystemColors.Window;
-			this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:24;}\t";
-			this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.c1FlexGrid1.Location = new System.Drawing.Point(240, 24);
-			this.c1FlexGrid1.Name = "c1FlexGrid1";
-			this.c1FlexGrid1.Size = new System.Drawing.Size(288, 213);
-			this.c1FlexGrid1.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this.c1FlexGrid1.TabIndex = 1;
-			// 
-			// label1
-			// 
-			this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-			this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-			this.label1.Location = new System.Drawing.Point(240, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(288, 24);
-			this.label1.TabIndex = 2;
-			this.label1.Text = " C1FlexGrid";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(528, 237);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.c1FlexGrid1,
-																		  this.label1,
-																		  this.dataGrid1});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Binding to Image Fields";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._imgList = new System.Windows.Forms.ImageList(this.components);
+            this.dataGrid1 = new System.Windows.Forms.DataGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _imgList
+            // 
+            this._imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imgList.ImageStream")));
+            this._imgList.TransparentColor = System.Drawing.Color.Red;
+            this._imgList.Images.SetKeyName(0, "");
+            this._imgList.Images.SetKeyName(1, "");
+            this._imgList.Images.SetKeyName(2, "");
+            this._imgList.Images.SetKeyName(3, "");
+            this._imgList.Images.SetKeyName(4, "");
+            this._imgList.Images.SetKeyName(5, "");
+            this._imgList.Images.SetKeyName(6, "");
+            this._imgList.Images.SetKeyName(7, "");
+            this._imgList.Images.SetKeyName(8, "");
+            this._imgList.Images.SetKeyName(9, "");
+            // 
+            // dataGrid1
+            // 
+            this.dataGrid1.CaptionText = "MSDataGrid";
+            this.dataGrid1.DataMember = "";
+            this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.dataGrid1.Location = new System.Drawing.Point(0, 0);
+            this.dataGrid1.Name = "dataGrid1";
+            this.dataGrid1.Size = new System.Drawing.Size(480, 237);
+            this.dataGrid1.TabIndex = 0;
+            // 
+            // c1FlexGrid1
+            // 
+            this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:24;}\t";
+            this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1FlexGrid1.Location = new System.Drawing.Point(480, 44);
+            this.c1FlexGrid1.Name = "c1FlexGrid1";
+            this.c1FlexGrid1.Size = new System.Drawing.Size(48, 193);
+            this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
+            this.c1FlexGrid1.TabIndex = 1;
+            this.c1FlexGrid1.UseCompatibleTextRendering = true;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label1.Location = new System.Drawing.Point(480, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 44);
+            this.label1.TabIndex = 2;
+            this.label1.Text = " C1FlexGrid";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(528, 237);
+            this.Controls.Add(this.c1FlexGrid1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGrid1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Binding to Image Fields";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

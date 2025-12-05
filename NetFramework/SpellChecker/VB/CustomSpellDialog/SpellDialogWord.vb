@@ -6,7 +6,7 @@ Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
 Imports System.Windows.Forms.VisualStyles
-Imports C1.Win.C1SpellChecker
+Imports C1.Win.SpellChecker
 
 Partial Public Class SpellDialogWord
     Inherits Form
@@ -75,7 +75,7 @@ Partial Public Class SpellDialogWord
     ''' <param name="spell"><see cref="C1SpellChecker"/> to use for spelling.</param> 
     ''' <param name="editor"><see cref="ISpellCheckableEditor"/> that contains the text to spell-check.</param> 
     ''' <param name="errors"><see cref="CharRangeList"/> that contains the initial error list.</param> 
-    Public Sub Initialize(ByVal spell As C1SpellChecker, ByVal editor As ISpellCheckableEditor, ByVal errors As CharRangeList) Implements C1.Win.C1SpellChecker.ISpellDialog.Initialize
+    Public Sub Initialize(ByVal spell As C1SpellChecker, ByVal editor As ISpellCheckableEditor, ByVal errors As CharRangeList) Implements C1.Win.SpellChecker.ISpellDialog.Initialize
         ' initialize members 
         _spell = spell
         _editor = editor
@@ -96,7 +96,7 @@ Partial Public Class SpellDialogWord
     ''' <summary> 
     ''' Gets the total number of errors detected in the control. 
     ''' </summary> 
-    Public ReadOnly Property ErrorCount() As Integer Implements C1.Win.C1SpellChecker.ISpellDialog.ErrorCount
+    Public ReadOnly Property ErrorCount() As Integer Implements C1.Win.SpellChecker.ISpellDialog.ErrorCount
         Get
             Return _errorCount
         End Get

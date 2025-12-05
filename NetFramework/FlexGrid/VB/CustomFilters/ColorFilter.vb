@@ -2,7 +2,7 @@
 
 Namespace CustomFilters
 	Friend Class ColorFilter
-		Implements C1.Win.C1FlexGrid.IC1ColumnFilter
+		Implements C1.Win.FlexGrid.IC1ColumnFilter
 		'-------------------------------------------------------------------------------
 		#Region "** fields"
 
@@ -43,19 +43,19 @@ Namespace CustomFilters
 		#Region "** IC1ColumnFilter Members"
 
 		' filter is active if TargetColor is not empty.
-		Public ReadOnly Property IsActive() As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilter.IsActive
+		Public ReadOnly Property IsActive() As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilter.IsActive
 			Get
 				Return TargetColor <> Color.Empty
 			End Get
 		End Property
 
 		' reset filter by setting TargetColor to empty.
-		Public Sub Reset() Implements C1.Win.C1FlexGrid.IC1ColumnFilter.Reset
+		Public Sub Reset() Implements C1.Win.FlexGrid.IC1ColumnFilter.Reset
 			TargetColor = Color.Empty
 		End Sub
 
 		' apply filter to a given color
-		Public Function Apply(ByVal value As Object) As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilter.Apply
+		Public Function Apply(ByVal value As Object) As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilter.Apply
 			Dim clr = CType(value, Color)
             Dim dr As Integer = Math.Abs(Convert.ToInt32(clr.R) - Convert.ToInt32(_targetColor.R))
             Dim dg As Integer = Math.Abs(Convert.ToInt32(clr.G) - Convert.ToInt32(_targetColor.G))
@@ -64,7 +64,7 @@ Namespace CustomFilters
 		End Function
 
 		' return editor control for this filter
-		Public Function GetEditor() As C1.Win.C1FlexGrid.IC1ColumnFilterEditor Implements C1.Win.C1FlexGrid.IC1ColumnFilter.GetEditor
+		Public Function GetEditor() As C1.Win.FlexGrid.IC1ColumnFilterEditor Implements C1.Win.FlexGrid.IC1ColumnFilter.GetEditor
 			Return New ColorFilterEditor()
 		End Function
 

@@ -31,37 +31,38 @@ namespace ControlExplorer
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Explorer));
-            C1.Win.C1Tile.PanelElement panelElement1 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement1 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement1 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement2 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement2 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement2 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement3 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement3 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement3 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement4 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement4 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement4 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement5 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement5 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement5 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement6 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement6 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement6 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement7 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement7 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement7 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.TextElement textElement8 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.TextElement textElement9 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement8 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement9 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement10 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement10 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement11 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement11 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement12 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement12 = new C1.Win.C1Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement1 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement1 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement1 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement2 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement2 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement2 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement3 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement3 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement3 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement4 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement4 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement4 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement5 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement5 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement5 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement6 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement6 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement6 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement7 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement7 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement7 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.TextElement textElement8 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.TextElement textElement9 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement8 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement9 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement10 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement10 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement11 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement11 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement12 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement12 = new C1.Win.Tile.TextElement();
+            C1.Win.TreeView.C1TreeColumn c1TreeColumn1 = new C1.Win.TreeView.C1TreeColumn();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlHeaderBottom = new System.Windows.Forms.Panel();
             this.breadCrumb = new ControlExplorer.Main.BreadCrumb();
@@ -80,7 +81,7 @@ namespace ControlExplorer
             this.pnlHeaderTop = new System.Windows.Forms.Panel();
             this.pnlInputPanel = new System.Windows.Forms.Panel();
             this.lblThemeLabel = new System.Windows.Forms.Label();
-            this.thpThemePicker = new C1.Win.C1Themes.C1ThemePicker();
+            this.thpThemePicker = new C1.Win.Themes.C1ThemePicker();
             this.C1Logo = new System.Windows.Forms.PictureBox();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.pnlFooterLogo = new System.Windows.Forms.Panel();
@@ -90,39 +91,39 @@ namespace ControlExplorer
             this.pnlMainRight = new System.Windows.Forms.Panel();
             this.pnlMainSamples = new System.Windows.Forms.Panel();
             this.pnlMainControls = new System.Windows.Forms.Panel();
-            this.tilesControlNaL = new C1.Win.C1Tile.C1TileControl();
-            this.group8 = new C1.Win.C1Tile.Group();
+            this.tilesControlNaL = new C1.Win.Tile.C1TileControl();
+            this.group8 = new C1.Win.Tile.Group();
             this.cteNaL = new ControlExplorer.Main.ControlTreeExpander();
-            this.tilesControlIaE = new C1.Win.C1Tile.C1TileControl();
-            this.group7 = new C1.Win.C1Tile.Group();
+            this.tilesControlIaE = new C1.Win.Tile.C1TileControl();
+            this.group7 = new C1.Win.Tile.Group();
             this.cteIaE = new ControlExplorer.Main.ControlTreeExpander();
-            this.tilesControlSch = new C1.Win.C1Tile.C1TileControl();
-            this.group6 = new C1.Win.C1Tile.Group();
+            this.tilesControlSch = new C1.Win.Tile.C1TileControl();
+            this.group6 = new C1.Win.Tile.Group();
             this.cteSch = new ControlExplorer.Main.ControlTreeExpander();
-            this.tilesControlUtil = new C1.Win.C1Tile.C1TileControl();
-            this.group5 = new C1.Win.C1Tile.Group();
+            this.tilesControlUtil = new C1.Win.Tile.C1TileControl();
+            this.group5 = new C1.Win.Tile.Group();
             this.cteUtil = new ControlExplorer.Main.ControlTreeExpander();
-            this.tilesControlRaD = new C1.Win.C1Tile.C1TileControl();
-            this.group4 = new C1.Win.C1Tile.Group();
+            this.tilesControlRaD = new C1.Win.Tile.C1TileControl();
+            this.group4 = new C1.Win.Tile.Group();
             this.cteRaD = new ControlExplorer.Main.ControlTreeExpander();
-            this.tilesControlDV = new C1.Win.C1Tile.C1TileControl();
-            this.group3 = new C1.Win.C1Tile.Group();
+            this.tilesControlDV = new C1.Win.Tile.C1TileControl();
+            this.group3 = new C1.Win.Tile.Group();
             this.ctelDV = new ControlExplorer.Main.ControlTreeExpander();
-            this.tilesControlGDM = new C1.Win.C1Tile.C1TileControl();
-            this.controls = new C1.Win.C1Tile.Group();
-            this.template1 = new C1.Win.C1Tile.Template();
-            this.template2 = new C1.Win.C1Tile.Template();
+            this.tilesControlGDM = new C1.Win.Tile.C1TileControl();
+            this.controls = new C1.Win.Tile.Group();
+            this.template1 = new C1.Win.Tile.Template();
+            this.template2 = new C1.Win.Tile.Template();
             this.cteGDM = new ControlExplorer.Main.ControlTreeExpander();
             this.pnlMainGutter = new System.Windows.Forms.Panel();
             this.pnlMainLeft = new System.Windows.Forms.Panel();
             this.pnlLeftControls = new System.Windows.Forms.Panel();
             this.pnlLeftPopular = new System.Windows.Forms.Panel();
-            this.tilesPopular = new C1.Win.C1Tile.C1TileControl();
-            this.group1 = new C1.Win.C1Tile.Group();
+            this.tilesPopular = new C1.Win.Tile.C1TileControl();
+            this.group1 = new C1.Win.Tile.Group();
             this.lblPopularControls = new System.Windows.Forms.Label();
             this.pnlLeftNew = new System.Windows.Forms.Panel();
-            this.tilesNew = new C1.Win.C1Tile.C1TileControl();
-            this.group2 = new C1.Win.C1Tile.Group();
+            this.tilesNew = new C1.Win.Tile.C1TileControl();
+            this.group2 = new C1.Win.Tile.Group();
             this.lblNewControls = new System.Windows.Forms.Label();
             this.lblLeftDescriptionControls = new System.Windows.Forms.Label();
             this.pnlLeftSamples = new System.Windows.Forms.Panel();
@@ -155,6 +156,7 @@ namespace ControlExplorer
             this.pnlLeftPopular.SuspendLayout();
             this.pnlLeftNew.SuspendLayout();
             this.pnlLeftSamples.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.featureStack)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -380,19 +382,18 @@ namespace ControlExplorer
             this.lblThemeLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.lblThemeLabel.Location = new System.Drawing.Point(8, 26);
             this.lblThemeLabel.Name = "lblThemeLabel";
-            this.lblThemeLabel.Size = new System.Drawing.Size(47, 15);
+            this.lblThemeLabel.Size = new System.Drawing.Size(93, 32);
             this.lblThemeLabel.TabIndex = 2;
             this.lblThemeLabel.Text = "Theme:";
             // 
             // thpThemePicker
             // 
-            this.thpThemePicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
-            this.thpThemePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.thpThemePicker.Location = new System.Drawing.Point(60, 22);
             this.thpThemePicker.Name = "thpThemePicker";
-            this.thpThemePicker.Size = new System.Drawing.Size(160, 21);
+            this.thpThemePicker.ReadOnly = true;
+            this.thpThemePicker.Size = new System.Drawing.Size(160, 40);
+            this.thpThemePicker.Styles.Default.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.thpThemePicker.TabIndex = 9;
-            this.thpThemePicker.ThemeApplying += this.ThpThemePicker_ThemeApplying;
             // 
             // C1Logo
             // 
@@ -426,12 +427,11 @@ namespace ControlExplorer
             this.pnlFooterLogo.Size = new System.Drawing.Size(240, 48);
             this.pnlFooterLogo.TabIndex = 2;
             // 
-            // mesciusLogo
+            // companyLogoBox
             // 
             this.companyLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.companyLogoBox.Image = ResourceLoader.GetImage("companyLogoPictureBox.png");
             this.companyLogoBox.Location = new System.Drawing.Point(73, 6);
-            this.companyLogoBox.Name = "mesciusLogo";
+            this.companyLogoBox.Name = "companyLogoBox";
             this.companyLogoBox.Size = new System.Drawing.Size(164, 36);
             this.companyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.companyLogoBox.TabIndex = 0;
@@ -534,7 +534,7 @@ namespace ControlExplorer
             this.tilesControlNaL.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlNaL.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlNaL.ToolTipInitialDelay = 20;
-            this.tilesControlNaL.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlNaL.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group8
             // 
@@ -580,7 +580,7 @@ namespace ControlExplorer
             this.tilesControlIaE.Location = new System.Drawing.Point(0, 292);
             this.tilesControlIaE.Margin = new System.Windows.Forms.Padding(0);
             this.tilesControlIaE.Name = "tilesControlIaE";
-            this.tilesControlIaE.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical;
+            this.tilesControlIaE.Orientation = C1.Win.Tile.LayoutOrientation.Vertical;
             this.tilesControlIaE.Padding = new System.Windows.Forms.Padding(5, 20, 0, 20);
             this.tilesControlIaE.SBThumbBorderColor = System.Drawing.Color.White;
             this.tilesControlIaE.SBThumbInnerColor = System.Drawing.Color.White;
@@ -590,7 +590,7 @@ namespace ControlExplorer
             this.tilesControlIaE.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlIaE.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlIaE.ToolTipInitialDelay = 20;
-            this.tilesControlIaE.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlIaE.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group7
             // 
@@ -645,7 +645,7 @@ namespace ControlExplorer
             this.tilesControlSch.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlSch.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlSch.ToolTipInitialDelay = 20;
-            this.tilesControlSch.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlSch.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group6
             // 
@@ -701,7 +701,7 @@ namespace ControlExplorer
             this.tilesControlUtil.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlUtil.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlUtil.ToolTipInitialDelay = 20;
-            this.tilesControlUtil.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlUtil.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group5
             // 
@@ -757,7 +757,7 @@ namespace ControlExplorer
             this.tilesControlRaD.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlRaD.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlRaD.ToolTipInitialDelay = 20;
-            this.tilesControlRaD.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlRaD.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group4
             // 
@@ -813,7 +813,7 @@ namespace ControlExplorer
             this.tilesControlDV.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlDV.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlDV.ToolTipInitialDelay = 20;
-            this.tilesControlDV.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlDV.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group3
             // 
@@ -874,7 +874,7 @@ namespace ControlExplorer
             this.tilesControlGDM.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlGDM.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesControlGDM.ToolTipInitialDelay = 20;
-            this.tilesControlGDM.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesControlGDM.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // controls
             // 
@@ -890,7 +890,7 @@ namespace ControlExplorer
             textElement9.Alignment = System.Drawing.ContentAlignment.TopLeft;
             textElement9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textElement9.Margin = new System.Windows.Forms.Padding(15, 150, 0, 0);
-            textElement9.TextSelector = C1.Win.C1Tile.TextSelector.Text1;
+            textElement9.TextSelector = C1.Win.Tile.TextSelector.Text1;
             this.template1.Elements.Add(textElement8);
             this.template1.Elements.Add(textElement9);
             this.template1.Name = "template1";
@@ -898,19 +898,19 @@ namespace ControlExplorer
             // template2
             // 
             this.template2.Description = "Template 2";
-            imageElement8.SymbolSize = C1.Win.C1Tile.SymbolSize.Image48x48;
+            imageElement8.SymbolSize = C1.Win.Tile.SymbolSize.Image48x48;
             imageElement9.Alignment = System.Drawing.ContentAlignment.TopLeft;
             imageElement9.FixedHeight = 70;
             imageElement9.FixedWidth = 70;
-            imageElement9.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
-            imageElement9.ImageSelector = C1.Win.C1Tile.ImageSelector.Image1;
-            imageElement9.SymbolSize = C1.Win.C1Tile.SymbolSize.Image16x16;
+            imageElement9.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleInner;
+            imageElement9.ImageSelector = C1.Win.Tile.ImageSelector.Image1;
+            imageElement9.SymbolSize = C1.Win.Tile.SymbolSize.Image16x16;
             imageElement10.Alignment = System.Drawing.ContentAlignment.TopRight;
             imageElement10.FixedHeight = 24;
             imageElement10.FixedWidth = 24;
-            imageElement10.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
-            imageElement10.ImageSelector = C1.Win.C1Tile.ImageSelector.Image2;
-            imageElement10.SymbolSize = C1.Win.C1Tile.SymbolSize.Image24x24;
+            imageElement10.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleInner;
+            imageElement10.ImageSelector = C1.Win.Tile.ImageSelector.Image2;
+            imageElement10.SymbolSize = C1.Win.Tile.SymbolSize.Image24x24;
             textElement10.Alignment = System.Drawing.ContentAlignment.BottomCenter;
             textElement10.Font = new System.Drawing.Font("Segoe UI", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             textElement10.Margin = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -996,7 +996,7 @@ namespace ControlExplorer
             imageElement11.Alignment = System.Drawing.ContentAlignment.TopCenter;
             imageElement11.FixedHeight = 32;
             imageElement11.FixedWidth = 32;
-            imageElement11.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
+            imageElement11.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleInner;
             imageElement11.Margin = new System.Windows.Forms.Padding(0, 12, 0, 0);
             textElement11.Alignment = System.Drawing.ContentAlignment.BottomCenter;
             textElement11.Font = new System.Drawing.Font("Segoe UI", 8.25F);
@@ -1010,14 +1010,14 @@ namespace ControlExplorer
             this.tilesPopular.HotBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
             this.tilesPopular.Location = new System.Drawing.Point(0, 37);
             this.tilesPopular.Name = "tilesPopular";
-            this.tilesPopular.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical;
+            this.tilesPopular.Orientation = C1.Win.Tile.LayoutOrientation.Vertical;
             this.tilesPopular.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.tilesPopular.Size = new System.Drawing.Size(400, 166);
             this.tilesPopular.TabIndex = 1;
             this.tilesPopular.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesPopular.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesPopular.ToolTipInitialDelay = 20;
-            this.tilesPopular.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesPopular.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group1
             // 
@@ -1059,7 +1059,7 @@ namespace ControlExplorer
             imageElement12.Alignment = System.Drawing.ContentAlignment.TopCenter;
             imageElement12.FixedHeight = 32;
             imageElement12.FixedWidth = 32;
-            imageElement12.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
+            imageElement12.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleInner;
             imageElement12.Margin = new System.Windows.Forms.Padding(0, 12, 0, 0);
             textElement12.Alignment = System.Drawing.ContentAlignment.BottomCenter;
             textElement12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1073,14 +1073,14 @@ namespace ControlExplorer
             this.tilesNew.HotBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(113)))), ((int)(((byte)(113)))));
             this.tilesNew.Location = new System.Drawing.Point(0, 37);
             this.tilesNew.Name = "tilesNew";
-            this.tilesNew.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical;
+            this.tilesNew.Orientation = C1.Win.Tile.LayoutOrientation.Vertical;
             this.tilesNew.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.tilesNew.Size = new System.Drawing.Size(400, 166);
             this.tilesNew.TabIndex = 2;
             this.tilesNew.TileBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesNew.TileBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(80)))));
             this.tilesNew.ToolTipInitialDelay = 20;
-            this.tilesNew.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.tiles_TileClicked);
+            this.tilesNew.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.tiles_TileClicked);
             // 
             // group2
             // 
@@ -1108,7 +1108,7 @@ namespace ControlExplorer
             this.lblLeftDescriptionControls.MinimumSize = new System.Drawing.Size(0, 112);
             this.lblLeftDescriptionControls.Name = "lblLeftDescriptionControls";
             this.lblLeftDescriptionControls.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.lblLeftDescriptionControls.Size = new System.Drawing.Size(115, 112);
+            this.lblLeftDescriptionControls.Size = new System.Drawing.Size(196, 112);
             this.lblLeftDescriptionControls.TabIndex = 14;
             this.lblLeftDescriptionControls.Text = "Suite Description";
             // 
@@ -1126,23 +1126,42 @@ namespace ControlExplorer
             // 
             // featureStack
             // 
+            this.featureStack.AllowUserToResizeColumns = false;
+            this.featureStack.BackColor = System.Drawing.Color.Transparent;
+            this.featureStack.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            // 
+            // 
+            // 
+            this.featureStack.ButtonImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.featureStack.ButtonImageList.ImageSize = new System.Drawing.Size(16, 16);
+            // 
+            // 
+            // 
+            this.featureStack.CheckImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.featureStack.CheckImageList.ImageSize = new System.Drawing.Size(16, 16);
+            c1TreeColumn1.HeaderText = "Column1";
+            c1TreeColumn1.Name = "Column1";
+            c1TreeColumn1.Styles.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
+            this.featureStack.Columns.Add(c1TreeColumn1);
             this.featureStack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.featureStack.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.featureStack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
-            this.featureStack.Location = new System.Drawing.Point(0, 186);
+            this.featureStack.HoverBackColor = System.Drawing.SystemColors.Control;
+            this.featureStack.HoverForeColor = System.Drawing.SystemColors.ControlText;
+            this.featureStack.Location = new System.Drawing.Point(0, 190);
             this.featureStack.Name = "featureStack";
             this.featureStack.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.featureStack.Size = new System.Drawing.Size(400, 329);
+            this.featureStack.SelectedBackColor = System.Drawing.SystemColors.Highlight;
+            this.featureStack.SelectedForeColor = System.Drawing.SystemColors.HighlightText;
+            this.featureStack.ShowColumnHeaders = false;
+            this.featureStack.Size = new System.Drawing.Size(400, 339);
+            this.featureStack.Styles.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
             this.featureStack.TabIndex = 17;
-            this.featureStack.Text = "featureStack1";
-            this.featureStack.ItemClicked += this.featureStack_ItemClicked;
             // 
             // lblLeftSamplesListTitle
             // 
             this.lblLeftSamplesListTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblLeftSamplesListTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblLeftSamplesListTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLeftSamplesListTitle.Location = new System.Drawing.Point(0, 153);
+            this.lblLeftSamplesListTitle.Location = new System.Drawing.Point(0, 157);
             this.lblLeftSamplesListTitle.Name = "lblLeftSamplesListTitle";
             this.lblLeftSamplesListTitle.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.lblLeftSamplesListTitle.Size = new System.Drawing.Size(400, 33);
@@ -1159,7 +1178,7 @@ namespace ControlExplorer
             this.lblLeftDescriptionSamples.MinimumSize = new System.Drawing.Size(100, 124);
             this.lblLeftDescriptionSamples.Name = "lblLeftDescriptionSamples";
             this.lblLeftDescriptionSamples.Padding = new System.Windows.Forms.Padding(10, 0, 8, 0);
-            this.lblLeftDescriptionSamples.Size = new System.Drawing.Size(134, 120);
+            this.lblLeftDescriptionSamples.Size = new System.Drawing.Size(232, 124);
             this.lblLeftDescriptionSamples.TabIndex = 15;
             this.lblLeftDescriptionSamples.Text = "{Control Description}";
             // 
@@ -1187,7 +1206,7 @@ namespace ControlExplorer
             // 
             // Explorer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1122, 767);
@@ -1199,7 +1218,7 @@ namespace ControlExplorer
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "Explorer";
-            this.Text = "ComponentOne WinForms Edition Control Explorer";            
+            this.Text = "ComponentOne WinForms Edition Control Explorer";
             this.Load += new System.EventHandler(this.Explorer_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeaderBottom.ResumeLayout(false);
@@ -1228,6 +1247,7 @@ namespace ControlExplorer
             this.pnlLeftNew.ResumeLayout(false);
             this.pnlLeftSamples.ResumeLayout(false);
             this.pnlLeftSamples.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.featureStack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1258,12 +1278,12 @@ namespace ControlExplorer
         private Main.BreadCrumb breadCrumb;
         private System.Windows.Forms.Panel pnlLeftControls;
         private System.Windows.Forms.Panel pnlLeftPopular;
-        private C1.Win.C1Tile.C1TileControl tilesPopular;
-        private C1.Win.C1Tile.Group group1;
+        private C1.Win.Tile.C1TileControl tilesPopular;
+        private C1.Win.Tile.Group group1;
         private System.Windows.Forms.Label lblPopularControls;
         private System.Windows.Forms.Panel pnlLeftNew;
-        private C1.Win.C1Tile.C1TileControl tilesNew;
-        private C1.Win.C1Tile.Group group2;
+        private C1.Win.Tile.C1TileControl tilesNew;
+        private C1.Win.Tile.Group group2;
         private System.Windows.Forms.Label lblNewControls;
         private System.Windows.Forms.Label lblLeftDescriptionControls;
         private System.Windows.Forms.Label lblLeftDescriptionSamples;
@@ -1279,29 +1299,29 @@ namespace ControlExplorer
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblFree;
         private System.Windows.Forms.PictureBox companyLogoBox;
-        private C1.Win.C1Tile.C1TileControl tilesControlNaL;
-        private C1.Win.C1Tile.Group group8;
+        private C1.Win.Tile.C1TileControl tilesControlNaL;
+        private C1.Win.Tile.Group group8;
         private Main.ControlTreeExpander cteNaL;
-        private C1.Win.C1Tile.C1TileControl tilesControlIaE;
-        private C1.Win.C1Tile.Group group7;
+        private C1.Win.Tile.C1TileControl tilesControlIaE;
+        private C1.Win.Tile.Group group7;
         private Main.ControlTreeExpander cteIaE;
-        private C1.Win.C1Tile.C1TileControl tilesControlSch;
-        private C1.Win.C1Tile.Group group6;
+        private C1.Win.Tile.C1TileControl tilesControlSch;
+        private C1.Win.Tile.Group group6;
         private Main.ControlTreeExpander cteSch;
-        private C1.Win.C1Tile.C1TileControl tilesControlUtil;
-        private C1.Win.C1Tile.Group group5;
+        private C1.Win.Tile.C1TileControl tilesControlUtil;
+        private C1.Win.Tile.Group group5;
         private Main.ControlTreeExpander cteUtil;
-        private C1.Win.C1Tile.C1TileControl tilesControlRaD;
-        private C1.Win.C1Tile.Group group4;
+        private C1.Win.Tile.C1TileControl tilesControlRaD;
+        private C1.Win.Tile.Group group4;
         private Main.ControlTreeExpander cteRaD;
-        private C1.Win.C1Tile.C1TileControl tilesControlDV;
-        private C1.Win.C1Tile.Group group3;
+        private C1.Win.Tile.C1TileControl tilesControlDV;
+        private C1.Win.Tile.Group group3;
         private Main.ControlTreeExpander ctelDV;
-        private C1.Win.C1Tile.C1TileControl tilesControlGDM;
-        private C1.Win.C1Tile.Group controls;
-        private C1.Win.C1Tile.Template template1;
-        private C1.Win.C1Tile.Template template2;
+        private C1.Win.Tile.C1TileControl tilesControlGDM;
+        private C1.Win.Tile.Group controls;
+        private C1.Win.Tile.Template template1;
+        private C1.Win.Tile.Template template2;
         private Main.ControlTreeExpander cteGDM;
-        private C1.Win.C1Themes.C1ThemePicker thpThemePicker;
+        private C1.Win.Themes.C1ThemePicker thpThemePicker;
     }
 }

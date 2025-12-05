@@ -14,7 +14,7 @@ namespace ColumnEditor
 	/// </summary>
 	public class UserControl1 : System.Windows.Forms.UserControl, ISupportInitialize
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Label label1;
 		/// <summary> 
 		/// Required designer variable.
@@ -53,7 +53,7 @@ namespace ColumnEditor
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +101,7 @@ namespace ColumnEditor
 		// expose grid columns as a property so user can edit them at design time
 		// must be get/set property, although the set will only be used during
 		// initialization
-		public C1.Win.C1FlexGrid.ColumnCollection GridColumns
+		public C1.Win.FlexGrid.ColumnCollection GridColumns
 		{
 			get { return _flex.Cols; }
 			set { _flex.Cols = value; }

@@ -33,13 +33,13 @@ Partial Class Form1
         Me.saveToolStripButton = New System.Windows.Forms.ToolStripButton
         Me.c1Chart2 = New C1.Win.C1Chart.C1Chart
         Me.label4 = New System.Windows.Forms.Label
-        Me.c1SuperTooltip1 = New C1.Win.C1SuperTooltip.C1SuperTooltip(Me.components)
+        Me.c1SuperTooltip1 = New C1.Win.SuperTooltip.C1SuperTooltip(Me.components)
         Me.tabPage3 = New System.Windows.Forms.TabPage
         Me.pasteToolStripButton = New System.Windows.Forms.ToolStripButton
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
         Me.helpToolStripButton = New System.Windows.Forms.ToolStripButton
         Me.txtWidth = New System.Windows.Forms.TextBox
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid
         Me.panel1 = New System.Windows.Forms.Panel
         Me.listBox1 = New System.Windows.Forms.ListBox
         Me.txtHeight = New System.Windows.Forms.TextBox
@@ -147,7 +147,7 @@ Partial Class Form1
         'c1SuperTooltip1
         '
         Me.c1SuperTooltip1.Font = New System.Drawing.Font("Tahoma", 8.0!)
-        Me.c1SuperTooltip1.Images.Add(New C1.Win.C1SuperTooltip.ImageEntry("tabPage", CType(resources.GetObject("c1SuperTooltip1.Images"), System.Drawing.Image)))
+        Me.c1SuperTooltip1.Images.Add(New C1.Win.SuperTooltip.ImageEntry("tabPage", CType(resources.GetObject("c1SuperTooltip1.Images"), System.Drawing.Image)))
         Me.c1SuperTooltip1.IsBalloon = True
         '
         'tabPage3
@@ -196,7 +196,7 @@ Partial Class Form1
         'c1FlexGrid1
         '
         Me.c1FlexGrid1.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle
+        Me.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle
         Me.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,90,Columns:0{Width:28;}" & Global.Microsoft.VisualBasic.ChrW(9)
         Me.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.c1FlexGrid1.Location = New System.Drawing.Point(3, 95)
@@ -379,13 +379,13 @@ Partial Class Form1
     Private WithEvents saveToolStripButton As System.Windows.Forms.ToolStripButton
     Private WithEvents c1Chart2 As C1.Win.C1Chart.C1Chart
     Private WithEvents label4 As System.Windows.Forms.Label
-    Private WithEvents c1SuperTooltip1 As C1.Win.C1SuperTooltip.C1SuperTooltip
+    Private WithEvents c1SuperTooltip1 As C1.Win.SuperTooltip.C1SuperTooltip
     Private WithEvents tabPage3 As System.Windows.Forms.TabPage
     Private WithEvents pasteToolStripButton As System.Windows.Forms.ToolStripButton
     Private WithEvents toolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Private WithEvents helpToolStripButton As System.Windows.Forms.ToolStripButton
     Private WithEvents txtWidth As System.Windows.Forms.TextBox
-    Private WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents panel1 As System.Windows.Forms.Panel
     Private WithEvents listBox1 As System.Windows.Forms.ListBox
     Private WithEvents txtHeight As System.Windows.Forms.TextBox

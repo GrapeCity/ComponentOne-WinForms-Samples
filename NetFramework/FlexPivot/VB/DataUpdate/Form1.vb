@@ -37,24 +37,24 @@ Public Class Form1
         doc.LoadXml(My.Resources.FlexPivotViews)
 
         ' build menu with FlexPivot views
-        Dim menuView = New C1.Win.C1Command.C1CommandMenu()
+        Dim menuView = New C1.Win.Command.C1CommandMenu()
         menuView.Text = "&View"
         menuView.Image = My.Resources.Views_small
         For Each nd As XmlNode In doc.SelectNodes("FlexPivotViews/C1FlexPivot")
             If initialView Is Nothing Then
                 initialView = nd.OuterXml
             End If
-            Dim cmd = New C1.Win.C1Command.C1Command()
+            Dim cmd = New C1.Win.Command.C1Command()
             cmd.Text = nd.Attributes("id").Value
             cmd.UserData = nd
             AddHandler cmd.Click, AddressOf MenuView_DropDownItemClicked
-            Dim link = New C1.Win.C1Command.C1CommandLink(cmd)
+            Dim link = New C1.Win.Command.C1CommandLink(cmd)
             menuView.CommandLinks.Add(link)
         Next
 
         ' add the new view menu to the toolstrip
-        Dim menuLink = New C1.Win.C1Command.C1CommandLink(menuView)
-        menuLink.ButtonLook = C1.Win.C1Command.ButtonLookFlags.TextAndImage
+        Dim menuLink = New C1.Win.Command.C1CommandLink(menuView)
+        menuLink.ButtonLook = C1.Win.Command.ButtonLookFlags.TextAndImage
         _c1FlexPivotPage.ToolBar.CommandLinks.Insert(3, menuLink)
     End Sub
 
@@ -90,7 +90,7 @@ Public Class Form1
     End Sub
 
     ' select a predefined FlexPivot view
-    Private Sub MenuView_DropDownItemClicked(sender As Object, e As C1.Win.C1Command.ClickEventArgs)
+    Private Sub MenuView_DropDownItemClicked(sender As Object, e As C1.Win.Command.ClickEventArgs)
         Dim nd = TryCast(e.CallerLink.Command.UserData, XmlNode)
         If nd IsNot Nothing AndAlso _c1FlexPivotPage.PivotEngine.Fields.Count > 0 Then
             _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml

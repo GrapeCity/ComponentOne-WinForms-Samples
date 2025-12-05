@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace C1ScheduleDemo
 {
@@ -33,11 +33,12 @@ namespace C1ScheduleDemo
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,9 +60,9 @@ namespace C1ScheduleDemo
             this.groupPageSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmbGroupPageSize = new System.Windows.Forms.ToolStripComboBox();
             this.showEmptyGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
             this.c1NWindDataSet1 = new C1ScheduleDemo.C1NwindDataSet();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
             this.appointeesTableAdapter1 = new C1ScheduleDemo.C1NwindDataSetTableAdapters.AppointeesTableAdapter();
             this.appointmentsTableAdapter1 = new C1ScheduleDemo.C1NwindDataSetTableAdapters.AppointmentsTableAdapter();
             this.menuStrip1.SuspendLayout();
@@ -373,12 +374,12 @@ namespace C1ScheduleDemo
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -394,7 +395,7 @@ namespace C1ScheduleDemo
             this.c1Schedule1.Settings.FirstVisibleTime = System.TimeSpan.Parse("06:00:00");
             this.c1Schedule1.Size = new System.Drawing.Size(583, 462);
             this.c1Schedule1.TabIndex = 2;
-            this.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
+            this.c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView;
             // 
             // c1NWindDataSet1
             // 
@@ -413,7 +414,7 @@ namespace C1ScheduleDemo
             this.c1Calendar1.Schedule = this.c1Schedule1;
             this.c1Calendar1.Size = new System.Drawing.Size(204, 462);
             this.c1Calendar1.TabIndex = 0;
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2007Black;
+            this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2007Black;
             // 
             // appointeesTableAdapter1
             // 
@@ -458,12 +459,12 @@ namespace C1ScheduleDemo
 
         #endregion
 
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
         private System.Windows.Forms.ToolStripMenuItem _DayView;
         private System.Windows.Forms.ToolStripMenuItem _workWeek;
         private System.Windows.Forms.ToolStripMenuItem _week;

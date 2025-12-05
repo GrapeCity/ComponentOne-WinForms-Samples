@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -70,6 +70,8 @@ namespace HLCandle
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.chart = new C1.Win.C1Chart.C1Chart();
 			this.frChartTypes = new System.Windows.Forms.GroupBox();
 			this.optComplexCandle = new System.Windows.Forms.RadioButton();

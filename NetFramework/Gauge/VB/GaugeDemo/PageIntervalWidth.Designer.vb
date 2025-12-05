@@ -22,14 +22,14 @@ Partial Class PageIntervalWidth
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim C1GaugeCaption2 As C1.Win.C1Gauge.C1GaugeCaption = New C1.Win.C1Gauge.C1GaugeCaption
-        Dim C1GaugeMarks4 As C1.Win.C1Gauge.C1GaugeMarks = New C1.Win.C1Gauge.C1GaugeMarks
-        Dim C1GaugeMarks5 As C1.Win.C1Gauge.C1GaugeMarks = New C1.Win.C1Gauge.C1GaugeMarks
-        Dim C1GaugeMarks6 As C1.Win.C1Gauge.C1GaugeMarks = New C1.Win.C1Gauge.C1GaugeMarks
-        Me.c1Gauge1 = New C1.Win.C1Gauge.C1Gauge
-        Me.c1RadialGauge1 = New C1.Win.C1Gauge.C1RadialGauge
-        Me.c1LinearGauge1 = New C1.Win.C1Gauge.C1LinearGauge
-        Me.c1LinearGauge2 = New C1.Win.C1Gauge.C1LinearGauge
+        Dim C1GaugeCaption2 As C1.Win.Gauge.C1GaugeCaption = New C1.Win.Gauge.C1GaugeCaption
+        Dim C1GaugeMarks4 As C1.Win.Gauge.C1GaugeMarks = New C1.Win.Gauge.C1GaugeMarks
+        Dim C1GaugeMarks5 As C1.Win.Gauge.C1GaugeMarks = New C1.Win.Gauge.C1GaugeMarks
+        Dim C1GaugeMarks6 As C1.Win.Gauge.C1GaugeMarks = New C1.Win.Gauge.C1GaugeMarks
+        Me.c1Gauge1 = New C1.Win.Gauge.C1Gauge
+        Me.c1RadialGauge1 = New C1.Win.Gauge.C1RadialGauge
+        Me.c1LinearGauge1 = New C1.Win.Gauge.C1LinearGauge
+        Me.c1LinearGauge2 = New C1.Win.Gauge.C1LinearGauge
         Me.gaugePanel.SuspendLayout()
         Me.gridPanel.SuspendLayout()
         CType(Me.c1Gauge1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,8 +62,8 @@ Partial Class PageIntervalWidth
         C1GaugeCaption2.Viewport.TranslateY = 0.05
         C1GaugeCaption2.Viewport.Y = 36
         C1GaugeCaption2.Width = -1
-        Me.c1Gauge1.FaceShapes.AddRange(New C1.Win.C1Gauge.C1GaugeBaseShape() {C1GaugeCaption2})
-        Me.c1Gauge1.Gauges.AddRange(New C1.Win.C1Gauge.C1GaugeBase() {Me.c1RadialGauge1, Me.c1LinearGauge1, Me.c1LinearGauge2})
+        Me.c1Gauge1.FaceShapes.AddRange(New C1.Win.Gauge.C1GaugeBaseShape() {C1GaugeCaption2})
+        Me.c1Gauge1.Gauges.AddRange(New C1.Win.Gauge.C1GaugeBase() {Me.c1RadialGauge1, Me.c1LinearGauge1, Me.c1LinearGauge2})
         Me.c1Gauge1.Location = New System.Drawing.Point(3, 3)
         Me.c1Gauge1.Name = "c1Gauge1"
         Me.c1Gauge1.Size = New System.Drawing.Size(385, 430)
@@ -72,30 +72,30 @@ Partial Class PageIntervalWidth
         '
         'c1RadialGauge1
         '
-        Me.c1RadialGauge1.Cap.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        Me.c1RadialGauge1.Cap.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         Me.c1RadialGauge1.Cap.Filling.Color = System.Drawing.Color.DarkSlateBlue
         Me.c1RadialGauge1.Cap.Radius = 8
-        C1GaugeMarks4.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        C1GaugeMarks4.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         C1GaugeMarks4.Filling.Color = System.Drawing.Color.Gray
         C1GaugeMarks4.IntervalWidth = 10
         C1GaugeMarks4.Length = 10
         C1GaugeMarks4.Location = 90
         C1GaugeMarks4.SequenceNo = -1
-        C1GaugeMarks4.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Round
-        C1GaugeMarks4.ValueColorFalloff = C1.Win.C1Gauge.C1GaugeValueColorFalloff.None
-        C1GaugeMarks4.ValueColors.AddRange(New C1.Win.C1Gauge.C1GaugeValueColor() {New C1.Win.C1Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.Red, 1, CType(641062365341942114, Long)), New C1.Win.C1Gauge.C1GaugeValueColor(Double.NaN, 100, System.Drawing.Color.Gray, 1, CType(641343840318652770, Long))})
+        C1GaugeMarks4.Shape = C1.Win.Gauge.C1GaugeMarkShape.Round
+        C1GaugeMarks4.ValueColorFalloff = C1.Win.Gauge.C1GaugeValueColorFalloff.None
+        C1GaugeMarks4.ValueColors.AddRange(New C1.Win.Gauge.C1GaugeValueColor() {New C1.Win.Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.Red, 1, CType(641062365341942114, Long)), New C1.Win.Gauge.C1GaugeValueColor(Double.NaN, 100, System.Drawing.Color.Gray, 1, CType(641343840318652770, Long))})
         C1GaugeMarks4.ViewTag = CType(640780890365211457, Long)
         C1GaugeMarks4.Width = 10
-        Me.c1RadialGauge1.Decorators.AddRange(New C1.Win.C1Gauge.C1GaugeDecorator() {C1GaugeMarks4})
+        Me.c1RadialGauge1.Decorators.AddRange(New C1.Win.Gauge.C1GaugeDecorator() {C1GaugeMarks4})
         Me.c1RadialGauge1.Name = "c1RadialGauge1"
-        Me.c1RadialGauge1.Pointer.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        Me.c1RadialGauge1.Pointer.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         Me.c1RadialGauge1.Pointer.CustomShape.EndRadius = 1
         Me.c1RadialGauge1.Pointer.CustomShape.EndWidth = 2
         Me.c1RadialGauge1.Pointer.CustomShape.StartWidth = 6
         Me.c1RadialGauge1.Pointer.Filling.Color = System.Drawing.Color.White
         Me.c1RadialGauge1.Pointer.Length = 80
         Me.c1RadialGauge1.Pointer.Offset = 0
-        Me.c1RadialGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom
+        Me.c1RadialGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom
         Me.c1RadialGauge1.Pointer.SweepTime = 4
         Me.c1RadialGauge1.Pointer.Value = 70
         Me.c1RadialGauge1.PointerOriginY = 0.53
@@ -114,18 +114,18 @@ Partial Class PageIntervalWidth
         Me.c1LinearGauge1.AxisStart = 0
         Me.c1LinearGauge1.BaseFactor = 1
         Me.c1LinearGauge1.BaseOrigin = 0
-        C1GaugeMarks5.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out
-        C1GaugeMarks5.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        C1GaugeMarks5.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out
+        C1GaugeMarks5.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         C1GaugeMarks5.Filling.Color = System.Drawing.Color.Gray
         C1GaugeMarks5.IntervalWidth = 30
         C1GaugeMarks5.Length = 100
         C1GaugeMarks5.Location = 0
-        C1GaugeMarks5.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Round
-        C1GaugeMarks5.ValueColorFalloff = C1.Win.C1Gauge.C1GaugeValueColorFalloff.None
-        C1GaugeMarks5.ValueColors.AddRange(New C1.Win.C1Gauge.C1GaugeValueColor() {New C1.Win.C1Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.Green, 1, CType(641906790272084083, Long)), New C1.Win.C1Gauge.C1GaugeValueColor(Double.NaN, 100, System.Drawing.Color.Gray, 1, CType(642188265248794739, Long))})
+        C1GaugeMarks5.Shape = C1.Win.Gauge.C1GaugeMarkShape.Round
+        C1GaugeMarks5.ValueColorFalloff = C1.Win.Gauge.C1GaugeValueColorFalloff.None
+        C1GaugeMarks5.ValueColors.AddRange(New C1.Win.Gauge.C1GaugeValueColor() {New C1.Win.Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.Green, 1, CType(641906790272084083, Long)), New C1.Win.Gauge.C1GaugeValueColor(Double.NaN, 100, System.Drawing.Color.Gray, 1, CType(642188265248794739, Long))})
         C1GaugeMarks5.ViewTag = CType(641625315295363426, Long)
         C1GaugeMarks5.Width = 20
-        Me.c1LinearGauge1.Decorators.AddRange(New C1.Win.C1Gauge.C1GaugeDecorator() {C1GaugeMarks5})
+        Me.c1LinearGauge1.Decorators.AddRange(New C1.Win.Gauge.C1GaugeDecorator() {C1GaugeMarks5})
         Me.c1LinearGauge1.Name = "c1LinearGauge1"
         Me.c1LinearGauge1.Pointer.SweepTime = 5
         Me.c1LinearGauge1.Pointer.Value = 30
@@ -141,18 +141,18 @@ Partial Class PageIntervalWidth
         Me.c1LinearGauge2.AxisStart = 0
         Me.c1LinearGauge2.BaseFactor = 1
         Me.c1LinearGauge2.BaseOrigin = 0
-        C1GaugeMarks6.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out
-        C1GaugeMarks6.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        C1GaugeMarks6.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out
+        C1GaugeMarks6.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         C1GaugeMarks6.Filling.Color = System.Drawing.Color.Gray
         C1GaugeMarks6.IntervalWidth = 30
         C1GaugeMarks6.Length = 100
         C1GaugeMarks6.Location = 0
-        C1GaugeMarks6.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Round
-        C1GaugeMarks6.ValueColorFalloff = C1.Win.C1Gauge.C1GaugeValueColorFalloff.None
-        C1GaugeMarks6.ValueColors.AddRange(New C1.Win.C1Gauge.C1GaugeValueColor() {New C1.Win.C1Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.MidnightBlue, 1, CType(642751215202216051, Long)), New C1.Win.C1Gauge.C1GaugeValueColor(Double.NaN, 100, System.Drawing.Color.Gray, 1, CType(643032690178926707, Long))})
+        C1GaugeMarks6.Shape = C1.Win.Gauge.C1GaugeMarkShape.Round
+        C1GaugeMarks6.ValueColorFalloff = C1.Win.Gauge.C1GaugeValueColorFalloff.None
+        C1GaugeMarks6.ValueColors.AddRange(New C1.Win.Gauge.C1GaugeValueColor() {New C1.Win.Gauge.C1GaugeValueColor(0, -1, System.Drawing.Color.MidnightBlue, 1, CType(642751215202216051, Long)), New C1.Win.Gauge.C1GaugeValueColor(Double.NaN, 100, System.Drawing.Color.Gray, 1, CType(643032690178926707, Long))})
         C1GaugeMarks6.ViewTag = CType(642469740225505395, Long)
         C1GaugeMarks6.Width = 20
-        Me.c1LinearGauge2.Decorators.AddRange(New C1.Win.C1Gauge.C1GaugeDecorator() {C1GaugeMarks6})
+        Me.c1LinearGauge2.Decorators.AddRange(New C1.Win.Gauge.C1GaugeDecorator() {C1GaugeMarks6})
         Me.c1LinearGauge2.IsReversed = True
         Me.c1LinearGauge2.Name = "c1LinearGauge2"
         Me.c1LinearGauge2.Pointer.SweepTime = 5
@@ -175,9 +175,9 @@ Partial Class PageIntervalWidth
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents c1Gauge1 As C1.Win.C1Gauge.C1Gauge
-    Private WithEvents c1RadialGauge1 As C1.Win.C1Gauge.C1RadialGauge
-    Private WithEvents c1LinearGauge1 As C1.Win.C1Gauge.C1LinearGauge
-    Private WithEvents c1LinearGauge2 As C1.Win.C1Gauge.C1LinearGauge
+    Private WithEvents c1Gauge1 As C1.Win.Gauge.C1Gauge
+    Private WithEvents c1RadialGauge1 As C1.Win.Gauge.C1RadialGauge
+    Private WithEvents c1LinearGauge1 As C1.Win.Gauge.C1LinearGauge
+    Private WithEvents c1LinearGauge2 As C1.Win.Gauge.C1LinearGauge
 
 End Class

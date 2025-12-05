@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-using C1.Win.C1GanttView;
+using C1.Win.GanttView;
 
 namespace CustomColumn
 {

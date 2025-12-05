@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Diagnostics;
 using C1.C1Preview;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     // this file contains code that arranges text and image within a cell
     public partial class C1FlexGridPrinter

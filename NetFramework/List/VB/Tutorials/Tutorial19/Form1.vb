@@ -43,7 +43,7 @@ Public Class Form1
     Friend WithEvents OleDbUpdateCommand2 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbDeleteCommand2 As System.Data.OleDb.OleDbCommand
     Friend WithEvents DataSet11 As Tutorial19.DataSet1
-    Friend WithEvents C1Combo1 As C1.Win.C1List.C1Combo
+    Friend WithEvents C1Combo1 As C1.Win.List.C1Combo
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.DataGrid1 = New System.Windows.Forms.DataGrid()
@@ -60,7 +60,7 @@ Public Class Form1
         Me.OleDbInsertCommand2 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbSelectCommand2 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbUpdateCommand2 = New System.Data.OleDb.OleDbCommand()
-        Me.C1Combo1 = New C1.Win.C1List.C1Combo()
+        Me.C1Combo1 = New C1.Win.List.C1Combo()
         CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1Combo1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -183,7 +183,7 @@ Public Class Form1
         Me.C1Combo1.MaxLength = 32767
         Me.C1Combo1.MouseCursor = System.Windows.Forms.Cursors.Default
         Me.C1Combo1.Name = "C1Combo1"
-        Me.C1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1Combo1.Size = New System.Drawing.Size(221, 24)
         Me.C1Combo1.TabIndex = 3

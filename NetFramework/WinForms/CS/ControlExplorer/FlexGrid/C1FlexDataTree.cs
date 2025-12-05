@@ -41,7 +41,7 @@ using System.Drawing;
 using System.Collections;
 using System.Windows.Forms;
 using System.ComponentModel;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
@@ -52,7 +52,7 @@ namespace ControlExplorer.FlexGrid
 	//LicenseProvider(typeof(System.ComponentModel.LicenseProvider)),
 	ToolboxBitmap(typeof(C1FlexDataTree))
 	]
-	public class C1FlexDataTree : C1.Win.C1FlexGrid.C1FlexGrid, ISupportInitialize
+	public class C1FlexDataTree : C1.Win.FlexGrid.C1FlexGrid, ISupportInitialize
 	{
 		//--------------------------------------------------------------------------------
 		#region ** fields
@@ -71,7 +71,7 @@ namespace ControlExplorer.FlexGrid
 		// this grid appears on top of all child controls and prevents children from
 		// hiding the parent grid's header rows when they scroll.
 		//
-		private C1.Win.C1FlexGrid.C1FlexGrid _hdr = null; // <<1.1>>
+		private C1.Win.FlexGrid.C1FlexGrid _hdr = null; // <<1.1>>
 		
 		#endregion
 
@@ -82,9 +82,9 @@ namespace ControlExplorer.FlexGrid
 			Initialize();
 
 			// create 'header' grid <<1.1>>
-			_hdr = new C1.Win.C1FlexGrid.C1FlexGrid();
+			_hdr = new C1.Win.FlexGrid.C1FlexGrid();
 			_hdr.Dock = DockStyle.Top;
-            _hdr.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            _hdr.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 			_hdr.Height = Rows[Rows.Fixed].Top;
 			_hdr.ScrollBars = ScrollBars.None;
 			_hdr.AfterScroll += new RangeEventHandler(hdr_AfterScroll);

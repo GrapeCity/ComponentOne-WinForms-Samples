@@ -26,7 +26,7 @@ Public Class Form1
     End Sub
 
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents DsContacts1 As Tutor06.dsContacts
@@ -40,7 +40,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DsContacts1 = New Tutor06.dsContacts()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
@@ -54,7 +54,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.AllowAddNew = True
         Me.C1TrueDBGrid1.AllowArrows = False
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Anchor = (System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right)
         Me.C1TrueDBGrid1.Caption = "C1True DBGrid .Net"
@@ -66,7 +66,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(24, 8)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
@@ -137,7 +137,7 @@ Public Class Form1
     End Sub
 
 
-    Private Sub C1TrueDBGrid1_UnboundColumnFetch(ByVal sender As System.Object, ByVal e As C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs) Handles C1TrueDBGrid1.UnboundColumnFetch
+    Private Sub C1TrueDBGrid1_UnboundColumnFetch(ByVal sender As System.Object, ByVal e As C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs) Handles C1TrueDBGrid1.UnboundColumnFetch
         If e.Col = 0 And e.Row < dtCopy.Rows.Count Then
             e.Value = dtCopy.Rows(e.Row).Item("FirstName") & " " & dtCopy.Rows(e.Row).Item("LastName")
         End If

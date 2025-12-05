@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace FlexCalc
 {

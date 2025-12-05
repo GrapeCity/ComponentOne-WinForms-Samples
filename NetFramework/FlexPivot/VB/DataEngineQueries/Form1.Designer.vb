@@ -37,17 +37,17 @@ Partial Class Form1
         Me.tabPageOD = New System.Windows.Forms.TabPage()
         Me.lblODRowsTotal = New System.Windows.Forms.Label()
         Me.label10 = New System.Windows.Forms.Label()
-        Me.dgvOrderDetails = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.dgvOrderDetails = New C1.Win.FlexGrid.C1FlexGrid()
         Me.tabPageProducts = New System.Windows.Forms.TabPage()
         Me.lblProductsRowsTotal = New System.Windows.Forms.Label()
         Me.label11 = New System.Windows.Forms.Label()
-        Me.dgvProducts = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.dgvProducts = New C1.Win.FlexGrid.C1FlexGrid()
         Me.tabPageOrders = New System.Windows.Forms.TabPage()
         Me.lblOrdersTotalRows = New System.Windows.Forms.Label()
         Me.label12 = New System.Windows.Forms.Label()
-        Me.dgvOrders = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.dgvOrders = New C1.Win.FlexGrid.C1FlexGrid()
         Me.tabPageResults = New System.Windows.Forms.TabPage()
-        Me.dgvResult = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.dgvResult = New C1.Win.FlexGrid.C1FlexGrid()
         Me.btnFlexPivot = New System.Windows.Forms.Button()
         Me.lblTime = New System.Windows.Forms.Label()
         Me.btnExec = New System.Windows.Forms.Button()
@@ -606,17 +606,17 @@ Partial Class Form1
     Private WithEvents tabPageOD As System.Windows.Forms.TabPage
     Private WithEvents lblODRowsTotal As System.Windows.Forms.Label
     Private WithEvents label10 As System.Windows.Forms.Label
-    Private WithEvents dgvOrderDetails As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents dgvOrderDetails As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents tabPageProducts As System.Windows.Forms.TabPage
     Private WithEvents lblProductsRowsTotal As System.Windows.Forms.Label
     Private WithEvents label11 As System.Windows.Forms.Label
-    Private WithEvents dgvProducts As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents dgvProducts As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents tabPageOrders As System.Windows.Forms.TabPage
     Private WithEvents lblOrdersTotalRows As System.Windows.Forms.Label
     Private WithEvents label12 As System.Windows.Forms.Label
-    Private WithEvents dgvOrders As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents dgvOrders As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents tabPageResults As System.Windows.Forms.TabPage
-    Private WithEvents dgvResult As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents dgvResult As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents btnFlexPivot As System.Windows.Forms.Button
     Private WithEvents lblTime As System.Windows.Forms.Label
     Private WithEvents btnExec As System.Windows.Forms.Button

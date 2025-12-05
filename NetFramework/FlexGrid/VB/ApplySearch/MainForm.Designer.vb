@@ -43,9 +43,9 @@ Partial Class MainForm
         Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat()
         Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.c1FlexGridSearchPanel1 = New C1.Win.C1FlexGrid.C1FlexGridSearchPanel()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.c1FlexGridSearchPanel1 = New C1.Win.FlexGrid.C1FlexGridSearchPanel()
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,7 +166,7 @@ Partial Class MainForm
         'c1FlexGrid1
         '
         Me.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:"
-        Me.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.None
+        Me.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None
         Me.c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = False
         Me.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = False
         Me.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -182,7 +182,7 @@ Partial Class MainForm
         Me.c1FlexGridSearchPanel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.c1FlexGridSearchPanel1.Location = New System.Drawing.Point(0, 66)
         Me.c1FlexGridSearchPanel1.Name = "c1FlexGridSearchPanel1"
-        Me.c1FlexGridSearchPanel1.SearchMode = C1.Win.C1FlexGrid.SearchMode.Always
+        Me.c1FlexGridSearchPanel1.SearchMode = C1.Win.FlexGrid.SearchMode.Always
         Me.c1FlexGridSearchPanel1.Size = New System.Drawing.Size(1016, 49)
         Me.c1FlexGridSearchPanel1.TabIndex = 5
         Me.c1ThemeController1.SetTheme(Me.c1FlexGridSearchPanel1, "(default)")
@@ -214,15 +214,15 @@ Partial Class MainForm
     Friend WithEvents ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
     Friend WithEvents ribbonQat1 As C1.Win.Ribbon.RibbonQat
     Friend WithEvents ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents rcbHighlightMode As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents rcbSearchFilter As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents rcbSearchTemplates As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents ribbonButton1 As C1.Win.Ribbon.RibbonButton
     Friend WithEvents ribbonButton2 As C1.Win.Ribbon.RibbonButton
-    Friend WithEvents c1FlexGridSearchPanel1 As C1.Win.C1FlexGrid.C1FlexGridSearchPanel
+    Friend WithEvents c1FlexGridSearchPanel1 As C1.Win.FlexGrid.C1FlexGridSearchPanel
     Friend WithEvents ribbonButton3 As C1.Win.Ribbon.RibbonButton
     Friend WithEvents ribbonButton4 As C1.Win.Ribbon.RibbonButton
     Friend WithEvents ribbonButton5 As C1.Win.Ribbon.RibbonButton

@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -95,6 +95,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Controls\FindOptions.resx">
       <DependentUpon>FindOptions.cs</DependentUpon>
     </EmbeddedResource>

@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 
 namespace GaugeDemo
 {

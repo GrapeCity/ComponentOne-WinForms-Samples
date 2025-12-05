@@ -35,7 +35,7 @@ Public Class Form1
     Friend WithEvents _rpp As System.Windows.Forms.TextBox
     Friend WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents _btnPrint As System.Windows.Forms.Button
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents label2 As System.Windows.Forms.Label
     Friend WithEvents _cpp As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
@@ -44,7 +44,7 @@ Public Class Form1
         Me._rpp = New System.Windows.Forms.TextBox
         Me.label1 = New System.Windows.Forms.Label
         Me._btnPrint = New System.Windows.Forms.Button
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.label2 = New System.Windows.Forms.Label
         Me._cpp = New System.Windows.Forms.TextBox
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -190,7 +190,7 @@ Public Class FlexPdfCreator
     Private _zoom As Single
 
     ' ctor
-    Public Sub New(ByVal flex As C1.Win.C1FlexGrid.C1FlexGrid)
+    Public Sub New(ByVal flex As C1.Win.FlexGrid.C1FlexGrid)
 
         ' initialize zoom factor
         Me._zoom = 1.0!

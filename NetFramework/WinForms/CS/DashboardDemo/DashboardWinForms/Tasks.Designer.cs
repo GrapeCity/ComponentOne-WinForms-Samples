@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tasks));
-            C1.Win.C1Themes.C1MaterialThemeSettings c1MaterialThemeSettings1 = new C1.Win.C1Themes.C1MaterialThemeSettings();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flexGroupPanel = new C1.Win.C1FlexGrid.C1FlexGridGroupPanel();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings1 = new C1.Win.Themes.C1MaterialThemeSettings();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flexGroupPanel = new C1.Win.FlexGrid.C1FlexGridGroupPanel();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage4 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage5 = new C1.Win.Command.C1DockingTabPage();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
             this.c1DockingTab1.SuspendLayout();
             this.c1DockingTabPage1.SuspendLayout();
@@ -63,14 +63,14 @@
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.Size = new System.Drawing.Size(1155, 761);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.User;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.User;
             this.c1DockingTab1.TabsShowFocusCues = false;
             this.c1DockingTab1.TabsSpacing = 2;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
             this.c1DockingTab1.TabTextAlignment = System.Drawing.StringAlignment.Center;
             this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
             this.c1DockingTab1.TabClick += new System.EventHandler(this.c1DockingTab1_TabClick);
-            this.c1DockingTab1.MeasureTab += new C1.Win.C1Command.MeasureTabEventHandler(this.c1DockingTab1_MeasureTab);
+            this.c1DockingTab1.MeasureTab += new C1.Win.Command.MeasureTabEventHandler(this.c1DockingTab1_MeasureTab);
             // 
             // c1DockingTabPage1
             // 
@@ -180,14 +180,14 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1FlexGrid.C1FlexGridGroupPanel _flexGroupPanel;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.FlexGrid.C1FlexGridGroupPanel _flexGroupPanel;
     }
 }

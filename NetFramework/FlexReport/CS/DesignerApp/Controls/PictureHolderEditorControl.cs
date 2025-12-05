@@ -20,7 +20,7 @@ using System.Windows.Forms;
 using C1.Win.C1Input;
 using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
-using C1.Win.C1Document;
+using C1.Win.Document;
 
 namespace FlexReportDesignerApp.Controls
 {

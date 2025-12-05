@@ -42,8 +42,8 @@
             this.btnReset = new C1.Win.C1Input.C1Button();
             this.btnApply = new C1.Win.C1Input.C1Button();
             this.filterEditor = new C1.Win.DataFilter.C1FilterEditor();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.themeController = new C1.Win.C1Themes.C1ThemeController();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
+            this.themeController = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
@@ -190,7 +190,7 @@
             this.flexGrid.Location = new System.Drawing.Point(0, 0);
             this.flexGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexGrid.Name = "flexGrid";
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(579, 690);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 0;
@@ -242,11 +242,11 @@
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar;
         private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private System.Windows.Forms.SplitContainer splitContainer;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private C1.Win.DataFilter.C1FilterEditor filterEditor;
         private C1.Win.C1Input.C1Button btnApply;
         private C1.Win.C1Input.C1Button btnReset;
-        private C1.Win.C1Themes.C1ThemeController themeController;
+        private C1.Win.Themes.C1ThemeController themeController;
     }
 }
 

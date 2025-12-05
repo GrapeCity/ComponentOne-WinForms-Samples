@@ -46,7 +46,7 @@ using System.ComponentModel;
 using System.Collections;
 using System.Reflection;
 using System.Diagnostics;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace C1FlexGroup
 {
@@ -117,7 +117,7 @@ namespace C1FlexGroup
 		{
 			// initialize contained Flex control
 			_flex = new C1FlexGrid();
-			_flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+			_flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 			_flex.Dock = DockStyle.Bottom;
 			_flex.Size = new Size(10,10);
 			_flex.AllowMerging = AllowMergingEnum.Nodes;

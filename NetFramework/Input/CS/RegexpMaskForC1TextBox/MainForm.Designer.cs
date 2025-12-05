@@ -32,6 +32,7 @@ namespace RegexpMaskForC1TextBox
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -39,7 +40,7 @@ namespace RegexpMaskForC1TextBox
             this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1Label14 = new C1.Win.C1Input.C1Label();
             this.c1Label13 = new C1.Win.C1Input.C1Label();
             this.c1Label12 = new C1.Win.C1Input.C1Label();
@@ -645,7 +646,7 @@ namespace RegexpMaskForC1TextBox
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
 
         private C1.Win.C1Input.C1TextBox c1TextBox1;

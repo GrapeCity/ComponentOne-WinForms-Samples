@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -55,6 +55,8 @@ namespace HistTemp
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.chartRawData = new C1.Win.C1Chart.C1Chart();
 			this.txtStatistics = new System.Windows.Forms.TextBox();
 			this.chartHistogram = new C1.Win.C1Chart.C1Chart();

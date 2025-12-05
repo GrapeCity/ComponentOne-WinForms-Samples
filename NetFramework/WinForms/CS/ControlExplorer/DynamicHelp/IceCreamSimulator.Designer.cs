@@ -42,24 +42,24 @@
             C1.Win.C1DynamicHelp.MapItem mapItem10 = new C1.Win.C1DynamicHelp.MapItem();
             C1.Win.C1DynamicHelp.MapItem mapItem11 = new C1.Win.C1DynamicHelp.MapItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.tabMain = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Sizer6 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.tabMain = new C1.Win.Command.C1DockingTabPage();
+            this.c1Sizer6 = new C1.Win.Sizer.C1Sizer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.tabNew = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.tabNew = new C1.Win.Command.C1DockingTabPage();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
             this.rbNew_Flavor = new System.Windows.Forms.RadioButton();
             this.btnNew_Next = new C1.Win.C1Input.C1Button();
             this.rbNew_Style = new System.Windows.Forms.RadioButton();
             this.rbNew_IceCream = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.tabDesign = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
+            this.tabDesign = new C1.Win.Command.C1DockingTabPage();
+            this.c1Sizer2 = new C1.Win.Sizer.C1Sizer();
             this.btnDesign_Back = new C1.Win.C1Input.C1Button();
             this.btDesign_Ok = new C1.Win.C1Input.C1Button();
             this.cbDesign_Flavor = new System.Windows.Forms.ComboBox();
@@ -71,8 +71,8 @@
             this.cbDesign_Style = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.tabAddRecipe = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Sizer3 = new C1.Win.C1Sizer.C1Sizer();
+            this.tabAddRecipe = new C1.Win.Command.C1DockingTabPage();
+            this.c1Sizer3 = new C1.Win.Sizer.C1Sizer();
             this.btnRecipe_Cancel = new C1.Win.C1Input.C1Button();
             this.btnRecipe_Add = new C1.Win.C1Input.C1Button();
             this.txtRecipe_Name = new System.Windows.Forms.TextBox();
@@ -88,79 +88,79 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtRecipe_Toppings = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.tabName = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Sizer4 = new C1.Win.C1Sizer.C1Sizer();
+            this.tabName = new C1.Win.Command.C1DockingTabPage();
+            this.c1Sizer4 = new C1.Win.Sizer.C1Sizer();
             this.btnName_Back = new C1.Win.C1Input.C1Button();
             this.btnName_Done = new C1.Win.C1Input.C1Button();
             this.txtName_Name = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.chkName_Add = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.tabNewStyle = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1Sizer5 = new C1.Win.C1Sizer.C1Sizer();
+            this.tabNewStyle = new C1.Win.Command.C1DockingTabPage();
+            this.c1Sizer5 = new C1.Win.Sizer.C1Sizer();
             this.btnNewStyle_Back = new C1.Win.C1Input.C1Button();
             this.btnNewStyleFlavor = new C1.Win.C1Input.C1Button();
             this.txtNewStyleFlavor = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.tabDatabase = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1CommandMenuFile = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandNew = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandRecipeDatabase = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink23 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandReset = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink24 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandHome = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink22 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandExit = new C1.Win.C1Command.C1Command();
-            this.c1CommandDatabase = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenuHelp = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandShowHelp = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandShowHelpToolbar = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink19 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandHelpContents = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink20 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandHelpIndex = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink21 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandHelpSearch = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenuEdit = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandMenuDatabase = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandAddRecipe = new C1.Win.C1Command.C1Command();
-            this.c1CommandCreate = new C1.Win.C1Command.C1Command();
-            this.c1CommandEdit = new C1.Win.C1Command.C1Command();
-            this.c1CommandDelete = new C1.Win.C1Command.C1Command();
-            this.c1CommandHelpBack = new C1.Win.C1Command.C1Command();
-            this.c1CommandHelpForward = new C1.Win.C1Command.C1Command();
-            this.c1CommandHelpPin = new C1.Win.C1Command.C1Command();
-            this.c1CommandCloseHelp = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
+            this.tabDatabase = new C1.Win.Command.C1DockingTabPage();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1CommandMenuFile = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandNew = new C1.Win.Command.C1Command();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandRecipeDatabase = new C1.Win.Command.C1Command();
+            this.c1CommandLink23 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandReset = new C1.Win.Command.C1Command();
+            this.c1CommandLink24 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandHome = new C1.Win.Command.C1Command();
+            this.c1CommandLink22 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandExit = new C1.Win.Command.C1Command();
+            this.c1CommandDatabase = new C1.Win.Command.C1Command();
+            this.c1CommandMenuHelp = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandShowHelp = new C1.Win.Command.C1Command();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandShowHelpToolbar = new C1.Win.Command.C1Command();
+            this.c1CommandLink19 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandHelpContents = new C1.Win.Command.C1Command();
+            this.c1CommandLink20 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandHelpIndex = new C1.Win.Command.C1Command();
+            this.c1CommandLink21 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandHelpSearch = new C1.Win.Command.C1Command();
+            this.c1CommandMenuEdit = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandMenuDatabase = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandAddRecipe = new C1.Win.Command.C1Command();
+            this.c1CommandCreate = new C1.Win.Command.C1Command();
+            this.c1CommandEdit = new C1.Win.Command.C1Command();
+            this.c1CommandDelete = new C1.Win.Command.C1Command();
+            this.c1CommandHelpBack = new C1.Win.Command.C1Command();
+            this.c1CommandHelpForward = new C1.Win.Command.C1Command();
+            this.c1CommandHelpPin = new C1.Win.Command.C1Command();
+            this.c1CommandCloseHelp = new C1.Win.Command.C1Command();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
             this.label14 = new System.Windows.Forms.Label();
-            this.tabError = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.tabError = new C1.Win.Command.C1DockingTabPage();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.c1DynamicHelp1 = new C1.Win.C1DynamicHelp.C1DynamicHelp();
-            this.c1ToolBar2 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink13 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink14 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink15 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink16 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink17 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink18 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink25 = new C1.Win.C1Command.C1CommandLink();
-            this.c1MainMenu1 = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
+            this.c1ToolBar2 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink13 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink14 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink15 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink16 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink17 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink18 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink25 = new C1.Win.Command.C1CommandLink();
+            this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
             this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.ribbonLabel1 = new C1.Win.Ribbon.RibbonLabel();
             this.ribbonProgressBar1 = new C1.Win.Ribbon.RibbonProgressBar();
@@ -237,7 +237,7 @@
             this.c1DockingTab1.Size = new System.Drawing.Size(431, 409);
             this.c1DockingTab1.TabIndex = 8;
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // tabMain
             // 
@@ -1031,7 +1031,7 @@
             this.c1ToolBar1.AccessibleName = "Tool Bar";
             this.c1ToolBar1.AutoSize = false;
             this.c1ToolBar1.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink9,
             this.c1CommandLink10,
             this.c1CommandLink11});
@@ -1042,7 +1042,7 @@
             this.c1ToolBar1.Name = "c1ToolBar1";
             this.c1ToolBar1.Size = new System.Drawing.Size(429, 26);
             this.c1ToolBar1.Text = "c1ToolBar1";
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1ToolBar1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandHolder1
             // 
@@ -1071,11 +1071,11 @@
             this.c1CommandHolder1.Commands.Add(this.c1CommandCloseHelp);
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandHolder1, null);
             this.c1CommandHolder1.Owner = this;
-            this.c1CommandHolder1.CommandClick += new C1.Win.C1Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
+            this.c1CommandHolder1.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
             // 
             // c1CommandMenuFile
             // 
-            this.c1CommandMenuFile.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenuFile.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink2,
             this.c1CommandLink8,
             this.c1CommandLink23,
@@ -1085,7 +1085,7 @@
             this.c1CommandMenuFile.HideNonRecentLinks = false;
             this.c1CommandMenuFile.Name = "c1CommandMenuFile";
             this.c1CommandMenuFile.Text = "&File";
-            this.c1CommandMenuFile.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenuFile.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink2
             // 
@@ -1165,7 +1165,7 @@
             // 
             // c1CommandMenuHelp
             // 
-            this.c1CommandMenuHelp.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenuHelp.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink6,
             this.c1CommandLink12,
             this.c1CommandLink19,
@@ -1175,7 +1175,7 @@
             this.c1CommandMenuHelp.HideNonRecentLinks = false;
             this.c1CommandMenuHelp.Name = "c1CommandMenuHelp";
             this.c1CommandMenuHelp.Text = "&Help";
-            this.c1CommandMenuHelp.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenuHelp.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink6
             // 
@@ -1252,13 +1252,13 @@
             // 
             // c1CommandMenuEdit
             // 
-            this.c1CommandMenuEdit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenuEdit.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink4});
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandMenuEdit, null);
             this.c1CommandMenuEdit.HideNonRecentLinks = false;
             this.c1CommandMenuEdit.Name = "c1CommandMenuEdit";
             this.c1CommandMenuEdit.Text = "&Edit";
-            this.c1CommandMenuEdit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenuEdit.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink4
             // 
@@ -1267,7 +1267,7 @@
             // 
             // c1CommandMenuDatabase
             // 
-            this.c1CommandMenuDatabase.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenuDatabase.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink7});
             mapItem10.HelpTopicTrigger = C1.Win.C1DynamicHelp.HelpTopicTrigger.None;
             mapItem10.ItemType = C1.Win.C1DynamicHelp.MapItemType.Static;
@@ -1279,7 +1279,7 @@
             this.c1CommandMenuDatabase.HideNonRecentLinks = false;
             this.c1CommandMenuDatabase.Name = "c1CommandMenuDatabase";
             this.c1CommandMenuDatabase.Text = "Modify Database";
-            this.c1CommandMenuDatabase.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenuDatabase.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink7
             // 
@@ -1354,20 +1354,20 @@
             // 
             // c1CommandLink9
             // 
-            this.c1CommandLink9.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink9.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink9.Command = this.c1CommandCreate;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink9, null);
             // 
             // c1CommandLink10
             // 
-            this.c1CommandLink10.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink10.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink10.Command = this.c1CommandEdit;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink10, null);
             this.c1CommandLink10.SortOrder = 1;
             // 
             // c1CommandLink11
             // 
-            this.c1CommandLink11.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink11.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink11.Command = this.c1CommandDelete;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink11, null);
             this.c1CommandLink11.SortOrder = 2;
@@ -1407,14 +1407,14 @@
             mapItem11.Url = "WordDocuments/error122.htm";
             mapItem11.UseDefaultTrigger = true;
             this.c1DynamicHelp1.SetHelpTopic(this.c1SuperLabel1, mapItem11);
-            this.c1SuperLabel1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Error.png", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel1.Images")))));
+            this.c1SuperLabel1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Error.png", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel1.Images")))));
             this.c1SuperLabel1.Location = new System.Drawing.Point(0, 0);
             this.c1SuperLabel1.Name = "c1SuperLabel1";
             this.c1SuperLabel1.Size = new System.Drawing.Size(429, 384);
             this.c1SuperLabel1.TabIndex = 0;
             this.c1SuperLabel1.Text = resources.GetString("c1SuperLabel1.Text");
             this.c1SuperLabel1.UseMnemonic = true;
-            this.c1SuperLabel1.LinkClicked += new C1.Win.C1SuperTooltip.C1SuperLabelLinkClickedEventHandler(this.c1SuperLabel1_LinkClicked);
+            this.c1SuperLabel1.LinkClicked += new C1.Win.SuperTooltip.C1SuperLabelLinkClickedEventHandler(this.c1SuperLabel1_LinkClicked);
             // 
             // c1DynamicHelp1
             // 
@@ -1429,7 +1429,7 @@
             this.c1ToolBar2.AccessibleName = "Tool Bar";
             this.c1ToolBar2.AutoSize = false;
             this.c1ToolBar2.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar2.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar2.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink13,
             this.c1CommandLink14,
             this.c1CommandLink15,
@@ -1444,7 +1444,7 @@
             this.c1ToolBar2.Name = "c1ToolBar2";
             this.c1ToolBar2.Size = new System.Drawing.Size(330, 25);
             this.c1ToolBar2.Text = "c1ToolBar2";
-            this.c1ToolBar2.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1ToolBar2.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             this.c1ToolBar2.Wrap = true;
             // 
             // c1CommandLink13
@@ -1460,7 +1460,7 @@
             // 
             // c1CommandLink15
             // 
-            this.c1CommandLink15.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink15.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink15.Command = this.c1CommandHelpContents;
             this.c1CommandLink15.Delimiter = true;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink15, null);
@@ -1468,14 +1468,14 @@
             // 
             // c1CommandLink16
             // 
-            this.c1CommandLink16.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink16.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink16.Command = this.c1CommandHelpIndex;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink16, null);
             this.c1CommandLink16.SortOrder = 3;
             // 
             // c1CommandLink17
             // 
-            this.c1CommandLink17.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink17.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink17.Command = this.c1CommandHelpSearch;
             this.c1DynamicHelp1.SetHelpTopic(this.c1CommandLink17, null);
             this.c1CommandLink17.SortOrder = 4;
@@ -1500,7 +1500,7 @@
             // 
             this.c1MainMenu1.AccessibleName = "Menu Bar";
             this.c1MainMenu1.CommandHolder = this.c1CommandHolder1;
-            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink3,
             this.c1CommandLink5});
@@ -1509,7 +1509,7 @@
             this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
             this.c1MainMenu1.Name = "c1MainMenu1";
             this.c1MainMenu1.Size = new System.Drawing.Size(765, 21);
-            this.c1MainMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1MainMenu1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink1
             // 
@@ -1614,28 +1614,28 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenuFile;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1Command c1CommandNew;
-        private C1.Win.C1Command.C1Command c1CommandDatabase;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenuHelp;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1Command c1CommandShowHelp;
-        private C1.Win.C1Command.C1MainMenu c1MainMenu1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenuEdit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenuDatabase;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1Command c1CommandAddRecipe;
+        private C1.Win.Command.C1CommandMenu c1CommandMenuFile;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1Command c1CommandNew;
+        private C1.Win.Command.C1Command c1CommandDatabase;
+        private C1.Win.Command.C1CommandMenu c1CommandMenuHelp;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1Command c1CommandShowHelp;
+        private C1.Win.Command.C1MainMenu c1MainMenu1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1CommandMenu c1CommandMenuEdit;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1CommandMenu c1CommandMenuDatabase;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1Command c1CommandAddRecipe;
         private C1.Win.C1Input.C1Button btnNew_Next;
         private System.Windows.Forms.RadioButton rbNew_Style;
         private System.Windows.Forms.RadioButton rbNew_IceCream;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer2;
+        private C1.Win.Sizer.C1Sizer c1Sizer2;
         private System.Windows.Forms.ComboBox cbDesign_Style;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckedListBox chkListToppings;
@@ -1661,57 +1661,57 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private C1.Win.C1Input.C1Button btnRecipe_Cancel;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer3;
+        private C1.Win.Sizer.C1Sizer c1Sizer3;
         private C1.Win.C1Input.C1Button btnName_Done;
         private System.Windows.Forms.CheckBox chkName_Add;
         private System.Windows.Forms.TextBox txtName_Name;
         private System.Windows.Forms.Label label11;
         private C1.Win.C1Input.C1Button btnName_Back;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer4;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer5;
+        private C1.Win.Sizer.C1Sizer c1Sizer4;
+        private C1.Win.Sizer.C1Sizer c1Sizer5;
         private C1.Win.C1Input.C1Button btnNewStyleFlavor;
         private System.Windows.Forms.TextBox txtNewStyleFlavor;
         private System.Windows.Forms.Label label12;
         private C1.Win.C1Input.C1Button btnNewStyle_Back;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1Command c1CommandRecipeDatabase;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1Command.C1Command c1CommandCreate;
-        private C1.Win.C1Command.C1Command c1CommandEdit;
-        private C1.Win.C1Command.C1Command c1CommandDelete;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
-        private C1.Win.C1Command.C1Command c1CommandShowHelpToolbar;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink13;
-        private C1.Win.C1Command.C1Command c1CommandHelpBack;
-        private C1.Win.C1Command.C1Command c1CommandHelpForward;
-        private C1.Win.C1Command.C1Command c1CommandHelpContents;
-        private C1.Win.C1Command.C1Command c1CommandHelpIndex;
-        private C1.Win.C1Command.C1Command c1CommandHelpSearch;
-        private C1.Win.C1Command.C1Command c1CommandHelpPin;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink14;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink15;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink16;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink17;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink18;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1Command c1CommandRecipeDatabase;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.Command.C1Command c1CommandCreate;
+        private C1.Win.Command.C1Command c1CommandEdit;
+        private C1.Win.Command.C1Command c1CommandDelete;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1Command c1CommandShowHelpToolbar;
+        private C1.Win.Command.C1ToolBar c1ToolBar2;
+        private C1.Win.Command.C1CommandLink c1CommandLink13;
+        private C1.Win.Command.C1Command c1CommandHelpBack;
+        private C1.Win.Command.C1Command c1CommandHelpForward;
+        private C1.Win.Command.C1Command c1CommandHelpContents;
+        private C1.Win.Command.C1Command c1CommandHelpIndex;
+        private C1.Win.Command.C1Command c1CommandHelpSearch;
+        private C1.Win.Command.C1Command c1CommandHelpPin;
+        private C1.Win.Command.C1CommandLink c1CommandLink14;
+        private C1.Win.Command.C1CommandLink c1CommandLink15;
+        private C1.Win.Command.C1CommandLink c1CommandLink16;
+        private C1.Win.Command.C1CommandLink c1CommandLink17;
+        private C1.Win.Command.C1CommandLink c1CommandLink18;
         private C1.Win.C1DynamicHelp.C1DynamicHelp c1DynamicHelp1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink22;
-        private C1.Win.C1Command.C1Command c1CommandExit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink19;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink20;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink21;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink23;
-        private C1.Win.C1Command.C1Command c1CommandReset;
+        private C1.Win.Command.C1CommandLink c1CommandLink22;
+        private C1.Win.Command.C1Command c1CommandExit;
+        private C1.Win.Command.C1CommandLink c1CommandLink19;
+        private C1.Win.Command.C1CommandLink c1CommandLink20;
+        private C1.Win.Command.C1CommandLink c1CommandLink21;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.Command.C1CommandLink c1CommandLink23;
+        private C1.Win.Command.C1Command c1CommandReset;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label13;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink24;
-        private C1.Win.C1Command.C1Command c1CommandHome;
+        private C1.Win.Command.C1CommandLink c1CommandLink24;
+        private C1.Win.Command.C1Command c1CommandHome;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
@@ -1721,19 +1721,19 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage tabMain;
-        private C1.Win.C1Command.C1DockingTabPage tabNew;
-        private C1.Win.C1Command.C1DockingTabPage tabDesign;
-        private C1.Win.C1Command.C1DockingTabPage tabAddRecipe;
-        private C1.Win.C1Command.C1DockingTabPage tabName;
-        private C1.Win.C1Command.C1DockingTabPage tabNewStyle;
-        private C1.Win.C1Command.C1DockingTabPage tabDatabase;
-        private C1.Win.C1Command.C1DockingTabPage tabError;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer6;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
-        private C1.Win.C1Command.C1Command c1CommandCloseHelp;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink25;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage tabMain;
+        private C1.Win.Command.C1DockingTabPage tabNew;
+        private C1.Win.Command.C1DockingTabPage tabDesign;
+        private C1.Win.Command.C1DockingTabPage tabAddRecipe;
+        private C1.Win.Command.C1DockingTabPage tabName;
+        private C1.Win.Command.C1DockingTabPage tabNewStyle;
+        private C1.Win.Command.C1DockingTabPage tabDatabase;
+        private C1.Win.Command.C1DockingTabPage tabError;
+        private C1.Win.Sizer.C1Sizer c1Sizer6;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Command.C1Command c1CommandCloseHelp;
+        private C1.Win.Command.C1CommandLink c1CommandLink25;
         private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
         private C1.Win.Ribbon.RibbonProgressBar ribbonProgressBar1;
         private C1.Win.Ribbon.RibbonLabel ribbonLabel1;

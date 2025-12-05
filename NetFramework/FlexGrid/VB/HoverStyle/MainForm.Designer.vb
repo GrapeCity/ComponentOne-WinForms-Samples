@@ -24,8 +24,8 @@
             Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat()
             Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
             Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
-            Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-            Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+            Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+            Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
             CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.c1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
             CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,10 +114,10 @@
             'c1FlexGrid1
             '
             Me.c1FlexGrid1.AllowFiltering = True
-            Me.c1FlexGrid1.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both
+            Me.c1FlexGrid1.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both
             Me.c1FlexGrid1.ColumnContextMenuEnabled = True
             Me.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:"
-            Me.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.Highlight
+            Me.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.Highlight
             Me.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = True
             Me.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.c1FlexGrid1.Font = New System.Drawing.Font("Segoe UI", 9.75!)
@@ -156,11 +156,11 @@
         Private ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
         Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
         Private ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-        Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+        Private c1ThemeController1 As C1.Win.Themes.C1ThemeController
         Private WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
-        Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+        Private c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
         Private WithEvents rbSaveFiltersToXml As C1.Win.Ribbon.RibbonButton
-        Private c1TextBox1 As C1.Win.C1Input.C1TextBox
+        Private c1TextBox1 As C1.Win.Input.C1TextBox
         Private WithEvents rbHoverColor As C1.Win.Ribbon.RibbonColorPicker
         Private WithEvents rbSelectMode As C1.Win.Ribbon.RibbonComboBox
         Private WithEvents rbHoverMode As C1.Win.Ribbon.RibbonComboBox

@@ -34,7 +34,7 @@ Partial Class Form1
         Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat()
         Me.ribbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar()
         Me.c1StatusBar1 = New C1.Win.Ribbon.C1StatusBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.c1TextEditorRibbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.textEditor1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1StatusBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,7 +136,7 @@ Partial Class Form1
     Private ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
     Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
     Private ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     Friend WithEvents RibbonApplicationMenu2 As C1.Win.Ribbon.RibbonApplicationMenu

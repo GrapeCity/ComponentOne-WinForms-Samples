@@ -28,20 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1FlexGrid.FooterDescription footerDescription1 = new C1.Win.C1FlexGrid.FooterDescription();
-            C1.Win.C1FlexGrid.AggregateDefinition aggregateDefinition1 = new C1.Win.C1FlexGrid.AggregateDefinition();
-            C1.Win.C1FlexGrid.AggregateDefinition aggregateDefinition2 = new C1.Win.C1FlexGrid.AggregateDefinition();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            C1.Win.FlexGrid.FooterDescription footerDescription1 = new C1.Win.FlexGrid.FooterDescription();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition1 = new C1.Win.FlexGrid.AggregateDefinition();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition2 = new C1.Win.FlexGrid.AggregateDefinition();
             this._btnNameCountryCat = new System.Windows.Forms.Button();
             this._btnCatCountryName = new System.Windows.Forms.Button();
             this._btnCountryCat = new System.Windows.Forms.Button();
             this._chkCollapseDataTable = new System.Windows.Forms.CheckBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this._flexDataTable = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexDataTable = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this._chkHideDataTable = new System.Windows.Forms.CheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this._flexObjectList = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexObjectList = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel2 = new System.Windows.Forms.Panel();
             this._btnProdCountryActive = new System.Windows.Forms.Button();
             this._chkHideObjectList = new System.Windows.Forms.CheckBox();
@@ -130,7 +134,7 @@
             this._flexDataTable.Rows.DefaultSize = 26;
             this._flexDataTable.Size = new System.Drawing.Size(907, 347);
             this._flexDataTable.TabIndex = 0;
-            aggregateDefinition1.Aggregate = C1.Win.C1FlexGrid.AggregateEnum.Sum;
+            aggregateDefinition1.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
             aggregateDefinition1.Caption = "{0:C2}";
             aggregateDefinition1.PropertyName = "Sale Amount";
             aggregateDefinition2.Caption = "Total:";
@@ -275,7 +279,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexDataTable;
+        private C1.Win.FlexGrid.C1FlexGrid _flexDataTable;
         private System.Windows.Forms.Button _btnNameCountryCat;
         private System.Windows.Forms.Button _btnCatCountryName;
         private System.Windows.Forms.Button _btnCountryCat;
@@ -284,7 +288,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabPage tabPage2;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexObjectList;
+        private C1.Win.FlexGrid.C1FlexGrid _flexObjectList;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button _btnProdCountryActive;
         private System.Windows.Forms.CheckBox _chkCollapseObjectList;

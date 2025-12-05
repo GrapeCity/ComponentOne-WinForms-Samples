@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
 Imports System.Data.OleDb
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -40,12 +40,12 @@ Public Class Form1
     'Do not modify it imports  the code editor.
     Friend WithEvents _btnCustomers As System.Windows.Forms.Button
     Friend WithEvents _btnEmployees As System.Windows.Forms.Button
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me._btnCustomers = New System.Windows.Forms.Button
         Me._btnEmployees = New System.Windows.Forms.Button
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '

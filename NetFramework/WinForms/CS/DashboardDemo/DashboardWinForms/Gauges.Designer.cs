@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
     }
 }

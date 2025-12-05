@@ -13,7 +13,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win.C1Input;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace FlexReportDesignerApp.Controls.Background.Editors
 {
@@ -70,7 +70,7 @@ namespace FlexReportDesignerApp.Controls.Background.Editors
             {
                 if (DockingTab == null)
                     return;
-                DockingTab.VisualStyle = (C1.Win.C1Command.VisualStyle)Enum.Parse(typeof(C1.Win.C1Command.VisualStyle), value.ToString());
+                DockingTab.VisualStyle = (C1.Win.Command.VisualStyle)Enum.Parse(typeof(C1.Win.Command.VisualStyle), value.ToString());
             }
         }
 

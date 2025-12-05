@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -28,7 +28,7 @@ namespace FakeStudio
         private System.Windows.Forms.MenuItem menuItem8;
         private System.Windows.Forms.MenuItem menuItem9;
         private System.Windows.Forms.MenuItem menuItem10;
-		private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+		private C1.Win.Sizer.C1Sizer c1Sizer1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel3;
@@ -97,6 +97,7 @@ namespace FakeStudio
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
 																																								new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "C1FlexGrid", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Control, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(0))))}, 0);
 			System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
@@ -144,7 +145,7 @@ namespace FakeStudio
 			this.toolBarButton17 = new System.Windows.Forms.ToolBarButton();
 			this.toolBarButton18 = new System.Windows.Forms.ToolBarButton();
 			this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-			this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+			this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.textBox1 = new System.Windows.Forms.TextBox();
@@ -411,7 +412,7 @@ namespace FakeStudio
 				"\r\n        private System.Windows.Forms.MenuItem menuItem7;\r\n        private Syst" +
 				"em.Windows.Forms.MenuItem menuItem8;\r\n        private System.Windows.Forms.MenuI" +
 				"tem menuItem9;\r\n        private System.Windows.Forms.MenuItem menuItem10;\r\n     " +
-				"   private C1.Win.C1Sizer.C1Sizer c1Sizer1;\r\n        private System.Windows.Form" +
+				"   private C1.Win.Sizer.C1Sizer c1Sizer1;\r\n        private System.Windows.Form" +
 				"s.Panel panel1;\r\n        private System.Windows.Forms.Panel panel2;\r\n        pri" +
 				"vate System.Windows.Forms.Panel panel3;\r\n        private System.Windows.Forms.To" +
 				"olBar toolBar2;\r\n        private System.Windows.Forms.TabControl tabControl1;\r\n " +

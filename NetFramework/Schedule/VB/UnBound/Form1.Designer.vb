@@ -21,11 +21,11 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim PrintStyle1 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle
-        Dim PrintStyle2 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle
-        Dim PrintStyle3 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle
-        Dim PrintStyle4 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle
-        Dim PrintStyle5 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle
+        Dim PrintStyle1 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle
+        Dim PrintStyle2 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle
+        Dim PrintStyle3 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle
+        Dim PrintStyle4 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle
+        Dim PrintStyle5 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ImportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -37,8 +37,8 @@ Partial Class Form1
         Me.WeekViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MonthViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.TodayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.C1Calendar1 = New C1.Win.C1Schedule.C1Calendar
-        Me.C1Schedule1 = New C1.Win.C1Schedule.C1Schedule
+        Me.C1Calendar1 = New C1.Win.Schedule.C1Calendar
+        Me.C1Schedule1 = New C1.Win.Schedule.C1Schedule
         Me.Splitter1 = New System.Windows.Forms.Splitter
         Me.TimeLineViewMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
@@ -142,7 +142,7 @@ Partial Class Form1
         Me.C1Calendar1.Schedule = Me.C1Schedule1
         Me.C1Calendar1.Size = New System.Drawing.Size(200, 436)
         Me.C1Calendar1.TabIndex = 1
-        Me.C1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver
+        Me.C1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Silver
         '
         'C1Schedule1
         '
@@ -179,16 +179,16 @@ Partial Class Form1
         PrintStyle4.PreviewImage = CType(resources.GetObject("PrintStyle4.PreviewImage"), System.Drawing.Image)
         PrintStyle4.StyleName = "Details"
         PrintStyle4.StyleSource = "details.c1d"
-        PrintStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment
+        PrintStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment
         PrintStyle5.Description = "Memo Style"
         PrintStyle5.PreviewImage = CType(resources.GetObject("PrintStyle5.PreviewImage"), System.Drawing.Image)
         PrintStyle5.StyleName = "Memo"
         PrintStyle5.StyleSource = "memo.c1d"
-        Me.C1Schedule1.PrintInfo.PrintStyles.AddRange(New C1.C1Schedule.Printing.PrintStyle() {PrintStyle1, PrintStyle2, PrintStyle3, PrintStyle4, PrintStyle5})
+        Me.C1Schedule1.PrintInfo.PrintStyles.AddRange(New C1.Schedule.Printing.PrintStyle() {PrintStyle1, PrintStyle2, PrintStyle3, PrintStyle4, PrintStyle5})
         Me.C1Schedule1.Size = New System.Drawing.Size(429, 436)
         Me.C1Schedule1.TabIndex = 3
-        Me.C1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.MonthView
-        Me.C1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver
+        Me.C1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.MonthView
+        Me.C1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Silver
         '
         'Splitter1
         '
@@ -245,8 +245,8 @@ Partial Class Form1
     Friend WithEvents WeekViewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MonthViewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TodayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents C1Calendar1 As C1.Win.C1Schedule.C1Calendar
-    Friend WithEvents C1Schedule1 As C1.Win.C1Schedule.C1Schedule
+    Friend WithEvents C1Calendar1 As C1.Win.Schedule.C1Calendar
+    Friend WithEvents C1Schedule1 As C1.Win.Schedule.C1Schedule
     Friend WithEvents Splitter1 As System.Windows.Forms.Splitter
     Friend WithEvents ImportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

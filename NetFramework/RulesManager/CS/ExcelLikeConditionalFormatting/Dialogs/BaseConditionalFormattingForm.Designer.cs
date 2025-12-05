@@ -33,7 +33,7 @@
             this.tlpButtonsLayout = new System.Windows.Forms.TableLayoutPanel();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.themeController = new C1.Win.C1Themes.C1ThemeController();
+            this.themeController = new C1.Win.Themes.C1ThemeController();
             this.tlpMainLayout.SuspendLayout();
             this.tlpButtonsLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.themeController)).BeginInit();
@@ -158,7 +158,7 @@
 
         #endregion
 
-        protected C1.Win.C1Themes.C1ThemeController themeController;
+        protected C1.Win.Themes.C1ThemeController themeController;
         private System.Windows.Forms.Label lblOperationText;
         private System.Windows.Forms.TableLayoutPanel tlpButtonsLayout;
         private System.Windows.Forms.Button btnOk;

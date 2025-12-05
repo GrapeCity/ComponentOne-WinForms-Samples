@@ -23,154 +23,154 @@ Partial Class SoftwareDevelopmentPlan
 	''' </summary>
 	Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SoftwareDevelopmentPlan))
-        Dim BarStyle1 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle2 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle3 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle4 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle5 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle6 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle7 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim CalendarException1 As C1.Win.C1GanttView.CalendarException = New C1.Win.C1GanttView.CalendarException()
-        Dim TaskPropertyColumn1 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn2 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn3 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn4 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn5 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn6 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn7 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn8 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn9 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn10 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn11 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn12 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn13 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn14 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim Task1 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Resource1 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource2 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource3 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource4 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource5 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource6 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource7 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource8 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource9 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Task2 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle8 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Task3 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle9 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim ResourceRef1 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef2 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task4 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle10 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor1 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef3 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task5 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor2 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef4 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef5 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task6 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle11 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor3 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Task7 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task8 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor4 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef6 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task9 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor5 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef7 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task10 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor6 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef8 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef9 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task11 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle12 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor7 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Task12 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task13 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor8 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef10 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task14 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor9 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef11 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef12 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef13 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task15 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim ResourceRef14 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef15 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task16 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle13 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor10 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Predecessor11 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Task17 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle14 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Task18 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor12 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef16 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task19 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor13 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Predecessor14 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef17 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef18 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task20 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor15 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Predecessor16 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef19 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task21 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle15 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor17 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Predecessor18 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Task22 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle16 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Task23 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim ResourceRef20 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task24 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim ResourceRef21 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task25 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor19 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Predecessor20 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef22 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task26 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle17 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor21 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Task27 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle18 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Task28 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor22 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Predecessor23 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef23 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef24 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task29 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor24 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef25 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task30 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle19 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor25 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim Task31 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle20 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Task32 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task33 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task34 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task35 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task36 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task37 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task38 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task39 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task40 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task41 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task42 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task43 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task44 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task45 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task46 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task47 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task48 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task49 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task50 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task51 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task52 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task53 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task54 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
+        Dim BarStyle1 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle2 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle3 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle4 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle5 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle6 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle7 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim CalendarException1 As C1.Win.GanttView.CalendarException = New C1.Win.GanttView.CalendarException()
+        Dim TaskPropertyColumn1 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn2 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn3 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn4 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn5 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn6 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn7 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn8 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn9 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn10 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn11 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn12 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn13 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn14 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim Task1 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Resource1 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource2 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource3 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource4 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource5 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource6 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource7 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource8 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource9 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Task2 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle8 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Task3 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle9 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim ResourceRef1 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef2 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task4 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle10 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor1 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef3 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task5 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor2 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef4 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef5 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task6 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle11 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor3 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Task7 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task8 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor4 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef6 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task9 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor5 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef7 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task10 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor6 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef8 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef9 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task11 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle12 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor7 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Task12 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task13 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor8 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef10 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task14 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor9 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef11 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef12 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef13 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task15 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim ResourceRef14 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef15 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task16 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle13 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor10 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Predecessor11 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Task17 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle14 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Task18 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor12 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef16 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task19 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor13 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Predecessor14 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef17 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef18 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task20 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor15 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Predecessor16 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef19 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task21 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle15 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor17 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Predecessor18 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Task22 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle16 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Task23 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim ResourceRef20 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task24 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim ResourceRef21 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task25 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor19 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Predecessor20 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef22 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task26 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle17 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor21 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Task27 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle18 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Task28 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor22 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Predecessor23 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef23 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef24 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task29 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor24 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef25 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task30 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle19 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor25 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim Task31 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle20 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Task32 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task33 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task34 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task35 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task36 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task37 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task38 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task39 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task40 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task41 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task42 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task43 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task44 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task45 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task46 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task47 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task48 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task49 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task50 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task51 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task52 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task53 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task54 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
         Me.ribbon = New C1.Win.Ribbon.C1Ribbon()
         Me.ribbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
         Me.rbOpen = New C1.Win.Ribbon.RibbonButton()
@@ -274,7 +274,7 @@ Partial Class SoftwareDevelopmentPlan
         Me.statusBar = New C1.Win.Ribbon.C1StatusBar()
         Me.rlLeftStatus = New C1.Win.Ribbon.RibbonLabel()
         Me.rtbZoom = New C1.Win.Ribbon.RibbonTrackBar()
-        Me.ganttView = New C1.Win.C1GanttView.C1GanttView()
+        Me.ganttView = New C1.Win.GanttView.C1GanttView()
         CType(Me.ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.statusBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ganttView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -982,29 +982,29 @@ Partial Class SoftwareDevelopmentPlan
         'ganttView
         '
         Me.ganttView.BackColor = System.Drawing.SystemColors.Window
-        BarStyle1.BarShape = C1.Win.C1GanttView.BarShape.TopBar
-        BarStyle1.BarType = C1.Win.C1GanttView.BarType.SummaryTask
+        BarStyle1.BarShape = C1.Win.GanttView.BarShape.TopBar
+        BarStyle1.BarType = C1.Win.GanttView.BarType.SummaryTask
         BarStyle1.EndShape = 2
         BarStyle1.StartShape = 2
         BarStyle2.BarColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer))
-        BarStyle2.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar
-        BarStyle2.BarType = C1.Win.C1GanttView.BarType.Progress
+        BarStyle2.BarShape = C1.Win.GanttView.BarShape.MiddleBar
+        BarStyle2.BarType = C1.Win.GanttView.BarType.Progress
         BarStyle3.BarColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(209, Byte), Integer))
-        BarStyle3.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle3.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle3.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle3.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle3.EndShape = 22
         BarStyle3.RightText1_ID = -13
         BarStyle3.StartShape = 21
         BarStyle4.BarColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(220, Byte), Integer))
-        BarStyle4.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle4.BarType = C1.Win.C1GanttView.BarType.AutoTask
+        BarStyle4.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle4.BarType = C1.Win.GanttView.BarType.AutoTask
         BarStyle4.RightText1_ID = -13
-        BarStyle5.BarType = C1.Win.C1GanttView.BarType.Deadline
+        BarStyle5.BarType = C1.Win.GanttView.BarType.Deadline
         BarStyle5.StartColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         BarStyle5.StartShape = 12
         BarStyle7.BarColor = System.Drawing.Color.Pink
-        BarStyle7.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar
-        BarStyle7.BarType = C1.Win.C1GanttView.BarType.SummaryProgress
+        BarStyle7.BarShape = C1.Win.GanttView.BarShape.MiddleBar
+        BarStyle7.BarType = C1.Win.GanttView.BarType.SummaryProgress
         Me.ganttView.BarStyles.Add(BarStyle1)
         Me.ganttView.BarStyles.Add(BarStyle2)
         Me.ganttView.BarStyles.Add(BarStyle3)
@@ -1021,59 +1021,59 @@ Partial Class SoftwareDevelopmentPlan
         Me.ganttView.ChartViewZoomFactor = 6.659091!
         TaskPropertyColumn1.Caption = "Task Mode"
         TaskPropertyColumn1.ID = 619243840
-        TaskPropertyColumn1.Property = C1.Win.C1GanttView.TaskProperty.Mode
+        TaskPropertyColumn1.Property = C1.Win.GanttView.TaskProperty.Mode
         TaskPropertyColumn1.Width = 70
         TaskPropertyColumn2.Caption = "Task Name"
         TaskPropertyColumn2.ID = 2099866733
-        TaskPropertyColumn2.Property = C1.Win.C1GanttView.TaskProperty.Name
+        TaskPropertyColumn2.Property = C1.Win.GanttView.TaskProperty.Name
         TaskPropertyColumn3.Caption = "Duration"
         TaskPropertyColumn3.ID = 1358251825
-        TaskPropertyColumn3.Property = C1.Win.C1GanttView.TaskProperty.Duration
+        TaskPropertyColumn3.Property = C1.Win.GanttView.TaskProperty.Duration
         TaskPropertyColumn3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         TaskPropertyColumn3.Width = 50
         TaskPropertyColumn4.Caption = "Duration Units"
         TaskPropertyColumn4.ID = 1827635185
-        TaskPropertyColumn4.Property = C1.Win.C1GanttView.TaskProperty.DurationUnits
+        TaskPropertyColumn4.Property = C1.Win.GanttView.TaskProperty.DurationUnits
         TaskPropertyColumn4.Width = 85
         TaskPropertyColumn5.Caption = "Start"
         TaskPropertyColumn5.ID = 1435981949
-        TaskPropertyColumn5.Property = C1.Win.C1GanttView.TaskProperty.Start
+        TaskPropertyColumn5.Property = C1.Win.GanttView.TaskProperty.Start
         TaskPropertyColumn5.Visible = False
         TaskPropertyColumn6.Caption = "Finish"
         TaskPropertyColumn6.ID = 1177114106
-        TaskPropertyColumn6.Property = C1.Win.C1GanttView.TaskProperty.Finish
+        TaskPropertyColumn6.Property = C1.Win.GanttView.TaskProperty.Finish
         TaskPropertyColumn6.Visible = False
         TaskPropertyColumn7.Caption = "% Complete"
         TaskPropertyColumn7.ID = 705116663
-        TaskPropertyColumn7.Property = C1.Win.C1GanttView.TaskProperty.PercentComplete
+        TaskPropertyColumn7.Property = C1.Win.GanttView.TaskProperty.PercentComplete
         TaskPropertyColumn7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         TaskPropertyColumn8.Caption = "Constraint Type"
         TaskPropertyColumn8.ID = 1424686126
-        TaskPropertyColumn8.Property = C1.Win.C1GanttView.TaskProperty.ConstraintType
+        TaskPropertyColumn8.Property = C1.Win.GanttView.TaskProperty.ConstraintType
         TaskPropertyColumn8.Visible = False
         TaskPropertyColumn9.Caption = "Constraint Date"
         TaskPropertyColumn9.ID = 1191399244
-        TaskPropertyColumn9.Property = C1.Win.C1GanttView.TaskProperty.ConstraintDate
+        TaskPropertyColumn9.Property = C1.Win.GanttView.TaskProperty.ConstraintDate
         TaskPropertyColumn9.Visible = False
         TaskPropertyColumn10.Caption = "Predecessors"
         TaskPropertyColumn10.ID = 502674747
-        TaskPropertyColumn10.Property = C1.Win.C1GanttView.TaskProperty.Predecessors
+        TaskPropertyColumn10.Property = C1.Win.GanttView.TaskProperty.Predecessors
         TaskPropertyColumn10.Visible = False
         TaskPropertyColumn11.Caption = "Deadline"
         TaskPropertyColumn11.ID = 166462627
-        TaskPropertyColumn11.Property = C1.Win.C1GanttView.TaskProperty.Deadline
+        TaskPropertyColumn11.Property = C1.Win.GanttView.TaskProperty.Deadline
         TaskPropertyColumn11.Visible = False
         TaskPropertyColumn12.Caption = "Calendar"
         TaskPropertyColumn12.ID = 997563278
-        TaskPropertyColumn12.Property = C1.Win.C1GanttView.TaskProperty.Calendar
+        TaskPropertyColumn12.Property = C1.Win.GanttView.TaskProperty.Calendar
         TaskPropertyColumn12.Visible = False
         TaskPropertyColumn13.Caption = "Resource Names"
         TaskPropertyColumn13.ID = 1673084976
-        TaskPropertyColumn13.Property = C1.Win.C1GanttView.TaskProperty.ResourceNames
+        TaskPropertyColumn13.Property = C1.Win.GanttView.TaskProperty.ResourceNames
         TaskPropertyColumn13.Visible = False
         TaskPropertyColumn14.Caption = "Notes"
         TaskPropertyColumn14.ID = 1052675343
-        TaskPropertyColumn14.Property = C1.Win.C1GanttView.TaskProperty.Notes
+        TaskPropertyColumn14.Property = C1.Win.GanttView.TaskProperty.Notes
         TaskPropertyColumn14.Visible = False
         Me.ganttView.Columns.Add(TaskPropertyColumn1)
         Me.ganttView.Columns.Add(TaskPropertyColumn2)
@@ -1100,7 +1100,7 @@ Partial Class SoftwareDevelopmentPlan
         Me.ganttView.DefaultWorkingTimes.Interval_2.To = New Date(1, 1, 1, 18, 0, 0, 0)
         Me.ganttView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ganttView.EnablePrinting = True
-        Me.ganttView.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March
+        Me.ganttView.FirstMonthOfFY = C1.Win.GanttView.FirstMonthOfFY.March
         Me.ganttView.FixedBackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(247, Byte), Integer))
         Me.ganttView.FixedCellBorderColor = System.Drawing.Color.FromArgb(CType(CType(158, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.ganttView.FixedForeColor = System.Drawing.Color.Black
@@ -1116,12 +1116,12 @@ Partial Class SoftwareDevelopmentPlan
         Me.ganttView.PrintInfo.LegendTextAreaWidth = 2.0!
         Me.ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog = Nothing
         Me.ganttView.PrintInfo.PreviewHelper.Caption = "Print Preview"
-        Me.ganttView.PrintInfo.PrintType = C1.Win.C1GanttView.Printing.PrintType.General
+        Me.ganttView.PrintInfo.PrintType = C1.Win.GanttView.Printing.PrintType.General
         Me.ganttView.PrintInfo.StyleSource = "General.c1d"
         Me.ganttView.ProgressLine.StatusDate = New Date(2013, 7, 18, 0, 0, 0, 0)
         Me.ganttView.ProgressLine.Visible = True
         Task1.ID = 1331333418
-        Task1.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task1.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task1.Name = "Project Summary Task"
         Task1.NextID = 0
         Task1.PercentComplete = 0.376278560965452R
@@ -1171,15 +1171,15 @@ Partial Class SoftwareDevelopmentPlan
         Resource9.Name = "Juliet Paul"
         Resource9.NextID = 0
         Resource9.Notes = "Documentation Maker"
-        Me.ganttView.Resources.AddRange(New C1.Win.C1GanttView.Resource() {Resource1, Resource2, Resource3, Resource4, Resource5, Resource6, Resource7, Resource8, Resource9})
+        Me.ganttView.Resources.AddRange(New C1.Win.GanttView.Resource() {Resource1, Resource2, Resource3, Resource4, Resource5, Resource6, Resource7, Resource8, Resource9})
         Me.ganttView.ShowToolbar = False
         Me.ganttView.Size = New System.Drawing.Size(1117, 397)
         Me.ganttView.SplitterColor = System.Drawing.Color.FromArgb(CType(CType(158, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.ganttView.StartDate = New Date(2013, 6, 5, 0, 0, 0, 0)
         Me.ganttView.TabIndex = 4
         BarStyle8.BarColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(209, Byte), Integer))
-        BarStyle8.BarShape = C1.Win.C1GanttView.BarShape.TopLine
-        BarStyle8.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle8.BarShape = C1.Win.GanttView.BarShape.TopLine
+        BarStyle8.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle8.EndShape = 15
         BarStyle8.RightText1_ID = -13
         BarStyle8.StartShape = 15
@@ -1193,8 +1193,8 @@ Partial Class SoftwareDevelopmentPlan
         Task2.PercentComplete = 0.99R
         Task2.Start = New Date(2013, 6, 5, 0, 0, 0, 0)
         BarStyle9.BarColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(220, Byte), Integer))
-        BarStyle9.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle9.BarType = C1.Win.C1GanttView.BarType.AutoTask
+        BarStyle9.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle9.BarType = C1.Win.GanttView.BarType.AutoTask
         BarStyle9.RightText1_ID = -13
         Task3.BarStyles.Add(BarStyle9)
         Task3.Finish = New Date(2013, 6, 13, 8, 30, 0, 0)
@@ -1211,13 +1211,13 @@ Partial Class SoftwareDevelopmentPlan
         Task3.ResourceRefs.Add(ResourceRef2)
         Task3.Start = New Date(2013, 6, 5, 0, 0, 0, 0)
         BarStyle10.BarColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(220, Byte), Integer))
-        BarStyle10.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle10.BarType = C1.Win.C1GanttView.BarType.AutoTask
+        BarStyle10.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle10.BarType = C1.Win.GanttView.BarType.AutoTask
         BarStyle10.RightText1_ID = -13
         Task4.BarStyles.Add(BarStyle10)
         Task4.Duration = 6.0R
         Task4.ID = 272795686
-        Task4.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task4.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task4.Name = "Wrting Specifications"
         Task4.NextID = 738728450
         Task4.OutlineParentID = 1647280566
@@ -1228,10 +1228,10 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef3.ResourceID = 766290656
         Task4.ResourceRefs.Add(ResourceRef3)
         Task5.ConstraintDate = New Date(2013, 6, 20, 8, 30, 0, 0)
-        Task5.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+        Task5.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
         Task5.Duration = 2.0R
         Task5.ID = 738728450
-        Task5.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task5.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task5.Name = "Review Specificaions"
         Task5.NextID = 1192056988
         Task5.OutlineParentID = 1647280566
@@ -1244,7 +1244,7 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef5.ResourceID = 766290656
         Task5.ResourceRefs.Add(ResourceRef4)
         Task5.ResourceRefs.Add(ResourceRef5)
-        BarStyle11.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle11.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle11.EndShape = 3
         BarStyle11.RightText1_ID = -7
         BarStyle11.TopText1_ID = 2099866733
@@ -1258,16 +1258,16 @@ Partial Class SoftwareDevelopmentPlan
         Task6.Predecessors.Add(Predecessor3)
         Task6.Start = New Date(2013, 6, 25, 8, 30, 0, 0)
         Task7.ID = 1713945315
-        Task7.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task7.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task7.Name = "Design"
         Task7.NextID = 21199245
         Task7.OutlineParentID = 1331333418
         Task7.PercentComplete = 0.99R
         Task8.ConstraintDate = New Date(2013, 6, 25, 0, 0, 0, 0)
-        Task8.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+        Task8.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
         Task8.Duration = 5.0R
         Task8.ID = 21199245
-        Task8.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task8.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task8.Name = "Develop functional specifications"
         Task8.NextID = 101520938
         Task8.OutlineParentID = 1713945315
@@ -1279,7 +1279,7 @@ Partial Class SoftwareDevelopmentPlan
         Task8.ResourceRefs.Add(ResourceRef6)
         Task9.Duration = 4.0R
         Task9.ID = 101520938
-        Task9.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task9.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task9.Name = "Develop prototype based on specifications"
         Task9.NextID = 50424750
         Task9.OutlineParentID = 1713945315
@@ -1290,10 +1290,10 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef7.ResourceID = 766290656
         Task9.ResourceRefs.Add(ResourceRef7)
         Task10.ConstraintDate = New Date(2013, 7, 4, 0, 0, 0, 0)
-        Task10.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+        Task10.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
         Task10.Duration = 2.0R
         Task10.ID = 50424750
-        Task10.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task10.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task10.Name = "Obtain approval to proceed"
         Task10.NextID = 1965547925
         Task10.OutlineParentID = 1713945315
@@ -1306,7 +1306,7 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef9.ResourceID = 239555279
         Task10.ResourceRefs.Add(ResourceRef8)
         Task10.ResourceRefs.Add(ResourceRef9)
-        BarStyle12.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle12.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle12.EndShape = 3
         BarStyle12.RightText1_ID = -7
         BarStyle12.TopText1_ID = 2099866733
@@ -1320,7 +1320,7 @@ Partial Class SoftwareDevelopmentPlan
         Task11.Predecessors.Add(Predecessor7)
         Task11.Start = New Date(2013, 7, 11, 8, 30, 0, 0)
         Task12.ID = 614140209
-        Task12.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task12.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task12.Name = "Development"
         Task12.NextID = 480459017
         Task12.OutlineParentID = 1331333418
@@ -1369,7 +1369,7 @@ Partial Class SoftwareDevelopmentPlan
         Task15.ResourceRefs.Add(ResourceRef14)
         Task15.ResourceRefs.Add(ResourceRef15)
         Task15.Start = New Date(2013, 7, 17, 0, 0, 0, 0)
-        BarStyle13.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle13.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle13.EndShape = 3
         BarStyle13.RightText1_ID = -7
         BarStyle13.TopText1_ID = 2099866733
@@ -1385,8 +1385,8 @@ Partial Class SoftwareDevelopmentPlan
         Task16.Predecessors.Add(Predecessor11)
         Task16.Start = New Date(2013, 8, 8, 8, 30, 0, 0)
         BarStyle14.BarColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(209, Byte), Integer))
-        BarStyle14.BarShape = C1.Win.C1GanttView.BarShape.TopLine
-        BarStyle14.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle14.BarShape = C1.Win.GanttView.BarShape.TopLine
+        BarStyle14.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle14.EndShape = 15
         BarStyle14.RightText1_ID = -13
         BarStyle14.StartShape = 15
@@ -1441,7 +1441,7 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef19.ResourceID = 556319480
         Task20.ResourceRefs.Add(ResourceRef19)
         Task20.Start = New Date(2013, 8, 8, 8, 30, 0, 0)
-        BarStyle15.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle15.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle15.EndShape = 3
         BarStyle15.RightText1_ID = -7
         BarStyle15.TopText1_ID = 2099866733
@@ -1457,8 +1457,8 @@ Partial Class SoftwareDevelopmentPlan
         Task21.Predecessors.Add(Predecessor18)
         Task21.Start = New Date(2013, 8, 29, 8, 30, 0, 0)
         BarStyle16.BarColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(209, Byte), Integer))
-        BarStyle16.BarShape = C1.Win.C1GanttView.BarShape.TopLine
-        BarStyle16.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle16.BarShape = C1.Win.GanttView.BarShape.TopLine
+        BarStyle16.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle16.EndShape = 15
         BarStyle16.RightText1_ID = -13
         BarStyle16.StartShape = 15
@@ -1471,7 +1471,7 @@ Partial Class SoftwareDevelopmentPlan
         Task22.OutlineParentID = 1331333418
         Task22.PercentComplete = 0.34479165097656234R
         Task22.Start = New Date(2013, 7, 15, 0, 0, 0, 0)
-        Task23.DurationUnits = C1.Win.C1GanttView.DurationUnits.Weeks
+        Task23.DurationUnits = C1.Win.GanttView.DurationUnits.Weeks
         Task23.Finish = New Date(2013, 8, 3, 0, 0, 0, 0)
         Task23.ID = 830835292
         Task23.Name = "Develop Help system"
@@ -1482,7 +1482,7 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef20.ResourceID = 1334638351
         Task23.ResourceRefs.Add(ResourceRef20)
         Task23.Start = New Date(2013, 7, 15, 0, 0, 0, 0)
-        Task24.DurationUnits = C1.Win.C1GanttView.DurationUnits.Weeks
+        Task24.DurationUnits = C1.Win.GanttView.DurationUnits.Weeks
         Task24.Finish = New Date(2013, 8, 3, 0, 0, 0, 0)
         Task24.ID = 380370192
         Task24.Name = "Develop user manuals"
@@ -1506,7 +1506,7 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef22.ResourceID = 239555279
         Task25.ResourceRefs.Add(ResourceRef22)
         Task25.Start = New Date(2013, 8, 5, 0, 0, 0, 0)
-        BarStyle17.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle17.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle17.EndShape = 3
         BarStyle17.RightText1_ID = -7
         BarStyle17.TopText1_ID = 2099866733
@@ -1520,8 +1520,8 @@ Partial Class SoftwareDevelopmentPlan
         Task26.Predecessors.Add(Predecessor21)
         Task26.Start = New Date(2013, 8, 7, 8, 30, 0, 0)
         BarStyle18.BarColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(209, Byte), Integer))
-        BarStyle18.BarShape = C1.Win.C1GanttView.BarShape.TopLine
-        BarStyle18.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle18.BarShape = C1.Win.GanttView.BarShape.TopLine
+        BarStyle18.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle18.EndShape = 15
         BarStyle18.RightText1_ID = -13
         BarStyle18.StartShape = 15
@@ -1560,7 +1560,7 @@ Partial Class SoftwareDevelopmentPlan
         ResourceRef25.ResourceID = 2011144056
         Task29.ResourceRefs.Add(ResourceRef25)
         Task29.Start = New Date(2013, 8, 30, 8, 30, 0, 0)
-        BarStyle19.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle19.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle19.EndShape = 3
         BarStyle19.RightText1_ID = -7
         BarStyle19.TopText1_ID = 2099866733
@@ -1573,7 +1573,7 @@ Partial Class SoftwareDevelopmentPlan
         Predecessor25.PredecessorTaskID = 149137853
         Task30.Predecessors.Add(Predecessor25)
         Task30.Start = New Date(2013, 9, 4, 8, 30, 0, 0)
-        BarStyle20.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle20.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle20.EndColor = System.Drawing.Color.Red
         BarStyle20.EndShape = 3
         BarStyle20.RightText1_ID = -7
@@ -1631,12 +1631,12 @@ Partial Class SoftwareDevelopmentPlan
         Task53.NextID = 2076126586
         Task54.ID = 2076126586
         Task54.NextID = -1
-        Me.ganttView.Tasks.AddRange(New C1.Win.C1GanttView.Task() {Task2, Task3, Task4, Task5, Task6, Task7, Task8, Task9, Task10, Task11, Task12, Task13, Task14, Task15, Task16, Task17, Task18, Task19, Task20, Task21, Task22, Task23, Task24, Task25, Task26, Task27, Task28, Task29, Task30, Task31, Task32, Task33, Task34, Task35, Task36, Task37, Task38, Task39, Task40, Task41, Task42, Task43, Task44, Task45, Task46, Task47, Task48, Task49, Task50, Task51, Task52, Task53, Task54})
-        Me.ganttView.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center
+        Me.ganttView.Tasks.AddRange(New C1.Win.GanttView.Task() {Task2, Task3, Task4, Task5, Task6, Task7, Task8, Task9, Task10, Task11, Task12, Task13, Task14, Task15, Task16, Task17, Task18, Task19, Task20, Task21, Task22, Task23, Task24, Task25, Task26, Task27, Task28, Task29, Task30, Task31, Task32, Task33, Task34, Task35, Task36, Task37, Task38, Task39, Task40, Task41, Task42, Task43, Task44, Task45, Task46, Task47, Task48, Task49, Task50, Task51, Task52, Task53, Task54})
+        Me.ganttView.Timescale.BottomTier.Align = C1.Win.GanttView.ScaleLabelAlignment.Center
         Me.ganttView.Timescale.BottomTier.Format = "w"
         Me.ganttView.Timescale.BottomTier.Visible = True
         Me.ganttView.Timescale.MiddleTier.Format = "nnnn d"
-        Me.ganttView.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks
+        Me.ganttView.Timescale.MiddleTier.Units = C1.Win.GanttView.TimescaleUnits.Weeks
         Me.ganttView.Timescale.MiddleTier.Visible = True
         Me.ganttView.ToolbarBackColor = System.Drawing.Color.FromArgb(CType(CType(228, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(247, Byte), Integer))
         '
@@ -1720,7 +1720,7 @@ Partial Class SoftwareDevelopmentPlan
     Private rbQuit As C1.Win.Ribbon.RibbonButton
     Private rcpEmptyAreaBack As C1.Win.Ribbon.RibbonColorPicker
     Private statusBar As C1.Win.Ribbon.C1StatusBar
-    Private WithEvents ganttView As C1.Win.C1GanttView.C1GanttView
+    Private WithEvents ganttView As C1.Win.GanttView.C1GanttView
     Private rlLeftStatus As C1.Win.Ribbon.RibbonLabel
     Private WithEvents rbManualSchedule As C1.Win.Ribbon.RibbonToggleButton
     Private WithEvents rbAutoSchedule As C1.Win.Ribbon.RibbonToggleButton

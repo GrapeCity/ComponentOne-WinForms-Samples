@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomMerge
 {
@@ -13,7 +13,7 @@ namespace CustomMerge
 	/// </summary>
     public class Form1 : System.Windows.Forms.Form
 	{
-		//private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		//private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private FlexSchedule _flex;
 
 		/// <summary>
@@ -137,7 +137,7 @@ namespace CustomMerge
 	/// control will slow down or paint in really strange ways.
 	/// 
 	/// </summary>
-	public class FlexSchedule : C1.Win.C1FlexGrid.C1FlexGrid
+	public class FlexSchedule : C1.Win.FlexGrid.C1FlexGrid
 	{
 		override public CellRange GetMergedRange(int row, int col, bool clip)
 		{

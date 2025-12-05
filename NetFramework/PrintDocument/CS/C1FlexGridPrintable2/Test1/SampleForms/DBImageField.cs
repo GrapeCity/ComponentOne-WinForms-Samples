@@ -14,7 +14,7 @@ namespace DBImageField
     {
         private System.Windows.Forms.ImageList _imgList;
 		private System.Windows.Forms.DataGrid dataGrid1;
-		private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+		private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
 		private System.Windows.Forms.Label label1;
 		private System.ComponentModel.IContainer components;
 
@@ -56,7 +56,7 @@ namespace DBImageField
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._imgList = new System.Windows.Forms.ImageList(this.components);
             this.dataGrid1 = new System.Windows.Forms.DataGrid();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();

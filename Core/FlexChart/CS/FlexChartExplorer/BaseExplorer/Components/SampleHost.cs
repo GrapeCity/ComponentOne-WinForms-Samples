@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.Drawing.Drawing2D;
 using C1.Win.Themes;
+using System.ComponentModel;
 
 namespace BaseExplorer.Components
 {
@@ -32,7 +33,10 @@ namespace BaseExplorer.Components
             lblInfo.MouseLeave += OnMouseLeave;
         }
 
+        [DefaultValue(null)]
         public SampleItem Sample { get; set; }
+
+        [DefaultValue("Office365White")]
         public string Theme
         {
             get

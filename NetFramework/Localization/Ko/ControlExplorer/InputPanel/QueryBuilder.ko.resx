@@ -122,7 +122,7 @@
   <data name="hdrQueryBuilder.Text" xml:space="preserve">
     <value>Query Builder</value>
   </data>
-  <assembly alias="C1.Win.C1InputPanel.4.5.2" name="C1.Win.C1InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.InputPanel.4.5.2" name="C1.Win.InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <data name="btnAddNew.Text" xml:space="preserve">
     <value>Add Condition</value>
   </data>

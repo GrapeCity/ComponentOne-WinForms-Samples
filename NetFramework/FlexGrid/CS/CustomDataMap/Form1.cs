@@ -13,7 +13,7 @@ namespace CustomDataMap
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -53,33 +53,36 @@ namespace CustomDataMap
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:33;}\t";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(292, 273);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	EmptyRegion{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	");
-			this._flex.TabIndex = 0;
-			this._flex.BeforeEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
-			this._flex.SetupEditor += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_SetupEditor);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(292, 273);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._flex});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Custom DataMap";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:33;}\t";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(292, 273);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.BeforeEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
+            this._flex.SetupEditor += new C1.Win.FlexGrid.RowColEventHandler(this._flex_SetupEditor);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(292, 273);
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Custom DataMap";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -133,7 +136,7 @@ namespace CustomDataMap
 			_flex.Cols[2].Name = _flex.Cols[2].Caption = "Job";
 		}
 
-		private void _flex_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex_BeforeEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			// can't edit job if there's no region
             if (_flex.Cols[e.Col].Name == "Job")
@@ -144,7 +147,7 @@ namespace CustomDataMap
                 }
             }
 		}
-		private void _flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			// before editing the job, remove items that don't apply to the current region
 			if (_flex.Cols[e.Col].Name == "Job")

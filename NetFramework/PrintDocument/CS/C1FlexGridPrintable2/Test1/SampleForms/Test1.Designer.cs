@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test1));
-            this.c1FlexGridPrintable2 = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this.c1FlexGridPrintable2 = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -98,7 +98,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 c1FlexGridPrintable2;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 c1FlexGridPrintable2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;

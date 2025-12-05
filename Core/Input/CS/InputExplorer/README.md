@@ -27,5 +27,6 @@ Other included samples:
 * Overview. Shows the default appearance of all controls on the single page.
 * Themes. Shows how controls look with different C1Themes applied.
 * FloatingPlaceholder. Shows how to use a floating placeholder.
+* c1ButtonCommandBinding. Shows how to use the new Command property in C1Button using the MVVM pattern.
 
 ![screenshot](screenshot.png)

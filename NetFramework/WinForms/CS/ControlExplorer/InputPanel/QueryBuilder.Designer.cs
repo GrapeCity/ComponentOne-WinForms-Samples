@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QueryBuilder));
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.hdrQueryBuilder = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.btnAddNew = new C1.Win.C1InputPanel.InputButton();
-            this.btnSubmit = new C1.Win.C1InputPanel.InputButton();
-            this.inputSeparator1 = new C1.Win.C1InputPanel.InputSeparator();
-            this.lblAndOr = new C1.Win.C1InputPanel.InputLabel();
-            this.lblPropertyName = new C1.Win.C1InputPanel.InputLabel();
-            this.lblOperator = new C1.Win.C1InputPanel.InputLabel();
-            this.lblValue = new C1.Win.C1InputPanel.InputLabel();
-            this.lblPlaceHolder = new C1.Win.C1InputPanel.InputLabel();
-            this.hdrSqlText = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.txtSqlText = new C1.Win.C1InputPanel.InputTextBox();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.hdrQueryBuilder = new C1.Win.InputPanel.InputGroupHeader();
+            this.btnAddNew = new C1.Win.InputPanel.InputButton();
+            this.btnSubmit = new C1.Win.InputPanel.InputButton();
+            this.inputSeparator1 = new C1.Win.InputPanel.InputSeparator();
+            this.lblAndOr = new C1.Win.InputPanel.InputLabel();
+            this.lblPropertyName = new C1.Win.InputPanel.InputLabel();
+            this.lblOperator = new C1.Win.InputPanel.InputLabel();
+            this.lblValue = new C1.Win.InputPanel.InputLabel();
+            this.lblPlaceHolder = new C1.Win.InputPanel.InputLabel();
+            this.hdrSqlText = new C1.Win.InputPanel.InputGroupHeader();
+            this.txtSqlText = new C1.Win.InputPanel.InputTextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
@@ -82,7 +82,7 @@
             // 
             // btnAddNew
             // 
-            this.btnAddNew.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.btnAddNew.Break = C1.Win.InputPanel.BreakType.None;
             this.btnAddNew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNew.Image")));
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Text = "Add Condition";
@@ -127,7 +127,7 @@
             // 
             // lblValue
             // 
-            this.lblValue.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.lblValue.Break = C1.Win.InputPanel.BreakType.Row;
             this.lblValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValue.FontPadding = true;
             this.lblValue.Name = "lblValue";
@@ -150,7 +150,7 @@
             this.txtSqlText.Height = 63;
             this.txtSqlText.Multiline = true;
             this.txtSqlText.Name = "txtSqlText";
-            this.txtSqlText.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread;
+            this.txtSqlText.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Spread;
             this.txtSqlText.Width = 365;
             // 
             // imageList1
@@ -210,20 +210,20 @@
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrQueryBuilder;
-        private C1.Win.C1InputPanel.InputLabel lblAndOr;
-        private C1.Win.C1InputPanel.InputLabel lblPropertyName;
-        private C1.Win.C1InputPanel.InputLabel lblOperator;
-        private C1.Win.C1InputPanel.InputLabel lblValue;
-        private C1.Win.C1InputPanel.InputSeparator inputSeparator1;
-        private C1.Win.C1InputPanel.InputButton btnSubmit;
-        private C1.Win.C1InputPanel.InputButton btnAddNew;
-        private C1.Win.C1InputPanel.InputLabel lblPlaceHolder;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader hdrQueryBuilder;
+        private C1.Win.InputPanel.InputLabel lblAndOr;
+        private C1.Win.InputPanel.InputLabel lblPropertyName;
+        private C1.Win.InputPanel.InputLabel lblOperator;
+        private C1.Win.InputPanel.InputLabel lblValue;
+        private C1.Win.InputPanel.InputSeparator inputSeparator1;
+        private C1.Win.InputPanel.InputButton btnSubmit;
+        private C1.Win.InputPanel.InputButton btnAddNew;
+        private C1.Win.InputPanel.InputLabel lblPlaceHolder;
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1InputPanel.InputGroupHeader hdrSqlText;
-        private C1.Win.C1InputPanel.InputTextBox txtSqlText;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.InputPanel.InputGroupHeader hdrSqlText;
+        private C1.Win.InputPanel.InputTextBox txtSqlText;
         private System.Windows.Forms.SplitContainer splitContainer1;
     }
 }

@@ -1,5 +1,5 @@
 ﻿Imports C1.Win
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

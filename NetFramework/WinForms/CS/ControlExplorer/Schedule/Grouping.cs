@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace ControlExplorer.Schedule
 {
@@ -19,12 +19,12 @@ namespace ControlExplorer.Schedule
             CreateSampleData(40);
         }
 
-        private void c1CommandHolder1_CommandClick(object sender, C1.Win.C1Command.CommandClickEventArgs e)
+        private void c1CommandHolder1_CommandClick(object sender, C1.Win.Command.CommandClickEventArgs e)
         {
             if (e.Command == c1Command_Day)
             {
                 //switch to day view
-                c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.DayView;
+                c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.DayView;
                 c1Command_Month.Checked = false;
                 c1Command_Week.Checked = false;
                 c1Command_Day.Checked = true;
@@ -34,7 +34,7 @@ namespace ControlExplorer.Schedule
             else if (e.Command == c1Command_Week)
             {
                 //switch to work week view
-                c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
+                c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView;
                 c1Command_Month.Checked = false;
                 c1Command_Week.Checked = true;
                 c1Command_Day.Checked = false;
@@ -44,7 +44,7 @@ namespace ControlExplorer.Schedule
             else if (e.Command == c1Command_FullWeek)
             {
                 //switch to full week view
-                c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WeekView;
+                c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WeekView;
                 c1Command_Month.Checked = false;
                 c1Command_Week.Checked = false;
                 c1Command_Day.Checked = false;
@@ -54,7 +54,7 @@ namespace ControlExplorer.Schedule
             else if (e.Command == c1Command_Month)
             {
                 //switch to month view
-                c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.MonthView;
+                c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.MonthView;
                 c1Command_Month.Checked = true;
                 c1Command_Week.Checked = false;
                 c1Command_Day.Checked = false;
@@ -64,7 +64,7 @@ namespace ControlExplorer.Schedule
             else if (e.Command == c1Command_TimeLine)
             {
                 //switch to month view
-                c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.TimeLineView;
+                c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.TimeLineView;
                 c1Command_Month.Checked = false;
                 c1Command_Week.Checked = false;
                 c1Command_Day.Checked = false;

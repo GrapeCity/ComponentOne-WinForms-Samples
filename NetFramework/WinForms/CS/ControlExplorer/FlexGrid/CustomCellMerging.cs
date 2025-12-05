@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
@@ -98,7 +98,7 @@ namespace ControlExplorer.FlexGrid
     /// possible, and always return consistent ranges. Otherwise the 
     /// control will slow down or paint in really strange ways.
     /// </summary>
-    public class FlexTVGuide : C1.Win.C1FlexGrid.C1FlexGrid
+    public class FlexTVGuide : C1.Win.FlexGrid.C1FlexGrid
     {
         override public CellRange GetMergedRange(int row, int col, bool clip)
         {

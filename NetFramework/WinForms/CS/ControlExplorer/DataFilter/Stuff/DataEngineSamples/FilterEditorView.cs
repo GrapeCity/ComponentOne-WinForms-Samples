@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using C1.DataCollection.BindingList;
 using C1.DataEngine;
 using System.Diagnostics;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System.IO;
 
 namespace ControlExplorer.DataFilter.UI
@@ -45,7 +45,7 @@ namespace ControlExplorer.DataFilter.UI
         public event EventHandler DataUpdated;
         public event EventHandler DataLoaded;
         protected void OnDataLoaded() => DataLoaded?.Invoke(this, EventArgs.Empty);
-        internal void ApplyTheme(C1.Win.C1Themes.C1Theme theme) => Explorer.ApplyTheme(_filterForm);
+        internal void ApplyTheme(C1.Win.Themes.C1Theme theme) => Explorer.ApplyTheme(_filterForm);
 
         public async Task LoadData()
         {

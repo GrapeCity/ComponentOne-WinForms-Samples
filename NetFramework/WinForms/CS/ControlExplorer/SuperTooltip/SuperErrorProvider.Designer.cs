@@ -35,22 +35,22 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.c1SuperLabel3 = new C1.Win.C1SuperTooltip.C1SuperLabel();
-            this.c1SuperLabel2 = new C1.Win.C1SuperTooltip.C1SuperLabel();
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel3 = new C1.Win.SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel2 = new C1.Win.SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.dateStart = new System.Windows.Forms.DateTimePicker();
             this.nbAge = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbUsername = new System.Windows.Forms.MaskedTextBox();
             this.tbPassword = new System.Windows.Forms.MaskedTextBox();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            this.epWarning = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epInfo = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epComplete = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epError = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.c1SuperLabel4 = new C1.Win.C1SuperTooltip.C1SuperLabel();
-            this.c1SuperLabel5 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
+            this.epWarning = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epInfo = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epComplete = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epError = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.c1SuperLabel4 = new C1.Win.SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel5 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nbAge)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -202,9 +202,9 @@
             // c1SuperTooltip1
             // 
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Info1.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Warning.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Error.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images2")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Info1.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Warning.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Error.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images2")))));
             // 
             // epWarning
             // 
@@ -227,7 +227,7 @@
             this.epComplete.Image = ((System.Drawing.Image)(resources.GetObject("epComplete.Image")));
             this.epComplete.ImageHot = ((System.Drawing.Image)(resources.GetObject("epComplete.ImageHot")));
             this.epComplete.ToolTip = this.c1SuperTooltip1;
-            this.epComplete.IconClick += new C1.Win.C1SuperTooltip.IconClickEventHandler(this.epComplete_IconClick);
+            this.epComplete.IconClick += new C1.Win.SuperTooltip.IconClickEventHandler(this.epComplete_IconClick);
             // 
             // epError
             // 
@@ -284,19 +284,19 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.MaskedTextBox tbPassword;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epWarning;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epInfo;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epComplete;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epWarning;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epInfo;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epComplete;
         private System.Windows.Forms.NumericUpDown nbAge;
         private System.Windows.Forms.DateTimePicker dateEnd;
         private System.Windows.Forms.DateTimePicker dateStart;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epError;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel3;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel2;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epError;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel3;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel2;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
         private System.Windows.Forms.MaskedTextBox tbUsername;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel5;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel4;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel5;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel4;
     }
 }

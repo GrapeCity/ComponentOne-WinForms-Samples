@@ -13,9 +13,9 @@ namespace DataFilterExplorer
             InitializeComponent();
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
-                lblSamples.Items.Add(sample);
+                lbSamples.Items.Add(sample);
             }
-            lblSamples.SelectedIndex = 0;
+            lbSamples.SelectedIndex = 0;
 
             var themes = C1ThemeController.GetThemes();
             cmbThemes.Items.Add("(none)");
@@ -29,20 +29,27 @@ namespace DataFilterExplorer
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            this.pnlSample.Controls.Cast<Control>().ToList().ForEach(c => c.Dispose());
-            this.pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
-            this.pnlSample.Controls.Add(control);
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            if (lbSamples.SelectedItem is not SampleItem sampleItem)
+            {
+                return;
+            }
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
+            var sampleItemControl = sampleItem.Sample;
+            sampleItemControl.Dock = DockStyle.Fill;
+            pnlSample.Controls.Add(sampleItemControl);
 
             ApplyTheme();
 
-            if (control is Form form)
+            if (sampleItemControl is Form sampleItemForm)
             {
-                form.Show();
+                sampleItemForm.Show();
             }
         }
 
@@ -54,7 +61,7 @@ namespace DataFilterExplorer
             var selectedTheme = C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false);
             C1ThemeController.ApplyThemeToControlTree(pnlSample, selectedTheme, null, true);
 
-            var sample = lblSamples.SelectedItem as SampleItem;
+            var sample = lbSamples.SelectedItem as SampleItem;
             if (sample != null)
             {
                 if (sample.Name == "FilterEditorAndDataEngine" && pnlSample.Controls[0] is Samples.FilterEditorAndDataEngine sampleFD)

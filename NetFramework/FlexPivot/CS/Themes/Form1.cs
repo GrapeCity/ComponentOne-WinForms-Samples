@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace Themes
 {

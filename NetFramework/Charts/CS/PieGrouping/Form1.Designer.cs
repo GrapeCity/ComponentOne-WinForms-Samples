@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
 			this.chk3D = new System.Windows.Forms.CheckBox();
 			this.chkStacked = new System.Windows.Forms.CheckBox();

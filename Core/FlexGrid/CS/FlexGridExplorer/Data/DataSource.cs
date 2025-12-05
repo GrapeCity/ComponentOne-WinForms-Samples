@@ -1,14 +1,6 @@
 ﻿using Microsoft.Data.Sqlite;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace FlexGridExplorer.Data
 {
@@ -55,7 +47,7 @@ namespace FlexGridExplorer.Data
             var dateColumnNames = new List<string>()
             { "datetime", "date"};
 
-            if(reader.HasRows )
+            if (reader.HasRows)
             {
                 // Create base columns 
                 var schemaTable = reader.GetSchemaTable();
@@ -72,10 +64,10 @@ namespace FlexGridExplorer.Data
                     .Select(x => new DataColumn()
                     {
                         ColumnName = x.ColumnName,
-                        DataType =  
+                        DataType =
                                     // Check type as date
                                     dateColumnNames.Any(y => y == x.DataTypeName) ? typeof(DateTime) :
-                                    imageColumns != null ? 
+                                    imageColumns != null ?
                                         // Check type as image
                                         imageColumns.Any(y => y == x.ColumnName) ? typeof(Image) : x.SystemType
                                     : x.SystemType
@@ -97,7 +89,7 @@ namespace FlexGridExplorer.Data
         }
 
         #endregion
-        public static DataTable GetRows(string queryString, 
+        public static DataTable GetRows(string queryString,
             string tableName = "Result", IEnumerable<string> imageColumns = null)
         {
             var table = new DataTable(tableName);

@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1FlexGrid.Hierarchical;
+using C1.Win.FlexGrid;
+using C1.Win.FlexGrid.Hierarchical;
 
 namespace HierFlex
 {
@@ -58,7 +58,7 @@ namespace HierFlex
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter8;
 		private HierFlex.DataSet1 dataSet11;
 		private System.Windows.Forms.Splitter splitter1;
-		private C1.Win.C1FlexGrid.Hierarchical.C1FlexHierarchical _hierFlex;
+		private C1.Win.FlexGrid.Hierarchical.C1FlexHierarchical _hierFlex;
 		private System.Windows.Forms.PropertyGrid propertyGrid1;
 		private System.Windows.Forms.Splitter splitter2;
 		/// <summary>
@@ -100,6 +100,10 @@ namespace HierFlex
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.dataGrid1 = new System.Windows.Forms.DataGrid();
 			this.dataSet11 = new HierFlex.DataSet1();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -143,7 +147,7 @@ namespace HierFlex
 			this.oleDbDataAdapter6 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDataAdapter7 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDataAdapter8 = new System.Data.OleDb.OleDbDataAdapter();
-			this._hierFlex = new C1.Win.C1FlexGrid.Hierarchical.C1FlexHierarchical();
+			this._hierFlex = new C1.Win.FlexGrid.Hierarchical.C1FlexHierarchical();
 			this.splitter1 = new System.Windows.Forms.Splitter();
 			this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
 			this.splitter2 = new System.Windows.Forms.Splitter();
@@ -907,15 +911,15 @@ namespace HierFlex
 			// _hierFlex.FlexGrid
 			// 
 			this._hierFlex.FlexGrid.BackColor = System.Drawing.SystemColors.Window;
-			this._hierFlex.FlexGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+			this._hierFlex.FlexGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 			this._hierFlex.FlexGrid.ColumnInfo = @"13,1,0,0,0,85,Columns:0{Width:34;ImageAlign:RightCenter;}	1{Width:53;Name:""Address"";Caption:""Address"";DataType:System.String;TextAlign:LeftCenter;}	2{Width:31;Name:""City"";Caption:""City"";DataType:System.String;TextAlign:LeftCenter;}	3{Width:90;Name:""CompanyName"";Caption:""CompanyName"";DataType:System.String;TextAlign:LeftCenter;}	4{Width:80;Name:""ContactName"";Caption:""ContactName"";DataType:System.String;TextAlign:LeftCenter;}	5{Width:72;Name:""ContactTitle"";Caption:""ContactTitle"";DataType:System.String;TextAlign:LeftCenter;}	6{Width:51;Name:""Country"";Caption:""Country"";DataType:System.String;TextAlign:LeftCenter;}	7{Width:72;Name:""CustomerID"";Caption:""CustomerID"";DataType:System.String;TextAlign:LeftCenter;}	8{Width:30;Name:""Fax"";Caption:""Fax"";DataType:System.String;TextAlign:LeftCenter;}	9{Width:44;Name:""Phone"";Caption:""Phone"";DataType:System.String;TextAlign:LeftCenter;}	10{Width:70;Name:""PostalCode"";Caption:""PostalCode"";DataType:System.String;TextAlign:LeftCenter;}	11{Width:47;Name:""Region"";Caption:""Region"";DataType:System.String;TextAlign:LeftCenter;}	12{Name:""CustomersOrders"";Caption:""CustomersOrders"";Visible:False;AllowEditing:False;DataType:System.ComponentModel.IBindingList;}	";
 			this._hierFlex.FlexGrid.DataSource = this.dataSet11.Customers;
-			this._hierFlex.FlexGrid.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this._hierFlex.FlexGrid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this._hierFlex.FlexGrid.ForeColor = System.Drawing.SystemColors.WindowText;
 			this._hierFlex.FlexGrid.ShowCursor = true;
 			this._hierFlex.FlexGrid.ShowErrors = true;
 			this._hierFlex.FlexGrid.Size = new System.Drawing.Size(376, 142);
-			this._hierFlex.FlexGrid.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._hierFlex.FlexGrid.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._hierFlex.FlexGrid.TabIndex = 0;
 			this._hierFlex.ForeColor = System.Drawing.SystemColors.HighlightText;
 			this._hierFlex.Location = new System.Drawing.Point(172, 0);

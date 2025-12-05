@@ -1,5 +1,5 @@
 ﻿Imports System.Threading.Tasks
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 
 Public Class MainForm
 
@@ -35,7 +35,7 @@ Public Class MainForm
         RibbonCMBThemes.SelectedIndex = RibbonCMBThemes.Items.IndexOf(ThemeName)
         ApplyTheme(Me)
 
-        C1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System
+        C1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.System
         _loader = New Loader()
         _loader.Visible = False
         _loader.Dock = DockStyle.Fill

@@ -33,7 +33,7 @@ namespace SelectionStatistics
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectionStatisticsControl));
             this.tsSelectionStatistics = new System.Windows.Forms.ToolStrip();
             this.tslSelectionStatistics = new System.Windows.Forms.ToolStripLabel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.c1NWindDataSet1 = new SelectionStatistics.C1NWindDataSet();
             this.ordersTableAdapter1 = new SelectionStatistics.C1NWindDataSetTableAdapters.OrdersTableAdapter();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -109,7 +109,7 @@ namespace SelectionStatistics
         }
 
         #endregion
-        internal C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        internal C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         internal System.Windows.Forms.ToolStripLabel tslSelectionStatistics;
         internal System.Windows.Forms.ToolStrip tsSelectionStatistics;
         private C1NWindDataSet c1NWindDataSet1;

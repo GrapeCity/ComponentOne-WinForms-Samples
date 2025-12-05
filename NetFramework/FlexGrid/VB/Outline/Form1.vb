@@ -38,10 +38,10 @@ Public Class Form1
     'It can be modified imports the Windows Form Designer.  
     'Do not modify it imports the code editor.
     Friend WithEvents button1 As System.Windows.Forms.Button
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.button1 = New System.Windows.Forms.Button()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,7 +59,7 @@ Public Class Form1
         Me._flex.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me._flex.Name = "_flex"
         Me._flex.Size = New System.Drawing.Size(416, 224)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("")
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("")
         Me._flex.TabIndex = 3
         '
         'Form1
@@ -82,7 +82,7 @@ Public Class Form1
         _flex.Cols.Fixed = 0
         _flex.Rows.Count = 1
 
-        Dim s As C1.Win.C1FlexGrid.CellStyle = _flex.Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal0)
+        Dim s As C1.Win.FlexGrid.CellStyle = _flex.Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal0)
         s.BackColor = _flex.Styles.Normal.BackColor
         s.ForeColor = _flex.Styles.Normal.ForeColor
 
@@ -109,11 +109,11 @@ Public Class Form1
 
         'move outline tree to first visible column
         _flex.Tree.Column = 1
-        _flex.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.SimpleLeaf
+        _flex.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.SimpleLeaf
 
         'build the outline 
-        _flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear)
-        _flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.None, 0, 0, 0, "{0}")
+        _flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear)
+        _flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.None, 0, 0, 0, "{0}")
 
     End Sub
 End Class

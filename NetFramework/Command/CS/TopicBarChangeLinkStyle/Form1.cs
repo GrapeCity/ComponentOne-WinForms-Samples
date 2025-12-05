@@ -68,14 +68,14 @@ namespace TopicBarChangeLinkStyle
 
         private void button1_Click(object sender, EventArgs e)
         {
-            c1TopicBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            c1TopicBar1.VisualStyle = C1.Win.Command.VisualStyle.Office2007Blue;
             SetPageStyleInfo();
             SetStyleValue();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            c1TopicBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            c1TopicBar1.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
             SetPageStyleInfo();
             SetStyleValue();
         }

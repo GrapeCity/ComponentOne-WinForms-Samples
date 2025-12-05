@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1Command1 = new C1.Win.C1Command.C1CommandControl();
-            this.c1Command2 = new C1.Win.C1Command.C1Command();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1Command1 = new C1.Win.Command.C1CommandControl();
+            this.c1Command2 = new C1.Win.Command.C1Command();
             this.txtCount = new System.Windows.Forms.NumericUpDown();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
             this.c1FlexGrid1 = new ControlExplorer.FlexGrid.C1FlexDataTree();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -55,7 +55,7 @@
             this.c1ToolBar1.AccessibleName = "Tool Bar";
             this.c1ToolBar1.AutoSize = false;
             this.c1ToolBar1.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink2});
             this.c1ToolBar1.Controls.Add(this.txtCount);
@@ -65,8 +65,8 @@
             this.c1ToolBar1.Name = "c1ToolBar1";
             this.c1ToolBar1.Size = new System.Drawing.Size(592, 26);
             this.c1ToolBar1.Text = "c1ToolBar1";
-            this.c1ToolBar1.VisualStyle = C1.Win.C1Command.VisualStyle.System;
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1ToolBar1.VisualStyle = C1.Win.Command.VisualStyle.System;
+            this.c1ToolBar1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandHolder1
             // 
@@ -84,7 +84,7 @@
             // 
             this.c1Command2.Name = "c1Command2";
             this.c1Command2.Text = "Generate Items";
-            this.c1Command2.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command2_Click);
+            this.c1Command2.Click += new C1.Win.Command.ClickEventHandler(this.c1Command2_Click);
             // 
             // txtCount
             // 
@@ -114,15 +114,15 @@
             // 
             // c1CommandLink2
             // 
-            this.c1CommandLink2.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
+            this.c1CommandLink2.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
             this.c1CommandLink2.Command = this.c1Command2;
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = "1,1,0,0,0,-1,Columns:0{Width:34;Style:\"ImageAlign:RightCenter;\";}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.c1FlexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 26);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 2;
@@ -201,16 +201,16 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1CommandControl c1Command1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandControl c1Command1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
         private C1FlexDataTree c1FlexGrid1;
-        private C1.Win.C1Command.C1Command c1Command2;
+        private C1.Win.Command.C1Command c1Command2;
         private System.Windows.Forms.NumericUpDown txtCount;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripProgressBar progressBar;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;

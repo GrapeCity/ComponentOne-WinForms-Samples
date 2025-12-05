@@ -69,6 +69,7 @@ namespace TouchToolkitExplorer.C1ZoomPages.Help_Forms
         }
 
         [Bindable(true)]
+        [DefaultValue(0)]
         public float Value
         {
             get
@@ -81,7 +82,10 @@ namespace TouchToolkitExplorer.C1ZoomPages.Help_Forms
             }
         }
 
+        [DefaultValue(0)]
         public float MaxValue { get; set; }
+        
+        [DefaultValue(0)]
         public float MinValue { get; set; }
 
         public event EventHandler<EventArgs> ValueChanged;

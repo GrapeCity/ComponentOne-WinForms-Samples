@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace Tutorial15
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		private Brush bh1, bh2;
 		private Font ft;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
@@ -58,16 +58,18 @@ namespace Tutorial15
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
-			this.C1List1 = new C1.Win.C1List.C1List();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
+			this.C1List1 = new C1.Win.List.C1List();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -98,14 +100,14 @@ namespace Tutorial15
 			this.C1List1.Name = "C1List1";
 			this.C1List1.OddRowStyle = style6;
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.SelectedStyle = style7;
 			this.C1List1.Size = new System.Drawing.Size(432, 320);
 			this.C1List1.Style = style8;
 			this.C1List1.TabIndex = 0;
 			this.C1List1.Text = "C1List1";
-			this.C1List1.OwnerDrawCell += new C1.Win.C1List.OwnerDrawCellEventHandler(this.C1List1_OwnerDrawCell);
+			this.C1List1.OwnerDrawCell += new C1.Win.List.OwnerDrawCellEventHandler(this.C1List1_OwnerDrawCell);
 			this.C1List1.PropBag = resources.GetString("C1List1.PropBag");
 			// 
 			// oleDbSelectCommand1
@@ -177,7 +179,7 @@ namespace Tutorial15
 			this.ft = new Font("Arial", 14);
 		}
 
-		private void C1List1_OwnerDrawCell(object sender, C1.Win.C1List.OwnerDrawCellEventArgs e)
+		private void C1List1_OwnerDrawCell(object sender, C1.Win.List.OwnerDrawCellEventArgs e)
 		{
 			//Draw alterlative background
 			if (e.Row % 2 == 0)

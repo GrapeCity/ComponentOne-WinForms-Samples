@@ -32,7 +32,7 @@
             this.btnQPrint = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1PrintPreviewControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1PrintPreviewControl1.PreviewPane)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -116,6 +116,6 @@
         private System.Windows.Forms.Button btnQPrint;
         private System.Windows.Forms.Button btnPrint;
         private C1.Win.C1Preview.C1PrintPreviewControl c1PrintPreviewControl1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }

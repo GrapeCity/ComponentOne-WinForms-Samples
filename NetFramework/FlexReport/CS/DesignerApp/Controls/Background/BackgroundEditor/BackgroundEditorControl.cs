@@ -11,10 +11,10 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using C1.Document;
-using C1.Win.C1Command;
-using C1.Win.C1Document;
+using C1.Win.Command;
+using C1.Win.Document;
 using C1.Win.Localization;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor
 {

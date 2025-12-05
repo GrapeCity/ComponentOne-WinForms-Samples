@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using C1.C1Preview;
 using C1.C1Preview.DataBinding;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace PrintDocTemplates
 {
@@ -21,7 +21,7 @@ namespace PrintDocTemplates
 
         private static string GetStringCalendarInfo()
         {
-            return string.Format(@"CType( CType( Document.Tags, TagCollection)({0}).Value, C1.C1Schedule.CalendarInfo)",
+            return string.Format(@"CType( CType( Document.Tags, TagCollection)({0}).Value, C1.Schedule.CalendarInfo)",
                     string.Format("\"{0}\"", "CalendarInfo"));
         }
 
@@ -174,7 +174,7 @@ namespace PrintDocTemplates
 
 					Dim startT As DateTime = Convert.ToDateTime(indexTags!StartDate.Value)
 					Dim endT As DateTime = Convert.ToDateTime(indexTags!EndDate.Value)
-					Dim calendarInfo as C1.C1Schedule.CalendarInfo = DirectCast(indexTags!CalendarInfo.Value, C1.C1Schedule.CalendarInfo)
+					Dim calendarInfo as C1.Schedule.CalendarInfo = DirectCast(indexTags!CalendarInfo.Value, C1.Schedule.CalendarInfo)
 					Dim cultureInfo as System.Globalization.CultureInfo = DirectCast(calendarInfo.CultureInfo, System.Globalization.CultureInfo)
 
 					While Convert.ToInt32(startT.DayOfWeek) <> Convert.ToInt32(calendarInfo.WeekStart)
@@ -204,7 +204,7 @@ namespace PrintDocTemplates
 						indexTags.Add(tagWeeks)
 					End if
 
-					Dim appointments = DirectCast(indexTags!Appointments.Value, C1.C1Schedule.AppointmentList)
+					Dim appointments = DirectCast(indexTags!Appointments.Value, C1.Schedule.AppointmentList)
 					Dim dateAppointments = New DateAppointmentsCollection(startT, endT, appointments, calendarInfo, True, True)
 					Dim indexAppointments = indexTags.IndexByName({4})
 
@@ -323,7 +323,7 @@ namespace PrintDocTemplates
 					Dim startDate As DateTime = Convert.ToDateTime(RenderObject.Original.Parent.DataBinding.Fields!Date.Value)
 					Dim endDate As DateTime = startDate.AddMonths(1).AddDays(-1)
 
-					Dim calendarInfo as C1.C1Schedule.CalendarInfo = DirectCast(documentTags!CalendarInfo.Value, C1.C1Schedule.CalendarInfo)
+					Dim calendarInfo as C1.Schedule.CalendarInfo = DirectCast(documentTags!CalendarInfo.Value, C1.Schedule.CalendarInfo)
 
 					While startDate.DayOfWeek <> calendarInfo.WeekStart 
 						startDate = startDate.AddDays(-1)
@@ -496,7 +496,7 @@ namespace PrintDocTemplates
                     Else
                         Dim status = CType(RenderObject.Original.DataBinding.Parent.Fields!BusyStatus.Value, Status)
 					    If Not status Is Nothing Then
-						    Dim c1Brush = Ctype(status.Brush, C1Brush)
+						    Dim c1Brush = Ctype(status.Brush, C1.Win.Schedule.C1Brush)
 						    Dim brush = c1Brush.Brush
 						    RenderObject.Style.Brush = brush
 					    End if
@@ -523,7 +523,7 @@ namespace PrintDocTemplates
                     If Not RenderObject.Original.DataBinding.Fields!Label Is Nothing Then
 						Dim label = CType(RenderObject.Original.DataBinding.Fields!Label.Value, Label)
 						If Not label Is Nothing Then
-							Dim c1Brush = Ctype(label.Brush, C1Brush)
+							Dim c1Brush = Ctype(label.Brush, C1.Win.Schedule.C1Brush)
 							Dim brush = c1Brush.Brush
 							RenderObject.Style.Brush = brush
 						End if
@@ -909,7 +909,7 @@ namespace PrintDocTemplates
             ra.Children.Add(rt);
 
             rt = new RenderText();
-            rt.Text = "[CType( Fields!BusyStatus.Value, C1.C1Schedule.Status).Text]";
+            rt.Text = "[CType( Fields!BusyStatus.Value, C1.Schedule.Status).Text]";
             rt.Width = "75%";
             ra.Children.Add(rt);
 
@@ -924,10 +924,10 @@ namespace PrintDocTemplates
             rt.FormatDataBindingInstanceScript =
                  @"Dim index as Integer = RenderObject.Parent.Original.DataBinding.RowNumber - 1
                  Dim documentTags = CType(Document.Tags, TagCollection)
-                 Dim appointments = TryCast(documentTags!Appointments.Value, IList(Of C1.C1Schedule.Appointment))
+                 Dim appointments = TryCast(documentTags!Appointments.Value, IList(Of C1.Schedule.Appointment))
 
                  If appointments Is Nothing Then
-                     appointments = DirectCast(documentTags!Appointments.Value, C1.C1Schedule.AppointmentList)
+                     appointments = DirectCast(documentTags!Appointments.Value, C1.Schedule.AppointmentList)
                  End If
 
                  Dim app = appointments(index)
@@ -1309,7 +1309,7 @@ namespace PrintDocTemplates
 				End If
 
 				Dim calendarInfo = {0}
-				Dim appointments = DirectCast(documentTag!Appointments.Value, C1.C1Schedule.AppointmentList)
+				Dim appointments = DirectCast(documentTag!Appointments.Value, C1.Schedule.AppointmentList)
 				Dim dateAppointments = New DateAppointmentsCollection(startT, endT, appointments, calendarInfo, True,  Not WorkDaysOnly)
 
 				If Document.Tags.IndexByName({8}) = -1 Then
@@ -1637,7 +1637,7 @@ namespace PrintDocTemplates
                     Else
 					    Dim status = CType(RenderObject.Original.DataBinding.Parent.Fields!BusyStatus.Value, Status)
 					    If Not status Is Nothing Then
-						    Dim c1Brush = Ctype(status.Brush, C1Brush)
+						    Dim c1Brush = Ctype(status.Brush, C1.Win.Schedule.C1Brush)
 						    Dim brush = c1Brush.Brush
 						    RenderObject.Style.Brush = brush
 					    End if
@@ -1664,7 +1664,7 @@ namespace PrintDocTemplates
                 If Not RenderObject.Original.DataBinding.Fields!Label Is Nothing Then
 					Dim label = CType(RenderObject.Original.DataBinding.Fields!Label.Value, Label)
 					If Not label Is Nothing Then
-						Dim c1Brush = Ctype(label.Brush, C1Brush)
+						Dim c1Brush = Ctype(label.Brush, C1.Win.Schedule.C1Brush)
 						Dim brush = c1Brush.Brush
 						RenderObject.Style.Brush = brush
 					End if
@@ -1976,7 +1976,7 @@ namespace PrintDocTemplates
 				Dim endDate as DateTime = Convert.ToDateTime(documentTag!EndDate.Value)
 
 				Dim calendarInfo = {4}
-				Dim appointments = DirectCast(documentTag!Appointments.Value, C1.C1Schedule.AppointmentList)
+				Dim appointments = DirectCast(documentTag!Appointments.Value, C1.Schedule.AppointmentList)
 				Dim dateAppointments = New DateAppointmentsCollection(startDate, endDate, appointments, calendarInfo, True, True)
 				Dim indexAppointments = documentTag.IndexByName({3})
 
@@ -2211,7 +2211,7 @@ namespace PrintDocTemplates
 				Else
                     Dim status = CType(RenderObject.Original.DataBinding.Parent.Fields!BusyStatus.Value, Status)
 					If Not status Is Nothing Then
-						Dim c1Brush = Ctype(status.Brush, C1Brush)
+						Dim c1Brush = Ctype(status.Brush, C1.Win.Schedule.C1Brush)
 						Dim brush = c1Brush.Brush
 						RenderObject.Style.Brush = brush
 					End If
@@ -2243,7 +2243,7 @@ namespace PrintDocTemplates
 				If Not RenderObject.Original.DataBinding.Fields!Label Is Nothing Then
 					Dim label = CType(RenderObject.Original.DataBinding.Fields!Label.Value, Label)
 					If Not label Is Nothing Then
-						Dim c1Brush = Ctype(label.Brush, C1Brush)
+						Dim c1Brush = Ctype(label.Brush, C1.Win.Schedule.C1Brush)
 						Dim brush = c1Brush.Brush
 						RenderObject.Style.Brush = brush
 					End if
@@ -2393,7 +2393,7 @@ namespace PrintDocTemplates
 				If Not RenderObject.Original.DataBinding.Fields!Label Is Nothing Then
 					Dim label = CType(RenderObject.Original.DataBinding.Fields!Label.Value, Label)
 					If Not label Is Nothing Then
-						Dim c1Brush = Ctype(label.Brush, C1Brush)
+						Dim c1Brush = Ctype(label.Brush, C1.Win.Schedule.C1Brush)
 						Dim brush = c1Brush.Brush
 						RenderObject.Style.Brush = brush
 					End if
@@ -2485,7 +2485,7 @@ namespace PrintDocTemplates
 				If Not RenderObject.Original.DataBinding.Fields!Label Is Nothing Then
 					Dim label = CType(RenderObject.Original.DataBinding.Fields!Label.Value, Label)
 					If Not label Is Nothing Then
-						Dim c1Brush = Ctype(label.Brush, C1Brush)
+						Dim c1Brush = Ctype(label.Brush, C1.Win.Schedule.C1Brush)
 						Dim brush = c1Brush.Brush
 						RenderObject.Style.Brush = brush
 					End if
@@ -2738,8 +2738,8 @@ namespace PrintDocTemplates
         private static void AddNamespaces(C1PrintDocument doc)
         {
             doc.TagEscapeString = "\x01";
-            doc.ScriptingOptions.Namespaces.Add("C1.C1Schedule");
-            doc.ScriptingOptions.Namespaces.Add("C1.C1Schedule.Printing");
+            doc.ScriptingOptions.Namespaces.Add("C1.Schedule");
+            doc.ScriptingOptions.Namespaces.Add("C1.Schedule.Printing");
         }
 
         /// <summary>

@@ -9,6 +9,8 @@ using System.Windows.Forms;
 namespace FlexGridExplorer.Samples
 {
     using FlexGridExplorer.Data;
+    using System.ComponentModel;
+
     public class Scrolling : UserControl
     {
         private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
@@ -72,6 +74,7 @@ namespace FlexGridExplorer.Samples
             }
         }
 
+        [DefaultValue(true)]
         public bool DelayedScroll
         {
             get
@@ -85,6 +88,7 @@ namespace FlexGridExplorer.Samples
             }
         }
 
+        [DefaultValue(true)]
         public bool ShowScrollTips
         {
             get

@@ -13,7 +13,7 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            this.c1FlexGrid1.AfterDragColumn -= new C1.Win.C1FlexGrid.DragRowColEventHandler(this.c1FlexGrid1_AfterDragColumn);
+            this.c1FlexGrid1.AfterDragColumn -= new C1.Win.FlexGrid.DragRowColEventHandler(this.c1FlexGrid1_AfterDragColumn);
             this.c1FlexGrid1.AfterDataRefresh -= new System.ComponentModel.ListChangedEventHandler(this.c1FlexGrid1_AfterDataRefresh);
             if (disposing && (components != null))
             {
@@ -35,7 +35,7 @@
             this.invoicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1DemoDataSet = new ControlExplorer.C1DemoDataSet();
             this.invoicesTableAdapter = new ControlExplorer.C1DemoDataSetTableAdapters.InvoicesTableAdapter();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1DemoDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
@@ -58,7 +58,7 @@
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.AllowEditing = false;
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
             this.c1FlexGrid1.DataSource = this.invoicesBindingSource;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -67,8 +67,8 @@
             this.c1FlexGrid1.NewRowWatermark = "Click to add new row";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 22;
-            this.c1FlexGrid1.ScrollOptions = ((C1.Win.C1FlexGrid.ScrollFlags)((C1.Win.C1FlexGrid.ScrollFlags.DelayedScroll | C1.Win.C1FlexGrid.ScrollFlags.ShowScrollTips)));
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            this.c1FlexGrid1.ScrollOptions = ((C1.Win.FlexGrid.ScrollFlags)((C1.Win.FlexGrid.ScrollFlags.DelayedScroll | C1.Win.FlexGrid.ScrollFlags.ShowScrollTips)));
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
             this.c1FlexGrid1.ShowCellLabels = true;
             this.c1FlexGrid1.ShowCursor = true;
             this.c1FlexGrid1.Size = new System.Drawing.Size(592, 446);
@@ -96,6 +96,6 @@
         private C1DemoDataSet c1DemoDataSet;
         private System.Windows.Forms.BindingSource invoicesBindingSource;
         private ControlExplorer.C1DemoDataSetTableAdapters.InvoicesTableAdapter invoicesTableAdapter;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

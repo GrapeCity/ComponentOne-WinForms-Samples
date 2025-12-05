@@ -8,7 +8,7 @@ using System.Net;
 using System.Windows.Forms;
 using System.Xml;
 
-using C1.Win.C1Tile;
+using C1.Win.Tile;
 
 namespace FlickrViewer
 {

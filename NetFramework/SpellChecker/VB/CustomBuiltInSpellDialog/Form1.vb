@@ -3,7 +3,7 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
 
         ' create spell dialog
-        Dim dlg As New C1.Win.C1SpellChecker.C1SpellDialog()
+        Dim dlg As New C1.Win.SpellChecker.C1SpellDialog()
 
         ' change form caption, font, color
         dlg.Text = "My very own spell dialog!!!"

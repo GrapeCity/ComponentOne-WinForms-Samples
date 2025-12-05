@@ -1,5 +1,5 @@
 ﻿using C1.Win.Ribbon;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,7 +33,7 @@ namespace AsyncFilter
             ribbonCmbThemes.SelectedIndex = ribbonCmbThemes.Items.IndexOf(ThemeName);
             ApplyTheme(this);
 
-            c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System;
+            c1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.System;
 
             _loader = new Loader() { Visible = false, Dock = DockStyle.Fill };
             panel1.Controls.Add(_loader);

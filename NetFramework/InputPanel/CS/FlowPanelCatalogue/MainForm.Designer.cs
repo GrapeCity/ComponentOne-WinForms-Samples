@@ -30,6 +30,7 @@ namespace FlowPanelCatalogue
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -39,9 +40,9 @@ namespace FlowPanelCatalogue
             this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1InputPanel2 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputFlowPanel1 = new C1.Win.C1InputPanel.InputFlowPanel();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1InputPanel2 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputFlowPanel1 = new C1.Win.InputPanel.InputFlowPanel();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -153,11 +154,11 @@ namespace FlowPanelCatalogue
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
 
         
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel2;
-        private C1.Win.C1InputPanel.InputFlowPanel inputFlowPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel2;
+        private C1.Win.InputPanel.InputFlowPanel inputFlowPanel1;
     }
 }
 

@@ -29,30 +29,35 @@
         
         void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
             // _flex
             // 
-            this._flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None;
+            this._flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this._flex.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 19;
-            this._flex.Size = new System.Drawing.Size(698, 262);
+            this._flex.Size = new System.Drawing.Size(1280, 484);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
-            this._flex.GetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
-            this._flex.SetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
+            this._flex.GetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
+            this._flex.SetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 262);
+            this.ClientSize = new System.Drawing.Size(1280, 484);
             this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Virtual Mode read/write demo";
@@ -63,7 +68,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
 
 
 

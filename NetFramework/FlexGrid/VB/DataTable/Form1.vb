@@ -41,14 +41,14 @@ Public Class Form1
     Friend WithEvents panel1 As System.Windows.Forms.Panel
     Friend WithEvents button1 As System.Windows.Forms.Button
     Friend WithEvents button2 As System.Windows.Forms.Button
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.dataGrid1 = New System.Windows.Forms.DataGrid()
         Me.splitter1 = New System.Windows.Forms.Splitter()
         Me.panel1 = New System.Windows.Forms.Panel()
         Me.button1 = New System.Windows.Forms.Button()
         Me.button2 = New System.Windows.Forms.Button()
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.dataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel1.SuspendLayout()
         CType(Me.flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,7 +105,7 @@ Public Class Form1
         Me.flex.Dock = System.Windows.Forms.DockStyle.Top
         Me.flex.Name = "flex"
         Me.flex.Size = New System.Drawing.Size(592, 168)
-        Me.flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _

@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Command.C1TopicPage c1TopicPage1 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink1 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink2 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink3 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink4 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicPage c1TopicPage2 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink5 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink6 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink7 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink8 = new C1.Win.C1Command.C1TopicLink();
+            C1.Win.Command.C1TopicPage c1TopicPage1 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink1 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink2 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink3 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink4 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicPage c1TopicPage2 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink5 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink6 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink7 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink8 = new C1.Win.Command.C1TopicLink();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Font:");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("ForeColor:");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Normal link", new System.Windows.Forms.TreeNode[] {
@@ -59,7 +59,7 @@
             treeNode10,
             treeNode11});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TopicBar1 = new C1.Win.C1Command.C1TopicBar();
+            this.c1TopicBar1 = new C1.Win.Command.C1TopicBar();
             this.c1fpNormal = new C1.Win.C1Input.C1FontPicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.c1cpNormal = new C1.Win.C1Input.C1ColorPicker();
@@ -472,7 +472,7 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1TopicBar c1TopicBar1;
+        private C1.Win.Command.C1TopicBar c1TopicBar1;
         private C1.Win.C1Input.C1FontPicker c1fpNormal;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;

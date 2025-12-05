@@ -42,7 +42,7 @@ Partial Class Form1
         Dim TreeNode34 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Decrease Horizontal")
         Dim TreeNode35 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Even Horizontal")
         Dim TreeNode36 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Spacing", New System.Windows.Forms.TreeNode() {TreeNode32, TreeNode33, TreeNode34, TreeNode35})
-        Me.C1SuperTooltip1 = New C1.Win.C1SuperTooltip.C1SuperTooltip(Me.components)
+        Me.C1SuperTooltip1 = New C1.Win.SuperTooltip.C1SuperTooltip(Me.components)
         Me.button2 = New System.Windows.Forms.Button()
         Me.richTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.checkBox2 = New System.Windows.Forms.CheckBox()
@@ -51,14 +51,14 @@ Partial Class Form1
         Me.numericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.dateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.maskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
-        Me.c1SuperLabel2 = New C1.Win.C1SuperTooltip.C1SuperLabel()
+        Me.c1SuperLabel2 = New C1.Win.SuperTooltip.C1SuperLabel()
         Me.treeView1 = New System.Windows.Forms.TreeView()
         Me.imageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer()
         Me._groupHtml = New System.Windows.Forms.GroupBox()
         Me.label2 = New System.Windows.Forms.Label()
         Me._groupToolBox = New System.Windows.Forms.GroupBox()
-        Me.c1SuperLabel1 = New C1.Win.C1SuperTooltip.C1SuperLabel()
+        Me.c1SuperLabel1 = New C1.Win.SuperTooltip.C1SuperLabel()
         Me.button1 = New System.Windows.Forms.Button()
         Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.checkBox1 = New System.Windows.Forms.CheckBox()
@@ -809,8 +809,8 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents C1SuperTooltip1 As C1.Win.C1SuperTooltip.C1SuperTooltip
-    Private WithEvents c1SuperLabel2 As C1.Win.C1SuperTooltip.C1SuperLabel
+    Friend WithEvents C1SuperTooltip1 As C1.Win.SuperTooltip.C1SuperTooltip
+    Private WithEvents c1SuperLabel2 As C1.Win.SuperTooltip.C1SuperLabel
     Private WithEvents treeView1 As System.Windows.Forms.TreeView
     Private WithEvents imageList1 As System.Windows.Forms.ImageList
     Private WithEvents button2 As System.Windows.Forms.Button
@@ -825,7 +825,7 @@ Partial Class Form1
     Private WithEvents maskedTextBox2 As System.Windows.Forms.MaskedTextBox
     Private WithEvents label2 As System.Windows.Forms.Label
     Private WithEvents _groupToolBox As System.Windows.Forms.GroupBox
-    Private WithEvents c1SuperLabel1 As C1.Win.C1SuperTooltip.C1SuperLabel
+    Private WithEvents c1SuperLabel1 As C1.Win.SuperTooltip.C1SuperLabel
     Private WithEvents button1 As System.Windows.Forms.Button
     Private WithEvents richTextBox1 As System.Windows.Forms.RichTextBox
     Private WithEvents checkBox1 As System.Windows.Forms.CheckBox

@@ -15,6 +15,7 @@ namespace DataFilterExplorer.Samples
     {
         private FilterEditorView _view;
 
+        [DefaultValue(null)]
         public string SelectedTheme { get; set; }
 
         public FilterEditorAndDataEngine()

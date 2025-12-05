@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CellNotes
 {
@@ -114,7 +114,7 @@ namespace CellNotes
 
 		// draw cell note indicator on the cell 
 		// (a little red triangle on the upper-right corner)
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			// check if the cell has a note
 			CellRange rg = _flex.GetCellRange(e.Row, e.Col);

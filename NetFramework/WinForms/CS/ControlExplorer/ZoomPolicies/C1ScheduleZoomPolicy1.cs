@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.Win.C1Schedule;
+using C1.Win.Schedule;
 using C1.Win.TouchToolKit;
 using System;
 using System.Collections.Generic;

@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace Analyze
 {
@@ -54,7 +54,7 @@ namespace Analyze
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analyze));
-            this.fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.fg = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.fg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +71,7 @@ namespace Analyze
             this.fg.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.fg.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("fg.Tree.NodeImageCollapsed")));
             this.fg.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("fg.Tree.NodeImageExpanded")));
-            this.fg.AfterDragColumn += new C1.Win.C1FlexGrid.DragRowColEventHandler(this.fg_AfterDragColumn);
+            this.fg.AfterDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this.fg_AfterDragColumn);
             this.fg.AfterDataRefresh += new System.ComponentModel.ListChangedEventHandler(this.fg_AfterDataRefresh);
             // 
             // Analyze
@@ -152,7 +152,7 @@ namespace Analyze
 			return ds.Tables[0];
 		}
 
-		C1.Win.C1FlexGrid.C1FlexGrid fg;
+		C1.Win.FlexGrid.C1FlexGrid fg;
 
 		void fg_AfterDataRefresh(object sender, System.ComponentModel.ListChangedEventArgs e)
 		{
@@ -170,7 +170,7 @@ namespace Analyze
 			fg.AutoSizeCols(1, 1, 1000, 3, 30, AutoSizeFlags.IgnoreHidden);
 		}
 
-		void fg_AfterDragColumn(object sender, C1.Win.C1FlexGrid.DragRowColEventArgs e)
+		void fg_AfterDragColumn(object sender, C1.Win.FlexGrid.DragRowColEventArgs e)
 		{
 			// sort the recordset when the user drags columns
 			// this will cause a data refresh, removing all subtotals and

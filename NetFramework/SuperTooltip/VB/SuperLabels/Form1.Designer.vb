@@ -25,13 +25,13 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer
         Me.richTextBox1 = New System.Windows.Forms.RichTextBox
-        Me.c1SuperLabel4 = New C1.Win.C1SuperTooltip.C1SuperLabel
-        Me.c1SuperLabel1 = New C1.Win.C1SuperTooltip.C1SuperLabel
-        Me.c1SuperLabel5 = New C1.Win.C1SuperTooltip.C1SuperLabel
+        Me.c1SuperLabel4 = New C1.Win.SuperTooltip.C1SuperLabel
+        Me.c1SuperLabel1 = New C1.Win.SuperTooltip.C1SuperLabel
+        Me.c1SuperLabel5 = New C1.Win.SuperTooltip.C1SuperLabel
         Me.button1 = New System.Windows.Forms.Button
         Me.comboBox1 = New System.Windows.Forms.ComboBox
-        Me.c1SuperLabel3 = New C1.Win.C1SuperTooltip.C1SuperLabel
-        Me.c1SuperLabel2 = New C1.Win.C1SuperTooltip.C1SuperLabel
+        Me.c1SuperLabel3 = New C1.Win.SuperTooltip.C1SuperLabel
+        Me.c1SuperLabel2 = New C1.Win.SuperTooltip.C1SuperLabel
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.splitContainer1.Panel1.SuspendLayout()
         Me.splitContainer1.Panel2.SuspendLayout()
@@ -161,13 +161,13 @@ Partial Class Form1
     End Sub
     Private WithEvents splitContainer1 As System.Windows.Forms.SplitContainer
     Private WithEvents richTextBox1 As System.Windows.Forms.RichTextBox
-    Private WithEvents c1SuperLabel4 As C1.Win.C1SuperTooltip.C1SuperLabel
-    Private WithEvents c1SuperLabel1 As C1.Win.C1SuperTooltip.C1SuperLabel
-    Private WithEvents c1SuperLabel5 As C1.Win.C1SuperTooltip.C1SuperLabel
+    Private WithEvents c1SuperLabel4 As C1.Win.SuperTooltip.C1SuperLabel
+    Private WithEvents c1SuperLabel1 As C1.Win.SuperTooltip.C1SuperLabel
+    Private WithEvents c1SuperLabel5 As C1.Win.SuperTooltip.C1SuperLabel
     Private WithEvents button1 As System.Windows.Forms.Button
     Private WithEvents comboBox1 As System.Windows.Forms.ComboBox
-    Private WithEvents c1SuperLabel3 As C1.Win.C1SuperTooltip.C1SuperLabel
-    Private WithEvents c1SuperLabel2 As C1.Win.C1SuperTooltip.C1SuperLabel
+    Private WithEvents c1SuperLabel3 As C1.Win.SuperTooltip.C1SuperLabel
+    Private WithEvents c1SuperLabel2 As C1.Win.SuperTooltip.C1SuperLabel
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class

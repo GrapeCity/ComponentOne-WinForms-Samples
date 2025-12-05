@@ -23,7 +23,7 @@ Partial Class Form1
         Me._book = New C1.Excel.C1XLBook
         Me._tab = New System.Windows.Forms.TabControl
         Me.tabPage1 = New System.Windows.Forms.TabPage
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         Me._btnBatch = New System.Windows.Forms.Button
         Me._btnLoad = New System.Windows.Forms.Button
         Me._btnSave = New System.Windows.Forms.Button
@@ -56,8 +56,8 @@ Partial Class Form1
         '
         '_flex
         '
-        Me._flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Spill
-        Me._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Spill
+        Me._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me._flex.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me._flex.Dock = System.Windows.Forms.DockStyle.Fill
         Me._flex.Location = New System.Drawing.Point(0, 0)
@@ -113,7 +113,7 @@ Partial Class Form1
     Friend WithEvents _book As C1.Excel.C1XLBook
     Private WithEvents _tab As System.Windows.Forms.TabControl
     Private WithEvents tabPage1 As System.Windows.Forms.TabPage
-    Private WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents _btnBatch As System.Windows.Forms.Button
     Private WithEvents _btnLoad As System.Windows.Forms.Button
     Private WithEvents _btnSave As System.Windows.Forms.Button

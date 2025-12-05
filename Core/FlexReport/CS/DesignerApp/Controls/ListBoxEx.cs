@@ -7,6 +7,7 @@
 //----------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Design;
 using System.Linq;
@@ -32,6 +33,7 @@ namespace FlexReportDesignerApp.Controls
 
         public event EventHandler<PaintIndicatorEventArgs> PaintIndicator;
 
+        [DefaultValue(false)]
         public bool PaintIndicatorSupported { get; set; }
 
         public override DrawMode DrawMode

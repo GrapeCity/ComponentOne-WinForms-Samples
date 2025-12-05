@@ -35,6 +35,7 @@
             C1.Win.C1Win7Pack.C1ThumbButton c1ThumbButton4 = new C1.Win.C1Win7Pack.C1ThumbButton();
             C1.Win.C1Win7Pack.C1ThumbButton c1ThumbButton5 = new C1.Win.C1Win7Pack.C1ThumbButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.taskbarButton = new C1.Win.C1Win7Pack.C1TaskbarButton(this.components);
             this.imSmall = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();

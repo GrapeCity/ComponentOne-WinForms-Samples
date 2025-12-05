@@ -22,7 +22,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.imgToolbar = New System.Windows.Forms.ImageList(Me.components)
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me.ToolBar2 = New System.Windows.Forms.ToolBar()
         Me.tbBorderOn = New System.Windows.Forms.ToolBarButton()
         Me.tbBorderOff = New System.Windows.Forms.ToolBarButton()
@@ -157,7 +157,7 @@ Partial Class Form1
 
     End Sub
     Private WithEvents imgToolbar As System.Windows.Forms.ImageList
-    Private WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents ToolBar2 As System.Windows.Forms.ToolBar
     Private WithEvents ToolBarButton1 As System.Windows.Forms.ToolBarButton
     Private WithEvents ToolBarButton2 As System.Windows.Forms.ToolBarButton

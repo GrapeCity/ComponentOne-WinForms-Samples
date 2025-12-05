@@ -30,11 +30,11 @@ namespace FilterEditorAndDataEngine.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1RadialGauge1 = new C1.Win.C1Gauge.C1RadialGauge();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1RadialGauge1 = new C1.Win.Gauge.C1RadialGauge();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +42,7 @@ namespace FilterEditorAndDataEngine.UI
             // c1Gauge1
             // 
             this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1RadialGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(0, 0);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -75,7 +75,7 @@ namespace FilterEditorAndDataEngine.UI
             c1GaugeSingleLabel1.PointerIndex = 100;
             c1GaugeSingleLabel1.Text = "Loading..";
             c1GaugeSingleLabel1.ViewTag = ((long)(642976825261498990));
-            this.c1RadialGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
+            this.c1RadialGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
             c1GaugeRange1,
             c1GaugeRange2,
             c1GaugeSingleLabel1});
@@ -88,7 +88,7 @@ namespace FilterEditorAndDataEngine.UI
             this.c1RadialGauge1.Pointer.Filling.Color = System.Drawing.Color.Black;
             this.c1RadialGauge1.Pointer.Length = 64D;
             this.c1RadialGauge1.Pointer.Offset = 0D;
-            this.c1RadialGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom;
+            this.c1RadialGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
             this.c1RadialGauge1.Pointer.Visible = false;
             this.c1RadialGauge1.Radius = 0.6D;
             this.c1RadialGauge1.StartAngle = -90D;
@@ -115,8 +115,8 @@ namespace FilterEditorAndDataEngine.UI
 
         #endregion
 
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1RadialGauge c1RadialGauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1RadialGauge c1RadialGauge1;
         private System.Windows.Forms.Timer timer1;
     }
 }

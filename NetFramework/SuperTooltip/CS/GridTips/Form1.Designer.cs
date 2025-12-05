@@ -1,4 +1,4 @@
-namespace GridTips
+﻿namespace GridTips
 {
     partial class Form1
     {
@@ -30,17 +30,18 @@ namespace GridTips
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this._flex3 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flex2 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flex4 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex3 = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flex4 = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flex3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flex2)).BeginInit();
@@ -149,11 +150,11 @@ namespace GridTips
             // 
             // c1SuperTooltip1
             // 
-            this.c1SuperTooltip1.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Gold;
+            this.c1SuperTooltip1.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Gold;
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("AssocScript.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("BookOpen.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Target.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images2")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("AssocScript.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("BookOpen.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Target.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images2")))));
             this.c1SuperTooltip1.IsBalloon = true;
             // 
             // Form1
@@ -186,12 +187,12 @@ namespace GridTips
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex3;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex2;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex4;
+        private C1.Win.FlexGrid.C1FlexGrid _flex3;
+        private C1.Win.FlexGrid.C1FlexGrid _flex2;
+        private C1.Win.FlexGrid.C1FlexGrid _flex4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;

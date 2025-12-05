@@ -10,17 +10,17 @@ Imports System.Drawing.Design
 Imports System.Drawing.Printing
 Imports System.IO
 
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 Imports C1.C1Preview
 
-Namespace C1.Win.C1FlexGrid
+Namespace C1.Win.FlexGrid
 
     ''' <summary>
     ''' Defines a C1FlexGrid that can be printed or inserted in a C1PrintDocument.
     ''' Can be used either by itself, or to print another C1FlexGrid object.
     ''' </summary>
     Public Class C1FlexGridPrintable
-        Inherits Global.C1.Win.C1FlexGrid.C1FlexGrid
+        Inherits Global.C1.Win.FlexGrid.C1FlexGrid
 
         Private Const c_tag_t As String = "\\t"
         Private Const c_tag_p As String = "\\p"
@@ -64,7 +64,7 @@ Namespace C1.Win.C1FlexGrid
         ''' another C1FlexGrid object.
         ''' </summary>
         ''' <param name="flex">The object to print/preview/export.</param>
-        Public Sub New(ByVal flex As Global.C1.Win.C1FlexGrid.C1FlexGrid)
+        Public Sub New(ByVal flex As Global.C1.Win.FlexGrid.C1FlexGrid)
             Debug.Assert(flex IsNot Nothing)
             Me.DataSource = flex
             Me.AllowMerging = flex.AllowMerging
@@ -791,7 +791,7 @@ Namespace C1.Win.C1FlexGrid
                 _workTable.Style.GridLines.All = LineDef.Empty
             End If
             _workTable.CellStyle.Padding.All = "5doc"
-            Dim cstyle As Global.C1.Win.C1FlexGrid.CellStyle = Me.Styles.Normal
+            Dim cstyle As Global.C1.Win.FlexGrid.CellStyle = Me.Styles.Normal
             If cstyle.BackColor.IsEmpty OrElse cstyle.BackColor.Equals(Color.Transparent) Then
                 If Not IsPaperColor(Me.BackColor) Then
                     cstyle.BackColor = Me.BackColor
@@ -924,7 +924,7 @@ Namespace C1.Win.C1FlexGrid
         ''' <param name="cstyle">Grid style.</param>
         ''' <param name="cell">Is it style for cells?</param>
         ''' <param name="compareWithParent">Create child style, comparing with parent or not</param>
-        Private Sub ApplyStyle(ByVal pstyle As Style, ByVal cstyle As Global.C1.Win.C1FlexGrid.CellStyle, ByVal cell As Boolean, ByVal compareWithParent As Boolean)
+        Private Sub ApplyStyle(ByVal pstyle As Style, ByVal cstyle As Global.C1.Win.FlexGrid.CellStyle, ByVal cell As Boolean, ByVal compareWithParent As Boolean)
             If pstyle Is Nothing OrElse cstyle Is Nothing Then
                 Return
             End If
@@ -1438,7 +1438,7 @@ Namespace C1.Win.C1FlexGrid
         Private Function CreateTableCol(ByVal c As Integer, ByVal col As Integer) As TableCol
             Dim tc As TableCol = _workTable.Cols(c)
             ApplyStyle(_workTable.Cols(c).CellStyle, Me.Cols(col).Style, False, False)
-            Dim flexCol As Global.C1.Win.C1FlexGrid.Column = Me.Cols(col)
+            Dim flexCol As Global.C1.Win.FlexGrid.Column = Me.Cols(col)
             If _printInfo.PageBreak = PageBreaksEnum.FitIntoArea Then
                 Dim w As Double = Math.Round(Me.PxToDoc(GetColWidth(flexCol) / _zoom) * 100.0 / _maxWidth, 2)
                 If _perc + w > 99 Then
@@ -1481,7 +1481,7 @@ Namespace C1.Win.C1FlexGrid
         ''' <returns></returns>
         Private Function CreateTableRow(ByVal r As Integer, ByVal row As Integer) As TableRow
             Dim tr As TableRow = _workTable.Rows(r)
-            Dim flexRow As Global.C1.Win.C1FlexGrid.Row = Me.Rows(row)
+            Dim flexRow As Global.C1.Win.FlexGrid.Row = Me.Rows(row)
             Dim curstyle As CellStyle = flexRow.StyleDisplay
             If row < Me.Rows.Fixed Then
                 curstyle = flexRow.StyleFixedDisplay
@@ -2046,8 +2046,8 @@ Namespace C1.Win.C1FlexGrid
     Public Class PrintInfo
         Private _pageHeader As String = String.Empty
         Private _pageFooter As String = String.Empty
-        Private _pageHeaderStyle As Global.C1.Win.C1FlexGrid.CellStyle = Nothing
-        Private _pageFooterStyle As Global.C1.Win.C1FlexGrid.CellStyle = Nothing
+        Private _pageHeaderStyle As Global.C1.Win.FlexGrid.CellStyle = Nothing
+        Private _pageFooterStyle As Global.C1.Win.FlexGrid.CellStyle = Nothing
         Private _wrapText As WrapTextEnum = WrapTextEnum.Wrap
         Private _useGridColors As Boolean = True
         Private _pageHeaderHeight As Integer = 30
@@ -2220,11 +2220,11 @@ Namespace C1.Win.C1FlexGrid
         ''' </summary>
         <DesignerSerializationVisibility(DesignerSerializationVisibility.Content)> _
         <Description("Gets or sets the style used to render the page header.")> _
-        Public Property PageHeaderStyle() As Global.C1.Win.C1FlexGrid.CellStyle
+        Public Property PageHeaderStyle() As Global.C1.Win.FlexGrid.CellStyle
             Get
                 Return Me._pageHeaderStyle
             End Get
-            Set(ByVal value As Global.C1.Win.C1FlexGrid.CellStyle)
+            Set(ByVal value As Global.C1.Win.FlexGrid.CellStyle)
                 Me._pageHeaderStyle = value
             End Set
         End Property
@@ -2264,11 +2264,11 @@ Namespace C1.Win.C1FlexGrid
         ''' </summary>
         <DesignerSerializationVisibility(DesignerSerializationVisibility.Content)> _
         <Description("Gets or sets the style used to render the page footer.")> _
-        Public Property PageFooterStyle() As Global.C1.Win.C1FlexGrid.CellStyle
+        Public Property PageFooterStyle() As Global.C1.Win.FlexGrid.CellStyle
             Get
                 Return Me._pageFooterStyle
             End Get
-            Set(ByVal value As Global.C1.Win.C1FlexGrid.CellStyle)
+            Set(ByVal value As Global.C1.Win.FlexGrid.CellStyle)
                 Me._pageFooterStyle = value
             End Set
         End Property

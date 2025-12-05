@@ -24,8 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.c1DataFilter1 = New C1.Win.DataFilter.C1DataFilter()
         CType(Me.splitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer1.Panel1.SuspendLayout()
@@ -64,7 +64,7 @@ Partial Class Form1
         Me.c1FlexGrid1.Location = New System.Drawing.Point(0, 0)
         Me.c1FlexGrid1.Name = "c1FlexGrid1"
         Me.c1FlexGrid1.Rows.DefaultSize = 27
-        Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.c1FlexGrid1.Size = New System.Drawing.Size(346, 450)
         Me.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo")
         Me.c1FlexGrid1.TabIndex = 0
@@ -103,6 +103,6 @@ Partial Class Form1
 
     Private splitContainer1 As System.Windows.Forms.SplitContainer
     Private c1DataFilter1 As C1.Win.DataFilter.C1DataFilter
-    Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

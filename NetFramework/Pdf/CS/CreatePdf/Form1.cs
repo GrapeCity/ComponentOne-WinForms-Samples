@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -91,6 +91,7 @@ namespace CreatePdf
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.button1 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.button2 = new System.Windows.Forms.Button();

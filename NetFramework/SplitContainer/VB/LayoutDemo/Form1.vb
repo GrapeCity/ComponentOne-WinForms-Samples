@@ -2,7 +2,7 @@
 
 Public Class Form1
 
-    Private Sub c1SplitterPanel6_DrawHeader(ByVal sender As System.Object, ByVal e As C1.Win.C1SplitContainer.DrawHeaderEventArgs) Handles c1SplitterPanel6.DrawHeader
+    Private Sub c1SplitterPanel6_DrawHeader(ByVal sender As System.Object, ByVal e As C1.Win.SplitContainer.DrawHeaderEventArgs) Handles c1SplitterPanel6.DrawHeader
 
         Dim lgb As LinearGradientBrush = New LinearGradientBrush(e.Bounds, Color.MistyRose, Color.SteelBlue, 90.0F)
         e.Graphics.FillRectangle(lgb, e.Bounds)
@@ -10,7 +10,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub c1SplitterPanel6_DrawSplitter(ByVal sender As System.Object, ByVal e As C1.Win.C1SplitContainer.DrawSplitterEventArgs) Handles c1SplitterPanel6.DrawSplitter
+    Private Sub c1SplitterPanel6_DrawSplitter(ByVal sender As System.Object, ByVal e As C1.Win.SplitContainer.DrawSplitterEventArgs) Handles c1SplitterPanel6.DrawSplitter
 
         Dim pt1 As Point = e.Bounds.Location
         pt1.Y += e.Bounds.Height \ 2

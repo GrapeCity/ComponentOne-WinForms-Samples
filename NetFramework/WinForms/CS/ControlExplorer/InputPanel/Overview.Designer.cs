@@ -29,61 +29,61 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Overview));
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox1 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputNumericBox1 = new C1.Win.C1InputPanel.InputNumericBox();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputMaskedTextBox1 = new C1.Win.C1InputPanel.InputMaskedTextBox();
-            this.inputLabel5 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputDatePicker1 = new C1.Win.C1InputPanel.InputDatePicker();
-            this.inputLabel6 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTimePicker1 = new C1.Win.C1InputPanel.InputTimePicker();
-            this.inputLabel7 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputComboBox2 = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputOption5 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption6 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption7 = new C1.Win.C1InputPanel.InputOption();
-            this.inputLabel19 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputComboBox3 = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputOption8 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption9 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption10 = new C1.Win.C1InputPanel.InputOption();
-            this.inputLabel8 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputRadioButton1 = new C1.Win.C1InputPanel.InputRadioButton();
-            this.inputRadioButton2 = new C1.Win.C1InputPanel.InputRadioButton();
-            this.inputLabel9 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputCheckBox1 = new C1.Win.C1InputPanel.InputCheckBox();
-            this.inputLabel11 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputHtmlLabel1 = new C1.Win.C1InputPanel.InputHtmlLabel();
-            this.inputLabel12 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputImage1 = new C1.Win.C1InputPanel.InputImage();
-            this.inputSeparator1 = new C1.Win.C1InputPanel.InputSeparator();
-            this.inputLabel10 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputButton1 = new C1.Win.C1InputPanel.InputButton();
-            this.inputLabel14 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputSplitButton2 = new C1.Win.C1InputPanel.InputSplitButton();
-            this.inputButton4 = new C1.Win.C1InputPanel.InputButton();
-            this.inputButton5 = new C1.Win.C1InputPanel.InputButton();
-            this.inputLabel13 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputMenu1 = new C1.Win.C1InputPanel.InputMenu();
-            this.inputGroupHeader2 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputButton2 = new C1.Win.C1InputPanel.InputButton();
-            this.inputButton3 = new C1.Win.C1InputPanel.InputButton();
-            this.inputSeparator2 = new C1.Win.C1InputPanel.InputSeparator();
-            this.inputSplitButton1 = new C1.Win.C1InputPanel.InputSplitButton();
-            this.inputButton6 = new C1.Win.C1InputPanel.InputButton();
-            this.inputButton7 = new C1.Win.C1InputPanel.InputButton();
-            this.inputLabel15 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTrackBar1 = new C1.Win.C1InputPanel.InputTrackBar();
-            this.inputLabel18 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputProgressBar1 = new C1.Win.C1InputPanel.InputProgressBar();
-            this.inputGroupHeader3 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel16 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputDataNavigator1 = new C1.Win.C1InputPanel.InputDataNavigator();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox1 = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            this.inputNumericBox1 = new C1.Win.InputPanel.InputNumericBox();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            this.inputMaskedTextBox1 = new C1.Win.InputPanel.InputMaskedTextBox();
+            this.inputLabel5 = new C1.Win.InputPanel.InputLabel();
+            this.inputDatePicker1 = new C1.Win.InputPanel.InputDatePicker();
+            this.inputLabel6 = new C1.Win.InputPanel.InputLabel();
+            this.inputTimePicker1 = new C1.Win.InputPanel.InputTimePicker();
+            this.inputLabel7 = new C1.Win.InputPanel.InputLabel();
+            this.inputComboBox2 = new C1.Win.InputPanel.InputComboBox();
+            this.inputOption5 = new C1.Win.InputPanel.InputOption();
+            this.inputOption6 = new C1.Win.InputPanel.InputOption();
+            this.inputOption7 = new C1.Win.InputPanel.InputOption();
+            this.inputLabel19 = new C1.Win.InputPanel.InputLabel();
+            this.inputComboBox3 = new C1.Win.InputPanel.InputComboBox();
+            this.inputOption8 = new C1.Win.InputPanel.InputOption();
+            this.inputOption9 = new C1.Win.InputPanel.InputOption();
+            this.inputOption10 = new C1.Win.InputPanel.InputOption();
+            this.inputLabel8 = new C1.Win.InputPanel.InputLabel();
+            this.inputRadioButton1 = new C1.Win.InputPanel.InputRadioButton();
+            this.inputRadioButton2 = new C1.Win.InputPanel.InputRadioButton();
+            this.inputLabel9 = new C1.Win.InputPanel.InputLabel();
+            this.inputCheckBox1 = new C1.Win.InputPanel.InputCheckBox();
+            this.inputLabel11 = new C1.Win.InputPanel.InputLabel();
+            this.inputHtmlLabel1 = new C1.Win.InputPanel.InputHtmlLabel();
+            this.inputLabel12 = new C1.Win.InputPanel.InputLabel();
+            this.inputImage1 = new C1.Win.InputPanel.InputImage();
+            this.inputSeparator1 = new C1.Win.InputPanel.InputSeparator();
+            this.inputLabel10 = new C1.Win.InputPanel.InputLabel();
+            this.inputButton1 = new C1.Win.InputPanel.InputButton();
+            this.inputLabel14 = new C1.Win.InputPanel.InputLabel();
+            this.inputSplitButton2 = new C1.Win.InputPanel.InputSplitButton();
+            this.inputButton4 = new C1.Win.InputPanel.InputButton();
+            this.inputButton5 = new C1.Win.InputPanel.InputButton();
+            this.inputLabel13 = new C1.Win.InputPanel.InputLabel();
+            this.inputMenu1 = new C1.Win.InputPanel.InputMenu();
+            this.inputGroupHeader2 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputButton2 = new C1.Win.InputPanel.InputButton();
+            this.inputButton3 = new C1.Win.InputPanel.InputButton();
+            this.inputSeparator2 = new C1.Win.InputPanel.InputSeparator();
+            this.inputSplitButton1 = new C1.Win.InputPanel.InputSplitButton();
+            this.inputButton6 = new C1.Win.InputPanel.InputButton();
+            this.inputButton7 = new C1.Win.InputPanel.InputButton();
+            this.inputLabel15 = new C1.Win.InputPanel.InputLabel();
+            this.inputTrackBar1 = new C1.Win.InputPanel.InputTrackBar();
+            this.inputLabel18 = new C1.Win.InputPanel.InputLabel();
+            this.inputProgressBar1 = new C1.Win.InputPanel.InputProgressBar();
+            this.inputGroupHeader3 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel16 = new C1.Win.InputPanel.InputLabel();
+            this.inputDataNavigator1 = new C1.Win.InputPanel.InputDataNavigator();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -237,7 +237,7 @@
             // 
             // inputComboBox3
             // 
-            this.inputComboBox3.DropDownStyle = C1.Win.C1InputPanel.InputComboBoxStyle.DropDownList;
+            this.inputComboBox3.DropDownStyle = C1.Win.InputPanel.InputComboBoxStyle.DropDownList;
             this.inputComboBox3.Items.Add(this.inputOption8);
             this.inputComboBox3.Items.Add(this.inputOption9);
             this.inputComboBox3.Items.Add(this.inputOption10);
@@ -266,7 +266,7 @@
             // 
             // inputRadioButton1
             // 
-            this.inputRadioButton1.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputRadioButton1.Break = C1.Win.InputPanel.BreakType.None;
             this.inputRadioButton1.Name = "inputRadioButton1";
             this.inputRadioButton1.Text = "Option 1";
             // 
@@ -285,7 +285,7 @@
             // 
             // inputCheckBox1
             // 
-            this.inputCheckBox1.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.inputCheckBox1.Break = C1.Win.InputPanel.BreakType.Column;
             this.inputCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.inputCheckBox1.Name = "inputCheckBox1";
             // 
@@ -297,7 +297,7 @@
             // 
             // inputHtmlLabel1
             // 
-            this.inputHtmlLabel1.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.inputHtmlLabel1.Break = C1.Win.InputPanel.BreakType.Row;
             this.inputHtmlLabel1.Name = "inputHtmlLabel1";
             this.inputHtmlLabel1.Text = "For <strong><u>RICH</u></strong> <font color=\"red\">text</font>";
             // 
@@ -325,7 +325,7 @@
             // inputButton1
             // 
             this.inputButton1.Image = ((System.Drawing.Image)(resources.GetObject("inputButton1.Image")));
-            this.inputButton1.ImageAlign = C1.Win.C1InputPanel.InputImageAlignment.MiddleRight;
+            this.inputButton1.ImageAlign = C1.Win.InputPanel.InputImageAlignment.MiddleRight;
             this.inputButton1.Name = "inputButton1";
             this.inputButton1.Text = "Submit";
             // 
@@ -491,60 +491,60 @@
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
-        private C1.Win.C1InputPanel.InputNumericBox inputNumericBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
-        private C1.Win.C1InputPanel.InputMaskedTextBox inputMaskedTextBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel5;
-        private C1.Win.C1InputPanel.InputDatePicker inputDatePicker1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel6;
-        private C1.Win.C1InputPanel.InputTimePicker inputTimePicker1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel7;
-        private C1.Win.C1InputPanel.InputComboBox inputComboBox2;
-        private C1.Win.C1InputPanel.InputSeparator inputSeparator1;
-        private C1.Win.C1InputPanel.InputOption inputOption5;
-        private C1.Win.C1InputPanel.InputOption inputOption6;
-        private C1.Win.C1InputPanel.InputOption inputOption7;
-        private C1.Win.C1InputPanel.InputLabel inputLabel8;
-        private C1.Win.C1InputPanel.InputRadioButton inputRadioButton1;
-        private C1.Win.C1InputPanel.InputRadioButton inputRadioButton2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel9;
-        private C1.Win.C1InputPanel.InputCheckBox inputCheckBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel10;
-        private C1.Win.C1InputPanel.InputButton inputButton1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel11;
-        private C1.Win.C1InputPanel.InputHtmlLabel inputHtmlLabel1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel12;
-        private C1.Win.C1InputPanel.InputImage inputImage1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel13;
-        private C1.Win.C1InputPanel.InputMenu inputMenu1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel14;
-        private C1.Win.C1InputPanel.InputSplitButton inputSplitButton2;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader2;
-        private C1.Win.C1InputPanel.InputButton inputButton2;
-        private C1.Win.C1InputPanel.InputButton inputButton3;
-        private C1.Win.C1InputPanel.InputSeparator inputSeparator2;
-        private C1.Win.C1InputPanel.InputSplitButton inputSplitButton1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel15;
-        private C1.Win.C1InputPanel.InputTrackBar inputTrackBar1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel16;
-        private C1.Win.C1InputPanel.InputDataNavigator inputDataNavigator1;
-        private C1.Win.C1InputPanel.InputProgressBar inputProgressBar1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel18;
-        private C1.Win.C1InputPanel.InputButton inputButton4;
-        private C1.Win.C1InputPanel.InputButton inputButton5;
-        private C1.Win.C1InputPanel.InputButton inputButton6;
-        private C1.Win.C1InputPanel.InputButton inputButton7;
-        private C1.Win.C1InputPanel.InputLabel inputLabel19;
-        private C1.Win.C1InputPanel.InputComboBox inputComboBox3;
-        private C1.Win.C1InputPanel.InputOption inputOption8;
-        private C1.Win.C1InputPanel.InputOption inputOption9;
-        private C1.Win.C1InputPanel.InputOption inputOption10;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader3;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputTextBox inputTextBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputNumericBox inputNumericBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.InputMaskedTextBox inputMaskedTextBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel5;
+        private C1.Win.InputPanel.InputDatePicker inputDatePicker1;
+        private C1.Win.InputPanel.InputLabel inputLabel6;
+        private C1.Win.InputPanel.InputTimePicker inputTimePicker1;
+        private C1.Win.InputPanel.InputLabel inputLabel7;
+        private C1.Win.InputPanel.InputComboBox inputComboBox2;
+        private C1.Win.InputPanel.InputSeparator inputSeparator1;
+        private C1.Win.InputPanel.InputOption inputOption5;
+        private C1.Win.InputPanel.InputOption inputOption6;
+        private C1.Win.InputPanel.InputOption inputOption7;
+        private C1.Win.InputPanel.InputLabel inputLabel8;
+        private C1.Win.InputPanel.InputRadioButton inputRadioButton1;
+        private C1.Win.InputPanel.InputRadioButton inputRadioButton2;
+        private C1.Win.InputPanel.InputLabel inputLabel9;
+        private C1.Win.InputPanel.InputCheckBox inputCheckBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel10;
+        private C1.Win.InputPanel.InputButton inputButton1;
+        private C1.Win.InputPanel.InputLabel inputLabel11;
+        private C1.Win.InputPanel.InputHtmlLabel inputHtmlLabel1;
+        private C1.Win.InputPanel.InputLabel inputLabel12;
+        private C1.Win.InputPanel.InputImage inputImage1;
+        private C1.Win.InputPanel.InputLabel inputLabel13;
+        private C1.Win.InputPanel.InputMenu inputMenu1;
+        private C1.Win.InputPanel.InputLabel inputLabel14;
+        private C1.Win.InputPanel.InputSplitButton inputSplitButton2;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader2;
+        private C1.Win.InputPanel.InputButton inputButton2;
+        private C1.Win.InputPanel.InputButton inputButton3;
+        private C1.Win.InputPanel.InputSeparator inputSeparator2;
+        private C1.Win.InputPanel.InputSplitButton inputSplitButton1;
+        private C1.Win.InputPanel.InputLabel inputLabel15;
+        private C1.Win.InputPanel.InputTrackBar inputTrackBar1;
+        private C1.Win.InputPanel.InputLabel inputLabel16;
+        private C1.Win.InputPanel.InputDataNavigator inputDataNavigator1;
+        private C1.Win.InputPanel.InputProgressBar inputProgressBar1;
+        private C1.Win.InputPanel.InputLabel inputLabel18;
+        private C1.Win.InputPanel.InputButton inputButton4;
+        private C1.Win.InputPanel.InputButton inputButton5;
+        private C1.Win.InputPanel.InputButton inputButton6;
+        private C1.Win.InputPanel.InputButton inputButton7;
+        private C1.Win.InputPanel.InputLabel inputLabel19;
+        private C1.Win.InputPanel.InputComboBox inputComboBox3;
+        private C1.Win.InputPanel.InputOption inputOption8;
+        private C1.Win.InputPanel.InputOption inputOption9;
+        private C1.Win.InputPanel.InputOption inputOption10;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader3;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
     }
 }

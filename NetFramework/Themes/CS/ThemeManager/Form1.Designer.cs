@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.ctdbgThemes = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.ctdbgThemes = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.btnAdd = new C1.Win.C1Input.C1Button();
             this.btnRemove = new C1.Win.C1Input.C1Button();
             this.btnSetAsApplicationTheme = new C1.Win.C1Input.C1Button();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1Label1 = new C1.Win.C1Input.C1Label();
             this.tbApplicationTheme = new C1.Win.C1Input.C1TextBox();
             this.c1Label2 = new C1.Win.C1Input.C1Label();
@@ -75,11 +76,11 @@
             this.ctdbgThemes.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.ctdbgThemes.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.ctdbgThemes.PreviewInfo.ZoomFactor = 75D;
-            this.ctdbgThemes.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.ctdbgThemes.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.ctdbgThemes.PrintInfo.MeasurementPrinterName = null;
             this.ctdbgThemes.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("ctdbgThemes.PrintInfo.PageSettings")));
             this.ctdbgThemes.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(87)))), ((int)(((byte)(70)))));
-            this.ctdbgThemes.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.ctdbgThemes.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.ctdbgThemes.RowHeight = 15;
             this.ctdbgThemes.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(87)))), ((int)(((byte)(70)))));
             this.ctdbgThemes.Size = new System.Drawing.Size(300, 276);
@@ -88,7 +89,7 @@
             this.c1ThemeController1.SetTheme(this.ctdbgThemes, "(default)");
             this.c1ThemeController1.SetThemeSettings(this.ctdbgThemes, null);
             this.ctdbgThemes.UseCompatibleTextRendering = false;
-            this.ctdbgThemes.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Custom;
+            this.ctdbgThemes.VisualStyle = C1.Win.TrueDBGrid.VisualStyle.Custom;
             this.ctdbgThemes.DoubleClick += new System.EventHandler(this.ctdbgThemes_DoubleClick);
             this.ctdbgThemes.Resize += new System.EventHandler(this.ctdbgThemes_Resize);
             this.ctdbgThemes.PropBag = resources.GetString("ctdbgThemes.PropBag");
@@ -298,11 +299,11 @@
 
         #endregion
 
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid ctdbgThemes;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid ctdbgThemes;
         private C1.Win.C1Input.C1Button btnAdd;
         private C1.Win.C1Input.C1Button btnRemove;
         private C1.Win.C1Input.C1Button btnSetAsApplicationTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Input.C1Label c1Label1;
         private C1.Win.C1Input.C1TextBox tbApplicationTheme;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;

@@ -40,7 +40,7 @@ Partial Class Form1
         Me.label1 = New System.Windows.Forms.Label()
         Me.tbFile = New System.Windows.Forms.TextBox()
         Me.openFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.c1PdfDocumentSource1 = New C1.Win.C1Document.C1PdfDocumentSource(Me.components)
+        Me.c1PdfDocumentSource1 = New C1.Win.Document.C1PdfDocumentSource(Me.components)
         Me.nudPageIndex = New System.Windows.Forms.NumericUpDown()
         Me.rbSinglePage = New System.Windows.Forms.RadioButton()
         Me.label4 = New System.Windows.Forms.Label()
@@ -271,7 +271,7 @@ Partial Class Form1
     Private WithEvents label1 As Label
     Private WithEvents tbFile As TextBox
     Private WithEvents openFileDialog1 As OpenFileDialog
-    Private WithEvents c1PdfDocumentSource1 As C1.Win.C1Document.C1PdfDocumentSource
+    Private WithEvents c1PdfDocumentSource1 As C1.Win.Document.C1PdfDocumentSource
     Private WithEvents nudPageIndex As NumericUpDown
     Private WithEvents rbSinglePage As RadioButton
     Private WithEvents label4 As Label

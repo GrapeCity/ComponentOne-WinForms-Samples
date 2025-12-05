@@ -26,7 +26,7 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Me.c1SsrsDocumentSource1 = New C1.Win.C1Document.C1SSRSDocumentSource()
+        Me.c1SsrsDocumentSource1 = New C1.Win.Document.C1SSRSDocumentSource()
         Me.ilMain = New System.Windows.Forms.ImageList(Me.components)
         Me.bwListReports = New System.ComponentModel.BackgroundWorker()
         Me.connPanel = New System.Windows.Forms.Panel()
@@ -257,7 +257,7 @@ Partial Class MainForm
 
     End Sub
 
-    Private WithEvents c1SsrsDocumentSource1 As C1.Win.C1Document.C1SSRSDocumentSource
+    Private WithEvents c1SsrsDocumentSource1 As C1.Win.Document.C1SSRSDocumentSource
     Private WithEvents ilMain As ImageList
     Private WithEvents bwListReports As System.ComponentModel.BackgroundWorker
     Private WithEvents connPanel As Panel

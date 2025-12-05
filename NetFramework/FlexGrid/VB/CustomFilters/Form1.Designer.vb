@@ -24,7 +24,7 @@
 		''' </summary>
 		Private Sub InitializeComponent()
 			Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-			Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+			Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
 			CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
@@ -39,7 +39,7 @@
 			Me._flex.Size = New Size(827, 384)
 			Me._flex.StyleInfo = resources.GetString("_flex.StyleInfo")
 			Me._flex.TabIndex = 0
-			Me._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue
+			Me._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue
 			' 
 			' Form1
 			' 
@@ -59,7 +59,7 @@
 
 		#End Region
 
-		Private _flex As C1.Win.C1FlexGrid.C1FlexGrid
+		Private _flex As C1.Win.FlexGrid.C1FlexGrid
 	End Class
 End Namespace
 

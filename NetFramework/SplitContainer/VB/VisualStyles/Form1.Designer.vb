@@ -23,33 +23,33 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.c1SplitContainer1 = New C1.Win.C1SplitContainer.C1SplitContainer
-        Me.c1SplitterPanel1 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1SplitContainer2 = New C1.Win.C1SplitContainer.C1SplitContainer
-        Me.c1SplitterPanel2 = New C1.Win.C1SplitContainer.C1SplitterPanel
+        Me.c1SplitContainer1 = New C1.Win.SplitContainer.C1SplitContainer
+        Me.c1SplitterPanel1 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1SplitContainer2 = New C1.Win.SplitContainer.C1SplitContainer
+        Me.c1SplitterPanel2 = New C1.Win.SplitContainer.C1SplitterPanel
         Me.btnInnerReset = New System.Windows.Forms.Button
         Me.cbInnerStyle = New System.Windows.Forms.ComboBox
-        Me.c1SplitterPanel4 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid
-        Me.c1SplitterPanel3 = New C1.Win.C1SplitContainer.C1SplitterPanel
+        Me.c1SplitterPanel4 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid
+        Me.c1SplitterPanel3 = New C1.Win.SplitContainer.C1SplitterPanel
         Me.btnOuterReset = New System.Windows.Forms.Button
         Me.cbOuterStyle = New System.Windows.Forms.ComboBox
-        Me.c1SplitterPanel5 = New C1.Win.C1SplitContainer.C1SplitterPanel
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel
-        Me.inputGroupHeader1 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel1 = New C1.Win.C1InputPanel.InputLabel
-        Me.cbPanelStyle = New C1.Win.C1InputPanel.InputComboBox
-        Me.inputOption1 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption2 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption3 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption4 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption5 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption6 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption7 = New C1.Win.C1InputPanel.InputOption
-        Me.inputOption8 = New C1.Win.C1InputPanel.InputOption
-        Me.btnPanelReset = New C1.Win.C1InputPanel.InputButton
-        Me.inputCheckBox1 = New C1.Win.C1InputPanel.InputCheckBox
-        Me.inputTrackBar1 = New C1.Win.C1InputPanel.InputTrackBar
+        Me.c1SplitterPanel5 = New C1.Win.SplitContainer.C1SplitterPanel
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel
+        Me.inputGroupHeader1 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel1 = New C1.Win.InputPanel.InputLabel
+        Me.cbPanelStyle = New C1.Win.InputPanel.InputComboBox
+        Me.inputOption1 = New C1.Win.InputPanel.InputOption
+        Me.inputOption2 = New C1.Win.InputPanel.InputOption
+        Me.inputOption3 = New C1.Win.InputPanel.InputOption
+        Me.inputOption4 = New C1.Win.InputPanel.InputOption
+        Me.inputOption5 = New C1.Win.InputPanel.InputOption
+        Me.inputOption6 = New C1.Win.InputPanel.InputOption
+        Me.inputOption7 = New C1.Win.InputPanel.InputOption
+        Me.inputOption8 = New C1.Win.InputPanel.InputOption
+        Me.btnPanelReset = New C1.Win.InputPanel.InputButton
+        Me.inputCheckBox1 = New C1.Win.InputPanel.InputCheckBox
+        Me.inputTrackBar1 = New C1.Win.InputPanel.InputTrackBar
         Me.CheckBox1 = New System.Windows.Forms.CheckBox
         Me.CheckBox2 = New System.Windows.Forms.CheckBox
         CType(Me.c1SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,12 +84,12 @@ Partial Class Form1
         Me.c1SplitContainer1.SplitterColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(185, Byte), Integer))
         Me.c1SplitContainer1.SplitterWidth = 6
         Me.c1SplitContainer1.TabIndex = 3
-        Me.c1SplitContainer1.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue
+        Me.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue
         '
         'c1SplitterPanel1
         '
         Me.c1SplitterPanel1.Controls.Add(Me.c1SplitContainer2)
-        Me.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right
+        Me.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Right
         Me.c1SplitterPanel1.Location = New System.Drawing.Point(240, 1)
         Me.c1SplitterPanel1.Name = "c1SplitterPanel1"
         Me.c1SplitterPanel1.Size = New System.Drawing.Size(234, 290)
@@ -113,7 +113,7 @@ Partial Class Form1
         Me.c1SplitContainer2.SplitterColor = System.Drawing.Color.FromArgb(CType(CType(119, Byte), Integer), CType(CType(147, Byte), Integer), CType(CType(185, Byte), Integer))
         Me.c1SplitContainer2.SplitterWidth = 6
         Me.c1SplitContainer2.TabIndex = 0
-        Me.c1SplitContainer2.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue
+        Me.c1SplitContainer2.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue
         '
         'c1SplitterPanel2
         '
@@ -121,7 +121,7 @@ Partial Class Form1
         Me.c1SplitterPanel2.Controls.Add(Me.CheckBox2)
         Me.c1SplitterPanel2.Controls.Add(Me.btnInnerReset)
         Me.c1SplitterPanel2.Controls.Add(Me.cbInnerStyle)
-        Me.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Bottom
+        Me.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Bottom
         Me.c1SplitterPanel2.Height = 91
         Me.c1SplitterPanel2.Location = New System.Drawing.Point(0, 230)
         Me.c1SplitterPanel2.Name = "c1SplitterPanel2"
@@ -164,7 +164,7 @@ Partial Class Form1
         Me.c1FlexGrid1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,100,Columns:"
         Me.c1FlexGrid1.Location = New System.Drawing.Point(3, 3)
         Me.c1FlexGrid1.Name = "c1FlexGrid1"
@@ -239,17 +239,17 @@ Partial Class Form1
         '
         'inputLabel1
         '
-        Me.inputLabel1.Break = C1.Win.C1InputPanel.BreakType.Row
+        Me.inputLabel1.Break = C1.Win.InputPanel.BreakType.Row
         Me.inputLabel1.Height = 23
         Me.inputLabel1.Name = "inputLabel1"
         Me.inputLabel1.Text = "Panel Style:"
-        Me.inputLabel1.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.inputLabel1.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.inputLabel1.Width = 61
         '
         'cbPanelStyle
         '
-        Me.cbPanelStyle.Break = C1.Win.C1InputPanel.BreakType.None
-        Me.cbPanelStyle.DropDownStyle = C1.Win.C1InputPanel.InputComboBoxStyle.DropDownList
+        Me.cbPanelStyle.Break = C1.Win.InputPanel.BreakType.None
+        Me.cbPanelStyle.DropDownStyle = C1.Win.InputPanel.InputComboBoxStyle.DropDownList
         Me.cbPanelStyle.Height = 26
         Me.cbPanelStyle.Items.Add(Me.inputOption1)
         Me.cbPanelStyle.Items.Add(Me.inputOption2)
@@ -260,7 +260,7 @@ Partial Class Form1
         Me.cbPanelStyle.Items.Add(Me.inputOption7)
         Me.cbPanelStyle.Items.Add(Me.inputOption8)
         Me.cbPanelStyle.Name = "cbPanelStyle"
-        Me.cbPanelStyle.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.cbPanelStyle.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         Me.cbPanelStyle.Width = 110
         '
         'inputOption1
@@ -308,7 +308,7 @@ Partial Class Form1
         Me.btnPanelReset.Height = 26
         Me.btnPanelReset.Name = "btnPanelReset"
         Me.btnPanelReset.Text = "Reset Style"
-        Me.btnPanelReset.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far
+        Me.btnPanelReset.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far
         '
         'inputCheckBox1
         '
@@ -365,33 +365,33 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents c1SplitContainer1 As C1.Win.C1SplitContainer.C1SplitContainer
-    Private WithEvents c1SplitterPanel1 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1SplitContainer2 As C1.Win.C1SplitContainer.C1SplitContainer
-    Private WithEvents c1SplitterPanel2 As C1.Win.C1SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitContainer1 As C1.Win.SplitContainer.C1SplitContainer
+    Private WithEvents c1SplitterPanel1 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitContainer2 As C1.Win.SplitContainer.C1SplitContainer
+    Private WithEvents c1SplitterPanel2 As C1.Win.SplitContainer.C1SplitterPanel
     Private WithEvents btnInnerReset As System.Windows.Forms.Button
     Private WithEvents cbInnerStyle As System.Windows.Forms.ComboBox
-    Private WithEvents c1SplitterPanel4 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Private WithEvents c1SplitterPanel3 As C1.Win.C1SplitContainer.C1SplitterPanel
+    Private WithEvents c1SplitterPanel4 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Private WithEvents c1SplitterPanel3 As C1.Win.SplitContainer.C1SplitterPanel
     Private WithEvents btnOuterReset As System.Windows.Forms.Button
     Private WithEvents cbOuterStyle As System.Windows.Forms.ComboBox
-    Private WithEvents c1SplitterPanel5 As C1.Win.C1SplitContainer.C1SplitterPanel
-    Private WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Private WithEvents inputGroupHeader1 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel1 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents cbPanelStyle As C1.Win.C1InputPanel.InputComboBox
-    Private WithEvents inputOption1 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption2 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption3 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption4 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption5 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption6 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption7 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents inputOption8 As C1.Win.C1InputPanel.InputOption
-    Private WithEvents btnPanelReset As C1.Win.C1InputPanel.InputButton
-    Private WithEvents inputCheckBox1 As C1.Win.C1InputPanel.InputCheckBox
-    Private WithEvents inputTrackBar1 As C1.Win.C1InputPanel.InputTrackBar
+    Private WithEvents c1SplitterPanel5 As C1.Win.SplitContainer.C1SplitterPanel
+    Private WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Private WithEvents inputGroupHeader1 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel1 As C1.Win.InputPanel.InputLabel
+    Private WithEvents cbPanelStyle As C1.Win.InputPanel.InputComboBox
+    Private WithEvents inputOption1 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption2 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption3 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption4 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption5 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption6 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption7 As C1.Win.InputPanel.InputOption
+    Private WithEvents inputOption8 As C1.Win.InputPanel.InputOption
+    Private WithEvents btnPanelReset As C1.Win.InputPanel.InputButton
+    Private WithEvents inputCheckBox1 As C1.Win.InputPanel.InputCheckBox
+    Private WithEvents inputTrackBar1 As C1.Win.InputPanel.InputTrackBar
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 

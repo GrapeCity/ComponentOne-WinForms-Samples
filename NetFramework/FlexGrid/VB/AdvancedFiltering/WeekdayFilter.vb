@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1FlexGrid
+﻿Imports C1.Win.FlexGrid
 Imports System
 
 Namespace AdvancedFiltering

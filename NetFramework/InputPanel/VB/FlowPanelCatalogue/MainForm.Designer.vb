@@ -34,9 +34,9 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel()
-        Me.inputFlowPanel1 = New C1.Win.C1InputPanel.InputFlowPanel()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel()
+        Me.inputFlowPanel1 = New C1.Win.InputPanel.InputFlowPanel()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -144,9 +144,9 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
 
-    Friend WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Friend WithEvents inputFlowPanel1 As C1.Win.C1InputPanel.InputFlowPanel
+    Friend WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Friend WithEvents inputFlowPanel1 As C1.Win.InputPanel.InputFlowPanel
 End Class

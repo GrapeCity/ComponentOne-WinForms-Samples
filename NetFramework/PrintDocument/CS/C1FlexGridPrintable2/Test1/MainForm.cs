@@ -8,14 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace C1FlexGridPrinterTest
 {
     public partial class MainForm : Form
     {
         private SampleWrapper _selectedWrapper = null;
-        private C1.Win.C1FlexGrid.C1FlexGridPrintInfo _printInfo = new C1FlexGridPrintInfo();
+        private C1.Win.FlexGrid.C1FlexGridPrintInfo _printInfo = new C1FlexGridPrintInfo();
 
         public MainForm()
         {
@@ -107,7 +107,7 @@ namespace C1FlexGridPrinterTest
                     C1FlexGrid flex = _selectedWrapper.Flex;
                     if (flex != null)
                     {
-                        C1.Win.C1FlexGrid.C1FlexGridPrinter printer = new C1.Win.C1FlexGrid.C1FlexGridPrinter(flex);
+                        C1.Win.FlexGrid.C1FlexGridPrinter printer = new C1.Win.FlexGrid.C1FlexGridPrinter(flex);
                         printer.LongOperation += new LongOperationEventHandler(printer_LongOperation);
 
                         doc = new C1.C1Preview.C1PrintDocument();

@@ -34,10 +34,10 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.RibbonCMBThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.C1DataFilter1 = New C1.Win.DataFilter.C1DataFilter()
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,7 +140,7 @@ Partial Class MainForm
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
-        Me.C1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.C1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.C1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
         Me.C1TrueDBGrid1.Size = New System.Drawing.Size(1235, 560)
         Me.C1TrueDBGrid1.TabIndex = 0
@@ -181,8 +181,8 @@ Partial Class MainForm
     Private WithEvents RibbonTab1 As RibbonTab
     Private WithEvents RibbonGroup1 As RibbonGroup
     Private WithEvents RibbonTopToolBar1 As RibbonTopToolBar
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents C1DataFilter1 As C1.Win.DataFilter.C1DataFilter
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
 End Class

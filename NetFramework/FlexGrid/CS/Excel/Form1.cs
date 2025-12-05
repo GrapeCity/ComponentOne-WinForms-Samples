@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.IO;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace Excel
 {
@@ -14,7 +14,7 @@ namespace Excel
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button _btnLoadSheet;
 		private System.Windows.Forms.Button _btnSaveSheet;
 		private System.Windows.Forms.Button _btnLoadData;
@@ -59,89 +59,90 @@ namespace Excel
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this._btnLoadSheet = new System.Windows.Forms.Button();
-			this._btnSaveSheet = new System.Windows.Forms.Button();
-			this._btnLoadData = new System.Windows.Forms.Button();
-			this._chkFixed = new System.Windows.Forms.CheckBox();
-			this._btnMultiSheet = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Spill;
-			this._flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
-			this._flex.BackColor = System.Drawing.SystemColors.Window;
-			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:25;}\t";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.Location = new System.Drawing.Point(0, 40);
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(616, 317);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			// 
-			// _btnLoadSheet
-			// 
-			this._btnLoadSheet.Location = new System.Drawing.Point(8, 8);
-			this._btnLoadSheet.Name = "_btnLoadSheet";
-			this._btnLoadSheet.Size = new System.Drawing.Size(96, 24);
-			this._btnLoadSheet.TabIndex = 1;
-			this._btnLoadSheet.Text = "&Load Sheet...";
-			this._btnLoadSheet.Click += new System.EventHandler(this._btnLoadSheet_Click);
-			// 
-			// _btnSaveSheet
-			// 
-			this._btnSaveSheet.Location = new System.Drawing.Point(112, 8);
-			this._btnSaveSheet.Name = "_btnSaveSheet";
-			this._btnSaveSheet.Size = new System.Drawing.Size(96, 24);
-			this._btnSaveSheet.TabIndex = 1;
-			this._btnSaveSheet.Text = "&Save Sheet...";
-			this._btnSaveSheet.Click += new System.EventHandler(this._btnSaveSheet_Click);
-			// 
-			// _btnLoadData
-			// 
-			this._btnLoadData.Location = new System.Drawing.Point(368, 8);
-			this._btnLoadData.Name = "_btnLoadData";
-			this._btnLoadData.Size = new System.Drawing.Size(72, 24);
-			this._btnLoadData.TabIndex = 1;
-			this._btnLoadData.Text = "Load &Data";
-			this._btnLoadData.Click += new System.EventHandler(this._btnLoadData_Click);
-			// 
-			// _chkFixed
-			// 
-			this._chkFixed.Location = new System.Drawing.Point(224, 12);
-			this._chkFixed.Name = "_chkFixed";
-			this._chkFixed.Size = new System.Drawing.Size(120, 16);
-			this._chkFixed.TabIndex = 2;
-			this._chkFixed.Text = "Include fixed cells";
-			// 
-			// _btnMultiSheet
-			// 
-			this._btnMultiSheet.Location = new System.Drawing.Point(448, 8);
-			this._btnMultiSheet.Name = "_btnMultiSheet";
-			this._btnMultiSheet.Size = new System.Drawing.Size(120, 24);
-			this._btnMultiSheet.TabIndex = 1;
-			this._btnMultiSheet.Text = "Save &Multi-Sheet";
-			this._btnMultiSheet.Click += new System.EventHandler(this._btnMultiSheet_Click);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(616, 357);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._chkFixed,
-																		  this._btnLoadSheet,
-																		  this._flex,
-																		  this._btnSaveSheet,
-																		  this._btnLoadData,
-																		  this._btnMultiSheet});
-			this.DockPadding.Top = 40;
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Import and Export Excel files";
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._btnLoadSheet = new System.Windows.Forms.Button();
+            this._btnSaveSheet = new System.Windows.Forms.Button();
+            this._btnLoadData = new System.Windows.Forms.Button();
+            this._chkFixed = new System.Windows.Forms.CheckBox();
+            this._btnMultiSheet = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Spill;
+            this._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
+            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:25;}\t";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 40);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(616, 317);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            // 
+            // _btnLoadSheet
+            // 
+            this._btnLoadSheet.Location = new System.Drawing.Point(16, 15);
+            this._btnLoadSheet.Name = "_btnLoadSheet";
+            this._btnLoadSheet.Size = new System.Drawing.Size(192, 44);
+            this._btnLoadSheet.TabIndex = 1;
+            this._btnLoadSheet.Text = "&Load Sheet...";
+            this._btnLoadSheet.Click += new System.EventHandler(this._btnLoadSheet_Click);
+            // 
+            // _btnSaveSheet
+            // 
+            this._btnSaveSheet.Location = new System.Drawing.Point(224, 15);
+            this._btnSaveSheet.Name = "_btnSaveSheet";
+            this._btnSaveSheet.Size = new System.Drawing.Size(192, 44);
+            this._btnSaveSheet.TabIndex = 1;
+            this._btnSaveSheet.Text = "&Save Sheet...";
+            this._btnSaveSheet.Click += new System.EventHandler(this._btnSaveSheet_Click);
+            // 
+            // _btnLoadData
+            // 
+            this._btnLoadData.Location = new System.Drawing.Point(736, 15);
+            this._btnLoadData.Name = "_btnLoadData";
+            this._btnLoadData.Size = new System.Drawing.Size(144, 44);
+            this._btnLoadData.TabIndex = 1;
+            this._btnLoadData.Text = "Load &Data";
+            this._btnLoadData.Click += new System.EventHandler(this._btnLoadData_Click);
+            // 
+            // _chkFixed
+            // 
+            this._chkFixed.Location = new System.Drawing.Point(448, 22);
+            this._chkFixed.Name = "_chkFixed";
+            this._chkFixed.Size = new System.Drawing.Size(240, 30);
+            this._chkFixed.TabIndex = 2;
+            this._chkFixed.Text = "Include fixed cells";
+            // 
+            // _btnMultiSheet
+            // 
+            this._btnMultiSheet.Location = new System.Drawing.Point(896, 15);
+            this._btnMultiSheet.Name = "_btnMultiSheet";
+            this._btnMultiSheet.Size = new System.Drawing.Size(240, 44);
+            this._btnMultiSheet.TabIndex = 1;
+            this._btnMultiSheet.Text = "Save &Multi-Sheet";
+            this._btnMultiSheet.Click += new System.EventHandler(this._btnMultiSheet_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(616, 357);
+            this.Controls.Add(this._chkFixed);
+            this.Controls.Add(this._btnLoadSheet);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this._btnSaveSheet);
+            this.Controls.Add(this._btnLoadData);
+            this.Controls.Add(this._btnMultiSheet);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Import and Export Excel files";
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

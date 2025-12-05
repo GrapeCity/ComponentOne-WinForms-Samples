@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace LockedColumns
 {
@@ -14,7 +14,7 @@ namespace LockedColumns
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Label label2;
 		/// <summary>
 		/// Required designer variable.
@@ -55,44 +55,47 @@ namespace LockedColumns
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this.label2 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
-			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.Name = "_flex";
-			this._flex.Rows.DefaultSize = 17;
-			this._flex.Size = new System.Drawing.Size(600, 325);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			this._flex.BeforeSelChange += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_BeforeSelChange);
-			this._flex.BeforeDoubleClick += new C1.Win.C1FlexGrid.BeforeMouseDownEventHandler(this._flex_BeforeDoubleClick);
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(24, 288);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(232, 16);
-			this.label2.TabIndex = 1;
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(600, 325);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._flex,
-																		  this.label2});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Lock columns to prevent selection";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
+            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Name = "_flex";
+            this._flex.Rows.DefaultSize = 17;
+            this._flex.Size = new System.Drawing.Size(600, 325);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.BeforeDoubleClick += new C1.Win.FlexGrid.BeforeMouseDownEventHandler(this._flex_BeforeDoubleClick);
+            this._flex.BeforeSelChange += new C1.Win.FlexGrid.RangeEventHandler(this._flex_BeforeSelChange);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(48, 532);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(464, 29);
+            this.label2.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(600, 325);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Lock columns to prevent selection";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -134,7 +137,7 @@ namespace LockedColumns
 		}
 
 		// prevent selecting the locked columns
-		void _flex_BeforeSelChange(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+		void _flex_BeforeSelChange(object sender, C1.Win.FlexGrid.RangeEventArgs e)
 		{
 			// check if the new selection contains any bad columns
 			int badCol = -1;
@@ -184,7 +187,7 @@ namespace LockedColumns
 		}
 
 		// prevent editing the locked columns as well
-		void _flex_BeforeDoubleClick(object sender, C1.Win.C1FlexGrid.BeforeMouseDownEventArgs e)
+		void _flex_BeforeDoubleClick(object sender, C1.Win.FlexGrid.BeforeMouseDownEventArgs e)
 		{
 			if (_lockedCols.Contains(_flex.MouseCol))
 			{

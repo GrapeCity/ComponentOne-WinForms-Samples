@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace MapSample
 {
@@ -33,29 +33,30 @@ namespace MapSample
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.mapDockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapDockingTab = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
             this.mapDemo1 = new MapSample.Layers.MapDemo();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.mapCities1 = new MapSample.Layers.MapCities();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
             this.mapFactories1 = new MapSample.Layers.MapFactories();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage4 = new C1.Win.Command.C1DockingTabPage();
             this.mapEarthQuakes1 = new MapSample.Layers.MapEarthQuakes();
-            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage5 = new C1.Win.Command.C1DockingTabPage();
             this.mapFlightRoutes1 = new MapSample.Layers.MapFlightRoutes();
-            this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage6 = new C1.Win.Command.C1DockingTabPage();
             this.mapMarks1 = new MapSample.Layers.MapMarks();
-            this.c1DockingTabPage7 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage7 = new C1.Win.Command.C1DockingTabPage();
             this.mapKml1 = new MapSample.Layers.MapKml();
-            this.c1DockingTabPage8 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage8 = new C1.Win.Command.C1DockingTabPage();
             this.mapShape1 = new MapSample.Layers.MapShape();
-            this.c1DockingTabPage9 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage9 = new C1.Win.Command.C1DockingTabPage();
             this.mapGrid1 = new MapSample.Layers.MapGrid();
-            this.c1DockingTabPage10 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage10 = new C1.Win.Command.C1DockingTabPage();
             this.mapProjections1 = new MapSample.Layers.MapProjections();
-            this.c1DockingTabPage11 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage11 = new C1.Win.Command.C1DockingTabPage();
             this.mapAirports = new MapSample.Layers.AirportsControl();
             ((System.ComponentModel.ISupportInitialize)(this.mapDockingTab)).BeginInit();
             this.mapDockingTab.SuspendLayout();
@@ -334,18 +335,18 @@ namespace MapSample
         private Layers.MapProjections mapProjections1;
         private Layers.AirportsControl mapAirports;
         private System.Windows.Forms.ToolTip toolTip1;
-        private C1.Win.C1Command.C1DockingTab mapDockingTab;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage6;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage7;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage8;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage9;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage10;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage11;
+        private C1.Win.Command.C1DockingTab mapDockingTab;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage6;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage7;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage8;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage9;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage10;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage11;
     }
 }
 

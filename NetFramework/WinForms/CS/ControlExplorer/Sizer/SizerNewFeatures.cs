@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Sizer;
+using C1.Win.Sizer;
 
 namespace ControlExplorer.Sizer
 {
@@ -51,7 +51,7 @@ namespace ControlExplorer.Sizer
             minSizeBlock4 = new Size(150, 160);
         }
 
-        private void c1Sizer2_SplitterMoved(object sender, C1.Win.C1Sizer.C1SizerEventArgs e)
+        private void c1Sizer2_SplitterMoved(object sender, C1.Win.Sizer.C1SizerEventArgs e)
         {
             //c1SuperTooltip1.Show("Notice components in this Sizer panel got resized", button2);
             if (c1Sizer2.Grid.Columns[0].Size <= minSizeBlock1.Width)
@@ -66,7 +66,7 @@ namespace ControlExplorer.Sizer
 
         }
 
-        private void c1Sizer9_SplitterMoved(object sender, C1.Win.C1Sizer.C1SizerEventArgs e)
+        private void c1Sizer9_SplitterMoved(object sender, C1.Win.Sizer.C1SizerEventArgs e)
         {
             if (c1Sizer9.Grid.Columns[0].Size <= minSizeBlock3.Width)
             {
@@ -80,7 +80,7 @@ namespace ControlExplorer.Sizer
 
         }
 
-        private void c1Sizer1_SplitterMoved(object sender, C1.Win.C1Sizer.C1SizerEventArgs e)
+        private void c1Sizer1_SplitterMoved(object sender, C1.Win.Sizer.C1SizerEventArgs e)
         {
             if (c1Sizer1.Grid.Rows[0].Size <= minSizeBlock1.Height)
             {

@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Gauge
+﻿Imports C1.Win.Gauge
 
 Public Class PageKnob2
 
@@ -12,7 +12,7 @@ Public Class PageKnob2
         vLabel.Text = _v.ToString()
     End Sub
 
-    Private Sub c1RadialGauge1_PointerDragMove(ByVal sender As System.Object, ByVal e As C1.Win.C1Gauge.PointerDragEventArgs) Handles c1RadialGauge1.PointerDragMove
+    Private Sub c1RadialGauge1_PointerDragMove(ByVal sender As System.Object, ByVal e As C1.Win.Gauge.PointerDragEventArgs) Handles c1RadialGauge1.PointerDragMove
         SetNewValue1(e.NewValue)
     End Sub
 
@@ -35,7 +35,7 @@ Public Class PageKnob2
         End If
     End Sub
 
-    Private Sub c1RadialGauge2_PointerDragMove(ByVal sender As System.Object, ByVal e As C1.Win.C1Gauge.PointerDragEventArgs) Handles c1RadialGauge2.PointerDragMove
+    Private Sub c1RadialGauge2_PointerDragMove(ByVal sender As System.Object, ByVal e As C1.Win.Gauge.PointerDragEventArgs) Handles c1RadialGauge2.PointerDragMove
         SetNewValue2(e.NewValue)
     End Sub
 

@@ -7,7 +7,7 @@ using System.Drawing.Imaging;
 using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace AnimatedGif
 {

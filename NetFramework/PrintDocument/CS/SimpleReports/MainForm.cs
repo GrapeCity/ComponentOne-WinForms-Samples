@@ -1080,6 +1080,8 @@ namespace SimpleReports
             // adding assemblies used by charts
             _printDocument.ScriptingOptions.ExternalAssemblies.Add(typeof(Form).Assembly.ManifestModule.Name);
             _printDocument.ScriptingOptions.ExternalAssemblies.Add(typeof(C1.Win.Chart.FlexChart).Assembly.ManifestModule.Name);
+            _printDocument.ScriptingOptions.ExternalAssemblies.Add(typeof(C1.Chart.ChartType).Assembly.ManifestModule.Name);
+            _printDocument.ScriptingOptions.ExternalAssemblies.Add("netstandard");
             _printDocument.ScriptingOptions.ExternalAssemblies.Add("System.Data.dll");
             _printDocument.ScriptingOptions.ExternalAssemblies.Add("System.Xml.dll");
 

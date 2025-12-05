@@ -91,11 +91,11 @@
             this.ribbonButtonClearRulesFromSelectedCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonButtonClearRulesFromAllCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.commandDock = new C1.Win.C1Command.C1CommandDock();
-            this.dockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.dockingTabPageConditionalFormatting = new C1.Win.C1Command.C1DockingTabPage();
+            this.commandDock = new C1.Win.Command.C1CommandDock();
+            this.dockingTab = new C1.Win.Command.C1DockingTab();
+            this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
             this.rulesManager = new C1.Win.RulesManager.C1RulesManager();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).BeginInit();
             this.commandDock.SuspendLayout();
@@ -644,15 +644,15 @@
             this.dockingTab.ShowSingleTab = false;
             this.dockingTab.Size = new System.Drawing.Size(200, 709);
             this.dockingTab.TabIndex = 0;
-            this.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
-            this.dockingTab.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.dockingTab.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
+            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // dockingTabPageConditionalFormatting
             // 
             this.dockingTabPageConditionalFormatting.CaptionText = "Conditional Formatting";
             this.dockingTabPageConditionalFormatting.CaptionVisible = true;
-            this.dockingTabPageConditionalFormatting.CloseTabBehavior = C1.Win.C1Command.CloseTabBehavior.Hide;
+            this.dockingTabPageConditionalFormatting.CloseTabBehavior = C1.Win.Command.CloseTabBehavior.Hide;
             this.dockingTabPageConditionalFormatting.Controls.Add(this.rulesManager);
             this.dockingTabPageConditionalFormatting.Location = new System.Drawing.Point(4, 1);
             this.dockingTabPageConditionalFormatting.Name = "dockingTabPageConditionalFormatting";
@@ -673,14 +673,14 @@
             // 
             // flexGrid
             // 
-            this.flexGrid.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
+            this.flexGrid.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.rulesManager.SetC1RulesManager(this.flexGrid, this.rulesManager);
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flexGrid.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.flexGrid.Location = new System.Drawing.Point(0, 43);
             this.flexGrid.Name = "flexGrid";
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(892, 709);
             this.flexGrid.TabIndex = 1;
             this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
@@ -773,10 +773,10 @@
         private C1.Win.Ribbon.RibbonMenu ribbonMenuClearRules;
         private C1.Win.Ribbon.RibbonButton ribbonButtonClearRulesFromSelectedCells;
         private C1.Win.Ribbon.RibbonButton ribbonButtonClearRulesFromAllCells;
-        private C1.Win.C1Command.C1CommandDock commandDock;
-        private C1.Win.C1Command.C1DockingTab dockingTab;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPageConditionalFormatting;
+        private C1.Win.Command.C1CommandDock commandDock;
+        private C1.Win.Command.C1DockingTab dockingTab;
+        private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
     }
 }

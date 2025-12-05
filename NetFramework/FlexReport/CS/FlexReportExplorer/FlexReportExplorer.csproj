@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
@@ -30,19 +26,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Map" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Document" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.TileControl" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Map" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -65,6 +61,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="PreviewForm.resx">
       <DependentUpon>PreviewForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,7 +72,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Reports\Controls\Images\AllCharts.Emf" />
     <EmbeddedResource Include="Reports\Controls\Images\BarcodeProductLabels.Emf" />
     <EmbeddedResource Include="Reports\Controls\Images\BarcodeShippingLabels.Emf" />

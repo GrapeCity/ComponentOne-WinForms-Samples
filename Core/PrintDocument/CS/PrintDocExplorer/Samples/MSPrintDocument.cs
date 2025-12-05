@@ -53,6 +53,7 @@ namespace PrintDocExplorer.Samples
             PrintDocumentType = ((ToolStripComboBox)sender).SelectedIndex == 0 ? PrintDocType.C1PrintDocument : PrintDocType.MSPrintDocument;
         }
 
+        [DefaultValue(PrintDocType.C1PrintDocument)]
         public PrintDocType PrintDocumentType
         {
             get => _printDocumentType;

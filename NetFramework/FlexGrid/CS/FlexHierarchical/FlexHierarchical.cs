@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
-namespace C1.Win.C1FlexGrid.Hierarchical
+namespace C1.Win.FlexGrid.Hierarchical
 {
 	public enum ButtonLayoutEnum
 	{
@@ -51,16 +51,16 @@ namespace C1.Win.C1FlexGrid.Hierarchical
 			_lbl.TextAlignChanged += new EventHandler(_label_Changed);
 
 			// initialize contained FlexGrid
-			_flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			_flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+			_flex = new C1.Win.FlexGrid.C1FlexGrid();
+			_flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 			_flex.Cols[0].Width = _flex.Rows[0].HeightDisplay * 2;
 			_flex.ShowCursor = true;
 			_flex.ShowErrors = true;
 			_flex.ForeColor = SystemColors.WindowText;
 			_flex.DrawMode = DrawModeEnum.OwnerDraw;
 			_flex.Cols[0].ImageAlign = ImageAlignEnum.RightCenter;
-			_flex.BeforeMouseDown += new C1.Win.C1FlexGrid.BeforeMouseDownEventHandler(_flex_BeforeMouseDown);
-			_flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(_flex_OwnerDrawCell);
+			_flex.BeforeMouseDown += new C1.Win.FlexGrid.BeforeMouseDownEventHandler(_flex_BeforeMouseDown);
+			_flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(_flex_OwnerDrawCell);
 			Controls.Add(_flex);
 
 			// initialize container
@@ -120,7 +120,7 @@ namespace C1.Win.C1FlexGrid.Hierarchical
 		TypeConverter(typeof(ExpandableObjectConverter)),
 		DesignerSerializationVisibility(DesignerSerializationVisibility.Content)
 		]
-		public C1.Win.C1FlexGrid.C1FlexGrid FlexGrid
+		public C1.Win.FlexGrid.C1FlexGrid FlexGrid
 		{
 			get { return _flex; }
 		}
@@ -210,7 +210,7 @@ namespace C1.Win.C1FlexGrid.Hierarchical
 		}
 
 		// show child table menu
-		private void _flex_BeforeMouseDown(object sender, C1.Win.C1FlexGrid.BeforeMouseDownEventArgs e)
+		private void _flex_BeforeMouseDown(object sender, C1.Win.FlexGrid.BeforeMouseDownEventArgs e)
 		{
 			// check that it's the Left button and that we have a menu
 			if (e.Button == MouseButtons.Left && _menu.MenuItems.Count > 0)
@@ -246,7 +246,7 @@ namespace C1.Win.C1FlexGrid.Hierarchical
 		}
 
 		// paint collapsed icon on row header cell
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (_menu.MenuItems.Count > 0 && e.Col == 0 && e.Row >= _flex.Rows.Fixed)
 				e.Image = _img;

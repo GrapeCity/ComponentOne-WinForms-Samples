@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace HyperlinkSample
 {
@@ -29,7 +29,7 @@ namespace HyperlinkSample
         }
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -71,7 +71,7 @@ namespace HyperlinkSample
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +79,7 @@ namespace HyperlinkSample
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:33;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 19;
@@ -87,7 +87,7 @@ namespace HyperlinkSample
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
             this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             this._flex.MouseDown += new System.Windows.Forms.MouseEventHandler(this._flex_MouseDown);
             this._flex.MouseMove += new System.Windows.Forms.MouseEventHandler(this._flex_MouseMove);
             // 
@@ -196,7 +196,7 @@ namespace HyperlinkSample
 		}
 
 		// use custom style for hyperlinks
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
             if (_flex.IsPrinting)
                 return;

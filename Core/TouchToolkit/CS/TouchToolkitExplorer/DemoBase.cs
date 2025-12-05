@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace TouchToolkitExplorer
 {
@@ -9,7 +10,11 @@ namespace TouchToolkitExplorer
             InitializeComponent();
             Title = GetType().Name;
         }
+
+        [DefaultValue(null)]
         public string Title { get; set; }
+        
+        [DefaultValue(null)]
         public string Description { get; set; }
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.commandDock = new C1.Win.C1Command.C1CommandDock();
-            this.dockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.dockingTabPageConditionalFormatting = new C1.Win.C1Command.C1DockingTabPage();
+            this.commandDock = new C1.Win.Command.C1CommandDock();
+            this.dockingTab = new C1.Win.Command.C1DockingTab();
+            this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
             this.rulesManager = new C1.Win.RulesManager.C1RulesManager();
             this.formattableDataGridView = new ControlExplorer.RulesManager.FormattableDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).BeginInit();
@@ -63,10 +63,10 @@
             this.dockingTab.ShowSingleTab = false;
             this.dockingTab.Size = new System.Drawing.Size(200, 752);
             this.dockingTab.TabIndex = 0;
-            this.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.dockingTab.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -117,9 +117,9 @@
         }
 
         #endregion
-        private C1.Win.C1Command.C1CommandDock commandDock;
-        private C1.Win.C1Command.C1DockingTab dockingTab;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPageConditionalFormatting;
+        private C1.Win.Command.C1CommandDock commandDock;
+        private C1.Win.Command.C1DockingTab dockingTab;
+        private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
         private ControlExplorer.RulesManager.FormattableDataGridView formattableDataGridView;
     }

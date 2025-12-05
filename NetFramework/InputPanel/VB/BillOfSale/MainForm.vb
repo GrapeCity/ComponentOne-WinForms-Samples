@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 Imports C1.Win.Ribbon
 
 Partial Public Class MainForm
@@ -36,7 +36,7 @@ Partial Public Class MainForm
 
 End Class
 Public Class RichTextBoxHost
-    Inherits C1.Win.C1InputPanel.InputControlHost
+    Inherits C1.Win.InputPanel.InputControlHost
 
     Public Sub New()
         MyBase.New(New System.Windows.Forms.RichTextBox())

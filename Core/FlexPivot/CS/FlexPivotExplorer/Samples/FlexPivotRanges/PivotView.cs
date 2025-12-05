@@ -27,24 +27,30 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             ShowFlexPivotPanel = false;
         }
 
+        [DefaultValue(true)]
         public bool ShowSlicers
         {
             get => splitContainer1.Visible;
             set => splitContainer1.Visible = value;
         }
 
+        [DefaultValue(false)]
         public bool ShowFlexPivotPanel
         {
             get => !splitContainer2.Panel2Collapsed;
             set => splitContainer2.Panel2Collapsed = !value;
         }
 
+        [DefaultValue(200)]
         public int BigNumericStep { get; set; }
 
+        [DefaultValue(50)]
         public int SmallNumericStep { get; set; }
 
+        [DefaultValue(4)]
         public int FirstMonthOfFiscalYear { get; set; }
 
+        [DefaultValue(0)]
         public int ActiveViewIndex
         {
             get => _activeView;

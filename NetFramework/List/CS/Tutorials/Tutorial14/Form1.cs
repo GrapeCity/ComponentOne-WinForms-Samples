@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace Tutorial14
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
@@ -55,7 +55,9 @@ namespace Tutorial14
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.C1List1 = new C1.Win.C1List.C1List();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			this.C1List1 = new C1.Win.List.C1List();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.C1List1)).BeginInit();
@@ -70,23 +72,23 @@ namespace Tutorial14
 			this.C1List1.CaptionHeight = 17;
 			this.C1List1.ColumnCaptionHeight = 17;
 			this.C1List1.ColumnFooterHeight = 17;
-			this.C1List1.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1List1.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark;
 			this.C1List1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("C1List1.Images.Images"))));
 			this.C1List1.ItemHeight = 15;
 			this.C1List1.Location = new System.Drawing.Point(40, 16);
-			this.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember;
-			this.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None;
+			this.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember;
+			this.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None;
 			this.C1List1.MatchEntryTimeout = ((long)(2000));
 			this.C1List1.Name = "C1List1";
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.ScrollTips = false;
 			this.C1List1.Size = new System.Drawing.Size(496, 296);
 			this.C1List1.TabIndex = 0;
 			this.C1List1.Text = "C1List1";
-			this.C1List1.FetchCellStyle += new C1.Win.C1List.FetchCellStyleEventHandler(this.C1List1_FetchCellStyle);
+			this.C1List1.FetchCellStyle += new C1.Win.List.FetchCellStyleEventHandler(this.C1List1_FetchCellStyle);
 			this.C1List1.PropBag = ((string)(resources.GetObject("C1List1.PropBag")));
 			// 
 			// textBox1
@@ -163,13 +165,13 @@ namespace Tutorial14
 			this.textBox1.Text = dir;
 		}
 
-		private void C1List1_FetchCellStyle(object sender, C1.Win.C1List.FetchCellStyleEventArgs e)
+		private void C1List1_FetchCellStyle(object sender, C1.Win.List.FetchCellStyleEventArgs e)
 		{
 			if (e.Col == 1)
 			{
 				string file = this.C1List1.Splits[0].DisplayColumns[0].DataColumn.CellText(e.Row);
 				file = this.textBox1.Text.Trim() + "\\" + file;
-				e.CellStyle.ForeGroundPicturePosition = C1.Win.C1List.ForeGroundPicturePositionEnum.PictureOnly;
+				e.CellStyle.ForeGroundPicturePosition = C1.Win.List.ForeGroundPicturePositionEnum.PictureOnly;
 				e.CellStyle.ForegroundImage = Image.FromFile(file);
 			}
 		}

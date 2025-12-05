@@ -30,7 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._orderDBGrid = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._orderDBGrid = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1NWindDataSet = new ComboBoxTranslateValue.C1NWindDataSet();
             this.orderTableAdapter = new ComboBoxTranslateValue.C1NWindDataSetTableAdapters.OrderTableAdapter();
@@ -47,7 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this._addBtn = new C1.Win.C1Input.C1Button();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this._themes = new C1.Win.C1Input.C1ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.customer_demoTableAdapter = new ComboBoxTranslateValue.C1NWindDataSetTableAdapters.Customer_demoTableAdapter();
@@ -86,7 +87,7 @@
             this._orderDBGrid.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("_orderDBGrid.PrintInfo.PageSettings")));
             this._orderDBGrid.PropBag = resources.GetString("_orderDBGrid.PropBag");
             this._orderDBGrid.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this._orderDBGrid.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this._orderDBGrid.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this._orderDBGrid.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(166)))), ((int)(((byte)(172)))));
             this._orderDBGrid.Size = new System.Drawing.Size(340, 339);
             this._orderDBGrid.TabIndex = 0;
@@ -452,13 +453,13 @@
 
         #endregion
 
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid _orderDBGrid;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid _orderDBGrid;
         private C1NWindDataSet c1NWindDataSet;
         private System.Windows.Forms.BindingSource orderBindingSource;
         private C1NWindDataSetTableAdapters.OrderTableAdapter orderTableAdapter;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.C1Input.C1Button _addBtn;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Input.C1ComboBox _themes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

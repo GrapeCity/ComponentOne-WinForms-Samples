@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 using C1.Win.Ribbon;
 using C1.Win.FlexReport;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace FlexCommonTasks
 {

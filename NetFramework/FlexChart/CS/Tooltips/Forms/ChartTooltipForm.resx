@@ -169,7 +169,7 @@
     <value>c1SuperTooltip1</value>
   </data>
   <data name="&gt;&gt;c1SuperTooltip1.Type" xml:space="preserve">
-    <value>C1.Win.C1SuperTooltip.C1SuperTooltip, C1.Win.C1SuperTooltip.4, Version=4.0.20161.139, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
+    <value>C1.Win.SuperTooltip.C1SuperTooltip, C1.Win.SuperTooltip.4, Version=4.0.20161.139, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ChartTooltipForm</value>

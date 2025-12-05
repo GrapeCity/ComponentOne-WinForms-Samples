@@ -9,6 +9,7 @@ using C1.Win.Chart.Annotation;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Specialized;
+using System.ComponentModel;
 
 namespace FlexChartExplorer.Samples
 {
@@ -738,6 +739,7 @@ namespace FlexChartExplorer.Samples
     {
         internal Action Reject, Accept;
 
+        [DefaultValue(null)]
         public AnnotationBase Annotation { get; set; }
 
         public void RejectChanges()

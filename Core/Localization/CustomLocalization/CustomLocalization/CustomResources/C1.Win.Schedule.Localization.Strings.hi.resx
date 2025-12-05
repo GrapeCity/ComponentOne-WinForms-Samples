@@ -1,0 +1,1391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppointmentFormStrings.Appointment" xml:space="preserve">
+    <value>अपॉइंटमेंट</value>
+    <comment>Appointment</comment>
+  </data>
+  <data name="AppointmentFormStrings.Event" xml:space="preserve">
+    <value>इवेंट</value>
+    <comment>Event</comment>
+  </data>
+  <data name="AppointmentFormStrings.InvalidTimeError" xml:space="preserve">
+    <value>आपके द्वारा दर्ज की गई समाप्ति तिथि प्रारंभ तिथि से पहले आती है।</value>
+    <comment>The end date you entered occurs before the start date.</comment>
+  </data>
+  <data name="AppointmentFormStrings.SaveAppointment" xml:space="preserve">
+    <value>अपॉइंटमेंट सहेजें</value>
+    <comment>Save Appointment</comment>
+  </data>
+  <data name="AppointmentFormStrings.Sound" xml:space="preserve">
+    <value>ध्वनि</value>
+    <comment>Sound</comment>
+  </data>
+  <data name="AppointmentFormStrings.SoundFiles" xml:space="preserve">
+    <value>ध्वनि फ़ाइलें</value>
+    <comment>sound files</comment>
+  </data>
+  <data name="AppointmentFormStrings.Untitled" xml:space="preserve">
+    <value>अनटाइटल्ड</value>
+    <comment>Untitled</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.FormatNotSupported" xml:space="preserve">
+    <value>प्रारूप {0} समर्थित नहीं है</value>
+    <comment>Format {0} is not supported</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.InvalidVCALInformation" xml:space="preserve">
+    <value>यह मान्य VCALENDAR जानकारी नहीं है</value>
+    <comment>It is not valid VCALENDAR information</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.MappingRequired" xml:space="preserve">
+    <value>{0} के लिए आवश्यक MappingName निर्दिष्ट नहीं है।</value>
+    <comment>The required MappingName for the {0} is not specified.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.MethodNotSupported" xml:space="preserve">
+    <value>यह विधि इस ऑपरेटिंग सिस्टम पर समर्थित नहीं है</value>
+    <comment>This method is not supported on this operating system</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.NotAllInforImported" xml:space="preserve">
+    <value>अमान्य डेटा के कारण सारी जानकारी आयात नहीं की गई।</value>
+    <comment>Not all information was imported due to not valid data.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.StartEndValidationFailed" xml:space="preserve">
+    <value>समाप्ति मान प्रारंभ मान से अधिक होना चाहिए।</value>
+    <comment>The End value should be greater than Start value.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.ValueLessThan1" xml:space="preserve">
+    <value>मान 1 से कम है।</value>
+    <comment>The value is less than 1.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.XmlImportError" xml:space="preserve">
+    <value>C1Schedule नोड नहीं मिल सकता।</value>
+    <comment>Cannot find C1Schedule node.</comment>
+  </data>
+  <data name="C1Schedule.Strings.Daily" xml:space="preserve">
+    <value>प्रतिदिन होता है</value>
+    <comment>Occurs every day</comment>
+  </data>
+  <data name="C1Schedule.Strings.Day" xml:space="preserve">
+    <value>दिन</value>
+    <comment>day</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNDay" xml:space="preserve">
+    <value>प्रत्येक {0} दिनों में होता है</value>
+    <comment>Occurs every {0} days</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNMonth" xml:space="preserve">
+    <value>प्रत्येक {0} महीनों में दिन {1} को होता है</value>
+    <comment>Occurs day {1} of every {0} months</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNMonthOnTheNWeekday" xml:space="preserve">
+    <value>प्रत्येक {0} महीनों में {1} {2} को होता है</value>
+    <comment>Occurs the {1} {2} of every {0} months</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNWeek" xml:space="preserve">
+    <value>प्रत्येक {0} सप्ताह में {1} को होता है</value>
+    <comment>Occurs every {0} weeks on {1}</comment>
+  </data>
+  <data name="C1Schedule.Strings.First" xml:space="preserve">
+    <value>पहला</value>
+    <comment>first</comment>
+  </data>
+  <data name="C1Schedule.Strings.Fourth" xml:space="preserve">
+    <value>चौथा</value>
+    <comment>fourth</comment>
+  </data>
+  <data name="C1Schedule.Strings.IncorrectPattern" xml:space="preserve">
+    <value>गलत पुनरावृत्ति पैटर्न</value>
+    <comment>incorrect reccurrence pattern</comment>
+  </data>
+  <data name="C1Schedule.Strings.Last" xml:space="preserve">
+    <value>अंतिम</value>
+    <comment>last</comment>
+  </data>
+  <data name="C1Schedule.Strings.Monthly" xml:space="preserve">
+    <value>प्रत्येक 1 महीने में दिन {0} को होता है</value>
+    <comment>Occurs day {0} of every 1 month</comment>
+  </data>
+  <data name="C1Schedule.Strings.MonthlyOnTheNWeekday" xml:space="preserve">
+    <value>प्रत्येक 1 महीने में {0} {1} को होता है</value>
+    <comment>Occurs the {0} {1} of every 1 month</comment>
+  </data>
+  <data name="C1Schedule.Strings.OnWorkingDays" xml:space="preserve">
+    <value>प्रत्येक कार्यदिवस होता है</value>
+    <comment>Occurs every week day</comment>
+  </data>
+  <data name="C1Schedule.Strings.Second" xml:space="preserve">
+    <value>दूसरा</value>
+    <comment>second</comment>
+  </data>
+  <data name="C1Schedule.Strings.Since" xml:space="preserve">
+    <value> प्रभावी {0} {1} से {2} तक।</value>
+    <comment> effective {0} from {1} to {2}.</comment>
+  </data>
+  <data name="C1Schedule.Strings.SinceNTimes" xml:space="preserve">
+    <value> प्रभावी {0} {1} से {2} तक, {3} बार।</value>
+    <comment> effective {0} from {1} to {2}, {3} times.</comment>
+  </data>
+  <data name="C1Schedule.Strings.SinceUntil" xml:space="preserve">
+    <value> प्रभावी {0} {1} तक {2} से {3} तक।</value>
+    <comment> effective {0} until {1} from {2} to {3}.</comment>
+  </data>
+  <data name="C1Schedule.Strings.Third" xml:space="preserve">
+    <value>तीसरा</value>
+    <comment>third</comment>
+  </data>
+  <data name="C1Schedule.Strings.Weekday" xml:space="preserve">
+    <value>सप्ताह का दिन</value>
+    <comment>week day</comment>
+  </data>
+  <data name="C1Schedule.Strings.Weekend" xml:space="preserve">
+    <value>सप्ताहांत</value>
+    <comment>weekend</comment>
+  </data>
+  <data name="C1Schedule.Strings.Weekly" xml:space="preserve">
+    <value>प्रत्येक {0} को होता है</value>
+    <comment>Occurs every {0}</comment>
+  </data>
+  <data name="C1Schedule.Strings.Yearly" xml:space="preserve">
+    <value>प्रत्येक {1} {0} को होता है</value>
+    <comment>Occurs every {1} {0}</comment>
+  </data>
+  <data name="C1Schedule.Strings.YearlyNth" xml:space="preserve">
+    <value>{2} के {0} {1} को होता है</value>
+    <comment>Occurs the {0} {1} of {2}</comment>
+  </data>
+  <data name="Categories.Business" xml:space="preserve">
+    <value>व्यवसाय</value>
+    <comment>Business</comment>
+  </data>
+  <data name="Categories.Competition" xml:space="preserve">
+    <value>प्रतियोगिता</value>
+    <comment>Competition</comment>
+  </data>
+  <data name="Categories.Favorites" xml:space="preserve">
+    <value>पसंदीदा</value>
+    <comment>Favorites</comment>
+  </data>
+  <data name="Categories.Gifts" xml:space="preserve">
+    <value>उपहार</value>
+    <comment>Gifts</comment>
+  </data>
+  <data name="Categories.Goals" xml:space="preserve">
+    <value>लक्ष्य/उद्देश्य</value>
+    <comment>Goals/Objectives</comment>
+  </data>
+  <data name="Categories.Holiday" xml:space="preserve">
+    <value>छुट्टी</value>
+    <comment>Holiday</comment>
+  </data>
+  <data name="Categories.HolidayCards" xml:space="preserve">
+    <value>छुट्टी कार्ड</value>
+    <comment>Holiday Cards</comment>
+  </data>
+  <data name="Categories.HotContacts" xml:space="preserve">
+    <value>हॉट कॉन्टैक्ट्स</value>
+    <comment>Hot Contacts</comment>
+  </data>
+  <data name="Categories.Ideas" xml:space="preserve">
+    <value>विचार</value>
+    <comment>Ideas</comment>
+  </data>
+  <data name="Categories.International" xml:space="preserve">
+    <value>अंतर्राष्ट्रीय</value>
+    <comment>International</comment>
+  </data>
+  <data name="Categories.KeyCustomer" xml:space="preserve">
+    <value>मुख्य ग्राहक</value>
+    <comment>Key Customer</comment>
+  </data>
+  <data name="Categories.Miscellanneous" xml:space="preserve">
+    <value>विविध</value>
+    <comment>Miscellaneous</comment>
+  </data>
+  <data name="Categories.Personal" xml:space="preserve">
+    <value>निजी</value>
+    <comment>Personal</comment>
+  </data>
+  <data name="Categories.PhoneCalls" xml:space="preserve">
+    <value>फोन कॉल</value>
+    <comment>Phone Calls</comment>
+  </data>
+  <data name="Categories.Status" xml:space="preserve">
+    <value>स्थिति</value>
+    <comment>Status</comment>
+  </data>
+  <data name="Categories.Strategies" xml:space="preserve">
+    <value>रणनीतियाँ</value>
+    <comment>Strategies</comment>
+  </data>
+  <data name="Categories.Suppliers" xml:space="preserve">
+    <value>आपूर्तिकर्ता</value>
+    <comment>Suppliers</comment>
+  </data>
+  <data name="Categories.Time" xml:space="preserve">
+    <value>समय और व्यय</value>
+    <comment>Time &amp; Expenses</comment>
+  </data>
+  <data name="Categories.VIP" xml:space="preserve">
+    <value>वीआईपी</value>
+    <comment>VIP</comment>
+  </data>
+  <data name="Categories.Waiting" xml:space="preserve">
+    <value>प्रतीक्षा</value>
+    <comment>Waiting</comment>
+  </data>
+  <data name="ContextMenu.BackgroundColor" xml:space="preserve">
+    <value>पृष्ठभूमि रंग...</value>
+    <comment>Background Color...</comment>
+  </data>
+  <data name="ContextMenu.Categories" xml:space="preserve">
+    <value>श्रेणियाँ...</value>
+    <comment>Categories...</comment>
+  </data>
+  <data name="ContextMenu.Contacts" xml:space="preserve">
+    <value>संपर्क...</value>
+    <comment>Contacts...</comment>
+  </data>
+  <data name="ContextMenu.Export" xml:space="preserve">
+    <value>निर्यात...</value>
+    <comment>Export...</comment>
+  </data>
+  <data name="ContextMenu.GoToDate" xml:space="preserve">
+    <value>तिथि पर जाएं...</value>
+    <comment>Go to Date...</comment>
+  </data>
+  <data name="ContextMenu.GoToThisDate" xml:space="preserve">
+    <value>इस तिथि पर जाएं</value>
+    <comment>Go to this date</comment>
+  </data>
+  <data name="ContextMenu.Import" xml:space="preserve">
+    <value>आयात...</value>
+    <comment>Import...</comment>
+  </data>
+  <data name="ContextMenu.Label" xml:space="preserve">
+    <value>लेबल</value>
+    <comment>Label</comment>
+  </data>
+  <data name="ContextMenu.NewAppointment" xml:space="preserve">
+    <value>नया अपॉइंटमेंट</value>
+    <comment>New Appointment</comment>
+  </data>
+  <data name="ContextMenu.NewEvent" xml:space="preserve">
+    <value>नया ऑल डे इवेंट</value>
+    <comment>New All Day Event</comment>
+  </data>
+  <data name="ContextMenu.NewRecurringAppointment" xml:space="preserve">
+    <value>नया आवर्ती अपॉइंटमेंट</value>
+    <comment>New Recurring Appointment</comment>
+  </data>
+  <data name="ContextMenu.NewRecurringEvent" xml:space="preserve">
+    <value>नया आवर्ती इवेंट</value>
+    <comment>New Recurring Event</comment>
+  </data>
+  <data name="ContextMenu.Next7Days" xml:space="preserve">
+    <value>अगले 7 दिन</value>
+    <comment>Next 7 Days</comment>
+  </data>
+  <data name="ContextMenu.Open" xml:space="preserve">
+    <value>खोलें</value>
+    <comment>Open</comment>
+  </data>
+  <data name="ContextMenu.Print" xml:space="preserve">
+    <value>प्रिंट...</value>
+    <comment>Print...</comment>
+  </data>
+  <data name="ContextMenu.PrintPreview" xml:space="preserve">
+    <value>प्रिंट पूर्वावलोकन...</value>
+    <comment>Print Preview...</comment>
+  </data>
+  <data name="ContextMenu.Remove" xml:space="preserve">
+    <value>हटाएं</value>
+    <comment>Remove</comment>
+  </data>
+  <data name="ContextMenu.Resources" xml:space="preserve">
+    <value>संसाधन...</value>
+    <comment>Resources...</comment>
+  </data>
+  <data name="ContextMenu.SaveAs" xml:space="preserve">
+    <value>अलग नाम से सहेजें...</value>
+    <comment>Save As...</comment>
+  </data>
+  <data name="ContextMenu.ShowTimeAs" xml:space="preserve">
+    <value>समय इस प्रकार दिखाएं</value>
+    <comment>Show time as</comment>
+  </data>
+  <data name="ContextMenu.TimeScale" xml:space="preserve">
+    <value>{0} मिनट</value>
+    <comment>{0} Minutes</comment>
+  </data>
+  <data name="ContextMenu.Today" xml:space="preserve">
+    <value>आज</value>
+    <comment>Today</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnCategories.Text" xml:space="preserve">
+    <value>श्रेणियाँ...</value>
+    <comment>Cate&amp;gories...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnContacts.Text" xml:space="preserve">
+    <value>संपर्क...</value>
+    <comment>&amp;Contacts...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnDelete.ToolTipText" xml:space="preserve">
+    <value>हटाएं</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnHighImportance.ToolTipText" xml:space="preserve">
+    <value>उच्च महत्व</value>
+    <comment>High Importance</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnLowImportance.ToolTipText" xml:space="preserve">
+    <value>कम महत्व</value>
+    <comment>Low Importance</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnPreview.ToolTipText" xml:space="preserve">
+    <value>पूर्वावलोकन</value>
+    <comment>Preview</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnPrint.ToolTipText" xml:space="preserve">
+    <value>प्रिंट</value>
+    <comment>Print</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnRecurrence.Text" xml:space="preserve">
+    <value>पुनरावृत्ति...</value>
+    <comment>&amp;Recurrence...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnRecurrence.ToolTipText" xml:space="preserve">
+    <value>पुनरावृत्ति</value>
+    <comment>Recurrence</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnResources.Text" xml:space="preserve">
+    <value>संसाधन...</value>
+    <comment>R&amp;esources...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSave.Text" xml:space="preserve">
+    <value>सहेजें और बंद करें</value>
+    <comment>&amp;Save and Close</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSave.ToolTipText" xml:space="preserve">
+    <value>सहेजें और बंद करें</value>
+    <comment>Save and Close</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSaveAs.Text" xml:space="preserve">
+    <value>अलग नाम से सहेजें...</value>
+    <comment>Save &amp;As...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSaveAs.ToolTipText" xml:space="preserve">
+    <value>अलग नाम से सहेजें</value>
+    <comment>Save As</comment>
+  </data>
+  <data name="Forms.AppointmentForm.chkAllDay.Text" xml:space="preserve">
+    <value>पूरे दिन का इवेंट</value>
+    <comment>All da&amp;y event</comment>
+  </data>
+  <data name="Forms.AppointmentForm.chkPrivate.Text" xml:space="preserve">
+    <value>निजी</value>
+    <comment>&amp;Private</comment>
+  </data>
+  <data name="Forms.AppointmentForm.chkReminder.Text" xml:space="preserve">
+    <value>अनुस्मारक:</value>
+    <comment>Re&amp;minder:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.label1.Text" xml:space="preserve">
+    <value>पुनरावृत्ति:</value>
+    <comment>Recurrence:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblAvailability.Text" xml:space="preserve">
+    <value>समय इस प्रकार दिखाएं:</value>
+    <comment>Sho&amp;w time as:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblCategory.Text" xml:space="preserve">
+    <value>श्रेणी:</value>
+    <comment>Category:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblContact.Text" xml:space="preserve">
+    <value>संपर्क:</value>
+    <comment>Contact:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblEnd.Text" xml:space="preserve">
+    <value>समाप्ति समय:</value>
+    <comment>En&amp;d time:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblLabel.Text" xml:space="preserve">
+    <value>लेबल:</value>
+    <comment>La&amp;bel:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblLocation.Text" xml:space="preserve">
+    <value>स्थान:</value>
+    <comment>&amp;Location:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblResource.Text" xml:space="preserve">
+    <value>संसाधन:</value>
+    <comment>Resource:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblStart.Text" xml:space="preserve">
+    <value>प्रारंभ समय:</value>
+    <comment>Start &amp;time:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblSubject.Text" xml:space="preserve">
+    <value>विषय:</value>
+    <comment>Sub&amp;ject:</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnAdd.Text" xml:space="preserve">
+    <value>जोड़ें</value>
+    <comment>&amp;Add</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnRemove.Text" xml:space="preserve">
+    <value>हटाएं</value>
+    <comment>&amp;Remove</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnReset.Text" xml:space="preserve">
+    <value>रीसेट</value>
+    <comment>R&amp;eset</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.Text" xml:space="preserve">
+    <value>मास्टर श्रेणी सूची</value>
+    <comment>Master Category List</comment>
+  </data>
+  <data name="Forms.CategoryListForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.CategoryListForm.btnCollection.Text" xml:space="preserve">
+    <value>मास्टर श्रेणी सूची...</value>
+    <comment>&amp;Master Category List...</comment>
+  </data>
+  <data name="Forms.CategoryListForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.CategoryListForm.lblCategories.Text" xml:space="preserve">
+    <value>उपलब्ध श्रेणियाँ:</value>
+    <comment>A&amp;vailable categories:</comment>
+  </data>
+  <data name="Forms.CategoryListForm.lblMessage.Text" xml:space="preserve">
+    <value>आइटम इन श्रेणियों से संबंधित हैं:</value>
+    <comment>Item(s) belong to these categories:</comment>
+  </data>
+  <data name="Forms.CategoryListForm.Text" xml:space="preserve">
+    <value>श्रेणियाँ</value>
+    <comment>Categories</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnAdd.Text" xml:space="preserve">
+    <value>जोड़ें</value>
+    <comment>&amp;Add</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnRemove.Text" xml:space="preserve">
+    <value>हटाएं</value>
+    <comment>&amp;Remove</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.Text" xml:space="preserve">
+    <value>मास्टर संपर्क सूची</value>
+    <comment>Master Contact List</comment>
+  </data>
+  <data name="Forms.ContactListForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ContactListForm.btnCollection.Text" xml:space="preserve">
+    <value>मास्टर संपर्क सूची...</value>
+    <comment>&amp;Master Contact List...</comment>
+  </data>
+  <data name="Forms.ContactListForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ContactListForm.lblContacts.Text" xml:space="preserve">
+    <value>उपलब्ध संपर्क:</value>
+    <comment>A&amp;vailable contacts:</comment>
+  </data>
+  <data name="Forms.ContactListForm.lblMessage.Text" xml:space="preserve">
+    <value>संपर्क:</value>
+    <comment>Contacts:</comment>
+  </data>
+  <data name="Forms.ContactListForm.Text" xml:space="preserve">
+    <value>संपर्क</value>
+    <comment>Contacts</comment>
+  </data>
+  <data name="Forms.GoToDate.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.GoToDate.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.GoToDate.label1.Text" xml:space="preserve">
+    <value>तिथि:</value>
+    <comment>&amp;Date:</comment>
+  </data>
+  <data name="Forms.GoToDate.label2.Text" xml:space="preserve">
+    <value>दृश्य:</value>
+    <comment>&amp;View:</comment>
+  </data>
+  <data name="Forms.GoToDate.Text" xml:space="preserve">
+    <value>तिथि पर जाएं</value>
+    <comment>Go to Date</comment>
+  </data>
+  <data name="Forms.PaletteForm.label1.Text" xml:space="preserve">
+    <value>रंग:</value>
+    <comment>Color:</comment>
+  </data>
+  <data name="Forms.PaletteForm.Text" xml:space="preserve">
+    <value>पृष्ठभूमि रंग</value>
+    <comment>Background Color</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>OK</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnPreview.Text" xml:space="preserve">
+    <value>पूर्वावलोकन...</value>
+    <comment>&amp;Preview...</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnStyleSettings.Text" xml:space="preserve">
+    <value>शैली सेटिंग्स...</value>
+    <comment>St&amp;yle settings...</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.chkHidePrivate.Text" xml:space="preserve">
+    <value>निजी अपॉइंटमेंट्स का विवरण छुपाएं</value>
+    <comment>&amp;Hide details of private appointments</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.chkShowSelectedGroup.Text" xml:space="preserve">
+    <value>चयनित कैलेंडर प्रिंट करें</value>
+    <comment>Print selected &amp;calendar</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.grpPrintRange.Text" xml:space="preserve">
+    <value>प्रिंट रेंज</value>
+    <comment>Print &amp;range</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.grpPrintStyle.Text" xml:space="preserve">
+    <value>प्रिंट शैली</value>
+    <comment>Print &amp;style</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.lblEnd.Text" xml:space="preserve">
+    <value>समाप्ति:</value>
+    <comment>&amp;End:</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.lblStart.Text" xml:space="preserve">
+    <value>प्रारंभ:</value>
+    <comment>S&amp;tart:</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.Text" xml:space="preserve">
+    <value>प्रिंट</value>
+    <comment>Print</comment>
+  </data>
+  <data name="Forms.PrintProgressForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.PrintProgressForm.lblProgress.Text" xml:space="preserve">
+    <value>आरंभिकीकरण हो रहा है...</value>
+    <comment>Initializing...</comment>
+  </data>
+  <data name="Forms.PrintProgressForm.Text" xml:space="preserve">
+    <value>डॉक्यूमेंट प्रोसेसिंग</value>
+    <comment>Processing Document</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnDate.ToolTipText" xml:space="preserve">
+    <value>प्रिंट तिथि फ़ील्ड डालें</value>
+    <comment>Insert date printed field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>OK</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnPage.ToolTipText" xml:space="preserve">
+    <value>पृष्ठ फ़ील्ड डालें</value>
+    <comment>Insert page field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnPages.ToolTipText" xml:space="preserve">
+    <value>पृष्ठों की संख्या फ़ील्ड डालें</value>
+    <comment>Insert number of pages field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnTime.ToolTipText" xml:space="preserve">
+    <value>प्रिंट समय फ़ील्ड डालें</value>
+    <comment>Insert time printed field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.chkReverseHeaders.Text" xml:space="preserve">
+    <value>सम पृष्ठों पर उल्टा करें</value>
+    <comment>Reverse on even pages</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.grpFonts.Text" xml:space="preserve">
+    <value>फ़ॉन्ट्स</value>
+    <comment>Fonts</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.grpOptions.Text" xml:space="preserve">
+    <value>विकल्प</value>
+    <comment>Options</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.grpPreview.Text" xml:space="preserve">
+    <value>पूर्वावलोकन:</value>
+    <comment>Preview:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblAppointmentsFont.Text" xml:space="preserve">
+    <value>अपॉइंटमेंट्स</value>
+    <comment>Appointments</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblDateFont.Text" xml:space="preserve">
+    <value>तिथि शीर्षक</value>
+    <comment>Date headings</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblFooter.Text" xml:space="preserve">
+    <value>पाद लेख:</value>
+    <comment>Footer:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblHeader.Text" xml:space="preserve">
+    <value>शीर्ष लेख:</value>
+    <comment>Header:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblName.Text" xml:space="preserve">
+    <value>शैली नाम:</value>
+    <comment>Style name:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.pageColontitles.Text" xml:space="preserve">
+    <value>शीर्ष लेख/पाद लेख</value>
+    <comment>Header/Footer</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.pageFormat.Text" xml:space="preserve">
+    <value>प्रारूप</value>
+    <comment>Format</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.Text" xml:space="preserve">
+    <value>पेज सेटअप: </value>
+    <comment>Page Setup: </comment>
+  </data>
+  <data name="Forms.QEditForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.QEditForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.QEditForm.rb1.Text" xml:space="preserve">
+    <value>यह घटना खोलें।</value>
+    <comment>Open &amp;this occurrence.</comment>
+  </data>
+  <data name="Forms.QEditForm.rb2.Text" xml:space="preserve">
+    <value>श्रृंखला खोलें।</value>
+    <comment>Open the &amp;series.</comment>
+  </data>
+  <data name="Forms.QEditForm.Text" xml:space="preserve">
+    <value>आवर्ती आइटम खोलें</value>
+    <comment>Open Recurring Item</comment>
+  </data>
+  <data name="Forms.QRemoveForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.QRemoveForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.QRemoveForm.rb1.Text" xml:space="preserve">
+    <value>यह घटना हटाएं।</value>
+    <comment>Remove &amp;this occurrence.</comment>
+  </data>
+  <data name="Forms.QRemoveForm.rb2.Text" xml:space="preserve">
+    <value>श्रृंखला हटाएं।</value>
+    <comment>Remove the &amp;series.</comment>
+  </data>
+  <data name="Forms.QRemoveForm.Text" xml:space="preserve">
+    <value>आवर्ती आइटम हटाएं</value>
+    <comment>Remove Recurring Item</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>OK</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.btnRemove.Text" xml:space="preserve">
+    <value>पुनरावृत्ति हटाएं</value>
+    <comment>&amp;Remove Recurrence</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.grpRange.Text" xml:space="preserve">
+    <value>पुनरावृत्ति की सीमा</value>
+    <comment>Range of recurrence</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.grpTime.Text" xml:space="preserve">
+    <value>अपॉइंटमेंट समय</value>
+    <comment>Appointment time</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.grpType.Text" xml:space="preserve">
+    <value>पुनरावृत्ति पैटर्न</value>
+    <comment>Recurrence pattern</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.label1.Text" xml:space="preserve">
+    <value>महीना(महीने)</value>
+    <comment>month(s)</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblDay.Text" xml:space="preserve">
+    <value>दिन</value>
+    <comment>day(s)</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblDuration.Text" xml:space="preserve">
+    <value>अवधि:</value>
+    <comment>D&amp;uration:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblEnd.Text" xml:space="preserve">
+    <value>समाप्ति:</value>
+    <comment>E&amp;nd:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblEvery.Text" xml:space="preserve">
+    <value>प्रत्येक के</value>
+    <comment>of every</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblMonth.Text" xml:space="preserve">
+    <value>प्रत्येक के</value>
+    <comment>of every</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblMonth1.Text" xml:space="preserve">
+    <value>महीना(महीने)</value>
+    <comment>month(s)</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblOccurrences.Text" xml:space="preserve">
+    <value>घटनाएँ</value>
+    <comment>occurrences</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblOf.Text" xml:space="preserve">
+    <value>का</value>
+    <comment>of</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblRecurEvery.Text" xml:space="preserve">
+    <value>प्रत्येक के बाद पुनरावृत्ति</value>
+    <comment>Re&amp;cur every</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblStart.Text" xml:space="preserve">
+    <value>प्रारंभ:</value>
+    <comment>S&amp;tart:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblStart1.Text" xml:space="preserve">
+    <value>प्रारंभ:</value>
+    <comment>&amp;Start:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblWeek.Text" xml:space="preserve">
+    <value>सप्ताह(सप्ताह) में:</value>
+    <comment>week(s) on:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbDaily.Text" xml:space="preserve">
+    <value>दैनिक</value>
+    <comment>&amp;Daily</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbDayNumber.Text" xml:space="preserve">
+    <value>प्रत्येक</value>
+    <comment>E&amp;very</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbEndAfter.Text" xml:space="preserve">
+    <value>इसके बाद समाप्त:</value>
+    <comment>End a&amp;fter:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbEndBy.Text" xml:space="preserve">
+    <value>इस तक समाप्त:</value>
+    <comment>End &amp;by:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbMDayNumber.Text" xml:space="preserve">
+    <value>प्रत्येक</value>
+    <comment>E&amp;very</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbMonthly.Text" xml:space="preserve">
+    <value>मासिक</value>
+    <comment>&amp;Monthly</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbNoEndDate.Text" xml:space="preserve">
+    <value>कोई समाप्ति तिथि नहीं</value>
+    <comment>N&amp;o end date</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbRecur.Text" xml:space="preserve">
+    <value>दिन</value>
+    <comment>D&amp;ay</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbThe.Text" xml:space="preserve">
+    <value>यह</value>
+    <comment>Th&amp;e</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbThe1.Text" xml:space="preserve">
+    <value>यह</value>
+    <comment>Th&amp;e</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbWeekly.Text" xml:space="preserve">
+    <value>साप्ताहिक</value>
+    <comment>&amp;Weekly</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbWorkDay.Text" xml:space="preserve">
+    <value>प्रत्येक कार्यदिवस</value>
+    <comment>Every wee&amp;kday</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbYearly.Text" xml:space="preserve">
+    <value>वार्षिक</value>
+    <comment>&amp;Yearly</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.Text" xml:space="preserve">
+    <value>अपॉइंटमेंट पुनरावृत्ति</value>
+    <comment>Appointment Recurrence</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnDismiss.Text" xml:space="preserve">
+    <value>खारिज करें</value>
+    <comment>&amp;Dismiss</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnDismissAll.Text" xml:space="preserve">
+    <value>सभी खारिज करें</value>
+    <comment>Dismiss &amp;All</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnOpen.Text" xml:space="preserve">
+    <value>आइटम खोलें</value>
+    <comment>&amp;Open Item</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnSnooze.Text" xml:space="preserve">
+    <value>स्नूज़</value>
+    <comment>&amp;Snooze</comment>
+  </data>
+  <data name="Forms.ReminderForm.colSubject.Text" xml:space="preserve">
+    <value>विषय</value>
+    <comment>Subject</comment>
+  </data>
+  <data name="Forms.ReminderForm.colTime.Text" xml:space="preserve">
+    <value>समय सीमा</value>
+    <comment>Due in</comment>
+  </data>
+  <data name="Forms.ReminderForm.lblLocation.Text" xml:space="preserve">
+    <value>स्थान:</value>
+    <comment>Location:</comment>
+  </data>
+  <data name="Forms.ReminderForm.lblSnooze.Text" xml:space="preserve">
+    <value>फिर से अनुस्मारक के लिए स्नूज़ पर क्लिक करें:</value>
+    <comment>Click Snooze to be reminded again in:</comment>
+  </data>
+  <data name="Forms.ReminderForm.lblStart.Text" xml:space="preserve">
+    <value>प्रारंभ समय:</value>
+    <comment>Start time:</comment>
+  </data>
+  <data name="Forms.ReminderForm.openToolStripMenuItem.Text" xml:space="preserve">
+    <value>खोलें</value>
+    <comment>&amp;Open</comment>
+  </data>
+  <data name="Forms.ReminderForm.Text" xml:space="preserve">
+    <value>अनुस्मारक</value>
+    <comment>Reminder</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnAdd.Text" xml:space="preserve">
+    <value>जोड़ें</value>
+    <comment>&amp;Add</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnRemove.Text" xml:space="preserve">
+    <value>हटाएं</value>
+    <comment>&amp;Remove</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.Text" xml:space="preserve">
+    <value>मास्टर संसाधन सूची</value>
+    <comment>Master Resource List</comment>
+  </data>
+  <data name="Forms.ResourceListForm.btnCancel.Text" xml:space="preserve">
+    <value>रद्द करें</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ResourceListForm.btnCollection.Text" xml:space="preserve">
+    <value>मास्टर संसाधन सूची...</value>
+    <comment>&amp;Master Resource List...</comment>
+  </data>
+  <data name="Forms.ResourceListForm.btnOk.Text" xml:space="preserve">
+    <value>ठीक है</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ResourceListForm.lblMessage.Text" xml:space="preserve">
+    <value>आइटम को इन संसाधनों की आवश्यकता है:</value>
+    <comment>Item(s) require these resources:</comment>
+  </data>
+  <data name="Forms.ResourceListForm.lblResources.Text" xml:space="preserve">
+    <value>उपलब्ध संसाधन:</value>
+    <comment>Available resources:</comment>
+  </data>
+  <data name="Forms.ResourceListForm.Text" xml:space="preserve">
+    <value>संसाधन</value>
+    <comment>Resources</comment>
+  </data>
+  <data name="Labels.Anniversary" xml:space="preserve">
+    <value>वर्षगांठ</value>
+    <comment>Anniversary</comment>
+  </data>
+  <data name="Labels.Birthday" xml:space="preserve">
+    <value>जन्मदिन</value>
+    <comment>Birthday</comment>
+  </data>
+  <data name="Labels.Business" xml:space="preserve">
+    <value>व्यवसाय</value>
+    <comment>Business</comment>
+  </data>
+  <data name="Labels.Deadline" xml:space="preserve">
+    <value>अंतिम तिथि</value>
+    <comment>Deadline</comment>
+  </data>
+  <data name="Labels.Important" xml:space="preserve">
+    <value>महत्वपूर्ण</value>
+    <comment>Important</comment>
+  </data>
+  <data name="Labels.MustAttend" xml:space="preserve">
+    <value>अवश्य उपस्थित हों</value>
+    <comment>Must Attend</comment>
+  </data>
+  <data name="Labels.NeedsPreparation" xml:space="preserve">
+    <value>तैयारी की आवश्यकता</value>
+    <comment>Needs Preparation</comment>
+  </data>
+  <data name="Labels.None" xml:space="preserve">
+    <value>कोई नहीं</value>
+    <comment>None</comment>
+  </data>
+  <data name="Labels.Personal" xml:space="preserve">
+    <value>निजी</value>
+    <comment>Personal</comment>
+  </data>
+  <data name="Labels.PhoneCall" xml:space="preserve">
+    <value>फोन कॉल</value>
+    <comment>Phone Call</comment>
+  </data>
+  <data name="Labels.TravelRequired" xml:space="preserve">
+    <value>यात्रा आवश्यक</value>
+    <comment>Travel Required</comment>
+  </data>
+  <data name="Labels.Vacation" xml:space="preserve">
+    <value>अवकाश</value>
+    <comment>Vacation</comment>
+  </data>
+  <data name="MiscStrings.DayView" xml:space="preserve">
+    <value>दिवस दृश्य</value>
+    <comment>Day View</comment>
+  </data>
+  <data name="MiscStrings.Export" xml:space="preserve">
+    <value>फ़ाइल में डेटा निर्यात करें</value>
+    <comment>Export Data to File</comment>
+  </data>
+  <data name="MiscStrings.Import" xml:space="preserve">
+    <value>डेटा आयात करें</value>
+    <comment>Import Data</comment>
+  </data>
+  <data name="MiscStrings.ImportError" xml:space="preserve">
+    <value>डेटा आयात करने में असमर्थ। फ़ाइल गलत प्रारूप में या क्षतिग्रस्त है।</value>
+    <comment>Unable to import data. File is in incorrect format or damaged.</comment>
+  </data>
+  <data name="MiscStrings.MonthView" xml:space="preserve">
+    <value>माह दृश्य</value>
+    <comment>Month View</comment>
+  </data>
+  <data name="MiscStrings.MoreAppointments" xml:space="preserve">
+    <value>अधिक अपॉइंटमेंट्स के लिए क्लिक करें।</value>
+    <comment>Click for more appointments.</comment>
+  </data>
+  <data name="MiscStrings.OpenSeries" xml:space="preserve">
+    <value>"{0}" एक आवर्ती अपॉइंटमेंट है। क्या आप केवल यह घटना या श्रृंखला खोलना चाहते हैं?</value>
+    <comment>"{0}" is a recurring appointment. Do you want to open only this occurrence or the series?</comment>
+  </data>
+  <data name="MiscStrings.PrintdocInitializationFailed" xml:space="preserve">
+    <value>{0} आरंभीकृत नहीं कर सका।
+प्रिंटिंग सपोर्ट के लिए यह असेंबली आवश्यक है।
+कृपया सुनिश्चित करें कि dll उपलब्ध है और ठीक से इंस्टॉल है।
+या एम्बेडेड प्रिंटिंग सपोर्ट को अक्षम करने के लिए C1Schedule.PrintInfo.IsPrintingEnabled को false सेट करें।</value>
+    <comment>Could not initialize {0}.
+This assembly is required for printing support.
+Please make sure that dll is available and properly installed.
+Or set C1Schedule.PrintInfo.IsPrintingEnabled to false to disable embedded printing support.</comment>
+  </data>
+  <data name="MiscStrings.RemoveSeries" xml:space="preserve">
+    <value>"{0}" एक आवर्ती अपॉइंटमेंट है। क्या आप केवल यह घटना या श्रृंखला हटाना चाहते हैं?</value>
+    <comment>"{0}" is a recurring appointment. Do you want to remove only this occurrence or the series?</comment>
+  </data>
+  <data name="MiscStrings.TimeLineView" xml:space="preserve">
+    <value>टाइमलाइन</value>
+    <comment>Time Line</comment>
+  </data>
+  <data name="MiscStrings.WeekView" xml:space="preserve">
+    <value>सप्ताह दृश्य</value>
+    <comment>Week View</comment>
+  </data>
+  <data name="MiscStrings.WorkWeekView" xml:space="preserve">
+    <value>कार्य सप्ताह दृश्य</value>
+    <comment>Work Week View</comment>
+  </data>
+  <data name="NavigationElements.Next" xml:space="preserve">
+    <value>अगला अपॉइंटमेंट</value>
+    <comment>Next Appointment</comment>
+  </data>
+  <data name="NavigationElements.Previous" xml:space="preserve">
+    <value>पिछला अपॉइंटमेंट</value>
+    <comment>Previous Appointment</comment>
+  </data>
+  <data name="PrintingStrings.DailyStyle" xml:space="preserve">
+    <value>दैनिक शैली</value>
+    <comment>Daily Style</comment>
+  </data>
+  <data name="PrintingStrings.Day" xml:space="preserve">
+    <value>दिन</value>
+    <comment>Day</comment>
+  </data>
+  <data name="PrintingStrings.DetailsStyle" xml:space="preserve">
+    <value>विवरण शैली</value>
+    <comment>Details Style</comment>
+  </data>
+  <data name="PrintingStrings.EndTime" xml:space="preserve">
+    <value>समाप्ति समय:</value>
+    <comment>End Time:</comment>
+  </data>
+  <data name="PrintingStrings.IncludeBlankNotes" xml:space="preserve">
+    <value>नोट्स शामिल करें (खाली)</value>
+    <comment>Include Notes (blank)</comment>
+  </data>
+  <data name="PrintingStrings.IncludeLinedNotes" xml:space="preserve">
+    <value>नोट्स शामिल करें (लाइन वाला)</value>
+    <comment>Include Notes (lined)</comment>
+  </data>
+  <data name="PrintingStrings.IncludeTasks" xml:space="preserve">
+    <value>कार्य शामिल करें</value>
+    <comment>Include Tasks</comment>
+  </data>
+  <data name="PrintingStrings.MemoStyle" xml:space="preserve">
+    <value>मेमो शैली</value>
+    <comment>Memo Style</comment>
+  </data>
+  <data name="PrintingStrings.Month" xml:space="preserve">
+    <value>महीना</value>
+    <comment>Month</comment>
+  </data>
+  <data name="PrintingStrings.MonthlyStyle" xml:space="preserve">
+    <value>मासिक शैली</value>
+    <comment>Monthly Style</comment>
+  </data>
+  <data name="PrintingStrings.Printing" xml:space="preserve">
+    <value>प्रिंटिंग हो रही है...</value>
+    <comment>Printing...</comment>
+  </data>
+  <data name="PrintingStrings.PrintPreview" xml:space="preserve">
+    <value>प्रिंट पूर्वावलोकन</value>
+    <comment>Print Preview</comment>
+  </data>
+  <data name="PrintingStrings.StartNewPage" xml:space="preserve">
+    <value>प्रत्येक के बाद नया पृष्ठ प्रारंभ करें</value>
+    <comment>Start a new page each</comment>
+  </data>
+  <data name="PrintingStrings.StartTime" xml:space="preserve">
+    <value>प्रारंभ समय:</value>
+    <comment>Start Time:</comment>
+  </data>
+  <data name="PrintingStrings.UnknownStyle" xml:space="preserve">
+    <value>अज्ञात शैली</value>
+    <comment>Unknown Style</comment>
+  </data>
+  <data name="PrintingStrings.Week" xml:space="preserve">
+    <value>सप्ताह</value>
+    <comment>Week</comment>
+  </data>
+  <data name="PrintingStrings.WeeklyStyle" xml:space="preserve">
+    <value>साप्ताहिक शैली</value>
+    <comment>Weekly Style</comment>
+  </data>
+  <data name="PrintingStrings.WorkDaysOnly" xml:space="preserve">
+    <value>केवल कार्यदिवस प्रिंट करें</value>
+    <comment>Only Print Workdays</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Categories" xml:space="preserve">
+    <value>श्रेणियाँ:</value>
+    <comment>Categories:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Contacts" xml:space="preserve">
+    <value>संपर्क:</value>
+    <comment>Contacts:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.End" xml:space="preserve">
+    <value>समाप्ति:</value>
+    <comment>End:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Importance" xml:space="preserve">
+    <value>महत्व:</value>
+    <comment>Importance:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Location" xml:space="preserve">
+    <value>स्थान:</value>
+    <comment>Location:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.None" xml:space="preserve">
+    <value>कोई नहीं</value>
+    <comment>none</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Recurrence" xml:space="preserve">
+    <value>पुनरावृत्ति:</value>
+    <comment>Recurrence:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Resources" xml:space="preserve">
+    <value>संसाधन:</value>
+    <comment>Resources:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.ShowTimeAs" xml:space="preserve">
+    <value>समय इस प्रकार दिखाएं:</value>
+    <comment>Show Time As:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Start" xml:space="preserve">
+    <value>प्रारंभ:</value>
+    <comment>Start:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Subject" xml:space="preserve">
+    <value>विषय:</value>
+    <comment>Subject:</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Day" xml:space="preserve">
+    <value>दिन</value>
+    <comment>Day</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectDuration" xml:space="preserve">
+    <value>अवधि गलत है।</value>
+    <comment>The duration is incorrect.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectEnd" xml:space="preserve">
+    <value>समाप्ति समय गलत है।</value>
+    <comment>The end time is incorrect.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectPattern" xml:space="preserve">
+    <value>गलत पैटर्न।</value>
+    <comment>Incorrect pattern.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectStart" xml:space="preserve">
+    <value>प्रारंभ समय गलत है।</value>
+    <comment>The start time is incorrect.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Last" xml:space="preserve">
+    <value>अंतिम</value>
+    <comment>Last</comment>
+  </data>
+  <data name="RecurrenceFormStrings.RemoveExceptionsConfirmation" xml:space="preserve">
+    <value>इस आवर्ती अपॉइंटमेंट से जुड़े किसी भी अपवाद को खो दिया जाएगा। क्या यह ठीक है?</value>
+    <comment>Any exceptions associated with this recurring appointment will be lost. Is this OK?</comment>
+  </data>
+  <data name="RecurrenceFormStrings.ShortMonthWarning" xml:space="preserve">
+    <value>कुछ महीनों में {0} दिनों से कम दिन होते हैं। इन दिनों के लिए, घटना महीने के अंतिम दिन पड़ेगी।</value>
+    <comment>Some months have fewer than {0} days. For these days, the occurrence will fall on the last day of the month.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Weekday" xml:space="preserve">
+    <value>कार्यदिवस</value>
+    <comment>Weekday</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Weekend" xml:space="preserve">
+    <value>सप्ताहांत</value>
+    <comment>Weekend</comment>
+  </data>
+  <data name="Reminder.InvalidTime" xml:space="preserve">
+    <value>स्नूज़ समय "{0}" अमान्य है। कृपया एक वैध स्नूज़ समय दर्ज करें।</value>
+    <comment>The snooze time "{0}" is invalid. Please enter a valid snooze time.</comment>
+  </data>
+  <data name="Reminder.NDaysOverdue" xml:space="preserve">
+    <value>{0} दिन अतिदेय</value>
+    <comment>{0} days overdue</comment>
+  </data>
+  <data name="Reminder.NHoursOverdue" xml:space="preserve">
+    <value>{0} घंटे अतिदेय</value>
+    <comment>{0} hours overdue</comment>
+  </data>
+  <data name="Reminder.NMinutesOverdue" xml:space="preserve">
+    <value>{0} मिनट अतिदेय</value>
+    <comment>{0} minutes overdue</comment>
+  </data>
+  <data name="Reminder.Now" xml:space="preserve">
+    <value>अभी</value>
+    <comment>Now</comment>
+  </data>
+  <data name="Reminder.OneDayOverdue" xml:space="preserve">
+    <value>1 दिन अतिदेय</value>
+    <comment>1 day overdue</comment>
+  </data>
+  <data name="Reminder.OneHourOverdue" xml:space="preserve">
+    <value>1 घंटा अतिदेय</value>
+    <comment>1 hour overdue</comment>
+  </data>
+  <data name="Reminder.OneMinuteOverdue" xml:space="preserve">
+    <value>1 मिनट अतिदेय</value>
+    <comment>1 minute overdue</comment>
+  </data>
+  <data name="Reminder.OneReminder" xml:space="preserve">
+    <value>1 अनुस्मारक</value>
+    <comment>1 Reminder</comment>
+  </data>
+  <data name="Reminder.RemindersNumber" xml:space="preserve">
+    <value>{0} अनुस्मारक</value>
+    <comment>{0} Reminders</comment>
+  </data>
+  <data name="Reminder.SelectedRemindersNumber" xml:space="preserve">
+    <value>चयनित अनुस्मारक - {0}</value>
+    <comment>Selected reminders - {0}</comment>
+  </data>
+  <data name="Statuses.Busy" xml:space="preserve">
+    <value>व्यस्त</value>
+    <comment>Busy</comment>
+  </data>
+  <data name="Statuses.Free" xml:space="preserve">
+    <value>मुक्त</value>
+    <comment>Free</comment>
+  </data>
+  <data name="Statuses.OutOfOffice" xml:space="preserve">
+    <value>ऑफिस से बाहर</value>
+    <comment>Out of Office</comment>
+  </data>
+  <data name="Statuses.Tentative" xml:space="preserve">
+    <value>अनिश्चित</value>
+    <comment>Tentative</comment>
+  </data>
+  <data name="Statuses.WorkingElsewhere" xml:space="preserve">
+    <value>अन्यत्र कार्यरत</value>
+    <comment>WorkingElsewhere</comment>
+  </data>
+  <data name="TimeSpanStrings.Day" xml:space="preserve">
+    <value>दिन</value>
+    <comment>day</comment>
+  </data>
+  <data name="TimeSpanStrings.Days" xml:space="preserve">
+    <value>दिन</value>
+    <comment>days</comment>
+  </data>
+  <data name="TimeSpanStrings.Hour" xml:space="preserve">
+    <value>घंटा</value>
+    <comment>hour</comment>
+  </data>
+  <data name="TimeSpanStrings.Hours" xml:space="preserve">
+    <value>घंटे</value>
+    <comment>hours</comment>
+  </data>
+  <data name="TimeSpanStrings.Minute" xml:space="preserve">
+    <value>मिनट</value>
+    <comment>minute</comment>
+  </data>
+  <data name="TimeSpanStrings.Minutes" xml:space="preserve">
+    <value>मिनट</value>
+    <comment>minutes</comment>
+  </data>
+  <data name="TimeSpanStrings.NDays" xml:space="preserve">
+    <value>{0} दिन</value>
+    <comment>{0} days</comment>
+  </data>
+  <data name="TimeSpanStrings.NHours" xml:space="preserve">
+    <value>{0} घंटे</value>
+    <comment>{0} hours</comment>
+  </data>
+  <data name="TimeSpanStrings.NMinutes" xml:space="preserve">
+    <value>{0} मिनट</value>
+    <comment>{0} minutes</comment>
+  </data>
+  <data name="TimeSpanStrings.NWeeks" xml:space="preserve">
+    <value>{0} सप्ताह</value>
+    <comment>{0} weeks</comment>
+  </data>
+  <data name="TimeSpanStrings.OneDay" xml:space="preserve">
+    <value>1 दिन</value>
+    <comment>1 day</comment>
+  </data>
+  <data name="TimeSpanStrings.OneHour" xml:space="preserve">
+    <value>1 घंटा</value>
+    <comment>1 hour</comment>
+  </data>
+  <data name="TimeSpanStrings.OneMinute" xml:space="preserve">
+    <value>1 मिनट</value>
+    <comment>1 minute</comment>
+  </data>
+  <data name="TimeSpanStrings.OneWeek" xml:space="preserve">
+    <value>1 सप्ताह</value>
+    <comment>1 week</comment>
+  </data>
+  <data name="TimeSpanStrings.Week" xml:space="preserve">
+    <value>सप्ताह</value>
+    <comment>week</comment>
+  </data>
+  <data name="TimeSpanStrings.Weeks" xml:space="preserve">
+    <value>सप्ताह</value>
+    <comment>weeks</comment>
+  </data>
+</root>

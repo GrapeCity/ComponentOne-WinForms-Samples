@@ -16,8 +16,14 @@ namespace FlexChartExplorer.Samples
     public partial class MultiPagePrintControl : UserControl
     {
         private ButtonEx btnMultiChart, btnMultiPage, btnSubCharts, btnStripChart;
+
+        [DefaultValue(null)]
         public FlexChart FlexChart { get; set; }
+
+        [DefaultValue(null)]
         public PageSettings PageSets { get; set; }
+
+        [DefaultValue(null)]
         public PrinterSettings PrinterSets { get; set; }
 
         public MultiPagePrintControl()

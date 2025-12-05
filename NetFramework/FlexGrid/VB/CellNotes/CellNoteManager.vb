@@ -1,4 +1,4 @@
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 '/ <summary>
 '/ CellNoteManager manages CellNote objects stored in C1FlexGrid 

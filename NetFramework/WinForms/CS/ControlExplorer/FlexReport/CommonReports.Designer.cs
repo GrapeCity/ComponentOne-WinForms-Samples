@@ -18,7 +18,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CommonReports));
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
-            this.tbReports = new C1.Win.C1Command.C1TopicBar();
+            this.tbReports = new C1.Win.Command.C1TopicBar();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.splitter1 = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexViewer1)).BeginInit();
@@ -46,8 +46,8 @@
             this.tbReports.Name = "tbReports";
             this.tbReports.Size = new System.Drawing.Size(196, 389);
             this.tbReports.TabIndex = 1;
-            this.tbReports.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.tbReports.LinkClick += new C1.Win.C1Command.C1TopicBarClickEventHandler(this.tbReports_LinkClick);
+            this.tbReports.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.tbReports.LinkClick += new C1.Win.Command.C1TopicBarClickEventHandler(this.tbReports_LinkClick);
             // 
             // imageList1
             // 
@@ -84,7 +84,7 @@
         #endregion
 
         private C1.Win.FlexViewer.C1FlexViewer c1FlexViewer1;
-        private C1.Win.C1Command.C1TopicBar tbReports;
+        private C1.Win.Command.C1TopicBar tbReports;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.ImageList imageList1;
     }

@@ -36,7 +36,7 @@ Public Class Form1
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents DsCustomer1 As Tutorial15.DsCustomer
-    Friend WithEvents C1List1 As C1.Win.C1List.C1List
+    Friend WithEvents C1List1 As C1.Win.List.C1List
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.DsCustomer1 = New Tutorial15.DsCustomer()
@@ -44,7 +44,7 @@ Public Class Form1
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.C1List1 = New C1.Win.C1List.C1List()
+        Me.C1List1 = New C1.Win.List.C1List()
         CType(Me.DsCustomer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1List1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,19 +92,19 @@ Public Class Form1
         Me.C1List1.ColumnCaptionHeight = 17
         Me.C1List1.ColumnFooterHeight = 17
         Me.C1List1.ColumnWidth = 100
-        Me.C1List1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1List1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1List1.DataSource = Me.DsCustomer1.Customer
         Me.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1List1.ItemHeight = 15
         Me.C1List1.Location = New System.Drawing.Point(40, 16)
-        Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List1.MatchEntryTimeout = CType(2000, Long)
         Me.C1List1.Name = "C1List1"
         Me.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List1.ScrollTips = False
         Me.C1List1.Size = New System.Drawing.Size(448, 288)
@@ -154,7 +154,7 @@ Public Class Form1
     End Function
 
 
-    Private Sub C1List1_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1List.OwnerDrawCellEventArgs) Handles C1List1.OwnerDrawCell
+    Private Sub C1List1_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.List.OwnerDrawCellEventArgs) Handles C1List1.OwnerDrawCell
         'draw alterlative background
         If (e.Row Mod 2 = 0) Then
             e.Graphics.FillRectangle(Me.bh1, e.CellRect)

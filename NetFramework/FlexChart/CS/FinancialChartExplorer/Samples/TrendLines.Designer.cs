@@ -34,10 +34,10 @@ namespace FinancialChartExplorer.Samples
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1FitType = new C1.Win.C1Input.C1ComboBox();
+            this.c1FitType = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.order = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
-            this.c1ChkForecast = new C1.Win.C1Input.C1CheckBox();
+            this.c1ChkForecast = new C1.Win.Input.C1CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.numForwardPeriods = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label4 = new System.Windows.Forms.Label();
@@ -107,7 +107,6 @@ namespace FinancialChartExplorer.Samples
             this.c1FitType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1FitType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1FitType.GapHeight = 5;
-            this.c1FitType.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1FitType.Location = new System.Drawing.Point(103, 17);
             this.c1FitType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1FitType.Name = "c1FitType";
@@ -132,8 +131,6 @@ namespace FinancialChartExplorer.Samples
             // order
             // 
             this.order.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.order.GapHeight = 0;
-            this.order.ImagePadding = new System.Windows.Forms.Padding(0);
             this.order.Location = new System.Drawing.Point(280, 24);
             this.order.Maximum = 10;
             this.order.Minimum = 2;
@@ -147,13 +144,11 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.order.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.order.ValueChanged += new System.EventHandler(this.order_ValueChanged_1);
             // 
             // c1ChkForecast
             // 
             this.c1ChkForecast.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.c1ChkForecast.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1ChkForecast.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1ChkForecast.Location = new System.Drawing.Point(349, 19);
             this.c1ChkForecast.Margin = new System.Windows.Forms.Padding(3, 2, 0, 2);
@@ -161,7 +156,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ChkForecast.Size = new System.Drawing.Size(120, 31);
             this.c1ChkForecast.TabIndex = 11;
             this.c1ChkForecast.Text = "Forecast Enable";
-            this.c1ChkForecast.UseVisualStyleBackColor = true;
             this.c1ChkForecast.Value = null;
             this.c1ChkForecast.CheckedChanged += new System.EventHandler(this.c1ChkForecast_CheckedChanged);
             // 
@@ -180,8 +174,6 @@ namespace FinancialChartExplorer.Samples
             // numForwardPeriods
             // 
             this.numForwardPeriods.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numForwardPeriods.GapHeight = 0;
-            this.numForwardPeriods.ImagePadding = new System.Windows.Forms.Padding(0);
             this.numForwardPeriods.Location = new System.Drawing.Point(574, 24);
             this.numForwardPeriods.Name = "numForwardPeriods";
             this.numForwardPeriods.Size = new System.Drawing.Size(73, 22);
@@ -193,7 +185,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.numForwardPeriods.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.numForwardPeriods.ValueChanged += new System.EventHandler(this.numForwardPeriods_ValueChanged_1);
             // 
             // label4
@@ -211,8 +202,6 @@ namespace FinancialChartExplorer.Samples
             // numBackwardPeriods
             // 
             this.numBackwardPeriods.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numBackwardPeriods.GapHeight = 0;
-            this.numBackwardPeriods.ImagePadding = new System.Windows.Forms.Padding(0);
             this.numBackwardPeriods.Location = new System.Drawing.Point(772, 24);
             this.numBackwardPeriods.Name = "numBackwardPeriods";
             this.numBackwardPeriods.Size = new System.Drawing.Size(73, 22);
@@ -224,7 +213,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.numBackwardPeriods.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.numBackwardPeriods.ValueChanged += new System.EventHandler(this.numBackwardPeriods_ValueChanged_1);
             // 
             // financialChart1
@@ -335,8 +323,8 @@ namespace FinancialChartExplorer.Samples
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private C1.Win.C1Input.C1ComboBox c1FitType;
-        private C1.Win.C1Input.C1CheckBox c1ChkForecast;
+        private C1.Win.Input.C1ComboBox c1FitType;
+        private C1.Win.Input.C1CheckBox c1ChkForecast;
         private C1NumericEditEx order;
         private C1NumericEditEx numForwardPeriods;
         private C1NumericEditEx numBackwardPeriods;

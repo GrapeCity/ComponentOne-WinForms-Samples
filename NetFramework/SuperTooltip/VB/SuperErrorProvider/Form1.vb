@@ -1,4 +1,4 @@
-Imports C1.Win.C1SuperTooltip
+Imports C1.Win.SuperTooltip
 
 Public Class Form1
 
@@ -46,7 +46,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub epComplete_IconClick(ByVal sender As System.Object, ByVal e As C1.Win.C1SuperTooltip.IconClickEventArgs) Handles epComplete.IconClick
+    Private Sub epComplete_IconClick(ByVal sender As System.Object, ByVal e As C1.Win.SuperTooltip.IconClickEventArgs) Handles epComplete.IconClick
         Dim tb As TextBox = CType(e.Control, TextBox)
         MessageBox.Show("""" + tb.Text + """ is the correct value.", "Information")
     End Sub

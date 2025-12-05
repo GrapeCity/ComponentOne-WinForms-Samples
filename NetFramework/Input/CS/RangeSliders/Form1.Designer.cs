@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1RangeSlider1 = new C1.Win.C1Input.C1RangeSlider();
             this.c1NumericEdit1 = new C1.Win.C1Input.C1NumericEdit();
             this.c1NumericEdit2 = new C1.Win.C1Input.C1NumericEdit();

@@ -1,4 +1,4 @@
-namespace FlowHtml
+﻿namespace FlowHtml
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace FlowHtml
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using System.IO;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System.Xml;
 
 namespace HtmlGrid
@@ -16,7 +16,7 @@ namespace HtmlGrid
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -57,7 +57,9 @@ namespace HtmlGrid
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +73,7 @@ namespace HtmlGrid
             this._flex.Size = new System.Drawing.Size(552, 325);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
@@ -149,8 +151,8 @@ namespace HtmlGrid
         }
 
         // use this C1SuperLabel control to render Html cells
-        C1.Win.C1SuperTooltip.C1SuperLabel _html = new C1.Win.C1SuperTooltip.C1SuperLabel();
-        void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        C1.Win.SuperTooltip.C1SuperLabel _html = new C1.Win.SuperTooltip.C1SuperLabel();
+        void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (_flex.Cols[e.Col].Name == "HTML")
             {

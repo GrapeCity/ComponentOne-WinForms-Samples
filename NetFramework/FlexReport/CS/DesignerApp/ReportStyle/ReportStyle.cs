@@ -21,7 +21,7 @@ using System.Diagnostics;
 
 using C1.Report;
 using Doc = C1.Document;
-using C1.Win.C1Document;
+using C1.Win.Document;
 using C1.Win.FlexReport;
 using FlexReportDesignerApp.Util;
 

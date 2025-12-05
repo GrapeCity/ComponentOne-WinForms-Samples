@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace FlexPivotRanges
 {

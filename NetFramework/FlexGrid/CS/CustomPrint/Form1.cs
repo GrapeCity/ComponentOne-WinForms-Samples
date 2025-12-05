@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomPrint
 {
@@ -14,7 +14,7 @@ namespace CustomPrint
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.Button _btnPrint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -59,7 +59,8 @@ namespace CustomPrint
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._btnPrint = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,76 +71,77 @@ namespace CustomPrint
             // 
             // _flex
             // 
-            this._flex.BackColor = System.Drawing.SystemColors.Window;
             this._flex.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 40);
             this._flex.Name = "_flex";
             this._flex.Size = new System.Drawing.Size(560, 352);
-            this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
             // 
             // _btnPrint
             // 
-            this._btnPrint.Location = new System.Drawing.Point(368, 8);
+            this._btnPrint.Location = new System.Drawing.Point(613, 13);
             this._btnPrint.Name = "_btnPrint";
-            this._btnPrint.Size = new System.Drawing.Size(88, 24);
+            this._btnPrint.Size = new System.Drawing.Size(147, 38);
             this._btnPrint.TabIndex = 1;
             this._btnPrint.Text = "Print";
             this._btnPrint.Click += new System.EventHandler(this._btnPrint_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 24);
+            this.label1.Size = new System.Drawing.Size(134, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Rows/page:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(176, 8);
+            this.label2.Location = new System.Drawing.Point(293, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 24);
+            this.label2.Size = new System.Drawing.Size(120, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Cols/page:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _rpp
             // 
-            this._rpp.Location = new System.Drawing.Point(88, 8);
+            this._rpp.Location = new System.Drawing.Point(147, 13);
             this._rpp.Name = "_rpp";
-            this._rpp.Size = new System.Drawing.Size(40, 22);
+            this._rpp.Size = new System.Drawing.Size(66, 31);
             this._rpp.TabIndex = 3;
             this._rpp.Text = "20";
             // 
             // _cpp
             // 
-            this._cpp.Location = new System.Drawing.Point(248, 8);
+            this._cpp.Location = new System.Drawing.Point(413, 13);
             this._cpp.Name = "_cpp";
-            this._cpp.Size = new System.Drawing.Size(40, 22);
+            this._cpp.Size = new System.Drawing.Size(67, 31);
             this._cpp.TabIndex = 3;
             this._cpp.Text = "3";
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(560, 392);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this._rpp,
-                                                                          this.label1,
-                                                                          this._btnPrint,
-                                                                          this._flex,
-                                                                          this.label2,
-                                                                          this._cpp});
-            this.DockPadding.Top = 40;
+            this.Controls.Add(this._rpp);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this._btnPrint);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this._cpp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Custom Printing";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 		#endregion

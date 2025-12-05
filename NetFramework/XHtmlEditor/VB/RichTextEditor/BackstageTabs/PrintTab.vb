@@ -1,7 +1,7 @@
 ﻿
 Imports System.Drawing
 Imports System.Windows.Forms
-Imports C1.Win.C1SuperTooltip
+Imports C1.Win.SuperTooltip
 Imports RichTextEditor.RichTextEditor
 
 Partial Public Class PrintTab
@@ -39,7 +39,7 @@ Partial Public Class PrintTab
 
         If textParts.Length > 1 Then
             If Not textParts(1).StartsWith("*") Then
-                Dim toolTip As C1SuperTooltip = New C1.Win.C1SuperTooltip.C1SuperTooltip()
+                Dim toolTip As C1SuperTooltip = New C1.Win.SuperTooltip.C1SuperTooltip()
                 Dim tipTitle As String = textParts(1).Trim()
                 Dim tipBody As String = String.Join("<br/>", textParts, 2, textParts.Length - 2).Trim()
                 toolTip.SetToolTip(btn, If(String.IsNullOrEmpty(tipBody), tipTitle, String.Format("<b>{0}</b><br/>" & "<div style='margin-left:12'>{1}</div>", tipTitle, tipBody)))

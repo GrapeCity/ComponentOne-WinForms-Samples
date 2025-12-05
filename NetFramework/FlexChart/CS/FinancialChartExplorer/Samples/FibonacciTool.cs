@@ -12,8 +12,8 @@ using C1.Win.Chart.Finance;
 using FinancialChartExplorer.Services;
 using C1.Chart;
 using C1.Win.Chart;
-using C1.Win.C1Themes;
-using C1.Win.C1Input;
+using C1.Win.Themes;
+using C1.Win.Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -53,7 +53,7 @@ namespace FinancialChartExplorer.Samples
                "Time Zone"
             };
 
-            c1CmbLabelPosition.ItemsDataSource = Enum.GetNames(typeof(LabelPosition)).ToList();
+            c1CmbLabelPosition.ItemsDataSource = Enum.GetNames(typeof(C1.Chart.LabelPosition)).ToList();
 
             if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
@@ -116,7 +116,7 @@ namespace FinancialChartExplorer.Samples
                     nudEndX.Value = Convert.ToDecimal(ser.EndX);
                     nudStartY.Value = Convert.ToDecimal(ser.StartY);
                     nudEndY.Value = Convert.ToDecimal(ser.EndY);
-                    c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                    c1CmbLabelPosition.SelectedValue = ser.LabelPosition.ToString();
                 }
                 else if (series is FibonacciFans)
                 {
@@ -125,7 +125,7 @@ namespace FinancialChartExplorer.Samples
                     nudEndX.Value = Convert.ToDecimal(ser.EndX);
                     nudStartY.Value = Convert.ToDecimal(ser.StartY);
                     nudEndY.Value = Convert.ToDecimal(ser.EndY);
-                    c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                    c1CmbLabelPosition.SelectedValue = ser.LabelPosition.ToString();
                 }
             }
             else if (series is Fibonacci)
@@ -134,7 +134,7 @@ namespace FinancialChartExplorer.Samples
                 c1CbRangeSelector.Visible = true;
                 c1CbUptrend.Visible = true;
                 c1CbUptrend.Checked = ser.Uptrend;
-                c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                c1CmbLabelPosition.SelectedValue = ser.LabelPosition.ToString();
             }
             else if (series is FibonacciTimeZones)
             {
@@ -146,7 +146,7 @@ namespace FinancialChartExplorer.Samples
 
                 nudStartX.Value = Convert.ToDecimal(ser.StartX);
                 nudEndX.Value = Convert.ToDecimal(ser.EndX);
-                c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                c1CmbLabelPosition.SelectedValue = ser.LabelPosition.ToString();
             }
         }
 
@@ -209,7 +209,7 @@ namespace FinancialChartExplorer.Samples
         private void c1CmbLabelPosition_SelectedItemChanged(object sender, EventArgs e)
         {
             if (currentFibonacciTool == null) return;
-            var position = (LabelPosition)Enum.Parse(typeof(LabelPosition), c1CmbLabelPosition.SelectedItem.ToString());
+            var position = (C1.Chart.LabelPosition)Enum.Parse(typeof(C1.Chart.LabelPosition), c1CmbLabelPosition.SelectedItem.ToString());
             if (currentFibonacciTool is Fibonacci)
             {
                 ((Fibonacci)currentFibonacciTool).LabelPosition = position;

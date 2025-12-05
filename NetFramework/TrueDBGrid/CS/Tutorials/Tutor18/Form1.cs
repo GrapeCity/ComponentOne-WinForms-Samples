@@ -12,10 +12,10 @@ namespace Tutorial18
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
-		private C1.Win.C1TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
+		private C1.Win.TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter2;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand2;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -68,7 +68,7 @@ namespace Tutorial18
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsContacts1 = new Tutorial18.dsContacts();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
@@ -76,7 +76,7 @@ namespace Tutorial18
 			this.oleDbInsertCommand2 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbUpdateCommand2 = new System.Data.OleDb.OleDbCommand();
-			this.c1TrueDBDropdown1 = new C1.Win.C1TrueDBGrid.C1TrueDBDropdown();
+			this.c1TrueDBDropdown1 = new C1.Win.TrueDBGrid.C1TrueDBDropdown();
 			this.dsCustType1 = new Tutorial18.dsCustType();
 			this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -99,20 +99,20 @@ namespace Tutorial18
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 8);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(504, 272);
 			this.c1TrueDBGrid1.TabIndex = 0;
 			this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.C1TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
+			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
 			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"Company\" Da" +
 				"taField=\"Company\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Level=" +
 				"\"0\" Caption=\"Contacted\" DataField=\"Contacted\"><ValueItems /><GroupInfo /></C1Dat" +
@@ -139,7 +139,7 @@ namespace Tutorial18
 				"Control;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;AlignVert:Center;}Style1" +
 				"88{}Style189{}Style180{}Inactive{ForeColor:InactiveCaptionText;BackColor:Inactiv" +
 				"eCaption;}FilterBar{}Style9{}Style8{}OddRow{}Style5{}Style4{}Style7{}Style6{}Sty" +
-				"le1{}Style181{}Style3{}Style2{}</Data></Styles><Splits><C1.Win.C1TrueDBGrid.Merg" +
+				"le1{}Style181{}Style3{}Style2{}</Data></Styles><Splits><C1.Win.TrueDBGrid.Merg" +
 				"eView Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeight=\"17\" ColumnFooterHeight=\"17" +
 				"\" MarqueeStyle=\"DottedCellBorder\" RecordSelectorWidth=\"17\" DefRecSelWidth=\"17\" V" +
 				"erticalScrollGroup=\"1\" HorizontalScrollGroup=\"1\"><ClientRect>0, 17, 500, 251</Cl" +
@@ -292,7 +292,7 @@ namespace Tutorial18
 			// 
 			this.c1TrueDBDropdown1.AllowColMove = true;
 			this.c1TrueDBDropdown1.AllowColSelect = true;
-			this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows;
+			this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows;
 			this.c1TrueDBDropdown1.AlternatingRows = false;
 			this.c1TrueDBDropdown1.CaptionHeight = 17;
 			this.c1TrueDBDropdown1.ColumnCaptionHeight = 17;
@@ -309,7 +309,7 @@ namespace Tutorial18
 			this.c1TrueDBDropdown1.Location = new System.Drawing.Point(264, 136);
 			this.c1TrueDBDropdown1.Name = "c1TrueDBDropdown1";
 			this.c1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBDropdown1.RowHeight = 15;
 			this.c1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBDropdown1.ScrollTips = false;
@@ -321,7 +321,7 @@ namespace Tutorial18
 			this.c1TrueDBDropdown1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"TypeDesc\" D" +
 				"ataField=\"TypeDesc\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Leve" +
 				"l=\"0\" Caption=\"TypeId\" DataField=\"TypeId\"><ValueItems /><GroupInfo /></C1DataCol" +
-				"umn></DataCols><Styles type=\"C1.Win.C1TrueDBGrid.Design.ContextWrapper\"><Data>Ca" +
+				"umn></DataCols><Styles type=\"C1.Win.TrueDBGrid.Design.ContextWrapper\"><Data>Ca" +
 				"ption{AlignHorz:Center;}Normal{}Selected{ForeColor:HighlightText;BackColor:Highl" +
 				"ight;}Editor{}Style10{AlignHorz:Near;}Style11{}Style12{}Style13{}Style140{AlignH" +
 				"orz:Near;}Style139{}Style138{}Style137{}Style136{}Style135{AlignHorz:Near;}Style" +
@@ -332,7 +332,7 @@ namespace Tutorial18
 				"Style7{}Style6{}FilterBar{}Style3{}Style4{}Style9{}Style8{}Style1{}Style5{}Group" +
 				"{AlignVert:Center;Border:None,,0, 0, 0, 0;BackColor:ControlDark;}Style141{AlignH" +
 				"orz:Near;}Style142{}Style143{}Style144{}Style145{}Style2{}</Data></Styles><Split" +
-				"s><C1.Win.C1TrueDBGrid.DropdownView Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeig" +
+				"s><C1.Win.TrueDBGrid.DropdownView Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeig" +
 				"ht=\"17\" ColumnFooterHeight=\"17\" MarqueeStyle=\"DottedCellBorder\" RecordSelectorWi" +
 				"dth=\"16\" RecordSelectors=\"False\" VerticalScrollGroup=\"1\" HorizontalScrollGroup=\"" +
 				"1\"><ClientRect>0, 0, 188, 116</ClientRect><internalCols><C1DropDisplayColumn><DC" +
@@ -466,7 +466,7 @@ namespace Tutorial18
 				MessageBox.Show(eLoad.Message); 
 			}
 		}
-		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs e)
+		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs e)
 		{
 			if(e.Col == 0 && e.Row < dtCopy.Rows.Count)
 				e.Value = dtCopy.Rows[e.Row].ItemArray.GetValue(0).ToString() + " " + dtCopy.Rows[e.Row].ItemArray.GetValue(1).ToString();

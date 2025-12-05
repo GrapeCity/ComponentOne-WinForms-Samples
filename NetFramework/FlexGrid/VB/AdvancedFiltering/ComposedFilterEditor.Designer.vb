@@ -11,7 +11,7 @@
         End Sub
 
         Private Sub InitializeComponent()
-            Me._columnFilterEditor = New C1.Win.C1FlexGrid.ColumnFilterEditor()
+            Me._columnFilterEditor = New C1.Win.FlexGrid.ColumnFilterEditor()
             Me._weekdayFilterEditor = New AdvancedFiltering.WeekdayFilterEditor()
             Me._btnWeekdayFilter = New System.Windows.Forms.ToolStripButton()
             Me.SuspendLayout()
@@ -53,7 +53,7 @@
 
         End Sub
 
-        Private _columnFilterEditor As C1.Win.C1FlexGrid.ColumnFilterEditor
+        Private _columnFilterEditor As C1.Win.FlexGrid.ColumnFilterEditor
         Private _weekdayFilterEditor As WeekdayFilterEditor
         Private WithEvents _btnWeekdayFilter As System.Windows.Forms.ToolStripButton
     End Class

@@ -104,7 +104,7 @@ Partial Class Form1
         Me.C1StatusBar1 = New C1.Win.Ribbon.C1StatusBar()
         Me.DocumentModifiedLabel = New C1.Win.Ribbon.RibbonLabel()
         Me.richTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.C1BackstageView1 = New C1.Win.Ribbon.C1BackstageView()
         Me.NewDocumentButton = New C1.Win.Ribbon.RibbonButton()
         Me.OpenDocumentTab = New C1.Win.Ribbon.BackstageViewTab()
@@ -825,7 +825,7 @@ Partial Class Form1
     Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
     Friend WithEvents ribbonStyleCombo As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Private WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents styleGallery As C1.Win.Ribbon.RibbonGallery
     Friend WithEvents C1BackstageView1 As C1.Win.Ribbon.C1BackstageView

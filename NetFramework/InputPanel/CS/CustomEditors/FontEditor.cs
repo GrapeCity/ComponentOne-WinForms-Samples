@@ -5,7 +5,7 @@ using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Reflection;
-using C1.Win.C1InputPanel;
+using C1.Win.InputPanel;
 
 namespace CustomEditors
 {

@@ -18,11 +18,11 @@ using System.Text.RegularExpressions;
 using System.Linq;
 #endif
 
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.Localization;
-using C1.Win.C1InputPanel;
+using C1.Win.InputPanel;
 using C1.Util.Win;
-using C1.Win.C1SuperTooltip;
+using C1.Win.SuperTooltip;
 using FlexReportDesignerApp.Util;
 
 

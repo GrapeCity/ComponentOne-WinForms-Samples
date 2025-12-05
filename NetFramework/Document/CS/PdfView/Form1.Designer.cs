@@ -30,7 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1PdfDocumentSource1 = new C1.Win.C1Document.C1PdfDocumentSource(this.components);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource(this.components);
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
             this.ilLarge = new System.Windows.Forms.ImageList(this.components);
             this.ilSmall = new System.Windows.Forms.ImageList(this.components);
@@ -82,7 +83,7 @@
 
         #endregion
 
-        private C1.Win.C1Document.C1PdfDocumentSource c1PdfDocumentSource1;
+        private C1.Win.Document.C1PdfDocumentSource c1PdfDocumentSource1;
         private C1.Win.FlexViewer.C1FlexViewer c1FlexViewer1;
         private System.Windows.Forms.ImageList ilLarge;
         private System.Windows.Forms.ImageList ilSmall;

@@ -28,7 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,8 +45,8 @@
             this.c1FlexGrid1.Rows.DefaultSize = 21;
             this.c1FlexGrid1.Size = new System.Drawing.Size(617, 368);
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
-            this.c1FlexGrid1.CellChanged += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_CellChanged);
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexGrid1.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_CellChanged);
             this.c1FlexGrid1.Paint += new System.Windows.Forms.PaintEventHandler(this.c1FlexGrid1_Paint);
             // 
             // Form1
@@ -61,7 +65,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }
 

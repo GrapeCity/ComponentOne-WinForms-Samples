@@ -13,7 +13,7 @@ using C1.Win.C1Editor;
 public class XhtmlPrintDocument : PrintDocument
 {
     C1Editor _editor;
-    C1.Win.C1SuperTooltip.C1SuperLabel _label;
+    C1.Win.SuperTooltip.C1SuperLabel _label;
     int _offset;
 
     public XhtmlPrintDocument(C1Editor editor)
@@ -23,7 +23,7 @@ public class XhtmlPrintDocument : PrintDocument
     protected override void OnBeginPrint(PrintEventArgs e)
     {
         _offset = 0;
-        _label = new C1.Win.C1SuperTooltip.C1SuperLabel();
+        _label = new C1.Win.SuperTooltip.C1SuperLabel();
         _label.Text = _editor.Document.InnerXml;
         _label.Font = _editor.Font;
         _label.ForeColor = _editor.ForeColor;

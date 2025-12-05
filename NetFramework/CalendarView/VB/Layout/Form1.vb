@@ -32,7 +32,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim themes As String() = C1.Win.C1Themes.C1ThemeController.GetThemes()
+        Dim themes As String() = C1.Win.Themes.C1ThemeController.GetThemes()
         cmbTheme.Items.AddRange(themes)
         cmbTheme.SelectedIndex = Array.IndexOf(themes, "Office365White")
     End Sub

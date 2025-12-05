@@ -2,25 +2,21 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>icon_weatherapp.ico</ApplicationIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="icon_weatherapp.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
 </Project>

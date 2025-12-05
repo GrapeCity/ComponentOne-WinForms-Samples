@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace ComboBoxTranslateValue
 {

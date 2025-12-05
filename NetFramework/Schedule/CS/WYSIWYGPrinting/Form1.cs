@@ -6,8 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Schedule;
-using C1.C1Schedule;
+using C1.Win.Schedule;
+using C1.Schedule;
 using System.Drawing.Printing;
 using System.IO;
 using C1.Win.RibbonPreview;
@@ -30,17 +30,17 @@ namespace WYSIWYGPrinting
 
         private void btnDayView_Click(object sender, EventArgs e)
         {
-            c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.DayView;
+            c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.DayView;
         }
 
         private void btnWeekView_Click(object sender, EventArgs e)
         {
-            c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WeekView;
+            c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WeekView;
         }
 
         private void btnMonthView_Click(object sender, EventArgs e)
         {
-            c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.MonthView;
+            c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.MonthView;
         }
 
         private void btnPrint_Click(object sender, EventArgs e)

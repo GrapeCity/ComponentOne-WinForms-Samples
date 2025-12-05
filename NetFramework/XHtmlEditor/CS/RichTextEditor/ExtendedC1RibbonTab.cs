@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using C1.Win.Ribbon;
-using C1.Win.C1SpellChecker;
+using C1.Win.SpellChecker;
 using Resources = global::RichTextEditor.Properties.Resources;
 using C1.Framework;
 

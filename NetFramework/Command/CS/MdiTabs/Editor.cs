@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace MdiTabs
 {

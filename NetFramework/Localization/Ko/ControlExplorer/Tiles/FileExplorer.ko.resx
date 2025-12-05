@@ -129,7 +129,7 @@
   <data name="tile1.Text1" xml:space="preserve">
     <value>15.3 GB free of 44.0 GB</value>
   </data>
-  <assembly alias="C1.Win.C1TileControl.4.5.2" name="C1.Win.C1TileControl.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.TileControl.4.5.2" name="C1.Win.TileControl.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <data name="textElement5.Text" xml:space="preserve">
     <value>Folder Last Write Time:</value>
   </data>

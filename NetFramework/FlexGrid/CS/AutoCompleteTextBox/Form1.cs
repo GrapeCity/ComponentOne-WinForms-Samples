@@ -30,7 +30,7 @@ namespace AutoCompleteTextBox
             _flex.SetupEditor += _flex_SetupEditor;
         }
 
-        void _flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void _flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             var tb = _flex.Editor as TextBox;
             if (tb != null)

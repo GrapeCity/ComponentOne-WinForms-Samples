@@ -35,10 +35,10 @@ Public Class Form1
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents DataSet11 As CustomFiltering.DataSet1
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         Me.DataSet11 = New CustomFiltering.DataSet1
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand
@@ -124,7 +124,7 @@ Public Class Form1
         ' build our filter expression
         Dim sb As New System.Text.StringBuilder()
 
-        Dim dc As C1.Win.C1TrueDBGrid.C1DataColumn
+        Dim dc As C1.Win.TrueDBGrid.C1DataColumn
         For Each dc In Me.C1TrueDBGrid1.Columns
             If dc.FilterText.Length > 0 Then
                 If sb.Length > 0 Then

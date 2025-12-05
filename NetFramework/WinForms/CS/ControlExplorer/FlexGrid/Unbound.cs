@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
@@ -30,7 +30,7 @@ namespace ControlExplorer.FlexGrid
         {
             rand = new Random();
             //Set AllowMerging to Spill meaning empty adjacent cells will allow long text to spill (similar to Excel)
-            c1FlexGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Spill;
+            c1FlexGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Spill;
 
             //Create some CellStyles
             CellStyle cs = c1FlexGrid1.Styles.Add("Up");
@@ -44,7 +44,7 @@ namespace ControlExplorer.FlexGrid
             LoadData();
         }
 
-        private void c1FlexGrid1_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             //After edit, apply new changes to calculated columns
             if (isHeaderRow(e.Row))
@@ -157,7 +157,7 @@ namespace ControlExplorer.FlexGrid
                 return false;
         }
 
-        private void c1FlexGrid1_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_BeforeEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             // if we begin to edit auto fill the date field
             if (e.Row > 1 && (e.Col == 2 || e.Col == 3))

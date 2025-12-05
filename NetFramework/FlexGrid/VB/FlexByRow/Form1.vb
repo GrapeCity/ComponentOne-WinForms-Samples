@@ -40,14 +40,14 @@ Public Class Form1
     Friend WithEvents _btnByRow As System.Windows.Forms.Button
     Friend WithEvents _btnByColumn As System.Windows.Forms.Button
     Friend WithEvents _imgList As System.Windows.Forms.ImageList
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me._btnByRow = New System.Windows.Forms.Button()
         Me._btnByColumn = New System.Windows.Forms.Button()
         Me._imgList = New System.Windows.Forms.ImageList(Me.components)
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,7 +85,7 @@ Public Class Form1
         Me._flex.Location = New System.Drawing.Point(8, 8)
         Me._flex.Name = "_flex"
         Me._flex.Size = New System.Drawing.Size(440, 232)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -123,7 +123,7 @@ Public Class Form1
 
     Private Sub _btnByRow_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles _btnByRow.Click
         _flex.Clear()
-        Dim row As C1.Win.C1FlexGrid.RowCollection = _flex.Rows
+        Dim row As C1.Win.FlexGrid.RowCollection = _flex.Rows
 
         row(1).Caption = "String/Mask"
         row(1).DataType = GetType(String)
@@ -147,13 +147,13 @@ Public Class Form1
         row(4).StyleFixed = _flex.Styles("Hdr")
 
         row(5).Caption = "Aggregate"
-        row(5).DataType = GetType(C1.Win.C1FlexGrid.AggregateEnum)
+        row(5).DataType = GetType(C1.Win.FlexGrid.AggregateEnum)
         row(5).StyleFixed = _flex.Styles("Hdr")
     End Sub
 
     Private Sub _btnByColumn_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles _btnByColumn.Click
         _flex.Clear()
-        Dim col As C1.Win.C1FlexGrid.ColumnCollection = _flex.Cols
+        Dim col As C1.Win.FlexGrid.ColumnCollection = _flex.Cols
 
         col(1).Caption = "String/Mask"
         col(1).DataType = GetType(String)
@@ -177,7 +177,7 @@ Public Class Form1
         col(4).StyleFixed = _flex.Styles("Hdr")
 
         col(5).Caption = "Aggregate"
-        col(5).DataType = GetType(C1.Win.C1FlexGrid.AggregateEnum)
+        col(5).DataType = GetType(C1.Win.FlexGrid.AggregateEnum)
         col(5).StyleFixed = _flex.Styles("Hdr")
     End Sub
 End Class

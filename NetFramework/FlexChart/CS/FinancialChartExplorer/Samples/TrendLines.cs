@@ -12,8 +12,8 @@ using C1.Win.Chart;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
-using C1.Win.C1Themes;
-using C1.Win.C1Input;
+using C1.Win.Themes;
+using C1.Win.Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -62,7 +62,7 @@ namespace FinancialChartExplorer.Samples
 
         private void c1FitType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            trendLine.FitType = (FitType)c1FitType.SelectedItem;
+            trendLine.FitType = (FitType)c1FitType.SelectedValue;
         }
 
         private void c1ChkForecast_CheckedChanged(object sender, EventArgs e)

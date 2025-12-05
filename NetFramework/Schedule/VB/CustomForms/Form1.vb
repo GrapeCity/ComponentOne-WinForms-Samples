@@ -5,8 +5,8 @@ Imports System.Data
 Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1Schedule
-Imports C1.C1Schedule
+Imports C1.Win.Schedule
+Imports C1.Schedule
 Imports System.Globalization
 Imports System.Threading
 Imports System.Collections
@@ -36,7 +36,7 @@ Namespace TestSchedule
             _locations.Add(New Location(5, "Studio 3"))
 
             InitializeComponent()
-            ' Set mappings for LabelStorage (map Level to C1.C1Schedule.Label object properties)
+            ' Set mappings for LabelStorage (map Level to C1.Schedule.Label object properties)
             Me.c1Schedule1.DataStorage.LabelStorage.Mappings.TextMapping.MappingName = "LevelName"
             Me.c1Schedule1.DataStorage.LabelStorage.Mappings.CaptionMapping.MappingName = "Description"
             Me.c1Schedule1.DataStorage.LabelStorage.Mappings.ColorMapping.MappingName = "ColorString"
@@ -44,13 +44,13 @@ Namespace TestSchedule
             ' Set LabelStorage DataSource
             Me.c1Schedule1.DataStorage.LabelStorage.DataSource = _levels.Values
 
-            ' Set mappings for CategoryStorage (map ExerciseCategory to C1.C1Schedule.Category object properties)
+            ' Set mappings for CategoryStorage (map ExerciseCategory to C1.Schedule.Category object properties)
             Me.c1Schedule1.DataStorage.CategoryStorage.Mappings.TextMapping.MappingName = "Name"
             Me.c1Schedule1.DataStorage.CategoryStorage.Mappings.IndexMapping.MappingName = "Id"
             ' Set CategoryStorage DataSource
             Me.c1Schedule1.DataStorage.CategoryStorage.DataSource = _categories
 
-            ' Set mappings for ResourceStorage (map Location to C1.C1Schedule.Resource object properties)
+            ' Set mappings for ResourceStorage (map Location to C1.Schedule.Resource object properties)
             Me.c1Schedule1.DataStorage.ResourceStorage.Mappings.TextMapping.MappingName = "Name"
             Me.c1Schedule1.DataStorage.ResourceStorage.Mappings.IndexMapping.MappingName = "Id"
             ' Set ResourceStorage DataSource
@@ -199,7 +199,7 @@ Namespace TestSchedule
         End Sub
 
         ' Show custom Reminder form when Reminder fires
-        Private Sub c1Schedule1_ReminderFire(ByVal sender As System.Object, ByVal e As C1.C1Schedule.ReminderEventArgs) Handles c1Schedule1.ReminderFire
+        Private Sub c1Schedule1_ReminderFire(ByVal sender As System.Object, ByVal e As C1.Schedule.ReminderEventArgs) Handles c1Schedule1.ReminderFire
             Dim form As New ReminderForm(e.Reminder, Me)
             ' Show form
             form.Show()

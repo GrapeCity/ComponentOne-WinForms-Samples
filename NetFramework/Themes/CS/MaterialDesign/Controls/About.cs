@@ -21,7 +21,7 @@ namespace MaterialDesign.Controls
         #region IThemeable
         void IThemeable.ThemeChanged()
         {
-            C1.Win.C1Themes.C1ThemeController.ApplyThemeToControlTree(this, SampleHelper.Instance.C1Theme);
+            C1.Win.Themes.C1ThemeController.ApplyThemeToControlTree(this, SampleHelper.Instance.C1Theme);
             c1Label1.Font = new Font(c1Label1.Font.FontFamily, 16);            
         }
         #endregion IThemeable

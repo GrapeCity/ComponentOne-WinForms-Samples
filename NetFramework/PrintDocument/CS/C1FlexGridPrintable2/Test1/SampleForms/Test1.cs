@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace C1FlexGridPrinterTest
 {
@@ -54,7 +54,7 @@ namespace C1FlexGridPrinterTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            C1.Win.C1FlexGrid.C1FlexGridPrinter printer = new C1.Win.C1FlexGrid.C1FlexGridPrinter(c1FlexGridPrintable2);
+            C1.Win.FlexGrid.C1FlexGridPrinter printer = new C1.Win.FlexGrid.C1FlexGridPrinter(c1FlexGridPrintable2);
             printer.PrintPreview();
         }
 

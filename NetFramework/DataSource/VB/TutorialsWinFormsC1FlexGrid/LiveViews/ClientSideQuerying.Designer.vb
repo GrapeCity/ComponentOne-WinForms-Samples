@@ -27,7 +27,7 @@ Partial Class ClientSideQuerying
         Me.label1 = New System.Windows.Forms.Label()
         Me.cutButton = New System.Windows.Forms.Button()
         Me.raiseButton = New System.Windows.Forms.Button()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -109,5 +109,5 @@ End Sub
     Private WithEvents label1 As System.Windows.Forms.Label
     Private WithEvents cutButton As System.Windows.Forms.Button
     Private WithEvents raiseButton As System.Windows.Forms.Button
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
 End Class

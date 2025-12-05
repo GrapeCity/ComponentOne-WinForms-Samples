@@ -22,11 +22,11 @@ Partial Class PageHypotrochoid
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim C1GaugePointer4 As C1.Win.C1Gauge.C1GaugePointer = New C1.Win.C1Gauge.C1GaugePointer
-        Dim C1GaugePointer5 As C1.Win.C1Gauge.C1GaugePointer = New C1.Win.C1Gauge.C1GaugePointer
-        Dim C1GaugePointer6 As C1.Win.C1Gauge.C1GaugePointer = New C1.Win.C1Gauge.C1GaugePointer
-        Me.c1Gauge1 = New C1.Win.C1Gauge.C1Gauge
-        Me.c1LinearGauge1 = New C1.Win.C1Gauge.C1LinearGauge
+        Dim C1GaugePointer4 As C1.Win.Gauge.C1GaugePointer = New C1.Win.Gauge.C1GaugePointer
+        Dim C1GaugePointer5 As C1.Win.Gauge.C1GaugePointer = New C1.Win.Gauge.C1GaugePointer
+        Dim C1GaugePointer6 As C1.Win.Gauge.C1GaugePointer = New C1.Win.Gauge.C1GaugePointer
+        Me.c1Gauge1 = New C1.Win.Gauge.C1Gauge
+        Me.c1LinearGauge1 = New C1.Win.Gauge.C1LinearGauge
         Me.gaugePanel.SuspendLayout()
         Me.gridPanel.SuspendLayout()
         CType(Me.c1Gauge1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,7 +50,7 @@ Partial Class PageHypotrochoid
         Me.c1Gauge1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.c1Gauge1.Gauges.AddRange(New C1.Win.C1Gauge.C1GaugeBase() {Me.c1LinearGauge1})
+        Me.c1Gauge1.Gauges.AddRange(New C1.Win.Gauge.C1GaugeBase() {Me.c1LinearGauge1})
         Me.c1Gauge1.Location = New System.Drawing.Point(3, 3)
         Me.c1Gauge1.Name = "c1Gauge1"
         Me.c1Gauge1.Size = New System.Drawing.Size(386, 430)
@@ -68,7 +68,7 @@ Partial Class PageHypotrochoid
         C1GaugePointer5.Visible = False
         C1GaugePointer6.ViewTag = CType(648102824771747639, Long)
         C1GaugePointer6.Visible = False
-        Me.c1LinearGauge1.MorePointers.AddRange(New C1.Win.C1Gauge.C1GaugePointer() {C1GaugePointer4, C1GaugePointer5, C1GaugePointer6})
+        Me.c1LinearGauge1.MorePointers.AddRange(New C1.Win.Gauge.C1GaugePointer() {C1GaugePointer4, C1GaugePointer5, C1GaugePointer6})
         Me.c1LinearGauge1.Name = "c1LinearGauge1"
         Me.c1LinearGauge1.Pointer.Visible = False
         Me.c1LinearGauge1.Viewport.AspectRatio = 1
@@ -85,7 +85,7 @@ Partial Class PageHypotrochoid
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents c1Gauge1 As C1.Win.C1Gauge.C1Gauge
-    Private WithEvents c1LinearGauge1 As C1.Win.C1Gauge.C1LinearGauge
+    Private WithEvents c1Gauge1 As C1.Win.Gauge.C1Gauge
+    Private WithEvents c1LinearGauge1 As C1.Win.Gauge.C1LinearGauge
 
 End Class

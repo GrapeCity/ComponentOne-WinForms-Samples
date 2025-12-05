@@ -6,13 +6,13 @@ Imports System.Text
 Imports System.Windows.Forms
 Imports System.IO
 
-Imports C1.Win.C1FlexGrid
-Imports C1.Win.C1TrueDBGrid
-Imports C1.Win.C1Command
-Imports C1.Win.C1Themes
-Imports C1.Win.C1Schedule
+Imports C1.Win.FlexGrid
+Imports C1.Win.TrueDBGrid
+Imports C1.Win.Command
+Imports C1.Win.Themes
+Imports C1.Win.Schedule
 Imports C1.Win.C1Input
-Imports C1.C1Schedule
+Imports C1.Schedule
 
 Public Partial Class Form1
 	Inherits Form
@@ -120,7 +120,7 @@ Public Partial Class Form1
         _trueGridOptions.ShowCaption = True
         _trueGridOptions.ShowFilterBar = True
         _trueGridOptions.ShowGroupByArea = True
-        _trueGridOptions.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+        _trueGridOptions.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
 
         '
         ' initialize C1FlexGrid
@@ -129,8 +129,8 @@ Public Partial Class Form1
         _flexGridOptions.FrozenColCount = 3
 
         '
-        FillItems(ccmCFGSelectionMode, GetType(C1.Win.C1FlexGrid.SelectionModeEnum), AddressOf SelectionModeCommandClick, AddressOf SelectionModeCommandStateQuery)
-        FillItems(ccmCFGFocusRect, GetType(C1.Win.C1FlexGrid.FocusRectEnum), AddressOf FocusRectCommandClick, AddressOf FocusRectCommandStateQuery)
+        FillItems(ccmCFGSelectionMode, GetType(C1.Win.FlexGrid.SelectionModeEnum), AddressOf SelectionModeCommandClick, AddressOf SelectionModeCommandStateQuery)
+        FillItems(ccmCFGFocusRect, GetType(C1.Win.FlexGrid.FocusRectEnum), AddressOf FocusRectCommandClick, AddressOf FocusRectCommandStateQuery)
         FillItems(csbSelectionMode, GetType(SelectionModeEnum))
         FillItems(csbFocusRect, GetType(FocusRectEnum))
 

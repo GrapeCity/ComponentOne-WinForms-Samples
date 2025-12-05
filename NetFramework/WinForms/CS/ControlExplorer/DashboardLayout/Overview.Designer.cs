@@ -40,19 +40,19 @@
             C1.Win.Chart.FlexPieSlice flexPieSlice2 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice3 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice4 = new C1.Win.Chart.FlexPieSlice();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeMarks c1GaugeMarks1 = new C1.Win.C1Gauge.C1GaugeMarks();
-            C1.Win.C1Gauge.C1GaugeMarks c1GaugeMarks2 = new C1.Win.C1Gauge.C1GaugeMarks();
-            C1.Win.C1Gauge.C1GaugeLabels c1GaugeLabels1 = new C1.Win.C1Gauge.C1GaugeLabels();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange3 = new C1.Win.C1Gauge.C1GaugeRange();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel4 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeSingleMark c1GaugeSingleMark1 = new C1.Win.C1Gauge.C1GaugeSingleMark();
-            C1.Win.C1Gauge.C1GaugeSingleMark c1GaugeSingleMark2 = new C1.Win.C1Gauge.C1GaugeSingleMark();
-            C1.Win.C1Gauge.C1GaugeRange c1GaugeRange4 = new C1.Win.C1Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks1 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks2 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels1 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange3 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel4 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleMark c1GaugeSingleMark1 = new C1.Win.Gauge.C1GaugeSingleMark();
+            C1.Win.Gauge.C1GaugeSingleMark c1GaugeSingleMark2 = new C1.Win.Gauge.C1GaugeSingleMark();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange4 = new C1.Win.Gauge.C1GaugeRange();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Overview));
             this.c1DashboardLayout1 = new C1.Win.Layout.C1DashboardLayout();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,21 +66,21 @@
             this.flexChart1 = new C1.Win.Chart.FlexChart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel5 = new System.Windows.Forms.Panel();
             this.flexPie1 = new C1.Win.Chart.FlexPie();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1LinearGauge1 = new C1.Win.C1Gauge.C1LinearGauge();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1LinearGauge1 = new C1.Win.Gauge.C1LinearGauge();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel6 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel7 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel6 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel7 = new C1.Win.SplitContainer.C1SplitterPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1DashboardLayout1)).BeginInit();
             this.c1DashboardLayout1.FlowLayoutControl.SuspendLayout();
             this.c1DashboardLayout1.GridLayoutControl.SuspendLayout();
@@ -419,7 +419,7 @@
             // c1Gauge1
             // 
             this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(10, 10);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -435,15 +435,15 @@
             c1GaugeRange1.Location = 40D;
             c1GaugeRange1.ViewTag = ((long)(717286292691556980));
             c1GaugeRange1.Width = 0.1D;
-            c1GaugeMarks1.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.In;
-            c1GaugeMarks1.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeMarks1.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeMarks1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeMarks1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             c1GaugeMarks1.Interval = 500D;
             c1GaugeMarks1.Length = 7D;
             c1GaugeMarks1.Location = 40D;
             c1GaugeMarks1.ViewTag = ((long)(736708070189897828));
             c1GaugeMarks1.Width = 1D;
-            c1GaugeMarks2.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.In;
+            c1GaugeMarks2.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
             c1GaugeMarks2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             c1GaugeMarks2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             c1GaugeMarks2.Interval = 100D;
@@ -452,7 +452,7 @@
             c1GaugeMarks2.ViewTag = ((long)(740648722200817145));
             c1GaugeMarks2.Visible = false;
             c1GaugeMarks2.Width = 1D;
-            c1GaugeLabels1.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.In;
+            c1GaugeLabels1.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
             c1GaugeLabels1.Interval = 500D;
             c1GaugeLabels1.Location = 32D;
             c1GaugeLabels1.ViewTag = ((long)(740930198312349440));
@@ -480,19 +480,19 @@
             c1GaugeSingleLabel2.ViewTag = ((long)(664781023878791980));
             c1GaugeSingleLabel3.Format = "Sales  ##";
             c1GaugeSingleLabel3.Location = 84D;
-            c1GaugeSingleLabel3.OrthogonalAlignment = C1.Win.C1Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel3.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.Out;
             c1GaugeSingleLabel3.OrthogonalOffset = 15D;
             c1GaugeSingleLabel3.PointerIndex = 100;
             c1GaugeSingleLabel3.Position = 0D;
             c1GaugeSingleLabel3.ViewTag = ((long)(665343977590655058));
             c1GaugeSingleLabel4.Location = 104D;
-            c1GaugeSingleLabel4.OrthogonalAlignment = C1.Win.C1Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel4.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.Out;
             c1GaugeSingleLabel4.OrthogonalOffset = 15D;
             c1GaugeSingleLabel4.Position = 0D;
             c1GaugeSingleLabel4.Text = "Goal   1500";
             c1GaugeSingleLabel4.ViewTag = ((long)(665625453783307579));
             c1GaugeSingleMark1.AlignmentOffset = -1;
-            c1GaugeSingleMark1.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeSingleMark1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeSingleMark1.Filling.Color = System.Drawing.Color.SteelBlue;
             c1GaugeSingleMark1.Length = 10D;
             c1GaugeSingleMark1.Location = 84D;
@@ -500,21 +500,21 @@
             c1GaugeSingleMark1.ViewTag = ((long)(671254961800690087));
             c1GaugeSingleMark1.Width = 10D;
             c1GaugeSingleMark2.AlignmentOffset = -1;
-            c1GaugeSingleMark2.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeSingleMark2.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeSingleMark2.Filling.Color = System.Drawing.Color.Green;
             c1GaugeSingleMark2.Length = 10D;
             c1GaugeSingleMark2.Location = 104D;
             c1GaugeSingleMark2.Position = 0D;
             c1GaugeSingleMark2.ViewTag = ((long)(671536437573534036));
             c1GaugeSingleMark2.Width = 10D;
-            c1GaugeRange4.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeRange4.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeRange4.Filling.Color = System.Drawing.Color.Green;
             c1GaugeRange4.From = 1500D;
             c1GaugeRange4.Location = 39D;
             c1GaugeRange4.To = 2000D;
             c1GaugeRange4.ViewTag = ((long)(671817913772729123));
             c1GaugeRange4.Width = 3D;
-            this.c1LinearGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
+            this.c1LinearGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
             c1GaugeRange1,
             c1GaugeMarks1,
             c1GaugeMarks2,
@@ -531,7 +531,7 @@
             this.c1LinearGauge1.Maximum = 2000D;
             this.c1LinearGauge1.Name = "c1LinearGauge1";
             this.c1LinearGauge1.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1LinearGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Rectangle;
+            this.c1LinearGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Rectangle;
             this.c1LinearGauge1.Pointer.Value = 1000D;
             this.c1LinearGauge1.Pointer.Visible = false;
             this.c1LinearGauge1.Viewport.AspectRatio = 2D;
@@ -552,7 +552,7 @@
             // 
             // c1TrueDBGrid1
             // 
-            this.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Form;
+            this.c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Form;
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(10, 10);
@@ -560,7 +560,7 @@
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(262, 212);
@@ -683,28 +683,28 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.Chart.FlexChart flexChart1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private C1.Win.Chart.FlexPie flexPie1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel9;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel6;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel6;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel11;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel7;
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel7;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
     }
 }

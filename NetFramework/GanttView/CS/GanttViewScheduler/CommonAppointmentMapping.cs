@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
 using System.Xml;
-using C1.Win.C1GanttView;
+using C1.Win.GanttView;
 using C1.GanttView;
-using C1.Win.C1Schedule;
-using C1.C1Schedule;
+using C1.Win.Schedule;
+using C1.Schedule;
 
 namespace GanttViewScheduler
 {

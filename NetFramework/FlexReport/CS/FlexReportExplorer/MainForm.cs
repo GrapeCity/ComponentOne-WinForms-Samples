@@ -1,5 +1,5 @@
 ﻿using FlexReportExplorer.Properties;
-using C1.Win.C1Tile;
+using C1.Win.Tile;
 using C1.Report;
 using C1.Win.FlexReport;
 using System;

@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.Win;
 
 namespace Splits
@@ -79,13 +79,13 @@ namespace Splits
         #endregion
 
 		private System.Windows.Forms.Panel panel1;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexTL;
+		private C1.Win.FlexGrid.C1FlexGrid _flexTL;
 		private System.Windows.Forms.Splitter _splitterTop;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexTR;
+		private C1.Win.FlexGrid.C1FlexGrid _flexTR;
 		private System.Windows.Forms.Panel panel2;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexBR;
+		private C1.Win.FlexGrid.C1FlexGrid _flexBR;
 		private System.Windows.Forms.Splitter _splitterBottom;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexBL;
+		private C1.Win.FlexGrid.C1FlexGrid _flexBL;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Splitter splitter3;
 		/// <summary>
@@ -129,13 +129,13 @@ namespace Splits
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this._flexTR = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexTR = new C1.Win.FlexGrid.C1FlexGrid();
             this._splitterTop = new System.Windows.Forms.Splitter();
-            this._flexTL = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexTL = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel2 = new System.Windows.Forms.Panel();
-            this._flexBR = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexBR = new C1.Win.FlexGrid.C1FlexGrid();
             this._splitterBottom = new System.Windows.Forms.Splitter();
-            this._flexBL = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexBL = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel3 = new System.Windows.Forms.Panel();
             this.splitter3 = new System.Windows.Forms.Splitter();
             this.panel1.SuspendLayout();
@@ -160,7 +160,7 @@ namespace Splits
             // 
             // _flexTR
             // 
-            this._flexTR.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flexTR.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flexTR.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flexTR.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexTR.Location = new System.Drawing.Point(182, 0);
@@ -169,7 +169,7 @@ namespace Splits
             this._flexTR.Size = new System.Drawing.Size(357, 152);
             this._flexTR.StyleInfo = resources.GetString("_flexTR.StyleInfo");
             this._flexTR.TabIndex = 2;
-            this._flexTR.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_AfterScroll);
+            this._flexTR.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
             // 
             // _splitterTop
             // 
@@ -183,7 +183,7 @@ namespace Splits
             // 
             // _flexTL
             // 
-            this._flexTL.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flexTL.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flexTL.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flexTL.Dock = System.Windows.Forms.DockStyle.Left;
             this._flexTL.Location = new System.Drawing.Point(0, 0);
@@ -192,7 +192,7 @@ namespace Splits
             this._flexTL.Size = new System.Drawing.Size(176, 152);
             this._flexTL.StyleInfo = resources.GetString("_flexTL.StyleInfo");
             this._flexTL.TabIndex = 0;
-            this._flexTL.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_AfterScroll);
+            this._flexTL.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
             // 
             // panel2
             // 
@@ -207,7 +207,7 @@ namespace Splits
             // 
             // _flexBR
             // 
-            this._flexBR.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flexBR.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flexBR.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flexBR.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexBR.Location = new System.Drawing.Point(182, 0);
@@ -216,7 +216,7 @@ namespace Splits
             this._flexBR.Size = new System.Drawing.Size(357, 207);
             this._flexBR.StyleInfo = resources.GetString("_flexBR.StyleInfo");
             this._flexBR.TabIndex = 2;
-            this._flexBR.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_AfterScroll);
+            this._flexBR.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
             // 
             // _splitterBottom
             // 
@@ -230,7 +230,7 @@ namespace Splits
             // 
             // _flexBL
             // 
-            this._flexBL.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flexBL.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flexBL.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flexBL.Dock = System.Windows.Forms.DockStyle.Left;
             this._flexBL.Location = new System.Drawing.Point(0, 0);
@@ -239,7 +239,7 @@ namespace Splits
             this._flexBL.Size = new System.Drawing.Size(176, 207);
             this._flexBL.StyleInfo = resources.GetString("_flexBL.StyleInfo");
             this._flexBL.TabIndex = 0;
-            this._flexBL.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_AfterScroll);
+            this._flexBL.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
             // 
             // panel3
             // 
@@ -324,7 +324,7 @@ namespace Splits
 
 		// synchronize grid scrolling
 		bool _synchronizing = false;
-		void _flex_AfterScroll(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+		void _flex_AfterScroll(object sender, C1.Win.FlexGrid.RangeEventArgs e)
 		{
 			if (!_synchronizing)
 			{

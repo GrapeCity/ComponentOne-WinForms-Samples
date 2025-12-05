@@ -32,7 +32,7 @@ namespace ControlExplorer.FlexGrid
             numericUpDown1.Maximum = int.MaxValue;
         }
 
-        private void c1Command2_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void c1Command2_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             c1Command2.Enabled = false;
 

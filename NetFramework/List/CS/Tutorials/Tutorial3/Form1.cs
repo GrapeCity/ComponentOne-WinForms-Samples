@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -21,7 +21,7 @@ namespace Tutorial3
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -62,6 +62,7 @@ namespace Tutorial3
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -71,7 +72,7 @@ namespace Tutorial3
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
-			this.C1List1 = new C1.Win.C1List.C1List();
+			this.C1List1 = new C1.Win.List.C1List();
 			((System.ComponentModel.ISupportInitialize)(this.C1List1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -159,17 +160,17 @@ namespace Tutorial3
 			this.C1List1.CaptionHeight = 17;
 			this.C1List1.ColumnCaptionHeight = 17;
 			this.C1List1.ColumnFooterHeight = 17;
-			this.C1List1.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.C1List1.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark;
 			this.C1List1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("C1List1.Images.Images"))));
 			this.C1List1.ItemHeight = 15;
 			this.C1List1.Location = new System.Drawing.Point(48, 16);
-			this.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember;
-			this.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None;
+			this.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember;
+			this.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None;
 			this.C1List1.MatchEntryTimeout = ((long)(2000));
 			this.C1List1.Name = "C1List1";
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.ScrollTips = false;
 			this.C1List1.Size = new System.Drawing.Size(416, 192);

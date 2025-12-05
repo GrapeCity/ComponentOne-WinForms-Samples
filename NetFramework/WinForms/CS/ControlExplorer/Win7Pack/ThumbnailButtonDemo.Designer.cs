@@ -43,7 +43,7 @@
             this.labImageCaption = new System.Windows.Forms.Label();
             this.taskbarButton = new C1.Win.C1Win7Pack.C1TaskbarButton(this.components);
             this.imSmall = new System.Windows.Forms.ImageList(this.components);
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,6 +196,6 @@
         private System.Windows.Forms.Label labImageCaption;
         private C1.Win.C1Win7Pack.C1TaskbarButton taskbarButton;
         private System.Windows.Forms.ImageList imSmall;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
     }
 }

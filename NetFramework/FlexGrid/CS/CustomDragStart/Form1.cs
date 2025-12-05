@@ -30,7 +30,7 @@ namespace CustomDragStart
         // instead of selecting right away, start monitoring to see if the user wants to drag the selection
         bool _checkingDrag = false;
         Point _ptDown = Point.Empty;
-        void c1FlexGrid1_BeforeMouseDown(object sender, C1.Win.C1FlexGrid.BeforeMouseDownEventArgs e)
+        void c1FlexGrid1_BeforeMouseDown(object sender, C1.Win.FlexGrid.BeforeMouseDownEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {

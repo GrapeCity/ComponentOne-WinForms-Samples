@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace DataTree
 {
@@ -103,27 +103,27 @@ namespace DataTree
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(10, 9);
+            this.button1.Location = new System.Drawing.Point(17, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 28);
+            this.button1.Size = new System.Drawing.Size(197, 45);
             this.button1.TabIndex = 2;
             this.button1.Text = "Customers";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(134, 9);
+            this.button2.Location = new System.Drawing.Point(230, 14);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 28);
+            this.button2.Size = new System.Drawing.Size(199, 45);
             this.button2.TabIndex = 2;
             this.button2.Text = "Orders";
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(259, 9);
+            this.button3.Location = new System.Drawing.Point(444, 14);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 28);
+            this.button3.Size = new System.Drawing.Size(197, 45);
             this.button3.TabIndex = 2;
             this.button3.Text = "Nothing";
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -134,8 +134,8 @@ namespace DataTree
             this._flex.AllowDelete = true;
             this._flex.ColumnInfo = "10,1,0,0,0,130,Columns:0{Width:34;Style:\"ImageAlign:RightCenter;\";}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-            this._flex.HighLight = C1.Win.C1FlexGrid.HighLightEnum.WithFocus;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.HighLight = C1.Win.FlexGrid.HighLightEnum.WithFocus;
             this._flex.Location = new System.Drawing.Point(0, 40);
             this._flex.Name = "_flex";
             this._flex.Rows.Count = 51;
@@ -144,17 +144,18 @@ namespace DataTree
             this._flex.Size = new System.Drawing.Size(782, 415);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Black;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2010Black;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(7, 20);
+            this.AutoScaleBaseSize = new System.Drawing.Size(12, 32);
             this.ClientSize = new System.Drawing.Size(782, 455);
             this.Controls.Add(this.button1);
             this.Controls.Add(this._flex);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

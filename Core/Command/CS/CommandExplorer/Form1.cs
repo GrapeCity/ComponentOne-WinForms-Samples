@@ -17,10 +17,10 @@ namespace CommandExplorer
 
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
-                lblSamples.Items.Add(sample);
+                lbSamples.Items.Add(sample);
             }
 
-            lblSamples.SelectedIndex = 0;
+            lbSamples.SelectedIndex = 0;
 
             InitializeTheme();
 
@@ -41,11 +41,19 @@ namespace CommandExplorer
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
-            _selectedControl = sample.Sample;
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            if (lbSamples.SelectedItem is not SampleItem sampleItem)
+            {
+                return;
+            }
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
+            _selectedControl = sampleItem.Sample;
 
             _selectedControl.Dock = DockStyle.Fill;
             pnlSample.Controls.Add(_selectedControl);

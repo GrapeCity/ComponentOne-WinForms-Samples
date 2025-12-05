@@ -12,7 +12,7 @@ namespace DragImages
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.ImageList _imgList;
 		private System.ComponentModel.IContainer components;
 
@@ -50,46 +50,52 @@ namespace DragImages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this._imgList = new System.Windows.Forms.ImageList(this.components);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Automatic;
-			this._flex.DropMode = C1.Win.C1FlexGrid.DropModeEnum.Manual;
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(568, 334);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:232, 232, 216;ForeColor:0, 0, 0;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:48, 104, 192;ForeColor:248, 252, 248;}	Search{BackColor:48, 104, 192;ForeColor:248, 252, 248;}	Frozen{BackColor:240, 244, 216;}	EmptyArea{BackColor:128, 128, 128;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:0, 0, 0;ForeColor:248, 252, 248;}	Subtotal0{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal1{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal2{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal3{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal4{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal5{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	");
-			this._flex.TabIndex = 0;
-			this._flex.StartDrag += new System.Windows.Forms.DragEventHandler(this._flex_StartDrag);
-			this._flex.DragDrop += new System.Windows.Forms.DragEventHandler(this._flex_DragDrop);
-			this._flex.DragEnter += new System.Windows.Forms.DragEventHandler(this._flex_DragEnter);
-			// 
-			// _imgList
-			// 
-			this._imgList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this._imgList.ImageSize = new System.Drawing.Size(16, 15);
-			this._imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imgList.ImageStream")));
-			this._imgList.TransparentColor = System.Drawing.Color.Red;
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(568, 334);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._flex});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Drag and Drop Images";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._imgList = new System.Windows.Forms.ImageList(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.DragMode = C1.Win.FlexGrid.DragModeEnum.Automatic;
+            this._flex.DropMode = C1.Win.FlexGrid.DropModeEnum.Manual;
+            this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(568, 334);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.StartDrag += new System.Windows.Forms.DragEventHandler(this._flex_StartDrag);
+            this._flex.DragDrop += new System.Windows.Forms.DragEventHandler(this._flex_DragDrop);
+            this._flex.DragEnter += new System.Windows.Forms.DragEventHandler(this._flex_DragEnter);
+            // 
+            // _imgList
+            // 
+            this._imgList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imgList.ImageStream")));
+            this._imgList.TransparentColor = System.Drawing.Color.Red;
+            this._imgList.Images.SetKeyName(0, "");
+            this._imgList.Images.SetKeyName(1, "");
+            this._imgList.Images.SetKeyName(2, "");
+            this._imgList.Images.SetKeyName(3, "");
+            this._imgList.Images.SetKeyName(4, "");
+            this._imgList.Images.SetKeyName(5, "");
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(568, 334);
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Drag and Drop Images";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

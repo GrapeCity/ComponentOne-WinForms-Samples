@@ -53,7 +53,7 @@ Namespace DashboardDemo
             End Get
         End Property
 
-        Private Sub MainForm_DemoThemeChanged(ByVal sender As Object, ByVal e As C1.Win.C1Themes.ThemeEventArgs)
+        Private Sub MainForm_DemoThemeChanged(ByVal sender As Object, ByVal e As C1.Win.Themes.ThemeEventArgs)
             Select Case e.ThemeName
                 Case "None"
                     c1ThemeController1.Theme = Nothing

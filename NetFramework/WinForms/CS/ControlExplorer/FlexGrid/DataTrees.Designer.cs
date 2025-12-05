@@ -36,10 +36,10 @@
             // 
             this._flex.AllowAddNew = true;
             this._flex.AllowDelete = true;
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:34;Style:\"ImageAlign:RightCenter;\";}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Rows.Count = 51;

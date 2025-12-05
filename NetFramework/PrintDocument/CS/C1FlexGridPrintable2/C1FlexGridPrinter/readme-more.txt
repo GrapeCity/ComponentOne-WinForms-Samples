@@ -10,7 +10,7 @@ or exported to any of the formats supported by C1PrintDocument.
 
 This project references the following NuGet packages: 
 
-  - C1.Win.C1FlexGrid
+  - C1.Win.FlexGrid
   - C1.Win.Printing       
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -41,11 +41,11 @@ It also allows you to insert a C1FlexGrid into a C1PrintDocument along with othe
 
 The two main public classes providing this functionality are:
 
-C1.Win.C1FlexGrid.C1FlexGridPrinter
+C1.Win.FlexGrid.C1FlexGridPrinter
   Represents a class that may be used to insert a C1FlexGrid into a
   C1PrintDocument.
 
-C1.Win.C1FlexGrid.C1FlexGridPrintable2 : C1FlexGrid
+C1.Win.FlexGrid.C1FlexGridPrintable2 : C1FlexGrid
   Represents a C1FlexGrid that can be inserted into a C1PrintDocument
   for printing, preview, or export.
 
@@ -197,7 +197,7 @@ public TableCell TableCell {get;}
 C1FlexGridPrintable2 class
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
-Represents a C1.Win.C1FlexGrid.C1FlexGrid that can be inserted into a
+Represents a C1.Win.FlexGrid.C1FlexGrid that can be inserted into a
 C1.C1Preview.C1PrintDocument for printing, preview, or export.
 
 ========================================================================

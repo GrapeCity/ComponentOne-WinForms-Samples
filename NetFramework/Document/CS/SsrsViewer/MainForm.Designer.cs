@@ -47,7 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.spMain = new System.Windows.Forms.Splitter();
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
-            this.c1SsrsDocumentSource1 = new C1.Win.C1Document.C1SSRSDocumentSource();
+            this.c1SsrsDocumentSource1 = new C1.Win.Document.C1SSRSDocumentSource();
             this.bwListReports = new System.ComponentModel.BackgroundWorker();
             this.connPanel.SuspendLayout();
             this.gbLogin.SuspendLayout();
@@ -291,7 +291,7 @@
         private System.ComponentModel.BackgroundWorker bwListReports;
         private System.Windows.Forms.Button btnHideReport;
         private System.Windows.Forms.Button btnShowReport;
-        private C1.Win.C1Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
+        private C1.Win.Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
         private C1.Win.FlexViewer.C1FlexViewer c1FlexViewer1;
     }
 }

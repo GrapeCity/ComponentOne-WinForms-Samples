@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +18,7 @@ namespace ControlExplorer.Themes
             InitializeComponent();
             this.ribbonComboBox1.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             // populate combobox with all available themes
-            var themes = C1.Win.C1Themes.C1ThemeController.GetThemes();
+            var themes = C1.Win.Themes.C1ThemeController.GetThemes();
             foreach (string theme in themes)
                 this.ribbonComboBox1.Items.Add(theme);
             this.ribbonComboBox1.SelectedIndex = this.ribbonComboBox1.Items.IndexOf("Material");
@@ -31,7 +31,7 @@ namespace ControlExplorer.Themes
             Action<Control> setTheme = null;
             setTheme = (c) =>
             {
-                if (C1.Win.C1Themes.C1ThemeController.IsObjectThemeable(c))
+                if (C1.Win.Themes.C1ThemeController.IsObjectThemeable(c))
                     this.c1ThemeController1.SetTheme(c, theme);
                 foreach (Control cc in c.Controls)
                     setTheme(cc);

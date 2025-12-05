@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -26,7 +26,7 @@ namespace WrapToolbar
 		private System.Windows.Forms.ToolBarButton toolBarButton11;
 		private System.Windows.Forms.ToolBarButton toolBarButton12;
         private System.Windows.Forms.Button button1;
-        private C1.Win.C1Sizer.C1SizerLight _sizerLight;
+        private C1.Win.Sizer.C1SizerLight _sizerLight;
         private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
@@ -72,6 +72,9 @@ namespace WrapToolbar
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.components = new System.ComponentModel.Container();
 			this.toolBar1 = new System.Windows.Forms.ToolBar();
 			this.toolBarButton1 = new System.Windows.Forms.ToolBarButton();
@@ -87,7 +90,7 @@ namespace WrapToolbar
 			this.toolBarButton11 = new System.Windows.Forms.ToolBarButton();
 			this.toolBarButton12 = new System.Windows.Forms.ToolBarButton();
 			this.button1 = new System.Windows.Forms.Button();
-			this._sizerLight = new C1.Win.C1Sizer.C1SizerLight(this.components);
+			this._sizerLight = new C1.Win.Sizer.C1SizerLight(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.button2 = new System.Windows.Forms.Button();
@@ -308,7 +311,7 @@ namespace WrapToolbar
 			Application.Run(new Form1());
 		}
 
-        private void c1SizerLight1_SizingFont(object sender, C1.Win.C1Sizer.C1SizerLightEventArgs e)
+        private void c1SizerLight1_SizingFont(object sender, C1.Win.Sizer.C1SizerLightEventArgs e)
         {
             if (e.Control is Button)
                 e.Cancel = true;

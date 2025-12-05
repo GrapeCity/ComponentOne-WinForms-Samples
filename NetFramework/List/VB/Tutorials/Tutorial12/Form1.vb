@@ -36,8 +36,8 @@ Public Class Form1
     Friend WithEvents DsComposer1 As Tutorial12.DsComposer
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents C1List1 As C1.Win.C1List.C1List
-    Friend WithEvents C1List2 As C1.Win.C1List.C1List
+    Friend WithEvents C1List1 As C1.Win.List.C1List
+    Friend WithEvents C1List2 As C1.Win.List.C1List
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.DsComposer1 = New Tutorial12.DsComposer()
@@ -47,8 +47,8 @@ Public Class Form1
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.C1List1 = New C1.Win.C1List.C1List()
-        Me.C1List2 = New C1.Win.C1List.C1List()
+        Me.C1List1 = New C1.Win.List.C1List()
+        Me.C1List2 = New C1.Win.List.C1List()
         CType(Me.DsComposer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1List1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1List2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,19 +119,19 @@ Public Class Form1
         Me.C1List1.ColumnCaptionHeight = 17
         Me.C1List1.ColumnFooterHeight = 17
         Me.C1List1.ColumnWidth = 100
-        Me.C1List1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1List1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1List1.DataSource = Me.DsComposer1.Composer
         Me.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1List1.ItemHeight = 15
         Me.C1List1.Location = New System.Drawing.Point(48, 16)
-        Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List1.MatchEntryTimeout = CType(2000, Long)
         Me.C1List1.Name = "C1List1"
         Me.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List1.ScrollTips = False
         Me.C1List1.Size = New System.Drawing.Size(424, 208)
@@ -149,19 +149,19 @@ Public Class Form1
         Me.C1List2.ColumnCaptionHeight = 17
         Me.C1List2.ColumnFooterHeight = 17
         Me.C1List2.ColumnWidth = 100
-        Me.C1List2.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1List2.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1List2.DataSource = Me.DsComposer1.Composer
         Me.C1List2.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List2.Images.Add(CType(resources.GetObject("resource.Images1"), System.Drawing.Bitmap))
         Me.C1List2.ItemHeight = 15
         Me.C1List2.Location = New System.Drawing.Point(48, 248)
-        Me.C1List2.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List2.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List2.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List2.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List2.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List2.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List2.MatchEntryTimeout = CType(2000, Long)
         Me.C1List2.Name = "C1List2"
         Me.C1List2.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List2.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List2.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List2.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List2.ScrollTips = False
         Me.C1List2.Size = New System.Drawing.Size(424, 168)
@@ -197,7 +197,7 @@ Public Class Form1
 
         'configure the left split to display 2 columns exactly
         With Me.C1List1.Splits(0)
-            .SplitSizeMode = C1.Win.C1List.SizeModeEnum.NumberOfColumns
+            .SplitSizeMode = C1.Win.List.SizeModeEnum.NumberOfColumns
             .SplitSize = 2
             .AllowHorizontalSizing = False
         End With

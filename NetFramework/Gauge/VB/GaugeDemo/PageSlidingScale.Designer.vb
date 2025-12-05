@@ -22,13 +22,13 @@ Partial Class PageSlidingScale
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim C1GaugeMarks1 As C1.Win.C1Gauge.C1GaugeMarks = New C1.Win.C1Gauge.C1GaugeMarks
-        Dim C1GaugeMarks2 As C1.Win.C1Gauge.C1GaugeMarks = New C1.Win.C1Gauge.C1GaugeMarks
-        Dim C1GaugeLabels1 As C1.Win.C1Gauge.C1GaugeLabels = New C1.Win.C1Gauge.C1GaugeLabels
-        Dim C1GaugeSegment1 As C1.Win.C1Gauge.C1GaugeSegment = New C1.Win.C1Gauge.C1GaugeSegment
+        Dim C1GaugeMarks1 As C1.Win.Gauge.C1GaugeMarks = New C1.Win.Gauge.C1GaugeMarks
+        Dim C1GaugeMarks2 As C1.Win.Gauge.C1GaugeMarks = New C1.Win.Gauge.C1GaugeMarks
+        Dim C1GaugeLabels1 As C1.Win.Gauge.C1GaugeLabels = New C1.Win.Gauge.C1GaugeLabels
+        Dim C1GaugeSegment1 As C1.Win.Gauge.C1GaugeSegment = New C1.Win.Gauge.C1GaugeSegment
         Me.trackBar1 = New System.Windows.Forms.TrackBar
-        Me.c1Gauge1 = New C1.Win.C1Gauge.C1Gauge
-        Me.c1RadialGauge1 = New C1.Win.C1Gauge.C1RadialGauge
+        Me.c1Gauge1 = New C1.Win.Gauge.C1Gauge
+        Me.c1RadialGauge1 = New C1.Win.Gauge.C1RadialGauge
         Me.gaugePanel.SuspendLayout()
         Me.gridPanel.SuspendLayout()
         CType(Me.trackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,7 +62,7 @@ Partial Class PageSlidingScale
         Me.c1Gauge1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.c1Gauge1.Gauges.AddRange(New C1.Win.C1Gauge.C1GaugeBase() {Me.c1RadialGauge1})
+        Me.c1Gauge1.Gauges.AddRange(New C1.Win.Gauge.C1GaugeBase() {Me.c1RadialGauge1})
         Me.c1Gauge1.Location = New System.Drawing.Point(20, 29)
         Me.c1Gauge1.Name = "c1Gauge1"
         Me.c1Gauge1.Size = New System.Drawing.Size(314, 373)
@@ -72,27 +72,27 @@ Partial Class PageSlidingScale
         'c1RadialGauge1
         '
         Me.c1RadialGauge1.Cap.Visible = False
-        C1GaugeMarks1.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.[In]
+        C1GaugeMarks1.Alignment = C1.Win.Gauge.C1GaugeAlignment.[In]
         C1GaugeMarks1.Border.Color = System.Drawing.Color.Blue
-        C1GaugeMarks1.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        C1GaugeMarks1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         C1GaugeMarks1.Filling.Color = System.Drawing.Color.RoyalBlue
         C1GaugeMarks1.Interval = 5
         C1GaugeMarks1.Length = 6.5
         C1GaugeMarks1.Location = 75
         C1GaugeMarks1.ScaleFrom = -30
         C1GaugeMarks1.ScaleTo = 30
-        C1GaugeMarks1.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Round
+        C1GaugeMarks1.Shape = C1.Win.Gauge.C1GaugeMarkShape.Round
         C1GaugeMarks1.ViewTag = CType(648660559952575640, Long)
         C1GaugeMarks1.Width = 0.6
-        C1GaugeMarks2.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.[In]
-        C1GaugeMarks2.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None
+        C1GaugeMarks2.Alignment = C1.Win.Gauge.C1GaugeAlignment.[In]
+        C1GaugeMarks2.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None
         C1GaugeMarks2.Filling.Color = System.Drawing.Color.IndianRed
         C1GaugeMarks2.Interval = 1
         C1GaugeMarks2.Length = 4
         C1GaugeMarks2.Location = 75
         C1GaugeMarks2.ScaleFrom = -30
         C1GaugeMarks2.ScaleTo = 30
-        C1GaugeMarks2.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Round
+        C1GaugeMarks2.Shape = C1.Win.Gauge.C1GaugeMarkShape.Round
         C1GaugeMarks2.ViewTag = CType(648942034929296296, Long)
         C1GaugeMarks2.Width = 0.6
         C1GaugeLabels1.Color = System.Drawing.Color.MidnightBlue
@@ -104,38 +104,38 @@ Partial Class PageSlidingScale
         C1GaugeLabels1.ScaleTo = 30
         C1GaugeLabels1.TextAngle = 90
         C1GaugeLabels1.ViewTag = CType(649223509906016953, Long)
-        Me.c1RadialGauge1.Decorators.AddRange(New C1.Win.C1Gauge.C1GaugeDecorator() {C1GaugeMarks1, C1GaugeMarks2, C1GaugeLabels1})
+        Me.c1RadialGauge1.Decorators.AddRange(New C1.Win.Gauge.C1GaugeDecorator() {C1GaugeMarks1, C1GaugeMarks2, C1GaugeLabels1})
         C1GaugeSegment1.Border.Color = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         C1GaugeSegment1.CenterPointX = 0.305
         C1GaugeSegment1.CornerRadius = 12
-        C1GaugeSegment1.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.Gradient
+        C1GaugeSegment1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient
         C1GaugeSegment1.Filling.Color = System.Drawing.Color.SlateGray
         C1GaugeSegment1.Filling.Color2 = System.Drawing.Color.White
-        C1GaugeSegment1.Filling.HatchStyle = C1.Win.C1Gauge.C1GaugeHatchStyle.Vertical
+        C1GaugeSegment1.Filling.HatchStyle = C1.Win.Gauge.C1GaugeHatchStyle.Vertical
         C1GaugeSegment1.Filling.SwapColors = True
-        C1GaugeSegment1.Gradient.Direction = C1.Win.C1Gauge.C1GaugeGradientDirection.RadialInner
-        C1GaugeSegment1.Gradient.Falloff = C1.Win.C1Gauge.C1GaugeGradientFalloff.SigmaBell
+        C1GaugeSegment1.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.RadialInner
+        C1GaugeSegment1.Gradient.Falloff = C1.Win.Gauge.C1GaugeGradientFalloff.SigmaBell
         C1GaugeSegment1.InnerRadius = 100
         C1GaugeSegment1.OuterRadius = 50
         C1GaugeSegment1.StartAngle = -180
         C1GaugeSegment1.SweepAngle = 180
-        Me.c1RadialGauge1.FaceShapes.AddRange(New C1.Win.C1Gauge.C1GaugeBaseShape() {C1GaugeSegment1})
+        Me.c1RadialGauge1.FaceShapes.AddRange(New C1.Win.Gauge.C1GaugeBaseShape() {C1GaugeSegment1})
         Me.c1RadialGauge1.Maximum = 15
         Me.c1RadialGauge1.Minimum = -15
         Me.c1RadialGauge1.Name = "c1RadialGauge1"
-        Me.c1RadialGauge1.Pointer.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Center
+        Me.c1RadialGauge1.Pointer.Alignment = C1.Win.Gauge.C1GaugeAlignment.Center
         Me.c1RadialGauge1.Pointer.Border.Color = System.Drawing.Color.IndianRed
         Me.c1RadialGauge1.Pointer.CustomShape.EndRadius = 0.333333333333
         Me.c1RadialGauge1.Pointer.CustomShape.EndWidth = 0.5
         Me.c1RadialGauge1.Pointer.CustomShape.StartRadius = 0.5
-        Me.c1RadialGauge1.Pointer.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.Gradient
+        Me.c1RadialGauge1.Pointer.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient
         Me.c1RadialGauge1.Pointer.Filling.Color = System.Drawing.Color.RosyBrown
         Me.c1RadialGauge1.Pointer.Filling.Color2 = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.c1RadialGauge1.Pointer.FlipShape = True
-        Me.c1RadialGauge1.Pointer.Gradient.Direction = C1.Win.C1Gauge.C1GaugeGradientDirection.BackwardDiagonal
+        Me.c1RadialGauge1.Pointer.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.BackwardDiagonal
         Me.c1RadialGauge1.Pointer.Length = 4
         Me.c1RadialGauge1.Pointer.Offset = 80
-        Me.c1RadialGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom
+        Me.c1RadialGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom
         Me.c1RadialGauge1.PointerOriginX = 2
         Me.c1RadialGauge1.Radius = 2.2
         Me.c1RadialGauge1.SlidingScale = True
@@ -159,7 +159,7 @@ Partial Class PageSlidingScale
 
     End Sub
     Private WithEvents trackBar1 As System.Windows.Forms.TrackBar
-    Private WithEvents c1Gauge1 As C1.Win.C1Gauge.C1Gauge
-    Private WithEvents c1RadialGauge1 As C1.Win.C1Gauge.C1RadialGauge
+    Private WithEvents c1Gauge1 As C1.Win.Gauge.C1Gauge
+    Private WithEvents c1RadialGauge1 As C1.Win.Gauge.C1RadialGauge
 
 End Class

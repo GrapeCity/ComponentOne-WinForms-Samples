@@ -55,7 +55,7 @@
 Imports System
 Imports System.Text
 Imports System.Data
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class FilterRow
 
@@ -186,7 +186,7 @@ Public Class FilterRow
         If _row < 0 Then Return
 
         ' save filter row content <<**
-        Dim rgFilter As C1.Win.C1FlexGrid.CellRange = _flex.GetCellRange(_row, 0, _row, _flex.Cols.Count - 1)
+        Dim rgFilter As C1.Win.FlexGrid.CellRange = _flex.GetCellRange(_row, 0, _row, _flex.Cols.Count - 1)
         Dim filterContent As String = rgFilter.Clip
 
         ' make sure we have a data view
