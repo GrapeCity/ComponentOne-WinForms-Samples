@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();

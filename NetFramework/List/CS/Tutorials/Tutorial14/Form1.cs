@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -55,6 +55,8 @@ namespace Tutorial14
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.C1List1 = new C1.Win.List.C1List();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._orderDBGrid = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1NWindDataSet = new ComboBoxTranslateValue.C1NWindDataSet();

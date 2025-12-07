@@ -44,6 +44,7 @@
             C1.Win.C1Win7Pack.C1RadioButton c1RadioButton5 = new C1.Win.C1Win7Pack.C1RadioButton();
             C1.Win.C1Win7Pack.C1RadioButton c1RadioButton6 = new C1.Win.C1Win7Pack.C1RadioButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.dialogCommonButtons = new C1.Win.C1Win7Pack.C1TaskDialog(this.components);
             this.linkCommonButtons = new System.Windows.Forms.LinkLabel();
             this.linkCustomButtons = new System.Windows.Forms.LinkLabel();

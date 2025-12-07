@@ -63,6 +63,7 @@
             treeNode18,
             treeNode19});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.cube = new System.Windows.Forms.PictureBox();
             this.firstView = new System.Windows.Forms.LinkLabel();

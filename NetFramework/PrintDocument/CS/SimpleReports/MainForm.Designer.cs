@@ -30,6 +30,7 @@ namespace SimpleReports
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._ribbonPreview = new C1.Win.RibbonPreview.C1RibbonPreview();
             this._printDocument = new C1.C1Preview.C1PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this._ribbonPreview)).BeginInit();

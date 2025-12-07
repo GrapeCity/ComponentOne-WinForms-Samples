@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -65,6 +65,7 @@ namespace FilterMultiEdit
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.TrueDBGrid.Style style9 = new C1.Win.TrueDBGrid.Style();
             C1.Win.TrueDBGrid.Style style10 = new C1.Win.TrueDBGrid.Style();
             C1.Win.TrueDBGrid.Style style11 = new C1.Win.TrueDBGrid.Style();

@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RibbonForm1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1ComboBox2 = new C1.Win.C1Input.C1ComboBox();

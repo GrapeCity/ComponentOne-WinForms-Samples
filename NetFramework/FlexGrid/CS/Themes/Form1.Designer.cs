@@ -1,4 +1,4 @@
-namespace Themes
+﻿namespace Themes
 {
     partial class Form1
     {
@@ -29,6 +29,7 @@ namespace Themes
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();

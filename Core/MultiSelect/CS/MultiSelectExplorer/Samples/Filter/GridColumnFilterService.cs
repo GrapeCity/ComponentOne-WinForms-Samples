@@ -28,7 +28,9 @@ namespace MultiSelectExplorer.Samples.Filter
         {
             if (selectedValues == null || !selectedValues.Any())
             {
-                ClearFilter();
+                // Apply a filter that always evaluates to false ("1=0"),
+                // ensuring the DataView returns no rows (empty result).
+                _table.DefaultView.RowFilter = "1=0";
                 return;
             }
 

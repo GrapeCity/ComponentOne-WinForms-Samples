@@ -1,4 +1,4 @@
-namespace HtmlEvents
+﻿namespace HtmlEvents
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace HtmlEvents
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Editor1 = new C1.Win.C1Editor.C1Editor();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();

@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.c1DbNavigator1 = new C1.Win.C1Input.C1DbNavigator();
             this.c1ExpressionEditor1 = new C1.Win.ExpressionEditor.C1ExpressionEditor();

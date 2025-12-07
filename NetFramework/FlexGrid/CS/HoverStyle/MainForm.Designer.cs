@@ -55,10 +55,10 @@
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.HideTabHeaderRow = true;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(1351, 80);
+            this.c1Ribbon1.Size = new System.Drawing.Size(2018, 128);
             this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
@@ -66,6 +66,7 @@
             // ribbonApplicationMenu1
             // 
             this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
+            this.ribbonApplicationMenu1.TabIndex = 0;
             this.ribbonApplicationMenu1.Visible = false;
             // 
             // ribbonBottomToolBar1
@@ -81,6 +82,7 @@
             this.rbHoverMode.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             this.rbHoverMode.Label = " Hover Mode:";
             this.rbHoverMode.Name = "rbHoverMode";
+            this.rbHoverMode.TabIndex = 0;
             this.rbHoverMode.ToolTip = "Hover Mode";
             this.rbHoverMode.SelectedIndexChanged += new System.EventHandler(this.rbHoverMode_SelectedIndexChanged);
             // 
@@ -89,6 +91,7 @@
             this.rbSelectMode.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             this.rbSelectMode.Label = " Select Mode:";
             this.rbSelectMode.Name = "rbSelectMode";
+            this.rbSelectMode.TabIndex = 0;
             this.rbSelectMode.ToolTip = "Select Mode";
             this.rbSelectMode.SelectedIndexChanged += new System.EventHandler(this.rbSelectMode_SelectedIndexChanged);
             // 
@@ -107,6 +110,7 @@
             c1CompositeIcon1.Size = new System.Drawing.Size(16, 16);
             this.rbHoverColor.IconSet.Add(c1CompositeIcon1);
             this.rbHoverColor.Name = "rbHoverColor";
+            this.rbHoverColor.TabIndex = 0;
             this.rbHoverColor.Text = "Hover Color";
             this.rbHoverColor.ToolTip = "Hover Color";
             this.rbHoverColor.SelectedColorChanged += new System.EventHandler(this.rbHoverColor_SelectedColorChanged);
@@ -129,6 +133,7 @@
             // 
             this.cmbTheme.Label = "Theme";
             this.cmbTheme.Name = "cmbTheme";
+            this.cmbTheme.TabIndex = 0;
             this.cmbTheme.TextAreaWidth = 102;
             this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.cmbTheme_SelectedIndexChanged);
             // 
@@ -142,23 +147,24 @@
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = true;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.c1FlexGrid1.Location = new System.Drawing.Point(0, 80);
-            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4);
+            this.c1FlexGrid1.Location = new System.Drawing.Point(0, 128);
+            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Size = new System.Drawing.Size(1351, 846);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(2018, 1283);
             this.c1FlexGrid1.TabIndex = 6;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
+            this.c1FlexGrid1.Tree.Indent = 18;
             this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1351, 926);
+            this.ClientSize = new System.Drawing.Size(2018, 1411);
             this.Controls.Add(this.c1FlexGrid1);
             this.Controls.Add(this.c1Ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hover Style";

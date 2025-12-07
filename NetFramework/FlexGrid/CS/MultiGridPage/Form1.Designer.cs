@@ -43,6 +43,7 @@
             this.flexCategories.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flexCategories.ColumnInfo = "10,1,0,0,0,130,Columns:";
+            this.flexCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.flexCategories.Location = new System.Drawing.Point(12, 36);
             this.flexCategories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexCategories.Name = "flexCategories";
@@ -57,7 +58,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 23);
+            this.label1.Size = new System.Drawing.Size(155, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "Categories";
             // 
@@ -67,6 +68,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flexEmployees.ColumnInfo = "10,1,0,0,0,130,Columns:";
+            this.flexEmployees.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.flexEmployees.Location = new System.Drawing.Point(12, 257);
             this.flexEmployees.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexEmployees.Name = "flexEmployees";
@@ -81,7 +83,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 23);
+            this.label2.Size = new System.Drawing.Size(157, 38);
             this.label2.TabIndex = 1;
             this.label2.Text = "Employees";
             // 
@@ -99,7 +101,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 538);
             this.Controls.Add(this.button1);
@@ -108,6 +110,7 @@
             this.Controls.Add(this.flexEmployees);
             this.Controls.Add(this.flexCategories);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

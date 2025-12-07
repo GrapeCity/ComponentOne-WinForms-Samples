@@ -58,82 +58,82 @@ namespace DynamicStyles
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex1 = new C1.Win.FlexGrid.C1FlexGrid();
-			this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this._flex1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this._flex2)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex1
-			// 
-			this._flex1.ColumnInfo = "3,1,0,0,0,75,Columns:0{Width:24;}\t1{Name:\"Length\";DataType:System.Int64;Format:\"#,###.00\";Caption:\"Len" +
-				"gth (ft)\";}\t2{Name:\"UserDef\";DataType:System.Boolean;ImageAlign:CenterCenter;Cap" +
-				"tion:\"User-Defined\";}";
-			this._flex1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
-			this._flex1.Location = new System.Drawing.Point(16, 24);
-			this._flex1.Name = "_flex1";
-			this._flex1.Size = new System.Drawing.Size(296, 144);
-			this._flex1.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex1.TabIndex = 0;
-			this._flex1.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
-			this._flex1.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("_flex1.Tree.NodeImageCollapsed")));
-			this._flex1.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("_flex1.Tree.NodeImageExpanded")));
-			this._flex1.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this._flex1_CellChanged);
-			this._flex1.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex1_OwnerDrawCell);
-			// 
-			// _flex2
-			// 
-			this._flex2.ColumnInfo = "3,1,0,0,0,75,Columns:0{Width:24;}\t1{Name:\"Length\";DataType:System.Int64;Format:\"#,###.00\";Caption:\"Len" +
-				"gth (ft)\";}\t2{Name:\"UserDef\";DataType:System.Boolean;ImageAlign:CenterCenter;Cap" +
-				"tion:\"User-Defined\";}";
-			this._flex2.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
-			this._flex2.Location = new System.Drawing.Point(16, 208);
-			this._flex2.Name = "_flex2";
-			this._flex2.Size = new System.Drawing.Size(296, 144);
-			this._flex2.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex2.TabIndex = 0;
-			this._flex2.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
-			this._flex2.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("_flex2.Tree.NodeImageCollapsed")));
-			this._flex2.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("_flex2.Tree.NodeImageExpanded")));
-			this._flex2.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this._flex2_CellChanged);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(16, 8);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(240, 16);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Method 1: OwnerDraw";
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(16, 192);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(240, 16);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Method 2: Styles";
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(336, 367);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.label1,
-																		  this._flex1,
-																		  this._flex2,
-																		  this.label2});
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "C1FlexGrid: Dynamic cell formatting";
-			((System.ComponentModel.ISupportInitialize)(this._flex1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this._flex2)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this._flex1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._flex2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex1
+            // 
+            this._flex1.ColumnInfo = resources.GetString("_flex1.ColumnInfo");
+            this._flex1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex1.Location = new System.Drawing.Point(32, 44);
+            this._flex1.Name = "_flex1";
+            this._flex1.Size = new System.Drawing.Size(592, 266);
+            this._flex1.StyleInfo = resources.GetString("_flex1.StyleInfo");
+            this._flex1.TabIndex = 0;
+            this._flex1.Tree.Indent = 18;
+            this._flex1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this._flex1.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("_flex1.Tree.NodeImageCollapsed")));
+            this._flex1.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("_flex1.Tree.NodeImageExpanded")));
+            this._flex1.UseCompatibleTextRendering = true;
+            this._flex1.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this._flex1_CellChanged);
+            this._flex1.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex1_OwnerDrawCell);
+            // 
+            // _flex2
+            // 
+            this._flex2.ColumnInfo = resources.GetString("_flex2.ColumnInfo");
+            this._flex2.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex2.Location = new System.Drawing.Point(32, 384);
+            this._flex2.Name = "_flex2";
+            this._flex2.Size = new System.Drawing.Size(592, 266);
+            this._flex2.StyleInfo = resources.GetString("_flex2.StyleInfo");
+            this._flex2.TabIndex = 0;
+            this._flex2.Tree.Indent = 18;
+            this._flex2.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this._flex2.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("_flex2.Tree.NodeImageCollapsed")));
+            this._flex2.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("_flex2.Tree.NodeImageExpanded")));
+            this._flex2.UseCompatibleTextRendering = true;
+            this._flex2.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this._flex2_CellChanged);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(32, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(480, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Method 1: OwnerDraw";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(32, 354);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(480, 30);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Method 2: Styles";
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(336, 367);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this._flex1);
+            this.Controls.Add(this._flex2);
+            this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "C1FlexGrid: Dynamic cell formatting";
+            ((System.ComponentModel.ISupportInitialize)(this._flex1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._flex2)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

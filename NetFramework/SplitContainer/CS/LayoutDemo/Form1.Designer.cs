@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
             this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();

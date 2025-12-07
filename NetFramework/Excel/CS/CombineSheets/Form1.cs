@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Drawing;
 using System.Collections;
@@ -56,6 +56,9 @@ namespace CombineSheets
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.button1 = new System.Windows.Forms.Button();
             this.c1XLBook1 = new C1.Excel.C1XLBook();
             this.SuspendLayout();

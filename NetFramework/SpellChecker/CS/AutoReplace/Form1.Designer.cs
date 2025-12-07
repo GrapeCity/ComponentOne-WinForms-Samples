@@ -1,4 +1,4 @@
-namespace AutoReplace
+﻿namespace AutoReplace
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace AutoReplace
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();

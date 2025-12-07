@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Editor1 = new C1.Win.C1Editor.C1Editor();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this._lblDesign = new System.Windows.Forms.ToolStripStatusLabel();

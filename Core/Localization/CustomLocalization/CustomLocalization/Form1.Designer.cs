@@ -51,17 +51,16 @@
             topNavigationPanel.Controls.Add(ComponentOneHeaderTitle);
             topNavigationPanel.Dock = DockStyle.Top;
             topNavigationPanel.Location = new Point(0, 0);
-            topNavigationPanel.Margin = new Padding(2);
             topNavigationPanel.Name = "topNavigationPanel";
-            topNavigationPanel.Size = new Size(1378, 75);
+            topNavigationPanel.Size = new Size(1791, 96);
             topNavigationPanel.TabIndex = 0;
             // 
             // c1Button1
             // 
             c1Button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            c1Button1.Location = new Point(1181, 19);
+            c1Button1.Location = new Point(1535, 24);
             c1Button1.Name = "c1Button1";
-            c1Button1.Size = new Size(182, 42);
+            c1Button1.Size = new Size(237, 54);
             c1Button1.Styles.Default.BackColor = Color.Transparent;
             c1Button1.Styles.Default.BorderColor = Color.White;
             c1Button1.Styles.Default.ForeColor = Color.White;
@@ -78,9 +77,9 @@
             // 
             SampleHeaderTitle.AutoSize = true;
             SampleHeaderTitle.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SampleHeaderTitle.Location = new Point(260, 15);
+            SampleHeaderTitle.Location = new Point(338, 19);
             SampleHeaderTitle.Name = "SampleHeaderTitle";
-            SampleHeaderTitle.Size = new Size(281, 46);
+            SampleHeaderTitle.Size = new Size(372, 62);
             SampleHeaderTitle.Styles.Default.ForeColor = Color.White;
             SampleHeaderTitle.TabIndex = 4;
             SampleHeaderTitle.Text = "Custom Localization";
@@ -89,9 +88,9 @@
             // 
             TitleBarHeaderBreak.AutoSize = true;
             TitleBarHeaderBreak.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TitleBarHeaderBreak.Location = new Point(240, 10);
+            TitleBarHeaderBreak.Location = new Point(312, 13);
             TitleBarHeaderBreak.Name = "TitleBarHeaderBreak";
-            TitleBarHeaderBreak.Size = new Size(34, 46);
+            TitleBarHeaderBreak.Size = new Size(46, 63);
             TitleBarHeaderBreak.Styles.Default.ForeColor = Color.White;
             TitleBarHeaderBreak.TabIndex = 3;
             TitleBarHeaderBreak.Text = "|";
@@ -100,9 +99,9 @@
             // 
             ComponentOneHeaderTitle.AutoSize = true;
             ComponentOneHeaderTitle.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ComponentOneHeaderTitle.Location = new Point(15, 15);
+            ComponentOneHeaderTitle.Location = new Point(20, 19);
             ComponentOneHeaderTitle.Name = "ComponentOneHeaderTitle";
-            ComponentOneHeaderTitle.Size = new Size(235, 46);
+            ComponentOneHeaderTitle.Size = new Size(313, 62);
             ComponentOneHeaderTitle.Styles.Default.ForeColor = Color.White;
             ComponentOneHeaderTitle.TabIndex = 0;
             ComponentOneHeaderTitle.Text = "Component One";
@@ -111,22 +110,20 @@
             // 
             hostPanel.BackColor = Color.White;
             hostPanel.Dock = DockStyle.Fill;
-            hostPanel.Location = new Point(0, 75);
-            hostPanel.Margin = new Padding(2);
+            hostPanel.Location = new Point(0, 96);
             hostPanel.Name = "hostPanel";
-            hostPanel.Size = new Size(1378, 769);
+            hostPanel.Size = new Size(1791, 984);
             hostPanel.TabIndex = 1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1378, 844);
+            ClientSize = new Size(1791, 1080);
             Controls.Add(hostPanel);
             Controls.Add(topNavigationPanel);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2);
-            MinimumSize = new Size(1400, 900);
+            MinimumSize = new Size(1812, 1132);
             Name = "Form1";
             Text = "Custom Localization Sample";
             topNavigationPanel.ResumeLayout(false);

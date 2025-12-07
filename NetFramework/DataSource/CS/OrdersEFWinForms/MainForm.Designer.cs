@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.linkLabelEditOrders = new System.Windows.Forms.LinkLabel();
             this.linkLabelOrdersCountry = new System.Windows.Forms.LinkLabel();
@@ -118,7 +121,7 @@
             // 
             // c1DataSource1
             // 
-            this.c1DataSource1.ContextType = typeof(OrdersEFWinForms.NORTHWNDEntities);
+            this.c1DataSource1.ContextType = typeof(NORTHWNDEntities);
             // 
             // MainForm
             // 

@@ -28,268 +28,277 @@ namespace QuickStart
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnShowErrors = new System.Windows.Forms.Button();
-            this.btnSpellDialog = new System.Windows.Forms.Button();
-            this.btnAsYouType = new System.Windows.Forms.CheckBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tpRichTextBox = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbZoom = new System.Windows.Forms.ComboBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.btnAsYouTypeRich = new System.Windows.Forms.CheckBox();
-            this.btnSpellDialogRich = new System.Windows.Forms.Button();
-            this.btnShowErrorsRich = new System.Windows.Forms.Button();
-            this.tpTextBox = new System.Windows.Forms.TabPage();
-            this.btnFont = new System.Windows.Forms.Button();
-            this.tpGrid = new System.Windows.Forms.TabPage();
-            this.btnSpellDialogGrid = new System.Windows.Forms.Button();
-            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
-            this._spell = new C1.Win.SpellChecker.C1SpellChecker(this.components);
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tabControl1.SuspendLayout();
-            this.tpRichTextBox.SuspendLayout();
-            this.tpTextBox.SuspendLayout();
-            this.tpGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._spell)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            textBox1 = new System.Windows.Forms.TextBox();
+            btnShowErrors = new System.Windows.Forms.Button();
+            btnSpellDialog = new System.Windows.Forms.Button();
+            btnAsYouType = new System.Windows.Forms.CheckBox();
+            tabControl1 = new System.Windows.Forms.TabControl();
+            tpRichTextBox = new System.Windows.Forms.TabPage();
+            label1 = new System.Windows.Forms.Label();
+            cmbZoom = new System.Windows.Forms.ComboBox();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            btnAsYouTypeRich = new System.Windows.Forms.CheckBox();
+            btnSpellDialogRich = new System.Windows.Forms.Button();
+            btnShowErrorsRich = new System.Windows.Forms.Button();
+            tpTextBox = new System.Windows.Forms.TabPage();
+            btnFont = new System.Windows.Forms.Button();
+            tpGrid = new System.Windows.Forms.TabPage();
+            btnSpellDialogGrid = new System.Windows.Forms.Button();
+            _flex = new C1.Win.FlexGrid.C1FlexGrid();
+            _spell = new C1.Win.SpellChecker.C1SpellChecker(components);
+            toolTip1 = new System.Windows.Forms.ToolTip(components);
+            tabControl1.SuspendLayout();
+            tpRichTextBox.SuspendLayout();
+            tpTextBox.SuspendLayout();
+            tpGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)_flex).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)_spell).BeginInit();
+            SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(5, 45);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(720, 465);
-            this.textBox1.TabIndex = 4;
+            textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            textBox1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            textBox1.Location = new System.Drawing.Point(6, 52);
+            textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            textBox1.Size = new System.Drawing.Size(839, 536);
+            textBox1.TabIndex = 4;
             // 
             // btnShowErrors
             // 
-            this.btnShowErrors.Location = new System.Drawing.Point(326, 9);
-            this.btnShowErrors.Name = "btnShowErrors";
-            this.btnShowErrors.Size = new System.Drawing.Size(154, 30);
-            this.btnShowErrors.TabIndex = 2;
-            this.btnShowErrors.Text = "Show Error List";
-            this.toolTip1.SetToolTip(this.btnShowErrors, "Use the CheckText method to collect all errors, then show them in a grid.");
-            this.btnShowErrors.UseVisualStyleBackColor = true;
-            this.btnShowErrors.Click += new System.EventHandler(this.btnShowErrors_Click);
+            btnShowErrors.Location = new System.Drawing.Point(380, 10);
+            btnShowErrors.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnShowErrors.Name = "btnShowErrors";
+            btnShowErrors.Size = new System.Drawing.Size(180, 35);
+            btnShowErrors.TabIndex = 2;
+            btnShowErrors.Text = "Show Error List";
+            toolTip1.SetToolTip(btnShowErrors, "Use the CheckText method to collect all errors, then show them in a grid.");
+            btnShowErrors.UseVisualStyleBackColor = true;
+            btnShowErrors.Click += btnShowErrors_Click;
             // 
             // btnSpellDialog
             // 
-            this.btnSpellDialog.Location = new System.Drawing.Point(166, 9);
-            this.btnSpellDialog.Name = "btnSpellDialog";
-            this.btnSpellDialog.Size = new System.Drawing.Size(154, 30);
-            this.btnSpellDialog.TabIndex = 1;
-            this.btnSpellDialog.Text = "Check with Dialog";
-            this.toolTip1.SetToolTip(this.btnSpellDialog, "Spell-check the entire control using a modal dialog.");
-            this.btnSpellDialog.UseVisualStyleBackColor = true;
-            this.btnSpellDialog.Click += new System.EventHandler(this.btnSpellDialog_Click);
+            btnSpellDialog.Location = new System.Drawing.Point(194, 10);
+            btnSpellDialog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnSpellDialog.Name = "btnSpellDialog";
+            btnSpellDialog.Size = new System.Drawing.Size(180, 35);
+            btnSpellDialog.TabIndex = 1;
+            btnSpellDialog.Text = "Check with Dialog";
+            toolTip1.SetToolTip(btnSpellDialog, "Spell-check the entire control using a modal dialog.");
+            btnSpellDialog.UseVisualStyleBackColor = true;
+            btnSpellDialog.Click += btnSpellDialog_Click;
             // 
             // btnAsYouType
             // 
-            this.btnAsYouType.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnAsYouType.Location = new System.Drawing.Point(6, 9);
-            this.btnAsYouType.Name = "btnAsYouType";
-            this.btnAsYouType.Size = new System.Drawing.Size(154, 30);
-            this.btnAsYouType.TabIndex = 0;
-            this.btnAsYouType.Text = "Check As You Type";
-            this.btnAsYouType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.btnAsYouType, "Toggle \'as-you-type\' spell checking (underline errors and provide suggestions in " +
-                    "context menu)");
-            this.btnAsYouType.UseVisualStyleBackColor = true;
-            this.btnAsYouType.CheckedChanged += new System.EventHandler(this.btnAsYouType_CheckedChanged);
+            btnAsYouType.Appearance = System.Windows.Forms.Appearance.Button;
+            btnAsYouType.Location = new System.Drawing.Point(7, 10);
+            btnAsYouType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnAsYouType.Name = "btnAsYouType";
+            btnAsYouType.Size = new System.Drawing.Size(180, 35);
+            btnAsYouType.TabIndex = 0;
+            btnAsYouType.Text = "Check As You Type";
+            btnAsYouType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            toolTip1.SetToolTip(btnAsYouType, "Toggle 'as-you-type' spell checking (underline errors and provide suggestions in context menu)");
+            btnAsYouType.UseVisualStyleBackColor = true;
+            btnAsYouType.CheckedChanged += btnAsYouType_CheckedChanged;
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tpRichTextBox);
-            this.tabControl1.Controls.Add(this.tpTextBox);
-            this.tabControl1.Controls.Add(this.tpGrid);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(738, 544);
-            this.tabControl1.TabIndex = 0;
+            tabControl1.Controls.Add(tpRichTextBox);
+            tabControl1.Controls.Add(tpTextBox);
+            tabControl1.Controls.Add(tpGrid);
+            tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tabControl1.Location = new System.Drawing.Point(0, 0);
+            tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new System.Drawing.Size(861, 628);
+            tabControl1.TabIndex = 0;
             // 
             // tpRichTextBox
             // 
-            this.tpRichTextBox.Controls.Add(this.label1);
-            this.tpRichTextBox.Controls.Add(this.cmbZoom);
-            this.tpRichTextBox.Controls.Add(this.richTextBox1);
-            this.tpRichTextBox.Controls.Add(this.btnAsYouTypeRich);
-            this.tpRichTextBox.Controls.Add(this.btnSpellDialogRich);
-            this.tpRichTextBox.Controls.Add(this.btnShowErrorsRich);
-            this.tpRichTextBox.Location = new System.Drawing.Point(4, 22);
-            this.tpRichTextBox.Name = "tpRichTextBox";
-            this.tpRichTextBox.Padding = new System.Windows.Forms.Padding(3);
-            this.tpRichTextBox.Size = new System.Drawing.Size(730, 518);
-            this.tpRichTextBox.TabIndex = 1;
-            this.tpRichTextBox.Text = "RichTextBox";
-            this.tpRichTextBox.UseVisualStyleBackColor = true;
+            tpRichTextBox.Controls.Add(label1);
+            tpRichTextBox.Controls.Add(cmbZoom);
+            tpRichTextBox.Controls.Add(richTextBox1);
+            tpRichTextBox.Controls.Add(btnAsYouTypeRich);
+            tpRichTextBox.Controls.Add(btnSpellDialogRich);
+            tpRichTextBox.Controls.Add(btnShowErrorsRich);
+            tpRichTextBox.Location = new System.Drawing.Point(4, 24);
+            tpRichTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tpRichTextBox.Name = "tpRichTextBox";
+            tpRichTextBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tpRichTextBox.Size = new System.Drawing.Size(853, 600);
+            tpRichTextBox.TabIndex = 1;
+            tpRichTextBox.Text = "RichTextBox";
+            tpRichTextBox.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(507, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "&Zoom";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(592, 21);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(39, 15);
+            label1.TabIndex = 3;
+            label1.Text = "&Zoom";
             // 
             // cmbZoom
             // 
-            this.cmbZoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbZoom.FormattingEnabled = true;
-            this.cmbZoom.Items.AddRange(new object[] {
-            "50%",
-            "75%",
-            "100%",
-            "150%",
-            "200%"});
-            this.cmbZoom.Location = new System.Drawing.Point(548, 15);
-            this.cmbZoom.Name = "cmbZoom";
-            this.cmbZoom.Size = new System.Drawing.Size(108, 21);
-            this.cmbZoom.TabIndex = 4;
-            this.cmbZoom.SelectedIndexChanged += new System.EventHandler(this.cmbZoom_SelectedIndexChanged);
+            cmbZoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cmbZoom.FormattingEnabled = true;
+            cmbZoom.Items.AddRange(new object[] { "50%", "75%", "100%", "150%", "200%" });
+            cmbZoom.Location = new System.Drawing.Point(639, 17);
+            cmbZoom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cmbZoom.Name = "cmbZoom";
+            cmbZoom.Size = new System.Drawing.Size(125, 23);
+            cmbZoom.TabIndex = 4;
+            cmbZoom.SelectedIndexChanged += cmbZoom_SelectedIndexChanged;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(5, 45);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(715, 465);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            richTextBox1.Location = new System.Drawing.Point(6, 52);
+            richTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(834, 536);
+            richTextBox1.TabIndex = 5;
+            richTextBox1.Text = "";
             // 
             // btnAsYouTypeRich
             // 
-            this.btnAsYouTypeRich.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnAsYouTypeRich.Location = new System.Drawing.Point(8, 9);
-            this.btnAsYouTypeRich.Name = "btnAsYouTypeRich";
-            this.btnAsYouTypeRich.Size = new System.Drawing.Size(154, 30);
-            this.btnAsYouTypeRich.TabIndex = 0;
-            this.btnAsYouTypeRich.Text = "Check As You Type";
-            this.btnAsYouTypeRich.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.btnAsYouTypeRich, "Toggle \'as-you-type\' spell checking (underline errors and provide suggestions in " +
-                    "context menu)");
-            this.btnAsYouTypeRich.UseVisualStyleBackColor = true;
-            this.btnAsYouTypeRich.CheckedChanged += new System.EventHandler(this.btnAsYouTypeRich_CheckedChanged);
+            btnAsYouTypeRich.Appearance = System.Windows.Forms.Appearance.Button;
+            btnAsYouTypeRich.Location = new System.Drawing.Point(9, 10);
+            btnAsYouTypeRich.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnAsYouTypeRich.Name = "btnAsYouTypeRich";
+            btnAsYouTypeRich.Size = new System.Drawing.Size(180, 35);
+            btnAsYouTypeRich.TabIndex = 0;
+            btnAsYouTypeRich.Text = "Check As You Type";
+            btnAsYouTypeRich.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            toolTip1.SetToolTip(btnAsYouTypeRich, "Toggle 'as-you-type' spell checking (underline errors and provide suggestions in context menu)");
+            btnAsYouTypeRich.UseVisualStyleBackColor = true;
+            btnAsYouTypeRich.CheckedChanged += btnAsYouTypeRich_CheckedChanged;
             // 
             // btnSpellDialogRich
             // 
-            this.btnSpellDialogRich.Location = new System.Drawing.Point(167, 9);
-            this.btnSpellDialogRich.Name = "btnSpellDialogRich";
-            this.btnSpellDialogRich.Size = new System.Drawing.Size(154, 30);
-            this.btnSpellDialogRich.TabIndex = 1;
-            this.btnSpellDialogRich.Text = "Check with Dialog";
-            this.toolTip1.SetToolTip(this.btnSpellDialogRich, "Spell-check the entire control using a modal dialog.");
-            this.btnSpellDialogRich.UseVisualStyleBackColor = true;
-            this.btnSpellDialogRich.Click += new System.EventHandler(this.btnSpellDialogRich_Click);
+            btnSpellDialogRich.Location = new System.Drawing.Point(195, 10);
+            btnSpellDialogRich.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnSpellDialogRich.Name = "btnSpellDialogRich";
+            btnSpellDialogRich.Size = new System.Drawing.Size(180, 35);
+            btnSpellDialogRich.TabIndex = 1;
+            btnSpellDialogRich.Text = "Check with Dialog";
+            toolTip1.SetToolTip(btnSpellDialogRich, "Spell-check the entire control using a modal dialog.");
+            btnSpellDialogRich.UseVisualStyleBackColor = true;
+            btnSpellDialogRich.Click += btnSpellDialogRich_Click;
             // 
             // btnShowErrorsRich
             // 
-            this.btnShowErrorsRich.Location = new System.Drawing.Point(327, 9);
-            this.btnShowErrorsRich.Name = "btnShowErrorsRich";
-            this.btnShowErrorsRich.Size = new System.Drawing.Size(154, 30);
-            this.btnShowErrorsRich.TabIndex = 2;
-            this.btnShowErrorsRich.Text = "Show Error List";
-            this.toolTip1.SetToolTip(this.btnShowErrorsRich, "Use the CheckText method to collect all errors, then show them in a grid.");
-            this.btnShowErrorsRich.UseVisualStyleBackColor = true;
-            this.btnShowErrorsRich.Click += new System.EventHandler(this.btnShowErrorsRich_Click);
+            btnShowErrorsRich.Location = new System.Drawing.Point(382, 10);
+            btnShowErrorsRich.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnShowErrorsRich.Name = "btnShowErrorsRich";
+            btnShowErrorsRich.Size = new System.Drawing.Size(180, 35);
+            btnShowErrorsRich.TabIndex = 2;
+            btnShowErrorsRich.Text = "Show Error List";
+            toolTip1.SetToolTip(btnShowErrorsRich, "Use the CheckText method to collect all errors, then show them in a grid.");
+            btnShowErrorsRich.UseVisualStyleBackColor = true;
+            btnShowErrorsRich.Click += btnShowErrorsRich_Click;
             // 
             // tpTextBox
             // 
-            this.tpTextBox.Controls.Add(this.btnAsYouType);
-            this.tpTextBox.Controls.Add(this.textBox1);
-            this.tpTextBox.Controls.Add(this.btnFont);
-            this.tpTextBox.Controls.Add(this.btnSpellDialog);
-            this.tpTextBox.Controls.Add(this.btnShowErrors);
-            this.tpTextBox.Location = new System.Drawing.Point(4, 22);
-            this.tpTextBox.Name = "tpTextBox";
-            this.tpTextBox.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTextBox.Size = new System.Drawing.Size(735, 518);
-            this.tpTextBox.TabIndex = 0;
-            this.tpTextBox.Text = "TextBox";
-            this.tpTextBox.UseVisualStyleBackColor = true;
+            tpTextBox.Controls.Add(btnAsYouType);
+            tpTextBox.Controls.Add(textBox1);
+            tpTextBox.Controls.Add(btnFont);
+            tpTextBox.Controls.Add(btnSpellDialog);
+            tpTextBox.Controls.Add(btnShowErrors);
+            tpTextBox.Location = new System.Drawing.Point(4, 24);
+            tpTextBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tpTextBox.Name = "tpTextBox";
+            tpTextBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tpTextBox.Size = new System.Drawing.Size(853, 600);
+            tpTextBox.TabIndex = 0;
+            tpTextBox.Text = "TextBox";
+            tpTextBox.UseVisualStyleBackColor = true;
             // 
             // btnFont
             // 
-            this.btnFont.Location = new System.Drawing.Point(510, 9);
-            this.btnFont.Name = "btnFont";
-            this.btnFont.Size = new System.Drawing.Size(104, 30);
-            this.btnFont.TabIndex = 3;
-            this.btnFont.Text = "Font...";
-            this.btnFont.UseVisualStyleBackColor = true;
-            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            btnFont.Location = new System.Drawing.Point(595, 10);
+            btnFont.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnFont.Name = "btnFont";
+            btnFont.Size = new System.Drawing.Size(121, 35);
+            btnFont.TabIndex = 3;
+            btnFont.Text = "Font...";
+            btnFont.UseVisualStyleBackColor = true;
+            btnFont.Click += btnFont_Click;
             // 
             // tpGrid
             // 
-            this.tpGrid.Controls.Add(this.btnSpellDialogGrid);
-            this.tpGrid.Controls.Add(this._flex);
-            this.tpGrid.Location = new System.Drawing.Point(4, 22);
-            this.tpGrid.Name = "tpGrid";
-            this.tpGrid.Size = new System.Drawing.Size(735, 518);
-            this.tpGrid.TabIndex = 2;
-            this.tpGrid.Text = "C1FlexGrid";
-            this.tpGrid.UseVisualStyleBackColor = true;
+            tpGrid.Controls.Add(btnSpellDialogGrid);
+            tpGrid.Controls.Add(_flex);
+            tpGrid.Location = new System.Drawing.Point(4, 24);
+            tpGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tpGrid.Name = "tpGrid";
+            tpGrid.Size = new System.Drawing.Size(853, 600);
+            tpGrid.TabIndex = 2;
+            tpGrid.Text = "C1FlexGrid";
+            tpGrid.UseVisualStyleBackColor = true;
             // 
             // btnSpellDialogGrid
             // 
-            this.btnSpellDialogGrid.Location = new System.Drawing.Point(8, 9);
-            this.btnSpellDialogGrid.Name = "btnSpellDialogGrid";
-            this.btnSpellDialogGrid.Size = new System.Drawing.Size(154, 30);
-            this.btnSpellDialogGrid.TabIndex = 2;
-            this.btnSpellDialogGrid.Text = "Check with Dialog";
-            this.toolTip1.SetToolTip(this.btnSpellDialogGrid, "Spell-check the entire control using a modal dialog.");
-            this.btnSpellDialogGrid.UseVisualStyleBackColor = true;
-            this.btnSpellDialogGrid.Click += new System.EventHandler(this.btnSpellDialogGrid_Click);
+            btnSpellDialogGrid.Location = new System.Drawing.Point(9, 10);
+            btnSpellDialogGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnSpellDialogGrid.Name = "btnSpellDialogGrid";
+            btnSpellDialogGrid.Size = new System.Drawing.Size(180, 35);
+            btnSpellDialogGrid.TabIndex = 2;
+            btnSpellDialogGrid.Text = "Check with Dialog";
+            toolTip1.SetToolTip(btnSpellDialogGrid, "Spell-check the entire control using a modal dialog.");
+            btnSpellDialogGrid.UseVisualStyleBackColor = true;
+            btnSpellDialogGrid.Click += btnSpellDialogGrid_Click;
             // 
             // _flex
             // 
-            this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
-            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:28;}\t";
-            this._flex.Location = new System.Drawing.Point(5, 45);
-            this._flex.Name = "_flex";
-            this._flex.Rows.DefaultSize = 17;
-            this._flex.Size = new System.Drawing.Size(722, 465);
-            this._flex.TabIndex = 0;
-            this._flex.UseCompatibleTextRendering = false;
+            _flex.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            _flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            _flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:28;}\t";
+            _flex.Location = new System.Drawing.Point(6, 52);
+            _flex.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            _flex.Name = "_flex";
+            _flex.Rows.DefaultSize = 17;
+            _flex.Size = new System.Drawing.Size(842, 536);
+            _flex.TabIndex = 0;
             // 
             // _spell
             // 
-            this._spell.MainDictionary.Password = "foozebar";
-            this._spell.UserDictionary.Enabled = false;
+            _spell.MainDictionary.Password = "foozebar";
+            // 
+            // 
+            // 
+            _spell.UserDictionary.Enabled = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 544);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C1SpellChecker: QuickStart";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tpRichTextBox.ResumeLayout(false);
-            this.tpRichTextBox.PerformLayout();
-            this.tpTextBox.ResumeLayout(false);
-            this.tpTextBox.PerformLayout();
-            this.tpGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._spell)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(861, 628);
+            Controls.Add(tabControl1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "C1SpellChecker: QuickStart";
+            Load += Form1_Load;
+            tabControl1.ResumeLayout(false);
+            tpRichTextBox.ResumeLayout(false);
+            tpRichTextBox.PerformLayout();
+            tpTextBox.ResumeLayout(false);
+            tpTextBox.PerformLayout();
+            tpGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)_flex).EndInit();
+            ((System.ComponentModel.ISupportInitialize)_spell).EndInit();
+            ResumeLayout(false);
 
         }
 

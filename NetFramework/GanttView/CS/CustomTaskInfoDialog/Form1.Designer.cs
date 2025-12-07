@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.GanttView.BarStyle barStyle1 = new C1.Win.GanttView.BarStyle();
             C1.Win.GanttView.BarStyle barStyle2 = new C1.Win.GanttView.BarStyle();
             C1.Win.GanttView.BarStyle barStyle3 = new C1.Win.GanttView.BarStyle();

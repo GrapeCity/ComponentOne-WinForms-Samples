@@ -58,116 +58,114 @@ namespace FlexGrid
 			base.Dispose( disposing );
 		}
 
-		#region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._btnLoad = new System.Windows.Forms.Button();
-            this._btnSave = new System.Windows.Forms.Button();
-            this._book = new C1.Excel.C1XLBook();
-            this._btnBatch = new System.Windows.Forms.Button();
-            this._tab = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
-            this._tab.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-            this.SuspendLayout();
+        #region Windows Form Designer generated code
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
+            _btnLoad = new Button();
+            _btnSave = new Button();
+            _btnBatch = new Button();
+            _tab = new TabControl();
+            tabPage1 = new TabPage();
+            _flex = new C1FlexGrid();
+            _tab.SuspendLayout();
+            tabPage1.SuspendLayout();
+            ((ISupportInitialize)_flex).BeginInit();
+            SuspendLayout();
             // 
             // _btnLoad
             // 
-            this._btnLoad.Location = new System.Drawing.Point(14, 15);
-            this._btnLoad.Name = "_btnLoad";
-            this._btnLoad.Size = new System.Drawing.Size(173, 44);
-            this._btnLoad.TabIndex = 2;
-            this._btnLoad.Text = "&Load File...";
-            this._btnLoad.Click += new System.EventHandler(this._btnLoad_Click);
+            _btnLoad.Location = new Point(9, 10);
+            _btnLoad.Name = "_btnLoad";
+            _btnLoad.Size = new Size(116, 29);
+            _btnLoad.TabIndex = 2;
+            _btnLoad.Text = "&Load File...";
+            _btnLoad.Click += _btnLoad_Click;
             // 
             // _btnSave
             // 
-            this._btnSave.Location = new System.Drawing.Point(202, 15);
-            this._btnSave.Name = "_btnSave";
-            this._btnSave.Size = new System.Drawing.Size(172, 44);
-            this._btnSave.TabIndex = 2;
-            this._btnSave.Text = "&Save File...";
-            this._btnSave.Click += new System.EventHandler(this._btnSave_Click);
+            _btnSave.Location = new Point(135, 10);
+            _btnSave.Name = "_btnSave";
+            _btnSave.Size = new Size(114, 29);
+            _btnSave.TabIndex = 2;
+            _btnSave.Text = "&Save File...";
+            _btnSave.Click += _btnSave_Click;
             // 
             // _btnBatch
             // 
-            this._btnBatch.Location = new System.Drawing.Point(534, 15);
-            this._btnBatch.Name = "_btnBatch";
-            this._btnBatch.Size = new System.Drawing.Size(288, 44);
-            this._btnBatch.TabIndex = 3;
-            this._btnBatch.Text = "Load/Save Batch...";
-            this._btnBatch.Click += new System.EventHandler(this._btnBatch_Click);
+            _btnBatch.Location = new Point(356, 10);
+            _btnBatch.Name = "_btnBatch";
+            _btnBatch.Size = new Size(192, 29);
+            _btnBatch.TabIndex = 3;
+            _btnBatch.Text = "Load/Save Batch...";
+            _btnBatch.Click += _btnBatch_Click;
             // 
             // _tab
             // 
-            this._tab.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this._tab.Controls.Add(this.tabPage1);
-            this._tab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._tab.Location = new System.Drawing.Point(0, 40);
-            this._tab.Multiline = true;
-            this._tab.Name = "_tab";
-            this._tab.Padding = new System.Drawing.Point(0, 0);
-            this._tab.SelectedIndex = 0;
-            this._tab.Size = new System.Drawing.Size(829, 627);
-            this._tab.TabIndex = 4;
+            _tab.Alignment = TabAlignment.Bottom;
+            _tab.Controls.Add(tabPage1);
+            _tab.Dock = DockStyle.Fill;
+            _tab.Location = new Point(0, 40);
+            _tab.Multiline = true;
+            _tab.Name = "_tab";
+            _tab.Padding = new Point(0, 0);
+            _tab.SelectedIndex = 0;
+            _tab.Size = new Size(829, 627);
+            _tab.TabIndex = 4;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this._flex);
-            this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(821, 589);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Sheet 1";
+            tabPage1.Controls.Add(_flex);
+            tabPage1.Location = new Point(4, 4);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Size = new Size(821, 599);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Sheet 1";
             // 
             // _flex
             // 
-            this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Spill;
-            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
-            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
-            this._flex.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
-            this._flex.ColumnPickerInfo.ShowColumnMenuItem = false;
-            this._flex.ColumnPickerInfo.ShowToolButton = false;
-            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.Location = new System.Drawing.Point(0, 0);
-            this._flex.Name = "_flex";
-            this._flex.Rows.DefaultSize = 17;
-            this._flex.Size = new System.Drawing.Size(821, 589);
-            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
-            this._flex.TabIndex = 0;
-            this._flex.UseCompatibleTextRendering = true;
+            _flex.AllowMerging = AllowMergingEnum.Spill;
+            _flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            _flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
+            _flex.Dock = DockStyle.Fill;
+            _flex.Font = new Font("Microsoft Sans Serif", 8.25F);
+            _flex.Location = new Point(0, 0);
+            _flex.Name = "_flex";
+            _flex.Rows.DefaultSize = 17;
+            _flex.Size = new Size(821, 599);
+            _flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            _flex.TabIndex = 0;
+            _flex.UseCompatibleTextRendering = true;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(9, 24);
-            this.ClientSize = new System.Drawing.Size(829, 667);
-            this.Controls.Add(this._tab);
-            this.Controls.Add(this._btnBatch);
-            this.Controls.Add(this._btnLoad);
-            this.Controls.Add(this._btnSave);
-            this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C1Excel: load and save XLS files";
-            this._tab.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleBaseSize = new Size(6, 16);
+            ClientSize = new Size(829, 667);
+            Controls.Add(_tab);
+            Controls.Add(_btnBatch);
+            Controls.Add(_btnLoad);
+            Controls.Add(_btnSave);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            Padding = new Padding(0, 40, 0, 0);
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "C1Excel: load and save XLS files";
+            _tab.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            ((ISupportInitialize)_flex).EndInit();
+            ResumeLayout(false);
 
-		}
-		#endregion
+        }
+        #endregion
 
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
-		[STAThread]
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
 		static void Main() 
 		{
 			Application.Run(new Form1());

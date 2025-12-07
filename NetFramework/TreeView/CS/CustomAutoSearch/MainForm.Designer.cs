@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             C1.Win.TreeView.C1TreeColumn c1TreeColumn2 = new C1.Win.TreeView.C1TreeColumn();
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();

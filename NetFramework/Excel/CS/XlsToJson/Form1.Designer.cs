@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._btnConvert = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this._buttonCopy = new System.Windows.Forms.Button();

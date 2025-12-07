@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Collections;
@@ -59,6 +59,9 @@ namespace Subtotals
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._chkAbove = new System.Windows.Forms.CheckBox();
 			this._chkGrand = new System.Windows.Forms.CheckBox();

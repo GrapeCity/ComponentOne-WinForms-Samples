@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._c1FlexPivotPage = new C1.Win.FlexPivot.FlexPivotPage();
             ((System.ComponentModel.ISupportInitialize)(this._c1FlexPivotPage)).BeginInit();
             this.SuspendLayout();

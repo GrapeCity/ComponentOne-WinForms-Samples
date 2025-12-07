@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbTheme = new C1.Win.C1Input.C1ComboBox();

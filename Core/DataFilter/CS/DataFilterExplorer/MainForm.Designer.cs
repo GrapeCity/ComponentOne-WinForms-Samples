@@ -52,7 +52,6 @@
             // 
             splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             splitContainer1.Location = new System.Drawing.Point(0, 0);
-            splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -60,16 +59,15 @@
             splitContainer1.Panel1.AutoScroll = true;
             splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
             splitContainer1.Panel1.Controls.Add(lbSamples);
-            splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(15, 7, 0, 0);
+            splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(12, 6, 0, 0);
             // 
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(pnlSample);
             splitContainer1.Panel2.Controls.Add(pnlDescription);
             splitContainer1.Panel2.Controls.Add(pnlTitle);
-            splitContainer1.Size = new System.Drawing.Size(1250, 850);
-            splitContainer1.SplitterDistance = 341;
-            splitContainer1.SplitterWidth = 5;
+            splitContainer1.Size = new System.Drawing.Size(1000, 680);
+            splitContainer1.SplitterDistance = 272;
             splitContainer1.TabIndex = 0;
             splitContainer1.Text = "splitContainer1";
             // 
@@ -83,12 +81,11 @@
             lbSamples.ForeColor = System.Drawing.Color.DimGray;
             lbSamples.FormattingEnabled = true;
             lbSamples.HorizontalScrollbar = true;
-            lbSamples.ItemHeight = 32;
-            lbSamples.Location = new System.Drawing.Point(15, 7);
-            lbSamples.Margin = new System.Windows.Forms.Padding(6);
+            lbSamples.Location = new System.Drawing.Point(12, 6);
+            lbSamples.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             lbSamples.Name = "lbSamples";
             lbSamples.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            lbSamples.Size = new System.Drawing.Size(326, 843);
+            lbSamples.Size = new System.Drawing.Size(260, 674);
             lbSamples.TabIndex = 0;
             lbSamples.SelectedValueChanged += lbSamples_SelectedValueChanged;
             // 
@@ -96,10 +93,9 @@
             // 
             pnlSample.BackColor = System.Drawing.SystemColors.Window;
             pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            pnlSample.Location = new System.Drawing.Point(0, 120);
-            pnlSample.Margin = new System.Windows.Forms.Padding(4);
+            pnlSample.Location = new System.Drawing.Point(0, 96);
             pnlSample.Name = "pnlSample";
-            pnlSample.Size = new System.Drawing.Size(904, 730);
+            pnlSample.Size = new System.Drawing.Size(724, 584);
             pnlSample.TabIndex = 2;
             // 
             // pnlDescription
@@ -109,10 +105,9 @@
             pnlDescription.BackColor = System.Drawing.SystemColors.Window;
             pnlDescription.Controls.Add(lblDescription);
             pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            pnlDescription.Location = new System.Drawing.Point(0, 60);
-            pnlDescription.Margin = new System.Windows.Forms.Padding(4);
+            pnlDescription.Location = new System.Drawing.Point(0, 48);
             pnlDescription.Name = "pnlDescription";
-            pnlDescription.Size = new System.Drawing.Size(904, 60);
+            pnlDescription.Size = new System.Drawing.Size(724, 48);
             pnlDescription.TabIndex = 1;
             // 
             // lblDescription
@@ -120,9 +115,8 @@
             lblDescription.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             lblDescription.Font = new System.Drawing.Font("Calibri", 14.25F);
             lblDescription.Location = new System.Drawing.Point(0, 0);
-            lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             lblDescription.Name = "lblDescription";
-            lblDescription.Size = new System.Drawing.Size(904, 60);
+            lblDescription.Size = new System.Drawing.Size(724, 48);
             lblDescription.TabIndex = 0;
             lblDescription.Text = "label1";
             lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -136,9 +130,8 @@
             pnlTitle.Controls.Add(lblTitle);
             pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             pnlTitle.Location = new System.Drawing.Point(0, 0);
-            pnlTitle.Margin = new System.Windows.Forms.Padding(4);
             pnlTitle.Name = "pnlTitle";
-            pnlTitle.Size = new System.Drawing.Size(904, 60);
+            pnlTitle.Size = new System.Drawing.Size(724, 48);
             pnlTitle.TabIndex = 0;
             // 
             // cmbThemes
@@ -147,10 +140,10 @@
             cmbThemes.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             cmbThemes.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
             cmbThemes.ItemsDisplayMember = "DisplayText";
-            cmbThemes.Location = new System.Drawing.Point(579, 15);
+            cmbThemes.Location = new System.Drawing.Point(464, 12);
             cmbThemes.Name = "cmbThemes";
             cmbThemes.ReadOnly = true;
-            cmbThemes.Size = new System.Drawing.Size(250, 28);
+            cmbThemes.Size = new System.Drawing.Size(200, 23);
             cmbThemes.TabIndex = 2;
             cmbThemes.SelectedIndexChanged += cmbThemes_SelectedIndexChanged;
             // 
@@ -158,10 +151,9 @@
             // 
             panel1.BackColor = System.Drawing.Color.SkyBlue;
             panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel1.Location = new System.Drawing.Point(0, 59);
-            panel1.Margin = new System.Windows.Forms.Padding(4);
+            panel1.Location = new System.Drawing.Point(0, 47);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(904, 1);
+            panel1.Size = new System.Drawing.Size(724, 1);
             panel1.TabIndex = 1;
             // 
             // chkInfo
@@ -178,10 +170,9 @@
             chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
             chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F);
-            chkInfo.Location = new System.Drawing.Point(840, 1);
-            chkInfo.Margin = new System.Windows.Forms.Padding(4);
+            chkInfo.Location = new System.Drawing.Point(670, 1);
             chkInfo.Name = "chkInfo";
-            chkInfo.Size = new System.Drawing.Size(64, 56);
+            chkInfo.Size = new System.Drawing.Size(54, 47);
             chkInfo.TabIndex = 1;
             chkInfo.Text = "❔";
             chkInfo.UseVisualStyleBackColor = false;
@@ -192,21 +183,19 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F);
             lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
-            lblTitle.Location = new System.Drawing.Point(32, 0);
-            lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblTitle.Location = new System.Drawing.Point(26, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new System.Drawing.Size(142, 58);
+            lblTitle.Size = new System.Drawing.Size(110, 45);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "label1";
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            ClientSize = new System.Drawing.Size(1250, 850);
+            ClientSize = new System.Drawing.Size(1000, 680);
             Controls.Add(splitContainer1);
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new System.Windows.Forms.Padding(4);
             Name = "MainForm";
             Text = "C1DataFilter Sample Explorer";
             splitContainer1.Panel1.ResumeLayout(false);

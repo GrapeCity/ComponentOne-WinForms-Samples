@@ -29,58 +29,54 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.regularTooltipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hTMLTooltipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chartTooltipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            regularTooltipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            hTMLTooltipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            chartTooltipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { viewToolStripMenuItem });
+            resources.ApplyResources(menuStrip1, "menuStrip1");
+            menuStrip1.Name = "menuStrip1";
             // 
             // viewToolStripMenuItem
             // 
-            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.regularTooltipMenuItem,
-            this.hTMLTooltipMenuItem,
-            this.chartTooltipMenuItem});
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
+            viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { regularTooltipMenuItem, hTMLTooltipMenuItem, chartTooltipMenuItem });
+            viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            resources.ApplyResources(viewToolStripMenuItem, "viewToolStripMenuItem");
             // 
             // regularTooltipMenuItem
             // 
-            this.regularTooltipMenuItem.Name = "regularTooltipMenuItem";
-            resources.ApplyResources(this.regularTooltipMenuItem, "regularTooltipMenuItem");
+            regularTooltipMenuItem.Name = "regularTooltipMenuItem";
+            resources.ApplyResources(regularTooltipMenuItem, "regularTooltipMenuItem");
             // 
             // hTMLTooltipMenuItem
             // 
-            this.hTMLTooltipMenuItem.Name = "hTMLTooltipMenuItem";
-            resources.ApplyResources(this.hTMLTooltipMenuItem, "hTMLTooltipMenuItem");
+            hTMLTooltipMenuItem.Name = "hTMLTooltipMenuItem";
+            resources.ApplyResources(hTMLTooltipMenuItem, "hTMLTooltipMenuItem");
             // 
             // chartTooltipMenuItem
             // 
-            this.chartTooltipMenuItem.Name = "chartTooltipMenuItem";
-            resources.ApplyResources(this.chartTooltipMenuItem, "chartTooltipMenuItem");
+            chartTooltipMenuItem.Name = "chartTooltipMenuItem";
+            resources.ApplyResources(chartTooltipMenuItem, "chartTooltipMenuItem");
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(menuStrip1);
+            IsMdiContainer = true;
+            MainMenuStrip = menuStrip1;
+            Name = "MainForm";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

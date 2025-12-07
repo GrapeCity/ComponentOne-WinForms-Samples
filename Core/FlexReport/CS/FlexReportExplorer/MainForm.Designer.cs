@@ -31,152 +31,194 @@ namespace FlexReportExplorer
         /// </summary>
         private void InitializeComponent()
         {
+            C1.Win.Command.CentralTabMinimumSize centralTabMinimumSize1 = new C1.Win.Command.CentralTabMinimumSize();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.c1CmdDock = new C1.Win.Command.C1CommandDock();
-            this.dockTabPagePreview = new C1.Win.Command.C1DockingTab();
-            this.dockTabPageRptList = new C1.Win.Command.C1DockingTabPage();
-            this.pnlRpts = new System.Windows.Forms.Panel();
             C1.Win.TreeView.C1TreeColumn c1TreeColumn1 = new C1.Win.TreeView.C1TreeColumn();
-            this.c1TreeView = new C1.Win.TreeView.C1TreeView();
-            this.c1ThemeController = new C1.Win.Themes.C1ThemeController();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController)).BeginInit();
-            this.pnlTabShowHide = new System.Windows.Forms.Panel();
-            this.pbTabShowHide = new System.Windows.Forms.PictureBox();
-            this.pnlPreviewCtl = new System.Windows.Forms.Panel();
-            this.flxViewer = new C1.Win.FlexViewer.C1FlexViewer();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CmdDock)).BeginInit();
-            this.c1CmdDock.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dockTabPagePreview)).BeginInit();
-            this.dockTabPagePreview.SuspendLayout();
-            this.dockTabPageRptList.SuspendLayout();
-            this.pnlRpts.SuspendLayout();
-            this.pnlTabShowHide.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTabShowHide)).BeginInit();
-            this.pnlPreviewCtl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.flxViewer)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // c1ThemeController
-            // 
-            this.c1ThemeController.Theme = "Office365White";
+            C1.Win.TreeView.C1TreeColumn c1TreeColumn2 = new C1.Win.TreeView.C1TreeColumn();
+            c1CmdDock = new C1.Win.Command.C1CommandDock();
+            dockTabPagePreview = new C1.Win.Command.C1DockingTab();
+            dockTabPageRptList = new C1.Win.Command.C1DockingTabPage();
+            pnlRpts = new Panel();
+            c1TreeView = new C1.Win.TreeView.C1TreeView();
+            pnlTabShowHide = new Panel();
+            pbTabShowHide = new PictureBox();
+            c1ThemeController = new C1.Win.Themes.C1ThemeController();
+            pnlPreviewCtl = new Panel();
+            flxViewer = new C1.Win.FlexViewer.C1FlexViewer();
+            ((System.ComponentModel.ISupportInitialize)c1CmdDock).BeginInit();
+            c1CmdDock.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dockTabPagePreview).BeginInit();
+            dockTabPagePreview.SuspendLayout();
+            dockTabPageRptList.SuspendLayout();
+            pnlRpts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)c1TreeView).BeginInit();
+            pnlTabShowHide.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbTabShowHide).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1ThemeController).BeginInit();
+            pnlPreviewCtl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)flxViewer).BeginInit();
+            SuspendLayout();
             // 
             // c1CmdDock
             // 
-            this.c1CmdDock.Controls.Add(this.dockTabPagePreview);
-            resources.ApplyResources(this.c1CmdDock, "c1CmdDock");
-            this.c1CmdDock.Id = 0;
-            this.c1CmdDock.Name = "c1CmdDock";
+            centralTabMinimumSize1.Width = 20;
+            centralTabMinimumSize1.WidthType = SizeType.AutoSize;
+            c1CmdDock.CentralTabMinimumSize = centralTabMinimumSize1;
+            c1CmdDock.Controls.Add(dockTabPagePreview);
+            resources.ApplyResources(c1CmdDock, "c1CmdDock");
+            c1CmdDock.Id = 0;
+            c1CmdDock.Name = "c1CmdDock";
             // 
             // dockTabPagePreview
             // 
-            this.dockTabPagePreview.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.dockTabPagePreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dockTabPagePreview.CanAutoHide = true;
-            this.dockTabPagePreview.CloseBox = C1.Win.Command.CloseBoxPositionEnum.ActivePage;
-            this.dockTabPagePreview.Controls.Add(this.dockTabPageRptList);
-            resources.ApplyResources(this.dockTabPagePreview, "dockTabPagePreview");
-            this.dockTabPagePreview.Name = "dockTabPagePreview";
-            this.dockTabPagePreview.ShowSingleTab = false;
-            this.dockTabPagePreview.TabLook = C1.Win.Command.ButtonLookFlags.Text;
-            this.dockTabPagePreview.TabsCanFocus = false;
-            this.dockTabPagePreview.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
-            this.dockTabPagePreview.TabsShowFocusCues = false;
-            this.dockTabPagePreview.TabsSpacing = 5;
-            this.c1ThemeController.SetTheme(this.dockTabPagePreview, "(default)");
+            dockTabPagePreview.Alignment = TabAlignment.Bottom;
+            dockTabPagePreview.BackColor = System.Drawing.Color.White;
+            dockTabPagePreview.CanAutoHide = true;
+            dockTabPagePreview.CloseBox = C1.Win.Command.CloseBoxPositionEnum.ActivePage;
+            dockTabPagePreview.Controls.Add(dockTabPageRptList);
+            resources.ApplyResources(dockTabPagePreview, "dockTabPagePreview");
+            dockTabPagePreview.HotTrack = true;
+            dockTabPagePreview.Name = "dockTabPagePreview";
+            dockTabPagePreview.ShowSingleTab = false;
+            dockTabPagePreview.TabLook = C1.Win.Command.ButtonLookFlags.Text;
+            dockTabPagePreview.TabsCanFocus = false;
+            dockTabPagePreview.TabShape = C1.Win.Command.TabShape.Rounded;
+            dockTabPagePreview.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
+            dockTabPagePreview.TabsSpacing = 5;
+            c1ThemeController.SetTheme(dockTabPagePreview, "(default)");
             // 
             // dockTabPageRptList
             // 
-            this.dockTabPageRptList.BackColor = System.Drawing.Color.White;
-            this.dockTabPageRptList.Controls.Add(this.pnlRpts);
-            this.dockTabPageRptList.Controls.Add(this.pnlTabShowHide);
-            resources.ApplyResources(this.dockTabPageRptList, "dockTabPageRptList");
-            this.dockTabPageRptList.Name = "dockTabPageRptList";
-            this.dockTabPageRptList.TabBackColor = System.Drawing.Color.Transparent;
-            //
-            // c1TreeView
-            //
-            this.c1TreeView.AllowDrop = false;
-            this.c1TreeView.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
-            this.c1TreeView.BackColor = System.Drawing.Color.White;
-            this.c1TreeView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            c1TreeColumn1.DisplayFieldName = null;
-            c1TreeColumn1.Name = "Column1";
-            c1TreeColumn1.Width = 185;
-            this.c1TreeView.Columns.Add(c1TreeColumn1);
-            this.c1TreeView.BindingInfo.DataMember = null;
-            this.c1TreeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TreeView.BindingInfo.KeyField = null;
-            this.c1TreeView.Location = new System.Drawing.Point(0, 0);
-            this.c1TreeView.Name = "c1TreeView";
-            this.c1TreeView.BindingInfo.ParentKeyField = null;
-            this.c1TreeView.Styles.BorderStyle = C1.Win.TreeView.C1TreeViewBorderStyle.None;
-            this.c1TreeView.Styles.ExpandButtonStyle = C1.Win.TreeView.ExpandButtonStyle.Windows10;
-            this.c1TreeView.Styles.ShowLines = false;
-            this.c1TreeView.ShowColumnHeaders = false;
-            this.c1TreeView.TabIndex = 0;
-            this.c1TreeView.MouseMove += C1TreeView_MouseMove;
-            this.c1TreeView.SelectionChanged += new C1.Win.TreeView.C1TreeViewEventHandler(this.c1TreeView_SelectionChanged);
-            this.c1ThemeController.SetTheme(this.c1TreeView, "(default)");
+            dockTabPageRptList.BackColor = System.Drawing.Color.White;
+            dockTabPageRptList.Controls.Add(pnlRpts);
+            dockTabPageRptList.Controls.Add(pnlTabShowHide);
+            resources.ApplyResources(dockTabPageRptList, "dockTabPageRptList");
+            dockTabPageRptList.Name = "dockTabPageRptList";
+            dockTabPageRptList.TabBackColor = System.Drawing.Color.Transparent;
             // 
             // pnlRpts
             // 
-            resources.ApplyResources(this.pnlRpts, "pnlRpts");
-            this.pnlRpts.BackColor = System.Drawing.Color.Transparent;
-            this.pnlRpts.Controls.Add(this.c1TreeView);
-            this.pnlRpts.Name = "pnlRpts";
-            this.c1ThemeController.SetTheme(this.pnlRpts, "(default)");
+            resources.ApplyResources(pnlRpts, "pnlRpts");
+            pnlRpts.BackColor = System.Drawing.SystemColors.ButtonFace;
+            pnlRpts.Controls.Add(c1TreeView);
+            pnlRpts.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
+            pnlRpts.Name = "pnlRpts";
+            c1ThemeController.SetTheme(pnlRpts, "(default)");
+            // 
+            // c1TreeView
+            // 
+            c1TreeView.BackColor = System.Drawing.Color.White;
+            c1TreeView.BorderStyle = BorderStyle.None;
+            // 
+            // 
+            // 
+            c1TreeView.ButtonImageList.ColorDepth = ColorDepth.Depth32Bit;
+            c1TreeView.ButtonImageList.ImageSize = (System.Drawing.Size)resources.GetObject("c1TreeView.ButtonImageList.ImageSize");
+            // 
+            // 
+            // 
+            c1TreeView.CheckImageList.ColorDepth = ColorDepth.Depth32Bit;
+            c1TreeView.CheckImageList.ImageSize = (System.Drawing.Size)resources.GetObject("c1TreeView.CheckImageList.ImageSize");
+            c1TreeColumn1.HeaderText = "Column1";
+            c1TreeColumn1.Name = "Column1";
+            c1TreeColumn2.HeaderText = null;
+            c1TreeColumn2.Name = "Column1";
+            c1TreeColumn2.Width = 185;
+            c1TreeView.Columns.Add(c1TreeColumn1);
+            c1TreeView.Columns.Add(c1TreeColumn2);
+            resources.ApplyResources(c1TreeView, "c1TreeView");
+            c1TreeView.Name = "c1TreeView";
+            c1TreeView.ShowColumnHeaders = false;
+            c1TreeView.Styles.ExpandButtonStyle = C1.Win.TreeView.ExpandButtonStyle.Windows10;
+            c1ThemeController.SetTheme(c1TreeView, "(default)");
+            c1TreeView.SelectionChanged += c1TreeView_SelectionChanged;
+            c1TreeView.MouseMove += C1TreeView_MouseMove;
             // 
             // pnlTabShowHide
             // 
-            this.pnlTabShowHide.Controls.Add(this.pbTabShowHide);
-            resources.ApplyResources(this.pnlTabShowHide, "pnlTabShowHide");
-            this.pnlTabShowHide.Name = "pnlTabShowHide";
-            this.c1ThemeController.SetTheme(this.pnlTabShowHide, "(default)");
+            pnlTabShowHide.BackColor = System.Drawing.SystemColors.ButtonFace;
+            pnlTabShowHide.Controls.Add(pbTabShowHide);
+            resources.ApplyResources(pnlTabShowHide, "pnlTabShowHide");
+            pnlTabShowHide.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
+            pnlTabShowHide.Name = "pnlTabShowHide";
+            c1ThemeController.SetTheme(pnlTabShowHide, "(default)");
             // 
             // pbTabShowHide
             // 
-            this.pbTabShowHide.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.pbTabShowHide, "pbTabShowHide");
-            this.pbTabShowHide.Name = "pbTabShowHide";
-            this.pbTabShowHide.TabStop = false;
-            this.pbTabShowHide.Click += new System.EventHandler(this.PbTabShowHide_Click);
+            pbTabShowHide.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(pbTabShowHide, "pbTabShowHide");
+            pbTabShowHide.Name = "pbTabShowHide";
+            pbTabShowHide.TabStop = false;
+            pbTabShowHide.Click += PbTabShowHide_Click;
+            // 
+            // c1ThemeController
+            // 
+            c1ThemeController.Theme = "Office365White";
             // 
             // pnlPreviewCtl
             // 
-            this.pnlPreviewCtl.Controls.Add(this.flxViewer);
-            resources.ApplyResources(this.pnlPreviewCtl, "pnlPreviewCtl");
-            this.pnlPreviewCtl.Name = "pnlPreviewCtl";
-            this.c1ThemeController.SetTheme(this.pnlPreviewCtl, "(default)");
+            pnlPreviewCtl.BackColor = System.Drawing.SystemColors.ButtonFace;
+            pnlPreviewCtl.Controls.Add(flxViewer);
+            resources.ApplyResources(pnlPreviewCtl, "pnlPreviewCtl");
+            pnlPreviewCtl.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
+            pnlPreviewCtl.Name = "pnlPreviewCtl";
+            c1ThemeController.SetTheme(pnlPreviewCtl, "(default)");
             // 
             // flxViewer
             // 
-            resources.ApplyResources(this.flxViewer, "flxViewer");
-            this.flxViewer.Name = "flxViewer";
-            this.flxViewer.ZoomMode = C1.Win.FlexViewer.FlexViewerZoomMode.PageWidth;
-            this.c1ThemeController.SetTheme(this.flxViewer, "(default)");
+            resources.ApplyResources(flxViewer, "flxViewer");
+            flxViewer.Name = "flxViewer";
+            flxViewer.OutlineBackColorHot = System.Drawing.Color.WhiteSmoke;
+            flxViewer.OutlineBackColorHotSelected = System.Drawing.Color.FromArgb(249, 249, 249);
+            flxViewer.OutlineBackColorSelected = System.Drawing.Color.FromArgb(249, 249, 249);
+            flxViewer.OutlineButtonBackColorHot = System.Drawing.Color.FromArgb(235, 235, 235);
+            flxViewer.OutlineButtonBackColorPressed = System.Drawing.SystemColors.ButtonFace;
+            flxViewer.OutlineButtonBorderColorHot = System.Drawing.Color.FromArgb(235, 235, 235);
+            flxViewer.OutlineButtonBorderColorPressed = System.Drawing.SystemColors.ButtonFace;
+            flxViewer.OutlineButtonForeColorHot = System.Drawing.Color.FromArgb(32, 32, 32);
+            flxViewer.OutlineButtonForeColorNormal = System.Drawing.Color.FromArgb(32, 32, 32);
+            flxViewer.OutlineButtonForeColorPressed = System.Drawing.SystemColors.WindowFrame;
+            flxViewer.OutlineForeColorHot = System.Drawing.Color.FromArgb(32, 32, 32);
+            flxViewer.OutlineForeColorHotSelected = System.Drawing.SystemColors.WindowFrame;
+            flxViewer.OutlineForeColorNormal = System.Drawing.Color.FromArgb(32, 32, 32);
+            flxViewer.OutlineForeColorSelected = System.Drawing.SystemColors.WindowFrame;
+            flxViewer.OutlineLineColor = System.Drawing.Color.FromArgb(215, 215, 215);
+            flxViewer.PageAreaBackColor = System.Drawing.Color.FromArgb(231, 231, 231);
+            flxViewer.ParamHeaderBackColor = System.Drawing.Color.FromArgb(224, 224, 224);
+            flxViewer.ParamHeaderForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
+            flxViewer.SplitterColor = System.Drawing.Color.FromArgb(215, 215, 215);
+            c1ThemeController.SetTheme(flxViewer, "(default)");
+            flxViewer.ThumbAreaBackColor = System.Drawing.Color.FromArgb(231, 231, 231);
+            flxViewer.ThumbBackColorHot = System.Drawing.Color.FromArgb(224, 224, 224);
+            flxViewer.ThumbBackColorPressed = System.Drawing.SystemColors.ScrollBar;
+            flxViewer.ThumbBackColorSelected = System.Drawing.SystemColors.ScrollBar;
+            flxViewer.ThumbPageNumBackColor = System.Drawing.Color.White;
+            flxViewer.ThumbPageNumForeColor = System.Drawing.Color.Black;
+            flxViewer.ZoomMode = C1.Win.FlexViewer.FlexViewerZoomMode.PageWidth;
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pnlPreviewCtl);
-            this.Controls.Add(this.c1CmdDock);
-            this.KeyPreview = true;
-            this.Name = "MainForm";
-            ((System.ComponentModel.ISupportInitialize)(this.c1CmdDock)).EndInit();
-            this.c1CmdDock.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dockTabPagePreview)).EndInit();
-            this.dockTabPagePreview.ResumeLayout(false);
-            this.dockTabPageRptList.ResumeLayout(false);
-            this.pnlRpts.ResumeLayout(false);
-            this.pnlTabShowHide.ResumeLayout(false);
-            this.c1ThemeController.SetTheme(this, "(default)");
-            ((System.ComponentModel.ISupportInitialize)(this.pbTabShowHide)).EndInit();
-            this.pnlPreviewCtl.ResumeLayout(false);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.flxViewer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(pnlPreviewCtl);
+            Controls.Add(c1CmdDock);
+            KeyPreview = true;
+            Name = "MainForm";
+            c1ThemeController.SetTheme(this, "(default)");
+            FormClosing += Form1_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)c1CmdDock).EndInit();
+            c1CmdDock.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dockTabPagePreview).EndInit();
+            dockTabPagePreview.ResumeLayout(false);
+            dockTabPageRptList.ResumeLayout(false);
+            pnlRpts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)c1TreeView).EndInit();
+            pnlTabShowHide.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbTabShowHide).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1ThemeController).EndInit();
+            pnlPreviewCtl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)flxViewer).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

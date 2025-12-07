@@ -269,4 +269,12 @@ Dates outside this range will be disabled</value>
 Prevents selecting more dates than the specified</value>
     <comment>Tooltip for range limit picture box</comment>
   </data>
+  <data name="Label_NoStartDate" xml:space="preserve">
+    <value>No selected start date</value>
+    <comment>Label text for end date field </comment>
+  </data>
+  <data name="Label_NoEndDate" xml:space="preserve">
+    <value>No selected end date</value>
+    <comment>Label text for end date field </comment>
+  </data>
 </root>

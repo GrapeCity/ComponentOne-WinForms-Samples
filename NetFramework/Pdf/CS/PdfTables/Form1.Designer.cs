@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._pdf = new C1.Win.Pdf.C1PdfDocument();
             this.button1 = new System.Windows.Forms.Button();
             this._webBrowser = new System.Windows.Forms.WebBrowser();

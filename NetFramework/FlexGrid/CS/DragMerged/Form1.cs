@@ -53,6 +53,7 @@ namespace FlexGridTest
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.fg = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.fg)).BeginInit();
             this.SuspendLayout();
@@ -60,28 +61,29 @@ namespace FlexGridTest
             // fg
             // 
             this.fg.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
-            this.fg.Anchor = (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-                | System.Windows.Forms.AnchorStyles.Left) 
-                | System.Windows.Forms.AnchorStyles.Right);
-            this.fg.BackColor = System.Drawing.SystemColors.Window;
+            this.fg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.fg.ColumnInfo = "0,0,0,0,0,80,Columns:";
-            this.fg.Location = new System.Drawing.Point(5, 5);
+            this.fg.Location = new System.Drawing.Point(8, 8);
             this.fg.Name = "fg";
             this.fg.Rows.Count = 0;
             this.fg.Rows.Fixed = 0;
-            this.fg.Size = new System.Drawing.Size(1039, 612);
-            this.fg.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this.fg.Size = new System.Drawing.Size(1036, 554);
+            this.fg.StyleInfo = resources.GetString("fg.StyleInfo");
             this.fg.TabIndex = 0;
             this.fg.Tree.Column = 0;
+            this.fg.Tree.Indent = 18;
+            this.fg.UseCompatibleTextRendering = true;
             this.fg.BeforeDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this.fg_BeforeDragColumn);
             this.fg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fg_MouseDown);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(1044, 708);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this.fg});
+            this.Controls.Add(this.fg);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

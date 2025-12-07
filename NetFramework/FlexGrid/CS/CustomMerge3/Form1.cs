@@ -142,54 +142,56 @@ namespace CustomMergeLogic
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new CustomMergeLogic.Form1.CustomMergeFlex();
-			this._chkCustom = new System.Windows.Forms.CheckBox();
-			this._chkMerge = new System.Windows.Forms.CheckBox();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.BackColor = System.Drawing.SystemColors.Window;
-			this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:";
-			this._flex.Location = new System.Drawing.Point(8, 28);
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(480, 84);
-			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			// 
-			// _chkCustom
-			// 
-			this._chkCustom.Location = new System.Drawing.Point(160, 0);
-			this._chkCustom.Name = "_chkCustom";
-			this._chkCustom.Size = new System.Drawing.Size(132, 24);
-			this._chkCustom.TabIndex = 1;
-			this._chkCustom.Text = "Use Logic Overrides";
-			this._chkCustom.CheckedChanged += new System.EventHandler(this._chkCustom_CheckedChanged);
-			// 
-			// _chkMerge
-			// 
-			this._chkMerge.Location = new System.Drawing.Point(8, 0);
-			this._chkMerge.Name = "_chkMerge";
-			this._chkMerge.Size = new System.Drawing.Size(132, 24);
-			this._chkMerge.TabIndex = 1;
-			this._chkMerge.Text = "Merge Cells";
-			this._chkMerge.Checked = true;
-			this._chkMerge.CheckedChanged += new System.EventHandler(this._chkMerge_CheckedChanged);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(500, 121);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._chkCustom,
-																		  this._flex,
-																		  this._chkMerge});
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Name = "Form1";
-			this.Text = "C1FlexGrid: Custom Merging Logic";
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new CustomMergeLogic.Form1.CustomMergeFlex();
+            this._chkCustom = new System.Windows.Forms.CheckBox();
+            this._chkMerge = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this._flex.Location = new System.Drawing.Point(16, 52);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(960, 155);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            // 
+            // _chkCustom
+            // 
+            this._chkCustom.Location = new System.Drawing.Point(320, 0);
+            this._chkCustom.Name = "_chkCustom";
+            this._chkCustom.Size = new System.Drawing.Size(264, 44);
+            this._chkCustom.TabIndex = 1;
+            this._chkCustom.Text = "Use Logic Overrides";
+            this._chkCustom.CheckedChanged += new System.EventHandler(this._chkCustom_CheckedChanged);
+            // 
+            // _chkMerge
+            // 
+            this._chkMerge.Checked = true;
+            this._chkMerge.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._chkMerge.Location = new System.Drawing.Point(16, 0);
+            this._chkMerge.Name = "_chkMerge";
+            this._chkMerge.Size = new System.Drawing.Size(264, 44);
+            this._chkMerge.TabIndex = 1;
+            this._chkMerge.Text = "Merge Cells";
+            this._chkMerge.CheckedChanged += new System.EventHandler(this._chkMerge_CheckedChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(500, 121);
+            this.Controls.Add(this._chkCustom);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this._chkMerge);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Text = "C1FlexGrid: Custom Merging Logic";
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

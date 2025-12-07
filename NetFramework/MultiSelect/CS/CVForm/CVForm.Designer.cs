@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CVForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.lCheckList = new C1.Win.TreeView.C1CheckList();
             this.flGroupBox = new System.Windows.Forms.GroupBox();
             this.fnTextBox = new C1.Win.C1Input.C1TextBox();

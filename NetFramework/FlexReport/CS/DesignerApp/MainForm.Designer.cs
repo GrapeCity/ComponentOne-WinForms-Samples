@@ -37,6 +37,7 @@ namespace FlexReportDesignerApp
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.sbMain = new C1.Win.Ribbon.C1StatusBar();
             this.rbtnCloseSearch = new C1.Win.Ribbon.RibbonButton();
             this.rebSearchText = new C1.Win.Ribbon.RibbonTextBox();

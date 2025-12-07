@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -108,6 +108,7 @@ namespace Multi
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.chartBar = new C1.Win.C1Chart.C1Chart();
 			this.chartXY = new C1.Win.C1Chart.C1Chart();
 			this.chartPie = new C1.Win.C1Chart.C1Chart();

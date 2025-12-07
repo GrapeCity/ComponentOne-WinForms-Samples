@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -41,6 +41,10 @@ namespace GridTest
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();

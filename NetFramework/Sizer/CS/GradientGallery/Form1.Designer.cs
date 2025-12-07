@@ -1,4 +1,4 @@
-namespace GradientGallery
+﻿namespace GradientGallery
 {
     partial class Form1
     {
@@ -31,6 +31,7 @@ namespace GradientGallery
             this.components = new System.ComponentModel.Container();
             System.Drawing.Drawing2D.Blend blend16 = new System.Drawing.Drawing2D.Blend();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Drawing.Drawing2D.Blend blend1 = new System.Drawing.Drawing2D.Blend();
             System.Drawing.Drawing2D.Blend blend2 = new System.Drawing.Drawing2D.Blend();
             System.Drawing.Drawing2D.Blend blend3 = new System.Drawing.Drawing2D.Blend();

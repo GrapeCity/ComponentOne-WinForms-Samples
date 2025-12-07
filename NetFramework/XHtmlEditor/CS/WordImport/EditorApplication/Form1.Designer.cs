@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1EditorToolStripMain1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripMain();
 			this.c1Editor1 = new C1.Win.C1Editor.C1Editor();
 			this.c1EditorToolStripObjects1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripObjects();

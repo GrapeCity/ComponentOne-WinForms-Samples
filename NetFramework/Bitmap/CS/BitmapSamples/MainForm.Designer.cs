@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cropPage1 = new BitmapSamples.CropPage();

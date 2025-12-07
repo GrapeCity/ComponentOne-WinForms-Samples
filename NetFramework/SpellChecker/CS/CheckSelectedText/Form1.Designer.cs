@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._spellChecker = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this._textBox = new System.Windows.Forms.TextBox();
             this._btnCheckSelection = new System.Windows.Forms.Button();

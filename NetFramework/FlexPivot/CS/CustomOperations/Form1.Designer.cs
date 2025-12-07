@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.dgvResult = new C1.Win.FlexGrid.C1FlexGrid();
             this.cbQuery = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();

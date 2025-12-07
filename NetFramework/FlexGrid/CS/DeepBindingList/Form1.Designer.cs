@@ -35,10 +35,11 @@
             // 
             // _flex
             // 
-            this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._flex.ColumnInfo = "10,1,0,0,0,130,Columns:";
+            this._flex.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._flex.Location = new System.Drawing.Point(13, 16);
             this._flex.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this._flex.Name = "_flex";
@@ -54,6 +55,7 @@
             this.ClientSize = new System.Drawing.Size(805, 428);
             this.Controls.Add(this._flex);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

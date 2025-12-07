@@ -32,6 +32,7 @@ namespace FlexReportExplorer
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings8 = new C1.Win.Themes.C1Office365ThemeSettings();
             C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.Themes.C1Office365ThemeSettings();
             C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings3 = new C1.Win.Themes.C1Office365ThemeSettings();

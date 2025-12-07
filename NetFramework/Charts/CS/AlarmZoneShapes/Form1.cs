@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Collections;
@@ -53,6 +53,8 @@ namespace AlarmZoneShapes
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
 			this.zoneSelect = new System.Windows.Forms.CheckedListBox();
 			this.labDescription = new System.Windows.Forms.Label();

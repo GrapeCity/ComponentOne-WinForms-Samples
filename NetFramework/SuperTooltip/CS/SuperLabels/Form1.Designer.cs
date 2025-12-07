@@ -1,4 +1,4 @@
-namespace SuperLabels
+﻿namespace SuperLabels
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace SuperLabels
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1SuperLabel2 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.c1SuperLabel3 = new C1.Win.SuperTooltip.C1SuperLabel();

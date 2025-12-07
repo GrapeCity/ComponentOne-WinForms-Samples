@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -60,6 +60,9 @@ namespace Memory
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.btnCompressString = new System.Windows.Forms.Button();
 			this.btnExpandString = new System.Windows.Forms.Button();
 			this.btnCompressData = new System.Windows.Forms.Button();

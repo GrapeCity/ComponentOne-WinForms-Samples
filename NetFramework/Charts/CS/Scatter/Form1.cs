@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -137,6 +137,8 @@ namespace Scatter
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
 			this.mainMenu1 = new System.Windows.Forms.MainMenu();
 			this.menuItem1 = new System.Windows.Forms.MenuItem();

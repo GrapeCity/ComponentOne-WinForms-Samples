@@ -47,7 +47,8 @@
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(240, 150);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
@@ -77,6 +78,7 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.c1TrueDBGrid1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).EndInit();

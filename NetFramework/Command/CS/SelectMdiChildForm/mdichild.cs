@@ -56,6 +56,7 @@ namespace SelectMdiChildForm
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MdiChild));
             this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
             this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
             this.cmdFile = new C1.Win.Command.C1CommandMenu();
@@ -68,11 +69,12 @@ namespace SelectMdiChildForm
             // c1MainMenu1
             // 
             this.c1MainMenu1.CommandHolder = this.c1CommandHolder1;
-            this.c1MainMenu1.CommandLinks.Add(this.c1CommandLink1);
+            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink1});
             this.c1MainMenu1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
             this.c1MainMenu1.Name = "c1MainMenu1";
-            this.c1MainMenu1.Size = new System.Drawing.Size(292, 21);
-            this.c1MainMenu1.Text = "c1MainMenu1";
+            this.c1MainMenu1.Size = new System.Drawing.Size(292, 34);
             // 
             // c1CommandHolder1
             // 
@@ -82,9 +84,12 @@ namespace SelectMdiChildForm
             // 
             // cmdFile
             // 
-            this.cmdFile.CommandLinks.Add(this.c1CommandLink2);
+            this.cmdFile.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink2});
             this.cmdFile.Name = "cmdFile";
+            this.cmdFile.ShortcutText = "";
             this.cmdFile.Text = "&File";
+            this.cmdFile.Virgin = false;
             // 
             // c1CommandLink2
             // 
@@ -95,7 +100,9 @@ namespace SelectMdiChildForm
             // 
             this.cmdClose.Name = "cmdClose";
             this.cmdClose.Shortcut = System.Windows.Forms.Shortcut.CtrlF4;
+            this.cmdClose.ShortcutText = "";
             this.cmdClose.Text = "&Close";
+            this.cmdClose.Virgin = false;
             this.cmdClose.Click += new C1.Win.Command.ClickEventHandler(this.cmdClose_Click);
             // 
             // c1CommandLink1
@@ -105,10 +112,10 @@ namespace SelectMdiChildForm
             // 
             // MdiChild
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
             this.ClientSize = new System.Drawing.Size(292, 271);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this.c1MainMenu1});
+            this.Controls.Add(this.c1MainMenu1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MdiChild";
             this.Text = "MdiChild";
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();

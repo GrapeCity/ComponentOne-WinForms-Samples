@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._flexRep = new C1.Win.FlexReport.C1FlexReport();
             this.c1FlexViewerPane1 = new C1.Win.FlexViewer.C1FlexViewerPane();
             this._lbFields = new System.Windows.Forms.ListBox();

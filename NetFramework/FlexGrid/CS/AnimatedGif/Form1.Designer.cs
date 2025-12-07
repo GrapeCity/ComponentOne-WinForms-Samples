@@ -1,4 +1,4 @@
-namespace AnimatedGif
+﻿namespace AnimatedGif
 {
     partial class Form1
     {
@@ -28,6 +28,10 @@ namespace AnimatedGif
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();

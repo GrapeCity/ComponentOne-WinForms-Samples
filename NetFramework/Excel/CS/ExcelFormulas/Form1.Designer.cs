@@ -1,4 +1,4 @@
-namespace ExcelFormulas
+﻿namespace ExcelFormulas
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace ExcelFormulas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._gboxSave = new System.Windows.Forms.GroupBox();
             this.cbOpenXml = new System.Windows.Forms.CheckBox();
             this._radioDialog = new System.Windows.Forms.RadioButton();

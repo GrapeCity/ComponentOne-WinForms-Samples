@@ -33,6 +33,7 @@ namespace MultiUser
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Schedule.Printing.PrintStyle printStyle6 = new C1.Schedule.Printing.PrintStyle();
             C1.Schedule.Printing.PrintStyle printStyle7 = new C1.Schedule.Printing.PrintStyle();
             C1.Schedule.Printing.PrintStyle printStyle8 = new C1.Schedule.Printing.PrintStyle();

@@ -20,12 +20,6 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
             InitializeComponent();
 
             _size = Size;
-            Layout += CustomValueFilterEditor_Layout;
-        }
-
-        private void CustomValueFilterEditor_Layout(object sender, LayoutEventArgs e)
-        {
-            Size = _size;
         }
     }
 }

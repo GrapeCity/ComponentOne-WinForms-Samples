@@ -1,4 +1,4 @@
-namespace CustomDictionary
+﻿namespace CustomDictionary
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace CustomDictionary
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this._spell = new C1.Win.SpellChecker.C1SpellChecker(this.components);

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -59,6 +59,9 @@ namespace Simple
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.components = new System.ComponentModel.Container();
 			this._sizerLight = new C1.Win.Sizer.C1SizerLight(this.components);
 			this._btnAddChildGroupBox = new System.Windows.Forms.Button();

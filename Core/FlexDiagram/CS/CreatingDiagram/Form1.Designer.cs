@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tableLayoutPanel1 = new TableLayoutPanel();
             flexDiagram1 = new C1.Win.Diagram.FlexDiagram();
             tabControl1 = new TabControl();
@@ -68,11 +69,7 @@
             // 
             // flexDiagram1
             // 
-            flexDiagram1.Binding = "";
-            flexDiagram1.ChildItemsPath = "";
-            flexDiagram1.Direction = C1.Diagram.DiagramDirection.TopBottom;
             flexDiagram1.Dock = DockStyle.Fill;
-            flexDiagram1.EdgeRouting = C1.Diagram.EdgeRouting.Rectilinear;
             flexDiagram1.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             flexDiagram1.InteractionMode = C1.Diagram.InteractionMode.None;
             flexDiagram1.Legend.ItemMaxWidth = 0;
@@ -82,13 +79,13 @@
             flexDiagram1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
             flexDiagram1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
             flexDiagram1.Legend.Title = null;
-            flexDiagram1.Location = new Point(4, 55);
+            flexDiagram1.Location = new Point(4, 46);
             flexDiagram1.Margin = new Padding(4, 6, 4, 6);
             flexDiagram1.Name = "flexDiagram1";
-            flexDiagram1.ScaleFactor = 6175F;
+            flexDiagram1.ScaleFactor = 6250F;
             flexDiagram1.ScaleMode = C1.Diagram.ScaleMode.ScaleToFit;
             flexDiagram1.SelectionStyle.StrokeColor = Color.Red;
-            flexDiagram1.Size = new Size(620, 741);
+            flexDiagram1.Size = new Size(620, 750);
             flexDiagram1.TabIndex = 0;
             flexDiagram1.Text = "flexDiagram1";
             // 
@@ -101,21 +98,21 @@
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(632, 55);
+            tabControl1.Location = new Point(632, 46);
             tabControl1.Margin = new Padding(4, 6, 4, 6);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(621, 741);
+            tabControl1.Size = new Size(621, 750);
             tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
             tabPage1.Controls.Add(codeSnippet1);
-            tabPage1.Location = new Point(4, 37);
+            tabPage1.Location = new Point(4, 30);
             tabPage1.Margin = new Padding(4, 6, 4, 6);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(4, 6, 4, 6);
-            tabPage1.Size = new Size(613, 700);
+            tabPage1.Size = new Size(613, 716);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Code";
             tabPage1.UseVisualStyleBackColor = true;
@@ -127,16 +124,16 @@
             codeSnippet1.Location = new Point(4, 6);
             codeSnippet1.Margin = new Padding(4, 7, 4, 7);
             codeSnippet1.Name = "codeSnippet1";
-            codeSnippet1.Size = new Size(605, 688);
+            codeSnippet1.Size = new Size(605, 704);
             codeSnippet1.TabIndex = 0;
             // 
             // tabPage2
             // 
-            tabPage2.Location = new Point(4, 29);
+            tabPage2.Location = new Point(4, 24);
             tabPage2.Margin = new Padding(4, 6, 4, 6);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(4, 6, 4, 6);
-            tabPage2.Size = new Size(613, 704);
+            tabPage2.Size = new Size(613, 718);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Data";
             tabPage2.UseVisualStyleBackColor = true;
@@ -149,7 +146,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { buttonBack, toolStripLabel1 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1257, 49);
+            toolStrip1.Size = new Size(1257, 40);
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -158,7 +155,7 @@
             buttonBack.DisplayStyle = ToolStripItemDisplayStyle.Text;
             buttonBack.ImageTransparentColor = Color.Magenta;
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(53, 50);
+            buttonBack.Size = new Size(44, 41);
             buttonBack.Text = "←";
             buttonBack.ToolTipText = "Back to Overview";
             buttonBack.Visible = false;
@@ -167,7 +164,7 @@
             // toolStripLabel1
             // 
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(159, 46);
+            toolStripLabel1.Size = new Size(127, 37);
             toolStripLabel1.Text = "Overview";
             // 
             // statusStrip1
@@ -185,15 +182,16 @@
             // toolStripStatusLabel1
             // 
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(0, 16);
+            toolStripStatusLabel1.Size = new Size(0, 17);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1257, 840);
             Controls.Add(tableLayoutPanel1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 6, 4, 6);
             Name = "Form1";
             Text = "Creating FlexDiagram";

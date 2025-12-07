@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._toolBar = new C1.Win.Command.C1ToolBar();
             this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
             this.cmdDashboard = new C1.Win.Command.C1Command();

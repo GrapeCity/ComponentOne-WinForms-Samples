@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -54,6 +54,8 @@ namespace Radar
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.mainMenu1 = new System.Windows.Forms.MainMenu();
 			this.menuFile = new System.Windows.Forms.MenuItem();
 			this.menuFileExit = new System.Windows.Forms.MenuItem();

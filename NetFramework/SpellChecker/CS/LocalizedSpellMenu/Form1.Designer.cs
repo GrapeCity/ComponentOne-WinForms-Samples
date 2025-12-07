@@ -1,4 +1,4 @@
-namespace LocalizedSpellMenu
+﻿namespace LocalizedSpellMenu
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace LocalizedSpellMenu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();

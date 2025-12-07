@@ -55,68 +55,71 @@ namespace DBSchemaChange
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
-			this._btnAdd = new System.Windows.Forms.Button();
-			this._btnDel = new System.Windows.Forms.Button();
-			this.dataGrid1 = new System.Windows.Forms.DataGrid();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.Location = new System.Drawing.Point(8, 8);
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(496, 160);
-			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
-			this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("_flex.Tree.NodeImageCollapsed")));
-			this._flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("_flex.Tree.NodeImageExpanded")));
-			// 
-			// _btnAdd
-			// 
-			this._btnAdd.Location = new System.Drawing.Point(8, 312);
-			this._btnAdd.Name = "_btnAdd";
-			this._btnAdd.Size = new System.Drawing.Size(136, 32);
-			this._btnAdd.TabIndex = 1;
-			this._btnAdd.Text = "Add a column";
-			this._btnAdd.Click += new System.EventHandler(this._btnAdd_Click);
-			// 
-			// _btnDel
-			// 
-			this._btnDel.Location = new System.Drawing.Point(168, 312);
-			this._btnDel.Name = "_btnDel";
-			this._btnDel.Size = new System.Drawing.Size(136, 32);
-			this._btnDel.TabIndex = 1;
-			this._btnDel.Text = "Remove a column";
-			this._btnDel.Click += new System.EventHandler(this._btnDel_Click);
-			// 
-			// dataGrid1
-			// 
-			this.dataGrid1.DataMember = "";
-			this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-			this.dataGrid1.Location = new System.Drawing.Point(8, 176);
-			this.dataGrid1.Name = "dataGrid1";
-			this.dataGrid1.Size = new System.Drawing.Size(496, 128);
-			this.dataGrid1.TabIndex = 2;
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(512, 349);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.dataGrid1,
-																		  this._btnAdd,
-																		  this._flex,
-																		  this._btnDel});
-			this.Name = "Form1";
-			this.Text = "Form1";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._btnAdd = new System.Windows.Forms.Button();
+            this._btnDel = new System.Windows.Forms.Button();
+            this.dataGrid1 = new System.Windows.Forms.DataGrid();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.ColumnInfo = "10,1,0,0,0,-1,Columns:";
+            this._flex.Location = new System.Drawing.Point(16, 15);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(992, 295);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.Tree.Indent = 18;
+            this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageCollapsed")));
+            this._flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageExpanded")));
+            this._flex.UseCompatibleTextRendering = true;
+            // 
+            // _btnAdd
+            // 
+            this._btnAdd.Location = new System.Drawing.Point(16, 576);
+            this._btnAdd.Name = "_btnAdd";
+            this._btnAdd.Size = new System.Drawing.Size(272, 59);
+            this._btnAdd.TabIndex = 1;
+            this._btnAdd.Text = "Add a column";
+            this._btnAdd.Click += new System.EventHandler(this._btnAdd_Click);
+            // 
+            // _btnDel
+            // 
+            this._btnDel.Location = new System.Drawing.Point(336, 576);
+            this._btnDel.Name = "_btnDel";
+            this._btnDel.Size = new System.Drawing.Size(272, 59);
+            this._btnDel.TabIndex = 1;
+            this._btnDel.Text = "Remove a column";
+            this._btnDel.Click += new System.EventHandler(this._btnDel_Click);
+            // 
+            // dataGrid1
+            // 
+            this.dataGrid1.DataMember = "";
+            this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.dataGrid1.Location = new System.Drawing.Point(16, 325);
+            this.dataGrid1.Name = "dataGrid1";
+            this.dataGrid1.Size = new System.Drawing.Size(992, 236);
+            this.dataGrid1.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(512, 349);
+            this.Controls.Add(this.dataGrid1);
+            this.Controls.Add(this._btnAdd);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this._btnDel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

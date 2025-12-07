@@ -1,4 +1,4 @@
-namespace DataBinding
+﻿namespace DataBinding
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace DataBinding
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nWINDDataSet = new DataBinding.NWINDDataSet();
             this.employeesTableAdapter = new DataBinding.NWINDDataSetTableAdapters.EmployeesTableAdapter();

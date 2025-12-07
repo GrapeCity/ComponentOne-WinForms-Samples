@@ -173,6 +173,24 @@ namespace InputDateRange.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No selected end date.
+        /// </summary>
+        internal static string Label_NoEndDate {
+            get {
+                return ResourceManager.GetString("Label_NoEndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No selected start date.
+        /// </summary>
+        internal static string Label_NoStartDate {
+            get {
+                return ResourceManager.GetString("Label_NoStartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Start Date    -    End Date.
         /// </summary>
         internal static string Label_Placeholder_DateSelected {

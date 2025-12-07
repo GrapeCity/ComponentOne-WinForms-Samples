@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.showSimpleBinding = new System.Windows.Forms.Button();
             this.showMasterDetailBinding = new System.Windows.Forms.Button();
             this.showServerSideFiltering = new System.Windows.Forms.Button();

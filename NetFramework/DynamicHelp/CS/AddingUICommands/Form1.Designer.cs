@@ -1,4 +1,4 @@
-namespace AddingUICommands
+﻿namespace AddingUICommands
 {
     partial class Form1
     {
@@ -32,6 +32,7 @@ namespace AddingUICommands
             C1.Win.C1DynamicHelp.MapItem mapItem2 = new C1.Win.C1DynamicHelp.MapItem();
             C1.Win.C1DynamicHelp.MapItem mapItem3 = new C1.Win.C1DynamicHelp.MapItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.C1DynamicHelp.MapItem mapItem4 = new C1.Win.C1DynamicHelp.MapItem();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -125,6 +125,7 @@ namespace Float
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.mainMenu1 = new System.Windows.Forms.MainMenu();
 			this.menuItem1 = new System.Windows.Forms.MenuItem();
 			this.menuFileExit = new System.Windows.Forms.MenuItem();

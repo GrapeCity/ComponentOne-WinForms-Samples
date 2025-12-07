@@ -64,6 +64,7 @@ namespace CustomMerge
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:33;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
@@ -73,9 +74,10 @@ namespace CustomMerge
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(416, 229);
             this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Custom Merging";

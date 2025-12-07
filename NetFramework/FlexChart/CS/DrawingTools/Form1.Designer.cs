@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLbl = new System.Windows.Forms.ToolStripStatusLabel();

@@ -30,7 +30,6 @@ namespace StockAnalysis
             InitializeComponent();
             this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.StartPosition = FormStartPosition.CenterParent;
-            this.Icon = ImageManager.GetC1LogoIcon();
         }
 
         public static frmBase CreateForm(string name)

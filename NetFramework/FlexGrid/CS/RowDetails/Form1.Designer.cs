@@ -32,6 +32,7 @@ namespace RowDetails
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dockingTab = new C1.Win.Command.C1DockingTab();
             this.pageInputPanel = new C1.Win.Command.C1DockingTabPage();
             this.inputPanelSample = new RowDetails.Samples.InputPanelSample();
@@ -79,9 +80,9 @@ namespace RowDetails
             // pageInputPanel
             // 
             this.pageInputPanel.Controls.Add(this.inputPanelSample);
-            this.pageInputPanel.Location = new System.Drawing.Point(5, 48);
+            this.pageInputPanel.Location = new System.Drawing.Point(5, 58);
             this.pageInputPanel.Name = "pageInputPanel";
-            this.pageInputPanel.Size = new System.Drawing.Size(769, 552);
+            this.pageInputPanel.Size = new System.Drawing.Size(769, 542);
             this.pageInputPanel.TabIndex = 0;
             this.pageInputPanel.Text = "InputPanel";
             // 
@@ -94,16 +95,16 @@ namespace RowDetails
             this.inputPanelSample.Location = new System.Drawing.Point(0, 0);
             this.inputPanelSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inputPanelSample.Name = "inputPanelSample";
-            this.inputPanelSample.Size = new System.Drawing.Size(769, 552);
+            this.inputPanelSample.Size = new System.Drawing.Size(769, 542);
             this.inputPanelSample.TabIndex = 0;
             this.themeController.SetTheme(this.inputPanelSample, "(default)");
             // 
             // pageFlexGrid
             // 
             this.pageFlexGrid.Controls.Add(this.flexGridSample);
-            this.pageFlexGrid.Location = new System.Drawing.Point(5, 48);
+            this.pageFlexGrid.Location = new System.Drawing.Point(5, 58);
             this.pageFlexGrid.Name = "pageFlexGrid";
-            this.pageFlexGrid.Size = new System.Drawing.Size(769, 552);
+            this.pageFlexGrid.Size = new System.Drawing.Size(769, 542);
             this.pageFlexGrid.TabIndex = 1;
             this.pageFlexGrid.Text = "FlexGrid";
             // 
@@ -116,16 +117,16 @@ namespace RowDetails
             this.flexGridSample.Location = new System.Drawing.Point(0, 0);
             this.flexGridSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexGridSample.Name = "flexGridSample";
-            this.flexGridSample.Size = new System.Drawing.Size(769, 552);
+            this.flexGridSample.Size = new System.Drawing.Size(769, 542);
             this.flexGridSample.TabIndex = 0;
             this.themeController.SetTheme(this.flexGridSample, "(default)");
             // 
             // pageInheritance
             // 
             this.pageInheritance.Controls.Add(this.inheritanceSample);
-            this.pageInheritance.Location = new System.Drawing.Point(5, 48);
+            this.pageInheritance.Location = new System.Drawing.Point(5, 58);
             this.pageInheritance.Name = "pageInheritance";
-            this.pageInheritance.Size = new System.Drawing.Size(769, 552);
+            this.pageInheritance.Size = new System.Drawing.Size(769, 542);
             this.pageInheritance.TabIndex = 3;
             this.pageInheritance.Text = "Inheritance";
             // 
@@ -138,16 +139,16 @@ namespace RowDetails
             this.inheritanceSample.Location = new System.Drawing.Point(0, 0);
             this.inheritanceSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inheritanceSample.Name = "inheritanceSample";
-            this.inheritanceSample.Size = new System.Drawing.Size(769, 552);
+            this.inheritanceSample.Size = new System.Drawing.Size(769, 542);
             this.inheritanceSample.TabIndex = 0;
             this.themeController.SetTheme(this.inheritanceSample, "(default)");
             // 
             // pageCustom
             // 
             this.pageCustom.Controls.Add(this.customSample);
-            this.pageCustom.Location = new System.Drawing.Point(5, 48);
+            this.pageCustom.Location = new System.Drawing.Point(5, 58);
             this.pageCustom.Name = "pageCustom";
-            this.pageCustom.Size = new System.Drawing.Size(769, 552);
+            this.pageCustom.Size = new System.Drawing.Size(769, 542);
             this.pageCustom.TabIndex = 2;
             this.pageCustom.Text = "Custom";
             // 
@@ -160,19 +161,19 @@ namespace RowDetails
             this.customSample.Location = new System.Drawing.Point(0, 0);
             this.customSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customSample.Name = "customSample";
-            this.customSample.Size = new System.Drawing.Size(769, 552);
+            this.customSample.Size = new System.Drawing.Size(769, 542);
             this.customSample.TabIndex = 0;
             this.themeController.SetTheme(this.customSample, "(default)");
             // 
             // themePicker
             // 
             this.themePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.themePicker.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.themePicker.Location = new System.Drawing.Point(625, 5);
             this.themePicker.Name = "themePicker";
+            this.themePicker.ReadOnly = true;
             this.themePicker.SelectedThemeName = "Office365Green";
-            this.themePicker.Size = new System.Drawing.Size(150, 23);
+            this.themePicker.Size = new System.Drawing.Size(150, 46);
             this.themePicker.TabIndex = 0;
             this.themePicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.themeController.SetTheme(this.themePicker, "(default)");
@@ -185,6 +186,7 @@ namespace RowDetails
             this.Controls.Add(this.dockingTab);
             this.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MinimumSize = new System.Drawing.Size(640, 480);
             this.Name = "Form1";
@@ -199,6 +201,7 @@ namespace RowDetails
             ((System.ComponentModel.ISupportInitialize)(this.themePicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.themeController)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._flexView = new C1.Win.FlexViewer.C1FlexViewerPane();
             this._flxr = new C1.Win.FlexReport.C1FlexReport();
             this._btnRender = new System.Windows.Forms.Button();

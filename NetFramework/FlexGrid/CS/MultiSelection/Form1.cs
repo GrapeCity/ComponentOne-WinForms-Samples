@@ -47,6 +47,7 @@ namespace MultiSelection
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._flex = new MultiSelection.MultiSelectFlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -64,9 +65,10 @@ namespace MultiSelection
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(553, 356);
             this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: MultiSelection";

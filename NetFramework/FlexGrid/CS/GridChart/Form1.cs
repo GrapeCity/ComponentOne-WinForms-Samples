@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -62,6 +62,10 @@ namespace GridChart
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._chart = new C1.Win.C1Chart.C1Chart();
 			this.splitter1 = new System.Windows.Forms.Splitter();

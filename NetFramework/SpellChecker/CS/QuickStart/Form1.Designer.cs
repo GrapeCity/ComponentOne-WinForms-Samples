@@ -1,4 +1,4 @@
-namespace QuickStart
+﻿namespace QuickStart
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace QuickStart
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnShowErrors = new System.Windows.Forms.Button();

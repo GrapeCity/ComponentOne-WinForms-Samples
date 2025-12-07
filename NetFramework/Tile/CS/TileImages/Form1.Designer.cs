@@ -42,6 +42,7 @@
             C1.Win.Tile.ImageElement imageElement7 = new C1.Win.Tile.ImageElement();
             C1.Win.Tile.ImageElement imageElement8 = new C1.Win.Tile.ImageElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1TileControl1 = new C1.Win.Tile.C1TileControl();
             this.group1 = new C1.Win.Tile.Group();
             this.tile1 = new C1.Win.Tile.Tile();

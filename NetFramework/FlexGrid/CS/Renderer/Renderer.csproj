@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <OutputType>WinExe</OutputType>
   </PropertyGroup>
 
   <ItemGroup>

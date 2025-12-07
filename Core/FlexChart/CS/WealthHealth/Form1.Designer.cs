@@ -28,235 +28,280 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.button1 = new System.Windows.Forms.Button();
-            this.flexChart1 = new C1.Win.Chart.FlexChart();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flexChart1)).BeginInit();
-            this.SuspendLayout();
+            C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            textBox1 = new System.Windows.Forms.TextBox();
+            trackBar1 = new System.Windows.Forms.TrackBar();
+            button1 = new System.Windows.Forms.Button();
+            flexChart1 = new C1.Win.Chart.FlexChart();
+            textBox2 = new System.Windows.Forms.TextBox();
+            textBox3 = new System.Windows.Forms.TextBox();
+            tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)flexChart1).BeginInit();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.flexChart1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 0, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 561);
-            this.tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 1);
+            tableLayoutPanel1.Controls.Add(flexChart1, 0, 3);
+            tableLayoutPanel1.Controls.Add(textBox2, 0, 4);
+            tableLayoutPanel1.Controls.Add(textBox3, 0, 2);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 5;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(915, 647);
+            tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 2);
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 3);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(768, 80);
-            this.tableLayoutPanel2.TabIndex = 0;
+            tableLayoutPanel2.ColumnCount = 2;
+            tableLayoutPanel1.SetColumnSpan(tableLayoutPanel2, 2);
+            tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
+            tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel2.Controls.Add(label1, 1, 0);
+            tableLayoutPanel2.Controls.Add(label2, 1, 1);
+            tableLayoutPanel2.Controls.Add(pictureBox1, 0, 0);
+            tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel2.Location = new System.Drawing.Point(9, 3);
+            tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 2;
+            tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            tableLayoutPanel2.Size = new System.Drawing.Size(897, 92);
+            tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(682, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "The Wealth and Health of Nations";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Location = new System.Drawing.Point(97, 0);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(796, 46);
+            label1.TabIndex = 0;
+            label1.Text = "The Wealth and Health of Nations";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(92, 40);
-            this.label2.Margin = new System.Windows.Forms.Padding(12, 0, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(506, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "A dynamic chart based on Gapminder’s Wealth and Health of Nations. ";
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label2.Location = new System.Drawing.Point(107, 46);
+            label2.Margin = new System.Windows.Forms.Padding(14, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(506, 20);
+            label2.TabIndex = 1;
+            label2.Text = "A dynamic chart based on Gapminder’s Wealth and Health of Nations. ";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::WealthHealth.Properties.Resources.C1;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.tableLayoutPanel2.SetRowSpan(this.pictureBox1, 2);
-            this.pictureBox1.Size = new System.Drawing.Size(74, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new System.Drawing.Point(4, 3);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            tableLayoutPanel2.SetRowSpan(pictureBox1, 2);
+            pictureBox1.Size = new System.Drawing.Size(85, 86);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel1, 2);
-            this.flowLayoutPanel1.Controls.Add(this.textBox1);
-            this.flowLayoutPanel1.Controls.Add(this.trackBar1);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(8, 89);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(8, 3, 8, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(768, 40);
-            this.flowLayoutPanel1.TabIndex = 1;
+            flowLayoutPanel1.AutoSize = true;
+            tableLayoutPanel1.SetColumnSpan(flowLayoutPanel1, 2);
+            flowLayoutPanel1.Controls.Add(textBox1);
+            flowLayoutPanel1.Controls.Add(trackBar1);
+            flowLayoutPanel1.Controls.Add(button1);
+            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flowLayoutPanel1.Location = new System.Drawing.Point(9, 101);
+            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new System.Drawing.Size(897, 45);
+            flowLayoutPanel1.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(436, 34);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "This chart shows the evolution of income, life expectancy, and population in 178 " +
-    "nations over a period of 210 years. Slide the gauge or press the play button and" +
-    " enjoy the show.";
+            textBox1.BackColor = System.Drawing.Color.White;
+            textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            textBox1.Location = new System.Drawing.Point(4, 3);
+            textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new System.Drawing.Size(509, 39);
+            textBox1.TabIndex = 3;
+            textBox1.Text = "This chart shows the evolution of income, life expectancy, and population in 178 nations over a period of 210 years. Slide the gauge or press the play button and enjoy the show.";
             // 
             // trackBar1
             // 
-            this.trackBar1.AutoSize = false;
-            this.trackBar1.Location = new System.Drawing.Point(445, 3);
-            this.trackBar1.Maximum = 2009;
-            this.trackBar1.Minimum = 1800;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(130, 34);
-            this.trackBar1.TabIndex = 1;
-            this.trackBar1.TickFrequency = 10;
-            this.trackBar1.Value = 1800;
-            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            trackBar1.AutoSize = false;
+            trackBar1.Location = new System.Drawing.Point(521, 3);
+            trackBar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            trackBar1.Maximum = 2009;
+            trackBar1.Minimum = 1800;
+            trackBar1.Name = "trackBar1";
+            trackBar1.Size = new System.Drawing.Size(152, 39);
+            trackBar1.TabIndex = 1;
+            trackBar1.TickFrequency = 10;
+            trackBar1.Value = 1800;
+            trackBar1.ValueChanged += trackBar1_ValueChanged;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(581, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Play";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new System.Drawing.Point(681, 3);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(77, 27);
+            button1.TabIndex = 2;
+            button1.Text = "Play";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // flexChart1
             // 
-            this.flexChart1.AxisX.Chart = this.flexChart1;
-            this.flexChart1.AxisX.Position = C1.Chart.Position.Bottom;
-            this.flexChart1.AxisY.AxisLine = false;
-            this.flexChart1.AxisY.Chart = this.flexChart1;
-            this.flexChart1.AxisY.MajorGrid = true;
-            this.flexChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
-            this.flexChart1.AxisY.Position = C1.Chart.Position.Left;
-            this.tableLayoutPanel1.SetColumnSpan(this.flexChart1, 2);
-            this.flexChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
-            this.flexChart1.Legend.Position = C1.Chart.Position.Right;
-            this.flexChart1.Legend.Title = null;
-            this.flexChart1.Location = new System.Drawing.Point(8, 160);
-            this.flexChart1.Margin = new System.Windows.Forms.Padding(8, 8, 24, 8);
-            this.flexChart1.Name = "flexChart1";
+            flexChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            flexChart1.AnimationLoad.Duration = 400;
+            flexChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            flexChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
+            flexChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            flexChart1.AnimationUpdate.Duration = 400;
+            flexChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            flexChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            flexChart1.AxisX.AxisLine = true;
+            flexChart1.AxisX.Chart = flexChart1;
+            flexChart1.AxisX.DataSource = null;
+            flexChart1.AxisX.Formatter = null;
+            flexChart1.AxisX.GroupProvider = null;
+            flexChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            flexChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            flexChart1.AxisX.GroupVisibilityLevel = 0;
+            flexChart1.AxisX.PlotAreaName = null;
+            flexChart1.AxisX.Position = C1.Chart.Position.Bottom;
+            flexChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            flexChart1.AxisY.AxisLine = false;
+            flexChart1.AxisY.Chart = flexChart1;
+            flexChart1.AxisY.DataSource = null;
+            flexChart1.AxisY.Formatter = null;
+            flexChart1.AxisY.GroupProvider = null;
+            flexChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            flexChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            flexChart1.AxisY.GroupVisibilityLevel = 0;
+            flexChart1.AxisY.MajorGrid = true;
+            flexChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
+            flexChart1.AxisY.PlotAreaName = null;
+            flexChart1.AxisY.Position = C1.Chart.Position.Left;
+            flexChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
+            tableLayoutPanel1.SetColumnSpan(flexChart1, 2);
+            flexChart1.DataLabel.Angle = 0;
+            flexChart1.DataLabel.Border = false;
+            flexChart1.DataLabel.ConnectingLine = false;
+            flexChart1.DataLabel.Content = null;
+            flexChart1.DataLabel.ContentOptions = C1.Chart.ContentOptions.WordWrap;
+            flexChart1.DataLabel.MaxAutoLabels = 100;
+            flexChart1.DataLabel.MaxLines = 0;
+            flexChart1.DataLabel.MaxWidth = 0;
+            flexChart1.DataLabel.Offset = 0;
+            flexChart1.DataLabel.Overlapping = C1.Chart.LabelOverlapping.Hide;
+            flexChart1.DataLabel.OverlappingOptions = C1.Chart.LabelOverlappingOptions.OutsidePlotArea;
+            flexChart1.DataLabel.Position = C1.Chart.LabelPosition.None;
+            flexChart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flexChart1.Legend.ItemMaxWidth = 0;
+            flexChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
+            flexChart1.Legend.Position = C1.Chart.Position.Right;
+            flexChart1.Legend.Reversed = false;
+            flexChart1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
+            flexChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
+            flexChart1.Legend.Title = null;
+            flexChart1.Location = new System.Drawing.Point(9, 181);
+            flexChart1.Margin = new System.Windows.Forms.Padding(9, 9, 28, 9);
+            flexChart1.Name = "flexChart1";
+            flexChart1.Options.Chart = flexChart1;
             elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
             elementSize1.Value = 70D;
-            this.flexChart1.Options.ClusterSize = elementSize1;
-            this.flexChart1.PlotMargin = new System.Windows.Forms.Padding(0);
-            this.flexChart1.SelectedSeries = null;
-            this.flexChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.flexChart1.Size = new System.Drawing.Size(752, 345);
-            this.flexChart1.TabIndex = 2;
-            this.flexChart1.Text = "flexChart1";
+            flexChart1.Options.ClusterSize = elementSize1;
+            flexChart1.PlotMargin = new System.Windows.Forms.Padding(0);
+            flexChart1.SelectedSeries = null;
+            flexChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
+            flexChart1.Size = new System.Drawing.Size(878, 402);
+            flexChart1.TabIndex = 2;
+            flexChart1.Text = "flexChart1";
             // 
             // 
             // 
-            this.flexChart1.ToolTip.Content = "{value}";
+            flexChart1.ToolTip.Content = "{value}";
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.textBox2, 2);
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(8, 521);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(8);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(768, 32);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "This is a WinForms version of Mike Bostock\'s sample in D3, which is based on Gapm" +
-    "inder’s Wealth & Health of Nations, made famous by Hans Rosling’s memorable 2006" +
-    " TED talk.";
+            textBox2.BackColor = System.Drawing.Color.White;
+            textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            tableLayoutPanel1.SetColumnSpan(textBox2, 2);
+            textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            textBox2.Location = new System.Drawing.Point(9, 601);
+            textBox2.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new System.Drawing.Size(897, 37);
+            textBox2.TabIndex = 3;
+            textBox2.Text = "This is a WinForms version of Mike Bostock's sample in D3, which is based on Gapminder’s Wealth & Health of Nations, made famous by Hans Rosling’s memorable 2006 TED talk.";
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(10, 135);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(10, 3, 8, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(374, 13);
-            this.textBox3.TabIndex = 4;
+            textBox3.BackColor = System.Drawing.Color.White;
+            textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            textBox3.Location = new System.Drawing.Point(12, 152);
+            textBox3.Margin = new System.Windows.Forms.Padding(12, 3, 9, 3);
+            textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
+            textBox3.Size = new System.Drawing.Size(436, 16);
+            textBox3.TabIndex = 4;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "WealthHealth";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.flexChart1)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.White;
+            ClientSize = new System.Drawing.Size(915, 647);
+            Controls.Add(tableLayoutPanel1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "WealthHealth";
+            Load += Form1_Load;
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            tableLayoutPanel2.ResumeLayout(false);
+            tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)flexChart1).EndInit();
+            ResumeLayout(false);
 
         }
 

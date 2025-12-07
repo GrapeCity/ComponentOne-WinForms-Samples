@@ -1,4 +1,4 @@
-namespace CustomDialogs
+﻿namespace CustomDialogs
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace CustomDialogs
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsFormatting = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();

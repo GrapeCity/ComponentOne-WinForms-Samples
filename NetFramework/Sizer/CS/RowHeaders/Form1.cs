@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -72,6 +72,9 @@ namespace RowHeaders
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();

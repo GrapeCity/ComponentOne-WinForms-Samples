@@ -19,6 +19,7 @@
             C1.Win.C1Win7Pack.C1CustomButton c1CustomButton1 = new C1.Win.C1Win7Pack.C1CustomButton();
             C1.Win.C1Win7Pack.C1CustomButton c1CustomButton2 = new C1.Win.C1Win7Pack.C1CustomButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreviewForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.fv = new C1.Win.FlexViewer.C1FlexViewer();
             this.atb = new C1.Win.C1Win7Pack.C1TaskbarButton(this.components);
             this.extRegDlg = new C1.Win.C1Win7Pack.C1TaskDialog(this.components);

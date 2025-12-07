@@ -1,4 +1,4 @@
-namespace GridSuperToolTip
+﻿namespace GridSuperToolTip
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace GridSuperToolTip
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -95,6 +95,7 @@ namespace MdiTabs
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("...");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("A:", 0, 4, new System.Windows.Forms.TreeNode[] {
             treeNode1});

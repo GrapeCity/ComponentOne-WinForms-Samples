@@ -1,4 +1,4 @@
-namespace TextDrivenSuperTooltip
+﻿namespace TextDrivenSuperTooltip
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace TextDrivenSuperTooltip
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();

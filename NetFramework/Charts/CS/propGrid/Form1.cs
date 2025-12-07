@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Collections;
@@ -98,6 +98,7 @@ namespace propGrid
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.menuItem19 = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuSepItem18 = new System.Windows.Forms.ToolStripSeparator();
 			this.menuItem15 = new System.Windows.Forms.ToolStripMenuItem();

@@ -39,10 +39,8 @@ namespace OrdersEFWinForms
             connStr.ConnectionString = connStr.ConnectionString.Replace("v11.0", GetLocalDBInstance());
             config.Save(ConfigurationSaveMode.Modified, true);
             ConfigurationManager.RefreshSection("connectionStrings");
-
-            var window = new MainForm();
           
-            Application.Run(window);        
+            Application.Run(new MainForm());        
         }
 
         static string GetLocalDBInstance()

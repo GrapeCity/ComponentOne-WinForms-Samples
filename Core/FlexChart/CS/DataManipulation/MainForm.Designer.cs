@@ -29,62 +29,64 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.panelLinks = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            panelLinks = new System.Windows.Forms.Panel();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            panelMain = new System.Windows.Forms.Panel();
+            tableLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panelLinks
             // 
-            this.panelLinks.BackColor = System.Drawing.Color.White;
-            this.panelLinks.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLinks.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panelLinks.Location = new System.Drawing.Point(0, 0);
-            this.panelLinks.Margin = new System.Windows.Forms.Padding(0);
-            this.panelLinks.Name = "panelLinks";
-            this.panelLinks.Size = new System.Drawing.Size(200, 522);
-            this.panelLinks.TabIndex = 1;
+            panelLinks.BackColor = System.Drawing.Color.White;
+            panelLinks.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelLinks.Font = new System.Drawing.Font("Calibri", 10F);
+            panelLinks.Location = new System.Drawing.Point(0, 0);
+            panelLinks.Margin = new System.Windows.Forms.Padding(0);
+            panelLinks.Name = "panelLinks";
+            panelLinks.Size = new System.Drawing.Size(233, 602);
+            panelLinks.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.panelMain, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panelLinks, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(852, 522);
-            this.tableLayoutPanel1.TabIndex = 1;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            tableLayoutPanel1.Controls.Add(panelMain, 1, 0);
+            tableLayoutPanel1.Controls.Add(panelLinks, 0, 0);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(994, 602);
+            tableLayoutPanel1.TabIndex = 1;
             // 
             // panelMain
             // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panelMain.Location = new System.Drawing.Point(200, 0);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(0);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(652, 522);
-            this.panelMain.TabIndex = 0;
+            panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelMain.Font = new System.Drawing.Font("Calibri", 10F);
+            panelMain.Location = new System.Drawing.Point(233, 0);
+            panelMain.Margin = new System.Windows.Forms.Padding(0);
+            panelMain.Name = "panelMain";
+            panelMain.Size = new System.Drawing.Size(761, 602);
+            panelMain.TabIndex = 0;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 522);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainForm";
-            this.Text = "Data Manipulation";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(994, 602);
+            Controls.Add(tableLayoutPanel1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "MainForm";
+            Text = "Data Manipulation";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            Load += Form1_Load;
+            tableLayoutPanel1.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 

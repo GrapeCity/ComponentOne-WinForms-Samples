@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.joinButton = new System.Windows.Forms.Button();
             this.simpleButton = new System.Windows.Forms.Button();
             this.indexesButton = new System.Windows.Forms.Button();

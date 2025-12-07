@@ -66,11 +66,12 @@ namespace MasterDetail
             // 
             this._flex1.ColumnInfo = resources.GetString("_flex1.ColumnInfo");
             this._flex1.Dock = System.Windows.Forms.DockStyle.Top;
+            this._flex1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
             this._flex1.Location = new System.Drawing.Point(0, 35);
             this._flex1.Name = "_flex1";
             this._flex1.Rows.Count = 1;
             this._flex1.Rows.DefaultSize = 19;
-            this._flex1.Size = new System.Drawing.Size(520, 230);
+            this._flex1.Size = new System.Drawing.Size(520, 368);
             this._flex1.StyleInfo = resources.GetString("_flex1.StyleInfo");
             this._flex1.TabIndex = 0;
             // 
@@ -78,40 +79,42 @@ namespace MasterDetail
             // 
             this._flex2.ColumnInfo = resources.GetString("_flex2.ColumnInfo");
             this._flex2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex2.Location = new System.Drawing.Point(0, 275);
+            this._flex2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this._flex2.Location = new System.Drawing.Point(0, 419);
             this._flex2.Name = "_flex2";
             this._flex2.Rows.Count = 1;
             this._flex2.Rows.DefaultSize = 19;
-            this._flex2.Size = new System.Drawing.Size(520, 170);
+            this._flex2.Size = new System.Drawing.Size(520, 26);
             this._flex2.StyleInfo = resources.GetString("_flex2.StyleInfo");
             this._flex2.TabIndex = 0;
             // 
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter1.Location = new System.Drawing.Point(0, 265);
+            this.splitter1.Location = new System.Drawing.Point(0, 403);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(520, 10);
+            this.splitter1.Size = new System.Drawing.Size(520, 16);
             this.splitter1.TabIndex = 1;
             this.splitter1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(5, 5);
+            this.button1.Location = new System.Drawing.Point(8, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 27);
+            this.button1.Size = new System.Drawing.Size(280, 43);
             this.button1.TabIndex = 2;
             this.button1.Text = "Check for changes";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(520, 445);
             this.Controls.Add(this.button1);
             this.Controls.Add(this._flex2);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this._flex1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.Text = "C1FlexGrid: Master-Detail tables";

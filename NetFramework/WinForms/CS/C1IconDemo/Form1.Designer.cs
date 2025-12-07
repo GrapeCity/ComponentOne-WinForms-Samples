@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Framework.C1CompositeIcon c1CompositeIcon1 = new C1.Framework.C1CompositeIcon();
             C1.Framework.C1PathIcon c1PathIcon1 = new C1.Framework.C1PathIcon();
             C1.Framework.C1CompositeIcon c1CompositeIcon2 = new C1.Framework.C1CompositeIcon();

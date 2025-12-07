@@ -1,4 +1,4 @@
-namespace C1SpellCheckerSpeed
+﻿namespace C1SpellCheckerSpeed
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace C1SpellCheckerSpeed
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();

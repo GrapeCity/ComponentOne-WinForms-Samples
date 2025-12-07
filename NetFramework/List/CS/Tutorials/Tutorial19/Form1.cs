@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -67,6 +67,8 @@ namespace Tutorial19
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.button1 = new System.Windows.Forms.Button();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();

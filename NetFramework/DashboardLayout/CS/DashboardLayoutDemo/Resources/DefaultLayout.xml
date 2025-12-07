@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<C1DasboardLayout Version="4.8.20252.740">
+  <Properties>
+    <LayoutType>Split</LayoutType>
+  </Properties>
+  <Layouts>
+    <FlowLayout>
+      <DashboardItems>
+        <Item Id="4f7a73f8-6e97-4b25-a74c-ba9b2bd0e6fa" IsHidden="False" Bounds="30, 30, 447, 272" ChildIndex="0" />
+        <Item Id="096928d8-3c66-4891-91d5-ba2002e05142" IsHidden="False" Bounds="507, 30, 333, 272" ChildIndex="1" />
+        <Item Id="d3c1bda0-485f-487b-8542-b073f9015f7b" IsHidden="False" Bounds="30, 332, 236, 272" ChildIndex="2" />
+        <Item Id="74047b16-f54c-47c2-8171-896bd7701fe1" IsHidden="False" Bounds="296, 332, 447, 404" ChildIndex="3" />
+        <Item Id="90db4822-a7cd-4d1a-b7f5-b20177de2e58" IsHidden="False" Bounds="30, 766, 333, 176" ChildIndex="4" />
+      </DashboardItems>
+    </FlowLayout>
+    <GridLayout>
+      <DashboardItems>
+        <Item Id="4f7a73f8-6e97-4b25-a74c-ba9b2bd0e6fa" IsHidden="False" Bounds="30, 30, 462, 457" CellPositionCol="0" CellPositionRow="0" ColumnSpan="2" RowSpan="3" ChildIndex="0" />
+        <Item Id="096928d8-3c66-4891-91d5-ba2002e05142" IsHidden="False" Bounds="768, 30, 218, 261" CellPositionCol="3" CellPositionRow="0" ColumnSpan="1" RowSpan="2" ChildIndex="1" />
+        <Item Id="d3c1bda0-485f-487b-8542-b073f9015f7b" IsHidden="False" Bounds="768, 321, 218, 166" CellPositionCol="3" CellPositionRow="2" ColumnSpan="1" RowSpan="1" ChildIndex="2" />
+        <Item Id="74047b16-f54c-47c2-8171-896bd7701fe1" IsHidden="False" Bounds="522, 127, 216, 360" CellPositionCol="2" CellPositionRow="1" ColumnSpan="1" RowSpan="2" ChildIndex="3" />
+        <Item Id="90db4822-a7cd-4d1a-b7f5-b20177de2e58" IsHidden="False" Bounds="522, 30, 216, 67" CellPositionCol="2" CellPositionRow="0" ColumnSpan="1" RowSpan="1" ChildIndex="4" />
+      </DashboardItems>
+    </GridLayout>
+    <SplitLayout>
+      <DashboardItems>
+        <Item Id="d01255ea-1089-4fb2-bec2-cfb3e5874880" IsHidden="False" Index="0" Bounds="0, 0, 500, 505" MinHeight="40" Dock="Left" SizeRatio="50" />
+        <Item Id="4f7a73f8-6e97-4b25-a74c-ba9b2bd0e6fa" IsHidden="False" Index="0" ParentId="d01255ea-1089-4fb2-bec2-cfb3e5874880" Bounds="10, 10, 480, 234" MinHeight="40" Dock="Top" SizeRatio="50" />
+        <Item Id="74047b16-f54c-47c2-8171-896bd7701fe1" IsHidden="False" Index="1" ParentId="d01255ea-1089-4fb2-bec2-cfb3e5874880" Bounds="10, 260, 480, 235" MinHeight="40" Dock="Top" SizeRatio="50" />
+        <Item Id="096928d8-3c66-4891-91d5-ba2002e05142" IsHidden="False" Index="1" Bounds="516, 0, 500, 244" MinHeight="40" Dock="Top" SizeRatio="50" />
+        <Item Id="d3c1bda0-485f-487b-8542-b073f9015f7b" IsHidden="False" Index="2" Bounds="516, 260, 242, 245" MinHeight="40" Dock="Left" SizeRatio="50" />
+        <Item Id="90db4822-a7cd-4d1a-b7f5-b20177de2e58" IsHidden="False" Index="3" Bounds="774, 260, 242, 245" MinHeight="40" Dock="Right" SizeRatio="50" />
+      </DashboardItems>
+    </SplitLayout>
+  </Layouts>
+</C1DasboardLayout>

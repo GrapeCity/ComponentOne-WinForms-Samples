@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this._pgDesignTime = new System.Windows.Forms.TabPage();

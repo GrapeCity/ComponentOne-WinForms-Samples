@@ -1,4 +1,4 @@
-namespace PdfAcroforms
+﻿namespace PdfAcroforms
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace PdfAcroforms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._btCreate = new System.Windows.Forms.Button();
             this._status = new System.Windows.Forms.StatusStrip();
             this._statusBar = new System.Windows.Forms.ToolStripStatusLabel();

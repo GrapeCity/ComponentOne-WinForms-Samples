@@ -28,60 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource(this.components);
-            this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
-            this.ilLarge = new System.Windows.Forms.ImageList(this.components);
-            this.ilSmall = new System.Windows.Forms.ImageList(this.components);
-            this.ofdOpen = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.c1FlexViewer1)).BeginInit();
-            this.SuspendLayout();
+            c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource(components);
+            c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
+            ilLarge = new System.Windows.Forms.ImageList(components);
+            ilSmall = new System.Windows.Forms.ImageList(components);
+            ofdOpen = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)c1FlexViewer1).BeginInit();
+            SuspendLayout();
             // 
             // c1FlexViewer1
             // 
-            this.c1FlexViewer1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.c1FlexViewer1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.c1FlexViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexViewer1.DocumentSource = this.c1PdfDocumentSource1;
-            this.c1FlexViewer1.Location = new System.Drawing.Point(0, 0);
-            this.c1FlexViewer1.Margin = new System.Windows.Forms.Padding(13, 15, 13, 15);
-            this.c1FlexViewer1.Name = "c1FlexViewer1";
-            this.c1FlexViewer1.Size = new System.Drawing.Size(2126, 1409);
-            this.c1FlexViewer1.TabIndex = 0;
+            c1FlexViewer1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            c1FlexViewer1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            c1FlexViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            c1FlexViewer1.DocumentSource = c1PdfDocumentSource1;
+            c1FlexViewer1.Location = new System.Drawing.Point(0, 0);
+            c1FlexViewer1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            c1FlexViewer1.Name = "c1FlexViewer1";
+            c1FlexViewer1.Size = new System.Drawing.Size(1044, 512);
+            c1FlexViewer1.TabIndex = 0;
             // 
             // ilLarge
             // 
-            this.ilLarge.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.ilLarge.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilLarge.ImageStream")));
-            this.ilLarge.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilLarge.Images.SetKeyName(0, "FolderLarge.png");
+            ilLarge.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            ilLarge.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("ilLarge.ImageStream");
+            ilLarge.TransparentColor = System.Drawing.Color.Transparent;
+            ilLarge.Images.SetKeyName(0, "FolderLarge.png");
             // 
             // ilSmall
             // 
-            this.ilSmall.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.ilSmall.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilSmall.ImageStream")));
-            this.ilSmall.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilSmall.Images.SetKeyName(0, "FolderSmall.png");
+            ilSmall.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            ilSmall.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("ilSmall.ImageStream");
+            ilSmall.TransparentColor = System.Drawing.Color.Transparent;
+            ilSmall.Images.SetKeyName(0, "FolderSmall.png");
             // 
             // ofdOpen
             // 
-            this.ofdOpen.DefaultExt = "pdf";
-            this.ofdOpen.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
+            ofdOpen.DefaultExt = "pdf";
+            ofdOpen.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2126, 1409);
-            this.Controls.Add(this.c1FlexViewer1);
-            this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.Name = "Form1";
-            this.Text = "PDF Viewer";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.c1FlexViewer1)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1044, 512);
+            Controls.Add(c1FlexViewer1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            Text = "PDF Viewer";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            FormClosing += Form1_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)c1FlexViewer1).EndInit();
+            ResumeLayout(false);
 
         }
 

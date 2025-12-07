@@ -1,4 +1,4 @@
-﻿FlexGridGeminiAI
+﻿FilterDefinitionAI
 -----------------------------------
 AI-enhanced filtering for C1 FlexGrid using Gemini-based NLP interpretation.
 

@@ -1,4 +1,4 @@
-namespace GridTips
+﻿namespace GridTips
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace GridTips
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this._flex3 = new C1.Win.FlexGrid.C1FlexGrid();

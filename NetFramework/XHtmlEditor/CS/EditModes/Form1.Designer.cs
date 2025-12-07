@@ -1,4 +1,4 @@
-namespace EditModes
+﻿namespace EditModes
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace EditModes
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.panel1 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();

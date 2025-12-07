@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Basic (Zoom and Scroll)");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("ControlBar");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Show Control");

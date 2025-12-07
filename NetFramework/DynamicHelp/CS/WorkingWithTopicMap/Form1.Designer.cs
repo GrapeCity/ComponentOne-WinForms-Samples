@@ -1,4 +1,4 @@
-namespace WorkingWithTopicMap
+﻿namespace WorkingWithTopicMap
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace WorkingWithTopicMap
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1DynamicHelp1 = new C1.Win.C1DynamicHelp.C1DynamicHelp();
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnLoadFrom = new System.Windows.Forms.Button();

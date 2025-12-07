@@ -53,28 +53,30 @@ namespace CustomSelection
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
             // _flex
             // 
-            this._flex.BackColor = System.Drawing.SystemColors.Window;
             this._flex.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Size = new System.Drawing.Size(600, 392);
-            this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.UseCompatibleTextRendering = true;
             this._flex.AfterSelChange += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterSelChange);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(600, 392);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this._flex});
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Custom Selection";

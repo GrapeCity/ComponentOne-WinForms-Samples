@@ -84,506 +84,447 @@ namespace xltest
 			base.Dispose( disposing );
 		}
 
-		#region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-            this.c1XLBook1 = new C1.Excel.C1XLBook();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this._rdPortrait = new System.Windows.Forms.RadioButton();
-            this._rdLandscape = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this._cmbPaperSize = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this._udPercentSize = new System.Windows.Forms.NumericUpDown();
-            this._rdAdjust = new System.Windows.Forms.RadioButton();
-            this._rdFit = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this._udAcross = new System.Windows.Forms.NumericUpDown();
-            this._udDown = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this._txtStartPage = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this._udLeft = new System.Windows.Forms.NumericUpDown();
-            this._udRight = new System.Windows.Forms.NumericUpDown();
-            this._udTop = new System.Windows.Forms.NumericUpDown();
-            this._udBottom = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this._udFooter = new System.Windows.Forms.NumericUpDown();
-            this._udHeader = new System.Windows.Forms.NumericUpDown();
-            this._txtHeader = new System.Windows.Forms.TextBox();
-            this._txtFooter = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._udPercentSize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udAcross)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udDown)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._udLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udTop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udBottom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udFooter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udHeader)).BeginInit();
-            this.SuspendLayout();
+        #region Windows Form Designer generated code
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(Form1));
+            button1 = new Button();
+            groupBox1 = new GroupBox();
+            _rdPortrait = new RadioButton();
+            _rdLandscape = new RadioButton();
+            label4 = new Label();
+            _cmbPaperSize = new ComboBox();
+            groupBox2 = new GroupBox();
+            label1 = new Label();
+            _udPercentSize = new NumericUpDown();
+            _rdAdjust = new RadioButton();
+            _rdFit = new RadioButton();
+            label2 = new Label();
+            _udAcross = new NumericUpDown();
+            _udDown = new NumericUpDown();
+            label3 = new Label();
+            label5 = new Label();
+            _txtStartPage = new TextBox();
+            button2 = new Button();
+            groupBox3 = new GroupBox();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            _udLeft = new NumericUpDown();
+            _udRight = new NumericUpDown();
+            _udTop = new NumericUpDown();
+            _udBottom = new NumericUpDown();
+            label10 = new Label();
+            label11 = new Label();
+            _udFooter = new NumericUpDown();
+            _udHeader = new NumericUpDown();
+            _txtHeader = new TextBox();
+            _txtFooter = new TextBox();
+            label12 = new Label();
+            label13 = new Label();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((ISupportInitialize)_udPercentSize).BeginInit();
+            ((ISupportInitialize)_udAcross).BeginInit();
+            ((ISupportInitialize)_udDown).BeginInit();
+            groupBox3.SuspendLayout();
+            ((ISupportInitialize)_udLeft).BeginInit();
+            ((ISupportInitialize)_udRight).BeginInit();
+            ((ISupportInitialize)_udTop).BeginInit();
+            ((ISupportInitialize)_udBottom).BeginInit();
+            ((ISupportInitialize)_udFooter).BeginInit();
+            ((ISupportInitialize)_udHeader).BeginInit();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(8, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 24);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Load";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(19, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(288, 59);
+            button1.TabIndex = 0;
+            button1.Text = "Load";
+            button1.Click += button1_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this._rdPortrait);
-            this.groupBox1.Controls.Add(this._rdLandscape);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this._cmbPaperSize);
-            this.groupBox1.Location = new System.Drawing.Point(8, 48);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(600, 56);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Paper Size/Orientation";
+            groupBox1.Controls.Add(_rdPortrait);
+            groupBox1.Controls.Add(_rdLandscape);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(_cmbPaperSize);
+            groupBox1.Location = new Point(19, 118);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1440, 138);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Paper Size/Orientation";
             // 
             // _rdPortrait
             // 
-            this._rdPortrait.Location = new System.Drawing.Point(368, 24);
-            this._rdPortrait.Name = "_rdPortrait";
-            this._rdPortrait.Size = new System.Drawing.Size(64, 16);
-            this._rdPortrait.TabIndex = 0;
-            this._rdPortrait.Text = "Portrait";
+            _rdPortrait.Location = new Point(883, 59);
+            _rdPortrait.Name = "_rdPortrait";
+            _rdPortrait.Size = new Size(154, 39);
+            _rdPortrait.TabIndex = 0;
+            _rdPortrait.Text = "Portrait";
             // 
             // _rdLandscape
             // 
-            this._rdLandscape.Location = new System.Drawing.Point(440, 24);
-            this._rdLandscape.Name = "_rdLandscape";
-            this._rdLandscape.Size = new System.Drawing.Size(112, 16);
-            this._rdLandscape.TabIndex = 0;
-            this._rdLandscape.Text = "Landscape";
+            _rdLandscape.Location = new Point(1056, 59);
+            _rdLandscape.Name = "_rdLandscape";
+            _rdLandscape.Size = new Size(269, 39);
+            _rdLandscape.TabIndex = 0;
+            _rdLandscape.Text = "Landscape";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(8, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Paper Size";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label4.Location = new Point(19, 59);
+            label4.Name = "label4";
+            label4.Size = new Size(173, 39);
+            label4.TabIndex = 2;
+            label4.Text = "Paper Size";
+            label4.TextAlign = ContentAlignment.BottomLeft;
             // 
             // _cmbPaperSize
             // 
-            this._cmbPaperSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._cmbPaperSize.Location = new System.Drawing.Point(88, 22);
-            this._cmbPaperSize.Name = "_cmbPaperSize";
-            this._cmbPaperSize.Size = new System.Drawing.Size(240, 21);
-            this._cmbPaperSize.TabIndex = 3;
+            _cmbPaperSize.DropDownStyle = ComboBoxStyle.DropDownList;
+            _cmbPaperSize.Location = new Point(211, 54);
+            _cmbPaperSize.Name = "_cmbPaperSize";
+            _cmbPaperSize.Size = new Size(576, 40);
+            _cmbPaperSize.TabIndex = 3;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this._udPercentSize);
-            this.groupBox2.Controls.Add(this._rdAdjust);
-            this.groupBox2.Controls.Add(this._rdFit);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this._udAcross);
-            this.groupBox2.Controls.Add(this._udDown);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(8, 112);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(304, 104);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Scaling";
+            groupBox2.Controls.Add(label1);
+            groupBox2.Controls.Add(_udPercentSize);
+            groupBox2.Controls.Add(_rdAdjust);
+            groupBox2.Controls.Add(_rdFit);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(_udAcross);
+            groupBox2.Controls.Add(_udDown);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Location = new Point(19, 276);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(730, 256);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Scaling";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(136, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "% normal size";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label1.Location = new Point(326, 59);
+            label1.Name = "label1";
+            label1.Size = new Size(231, 39);
+            label1.TabIndex = 2;
+            label1.Text = "% normal size";
+            label1.TextAlign = ContentAlignment.BottomLeft;
             // 
             // _udPercentSize
             // 
-            this._udPercentSize.Location = new System.Drawing.Point(80, 22);
-            this._udPercentSize.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this._udPercentSize.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udPercentSize.Name = "_udPercentSize";
-            this._udPercentSize.Size = new System.Drawing.Size(48, 20);
-            this._udPercentSize.TabIndex = 1;
-            this._udPercentSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udPercentSize.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
+            _udPercentSize.Location = new Point(192, 54);
+            _udPercentSize.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
+            _udPercentSize.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udPercentSize.Name = "_udPercentSize";
+            _udPercentSize.Size = new Size(115, 39);
+            _udPercentSize.TabIndex = 1;
+            _udPercentSize.TextAlign = HorizontalAlignment.Center;
+            _udPercentSize.Value = new decimal(new int[] { 100, 0, 0, 0 });
             // 
             // _rdAdjust
             // 
-            this._rdAdjust.Location = new System.Drawing.Point(8, 24);
-            this._rdAdjust.Name = "_rdAdjust";
-            this._rdAdjust.Size = new System.Drawing.Size(72, 16);
-            this._rdAdjust.TabIndex = 0;
-            this._rdAdjust.Text = "Adjust to";
+            _rdAdjust.Location = new Point(19, 59);
+            _rdAdjust.Name = "_rdAdjust";
+            _rdAdjust.Size = new Size(173, 39);
+            _rdAdjust.TabIndex = 0;
+            _rdAdjust.Text = "Adjust to";
             // 
             // _rdFit
             // 
-            this._rdFit.Location = new System.Drawing.Point(8, 64);
-            this._rdFit.Name = "_rdFit";
-            this._rdFit.Size = new System.Drawing.Size(56, 16);
-            this._rdFit.TabIndex = 0;
-            this._rdFit.Text = "Fit to";
+            _rdFit.Location = new Point(19, 158);
+            _rdFit.Name = "_rdFit";
+            _rdFit.Size = new Size(135, 39);
+            _rdFit.TabIndex = 0;
+            _rdFit.Text = "Fit to";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(136, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "pages wide by";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label2.Location = new Point(326, 158);
+            label2.Name = "label2";
+            label2.Size = new Size(192, 39);
+            label2.TabIndex = 2;
+            label2.Text = "pages wide by";
+            label2.TextAlign = ContentAlignment.BottomLeft;
             // 
             // _udAcross
             // 
-            this._udAcross.Location = new System.Drawing.Point(80, 62);
-            this._udAcross.Name = "_udAcross";
-            this._udAcross.Size = new System.Drawing.Size(48, 20);
-            this._udAcross.TabIndex = 1;
-            this._udAcross.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            _udAcross.Location = new Point(192, 153);
+            _udAcross.Name = "_udAcross";
+            _udAcross.Size = new Size(115, 39);
+            _udAcross.TabIndex = 1;
+            _udAcross.TextAlign = HorizontalAlignment.Center;
             // 
             // _udDown
             // 
-            this._udDown.Location = new System.Drawing.Point(216, 62);
-            this._udDown.Name = "_udDown";
-            this._udDown.Size = new System.Drawing.Size(48, 20);
-            this._udDown.TabIndex = 1;
-            this._udDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            _udDown.Location = new Point(518, 153);
+            _udDown.Name = "_udDown";
+            _udDown.Size = new Size(116, 39);
+            _udDown.TabIndex = 1;
+            _udDown.TextAlign = HorizontalAlignment.Center;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(272, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "tall";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label3.Location = new Point(653, 158);
+            label3.Name = "label3";
+            label3.Size = new Size(57, 39);
+            label3.TabIndex = 2;
+            label3.Text = "tall";
+            label3.TextAlign = ContentAlignment.BottomLeft;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(16, 296);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 16);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "First page number";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label5.Location = new Point(38, 729);
+            label5.Name = "label5";
+            label5.Size = new Size(250, 39);
+            label5.TabIndex = 2;
+            label5.Text = "First page number";
+            label5.TextAlign = ContentAlignment.BottomLeft;
             // 
             // _txtStartPage
             // 
-            this._txtStartPage.Location = new System.Drawing.Point(120, 296);
-            this._txtStartPage.Name = "_txtStartPage";
-            this._txtStartPage.Size = new System.Drawing.Size(112, 20);
-            this._txtStartPage.TabIndex = 4;
-            this._txtStartPage.Text = "Auto";
+            _txtStartPage.Location = new Point(288, 729);
+            _txtStartPage.Name = "_txtStartPage";
+            _txtStartPage.Size = new Size(269, 39);
+            _txtStartPage.TabIndex = 4;
+            _txtStartPage.Text = "Auto";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(144, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 24);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Save";
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(346, 20);
+            button2.Name = "button2";
+            button2.Size = new Size(288, 59);
+            button2.TabIndex = 0;
+            button2.Text = "Save";
+            button2.Click += button2_Click;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this._udLeft);
-            this.groupBox3.Controls.Add(this._udRight);
-            this.groupBox3.Controls.Add(this._udTop);
-            this.groupBox3.Controls.Add(this._udBottom);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this._udFooter);
-            this.groupBox3.Controls.Add(this._udHeader);
-            this.groupBox3.Location = new System.Drawing.Point(320, 112);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(288, 104);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Margins";
+            groupBox3.Controls.Add(label6);
+            groupBox3.Controls.Add(label7);
+            groupBox3.Controls.Add(label8);
+            groupBox3.Controls.Add(label9);
+            groupBox3.Controls.Add(_udLeft);
+            groupBox3.Controls.Add(_udRight);
+            groupBox3.Controls.Add(_udTop);
+            groupBox3.Controls.Add(_udBottom);
+            groupBox3.Controls.Add(label10);
+            groupBox3.Controls.Add(label11);
+            groupBox3.Controls.Add(_udFooter);
+            groupBox3.Controls.Add(_udHeader);
+            groupBox3.Location = new Point(768, 276);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(691, 256);
+            groupBox3.TabIndex = 5;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Margins";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(8, 24);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 16);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Left";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label6.Location = new Point(19, 59);
+            label6.Name = "label6";
+            label6.Size = new Size(135, 39);
+            label6.TabIndex = 0;
+            label6.Text = "Left";
+            label6.TextAlign = ContentAlignment.BottomLeft;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(152, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Right";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label7.Location = new Point(365, 59);
+            label7.Name = "label7";
+            label7.Size = new Size(134, 39);
+            label7.TabIndex = 0;
+            label7.Text = "Right";
+            label7.TextAlign = ContentAlignment.BottomLeft;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(8, 48);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 16);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Top";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label8.Location = new Point(19, 118);
+            label8.Name = "label8";
+            label8.Size = new Size(135, 40);
+            label8.TabIndex = 0;
+            label8.Text = "Top";
+            label8.TextAlign = ContentAlignment.BottomLeft;
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(152, 48);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 16);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Bottom";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label9.Location = new Point(365, 118);
+            label9.Name = "label9";
+            label9.Size = new Size(134, 40);
+            label9.TabIndex = 0;
+            label9.Text = "Bottom";
+            label9.TextAlign = ContentAlignment.BottomLeft;
             // 
             // _udLeft
             // 
-            this._udLeft.DecimalPlaces = 2;
-            this._udLeft.Location = new System.Drawing.Point(64, 24);
-            this._udLeft.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udLeft.Name = "_udLeft";
-            this._udLeft.Size = new System.Drawing.Size(72, 20);
-            this._udLeft.TabIndex = 1;
-            this._udLeft.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udLeft.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            _udLeft.DecimalPlaces = 2;
+            _udLeft.Location = new Point(154, 59);
+            _udLeft.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udLeft.Name = "_udLeft";
+            _udLeft.Size = new Size(172, 39);
+            _udLeft.TabIndex = 1;
+            _udLeft.TextAlign = HorizontalAlignment.Center;
+            _udLeft.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // _udRight
             // 
-            this._udRight.DecimalPlaces = 2;
-            this._udRight.Location = new System.Drawing.Point(208, 24);
-            this._udRight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udRight.Name = "_udRight";
-            this._udRight.Size = new System.Drawing.Size(72, 20);
-            this._udRight.TabIndex = 1;
-            this._udRight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udRight.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            _udRight.DecimalPlaces = 2;
+            _udRight.Location = new Point(499, 59);
+            _udRight.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udRight.Name = "_udRight";
+            _udRight.Size = new Size(173, 39);
+            _udRight.TabIndex = 1;
+            _udRight.TextAlign = HorizontalAlignment.Center;
+            _udRight.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // _udTop
             // 
-            this._udTop.DecimalPlaces = 2;
-            this._udTop.Location = new System.Drawing.Point(64, 48);
-            this._udTop.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udTop.Name = "_udTop";
-            this._udTop.Size = new System.Drawing.Size(72, 20);
-            this._udTop.TabIndex = 1;
-            this._udTop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udTop.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            _udTop.DecimalPlaces = 2;
+            _udTop.Location = new Point(154, 118);
+            _udTop.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udTop.Name = "_udTop";
+            _udTop.Size = new Size(172, 39);
+            _udTop.TabIndex = 1;
+            _udTop.TextAlign = HorizontalAlignment.Center;
+            _udTop.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // _udBottom
             // 
-            this._udBottom.DecimalPlaces = 2;
-            this._udBottom.Location = new System.Drawing.Point(208, 48);
-            this._udBottom.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udBottom.Name = "_udBottom";
-            this._udBottom.Size = new System.Drawing.Size(72, 20);
-            this._udBottom.TabIndex = 1;
-            this._udBottom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udBottom.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            _udBottom.DecimalPlaces = 2;
+            _udBottom.Location = new Point(499, 118);
+            _udBottom.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udBottom.Name = "_udBottom";
+            _udBottom.Size = new Size(173, 39);
+            _udBottom.TabIndex = 1;
+            _udBottom.TextAlign = HorizontalAlignment.Center;
+            _udBottom.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(8, 72);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 16);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Header";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label10.Location = new Point(19, 177);
+            label10.Name = "label10";
+            label10.Size = new Size(135, 40);
+            label10.TabIndex = 0;
+            label10.Text = "Header";
+            label10.TextAlign = ContentAlignment.BottomLeft;
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(152, 72);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 16);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Footer";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label11.Location = new Point(365, 177);
+            label11.Name = "label11";
+            label11.Size = new Size(134, 40);
+            label11.TabIndex = 0;
+            label11.Text = "Footer";
+            label11.TextAlign = ContentAlignment.BottomLeft;
             // 
             // _udFooter
             // 
-            this._udFooter.DecimalPlaces = 2;
-            this._udFooter.Location = new System.Drawing.Point(208, 72);
-            this._udFooter.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udFooter.Name = "_udFooter";
-            this._udFooter.Size = new System.Drawing.Size(72, 20);
-            this._udFooter.TabIndex = 1;
-            this._udFooter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udFooter.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            _udFooter.DecimalPlaces = 2;
+            _udFooter.Location = new Point(499, 177);
+            _udFooter.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udFooter.Name = "_udFooter";
+            _udFooter.Size = new Size(173, 39);
+            _udFooter.TabIndex = 1;
+            _udFooter.TextAlign = HorizontalAlignment.Center;
+            _udFooter.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // _udHeader
             // 
-            this._udHeader.DecimalPlaces = 2;
-            this._udHeader.Location = new System.Drawing.Point(64, 72);
-            this._udHeader.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            -2147483648});
-            this._udHeader.Name = "_udHeader";
-            this._udHeader.Size = new System.Drawing.Size(72, 20);
-            this._udHeader.TabIndex = 1;
-            this._udHeader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this._udHeader.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            _udHeader.DecimalPlaces = 2;
+            _udHeader.Location = new Point(154, 177);
+            _udHeader.Minimum = new decimal(new int[] { 1, 0, 0, int.MinValue });
+            _udHeader.Name = "_udHeader";
+            _udHeader.Size = new Size(172, 39);
+            _udHeader.TabIndex = 1;
+            _udHeader.TextAlign = HorizontalAlignment.Center;
+            _udHeader.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // _txtHeader
             // 
-            this._txtHeader.Location = new System.Drawing.Point(120, 232);
-            this._txtHeader.Name = "_txtHeader";
-            this._txtHeader.Size = new System.Drawing.Size(488, 20);
-            this._txtHeader.TabIndex = 4;
+            _txtHeader.Location = new Point(288, 571);
+            _txtHeader.Name = "_txtHeader";
+            _txtHeader.Size = new Size(1171, 39);
+            _txtHeader.TabIndex = 4;
             // 
             // _txtFooter
             // 
-            this._txtFooter.Location = new System.Drawing.Point(120, 264);
-            this._txtFooter.Name = "_txtFooter";
-            this._txtFooter.Size = new System.Drawing.Size(488, 20);
-            this._txtFooter.TabIndex = 4;
+            _txtFooter.Location = new Point(288, 650);
+            _txtFooter.Name = "_txtFooter";
+            _txtFooter.Size = new Size(1171, 39);
+            _txtFooter.TabIndex = 4;
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(16, 264);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 16);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Page Footer";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label12.Location = new Point(38, 650);
+            label12.Name = "label12";
+            label12.Size = new Size(250, 39);
+            label12.TabIndex = 2;
+            label12.Text = "Page Footer";
+            label12.TextAlign = ContentAlignment.BottomLeft;
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(16, 232);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(104, 16);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Page Header";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            label13.Location = new Point(38, 571);
+            label13.Name = "label13";
+            label13.Size = new Size(250, 39);
+            label13.TabIndex = 2;
+            label13.Text = "Page Header";
+            label13.TextAlign = ContentAlignment.BottomLeft;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(618, 335);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this._txtStartPage);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this._txtHeader);
-            this.Controls.Add(this._txtFooter);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C1Excel: Print settings";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._udPercentSize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udAcross)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udDown)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._udLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udTop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udBottom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udFooter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._udHeader)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleBaseSize = new Size(12, 32);
+            ClientSize = new Size(618, 335);
+            Controls.Add(groupBox3);
+            Controls.Add(_txtStartPage);
+            Controls.Add(groupBox1);
+            Controls.Add(button1);
+            Controls.Add(groupBox2);
+            Controls.Add(label5);
+            Controls.Add(button2);
+            Controls.Add(_txtHeader);
+            Controls.Add(_txtFooter);
+            Controls.Add(label12);
+            Controls.Add(label13);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "C1Excel: Print settings";
+            Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            ((ISupportInitialize)_udPercentSize).EndInit();
+            ((ISupportInitialize)_udAcross).EndInit();
+            ((ISupportInitialize)_udDown).EndInit();
+            groupBox3.ResumeLayout(false);
+            ((ISupportInitialize)_udLeft).EndInit();
+            ((ISupportInitialize)_udRight).EndInit();
+            ((ISupportInitialize)_udTop).EndInit();
+            ((ISupportInitialize)_udBottom).EndInit();
+            ((ISupportInitialize)_udFooter).EndInit();
+            ((ISupportInitialize)_udHeader).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
-		}
-		#endregion
+        }
+        #endregion
 
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
-		[STAThread]
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
 		static void Main() 
 		{
 			Application.Run(new Form1());

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Drawing;
 using System.Collections;
@@ -56,6 +56,9 @@ namespace InMemoryCompression
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
