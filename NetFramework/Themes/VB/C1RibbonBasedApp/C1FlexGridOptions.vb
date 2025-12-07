@@ -1,7 +1,7 @@
 Imports System.Collections.Generic
 Imports System.Windows.Forms
 
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Enum FlexViewModeEnum
 	None

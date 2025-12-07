@@ -26,7 +26,7 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
@@ -41,7 +41,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DsCustomer1 = New Tutor09.dsCustomer()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
@@ -54,18 +54,18 @@ Public Class Form1
         'C1TrueDBGrid1
         '
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Caption = "C1TrueDBGrid.Net"
         Me.C1TrueDBGrid1.CaptionHeight = 17
         Me.C1TrueDBGrid1.CollapseColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.DataMember = "Contacts"
         Me.C1TrueDBGrid1.DataSource = Me.DsCustomer1
-        Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+        Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(16, 16)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.RecordSelectorWidth = 16
         Me.C1TrueDBGrid1.RowHeight = 15
@@ -153,7 +153,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.Splits(0).DisplayColumns("CustType").Button = True
     End Sub
 
-    Private Sub C1TrueDBGrid1_ButtonClick(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.ColEventArgs) Handles C1TrueDBGrid1.ButtonClick
+    Private Sub C1TrueDBGrid1_ButtonClick(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.ColEventArgs) Handles C1TrueDBGrid1.ButtonClick
 
         'position and dropdown ListBox1 at the right edge of the current cell
 
@@ -182,7 +182,7 @@ Public Class Form1
     End Sub
 
 
-    Private Sub C1TrueDBGrid1_UnboundColumnFetch(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs) Handles C1TrueDBGrid1.UnboundColumnFetch
+    Private Sub C1TrueDBGrid1_UnboundColumnFetch(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs) Handles C1TrueDBGrid1.UnboundColumnFetch
         e.Value = Me.DsCustomer1.Contacts.Rows(e.Row).Item("FirstName") & " " & Me.DsCustomer1.Contacts.Rows(e.Row).Item("LastName")
     End Sub
     Private Function GetModifiedConnectionString(ByVal connstring As String) As String

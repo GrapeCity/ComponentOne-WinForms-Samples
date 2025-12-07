@@ -32,7 +32,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents chkTotals As System.Windows.Forms.CheckBox
     Friend WithEvents chkFilterRow As System.Windows.Forms.CheckBox
     Friend WithEvents SqlSelectCommand1 As System.Data.SqlClient.SqlCommand
@@ -43,7 +43,7 @@ Public Class Form1
     Friend WithEvents SqlNorthwind As System.Data.SqlClient.SqlConnection
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.chkTotals = New System.Windows.Forms.CheckBox
         Me.chkFilterRow = New System.Windows.Forms.CheckBox
         Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand
@@ -184,7 +184,7 @@ Public Class Form1
     Private Sub UpdateTotals()
         Try
             ' clear existing totals
-            _flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear)
+            _flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear)
 
             If chkTotals.Checked Then
 
@@ -192,14 +192,14 @@ Public Class Form1
                 Dim c As Integer
                 For c = 4 To _flex.Cols.Count - 1
                     If chkTotals.Checked Then
-                        _flex.SubtotalPosition = C1.Win.C1FlexGrid.SubtotalPositionEnum.AboveData
-                        _flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 0, -1, c, "Grand Total")
-                        _flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Count, 0, -1, 0, "Grand Total")
+                        _flex.SubtotalPosition = C1.Win.FlexGrid.SubtotalPositionEnum.AboveData
+                        _flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 0, -1, c, "Grand Total")
+                        _flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Count, 0, -1, 0, "Grand Total")
                     Else
 
                     End If
-                    'If _chkDirection.Checked Then flxInventory.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 1, 1, c, "Total for {0}")
-                    'If _chkRegion.Checked Then flxInventory.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 2, 2, c, "Total for {0}")
+                    'If _chkDirection.Checked Then flxInventory.Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 1, 1, c, "Total for {0}")
+                    'If _chkRegion.Checked Then flxInventory.Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 2, 2, c, "Total for {0}")
                 Next
             End If
 

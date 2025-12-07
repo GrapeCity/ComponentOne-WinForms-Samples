@@ -1,6 +1,6 @@
 ﻿
 
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using FinancialChartExplorer.CustomControls;
 using System.Windows.Forms;
 
@@ -41,12 +41,12 @@ namespace FinancialChartExplorer
             this.accordionAreaCT1 = new FinancialChartExplorer.CustomControls.AccordionAreaCT();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelSampleDescription = new System.Windows.Forms.Label();
-            this._toggleBtn = new C1.Win.C1Input.C1Button();
+            this._toggleBtn = new C1.Win.Input.C1Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panelSample = new System.Windows.Forms.Panel();
             this.labelSampleHeader = new System.Windows.Forms.Label();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.richTextBoxSampleDescription = new C1.Win.C1Input.C1TextBox();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.richTextBoxSampleDescription = new C1.Win.Input.C1TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -141,13 +141,20 @@ namespace FinancialChartExplorer
             this.labelSampleDescription.TabIndex = 6;
             this.labelSampleDescription.Text = "Sample Description";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "dark.png");
+            this.imageList1.Images.SetKeyName(1, "light (2).png");
+            // 
             // _toggleBtn
             // 
             this._toggleBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._toggleBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this._toggleBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._toggleBtn.ImageIndex = 1;
             this._toggleBtn.ImageList = this.imageList1;
+            this._toggleBtn.ImageIndex = 1;
             this._toggleBtn.Location = new System.Drawing.Point(829, 50);
             this._toggleBtn.Margin = new System.Windows.Forms.Padding(4);
             this._toggleBtn.Name = "_toggleBtn";
@@ -155,17 +162,7 @@ namespace FinancialChartExplorer
             this._toggleBtn.TabIndex = 4;
             this._toggleBtn.Text = "Toggle Theme";
             this.c1ThemeController1.SetTheme(this._toggleBtn, "(default)");
-            this._toggleBtn.UseVisualStyleBackColor = true;
-            this._toggleBtn.UseVisualStyleForeColor = true;
-            this._toggleBtn.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this._toggleBtn.Click += new System.EventHandler(this.ToggleBtn_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "dark.png");
-            this.imageList1.Images.SetKeyName(1, "light (2).png");
             // 
             // panelSample
             // 
@@ -202,7 +199,6 @@ namespace FinancialChartExplorer
             this.richTextBoxSampleDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxSampleDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBoxSampleDescription.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.richTextBoxSampleDescription.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.richTextBoxSampleDescription.Location = new System.Drawing.Point(50, 131);
             this.richTextBoxSampleDescription.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
@@ -213,7 +209,6 @@ namespace FinancialChartExplorer
             this.richTextBoxSampleDescription.TabIndex = 5;
             this.richTextBoxSampleDescription.Tag = null;
             this.c1ThemeController1.SetTheme(this.richTextBoxSampleDescription, "(default)");
-            this.richTextBoxSampleDescription.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // Form1
             // 
@@ -251,12 +246,12 @@ namespace FinancialChartExplorer
         private System.Windows.Forms.Label labelSampleHeader;
         private System.Windows.Forms.Button _btnHamb;
         //private ImageList imageList1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1Input.C1Button _toggleBtn;
+        private C1.Win.Input.C1Button _toggleBtn;
         private AccordionAreaCT accordionAreaCT1;
         private Label labelSampleDescription;
-        private C1.Win.C1Input.C1TextBox richTextBoxSampleDescription;
+        private C1.Win.Input.C1TextBox richTextBoxSampleDescription;
     }
 }
 

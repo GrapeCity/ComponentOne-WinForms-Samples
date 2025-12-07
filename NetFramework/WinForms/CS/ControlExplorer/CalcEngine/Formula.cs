@@ -4,7 +4,7 @@ using C1.CalcEngine;
 using C1.CalcEngine.ExcelEngine;
 using C1.CalcEngine.VBAEngine;
 using C1.CalcEngine.ExpressionEngine;
-using C1.Win.C1SuperTooltip;
+using C1.Win.SuperTooltip;
 using System.ComponentModel;
 
 namespace ControlExplorer.CalcEngine

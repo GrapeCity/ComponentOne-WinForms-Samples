@@ -1,4 +1,4 @@
-﻿using C1.Win.C1SuperTooltip;
+﻿using C1.Win.SuperTooltip;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

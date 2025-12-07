@@ -802,13 +802,13 @@ namespace FlexReportDesignerApp
             mParagraphField.RegisterAttributesFromModel(mFieldBase);
             s_typeModels.Add(typeof(ParagraphField), mParagraphField);
             // RtfField
-            var mRtfField = EditableModel<RtfField>.NewEditableModel();
+            var mRtfField = EditableModel<C1.Win.FlexReport.RtfField>.NewEditableModel();
             mRtfField.RegisterAttribute("Align", aTextAlignEditor);
             mRtfField.RegisterAttribute("Text", aScriptValueEditor);
             mRtfField.RegisterAttribute("Text", aScriptValueConverter);
             mRtfField.RegisterAttributesFromModel(mFieldBase);
             mRtfField.RegisterAttribute("RightToLeft", aHideProperty);
-            s_typeModels.Add(typeof(RtfField), mRtfField);
+            s_typeModels.Add(typeof(C1.Win.FlexReport.RtfField), mRtfField);
             // ShapeField
             var mShapeField = EditableModel<ShapeField>.NewEditableModel();
             mShapeField.RegisterAttribute("Shape", aShapeConverter);

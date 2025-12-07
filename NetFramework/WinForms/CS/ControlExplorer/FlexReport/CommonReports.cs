@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.FlexReport;
 using C1.Win.Ribbon;
 

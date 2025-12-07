@@ -6,19 +6,19 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ColumnFilters
 {
     public partial class Form1 : Form
     {
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.FlexGrid.C1FlexGridPrintInfo printInfo)
         {
             C1FlexGrid flex = _tab.SelectedTab.Controls[0] as C1FlexGrid;
             if (flex == null)
                 return null;
 
-            C1.Win.C1FlexGrid.C1FlexGridPrinter printer = new C1.Win.C1FlexGrid.C1FlexGridPrinter(flex);
+            C1.Win.FlexGrid.C1FlexGridPrinter printer = new C1.Win.FlexGrid.C1FlexGridPrinter(flex);
             C1.C1Preview.C1PrintDocument doc = new C1.C1Preview.C1PrintDocument();
             printer.PrintInfo = printInfo;
             C1.C1Preview.RenderObject gridRO = printer.MakeGridTable(doc);

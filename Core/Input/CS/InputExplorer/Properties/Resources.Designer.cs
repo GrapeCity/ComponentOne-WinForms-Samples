@@ -61,6 +61,42 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Task.
+        /// </summary>
+        internal static string Button_AddTask {
+            get {
+                return ResourceManager.GetString("Button_AddTask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear Completed.
+        /// </summary>
+        internal static string Button_ClearCompleted {
+            get {
+                return ResourceManager.GetString("Button_ClearCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string Button_Delete {
+            get {
+                return ResourceManager.GetString("Button_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mark Complete.
+        /// </summary>
+        internal static string Button_MarkComplete {
+            get {
+                return ResourceManager.GetString("Button_MarkComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Date {
@@ -101,6 +137,24 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add New Task:.
+        /// </summary>
+        internal static string Label_NewTask {
+            get {
+                return ResourceManager.GetString("Label_NewTask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tasks:.
+        /// </summary>
+        internal static string Label_Tasks {
+            get {
+                return ResourceManager.GetString("Label_Tasks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap lorem_lorem_logo {
@@ -131,6 +185,33 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This view shows how to use the Command property of C1Button using the MVVM pattern.
+        /// </summary>
+        internal static string SampleItem_Desc_C1ButtonCommandBinding {
+            get {
+                return ResourceManager.GetString("SampleItem_Desc_C1ButtonCommandBinding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1ButtonCommandBinding.
+        /// </summary>
+        internal static string SampleItem_Name_C1ButtonCommandBinding {
+            get {
+                return ResourceManager.GetString("SampleItem_Name_C1ButtonCommandBinding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1ButtonCommandBinding.
+        /// </summary>
+        internal static string SampleItem_Title_C1ButtonCommandBinding {
+            get {
+                return ResourceManager.GetString("SampleItem_Title_C1ButtonCommandBinding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap search {
@@ -147,6 +228,42 @@ namespace InputExplorer.Properties {
             get {
                 object obj = ResourceManager.GetObject("Security", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This button will only be enabled once there is a text in the textBox and will allow you to add task to the flexgrid.
+        /// </summary>
+        internal static string Tooltip_AddTask {
+            get {
+                return ResourceManager.GetString("Tooltip_AddTask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This button will only be enabled if there are any task that is completed and will let you clear all the task that are marked completed.
+        /// </summary>
+        internal static string Tooltip_ClearCompleted {
+            get {
+                return ResourceManager.GetString("Tooltip_ClearCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This button will only be enabled once you select on a task and will let you delete the task.
+        /// </summary>
+        internal static string Tooltip_Delete {
+            get {
+                return ResourceManager.GetString("Tooltip_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This button will only be enabled if you select a task that is not completed and will let you mark a task as complete.
+        /// </summary>
+        internal static string Tooltip_MarkComplete {
+            get {
+                return ResourceManager.GetString("Tooltip_MarkComplete", resourceCulture);
             }
         }
         

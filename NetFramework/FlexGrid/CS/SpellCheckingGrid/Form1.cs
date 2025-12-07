@@ -8,8 +8,8 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    using C1.Win.C1FlexGrid;
-    using C1.Win.C1SpellChecker;
+    using C1.Win.FlexGrid;
+    using C1.Win.SpellChecker;
     using C1.Win.Drawing;
 
     public partial class Form1 : Form
@@ -24,7 +24,7 @@ namespace WindowsFormsApplication2
             this.c1FlexGrid1.AutoSizeCol(1);            
         }
 
-        private void c1FlexGrid1_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void c1FlexGrid1_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             // draw cell as usual
             e.DrawCell();

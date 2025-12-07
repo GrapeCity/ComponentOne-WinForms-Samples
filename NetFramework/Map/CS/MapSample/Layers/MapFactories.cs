@@ -27,8 +27,11 @@ namespace MapSample.Layers
 
         protected override void InitMap()
         {
+
             base.InitMap();
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
             c1Map1.Viewport.Zoom = 2.5;
+
             using (var stream = MapReader.OpenFile("Resources\\database.xml"))
             {
                 var serializer = new XmlSerializer(typeof (DataBase));

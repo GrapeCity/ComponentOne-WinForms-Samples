@@ -1,4 +1,4 @@
-namespace C1SpellCheckerSpeed
+﻿namespace C1SpellCheckerSpeed
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace C1SpellCheckerSpeed
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -35,7 +38,7 @@ namespace C1SpellCheckerSpeed
             this._lblSpeed = new System.Windows.Forms.Label();
             this._lblWords = new System.Windows.Forms.Label();
             this._lblTime = new System.Windows.Forms.Label();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
@@ -105,8 +108,8 @@ namespace C1SpellCheckerSpeed
             // 
             // c1SpellChecker1
             // 
-            this.c1SpellChecker1.Options.Ignore = ((C1.Win.C1SpellChecker.IgnoreOptions)(((C1.Win.C1SpellChecker.IgnoreOptions.Numbers | C1.Win.C1SpellChecker.IgnoreOptions.MixedCase)
-                        | C1.Win.C1SpellChecker.IgnoreOptions.Urls)));
+            this.c1SpellChecker1.Options.Ignore = ((C1.Win.SpellChecker.IgnoreOptions)(((C1.Win.SpellChecker.IgnoreOptions.Numbers | C1.Win.SpellChecker.IgnoreOptions.MixedCase)
+                        | C1.Win.SpellChecker.IgnoreOptions.Urls)));
             // 
             // button2
             // 
@@ -156,7 +159,7 @@ namespace C1SpellCheckerSpeed
 
         #endregion
 
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label _lblNotFound;

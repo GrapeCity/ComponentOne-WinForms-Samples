@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panelSamples = new System.Windows.Forms.TableLayoutPanel();
             this.panelSample = new System.Windows.Forms.Panel();

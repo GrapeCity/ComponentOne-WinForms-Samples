@@ -34,7 +34,7 @@ namespace FinancialChartExplorer.Samples
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1MovingAverage = new C1.Win.C1Input.C1ComboBox();
+            this.c1MovingAverage = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.period = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
@@ -93,7 +93,6 @@ namespace FinancialChartExplorer.Samples
             this.c1MovingAverage.AllowSpinLoop = false;
             this.c1MovingAverage.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1MovingAverage.GapHeight = 5;
-            this.c1MovingAverage.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1MovingAverage.Location = new System.Drawing.Point(237, 17);
             this.c1MovingAverage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1MovingAverage.Name = "c1MovingAverage";
@@ -117,8 +116,6 @@ namespace FinancialChartExplorer.Samples
             // 
             // period
             // 
-            this.period.GapHeight = 0;
-            this.period.ImagePadding = new System.Windows.Forms.Padding(0);
             this.period.Location = new System.Drawing.Point(439, 18);
             this.period.Name = "period";
             this.period.Size = new System.Drawing.Size(62, 22);
@@ -130,7 +127,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.period.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.period.ValueChanged += new System.EventHandler(this.period_ValueChanged_1);
             // 
             // financialChart1
@@ -236,7 +232,7 @@ namespace FinancialChartExplorer.Samples
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private C1.Win.C1Input.C1ComboBox c1MovingAverage;
+        private C1.Win.Input.C1ComboBox c1MovingAverage;
         private C1NumericEditEx period;
     }
 }

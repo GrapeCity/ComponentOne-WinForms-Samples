@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Gauge;
+﻿using C1.Win.Gauge;
 
 namespace DashboardWinForms
 {
@@ -30,10 +30,10 @@ namespace DashboardWinForms
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1FlexGrid.FooterDescription footerDescription1 = new C1.Win.C1FlexGrid.FooterDescription();
-            C1.Win.C1FlexGrid.AggregateDefinition aggregateDefinition1 = new C1.Win.C1FlexGrid.AggregateDefinition();
-            C1.Win.C1FlexGrid.AggregateDefinition aggregateDefinition2 = new C1.Win.C1FlexGrid.AggregateDefinition();
-            C1.Win.C1FlexGrid.AggregateDefinition aggregateDefinition3 = new C1.Win.C1FlexGrid.AggregateDefinition();
+            C1.Win.FlexGrid.FooterDescription footerDescription1 = new C1.Win.FlexGrid.FooterDescription();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition1 = new C1.Win.FlexGrid.AggregateDefinition();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition2 = new C1.Win.FlexGrid.AggregateDefinition();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition3 = new C1.Win.FlexGrid.AggregateDefinition();
             C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
             C1.Chart.ElementSize elementSize3 = new C1.Chart.ElementSize();
@@ -41,27 +41,27 @@ namespace DashboardWinForms
             this.chartCurrProfitVSPriorProfit = new C1.Win.Chart.FlexChart();
             this.chartSalesVsProfit = new C1.Win.Chart.FlexChart();
             this.chartSaleTopProd = new C1.Win.Chart.FlexChart();
-            this.gridTopSaleCustomer = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer3 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel6 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel7 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer4 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel8 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel9 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer2 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.splPan1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.gridTopSaleCustomer = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer3 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel6 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel7 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer4 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel8 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel9 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer2 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.splPan1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.panGauges1 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labUnits1 = new System.Windows.Forms.Label();
-            this.splPan2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.splPan2 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.panGauges2 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labUnits2 = new System.Windows.Forms.Label();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.chartCurrProfitVSPriorProfit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSalesVsProfit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSaleTopProd)).BeginInit();
@@ -190,16 +190,16 @@ namespace DashboardWinForms
             // gridTopSaleCustomer
             // 
             this.gridTopSaleCustomer.BackColor = System.Drawing.Color.White;
-            this.gridTopSaleCustomer.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.gridTopSaleCustomer.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.gridTopSaleCustomer.ColumnInfo = "10,1,0,0,0,120,Columns:";
             aggregateDefinition1.PropertyName = "Name";
             aggregateDefinition1.Caption = "Total:";
             aggregateDefinition2.PropertyName = "Sales";
             aggregateDefinition2.Caption = "{0:C0}";
-            aggregateDefinition2.Aggregate = C1.Win.C1FlexGrid.AggregateEnum.Sum;
+            aggregateDefinition2.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
             aggregateDefinition3.PropertyName = "Profit";
             aggregateDefinition3.Caption = "{0:C0}";
-            aggregateDefinition3.Aggregate = C1.Win.C1FlexGrid.AggregateEnum.Sum;
+            aggregateDefinition3.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
             footerDescription1.Aggregates.Add(aggregateDefinition1);
             footerDescription1.Aggregates.Add(aggregateDefinition2);
             footerDescription1.Aggregates.Add(aggregateDefinition3);
@@ -209,7 +209,7 @@ namespace DashboardWinForms
             this.gridTopSaleCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.gridTopSaleCustomer.Location = new System.Drawing.Point(0, 40);
             this.gridTopSaleCustomer.Name = "gridTopSaleCustomer";
-            this.gridTopSaleCustomer.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.gridTopSaleCustomer.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.gridTopSaleCustomer.Size = new System.Drawing.Size(275, 169);
             this.gridTopSaleCustomer.StyleInfo = resources.GetString("gridTopSaleCustomer.StyleInfo");
             this.gridTopSaleCustomer.TabIndex = 4;
@@ -243,7 +243,7 @@ namespace DashboardWinForms
             // c1SplitterPanel1
             // 
             this.c1SplitterPanel1.Controls.Add(this.c1SplitContainer3);
-            this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 0);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
             this.c1SplitterPanel1.Size = new System.Drawing.Size(553, 446);
@@ -321,7 +321,7 @@ namespace DashboardWinForms
             // c1SplitterPanel8
             // 
             this.c1SplitterPanel8.Controls.Add(this.chartSaleTopProd);
-            this.c1SplitterPanel8.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel8.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel8.Location = new System.Drawing.Point(0, 0);
             this.c1SplitterPanel8.Name = "c1SplitterPanel8";
             this.c1SplitterPanel8.Size = new System.Drawing.Size(276, 209);
@@ -523,26 +523,26 @@ namespace DashboardWinForms
         private C1.Win.Chart.FlexChart chartCurrProfitVSPriorProfit;
         private C1.Win.Chart.FlexChart chartSalesVsProfit;
         private C1.Win.Chart.FlexChart chartSaleTopProd;
-        private C1.Win.C1FlexGrid.C1FlexGrid gridTopSaleCustomer;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel6;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel7;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer4;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel8;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel9;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel splPan1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
-        private C1.Win.C1SplitContainer.C1SplitterPanel splPan2;
+        private C1.Win.FlexGrid.C1FlexGrid gridTopSaleCustomer;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel6;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel7;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel8;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel9;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer2;
+        private C1.Win.SplitContainer.C1SplitterPanel splPan1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel splPan2;
         private System.Windows.Forms.Panel panGauges2;
         private System.Windows.Forms.Panel panGauges1;
         private System.Windows.Forms.Label labUnits1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labUnits2;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }

@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 
 namespace DashboardLayoutDemo.Controls
 {

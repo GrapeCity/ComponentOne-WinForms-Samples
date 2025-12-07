@@ -133,6 +133,7 @@ namespace MapExplorer.Samples.Layers
 
         #endregion
 
+        [DefaultValue(null)]
         public ToolTip ToolTip { get; set; }
 
         public C1Map Map { get { return _map; } }

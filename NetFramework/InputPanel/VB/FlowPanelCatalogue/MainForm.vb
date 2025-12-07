@@ -1,5 +1,5 @@
-﻿Imports C1.Win.C1InputPanel
-Imports C1.Win.C1Themes
+﻿Imports C1.Win.InputPanel
+Imports C1.Win.Themes
 Imports C1.Win.Ribbon
 Imports FlowPanelCatalogue.FlowPanelCatalogue
 Imports Microsoft.Data.Sqlite

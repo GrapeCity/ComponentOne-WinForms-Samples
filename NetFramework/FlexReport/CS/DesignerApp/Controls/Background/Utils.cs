@@ -15,7 +15,7 @@ using System.Text;
 using System.Globalization;
 using System.Drawing.Imaging;
 using C1.Document;
-using C1.Win.C1Document.Util;
+using C1.Win.Document.Util;
 using C1.Util.Win;
 using NSD = C1.Interop;
 

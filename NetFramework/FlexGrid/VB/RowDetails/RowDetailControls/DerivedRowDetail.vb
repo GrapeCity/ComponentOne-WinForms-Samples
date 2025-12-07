@@ -1,5 +1,5 @@
-﻿Imports C1.Win.C1FlexGrid
-Imports C1.Win.C1InputPanel
+﻿Imports C1.Win.FlexGrid
+Imports C1.Win.InputPanel
 
 Public Class DerivedRowDetail
 

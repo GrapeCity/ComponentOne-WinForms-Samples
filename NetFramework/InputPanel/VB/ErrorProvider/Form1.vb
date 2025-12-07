@@ -49,7 +49,7 @@ Public Class Form1
         inputCheckBox2.ErrorText = S
     End Sub
 
-    Private Function BuildErrorTip(ByVal c As C1.Win.C1InputPanel.InputComponent, ByVal err As String) As String
+    Private Function BuildErrorTip(ByVal c As C1.Win.InputPanel.InputComponent, ByVal err As String) As String
         Return String.Format( _
             "{0}<table style='background-color:#FFDDDD'>" + _
             "<tr style='vertical-align:top;'>" + _

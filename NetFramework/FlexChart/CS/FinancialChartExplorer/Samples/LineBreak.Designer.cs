@@ -34,7 +34,7 @@ namespace FinancialChartExplorer.Samples
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
+            this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -96,8 +96,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.AllowSpinLoop = false;
             this.c1ComboBox1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1ComboBox1.GapHeight = 5;
-            this.c1ComboBox1.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.c1ComboBox1.InitialSelectedIndex = 0;
             this.c1ComboBox1.ItemsDisplayMember = "Name";
             this.c1ComboBox1.ItemsValueMember = "Symbol";
             this.c1ComboBox1.Location = new System.Drawing.Point(97, 2);
@@ -107,7 +105,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.TabIndex = 2;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.c1ComboBox1.TextDetached = true;
             this.c1ComboBox1.TranslateValue = true;
             this.c1ComboBox1.Value = "";
             this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
@@ -215,8 +212,6 @@ namespace FinancialChartExplorer.Samples
             // newLineBreaks
             // 
             this.newLineBreaks.AutoSize = false;
-            this.newLineBreaks.GapHeight = 0;
-            this.newLineBreaks.ImagePadding = new System.Windows.Forms.Padding(0);
             this.newLineBreaks.Location = new System.Drawing.Point(262, 18);
             this.newLineBreaks.Name = "newLineBreaks";
             this.newLineBreaks.Size = new System.Drawing.Size(42, 21);
@@ -228,7 +223,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.newLineBreaks.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.newLineBreaks.ValueChanged += new System.EventHandler(this.newLineBreaks_ValueChanged);
             // 
             // LineBreak
@@ -262,7 +256,7 @@ namespace FinancialChartExplorer.Samples
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label2;
-        private C1.Win.C1Input.C1ComboBox c1ComboBox1;
+        private C1.Win.Input.C1ComboBox c1ComboBox1;
         private C1NumericEditEx newLineBreaks;
     }
 }

@@ -1,6 +1,6 @@
-Imports C1.Win.C1Schedule
-Imports C1.C1Schedule
-Imports C1.Win.C1Schedule.UI
+Imports C1.Win.Schedule
+Imports C1.Schedule
+Imports C1.Win.Schedule.UI
 
 Public Class Form1
 

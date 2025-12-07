@@ -25,12 +25,12 @@ namespace ControlExplorer.DataCollection
         {
             InitializeComponent();
             c1FlexGrid1.Tree.Column = 0;
-            c1FlexGrid1.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.Symbols;
+            c1FlexGrid1.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.Symbols;
             c1FlexGrid1.Cols[2].StyleNew.WordWrap = true;
             c1FlexGrid1.Cols[0].Width = 20;
             c1FlexGrid1.Cols[1].Width = 120;
-            c1FlexGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Nodes;
-            c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            c1FlexGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Nodes;
+            c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
             c1FlexGrid1.DoubleClick += C1FlexGrid1_DoubleClick;
             LoadData();
         }

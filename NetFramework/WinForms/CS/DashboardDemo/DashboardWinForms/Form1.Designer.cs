@@ -30,23 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._toolBar = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.cmdDashboard = new C1.Win.C1Command.C1Command();
-            this.cmdAnalysis = new C1.Win.C1Command.C1Command();
-            this.cmdReporting = new C1.Win.C1Command.C1Command();
-            this.cmdTasks = new C1.Win.C1Command.C1Command();
-            this.cmdProducts = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenu1 = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._toolBar = new C1.Win.Command.C1ToolBar();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.cmdDashboard = new C1.Win.Command.C1Command();
+            this.cmdAnalysis = new C1.Win.Command.C1Command();
+            this.cmdReporting = new C1.Win.Command.C1Command();
+            this.cmdTasks = new C1.Win.Command.C1Command();
+            this.cmdProducts = new C1.Win.Command.C1Command();
+            this.c1CommandMenu1 = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1OutPage1 = new C1.Win.C1Command.C1OutPage();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.c1OutPage1 = new C1.Win.Command.C1OutPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this._btnHamb = new System.Windows.Forms.Button();
@@ -69,11 +70,11 @@
             this._toolBar.AccessibleName = "Tool Bar";
             this._toolBar.AutoSize = false;
             this._toolBar.ButtonAlign = System.Drawing.StringAlignment.Near;
-            this._toolBar.ButtonLayoutVert = C1.Win.C1Command.ButtonLayoutEnum.TextOnRight;
-            this._toolBar.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this._toolBar.ButtonLayoutVert = C1.Win.Command.ButtonLayoutEnum.TextOnRight;
+            this._toolBar.ButtonLookVert = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this._toolBar.ButtonWidth = 16;
             this._toolBar.CommandHolder = this.c1CommandHolder1;
-            this._toolBar.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this._toolBar.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink2,
             this.c1CommandLink3,
@@ -91,8 +92,8 @@
             this._toolBar.Size = new System.Drawing.Size(267, 324);
             this._toolBar.Text = "c1ToolBar1";
             this.c1ThemeController1.SetTheme(this._toolBar, "(default)");
-            this._toolBar.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this._toolBar.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this._toolBar.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this._toolBar.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             this._toolBar.WrapText = true;
             // 
             // c1CommandHolder1
@@ -113,7 +114,7 @@
             this.cmdDashboard.ShortcutText = "";
             this.cmdDashboard.Text = "Dashboard";
             this.cmdDashboard.Virgin = false;
-            this.cmdDashboard.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
+            this.cmdDashboard.Click += new C1.Win.Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdAnalysis
             // 
@@ -122,7 +123,7 @@
             this.cmdAnalysis.ShortcutText = "";
             this.cmdAnalysis.Text = "Analysis";
             this.cmdAnalysis.Virgin = false;
-            this.cmdAnalysis.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
+            this.cmdAnalysis.Click += new C1.Win.Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdReporting
             // 
@@ -131,7 +132,7 @@
             this.cmdReporting.ShortcutText = "";
             this.cmdReporting.Text = "Reporting";
             this.cmdReporting.Virgin = false;
-            this.cmdReporting.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
+            this.cmdReporting.Click += new C1.Win.Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdTasks
             // 
@@ -140,7 +141,7 @@
             this.cmdTasks.ShortcutText = "";
             this.cmdTasks.Text = "Tasks";
             this.cmdTasks.Virgin = false;
-            this.cmdTasks.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
+            this.cmdTasks.Click += new C1.Win.Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdProducts
             // 
@@ -149,18 +150,18 @@
             this.cmdProducts.ShortcutText = "";
             this.cmdProducts.Text = "Products";
             this.cmdProducts.Virgin = false;
-            this.cmdProducts.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
+            this.cmdProducts.Click += new C1.Win.Command.ClickEventHandler(this.cmd_Click);
             // 
             // c1CommandMenu1
             // 
-            this.c1CommandMenu1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink6});
             this.c1CommandMenu1.Name = "c1CommandMenu1";
             this.c1CommandMenu1.ShortcutText = "";
             this.c1ThemeController1.SetTheme(this.c1CommandMenu1, "(default)");
             this.c1CommandMenu1.Virgin = false;
-            this.c1CommandMenu1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1CommandMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu1.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.c1CommandMenu1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink6
             // 
@@ -346,23 +347,23 @@
         }
 
         #endregion
-        private C1.Win.C1Command.C1ToolBar _toolBar;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1Command cmdDashboard;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1Command cmdAnalysis;
-        private C1.Win.C1Command.C1Command cmdReporting;
-        private C1.Win.C1Command.C1Command cmdTasks;
-        private C1.Win.C1Command.C1Command cmdProducts;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1ToolBar _toolBar;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1Command cmdDashboard;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1Command cmdAnalysis;
+        private C1.Win.Command.C1Command cmdReporting;
+        private C1.Win.Command.C1Command cmdTasks;
+        private C1.Win.Command.C1Command cmdProducts;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1OutPage c1OutPage1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu1;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1OutPage c1OutPage1;
         private System.Windows.Forms.Button _btnHamb;
         private System.Windows.Forms.Panel _panMain;
         private System.Windows.Forms.Panel panel1;

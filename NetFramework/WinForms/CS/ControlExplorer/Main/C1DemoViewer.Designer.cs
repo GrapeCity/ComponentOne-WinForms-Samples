@@ -30,12 +30,12 @@
         {
             this.panelDemo = new System.Windows.Forms.Panel();
             this.panelProperties = new System.Windows.Forms.Panel();
-            this.c1CommandDock2 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab_Properties = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage_Properties = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTab_Demo = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage_Demo = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage_Code = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1CommandDock2 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab_Properties = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage_Properties = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTab_Demo = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage_Demo = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage_Code = new C1.Win.Command.C1DockingTabPage();
             this.c1CodeViewer1 = new ControlExplorer.Main.C1CodeViewer();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock2)).BeginInit();
             this.c1CommandDock2.SuspendLayout();
@@ -70,7 +70,7 @@
             // 
             this.c1CommandDock2.Controls.Add(this.c1DockingTab_Properties);
             this.c1CommandDock2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.c1CommandDock2.DockingStyle = C1.Win.C1Command.DockingStyle.VS2012;
+            this.c1CommandDock2.DockingStyle = C1.Win.Command.DockingStyle.VS2012;
             this.c1CommandDock2.Id = 3;
             this.c1CommandDock2.Location = new System.Drawing.Point(321, 0);
             this.c1CommandDock2.Name = "c1CommandDock2";
@@ -88,10 +88,10 @@
             this.c1DockingTab_Properties.Name = "c1DockingTab_Properties";
             this.c1DockingTab_Properties.ShowCaption = true;
             this.c1DockingTab_Properties.ShowSingleTab = false;
-            this.c1DockingTab_Properties.Size = new System.Drawing.Size(216, 402);
+            this.c1DockingTab_Properties.Size = new System.Drawing.Size(250, 402);
             this.c1DockingTab_Properties.TabIndex = 0;
-            this.c1DockingTab_Properties.TabLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
-            this.c1DockingTab_Properties.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab_Properties.TabLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
+            this.c1DockingTab_Properties.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             // 
             // c1DockingTabPage_Properties
             // 
@@ -119,9 +119,9 @@
             this.c1DockingTab_Demo.SplitterWidth = 5;
             this.c1DockingTab_Demo.TabAreaSpacing = 5;
             this.c1DockingTab_Demo.TabIndex = 4;
-            this.c1DockingTab_Demo.TabLook = C1.Win.C1Command.ButtonLookFlags.Text;
-            this.c1DockingTab_Demo.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2010;
-            this.c1DockingTab_Demo.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab_Demo.TabLook = C1.Win.Command.ButtonLookFlags.Text;
+            this.c1DockingTab_Demo.TabStyle = C1.Win.Command.TabStyleEnum.Office2010;
+            this.c1DockingTab_Demo.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             this.c1DockingTab_Demo.SelectedIndexChanged += new System.EventHandler(this.c1DockingTab1_SelectedIndexChanged);
             // 
             // c1DockingTabPage_Demo
@@ -180,13 +180,13 @@
 
         private System.Windows.Forms.Panel panelDemo;
         private System.Windows.Forms.Panel panelProperties;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock2;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab_Properties;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage_Properties;
+        private C1.Win.Command.C1CommandDock c1CommandDock2;
+        private C1.Win.Command.C1DockingTab c1DockingTab_Properties;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage_Properties;
         private Main.C1CodeViewer c1CodeViewer1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab_Demo;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage_Demo;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage_Code;
+        private C1.Win.Command.C1DockingTab c1DockingTab_Demo;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage_Demo;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage_Code;
 
     }
 }

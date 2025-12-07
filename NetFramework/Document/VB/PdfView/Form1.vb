@@ -1,5 +1,5 @@
 ﻿Imports System.IO
-Imports C1.Win.C1Document
+Imports C1.Win.Document
 Imports C1.Win.Ribbon
 
 Public Class Form1

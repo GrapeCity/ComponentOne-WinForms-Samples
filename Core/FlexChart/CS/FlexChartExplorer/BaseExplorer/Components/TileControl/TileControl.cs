@@ -5,6 +5,7 @@ using System.Collections.Specialized;
 using BaseExplorer.Utilities;
 using BaseExplorer.Core;
 using static C1.Util.Win.Win32;
+using System.ComponentModel;
 
 namespace BaseExplorer.Components
 {
@@ -13,7 +14,9 @@ namespace BaseExplorer.Components
         public ObservableCollection<TileGroup> Groups { get; private set; }
 
         private Color _hoverColor;
-        private string _theme = "Office365";
+        private string _theme = "Office365White";
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverColor
         {
             get
@@ -27,6 +30,7 @@ namespace BaseExplorer.Components
             }
         }
 
+        [DefaultValue("Office365White")]
         public string Theme 
         {
             get

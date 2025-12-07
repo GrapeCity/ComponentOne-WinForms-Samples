@@ -1,4 +1,4 @@
-﻿using C1.Win.C1GanttView;
+﻿using C1.Win.GanttView;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

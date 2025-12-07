@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.OleDb
 Imports System.Text
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Namespace ConditionalFormatting
 	Partial Public Class Form1
@@ -36,7 +36,7 @@ Namespace ConditionalFormatting
 		End Sub
 
 		Private Sub grid_OwnerDrawCell(ByVal sender As Object, ByVal e As OwnerDrawCellEventArgs)
-			Dim grid = TryCast(sender, C1.Win.C1FlexGrid.C1FlexGrid)
+			Dim grid = TryCast(sender, C1.Win.FlexGrid.C1FlexGrid)
 			If e.Row >= grid.Rows.Fixed AndAlso e.Col >= grid.Cols.Fixed AndAlso TypeOf grid(e.Row, e.Col) Is Double Then
 				Dim value = CDbl(grid(e.Row, e.Col))
 				If value > BIGVALUE Then

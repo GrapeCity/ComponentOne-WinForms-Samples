@@ -36,8 +36,8 @@ Partial Class FilterEditorForm
         Me.btnReset = New C1.Win.C1Input.C1Button()
         Me.btnApply = New C1.Win.C1Input.C1Button()
         Me.filterEditor = New C1.Win.DataFilter.C1FilterEditor()
-        Me.flexGrid = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
+        Me.flexGrid = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
         CType(Me.ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.splitContainer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer.Panel1.SuspendLayout()
@@ -179,7 +179,7 @@ Partial Class FilterEditorForm
         Me.flexGrid.Location = New System.Drawing.Point(0, 0)
         Me.flexGrid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.flexGrid.Name = "flexGrid"
-        Me.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.flexGrid.Size = New System.Drawing.Size(579, 690)
         Me.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo")
         Me.flexGrid.TabIndex = 0
@@ -227,9 +227,9 @@ Partial Class FilterEditorForm
     Friend WithEvents ribbonTopToolBar As C1.Win.Ribbon.RibbonTopToolBar
     Friend WithEvents ribbonCmbThemes As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents splitContainer As System.Windows.Forms.SplitContainer
-    Friend WithEvents flexGrid As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flexGrid As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents filterEditor As C1.Win.DataFilter.C1FilterEditor
     Friend WithEvents btnApply As C1.Win.C1Input.C1Button
     Friend WithEvents btnReset As C1.Win.C1Input.C1Button
-    Friend WithEvents themeController As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents themeController As C1.Win.Themes.C1ThemeController
 End Class

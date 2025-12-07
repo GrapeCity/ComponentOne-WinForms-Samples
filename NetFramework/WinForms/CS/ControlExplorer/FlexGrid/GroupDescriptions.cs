@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,8 +50,8 @@ namespace ControlExplorer.FlexGrid
             else
             {
                 // change FlexGrid grouping according to the end-user selection
-                C1.Win.C1FlexGrid.GroupDescription gd = new C1.Win.C1FlexGrid.GroupDescription((string)cmbGroup.SelectedItem);
-                flexGrid.GroupDescriptions = new List<C1.Win.C1FlexGrid.GroupDescription>() { gd };
+                C1.Win.FlexGrid.GroupDescription gd = new C1.Win.FlexGrid.GroupDescription((string)cmbGroup.SelectedItem);
+                flexGrid.GroupDescriptions = new List<C1.Win.FlexGrid.GroupDescription>() { gd };
             }
         }
 

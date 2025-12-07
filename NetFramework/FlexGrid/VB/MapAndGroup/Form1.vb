@@ -29,13 +29,13 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-   Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+   Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
    Friend WithEvents LoadBtn As System.Windows.Forms.Button
    Friend WithEvents SortBtn As System.Windows.Forms.Button
    Friend WithEvents OutlineBtn As System.Windows.Forms.Button
    Friend WithEvents MapBtn As System.Windows.Forms.Button
    <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.LoadBtn = New System.Windows.Forms.Button()
         Me.SortBtn = New System.Windows.Forms.Button()
         Me.OutlineBtn = New System.Windows.Forms.Button()
@@ -45,7 +45,7 @@ Public Class Form1
         '
         'C1FlexGrid1
         '
-        Me.C1FlexGrid1.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
+        Me.C1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
         Me.C1FlexGrid1.Anchor = (((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right)
@@ -54,7 +54,7 @@ Public Class Form1
         Me.C1FlexGrid1.Location = New System.Drawing.Point(10, 10)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
         Me.C1FlexGrid1.Size = New System.Drawing.Size(676, 296)
-        Me.C1FlexGrid1.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid1.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -119,9 +119,9 @@ Public Class Form1
     Private Sub LoadBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LoadBtn.Click
 
         With C1FlexGrid1
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear)
-            .Clear(C1.Win.C1FlexGrid.ClearFlags.All)
-            .Sort(C1.Win.C1FlexGrid.SortFlags.None, 0, .Cols.Count - 1)
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear)
+            .Clear(C1.Win.FlexGrid.ClearFlags.All)
+            .Sort(C1.Win.FlexGrid.SortFlags.None, 0, .Cols.Count - 1)
             .Cols(1).DataMap = Nothing
             .Cols(2).DataMap = Nothing
             .Cols(3).DataMap = Nothing
@@ -211,8 +211,8 @@ Public Class Form1
         With C1FlexGrid1
             .Cols(1).Visible = False
             .Tree.Column = 2
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.None, 0, 1, 1, 2, "Manager: {0}")
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.None, 1, 2, 2, 3, "Employee: {0}")
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.None, 0, 1, 1, 2, "Manager: {0}")
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.None, 1, 2, 2, 3, "Employee: {0}")
             .AutoSizeCols()
 
             Dim msg As String
@@ -223,7 +223,7 @@ Public Class Form1
     End Sub
 
     ' sort based on mapped values, not on the underlying data
-    Private Sub C1FlexGrid1_BeforeSort(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.SortColEventArgs) Handles C1FlexGrid1.BeforeSort
-        e.Order = e.Order Or C1.Win.C1FlexGrid.SortFlags.AsDisplayed
+    Private Sub C1FlexGrid1_BeforeSort(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.SortColEventArgs) Handles C1FlexGrid1.BeforeSort
+        e.Order = e.Order Or C1.Win.FlexGrid.SortFlags.AsDisplayed
     End Sub
 End Class

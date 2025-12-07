@@ -290,6 +290,7 @@ namespace FlexReportDesignerApp.Forms
             get { return pbGlyph; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool IsSelectedEditor
         {
             get { return false; }
@@ -312,17 +313,21 @@ namespace FlexReportDesignerApp.Forms
             }
         }
 
+        [DefaultValue(typeof(Color), "Empty")]
         public Font EditorFont
         {
             get { return _txtScript.Font; }
             set { _txtScript.Font = value; }
         }
 
+        [DefaultValue(typeof(Color), "Empty")]
         public Color EditorBackgroundColor
         {
             get { return _txtScript.BackColor; }
             set { _txtScript.BackColor = value; }
         }
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color EditorTextColor
         {
             get { return _txtScript.ForeColor; }
@@ -340,12 +345,14 @@ namespace FlexReportDesignerApp.Forms
             }
         }
 
+        [DefaultValue(false)]
         public bool IsCurrentScriptDirty
         {
             get { return _currentScriptIsDirty; }
             internal set { _currentScriptIsDirty = value; }
         }
 
+        [DefaultValue(false)]
         public bool SyntaxAutoCheck { get; set; }
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
@@ -386,6 +393,7 @@ namespace FlexReportDesignerApp.Forms
             }
         }
 
+        [DefaultValue(false)]
         public bool AutoSaveCurrentScript { get; set; }
 
         public enum SetCurrentScriptItemContext

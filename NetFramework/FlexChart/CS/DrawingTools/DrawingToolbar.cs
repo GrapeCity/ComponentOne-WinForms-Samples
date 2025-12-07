@@ -143,7 +143,7 @@ namespace DrawingTools
 
         void AddSplitButton(ToolStripSplitButton btn)
         {
-            btn.Click += (s, e) => btn.DropDown.Show();
+            btn.Click += (s, e) => btn.ShowDropDown();
             _ts.Items.Add(btn);
         }
 
@@ -281,7 +281,7 @@ namespace DrawingTools
                 btn.Image = e.ClickedItem.Image;
                 pi.SetValue(obj, (Color)e.ClickedItem.Tag);
             };
-            btn.Click += (s, e) => btn.DropDown.Show();
+            btn.Click += (s, e) => btn.ShowDropDown();
             btn.Image = CreateBitmap( (Color)pi.GetValue(obj));
             btn.Text = pi.Name;
             return btn;
@@ -302,7 +302,7 @@ namespace DrawingTools
                     val = int.Parse(e.ClickedItem.Text);
                 pi.SetValue(obj, val);
             };
-            btn.Click += (s, e) => btn.DropDown.Show();
+            btn.Click += (s, e) => btn.ShowDropDown();
             btn.Text = string.Format("{0}: {1}", pi.Name, pi.GetValue(obj));
             return btn;
         }

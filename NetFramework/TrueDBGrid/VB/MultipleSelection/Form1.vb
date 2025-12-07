@@ -30,7 +30,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
@@ -38,7 +38,7 @@ Public Class Form1
     Friend WithEvents OleDbDeleteCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents DataSet11 As MultipleSelection.DataSet1
-    Friend WithEvents C1TrueDBGrid2 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid2 As C1.Win.TrueDBGrid.C1TrueDBGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
@@ -48,7 +48,7 @@ Public Class Form1
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.DataSet11 = New MultipleSelection.DataSet1()
-        Me.C1TrueDBGrid2 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid2 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1TrueDBGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -156,7 +156,7 @@ Public Class Form1
         _changingSelection = False
     End Sub
 
-    Private Sub C1TrueDBGrid2_SelChange(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.CancelEventArgs) Handles C1TrueDBGrid2.SelChange
+    Private Sub C1TrueDBGrid2_SelChange(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.CancelEventArgs) Handles C1TrueDBGrid2.SelChange
         ' this event is fired when the selection is about to change (usually in response to a row or column change)
         ' setting e.Cancel prevents the collection from being cleared
         If (Not _changingSelection) Then

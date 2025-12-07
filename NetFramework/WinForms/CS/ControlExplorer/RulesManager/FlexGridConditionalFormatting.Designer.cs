@@ -45,12 +45,12 @@
             this.ribbonCheckBoxRangeSelector = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonCheckBoxCondition = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.commandDock = new C1.Win.C1Command.C1CommandDock();
-            this.dockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.dockingTabPageConditionalFormatting = new C1.Win.C1Command.C1DockingTabPage();
+            this.commandDock = new C1.Win.Command.C1CommandDock();
+            this.dockingTab = new C1.Win.Command.C1DockingTab();
+            this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
             this.rulesManager = new C1.Win.RulesManager.C1RulesManager();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.superTooltip = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
+            this.superTooltip = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).BeginInit();
             this.commandDock.SuspendLayout();
@@ -198,12 +198,12 @@
             this.dockingTab.ShowSingleTab = false;
             this.dockingTab.Size = new System.Drawing.Size(200, 709);
             this.dockingTab.TabIndex = 0;
-            this.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.dockingTab.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.dockingTab.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Silver;
+            this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
+            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -227,7 +227,7 @@
             // 
             // flexGrid
             // 
-            this.flexGrid.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
+            this.flexGrid.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.rulesManager.SetC1RulesManager(this.flexGrid, this.rulesManager);
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -235,7 +235,7 @@
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Location = new System.Drawing.Point(0, 43);
             this.flexGrid.Name = "flexGrid";
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(892, 709);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
@@ -243,7 +243,7 @@
             // 
             // superTooltip
             // 
-            this.superTooltip.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.None;
+            this.superTooltip.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None;
             this.superTooltip.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.superTooltip.Font = new System.Drawing.Font("Tahoma", 8F);
             this.superTooltip.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
@@ -282,11 +282,11 @@
         private C1.Win.Ribbon.RibbonTab ribbonTab;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar;
         private C1.Win.Ribbon.RibbonGroup ribbonGroupConditionalFormatting;
-        private C1.Win.C1Command.C1CommandDock commandDock;
-        private C1.Win.C1Command.C1DockingTab dockingTab;
-        private C1.Win.C1Command.C1DockingTabPage dockingTabPageConditionalFormatting;
+        private C1.Win.Command.C1CommandDock commandDock;
+        private C1.Win.Command.C1DockingTab dockingTab;
+        private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private C1.Win.Ribbon.RibbonToggleButton ribbonToggleButtonManageRules;
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxHeader;
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxAddButton;
@@ -294,7 +294,7 @@
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxRuleName;
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxRangeSelector;
         private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBoxCondition;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip superTooltip;
+        private C1.Win.SuperTooltip.C1SuperTooltip superTooltip;
     }
 }
 

@@ -9,7 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using C1.Win.Chart.Interaction;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Framework;
 
 namespace CurrencyComparison

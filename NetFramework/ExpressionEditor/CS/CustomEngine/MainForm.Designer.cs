@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -44,7 +45,7 @@
             this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ExpressionEditor1 = new C1.Win.ExpressionEditor.C1ExpressionEditor();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             this.lbResult = new System.Windows.Forms.ListBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -244,7 +245,7 @@
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private C1.Win.ExpressionEditor.C1ExpressionEditor c1ExpressionEditor1;
         private C1.Win.Ribbon.RibbonTab ribbonTab2;

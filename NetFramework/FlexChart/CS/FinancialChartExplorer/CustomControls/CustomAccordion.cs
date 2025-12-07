@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows.Forms;
 using C1.Framework;
 using System.Xml.Linq;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace FinancialChartExplorer.CustomControls

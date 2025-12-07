@@ -23,60 +23,60 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim ImageElement1 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim ImageElement2 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement1 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement1 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim ImageElement3 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim ImageElement4 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim ImageElement5 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement2 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement6 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement3 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement7 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim ImageElement8 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
+        Dim ImageElement1 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim ImageElement2 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement1 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement1 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim ImageElement3 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim ImageElement4 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim ImageElement5 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement2 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement6 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement3 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement7 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim ImageElement8 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.c1TileControl1 = New C1.Win.C1Tile.C1TileControl
-        Me.group1 = New C1.Win.C1Tile.Group
-        Me.tile1 = New C1.Win.C1Tile.Tile
-        Me.template1 = New C1.Win.C1Tile.Template
-        Me.tile2 = New C1.Win.C1Tile.Tile
-        Me.tile3 = New C1.Win.C1Tile.Tile
-        Me.group2 = New C1.Win.C1Tile.Group
-        Me.tile4 = New C1.Win.C1Tile.Tile
-        Me.template2 = New C1.Win.C1Tile.Template
-        Me.tile5 = New C1.Win.C1Tile.Tile
-        Me.tile6 = New C1.Win.C1Tile.Tile
-        Me.group3 = New C1.Win.C1Tile.Group
-        Me.tile7 = New C1.Win.C1Tile.Tile
-        Me.template3 = New C1.Win.C1Tile.Template
-        Me.tile8 = New C1.Win.C1Tile.Tile
-        Me.tile9 = New C1.Win.C1Tile.Tile
-        Me.group4 = New C1.Win.C1Tile.Group
-        Me.tile10 = New C1.Win.C1Tile.Tile
-        Me.template4 = New C1.Win.C1Tile.Template
-        Me.tile11 = New C1.Win.C1Tile.Tile
-        Me.tile12 = New C1.Win.C1Tile.Tile
-        Me.group5 = New C1.Win.C1Tile.Group
-        Me.tile13 = New C1.Win.C1Tile.Tile
-        Me.template5 = New C1.Win.C1Tile.Template
-        Me.tile14 = New C1.Win.C1Tile.Tile
-        Me.tile15 = New C1.Win.C1Tile.Tile
-        Me.group6 = New C1.Win.C1Tile.Group
-        Me.tile16 = New C1.Win.C1Tile.Tile
-        Me.template6 = New C1.Win.C1Tile.Template
-        Me.tile17 = New C1.Win.C1Tile.Tile
-        Me.tile18 = New C1.Win.C1Tile.Tile
-        Me.group7 = New C1.Win.C1Tile.Group
-        Me.tile19 = New C1.Win.C1Tile.Tile
-        Me.template7 = New C1.Win.C1Tile.Template
-        Me.tile20 = New C1.Win.C1Tile.Tile
-        Me.tile21 = New C1.Win.C1Tile.Tile
-        Me.group8 = New C1.Win.C1Tile.Group
-        Me.tile22 = New C1.Win.C1Tile.Tile
-        Me.template8 = New C1.Win.C1Tile.Template
-        Me.tile23 = New C1.Win.C1Tile.Tile
-        Me.tile24 = New C1.Win.C1Tile.Tile
+        Me.c1TileControl1 = New C1.Win.Tile.C1TileControl
+        Me.group1 = New C1.Win.Tile.Group
+        Me.tile1 = New C1.Win.Tile.Tile
+        Me.template1 = New C1.Win.Tile.Template
+        Me.tile2 = New C1.Win.Tile.Tile
+        Me.tile3 = New C1.Win.Tile.Tile
+        Me.group2 = New C1.Win.Tile.Group
+        Me.tile4 = New C1.Win.Tile.Tile
+        Me.template2 = New C1.Win.Tile.Template
+        Me.tile5 = New C1.Win.Tile.Tile
+        Me.tile6 = New C1.Win.Tile.Tile
+        Me.group3 = New C1.Win.Tile.Group
+        Me.tile7 = New C1.Win.Tile.Tile
+        Me.template3 = New C1.Win.Tile.Template
+        Me.tile8 = New C1.Win.Tile.Tile
+        Me.tile9 = New C1.Win.Tile.Tile
+        Me.group4 = New C1.Win.Tile.Group
+        Me.tile10 = New C1.Win.Tile.Tile
+        Me.template4 = New C1.Win.Tile.Template
+        Me.tile11 = New C1.Win.Tile.Tile
+        Me.tile12 = New C1.Win.Tile.Tile
+        Me.group5 = New C1.Win.Tile.Group
+        Me.tile13 = New C1.Win.Tile.Tile
+        Me.template5 = New C1.Win.Tile.Template
+        Me.tile14 = New C1.Win.Tile.Tile
+        Me.tile15 = New C1.Win.Tile.Tile
+        Me.group6 = New C1.Win.Tile.Group
+        Me.tile16 = New C1.Win.Tile.Tile
+        Me.template6 = New C1.Win.Tile.Template
+        Me.tile17 = New C1.Win.Tile.Tile
+        Me.tile18 = New C1.Win.Tile.Tile
+        Me.group7 = New C1.Win.Tile.Group
+        Me.tile19 = New C1.Win.Tile.Tile
+        Me.template7 = New C1.Win.Tile.Template
+        Me.tile20 = New C1.Win.Tile.Tile
+        Me.tile21 = New C1.Win.Tile.Tile
+        Me.group8 = New C1.Win.Tile.Group
+        Me.tile22 = New C1.Win.Tile.Tile
+        Me.template8 = New C1.Win.Tile.Template
+        Me.tile23 = New C1.Win.Tile.Tile
+        Me.tile24 = New C1.Win.Tile.Tile
         Me.imageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
@@ -108,7 +108,7 @@ Partial Class Form1
         Me.c1TileControl1.ImageList = Me.imageList1
         Me.c1TileControl1.Location = New System.Drawing.Point(0, 0)
         Me.c1TileControl1.Name = "c1TileControl1"
-        Me.c1TileControl1.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical
+        Me.c1TileControl1.Orientation = C1.Win.Tile.LayoutOrientation.Vertical
         Me.c1TileControl1.PassthroughNavigation = True
         Me.c1TileControl1.Size = New System.Drawing.Size(632, 428)
         Me.c1TileControl1.TabIndex = 1
@@ -142,7 +142,7 @@ Partial Class Form1
         'template1
         '
         Me.template1.BackColor = System.Drawing.Color.SteelBlue
-        Me.template1.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template1.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template1.Description = "Template 1"
         Me.template1.Elements.Add(ImageElement2)
         Me.template1.Elements.Add(PanelElement1)
@@ -183,7 +183,7 @@ Partial Class Form1
         'template2
         '
         Me.template2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.template2.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template2.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template2.Description = "Template 2"
         Me.template2.Elements.Add(ImageElement3)
         Me.template2.Name = "template2"
@@ -216,16 +216,16 @@ Partial Class Form1
         '
         Me.tile7.HorizontalSize = 3
         Me.tile7.Name = "tile7"
-        Me.tile7.Symbol = C1.Win.C1Tile.TileSymbol.RunAsOtherUser
+        Me.tile7.Symbol = C1.Win.Tile.TileSymbol.RunAsOtherUser
         Me.tile7.Template = Me.template3
         '
         'template3
         '
         Me.template3.BackColor = System.Drawing.Color.MediumOrchid
-        Me.template3.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template3.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template3.Description = "Template 3"
-        ImageElement4.ImageSelector = C1.Win.C1Tile.ImageSelector.Symbol
-        ImageElement4.SymbolSize = C1.Win.C1Tile.SymbolSize.Image40x40
+        ImageElement4.ImageSelector = C1.Win.Tile.ImageSelector.Symbol
+        ImageElement4.SymbolSize = C1.Win.Tile.SymbolSize.Image40x40
         Me.template3.Elements.Add(ImageElement4)
         Me.template3.Name = "template3"
         '
@@ -234,7 +234,7 @@ Partial Class Form1
         Me.tile8.HorizontalSize = 3
         Me.tile8.LeftCell = 4
         Me.tile8.Name = "tile8"
-        Me.tile8.Symbol = C1.Win.C1Tile.TileSymbol.RunAsAdmin
+        Me.tile8.Symbol = C1.Win.Tile.TileSymbol.RunAsAdmin
         Me.tile8.Template = Me.template3
         '
         'tile9
@@ -242,7 +242,7 @@ Partial Class Form1
         Me.tile9.HorizontalSize = 3
         Me.tile9.LeftCell = 7
         Me.tile9.Name = "tile9"
-        Me.tile9.Symbol = C1.Win.C1Tile.TileSymbol.RunAsService
+        Me.tile9.Symbol = C1.Win.Tile.TileSymbol.RunAsService
         Me.tile9.Template = Me.template3
         '
         'group4
@@ -262,12 +262,12 @@ Partial Class Form1
         'template4
         '
         Me.template4.BackColor = System.Drawing.Color.LightGray
-        Me.template4.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template4.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template4.Description = "Template 4"
         ImageElement5.Image = Global.TileImages.My.Resources.Resources.Images
         ImageElement5.ImageColumns = 3
         ImageElement5.ImageRows = 2
-        ImageElement5.ImageSelector = C1.Win.C1Tile.ImageSelector.Unbound
+        ImageElement5.ImageSelector = C1.Win.Tile.ImageSelector.Unbound
         Me.template4.Elements.Add(ImageElement5)
         Me.template4.Name = "template4"
         '
@@ -306,10 +306,10 @@ Partial Class Form1
         'template5
         '
         Me.template5.BackColor = System.Drawing.Color.DimGray
-        Me.template5.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template5.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template5.Description = "Template 5"
         PanelElement2.BackColor = System.Drawing.Color.SeaGreen
-        ImageElement6.ImageSelector = C1.Win.C1Tile.ImageSelector.Number
+        ImageElement6.ImageSelector = C1.Win.Tile.ImageSelector.Number
         PanelElement2.Children.Add(ImageElement6)
         PanelElement2.Padding = New System.Windows.Forms.Padding(4)
         Me.template5.Elements.Add(PanelElement2)
@@ -348,9 +348,9 @@ Partial Class Form1
         'template6
         '
         Me.template6.BackColor = System.Drawing.Color.SlateBlue
-        Me.template6.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template6.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template6.Description = "Template 6"
-        ImageElement7.ImageSelector = C1.Win.C1Tile.ImageSelector.Stars
+        ImageElement7.ImageSelector = C1.Win.Tile.ImageSelector.Stars
         PanelElement3.Children.Add(ImageElement7)
         Me.template6.Elements.Add(PanelElement3)
         Me.template6.Name = "template6"
@@ -389,9 +389,9 @@ Partial Class Form1
         'template7
         '
         Me.template7.BackColor = System.Drawing.Color.LightCoral
-        Me.template7.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template7.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template7.Description = "Template 7"
-        ImageElement8.ImageSelector = C1.Win.C1Tile.ImageSelector.CommonImage1
+        ImageElement8.ImageSelector = C1.Win.Tile.ImageSelector.CommonImage1
         Me.template7.Elements.Add(ImageElement8)
         Me.template7.Name = "template7"
         '
@@ -429,7 +429,7 @@ Partial Class Form1
         'template8
         '
         Me.template8.BackColor = System.Drawing.Color.SeaGreen
-        Me.template8.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.template8.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         Me.template8.Description = "Template 8"
         Me.template8.Name = "template8"
         '
@@ -471,47 +471,47 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents c1TileControl1 As C1.Win.C1Tile.C1TileControl
-    Private WithEvents group1 As C1.Win.C1Tile.Group
-    Private WithEvents tile1 As C1.Win.C1Tile.Tile
-    Private WithEvents template1 As C1.Win.C1Tile.Template
-    Private WithEvents tile2 As C1.Win.C1Tile.Tile
-    Private WithEvents tile3 As C1.Win.C1Tile.Tile
-    Private WithEvents group2 As C1.Win.C1Tile.Group
-    Private WithEvents tile4 As C1.Win.C1Tile.Tile
-    Private WithEvents template2 As C1.Win.C1Tile.Template
-    Private WithEvents tile5 As C1.Win.C1Tile.Tile
-    Private WithEvents tile6 As C1.Win.C1Tile.Tile
-    Private WithEvents group3 As C1.Win.C1Tile.Group
-    Private WithEvents tile7 As C1.Win.C1Tile.Tile
-    Private WithEvents template3 As C1.Win.C1Tile.Template
-    Private WithEvents tile8 As C1.Win.C1Tile.Tile
-    Private WithEvents tile9 As C1.Win.C1Tile.Tile
-    Private WithEvents group4 As C1.Win.C1Tile.Group
-    Private WithEvents tile10 As C1.Win.C1Tile.Tile
-    Private WithEvents template4 As C1.Win.C1Tile.Template
-    Private WithEvents tile11 As C1.Win.C1Tile.Tile
-    Private WithEvents tile12 As C1.Win.C1Tile.Tile
-    Private WithEvents group5 As C1.Win.C1Tile.Group
-    Private WithEvents tile13 As C1.Win.C1Tile.Tile
-    Private WithEvents template5 As C1.Win.C1Tile.Template
-    Private WithEvents tile14 As C1.Win.C1Tile.Tile
-    Private WithEvents tile15 As C1.Win.C1Tile.Tile
-    Private WithEvents group6 As C1.Win.C1Tile.Group
-    Private WithEvents tile16 As C1.Win.C1Tile.Tile
-    Private WithEvents template6 As C1.Win.C1Tile.Template
-    Private WithEvents tile17 As C1.Win.C1Tile.Tile
-    Private WithEvents tile18 As C1.Win.C1Tile.Tile
-    Private WithEvents group7 As C1.Win.C1Tile.Group
-    Private WithEvents tile19 As C1.Win.C1Tile.Tile
-    Private WithEvents template7 As C1.Win.C1Tile.Template
-    Private WithEvents tile20 As C1.Win.C1Tile.Tile
-    Private WithEvents tile21 As C1.Win.C1Tile.Tile
-    Private WithEvents group8 As C1.Win.C1Tile.Group
-    Private WithEvents tile22 As C1.Win.C1Tile.Tile
-    Private WithEvents template8 As C1.Win.C1Tile.Template
-    Private WithEvents tile23 As C1.Win.C1Tile.Tile
-    Private WithEvents tile24 As C1.Win.C1Tile.Tile
+    Private WithEvents c1TileControl1 As C1.Win.Tile.C1TileControl
+    Private WithEvents group1 As C1.Win.Tile.Group
+    Private WithEvents tile1 As C1.Win.Tile.Tile
+    Private WithEvents template1 As C1.Win.Tile.Template
+    Private WithEvents tile2 As C1.Win.Tile.Tile
+    Private WithEvents tile3 As C1.Win.Tile.Tile
+    Private WithEvents group2 As C1.Win.Tile.Group
+    Private WithEvents tile4 As C1.Win.Tile.Tile
+    Private WithEvents template2 As C1.Win.Tile.Template
+    Private WithEvents tile5 As C1.Win.Tile.Tile
+    Private WithEvents tile6 As C1.Win.Tile.Tile
+    Private WithEvents group3 As C1.Win.Tile.Group
+    Private WithEvents tile7 As C1.Win.Tile.Tile
+    Private WithEvents template3 As C1.Win.Tile.Template
+    Private WithEvents tile8 As C1.Win.Tile.Tile
+    Private WithEvents tile9 As C1.Win.Tile.Tile
+    Private WithEvents group4 As C1.Win.Tile.Group
+    Private WithEvents tile10 As C1.Win.Tile.Tile
+    Private WithEvents template4 As C1.Win.Tile.Template
+    Private WithEvents tile11 As C1.Win.Tile.Tile
+    Private WithEvents tile12 As C1.Win.Tile.Tile
+    Private WithEvents group5 As C1.Win.Tile.Group
+    Private WithEvents tile13 As C1.Win.Tile.Tile
+    Private WithEvents template5 As C1.Win.Tile.Template
+    Private WithEvents tile14 As C1.Win.Tile.Tile
+    Private WithEvents tile15 As C1.Win.Tile.Tile
+    Private WithEvents group6 As C1.Win.Tile.Group
+    Private WithEvents tile16 As C1.Win.Tile.Tile
+    Private WithEvents template6 As C1.Win.Tile.Template
+    Private WithEvents tile17 As C1.Win.Tile.Tile
+    Private WithEvents tile18 As C1.Win.Tile.Tile
+    Private WithEvents group7 As C1.Win.Tile.Group
+    Private WithEvents tile19 As C1.Win.Tile.Tile
+    Private WithEvents template7 As C1.Win.Tile.Template
+    Private WithEvents tile20 As C1.Win.Tile.Tile
+    Private WithEvents tile21 As C1.Win.Tile.Tile
+    Private WithEvents group8 As C1.Win.Tile.Group
+    Private WithEvents tile22 As C1.Win.Tile.Tile
+    Private WithEvents template8 As C1.Win.Tile.Template
+    Private WithEvents tile23 As C1.Win.Tile.Tile
+    Private WithEvents tile24 As C1.Win.Tile.Tile
     Private WithEvents imageList1 As System.Windows.Forms.ImageList
 
 End Class

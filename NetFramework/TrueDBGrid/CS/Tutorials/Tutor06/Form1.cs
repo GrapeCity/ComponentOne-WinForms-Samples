@@ -12,7 +12,7 @@ namespace Tutorial_6
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
 		private Tutorial_6.DsContacts dsContacts1;
@@ -58,7 +58,7 @@ namespace Tutorial_6
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
 
 			this.dsContacts1 = new Tutorial_6.DsContacts();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
@@ -78,20 +78,20 @@ namespace Tutorial_6
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(16, 16);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(712, 144);
 			this.c1TrueDBGrid1.TabIndex = 0;
 			this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.C1TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
+			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
 			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"FirstName\" " +
 				"DataField=\"FirstName\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Le" +
 				"vel=\"0\" Caption=\"LastName\" DataField=\"LastName\"><ValueItems /><GroupInfo /></C1D" +
@@ -181,7 +181,7 @@ namespace Tutorial_6
 				"tyle parent=\"Style5\" me=\"Style157\" /><GroupHeaderStyle parent=\"Style1\" me=\"Style" +
 				"159\" /><GroupFooterStyle parent=\"Style1\" me=\"Style158\" /><Visible>True</Visible>" +
 				"<ColumnDivider>DarkGray,Single</ColumnDivider><Height>15</Height><DCIdx>7</DCIdx" +
-				"></C1DisplayColumn></internalCols></C1.Win.C1TrueDBGrid.MergeView></Splits><Name" +
+				"></C1DisplayColumn></internalCols></C1.Win.TrueDBGrid.MergeView></Splits><Name" +
 				"dStyles><Style parent=\"\" me=\"Normal\" /><Style parent=\"Normal\" me=\"Heading\" /><St" +
 				"yle parent=\"Heading\" me=\"Footer\" /><Style parent=\"Heading\" me=\"Caption\" /><Style" +
 				" parent=\"Heading\" me=\"Inactive\" /><Style parent=\"Normal\" me=\"Selected\" /><Style " +
@@ -258,7 +258,7 @@ namespace Tutorial_6
 			dtCopy = this.dsContacts1.Tables[0].Copy();
 		}
 
-		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs e)
+		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs e)
 		{
 			if(e.Col == 8 && e.Row < dtCopy.Rows.Count)
 			{

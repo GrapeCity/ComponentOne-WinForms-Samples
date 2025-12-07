@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 
 namespace ControlExplorer.Gauges
 {
@@ -19,7 +19,7 @@ namespace ControlExplorer.Gauges
 
         #region "Knob" RadialGauge
         int snapInterval = 10;
-        private void c1RadialGauge1_PointerDragMove(object sender, C1.Win.C1Gauge.PointerDragEventArgs e)
+        private void c1RadialGauge1_PointerDragMove(object sender, C1.Win.Gauge.PointerDragEventArgs e)
         {
             e.Pointer.UpdateValue(e.NewValue, snapInterval);
         }
@@ -34,14 +34,14 @@ namespace ControlExplorer.Gauges
         #endregion
 
         #region LinearGauge
-        private void c1LinearGauge1_PointerDragMove(object sender, C1.Win.C1Gauge.PointerDragEventArgs e)
+        private void c1LinearGauge1_PointerDragMove(object sender, C1.Win.Gauge.PointerDragEventArgs e)
         {
             e.Pointer.UpdateValue(e.NewValue, 1.0);
         }
 
         #endregion
 
-        private void c1LinearGauge1_ItemStateChanged(object sender, C1.Win.C1Gauge.ItemEventArgs e)
+        private void c1LinearGauge1_ItemStateChanged(object sender, C1.Win.Gauge.ItemEventArgs e)
         {
             if (e.Item is C1GaugePointer)
             {
@@ -92,7 +92,7 @@ namespace ControlExplorer.Gauges
             }
         }
 
-        private void c1LinearGauge1_ItemMouseDown(object sender, C1.Win.C1Gauge.ItemMouseEventArgs e)
+        private void c1LinearGauge1_ItemMouseDown(object sender, C1.Win.Gauge.ItemMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {

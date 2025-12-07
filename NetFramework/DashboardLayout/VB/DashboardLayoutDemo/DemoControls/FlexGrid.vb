@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1FlexGrid
+﻿Imports C1.Win.FlexGrid
 
 Namespace DashboardDemo.Controls
     Partial Public Class DemoFlexGrid

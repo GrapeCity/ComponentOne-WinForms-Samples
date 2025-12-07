@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnClear = new C1.Win.C1Input.C1Button();
             this.btnOk = new C1.Win.C1Input.C1Button();
@@ -128,7 +128,7 @@
         }
 
         #endregion
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.C1Input.C1Button btnClear;
         private C1.Win.C1Input.C1Button btnOk;

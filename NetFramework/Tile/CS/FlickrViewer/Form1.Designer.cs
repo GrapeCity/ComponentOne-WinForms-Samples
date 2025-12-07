@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.components = new System.ComponentModel.Container();
-            C1.Win.C1Tile.PanelElement panelElement9 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.TextElement textElement11 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement7 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement12 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.TextElement textElement13 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement8 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.PanelElement panelElement10 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.TextElement textElement14 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement11 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.PanelElement panelElement12 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement9 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement15 = new C1.Win.C1Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement9 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.TextElement textElement11 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement7 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement12 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.TextElement textElement13 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement8 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.PanelElement panelElement10 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.TextElement textElement14 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.PanelElement panelElement11 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.PanelElement panelElement12 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement9 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.TextElement textElement15 = new C1.Win.Tile.TextElement();
             this.panel1 = new System.Windows.Forms.Panel();
             this.refreshButton = new System.Windows.Forms.Button();
             this.loadNewButton = new System.Windows.Forms.Button();
@@ -48,12 +51,12 @@
             this.backButton = new System.Windows.Forms.Button();
             this.setTagButton = new System.Windows.Forms.Button();
             this.tagBox = new System.Windows.Forms.TextBox();
-            this.flickrTiles = new C1.Win.C1Tile.C1TileControl();
-            this.group1 = new C1.Win.C1Tile.Group();
-            this.tile1 = new C1.Win.C1Tile.Tile();
-            this.tempError = new C1.Win.C1Tile.Template();
-            this.tile2 = new C1.Win.C1Tile.Tile();
-            this.tempFlickr = new C1.Win.C1Tile.Template();
+            this.flickrTiles = new C1.Win.Tile.C1TileControl();
+            this.group1 = new C1.Win.Tile.Group();
+            this.tile1 = new C1.Win.Tile.Tile();
+            this.tempError = new C1.Win.Tile.Template();
+            this.tile2 = new C1.Win.Tile.Tile();
+            this.tempFlickr = new C1.Win.Tile.Template();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.imgPanel = new System.Windows.Forms.Panel();
             this.authorLabel = new System.Windows.Forms.Label();
@@ -174,7 +177,7 @@
             panelElement9.Alignment = System.Drawing.ContentAlignment.BottomLeft;
             panelElement9.Children.Add(textElement11);
             panelElement9.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
-            imageElement7.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
+            imageElement7.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleInner;
             this.flickrTiles.DefaultTemplate.Elements.Add(panelElement9);
             this.flickrTiles.DefaultTemplate.Elements.Add(imageElement7);
             this.flickrTiles.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -210,19 +213,19 @@
             // tempError
             // 
             this.tempError.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.tempError.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.tempError.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             textElement12.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter;
-            textElement12.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
-            textElement12.FontBold = C1.Win.C1Tile.ThreeStateBoolean.True;
+            textElement12.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
+            textElement12.FontBold = C1.Win.Tile.ThreeStateBoolean.True;
             textElement12.FontSize = 16F;
             textElement12.Margin = new System.Windows.Forms.Padding(0, 0, 0, 26);
             textElement12.Text = "Can\'t Load Images From Flickr";
-            textElement12.TextSelector = C1.Win.C1Tile.TextSelector.Unbound;
+            textElement12.TextSelector = C1.Win.Tile.TextSelector.Unbound;
             textElement13.Alignment = System.Drawing.ContentAlignment.BottomCenter;
-            textElement13.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            textElement13.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             textElement13.Margin = new System.Windows.Forms.Padding(0, 0, 0, 10);
             textElement13.Text = "Click or tap to see the error message";
-            textElement13.TextSelector = C1.Win.C1Tile.TextSelector.Unbound;
+            textElement13.TextSelector = C1.Win.Tile.TextSelector.Unbound;
             this.tempError.Elements.Add(textElement12);
             this.tempError.Elements.Add(textElement13);
             this.tempError.Name = "tempError";
@@ -238,11 +241,11 @@
             // 
             // tempFlickr
             // 
-            imageElement8.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleOuter;
+            imageElement8.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleOuter;
             panelElement10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            textElement14.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            textElement14.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             textElement14.ForeColor = System.Drawing.Color.Black;
-            textElement14.ForeColorSelector = C1.Win.C1Tile.ForeColorSelector.Unbound;
+            textElement14.ForeColorSelector = C1.Win.Tile.ForeColorSelector.Unbound;
             textElement14.SingleLine = true;
             panelElement10.Children.Add(textElement14);
             panelElement10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -251,13 +254,13 @@
             panelElement11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             imageElement9.FixedHeight = 32;
             imageElement9.FixedWidth = 32;
-            imageElement9.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleOuter;
-            imageElement9.ImageSelector = C1.Win.C1Tile.ImageSelector.Image1;
+            imageElement9.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleOuter;
+            imageElement9.ImageSelector = C1.Win.Tile.ImageSelector.Image1;
             panelElement12.Children.Add(imageElement9);
             panelElement12.Dock = System.Windows.Forms.DockStyle.Right;
-            textElement15.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            textElement15.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             textElement15.Margin = new System.Windows.Forms.Padding(0, 0, 37, 0);
-            textElement15.TextSelector = C1.Win.C1Tile.TextSelector.Text1;
+            textElement15.TextSelector = C1.Win.Tile.TextSelector.Text1;
             panelElement11.Children.Add(panelElement12);
             panelElement11.Children.Add(textElement15);
             panelElement11.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -342,12 +345,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private C1.Win.C1Tile.C1TileControl flickrTiles;
-        private C1.Win.C1Tile.Group group1;
-        private C1.Win.C1Tile.Tile tile1;
-        private C1.Win.C1Tile.Template tempError;
-        private C1.Win.C1Tile.Tile tile2;
-        private C1.Win.C1Tile.Template tempFlickr;
+        private C1.Win.Tile.C1TileControl flickrTiles;
+        private C1.Win.Tile.Group group1;
+        private C1.Win.Tile.Tile tile1;
+        private C1.Win.Tile.Template tempError;
+        private C1.Win.Tile.Tile tile2;
+        private C1.Win.Tile.Template tempFlickr;
         private System.Windows.Forms.TextBox tagBox;
         private System.Windows.Forms.Button setTagButton;
         private System.Windows.Forms.Button backButton;

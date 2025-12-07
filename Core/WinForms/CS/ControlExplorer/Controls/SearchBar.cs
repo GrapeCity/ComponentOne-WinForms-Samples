@@ -1,6 +1,7 @@
 ﻿using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -18,6 +19,8 @@ namespace ControlExplorer.Controls
 
         #region Public Methods
         public event EventHandler<string> TextChangedEvent;
+
+        [DefaultValue("")]
         public string SearchText
         {
             get { return textBoxExSearch.Text; }

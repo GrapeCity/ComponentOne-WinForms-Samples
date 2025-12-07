@@ -6,8 +6,8 @@ using System.IO;
 
 namespace UnBound
 {
-	using C1.Win.C1Schedule;
-	using C1.C1Schedule;
+	using C1.Win.Schedule;
+	using C1.Schedule;
 
 	public partial class Form1 : Form
 	{

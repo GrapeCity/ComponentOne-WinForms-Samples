@@ -40,10 +40,10 @@ Partial Class MainForm
         Me.rbtnSaveFilter = New C1.Win.Ribbon.RibbonButton()
         Me.rbtnResetFilter = New C1.Win.Ribbon.RibbonButton()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.C1DataFilter1 = New C1.Win.DataFilter.C1DataFilter()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -221,10 +221,10 @@ Partial Class MainForm
     Private WithEvents RibbonTab1 As RibbonTab
     Private WithEvents RibbonGroup1 As RibbonGroup
     Private WithEvents RibbonTopToolBar1 As RibbonTopToolBar
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents C1DataFilter1 As C1.Win.DataFilter.C1DataFilter
-    Private WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Private WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents RibbonGroup2 As RibbonGroup
     Friend WithEvents cbAutoApply As RibbonCheckBox
     Friend WithEvents rbtnApplyFilter As RibbonButton

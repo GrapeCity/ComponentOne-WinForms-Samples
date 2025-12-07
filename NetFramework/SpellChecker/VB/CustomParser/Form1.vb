@@ -5,7 +5,7 @@ Imports System.Data
 Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1SpellChecker
+Imports C1.Win.SpellChecker
 
 Public Class Form1
 
@@ -21,7 +21,7 @@ Public Class Form1
 
     ' Class that parses c# files and retrieves words in comments for spell-checking.
     Public Class MyCSharpSpellParser
-        Implements C1.Win.C1SpellChecker.ISpellParser
+        Implements C1.Win.SpellChecker.ISpellParser
 
         ' '' fields
         Dim _text As String
@@ -32,11 +32,11 @@ Public Class Form1
         End Sub
 
         ' '' ISpellParser
-        Public Function FilterWord(ByVal word As String) As String Implements C1.Win.C1SpellChecker.ISpellParser.FilterWord
+        Public Function FilterWord(ByVal word As String) As String Implements C1.Win.SpellChecker.ISpellParser.FilterWord
             Return word
         End Function
 
-        Public Function GetNextWord(ByVal text As String, ByVal start As Integer, ByVal ignore As IgnoreOptions, ByVal previousWord As String) As C1.Win.C1SpellChecker.CharRange Implements C1.Win.C1SpellChecker.ISpellParser.GetNextWord
+        Public Function GetNextWord(ByVal text As String, ByVal start As Integer, ByVal ignore As IgnoreOptions, ByVal previousWord As String) As C1.Win.SpellChecker.CharRange Implements C1.Win.SpellChecker.ISpellParser.GetNextWord
             ' refresh list of comment ranges to check
             If text <> _text Then
                 _text = text

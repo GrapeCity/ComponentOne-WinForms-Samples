@@ -16,6 +16,7 @@ namespace FlexChartExplorer.Samples
 {
     public partial class Home : BaseSample
     {
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string Description
         {
             get

@@ -11,8 +11,8 @@ using C1.Chart;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
-using C1.Win.C1Themes;
-using C1.Win.C1Input;
+using C1.Win.Themes;
+using C1.Win.Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -53,7 +53,7 @@ namespace FinancialChartExplorer.Samples
 
         private void c1MovingAverage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ma.Type = (MovingAverageType)c1MovingAverage.SelectedItem;
+            ma.Type = (MovingAverageType)c1MovingAverage.SelectedValue;
         }
 
         private void period_ValueChanged_1(object sender, EventArgs e)

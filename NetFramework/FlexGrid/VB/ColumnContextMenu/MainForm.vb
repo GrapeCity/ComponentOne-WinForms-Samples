@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Themes
+﻿Imports C1.Win.Themes
 Imports C1.Win.Ribbon
 Imports C1.Win.RulesManager
 Imports C1.DataFilter
@@ -44,7 +44,7 @@ Partial Public Class MainForm
         _rulesForm.Rules.Add(rule)
     End Sub
 
-    Private Sub c1FlexGrid1_ColumnContextMenuOpening(sender As Object, e As C1.Win.C1FlexGrid.ColumnContextMenuOpeningEventArgs) Handles c1FlexGrid1.ColumnContextMenuOpening
+    Private Sub c1FlexGrid1_ColumnContextMenuOpening(sender As Object, e As C1.Win.FlexGrid.ColumnContextMenuOpeningEventArgs) Handles c1FlexGrid1.ColumnContextMenuOpening
         'Update column context menu only for non-fixed columns
         If e.Col >= c1FlexGrid1.Cols.Fixed Then
             Dim items = e.ContextMenuStrip.Items

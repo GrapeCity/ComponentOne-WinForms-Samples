@@ -5,8 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Schedule;
-using C1.C1Schedule;
+using C1.Win.Schedule;
+using C1.Schedule;
 using System.Globalization;
 using System.Threading;
 using System.Collections;
@@ -38,7 +38,7 @@ namespace CustomData
 			_locations.Add(new Location(5, "Studio 3"));
 
 			InitializeComponent();
-			// Set mappings for LabelStorage (map Level to C1.C1Schedule.Label object properties)
+			// Set mappings for LabelStorage (map Level to C1.Schedule.Label object properties)
 			this.c1Schedule1.DataStorage.LabelStorage.Mappings.TextMapping.MappingName = "LevelName";
 			this.c1Schedule1.DataStorage.LabelStorage.Mappings.CaptionMapping.MappingName = "Description";
 			this.c1Schedule1.DataStorage.LabelStorage.Mappings.ColorMapping.MappingName = "ColorString";
@@ -46,13 +46,13 @@ namespace CustomData
 			// Set LabelStorage DataSource
 			this.c1Schedule1.DataStorage.LabelStorage.DataSource = _levels.Values;
 
-			// Set mappings for CategoryStorage (map ExerciseCategory to C1.C1Schedule.Category object properties)
+			// Set mappings for CategoryStorage (map ExerciseCategory to C1.Schedule.Category object properties)
 			this.c1Schedule1.DataStorage.CategoryStorage.Mappings.TextMapping.MappingName = "Name";
 			this.c1Schedule1.DataStorage.CategoryStorage.Mappings.IndexMapping.MappingName = "Id";
 			// Set CategoryStorage DataSource
 			this.c1Schedule1.DataStorage.CategoryStorage.DataSource = _categories;
 
-			// Set mappings for ResourceStorage (map Location to C1.C1Schedule.Resource object properties)
+			// Set mappings for ResourceStorage (map Location to C1.Schedule.Resource object properties)
 			this.c1Schedule1.DataStorage.ResourceStorage.Mappings.TextMapping.MappingName = "Name";
 			this.c1Schedule1.DataStorage.ResourceStorage.Mappings.IndexMapping.MappingName = "Id";
 			// Set ResourceStorage DataSource

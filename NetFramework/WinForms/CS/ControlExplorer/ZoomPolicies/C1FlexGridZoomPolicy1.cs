@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using C1.Win.TouchToolKit;
 using System;
 using System.Collections.Generic;

@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1InputPanel;
+using C1.Win.FlexGrid;
+using C1.Win.InputPanel;
 
 namespace RowDetails
 {

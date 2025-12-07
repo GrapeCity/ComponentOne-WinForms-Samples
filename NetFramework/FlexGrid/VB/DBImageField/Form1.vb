@@ -39,14 +39,14 @@ Public Class Form1
     Friend WithEvents dataGrid1 As System.Windows.Forms.DataGrid
     Friend WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents _imgList As System.Windows.Forms.ImageList
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.dataGrid1 = New System.Windows.Forms.DataGrid()
         Me.label1 = New System.Windows.Forms.Label()
         Me._imgList = New System.Windows.Forms.ImageList(Me.components)
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.dataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -89,7 +89,7 @@ Public Class Form1
         Me.C1FlexGrid1.Location = New System.Drawing.Point(240, 24)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
         Me.C1FlexGrid1.Size = New System.Drawing.Size(288, 213)
-        Me.C1FlexGrid1.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid1.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _

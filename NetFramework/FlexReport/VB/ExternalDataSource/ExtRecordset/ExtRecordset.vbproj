@@ -30,12 +30,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.Document" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +59,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

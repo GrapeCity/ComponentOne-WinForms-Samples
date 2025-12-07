@@ -30,7 +30,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
@@ -43,7 +43,7 @@ Public Class Form1
     Friend WithEvents radioButton4 As System.Windows.Forms.RadioButton
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DataSet11 = New ToggleGroupRows.DataSet1()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
@@ -62,7 +62,7 @@ Public Class Form1
         'C1TrueDBGrid1
         '
         Me.C1TrueDBGrid1.DataSource = Me.DataSet11.Orders
-        Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy
+        Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy
         Me.C1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column"
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("C1TrueDBGrid1.Images"), System.Drawing.Image))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(16, 16)
@@ -70,7 +70,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
-        Me.C1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.C1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.C1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
         Me.C1TrueDBGrid1.PrintInfo.PageSettings = CType(resources.GetObject("C1TrueDBGrid1.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
         Me.C1TrueDBGrid1.Size = New System.Drawing.Size(536, 220)
@@ -175,7 +175,7 @@ Public Class Form1
     Private Sub radioButton1_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton1.CheckedChanged
         If Me.radioButton1.Checked Then
             Dim row As Integer = Me.C1TrueDBGrid1.Row
-            If Me.C1TrueDBGrid1.Splits(0).Rows(row).RowType = C1.Win.C1TrueDBGrid.RowTypeEnum.CollapsedGroupRow Then
+            If Me.C1TrueDBGrid1.Splits(0).Rows(row).RowType = C1.Win.TrueDBGrid.RowTypeEnum.CollapsedGroupRow Then
                 Me.C1TrueDBGrid1.ExpandGroupRow(row)
             End If
         End If
@@ -185,7 +185,7 @@ Public Class Form1
     Private Sub radioButton2_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles radioButton2.CheckedChanged
         If Me.radioButton2.Checked Then
             Dim row As Integer = Me.C1TrueDBGrid1.Row
-            If Me.C1TrueDBGrid1.Splits(0).Rows(row).RowType = C1.Win.C1TrueDBGrid.RowTypeEnum.ExpandedGroupRow Then
+            If Me.C1TrueDBGrid1.Splits(0).Rows(row).RowType = C1.Win.TrueDBGrid.RowTypeEnum.ExpandedGroupRow Then
                 Me.C1TrueDBGrid1.CollapseGroupRow(row)
             End If
         End If
@@ -197,7 +197,7 @@ Public Class Form1
             Dim i As Integer = 0
             ' can't use for...next, doesn't re-evaluate the upper bound and the Rows collection does change as you expand/collapse
             While (i < Me.C1TrueDBGrid1.Splits(0).Rows.Count)
-                If Me.C1TrueDBGrid1.Splits(0).Rows(i).RowType <> C1.Win.C1TrueDBGrid.RowTypeEnum.DataRow Then
+                If Me.C1TrueDBGrid1.Splits(0).Rows(i).RowType <> C1.Win.TrueDBGrid.RowTypeEnum.DataRow Then
                     Me.C1TrueDBGrid1.ExpandGroupRow(i)
                 End If
                 i = i + 1
@@ -211,7 +211,7 @@ Public Class Form1
             Dim i As Integer = 0
             ' can't use for...next, doesn't re-evaluate the upper bound and the Rows collection does change as you expand/collapse
             While (i < Me.C1TrueDBGrid1.Splits(0).Rows.Count)
-                If Me.C1TrueDBGrid1.Splits(0).Rows(i).RowType <> C1.Win.C1TrueDBGrid.RowTypeEnum.DataRow Then
+                If Me.C1TrueDBGrid1.Splits(0).Rows(i).RowType <> C1.Win.TrueDBGrid.RowTypeEnum.DataRow Then
                     Me.C1TrueDBGrid1.CollapseGroupRow(i)
                 End If
                 i = i + 1
@@ -227,14 +227,14 @@ Public Class Form1
     End Sub
 
     ' set the state of the expand/collapse radio button on row change
-    Private Sub c1TrueDBGrid1_RowColChange(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.RowColChangeEventArgs) Handles C1TrueDBGrid1.RowColChange
+    Private Sub c1TrueDBGrid1_RowColChange(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.RowColChangeEventArgs) Handles C1TrueDBGrid1.RowColChange
         If Me.C1TrueDBGrid1.Splits(0).Rows.Count <= 0 OrElse IsNothing(Me.C1TrueDBGrid1.Splits(0).Rows(Me.C1TrueDBGrid1.Row)) Then Exit Sub '#10989
         ' get the type/state of the row
-        Dim rtype As C1.Win.C1TrueDBGrid.RowTypeEnum = Me.C1TrueDBGrid1.Splits(0).Rows(Me.C1TrueDBGrid1.Row).RowType
+        Dim rtype As C1.Win.TrueDBGrid.RowTypeEnum = Me.C1TrueDBGrid1.Splits(0).Rows(Me.C1TrueDBGrid1.Row).RowType
         Select Case rtype
-            Case C1.Win.C1TrueDBGrid.RowTypeEnum.CollapsedGroupRow
+            Case C1.Win.TrueDBGrid.RowTypeEnum.CollapsedGroupRow
                 Me.radioButton2.Checked = True
-            Case C1.Win.C1TrueDBGrid.RowTypeEnum.ExpandedGroupRow
+            Case C1.Win.TrueDBGrid.RowTypeEnum.ExpandedGroupRow
                 Me.radioButton1.Checked = True
         End Select
     End Sub 'c1TrueDBGrid1_RowColChange

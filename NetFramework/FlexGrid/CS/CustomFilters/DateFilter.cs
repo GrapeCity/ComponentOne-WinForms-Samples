@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CustomFilters
 {
-    class DateFilter : C1.Win.C1FlexGrid.IC1ColumnFilter
+    class DateFilter : C1.Win.FlexGrid.IC1ColumnFilter
     {
         //-------------------------------------------------------------------------------
         #region ** fields
@@ -61,7 +61,7 @@ namespace CustomFilters
         }
 
         // return editor control for this filter
-        public C1.Win.C1FlexGrid.IC1ColumnFilterEditor GetEditor()
+        public C1.Win.FlexGrid.IC1ColumnFilterEditor GetEditor()
         {
             return new DateFilterEditor();
         }

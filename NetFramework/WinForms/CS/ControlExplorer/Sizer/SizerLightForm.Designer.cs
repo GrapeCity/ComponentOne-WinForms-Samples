@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.c1SizerLight1 = new C1.Win.C1Sizer.C1SizerLight(this.components);
+            this.c1SizerLight1 = new C1.Win.Sizer.C1SizerLight(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new C1.Win.C1Input.C1TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -310,7 +310,7 @@
 
         #endregion
 
-        private C1.Win.C1Sizer.C1SizerLight c1SizerLight1;
+        private C1.Win.Sizer.C1SizerLight c1SizerLight1;
         private System.Windows.Forms.Label label1;
         private C1.Win.C1Input.C1TextBox textBox1;
         private System.Windows.Forms.Label label2;

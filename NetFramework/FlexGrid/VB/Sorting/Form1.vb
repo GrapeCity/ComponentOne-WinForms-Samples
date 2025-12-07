@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
 Imports System.Collections.Specialized
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -40,11 +40,11 @@ Public Class Form1
     'Do not modify it imports  the code editor.
     Friend WithEvents _btnCustomSort As System.Windows.Forms.Button
     Friend WithEvents _chkSortLists As System.Windows.Forms.CheckBox
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me._btnCustomSort = New System.Windows.Forms.Button()
         Me._chkSortLists = New System.Windows.Forms.CheckBox()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,7 +77,7 @@ Public Class Form1
         Me._flex.Name = "_flex"
         Me._flex.Rows.Count = 5
         Me._flex.Size = New System.Drawing.Size(368, 240)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -137,7 +137,7 @@ Public Class Form1
     End Sub
 
     'sort list items if that was requested
-    Private Sub _flex_SetupEditor(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _flex.SetupEditor
+    Private Sub _flex_SetupEditor(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _flex.SetupEditor
         Try
             Dim cb As ComboBox = CType(_flex.Editor, ComboBox)
             cb.Sorted = _chkSortLists.Checked
@@ -147,7 +147,7 @@ Public Class Form1
 
     'with mouse sort, use display values (these are data maps)
 
-    Private Sub _flex_BeforeSort(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.SortColEventArgs) Handles _flex.BeforeSort
+    Private Sub _flex_BeforeSort(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.SortColEventArgs) Handles _flex.BeforeSort
         'note OR operator (|) used to combine the AsDisplayed flag with
         'the sort direction set by the grid (Ascending or Descending)
         e.Order = e.Order Or SortFlags.AsDisplayed

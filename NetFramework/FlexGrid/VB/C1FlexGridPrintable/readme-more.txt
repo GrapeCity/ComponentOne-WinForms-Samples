@@ -14,11 +14,11 @@ C1PrintDocument document.
 C1FlexGridPrintable is shipped as a sample with full source code. It 
 provides a single WinForms control, C1FlexGridPrintable, which inherits 
 from C1FlexGrid. The resulting assembly name is 
-C1.Win.C1FlexGridPrintable.2. The C1FlexGridPrintable project references 
+C1.Win.FlexGridPrintable.2. The C1FlexGridPrintable project references 
 the following dlls shipped by ComponentOne (listed in parentheses are 
 the minimal required assembly versions of the dlls):
 
-  - C1.Win.C1FlexGrid.2 (2.6.20061.250)
+  - C1.Win.FlexGrid.2 (2.6.20061.250)
   - C1.C1Preview.2      (2.0.20062.40852)
   - C1.Win.C1Preview.2  (2.0.20062.40852)
 
@@ -30,7 +30,7 @@ Overview of C1FlexGridPrintable component
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 The name of the control is C1FlexGridPrintable, it inherits from
-C1FlexGrid and is in the same namespace (C1.Win.C1FlexGrid).
+C1FlexGrid and is in the same namespace (C1.Win.FlexGrid).
 
 C1FlexGridPrintable is a WinForms control, as such it can be placed on 
 the Visual Studio's toolbox and from there dropped on a form. In a new 
@@ -48,7 +48,7 @@ print/export the original C1FlexGrid.
 The following code snippet demonstrates the second approach to print 
 preview an existing grid:
 
-  using C1.Win.C1FlexGrid;
+  using C1.Win.FlexGrid;
   ...
   C1FlexGrid flexGrid = new C1FlexGrid();
   ...
@@ -60,7 +60,7 @@ RenderC1Printable render object of C1Preview. For example, the following
 code creates a C1PrintDocument, inserts a C1FlexGridPrintable into it, 
 and previews the resulting document:
  
-  using C1.Win.C1FlexGrid;
+  using C1.Win.FlexGrid;
   using C1.C1Preview;
   using C1.Win.C1Preview;
   ...
@@ -213,7 +213,7 @@ public string PageHeader {get;set;}
   - "\p" - the current page number.
   - "\P" - the total page count.
 
-public C1.Win.C1FlexGrid.CellStyle PageHeaderStyle {get;set;}
+public C1.Win.FlexGrid.CellStyle PageHeaderStyle {get;set;}
   Gets or sets the style used to render the page header.
 
 public int PageHeaderHeight {get;set;}
@@ -230,7 +230,7 @@ public string PageFooter {get;set;}
   The default is an empty string. The same special characters are
   allowed as in PageHeader.
 
-public C1.Win.C1FlexGrid.CellStyle PageFooterStyle {get;set;}
+public C1.Win.FlexGrid.CellStyle PageFooterStyle {get;set;}
   Gets or sets the style used to render the page footer.
 
 public int PageFooterHeight {get;set;}

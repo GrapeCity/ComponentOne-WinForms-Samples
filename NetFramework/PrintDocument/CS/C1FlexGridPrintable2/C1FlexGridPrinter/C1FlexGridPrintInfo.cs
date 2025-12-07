@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     /// <summary>
     /// Provides properties that can adjust how a C1FlexGrid

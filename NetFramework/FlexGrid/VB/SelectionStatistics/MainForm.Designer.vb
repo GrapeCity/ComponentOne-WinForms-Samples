@@ -34,7 +34,7 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.SelectionStatisticsControl1 = New SelectionStatistics.SelectionStatisticsControl()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,7 +136,7 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents SelectionStatisticsControl1 As SelectionStatisticsControl
 End Class

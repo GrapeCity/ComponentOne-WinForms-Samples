@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
 Imports System.Data.OleDb
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -44,22 +44,22 @@ Public Class Form1
     Friend WithEvents panel1 As System.Windows.Forms.Panel
     Friend WithEvents _splitterTop As System.Windows.Forms.Splitter
     Friend WithEvents _splitterBottom As System.Windows.Forms.Splitter
-    Friend WithEvents _flexBR As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents _flexTL As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents _flexBL As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents _flexTR As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flexBR As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents _flexTL As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents _flexBL As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents _flexTR As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.panel3 = New System.Windows.Forms.Panel
         Me.panel2 = New System.Windows.Forms.Panel
-        Me._flexBR = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flexBR = New C1.Win.FlexGrid.C1FlexGrid
         Me._splitterBottom = New System.Windows.Forms.Splitter
-        Me._flexBL = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flexBL = New C1.Win.FlexGrid.C1FlexGrid
         Me.splitter3 = New System.Windows.Forms.Splitter
         Me.panel1 = New System.Windows.Forms.Panel
-        Me._flexTR = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flexTR = New C1.Win.FlexGrid.C1FlexGrid
         Me._splitterTop = New System.Windows.Forms.Splitter
-        Me._flexTL = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flexTL = New C1.Win.FlexGrid.C1FlexGrid
         Me.panel3.SuspendLayout()
         Me.panel2.SuspendLayout()
         CType(Me._flexBR, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,7 +94,7 @@ Public Class Form1
         '
         '_flexBR
         '
-        Me._flexBR.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me._flexBR.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me._flexBR.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me._flexBR.Dock = System.Windows.Forms.DockStyle.Fill
         Me._flexBR.Location = New System.Drawing.Point(221, 0)
@@ -115,7 +115,7 @@ Public Class Form1
         '
         '_flexBL
         '
-        Me._flexBL.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me._flexBL.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me._flexBL.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me._flexBL.Dock = System.Windows.Forms.DockStyle.Left
         Me._flexBL.Location = New System.Drawing.Point(0, 0)
@@ -148,7 +148,7 @@ Public Class Form1
         '
         '_flexTR
         '
-        Me._flexTR.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me._flexTR.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me._flexTR.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me._flexTR.Dock = System.Windows.Forms.DockStyle.Fill
         Me._flexTR.Location = New System.Drawing.Point(221, 0)
@@ -169,7 +169,7 @@ Public Class Form1
         '
         '_flexTL
         '
-        Me._flexTL.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me._flexTL.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me._flexTL.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me._flexTL.Dock = System.Windows.Forms.DockStyle.Left
         Me._flexTL.Location = New System.Drawing.Point(0, 0)
@@ -238,7 +238,7 @@ Public Class Form1
     End Sub
 
     Private _synchronizing As Boolean = False
-    Private Sub _flex_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles _flexBL.AfterScroll, _flexBR.AfterScroll, _flexTL.AfterScroll, _flexTR.AfterScroll
+    Private Sub _flex_AfterScroll(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles _flexBL.AfterScroll, _flexBR.AfterScroll, _flexTL.AfterScroll, _flexTR.AfterScroll
         If Not _synchronizing Then
 
             ' avoid reentrant calls

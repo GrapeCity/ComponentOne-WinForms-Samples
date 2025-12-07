@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -85,6 +85,8 @@ namespace TrendLines
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.btnNewData = new System.Windows.Forms.Button();
 			this.udOrder = new System.Windows.Forms.NumericUpDown();
 			this.cbTrendType = new System.Windows.Forms.ComboBox();

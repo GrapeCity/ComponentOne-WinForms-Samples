@@ -24,13 +24,13 @@ Public Class Form1
         MyBase.Dispose(disposing)
     End Sub
 
-    Friend WithEvents C1TrueDBDropdown1 As C1.Win.C1TrueDBGrid.C1TrueDBDropdown
+    Friend WithEvents C1TrueDBDropdown1 As C1.Win.TrueDBGrid.C1TrueDBDropdown
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents OleDbDataAdapter2 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents DsCustomers1 As Tutor18.dsCustomers
     Friend WithEvents DsCustType1 As Tutor18.dsCustType
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand2 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbUpdateCommand2 As System.Data.OleDb.OleDbCommand
@@ -49,9 +49,9 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DsCustomers1 = New Tutor18.dsCustomers()
-        Me.C1TrueDBDropdown1 = New C1.Win.C1TrueDBGrid.C1TrueDBDropdown()
+        Me.C1TrueDBDropdown1 = New C1.Win.TrueDBGrid.C1TrueDBDropdown()
         Me.DsCustType1 = New Tutor18.dsCustType()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbDeleteCommand2 = New System.Data.OleDb.OleDbCommand()
@@ -77,7 +77,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.AllowArrows = False
         Me.C1TrueDBGrid1.AllowDelete = True
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Anchor = (System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right)
         Me.C1TrueDBGrid1.Caption = "C1True DBGrid .Net"
@@ -85,11 +85,11 @@ Public Class Form1
         Me.C1TrueDBGrid1.CollapseColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.DataMember = "Customer"
         Me.C1TrueDBGrid1.DataSource = Me.DsCustomers1
-        Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+        Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(48, 16)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.RecordSelectorWidth = 16
         Me.C1TrueDBGrid1.RowHeight = 15
@@ -111,7 +111,7 @@ Public Class Form1
         Me.C1TrueDBDropdown1.AllowColMove = True
         Me.C1TrueDBDropdown1.AllowColSelect = True
         Me.C1TrueDBDropdown1.AllowFilter = True
-        Me.C1TrueDBDropdown1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBDropdown1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBDropdown1.AllowSort = True
         Me.C1TrueDBDropdown1.AlternatingRows = False
         Me.C1TrueDBDropdown1.CaptionHeight = 17

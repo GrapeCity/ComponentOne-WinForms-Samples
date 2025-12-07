@@ -24,11 +24,11 @@ Partial Class Form1
 	Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.c1Label1 = New C1.Win.C1Input.C1Label()
-        Me.ctdbgThemes = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.ctdbgThemes = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.c1Label2 = New C1.Win.C1Input.C1Label()
         Me.lblApplicationTheme = New C1.Win.C1Input.C1Label()
         Me.textBox1 = New System.Windows.Forms.TextBox()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         CType(Me.c1Label1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ctdbgThemes, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,19 +72,19 @@ Partial Class Form1
         Me.ctdbgThemes.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.ctdbgThemes.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.ctdbgThemes.PreviewInfo.ZoomFactor = 75.0R
-        Me.ctdbgThemes.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.ctdbgThemes.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.ctdbgThemes.PrintInfo.MeasurementPrinterName = Nothing
         Me.ctdbgThemes.PrintInfo.PageSettings = CType(resources.GetObject("ctdbgThemes.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
         Me.ctdbgThemes.PropBag = resources.GetString("ctdbgThemes.PropBag")
         Me.ctdbgThemes.RowDivider.Color = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.ctdbgThemes.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+        Me.ctdbgThemes.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.[Single]
         Me.ctdbgThemes.RowSubDividerColor = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(87, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.ctdbgThemes.Size = New System.Drawing.Size(326, 352)
         Me.ctdbgThemes.TabIndex = 1
         Me.ctdbgThemes.Text = "c1TrueDBGrid1"
         Me.c1ThemeController1.SetTheme(Me.ctdbgThemes, "(default)")
         Me.ctdbgThemes.UseCompatibleTextRendering = False
-        Me.ctdbgThemes.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Custom
+        Me.ctdbgThemes.VisualStyle = C1.Win.TrueDBGrid.VisualStyle.Custom
         '
         'c1Label2
         '
@@ -190,11 +190,11 @@ Partial Class Form1
 #End Region
 
     Private c1Label1 As C1.Win.C1Input.C1Label
-    Private WithEvents ctdbgThemes As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Private WithEvents ctdbgThemes As C1.Win.TrueDBGrid.C1TrueDBGrid
 	Private c1Label2 As C1.Win.C1Input.C1Label
 	Private lblApplicationTheme As C1.Win.C1Input.C1Label
 	Private textBox1 As System.Windows.Forms.TextBox
-    Private WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 End Class
 

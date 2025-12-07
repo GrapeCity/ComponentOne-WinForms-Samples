@@ -16,9 +16,10 @@ namespace Layout
         public Form1()
         {
             InitializeComponent();
-            var themes = C1.Win.C1Themes.C1ThemeController.GetThemes();
+            var themes = C1.Win.Themes.C1ThemeController.GetThemes();
             cmbTheme.Items.AddRange(themes);
             cmbTheme.SelectedIndex = Array.IndexOf(themes, "Office365White");
+            c1CalendarView1.MaxSelectionCount = (int)numMaxSelectionCount.Value;
         }
 
         private void cmbDayTitlePosition_SelectedIndexChanged(object sender, EventArgs e)

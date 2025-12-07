@@ -6,13 +6,18 @@ using System.Windows.Forms;
 using System.Drawing;
 using C1.Win.Input;
 using static C1.Util.Win.Win32;
+using System.ComponentModel;
 
 namespace BaseExplorer
 {
     public class NumericUpDownEx : C1NumericEdit
     {
+        [DefaultValue(0)]
         public float Minimum{ get; set; }
+
+        [DefaultValue(0)]
         public float Maximum{ get; set; }
+
         public NumericUpDownEx(int width=70, int height=21)
         {
             this.BorderStyle = BorderStyle.FixedSingle;

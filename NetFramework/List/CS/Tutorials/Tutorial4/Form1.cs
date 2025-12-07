@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,8 +12,8 @@ namespace Tutorial4
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List dblOpus;
-		private C1.Win.C1List.C1Combo dbcCombo;
+		private C1.Win.List.C1List dblOpus;
+		private C1.Win.List.C1Combo dbcCombo;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
@@ -61,24 +61,25 @@ namespace Tutorial4
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style9 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style10 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style11 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style12 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style13 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style14 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style15 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style16 = new C1.Win.C1List.Style();
-			this.dblOpus = new C1.Win.C1List.C1List();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
+			C1.Win.List.Style style9 = new C1.Win.List.Style();
+			C1.Win.List.Style style10 = new C1.Win.List.Style();
+			C1.Win.List.Style style11 = new C1.Win.List.Style();
+			C1.Win.List.Style style12 = new C1.Win.List.Style();
+			C1.Win.List.Style style13 = new C1.Win.List.Style();
+			C1.Win.List.Style style14 = new C1.Win.List.Style();
+			C1.Win.List.Style style15 = new C1.Win.List.Style();
+			C1.Win.List.Style style16 = new C1.Win.List.Style();
+			this.dblOpus = new C1.Win.List.C1List();
 			this.dataSet21 = new Tutorial4.DataSet2();
 			this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -86,7 +87,7 @@ namespace Tutorial4
 			this.oleDbSelectCommand2 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbInsertCommand = new System.Data.OleDb.OleDbCommand();
-			this.dbcCombo = new C1.Win.C1List.C1Combo();
+			this.dbcCombo = new C1.Win.List.C1Combo();
 			this.dataSet11 = new Tutorial4.DataSet1();
 			((System.ComponentModel.ISupportInitialize)(this.dblOpus)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dataSet21)).BeginInit();
@@ -116,7 +117,7 @@ namespace Tutorial4
 			this.dblOpus.Name = "dblOpus";
 			this.dblOpus.OddRowStyle = style6;
 			this.dblOpus.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.dblOpus.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.dblOpus.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.dblOpus.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.dblOpus.SelectedStyle = style7;
 			this.dblOpus.Size = new System.Drawing.Size(224, 232);
@@ -187,7 +188,7 @@ namespace Tutorial4
 			this.dbcCombo.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.dbcCombo.EditorHeight = 15;
 			this.dbcCombo.EvenRowStyle = style10;
-			this.dbcCombo.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.dbcCombo.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.dbcCombo.FooterStyle = style11;
 			this.dbcCombo.GapHeight = 2;
 			this.dbcCombo.HeadingStyle = style12;
@@ -202,14 +203,14 @@ namespace Tutorial4
 			this.dbcCombo.Name = "dbcCombo";
 			this.dbcCombo.OddRowStyle = style14;
 			this.dbcCombo.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.dbcCombo.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.dbcCombo.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.dbcCombo.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.dbcCombo.SelectedStyle = style15;
 			this.dbcCombo.Size = new System.Drawing.Size(160, 21);
 			this.dbcCombo.Style = style16;
 			this.dbcCombo.TabIndex = 1;
 			this.dbcCombo.Text = "c1Combo1";
-			this.dbcCombo.Change += new C1.Win.C1List.ChangeEventHandler(this.dbcCombo_Change);
+			this.dbcCombo.Change += new C1.Win.List.ChangeEventHandler(this.dbcCombo_Change);
 			this.dbcCombo.PropBag = resources.GetString("dbcCombo.PropBag");
 			// 
 			// dataSet11

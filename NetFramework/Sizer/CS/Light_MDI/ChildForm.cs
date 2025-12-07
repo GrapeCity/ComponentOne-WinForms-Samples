@@ -26,7 +26,7 @@ namespace Mdi
 		private System.Windows.Forms.ToolBarButton toolBarButton8;
 		private System.Windows.Forms.ToolBarButton toolBarButton9;
 		private System.Windows.Forms.Panel panel1;
-        private C1.Win.C1Sizer.C1SizerLight _sizerLight;
+        private C1.Win.Sizer.C1SizerLight _sizerLight;
 		private System.ComponentModel.IContainer components;
 
 		public ChildForm()
@@ -79,7 +79,7 @@ namespace Mdi
 			this.toolBarButton8 = new System.Windows.Forms.ToolBarButton();
 			this.toolBarButton9 = new System.Windows.Forms.ToolBarButton();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this._sizerLight = new C1.Win.C1Sizer.C1SizerLight(this.components);
+			this._sizerLight = new C1.Win.Sizer.C1SizerLight(this.components);
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this._sizerLight)).BeginInit();
 			this.SuspendLayout();
@@ -155,7 +155,7 @@ namespace Mdi
 			// 
 			// _sizerLight
 			// 
-			this._sizerLight.ResizingFont += new C1.Win.C1Sizer.C1SizerLightEventHandler(this._sizerLight_ResizingFont);
+			this._sizerLight.ResizingFont += new C1.Win.Sizer.C1SizerLightEventHandler(this._sizerLight_ResizingFont);
 			// 
 			// ChildForm
 			// 
@@ -175,7 +175,7 @@ namespace Mdi
 		#endregion
 
 		// only resize fonts for button controls
-        private void _sizerLight_ResizingFont(object sender, C1.Win.C1Sizer.C1SizerLightEventArgs e)
+        private void _sizerLight_ResizingFont(object sender, C1.Win.Sizer.C1SizerLightEventArgs e)
         {
             if (!(e.Control is System.Windows.Forms.Button))
                 e.Cancel = true;

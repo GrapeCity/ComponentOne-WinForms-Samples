@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using C1.Chart;
 using C1.Win.Chart;
 using FlexChartExplorer.Data;
-using C1.Win.C1SuperTooltip;
+using C1.Win.SuperTooltip;
 
 namespace FlexChartExplorer.Samples
 {

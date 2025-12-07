@@ -36,6 +36,7 @@ namespace DataFilterExplorer.Samples
         public FlexChart Chart { get; }
         public RangeSliderView Slider { get; }
 
+        [DefaultValue(SelectionMode.NormalSelect)]
         public SelectionMode SelectionMode
         {
             get
@@ -52,6 +53,7 @@ namespace DataFilterExplorer.Samples
             }
         }
 
+        [DefaultValue(true)]
         public bool ShowSelectionMode
         {
             get { return _showSelectionMode; }
@@ -63,6 +65,8 @@ namespace DataFilterExplorer.Samples
                 }
             }
         }
+
+        [DefaultValue(false)]
         public bool ShowRangeSlider
         {
             get

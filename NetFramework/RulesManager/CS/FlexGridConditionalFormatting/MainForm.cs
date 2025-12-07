@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Win.Ribbon;
 using C1.Win.RulesManager;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System.Data.OleDb;
-using C1.Win.C1Themes;
-using C1.Win.C1Command;
+using C1.Win.Themes;
+using C1.Win.Command;
 using System.IO;
 
 namespace FlexGridConditionalFormatting

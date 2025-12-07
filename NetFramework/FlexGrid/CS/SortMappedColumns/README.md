@@ -16,7 +16,7 @@ For example:
 
 ```
     // intercept sort command and sort by mapped column instead
-    void _flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)
+    void _flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
     {
         if (_flex.Cols[e.Col].Name == "CustomerID")
         {

@@ -31,7 +31,7 @@ Partial Class Form1
         Me._lblSource = New System.Windows.Forms.ToolStripStatusLabel()
         Me.toolStripContainer1 = New System.Windows.Forms.ToolStripContainer()
         Me.mainToolStrip = New C1EditorQuickStart.ToolStrips.ToolStripMain()
-        Me.c1SpellChecker1 = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
+        Me.c1SpellChecker1 = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
         Me.toolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.toolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.searchAndReplaceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -218,7 +218,7 @@ Partial Class Form1
     Private statusStrip1 As System.Windows.Forms.StatusStrip
     Private toolStripContainer1 As System.Windows.Forms.ToolStripContainer
     Private mainToolStrip As C1EditorQuickStart.ToolStrips.ToolStripMain
-    Private c1SpellChecker1 As C1.Win.C1SpellChecker.C1SpellChecker
+    Private c1SpellChecker1 As C1.Win.SpellChecker.C1SpellChecker
     Private styleToolStrip As C1EditorQuickStart.ToolStrips.ToolStripStyles
     Private _lblDesign As System.Windows.Forms.ToolStripStatusLabel
     Private _lblPreview As System.Windows.Forms.ToolStripStatusLabel

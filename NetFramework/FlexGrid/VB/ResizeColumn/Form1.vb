@@ -1,4 +1,4 @@
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
 
@@ -42,7 +42,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub _flex_BeforeMouseDown(ByVal sender As System.Object, ByVal e As C1.Win.C1FlexGrid.BeforeMouseDownEventArgs) Handles _flex.BeforeMouseDown
+    Private Sub _flex_BeforeMouseDown(ByVal sender As System.Object, ByVal e As C1.Win.FlexGrid.BeforeMouseDownEventArgs) Handles _flex.BeforeMouseDown
 
         ' ignore clicks while resizing columns
         If _resizeCol > -1 Then e.Cancel = True

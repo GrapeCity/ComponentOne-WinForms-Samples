@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage4 = new C1.Win.Command.C1DockingTabPage();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab2 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage6 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage5 = new C1.Win.Command.C1DockingTabPage();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
@@ -85,9 +88,9 @@
             this.c1DockingTab1.Name = "c1DockingTab1";
             this.c1DockingTab1.Size = new System.Drawing.Size(865, 261);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2010;
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2010;
+            this.c1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // c1DockingTabPage1
             // 
@@ -138,10 +141,10 @@
             this.c1DockingTab2.ShowCaption = true;
             this.c1DockingTab2.Size = new System.Drawing.Size(332, 205);
             this.c1DockingTab2.TabIndex = 0;
-            this.c1DockingTab2.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.User;
-            this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2010;
-            this.c1DockingTab2.VisualStyle = C1.Win.C1Command.VisualStyle.Office2010Blue;
-            this.c1DockingTab2.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab2.TabSizeMode = C1.Win.Command.TabSizeModeEnum.User;
+            this.c1DockingTab2.TabStyle = C1.Win.Command.TabStyleEnum.Office2010;
+            this.c1DockingTab2.VisualStyle = C1.Win.Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab2.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // c1DockingTabPage2
             // 
@@ -220,15 +223,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage6;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.Command.C1DockingTab c1DockingTab2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;

@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.OleDb;
-using C1.Win.C1Tile;
+using C1.Win.Tile;
 
 namespace DataBound
 {

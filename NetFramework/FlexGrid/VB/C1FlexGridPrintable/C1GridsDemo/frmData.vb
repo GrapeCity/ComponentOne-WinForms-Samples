@@ -2,7 +2,7 @@ Imports System.Data
 Imports System.Data.OleDb
 Imports System.IO
 Imports System.Collections
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class frmData
     Inherits System.Windows.Forms.Form
@@ -30,7 +30,7 @@ Public Class frmData
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents msGrid As System.Windows.Forms.DataGrid
     Friend WithEvents lblFlex As System.Windows.Forms.Label
     Friend WithEvents lblMSGrid As System.Windows.Forms.Label
@@ -48,7 +48,7 @@ Public Class frmData
         Me.Label1 = New System.Windows.Forms.Label
         Me.Label2 = New System.Windows.Forms.Label
         Me.cmbTables = New System.Windows.Forms.ComboBox
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.msGrid = New System.Windows.Forms.DataGrid
         Me.lblFlex = New System.Windows.Forms.Label
         Me.lblMSGrid = New System.Windows.Forms.Label
@@ -170,8 +170,8 @@ Public Class frmData
         cmbTables.SelectedItem = 1
 
         flex.Cols(0).Width = 50
-        flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Columns
-        flex.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.SingleColumn
+        flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Columns
+        flex.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.SingleColumn
         flex.AutoResize = False
 
     End Sub
@@ -219,8 +219,8 @@ Public Class frmData
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim printer As C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable
-        printer = New C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable(flex)
+        Dim printer As C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable
+        printer = New C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable(flex)
         Dim doc As New C1.C1Preview.C1PrintDocument
         Dim rc1 As New C1.C1Preview.RenderC1Printable
         rc1.Object = printer

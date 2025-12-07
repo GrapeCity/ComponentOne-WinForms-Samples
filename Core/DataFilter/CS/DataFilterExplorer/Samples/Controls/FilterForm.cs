@@ -36,12 +36,14 @@ namespace DataFilterExplorer.Samples
             }
         }
 
+        [DefaultValue(null)]
         public object DataSource
         {
             get => c1FilterEditor1.DataSource;
             set => c1FilterEditor1.DataSource = value;
         }
 
+        [DefaultValue(null)]
         public Expression Expression
         {
             get => _expression;

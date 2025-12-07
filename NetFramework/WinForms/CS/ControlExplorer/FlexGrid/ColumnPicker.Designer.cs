@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnPicker));
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGridBandedView1 = new C1.Win.C1FlexGrid.C1FlexGridBandedView();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnCreateBands = new System.Windows.Forms.ToolStripButton();
             this.btnRemoveBands = new System.Windows.Forms.ToolStripButton();
@@ -43,7 +43,7 @@
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.None;
+            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
             this.c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = false;
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = false;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,8 +111,8 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnCreateBands;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

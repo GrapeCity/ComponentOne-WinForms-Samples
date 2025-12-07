@@ -5,7 +5,7 @@ using System.Linq;
 using System;
 using System.Data;
 using System.Drawing;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.DataFilter;
 using C1.DataCollection;
 

@@ -10,8 +10,8 @@ using System.Windows.Forms;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
-using C1.Win.C1Themes;
-using C1.Win.C1Input;
+using C1.Win.Themes;
+using C1.Win.Input;
 
 namespace FinancialChartExplorer.Samples
 {

@@ -13,7 +13,7 @@ namespace ColumnWidthTip
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.ToolTip _tip;
         private System.ComponentModel.IContainer components;
 
@@ -52,7 +52,8 @@ namespace ColumnWidthTip
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._tip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -61,21 +62,23 @@ namespace ColumnWidthTip
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,95,Columns:0{Width:25;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.ShowCursor = true;
             this._flex.Size = new System.Drawing.Size(584, 368);
-            this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 7.8pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.BeforeResizeColumn += new C1.Win.FlexGrid.RowColEventHandler(this._flex_BeforeResizeColumn);
+            this._flex.AfterResizeColumn += new C1.Win.FlexGrid.RowColEventHandler(this._flex_AfterResizeColumn);
             this._flex.MouseMove += new System.Windows.Forms.MouseEventHandler(this._flex_MouseMove);
-            this._flex.AfterResizeColumn += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_AfterResizeColumn);
-            this._flex.BeforeResizeColumn += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_BeforeResizeColumn);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(584, 368);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this._flex});
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Column Sizing Tooltips";
@@ -106,7 +109,7 @@ namespace ColumnWidthTip
 
         int _colResize = -1;
         int _startX = 0;
-        void _flex_BeforeResizeColumn(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void _flex_BeforeResizeColumn(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             if (Control.MouseButtons == MouseButtons.Left)
             {
@@ -115,7 +118,7 @@ namespace ColumnWidthTip
                 _startX = Control.MousePosition.X;
             }
         }
-        void _flex_AfterResizeColumn(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void _flex_AfterResizeColumn(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             if (_colResize > -1)
             {

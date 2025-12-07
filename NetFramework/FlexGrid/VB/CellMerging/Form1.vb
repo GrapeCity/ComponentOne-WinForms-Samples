@@ -1,4 +1,4 @@
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 Imports System.Data.OleDb
 
 Public Class Form1
@@ -25,9 +25,9 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-    Friend WithEvents fg As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents fgBound As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents fg As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents fgBound As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -37,9 +37,9 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.fg = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.fgBound = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.fg = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.fgBound = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.fg, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.fgBound, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,7 +52,7 @@ Public Class Form1
         Me.fg.Dock = System.Windows.Forms.DockStyle.Top
         Me.fg.Name = "fg"
         Me.fg.Size = New System.Drawing.Size(440, 120)
-        Me.fg.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.fg.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:LightBlue;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppW" & _
         "orkspace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeCol" & _
@@ -74,7 +74,7 @@ Public Class Form1
         Me.fgBound.Location = New System.Drawing.Point(0, 253)
         Me.fgBound.Name = "fgBound"
         Me.fgBound.Size = New System.Drawing.Size(440, 176)
-        Me.fgBound.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.fgBound.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:LightBlue;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppW" & _
         "orkspace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeCol" & _
@@ -90,14 +90,14 @@ Public Class Form1
         '
         'C1FlexGrid1
         '
-        Me.C1FlexGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Spill
+        Me.C1FlexGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Spill
         Me.C1FlexGrid1.BackColor = System.Drawing.SystemColors.Window
         Me.C1FlexGrid1.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.C1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.C1FlexGrid1.Location = New System.Drawing.Point(0, 120)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
         Me.C1FlexGrid1.Size = New System.Drawing.Size(440, 133)
-        Me.C1FlexGrid1.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.C1FlexGrid1.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:LightBlue;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppW" & _
         "orkspace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeCol" & _

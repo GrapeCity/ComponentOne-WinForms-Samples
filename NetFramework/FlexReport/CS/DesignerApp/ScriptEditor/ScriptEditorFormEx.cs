@@ -19,10 +19,10 @@ using System.Threading;
 
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
-using C1.Win.C1Command;
+using C1.Win.Command;
 using C1.Win.Localization;
 using C1.Win.Ribbon;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using FlexReportDesignerApp.Util;
 
 namespace FlexReportDesignerApp.Forms
@@ -1017,7 +1017,7 @@ namespace FlexReportDesignerApp.Forms
             return true;
         }
 
-        private void _slNote_LinkClicked(object sender, C1.Win.C1SuperTooltip.C1SuperLabelLinkClickedEventArgs e)
+        private void _slNote_LinkClicked(object sender, C1.Win.SuperTooltip.C1SuperLabelLinkClickedEventArgs e)
         {
             if (e.HRef == "hide_note")
             {

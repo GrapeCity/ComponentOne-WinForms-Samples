@@ -1,4 +1,4 @@
-FlexGridAi
+GeminiAI_FlexGrid
 -----------------------------------------------------------------------------
 FlexGridAI is a demo application that showcases the integration of the C1 FlexGrid WinForms control with Gemini AI. 
 It demonstrates how users can generate dynamic, structured data using natural language prompts and visualize the output within a FlexGrid.

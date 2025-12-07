@@ -28,64 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1CommandMenu_Format = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1CommandMenu_Help = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_New = new C1.Win.C1Command.C1Command();
-            this.c1Command_Open = new C1.Win.C1Command.C1Command();
-            this.c1Command_Save = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenu_Project = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandMenu_File = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink13 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink14 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink15 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_Exit = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenu_Edit = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandMenu_View = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewServerExplorer = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink19 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewSolutionExplorer = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink22 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewErrorList = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink25 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewOutput = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink21 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewProperties = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink23 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewTaskList = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink20 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewToolbox = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink24 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command_ViewStartPage = new C1.Win.C1Command.C1Command();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1CommandDock2 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1TabPage_ServerExplorer = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1TabPage_Toolbox = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1CommandDock4 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab3 = new C1.Win.C1Command.C1DockingTab();
-            this.c1TabPage_SolutionExplorer = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1TabPage_Properties = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTab4 = new C1.Win.C1Command.C1DockingTab();
-            this.c1TabPage_StartPage = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1TabPage_ErrorList = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1TabPage_TaskList = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1TabPage_Output = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1CommandDock3 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
-            this.c1MainMenu1 = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
+            this.c1CommandMenu_Format = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1CommandMenu_Help = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_New = new C1.Win.Command.C1Command();
+            this.c1Command_Open = new C1.Win.Command.C1Command();
+            this.c1Command_Save = new C1.Win.Command.C1Command();
+            this.c1CommandMenu_Project = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandMenu_File = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink13 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink14 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink15 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_Exit = new C1.Win.Command.C1Command();
+            this.c1CommandMenu_Edit = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandMenu_View = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewServerExplorer = new C1.Win.Command.C1Command();
+            this.c1CommandLink19 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewSolutionExplorer = new C1.Win.Command.C1Command();
+            this.c1CommandLink22 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewErrorList = new C1.Win.Command.C1Command();
+            this.c1CommandLink25 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewOutput = new C1.Win.Command.C1Command();
+            this.c1CommandLink21 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewProperties = new C1.Win.Command.C1Command();
+            this.c1CommandLink23 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewTaskList = new C1.Win.Command.C1Command();
+            this.c1CommandLink20 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewToolbox = new C1.Win.Command.C1Command();
+            this.c1CommandLink24 = new C1.Win.Command.C1CommandLink();
+            this.c1Command_ViewStartPage = new C1.Win.Command.C1Command();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1CommandDock2 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1TabPage_ServerExplorer = new C1.Win.Command.C1DockingTabPage();
+            this.c1TabPage_Toolbox = new C1.Win.Command.C1DockingTabPage();
+            this.c1CommandDock4 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab3 = new C1.Win.Command.C1DockingTab();
+            this.c1TabPage_SolutionExplorer = new C1.Win.Command.C1DockingTabPage();
+            this.c1TabPage_Properties = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTab4 = new C1.Win.Command.C1DockingTab();
+            this.c1TabPage_StartPage = new C1.Win.Command.C1DockingTabPage();
+            this.c1TabPage_ErrorList = new C1.Win.Command.C1DockingTabPage();
+            this.c1TabPage_TaskList = new C1.Win.Command.C1DockingTabPage();
+            this.c1TabPage_Output = new C1.Win.Command.C1DockingTabPage();
+            this.c1CommandDock3 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab2 = new C1.Win.Command.C1DockingTab();
+            this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock2)).BeginInit();
@@ -106,12 +106,12 @@
             // 
             // c1CommandMenu_Format
             // 
-            this.c1CommandMenu_Format.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu_Format.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink10});
             this.c1CommandMenu_Format.HideNonRecentLinks = false;
             this.c1CommandMenu_Format.Name = "c1CommandMenu_Format";
             this.c1CommandMenu_Format.Text = "Format";
-            this.c1CommandMenu_Format.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1CommandMenu_Format.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink10
             // 
@@ -138,16 +138,16 @@
             this.c1CommandHolder1.Commands.Add(this.c1Command_ViewToolbox);
             this.c1CommandHolder1.Commands.Add(this.c1Command_ViewStartPage);
             this.c1CommandHolder1.Owner = this;
-            this.c1CommandHolder1.CommandClick += new C1.Win.C1Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
+            this.c1CommandHolder1.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
             // 
             // c1CommandMenu_Help
             // 
-            this.c1CommandMenu_Help.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu_Help.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink12});
             this.c1CommandMenu_Help.HideNonRecentLinks = false;
             this.c1CommandMenu_Help.Name = "c1CommandMenu_Help";
             this.c1CommandMenu_Help.Text = "Help";
-            this.c1CommandMenu_Help.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1CommandMenu_Help.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink12
             // 
@@ -170,12 +170,12 @@
             // 
             // c1CommandMenu_Project
             // 
-            this.c1CommandMenu_Project.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu_Project.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink8});
             this.c1CommandMenu_Project.HideNonRecentLinks = false;
             this.c1CommandMenu_Project.Name = "c1CommandMenu_Project";
             this.c1CommandMenu_Project.Text = "Project";
-            this.c1CommandMenu_Project.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1CommandMenu_Project.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink8
             // 
@@ -183,7 +183,7 @@
             // 
             // c1CommandMenu_File
             // 
-            this.c1CommandMenu_File.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu_File.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink2,
             this.c1CommandLink13,
             this.c1CommandLink14,
@@ -191,7 +191,7 @@
             this.c1CommandMenu_File.HideNonRecentLinks = false;
             this.c1CommandMenu_File.Name = "c1CommandMenu_File";
             this.c1CommandMenu_File.Text = "File";
-            this.c1CommandMenu_File.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.c1CommandMenu_File.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink2
             // 
@@ -220,12 +220,12 @@
             // 
             // c1CommandMenu_Edit
             // 
-            this.c1CommandMenu_Edit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu_Edit.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink4});
             this.c1CommandMenu_Edit.HideNonRecentLinks = false;
             this.c1CommandMenu_Edit.Name = "c1CommandMenu_Edit";
             this.c1CommandMenu_Edit.Text = "Edit";
-            this.c1CommandMenu_Edit.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1CommandMenu_Edit.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink4
             // 
@@ -233,7 +233,7 @@
             // 
             // c1CommandMenu_View
             // 
-            this.c1CommandMenu_View.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenu_View.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink6,
             this.c1CommandLink19,
             this.c1CommandLink22,
@@ -245,7 +245,7 @@
             this.c1CommandMenu_View.HideNonRecentLinks = false;
             this.c1CommandMenu_View.Name = "c1CommandMenu_View";
             this.c1CommandMenu_View.Text = "View";
-            this.c1CommandMenu_View.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Black;
+            this.c1CommandMenu_View.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Black;
             // 
             // c1CommandLink6
             // 
@@ -329,7 +329,7 @@
             // 
             // c1CommandDock1
             // 
-            this.c1CommandDock1.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
+            this.c1CommandDock1.DockingStyle = C1.Win.Command.DockingStyle.VS2010;
             this.c1CommandDock1.Id = 2;
             this.c1CommandDock1.Location = new System.Drawing.Point(0, 25);
             this.c1CommandDock1.Margin = new System.Windows.Forms.Padding(4);
@@ -340,7 +340,7 @@
             // 
             this.c1CommandDock2.Controls.Add(this.c1DockingTab1);
             this.c1CommandDock2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.c1CommandDock2.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
+            this.c1CommandDock2.DockingStyle = C1.Win.Command.DockingStyle.VS2010;
             this.c1CommandDock2.Id = 5;
             this.c1CommandDock2.Location = new System.Drawing.Point(0, 37);
             this.c1CommandDock2.Margin = new System.Windows.Forms.Padding(4);
@@ -366,9 +366,9 @@
             this.c1DockingTab1.ShowTabList = true;
             this.c1DockingTab1.Size = new System.Drawing.Size(239, 289);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1DockingTab1.TabLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1TabPage_ServerExplorer
             // 
@@ -394,7 +394,7 @@
             // 
             this.c1CommandDock4.Controls.Add(this.c1DockingTab3);
             this.c1CommandDock4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.c1CommandDock4.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
+            this.c1CommandDock4.DockingStyle = C1.Win.Command.DockingStyle.VS2010;
             this.c1CommandDock4.Id = 14;
             this.c1CommandDock4.Location = new System.Drawing.Point(509, 37);
             this.c1CommandDock4.Margin = new System.Windows.Forms.Padding(4);
@@ -421,7 +421,7 @@
             this.c1DockingTab3.Size = new System.Drawing.Size(280, 289);
             this.c1DockingTab3.TabIndex = 0;
             this.c1DockingTab3.TabsSpacing = 5;
-            this.c1DockingTab3.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab3.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1TabPage_SolutionExplorer
             // 
@@ -456,7 +456,7 @@
             this.c1DockingTab4.Size = new System.Drawing.Size(270, 289);
             this.c1DockingTab4.TabIndex = 11;
             this.c1DockingTab4.TabsSpacing = 5;
-            this.c1DockingTab4.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab4.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1TabPage_StartPage
             // 
@@ -501,7 +501,7 @@
             // 
             this.c1CommandDock3.Controls.Add(this.c1DockingTab2);
             this.c1CommandDock3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.c1CommandDock3.DockingStyle = C1.Win.C1Command.DockingStyle.VS2010;
+            this.c1CommandDock3.DockingStyle = C1.Win.Command.DockingStyle.VS2010;
             this.c1CommandDock3.Id = 9;
             this.c1CommandDock3.Location = new System.Drawing.Point(0, 326);
             this.c1CommandDock3.Margin = new System.Windows.Forms.Padding(4);
@@ -529,13 +529,13 @@
             this.c1DockingTab2.Size = new System.Drawing.Size(789, 223);
             this.c1DockingTab2.TabIndex = 0;
             this.c1DockingTab2.TabsSpacing = 5;
-            this.c1DockingTab2.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab2.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1MainMenu1
             // 
             this.c1MainMenu1.AccessibleName = "Menu Bar";
             this.c1MainMenu1.CommandHolder = null;
-            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink3,
             this.c1CommandLink5,
@@ -548,7 +548,7 @@
             this.c1MainMenu1.Name = "c1MainMenu1";
             this.c1MainMenu1.Size = new System.Drawing.Size(789, 25);
             this.c1MainMenu1.Visible = false;
-            this.c1MainMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1MainMenu1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandLink1
             // 
@@ -615,64 +615,64 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu_Format;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu_Help;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
-        private C1.Win.C1Command.C1Command c1Command_New;
-        private C1.Win.C1Command.C1Command c1Command_Open;
-        private C1.Win.C1Command.C1Command c1Command_Save;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu_Project;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu_File;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink13;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink14;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink15;
-        private C1.Win.C1Command.C1Command c1Command_Exit;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu_Edit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu_View;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1Command c1Command_ViewServerExplorer;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink19;
-        private C1.Win.C1Command.C1Command c1Command_ViewSolutionExplorer;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink22;
-        private C1.Win.C1Command.C1Command c1Command_ViewErrorList;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink25;
-        private C1.Win.C1Command.C1Command c1Command_ViewOutput;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink21;
-        private C1.Win.C1Command.C1Command c1Command_ViewProperties;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink23;
-        private C1.Win.C1Command.C1Command c1Command_ViewTaskList;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink20;
-        private C1.Win.C1Command.C1Command c1Command_ViewToolbox;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink24;
-        private C1.Win.C1Command.C1Command c1Command_ViewStartPage;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab4;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_StartPage;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock2;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_ServerExplorer;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_Toolbox;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock4;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab3;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_SolutionExplorer;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_Properties;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock3;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab2;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_ErrorList;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_TaskList;
-        private C1.Win.C1Command.C1DockingTabPage c1TabPage_Output;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1MainMenu c1MainMenu1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu_Format;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu_Help;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1Command c1Command_New;
+        private C1.Win.Command.C1Command c1Command_Open;
+        private C1.Win.Command.C1Command c1Command_Save;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu_Project;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu_File;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandLink c1CommandLink13;
+        private C1.Win.Command.C1CommandLink c1CommandLink14;
+        private C1.Win.Command.C1CommandLink c1CommandLink15;
+        private C1.Win.Command.C1Command c1Command_Exit;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu_Edit;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu_View;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1Command c1Command_ViewServerExplorer;
+        private C1.Win.Command.C1CommandLink c1CommandLink19;
+        private C1.Win.Command.C1Command c1Command_ViewSolutionExplorer;
+        private C1.Win.Command.C1CommandLink c1CommandLink22;
+        private C1.Win.Command.C1Command c1Command_ViewErrorList;
+        private C1.Win.Command.C1CommandLink c1CommandLink25;
+        private C1.Win.Command.C1Command c1Command_ViewOutput;
+        private C1.Win.Command.C1CommandLink c1CommandLink21;
+        private C1.Win.Command.C1Command c1Command_ViewProperties;
+        private C1.Win.Command.C1CommandLink c1CommandLink23;
+        private C1.Win.Command.C1Command c1Command_ViewTaskList;
+        private C1.Win.Command.C1CommandLink c1CommandLink20;
+        private C1.Win.Command.C1Command c1Command_ViewToolbox;
+        private C1.Win.Command.C1CommandLink c1CommandLink24;
+        private C1.Win.Command.C1Command c1Command_ViewStartPage;
+        private C1.Win.Command.C1DockingTab c1DockingTab4;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_StartPage;
+        private C1.Win.Command.C1CommandDock c1CommandDock2;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_ServerExplorer;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_Toolbox;
+        private C1.Win.Command.C1CommandDock c1CommandDock4;
+        private C1.Win.Command.C1DockingTab c1DockingTab3;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_SolutionExplorer;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_Properties;
+        private C1.Win.Command.C1CommandDock c1CommandDock3;
+        private C1.Win.Command.C1DockingTab c1DockingTab2;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_ErrorList;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_TaskList;
+        private C1.Win.Command.C1DockingTabPage c1TabPage_Output;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1MainMenu c1MainMenu1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
 
     }
 }

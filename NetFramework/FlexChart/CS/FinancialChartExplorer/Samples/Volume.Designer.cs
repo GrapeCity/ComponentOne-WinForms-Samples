@@ -32,7 +32,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
+            this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -87,7 +87,6 @@
             this.c1ComboBox1.AllowSpinLoop = false;
             this.c1ComboBox1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1ComboBox1.GapHeight = 5;
-            this.c1ComboBox1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1ComboBox1.ItemsDisplayMember = "Name";
             this.c1ComboBox1.ItemsValueMember = "Symbol";
             this.c1ComboBox1.Location = new System.Drawing.Point(97, 2);
@@ -97,7 +96,6 @@
             this.c1ComboBox1.TabIndex = 2;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.c1ComboBox1.TextDetached = true;
             this.c1ComboBox1.TranslateValue = true;
             this.c1ComboBox1.Value = "";
             this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
@@ -203,6 +201,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
-        private C1.Win.C1Input.C1ComboBox c1ComboBox1;
+        private C1.Win.Input.C1ComboBox c1ComboBox1;
     }
 }

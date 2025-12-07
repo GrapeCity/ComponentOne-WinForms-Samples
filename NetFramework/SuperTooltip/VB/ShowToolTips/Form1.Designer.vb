@@ -76,7 +76,7 @@ Partial Class Form1
         Me.toolStripContainer1 = New System.Windows.Forms.ToolStripContainer
         Me.toolStrip2 = New System.Windows.Forms.ToolStrip
         Me.newToolStripButton1 = New System.Windows.Forms.ToolStripButton
-        Me.C1SuperTooltip1 = New C1.Win.C1SuperTooltip.C1SuperTooltip(Me.components)
+        Me.C1SuperTooltip1 = New C1.Win.SuperTooltip.C1SuperTooltip(Me.components)
         Me.CheckBox1 = New System.Windows.Forms.CheckBox
         Me.CheckBox2 = New System.Windows.Forms.CheckBox
         Me.toolStrip3.SuspendLayout()
@@ -660,7 +660,7 @@ Partial Class Form1
     Private WithEvents toolStripContainer1 As System.Windows.Forms.ToolStripContainer
     Private WithEvents toolStrip2 As System.Windows.Forms.ToolStrip
     Private WithEvents newToolStripButton1 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents C1SuperTooltip1 As C1.Win.C1SuperTooltip.C1SuperTooltip
+    Friend WithEvents C1SuperTooltip1 As C1.Win.SuperTooltip.C1SuperTooltip
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
 

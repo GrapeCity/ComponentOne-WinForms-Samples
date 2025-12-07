@@ -4,7 +4,7 @@ Imports System.Drawing
 Imports System.ComponentModel
 Imports System.Collections
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -39,13 +39,13 @@ Public Class Form1
     'Do not modify it using the code editor.
     Friend WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents label2 As System.Windows.Forms.Label
-    Friend WithEvents _flex2 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents _flex1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex2 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents _flex1 As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.label1 = New System.Windows.Forms.Label()
         Me.label2 = New System.Windows.Forms.Label()
-        Me._flex2 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me._flex1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex2 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me._flex1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me._flex2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._flex1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -72,12 +72,12 @@ Public Class Form1
         Me._flex2.ColumnInfo = "3,1,0,0,0,85,Columns:1{Name:""Length"";Caption:""Length (ft)"";DataType:System.Int64;" & _
         "Format:""#,###.00"";}" & Microsoft.VisualBasic.ChrW(9) & "2{Name:""UserDef"";Caption:""User-Defined"";DataType:System.Bool" & _
         "ean;ImageAlign:CenterCenter;}" & Microsoft.VisualBasic.ChrW(9)
-        Me._flex2.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        Me._flex2.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
         Me._flex2.ForeColor = System.Drawing.SystemColors.WindowText
         Me._flex2.Location = New System.Drawing.Point(16, 208)
         Me._flex2.Name = "_flex2"
         Me._flex2.Size = New System.Drawing.Size(296, 144)
-        Me._flex2.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex2.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -94,12 +94,12 @@ Public Class Form1
         Me._flex1.ColumnInfo = "3,1,0,0,0,85,Columns:1{Name:""Length"";Caption:""Length(ft)"";DataType:System.Int64;F" & _
         "ormat:""#,###.00"";}" & Microsoft.VisualBasic.ChrW(9) & "2{Name:""UserDef"";Caption:""User-Defined"";DataType:System.Boole" & _
         "an;ImageAlign:CenterCenter;}" & Microsoft.VisualBasic.ChrW(9)
-        Me._flex1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        Me._flex1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
         Me._flex1.ForeColor = System.Drawing.SystemColors.WindowText
         Me._flex1.Location = New System.Drawing.Point(16, 24)
         Me._flex1.Name = "_flex1"
         Me._flex1.Size = New System.Drawing.Size(296, 144)
-        Me._flex1.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex1.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -130,7 +130,7 @@ Public Class Form1
 #End Region
     'method1 : use OwnerDraw cells to paint one column yellow when another is checked
 
-    Private Sub _flex1_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.OwnerDrawCellEventArgs) Handles _flex1.OwnerDrawCell
+    Private Sub _flex1_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.OwnerDrawCellEventArgs) Handles _flex1.OwnerDrawCell
         'paint a yellow background depending on the value of another column
         If (_flex1.Cols(e.Col).Name = "Length" AndAlso e.Row > 0) Then
             If _flex1(e.Row, "UserDef") Then
@@ -140,7 +140,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub _flex1_CellChanged(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _flex1.CellChanged
+    Private Sub _flex1_CellChanged(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _flex1.CellChanged
         'invalidate row to force repaint
         If _flex1.Cols(e.Col).Name = "UserDef" Then
             _flex1.Invalidate(e.Row, 0, e.Row, _flex1.Cols.Count - 1)
@@ -148,7 +148,7 @@ Public Class Form1
     End Sub
 
     'method 2: use styles to accomplish the same thing
-    Private Sub _flex2_CellChanged(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _flex2.CellChanged
+    Private Sub _flex2_CellChanged(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _flex2.CellChanged
         If _flex2.Cols(e.Col).Name = "UserDef" AndAlso e.Row > 0 Then
             'create style if we have to 
             Dim s As CellStyle = _flex2.Styles("Yellow")

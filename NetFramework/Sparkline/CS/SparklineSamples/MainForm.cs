@@ -110,9 +110,9 @@ namespace SparklineSamples
             }
 
             fxgRegionSales.AllowEditing = false;
-            fxgRegionSales.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
-            fxgRegionSales.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.None;
-            fxgRegionSales.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+            fxgRegionSales.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
+            fxgRegionSales.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.None;
+            fxgRegionSales.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
 
             fxgRegionSales.DataSource = salesList;
 
@@ -129,13 +129,13 @@ namespace SparklineSamples
             var winLossColumn = fxgRegionSales.Cols["WinLoss"];
 
             winLossColumn.ShowSparkline = true;
-            winLossColumn.Sparkline.SparklineType = C1.Win.C1FlexGrid.SparklineType.WinLoss;
+            winLossColumn.Sparkline.SparklineType = C1.Win.FlexGrid.SparklineType.WinLoss;
             winLossColumn.Sparkline.ShowNegative = true;
 
             var profitTrendColumn = fxgRegionSales.Cols["ProfitTrend"];
 
             profitTrendColumn.ShowSparkline = true;
-            profitTrendColumn.Sparkline.SparklineType = C1.Win.C1FlexGrid.SparklineType.Column;
+            profitTrendColumn.Sparkline.SparklineType = C1.Win.FlexGrid.SparklineType.Column;
             profitTrendColumn.Sparkline.ShowHigh = true;
             profitTrendColumn.Sparkline.ShowLow = true;
 

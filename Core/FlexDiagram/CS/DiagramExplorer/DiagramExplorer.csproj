@@ -1,0 +1,101 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\African_Elephant.png" />
+    <None Remove="Resources\Amanda_Rodriguez.png" />
+    <None Remove="Resources\Andrew_Miller.png" />
+    <None Remove="Resources\animals10.csv" />
+    <None Remove="Resources\animals50.csv" />
+    <None Remove="Resources\Bald_Eagle.png" />
+    <None Remove="Resources\Blue_Whale.png" />
+    <None Remove="Resources\Brian_Clark.png" />
+    <None Remove="Resources\Chris_Anderson.png" />
+    <None Remove="Resources\David_Chen.png" />
+    <None Remove="Resources\decision-tree.mermaid" />
+    <None Remove="Resources\Domestic_Cat.png" />
+    <None Remove="Resources\Domestic_Dog.png" />
+    <None Remove="Resources\Emma_Wilson.png" />
+    <None Remove="Resources\Eric_Baker.png" />
+    <None Remove="Resources\family-tree.mermaid" />
+    <None Remove="Resources\Frank_Adams.png" />
+    <None Remove="Resources\Hannah_Collins.png" />
+    <None Remove="Resources\House_Mouse.png" />
+    <None Remove="Resources\Human.png" />
+    <None Remove="Resources\Jennifer_Williams.png" />
+    <None Remove="Resources\John_Smith.png" />
+    <None Remove="Resources\Karen_White.png" />
+    <None Remove="Resources\Laura_Walker.png" />
+    <None Remove="Resources\Linda_Campbell.png" />
+    <None Remove="Resources\Lisa_Wang.png" />
+    <None Remove="Resources\literature.mermaid" />
+    <None Remove="Resources\Little_Brown_Bat.png" />
+    <None Remove="Resources\Mark_Robinson.png" />
+    <None Remove="Resources\Michael_Brown.png" />
+    <None Remove="Resources\Nicole_Harris.png" />
+    <None Remove="Resources\Paul_Martinez.png" />
+    <None Remove="Resources\Platypus.png" />
+    <None Remove="Resources\programming-language-tree.mermaid" />
+    <None Remove="Resources\Rebecca_Young.png" />
+    <None Remove="Resources\Red_Kangaroo.png" />
+    <None Remove="Resources\Robert_Taylor.png" />
+    <None Remove="Resources\Sarah_Mitchell.png" />
+    <None Remove="Resources\Sophia_Lewis.png" />
+    <None Remove="Resources\Thomas_Anderson.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\African_Elephant.png" />
+    <EmbeddedResource Include="Resources\Amanda_Rodriguez.png" />
+    <EmbeddedResource Include="Resources\Andrew_Miller.png" />
+    <EmbeddedResource Include="Resources\animals10.csv" />
+    <EmbeddedResource Include="Resources\animals50.csv" />
+    <EmbeddedResource Include="Resources\Bald_Eagle.png" />
+    <EmbeddedResource Include="Resources\Blue_Whale.png" />
+    <EmbeddedResource Include="Resources\Brian_Clark.png" />
+    <EmbeddedResource Include="Resources\Chris_Anderson.png" />
+    <EmbeddedResource Include="Resources\David_Chen.png" />
+    <EmbeddedResource Include="Resources\decision-tree.mermaid" />
+    <EmbeddedResource Include="Resources\Domestic_Cat.png" />
+    <EmbeddedResource Include="Resources\Domestic_Dog.png" />
+    <EmbeddedResource Include="Resources\Emma_Wilson.png" />
+    <EmbeddedResource Include="Resources\Eric_Baker.png" />
+    <EmbeddedResource Include="Resources\family-tree.mermaid" />
+    <EmbeddedResource Include="Resources\Frank_Adams.png" />
+    <EmbeddedResource Include="Resources\Hannah_Collins.png" />
+    <EmbeddedResource Include="Resources\House_Mouse.png" />
+    <EmbeddedResource Include="Resources\Human.png" />
+    <EmbeddedResource Include="Resources\Jennifer_Williams.png" />
+    <EmbeddedResource Include="Resources\John_Smith.png" />
+    <EmbeddedResource Include="Resources\Karen_White.png" />
+    <EmbeddedResource Include="Resources\Laura_Walker.png" />
+    <EmbeddedResource Include="Resources\Linda_Campbell.png" />
+    <EmbeddedResource Include="Resources\Lisa_Wang.png" />
+    <EmbeddedResource Include="Resources\literature.mermaid" />
+    <EmbeddedResource Include="Resources\Little_Brown_Bat.png" />
+    <EmbeddedResource Include="Resources\Mark_Robinson.png" />
+    <EmbeddedResource Include="Resources\Michael_Brown.png" />
+    <EmbeddedResource Include="Resources\Nicole_Harris.png" />
+    <EmbeddedResource Include="Resources\Paul_Martinez.png" />
+    <EmbeddedResource Include="Resources\Platypus.png" />
+    <EmbeddedResource Include="Resources\programming-language-tree.mermaid" />
+    <EmbeddedResource Include="Resources\Rebecca_Young.png" />
+    <EmbeddedResource Include="Resources\Red_Kangaroo.png" />
+    <EmbeddedResource Include="Resources\Robert_Taylor.png" />
+    <EmbeddedResource Include="Resources\Sarah_Mitchell.png" />
+    <EmbeddedResource Include="Resources\Sophia_Lewis.png" />
+    <EmbeddedResource Include="Resources\Thomas_Anderson.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Diagram" Version="10.0.20252.*" />
+  </ItemGroup>
+
+</Project>

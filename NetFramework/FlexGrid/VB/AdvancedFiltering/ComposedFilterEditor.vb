@@ -1,6 +1,6 @@
 ﻿Imports System
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Namespace AdvancedFiltering
     Partial Public Class ComposedFilterEditor

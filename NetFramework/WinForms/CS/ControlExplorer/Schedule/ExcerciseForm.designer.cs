@@ -55,7 +55,7 @@
             this.cmbCategory = new System.Windows.Forms.ComboBox();
             this.cmbInstructor = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
             this.pnTime.SuspendLayout();
             this.pnProps.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -413,6 +413,6 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.ComboBox cmbCategory;
 		private System.Windows.Forms.ComboBox cmbInstructor;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
 	}
 }

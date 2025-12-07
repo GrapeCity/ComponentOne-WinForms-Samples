@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1TrueDBGrid
+﻿Imports C1.Win.TrueDBGrid
 Imports System.Data.OleDb
 
 Public Class Form1

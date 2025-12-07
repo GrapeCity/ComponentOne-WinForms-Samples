@@ -26,7 +26,7 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
@@ -43,7 +43,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
 
         Me.DsComposer1 = New Tutor02.dsComposer()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -59,18 +59,18 @@ Public Class Form1
         'C1TrueDBGrid1
         '
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Caption = "C1TrueDBGrid.Net"
         Me.C1TrueDBGrid1.CaptionHeight = 17
         Me.C1TrueDBGrid1.CollapseColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.DataMember = "Composer"
         Me.C1TrueDBGrid1.DataSource = Me.DsComposer1
-        Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+        Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(8, 8)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.RecordSelectorWidth = 16
         Me.C1TrueDBGrid1.RowHeight = 15

@@ -18,8 +18,8 @@ namespace VisualStyles
         {
             if (cbOuterStyle.SelectedIndex >= 0)
             {
-                c1SplitContainer1.VisualStyle = (C1.Win.C1SplitContainer.VisualStyle)Enum.
-                    Parse(typeof(C1.Win.C1SplitContainer.VisualStyle),
+                c1SplitContainer1.VisualStyle = (C1.Win.SplitContainer.VisualStyle)Enum.
+                    Parse(typeof(C1.Win.SplitContainer.VisualStyle),
                     (string)cbOuterStyle.SelectedItem, false);
             }
         }
@@ -27,15 +27,15 @@ namespace VisualStyles
         private void btnOuterReset_Click(object sender, EventArgs e)
         {
             cbOuterStyle.SelectedIndex = -1;
-            c1SplitContainer1.VisualStyle = C1.Win.C1SplitContainer.VisualStyle.Office2007Blue;
+            c1SplitContainer1.VisualStyle = C1.Win.SplitContainer.VisualStyle.Office2007Blue;
         }
 
         private void cbInnerStyle_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if (cbInnerStyle.SelectedIndex >= 0)
             {
-                c1SplitContainer2.VisualStyle = (C1.Win.C1SplitContainer.VisualStyle)Enum.
-                    Parse(typeof(C1.Win.C1SplitContainer.VisualStyle),
+                c1SplitContainer2.VisualStyle = (C1.Win.SplitContainer.VisualStyle)Enum.
+                    Parse(typeof(C1.Win.SplitContainer.VisualStyle),
                     (string)cbInnerStyle.SelectedItem, false);
             }
         }
@@ -50,8 +50,8 @@ namespace VisualStyles
         {
             if (cbPanelStyle.SelectedIndex >= 0)
             {
-                c1InputPanel1.VisualStyle = (C1.Win.C1InputPanel.VisualStyle)Enum.
-                    Parse(typeof(C1.Win.C1InputPanel.VisualStyle),
+                c1InputPanel1.VisualStyle = (C1.Win.InputPanel.VisualStyle)Enum.
+                    Parse(typeof(C1.Win.InputPanel.VisualStyle),
                     (string)cbPanelStyle.SelectedOption.Text, false);
             }
         }

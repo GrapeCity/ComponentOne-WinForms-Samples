@@ -2,7 +2,7 @@
 Imports System.IO
 Imports C1.Document
 
-Imports C1.Win.C1Document
+Imports C1.Win.Document
 
 Public Class Form1
     ''' <summary>

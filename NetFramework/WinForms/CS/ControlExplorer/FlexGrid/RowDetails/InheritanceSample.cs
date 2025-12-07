@@ -1,5 +1,5 @@
-﻿using C1.Win.C1FlexGrid;
-using C1.Win.C1InputPanel;
+﻿using C1.Win.FlexGrid;
+using C1.Win.InputPanel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

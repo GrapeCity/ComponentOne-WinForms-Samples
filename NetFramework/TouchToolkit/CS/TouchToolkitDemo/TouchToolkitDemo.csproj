@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1TouchToolKit" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.TouchToolkit" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -177,6 +177,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="DemoBase.resx">
       <DependentUpon>DemoBase.cs</DependentUpon>
     </EmbeddedResource>

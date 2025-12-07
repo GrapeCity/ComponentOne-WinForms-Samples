@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Diagnostics;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace UnboundColumns
 {
@@ -14,7 +14,7 @@ namespace UnboundColumns
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -55,7 +55,7 @@ namespace UnboundColumns
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,8 +69,8 @@ namespace UnboundColumns
             this._flex.Size = new System.Drawing.Size(503, 354);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.GetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
-            this._flex.SetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
+            this._flex.GetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
+            this._flex.SetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
             // 
             // Form1
             // 
@@ -114,14 +114,14 @@ namespace UnboundColumns
 		Hashtable _hash = new Hashtable();
 
 		// get value from hashtable using ProductID as key
-		void _flex_GetUnboundValue(object sender, C1.Win.C1FlexGrid.UnboundValueEventArgs e)
+		void _flex_GetUnboundValue(object sender, C1.Win.FlexGrid.UnboundValueEventArgs e)
 		{
 			DataRowView drv = (DataRowView)_flex.Rows[e.Row].DataSource;
 			e.Value = _hash[drv["ProductID"]];
 		}
 
 		// store value in hashtable using ProductID as key
-		void _flex_SetUnboundValue(object sender, C1.Win.C1FlexGrid.UnboundValueEventArgs e)
+		void _flex_SetUnboundValue(object sender, C1.Win.FlexGrid.UnboundValueEventArgs e)
 		{
 			DataRowView drv = (DataRowView)_flex.Rows[e.Row].DataSource;
 			_hash[drv["ProductID"]] = e.Value;

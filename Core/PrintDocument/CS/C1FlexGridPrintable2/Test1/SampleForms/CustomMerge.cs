@@ -13,7 +13,7 @@ namespace CustomMerge
 	/// </summary>
     public class Form1 : System.Windows.Forms.Form
 	{
-		//private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		//private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private FlexSchedule _flex;
 
 		/// <summary>

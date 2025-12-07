@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnCellTypes));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.c1Combo1 = new C1.Win.C1List.C1Combo();
+            this.c1Combo1 = new C1.Win.List.C1Combo();
             this.c1NumericEdit1 = new C1.Win.C1Input.C1NumericEdit();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.flexTextBox1 = new ControlExplorer.FlexGrid.CustomEditors.FlexTextBox();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1Combo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
@@ -75,7 +75,7 @@
             this.c1Combo1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.c1Combo1.ColumnCaptionHeight = 17;
             this.c1Combo1.ColumnFooterHeight = 17;
-            this.c1Combo1.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+            this.c1Combo1.DataMode = C1.Win.List.DataModeEnum.AddItem;
             this.c1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty;
             this.c1Combo1.EditorBackColor = System.Drawing.SystemColors.Window;
             this.c1Combo1.EditorFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -89,7 +89,7 @@
             this.c1Combo1.MouseCursor = System.Windows.Forms.Cursors.Default;
             this.c1Combo1.Name = "c1Combo1";
             this.c1Combo1.PropBag = resources.GetString("c1Combo1.PropBag");
-            this.c1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+            this.c1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
             this.c1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1Combo1.Size = new System.Drawing.Size(121, 21);
             this.c1Combo1.TabIndex = 3;
@@ -121,13 +121,13 @@
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.Rows;
-            this.c1FlexGrid1.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.c1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.Rows;
+            this.c1FlexGrid1.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:28;}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-            this.c1FlexGrid1.KeyActionTab = C1.Win.C1FlexGrid.KeyActionEnum.MoveAcrossOut;
+            this.c1FlexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this.c1FlexGrid1.KeyActionTab = C1.Win.FlexGrid.KeyActionEnum.MoveAcrossOut;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.NewRowWatermark = "Click to add new row";
@@ -162,10 +162,10 @@
         #endregion
 
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1List.C1Combo c1Combo1;
+        private C1.Win.List.C1Combo c1Combo1;
         private C1.Win.C1Input.C1NumericEdit c1NumericEdit1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private ControlExplorer.FlexGrid.CustomEditors.FlexTextBox flexTextBox1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

@@ -1,4 +1,4 @@
-﻿using C1.Win.C1InputPanel;
+﻿using C1.Win.InputPanel;
 using C1.Win.Ribbon;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,7 @@
 ﻿using C1.Win.Input;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace BaseExplorer.CustomControls
         const int WmPaint = 15;
 
         string _placeHolder = "";
+
+        [DefaultValue("")]
         public string Placeholder
         {
             get

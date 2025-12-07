@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.IO;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace OwnerDrawAlpha
 {
@@ -16,7 +16,7 @@ namespace OwnerDrawAlpha
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+		private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
 		private System.Windows.Forms.Timer _timer;
 		private System.ComponentModel.IContainer components;
 
@@ -56,7 +56,7 @@ namespace OwnerDrawAlpha
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this._timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +73,7 @@ namespace OwnerDrawAlpha
             this._flex.Size = new System.Drawing.Size(582, 366);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             this._flex.DoubleClick += new System.EventHandler(this._flex_DoubleClick);
             // 
             // _timer
@@ -177,7 +177,7 @@ namespace OwnerDrawAlpha
 					dr["Status"] = "Copying...";
 			}
 		}
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (_flex.Cols[e.Col].Name == "Status" && e.Row > 0)
 			{

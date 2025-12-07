@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -63,6 +63,8 @@ namespace DataStyl
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.grpChartTypes = new System.Windows.Forms.GroupBox();
 			this.radioPlot = new System.Windows.Forms.RadioButton();
 			this.radioBar = new System.Windows.Forms.RadioButton();

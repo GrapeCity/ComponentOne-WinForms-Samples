@@ -20,6 +20,7 @@ namespace DataFilterExplorer.Samples
         #endregion
 
         #region Properties
+        [DefaultValue(DateTimeGroupOption.ShowAll)]
         public DateTimeGroupOption GroupBy
         {
             get { return _groupBy; }
@@ -33,6 +34,7 @@ namespace DataFilterExplorer.Samples
                 }
             }
         }
+        [DefaultValue(AggregateFunction.Sum)]
         public AggregateFunction Aggregate
         {
             get { return _aggregate; }
@@ -46,11 +48,13 @@ namespace DataFilterExplorer.Samples
                 }
             }
         }
+        [DefaultValue(true)]
         public bool ShowGroupBy
         {
             get { return _cbGroupBy.Visible; }
             set { _cbGroupBy.Visible = value; }
         }
+        [DefaultValue(true)]
         public bool ShowAggregate
         {
             get { return _cbAggregate.Visible; }

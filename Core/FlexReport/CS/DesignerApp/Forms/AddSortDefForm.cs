@@ -45,6 +45,7 @@ namespace FlexReportDesignerApp.Forms
             }
         }
 
+        [DefaultValue("")]
         public string SortExpression
         {
             get
@@ -57,6 +58,7 @@ namespace FlexReportDesignerApp.Forms
             }
         }
 
+        [DefaultValue(false)]
         public bool Ascending
         {
             get

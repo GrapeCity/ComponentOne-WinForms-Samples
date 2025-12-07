@@ -273,8 +273,9 @@ namespace SqlBuilder
 		private static Regex _rx1 = new Regex(@"^([^<>=]*)\s*(<|>|=|<>|<=|>=)\s*([^<>=]+)$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 		private static Regex _rx2 = new Regex(@"^([^<>=]*)\s*BETWEEN\s+(.+)\s+AND\s+(.+)$", RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-		// ** public
-		public QueryField QueryField
+        // ** public
+        [DefaultValue(null)]
+        public QueryField QueryField
 		{
 			get { return _qf; }
 			set
@@ -304,6 +305,8 @@ namespace SqlBuilder
 				}
 			}
 		}
+
+        [DefaultValue("")]
 		public string Value
 		{
 			get { return _value.Text; }

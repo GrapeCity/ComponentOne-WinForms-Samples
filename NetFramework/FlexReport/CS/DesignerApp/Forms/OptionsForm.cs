@@ -15,7 +15,7 @@ using System.Data;
 using System.Linq;
 
 using C1.Win.Localization;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 using Flex = C1.Win.FlexReport;
 using FlexDesigner = C1.Win.FlexReport;

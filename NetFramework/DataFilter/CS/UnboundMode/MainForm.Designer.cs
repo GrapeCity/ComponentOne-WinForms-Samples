@@ -39,8 +39,8 @@
             this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new UnboundMode.DataSet1();
             this.carsTableAdapter = new UnboundMode.DataSet1TableAdapters.CarsTableAdapter();
@@ -109,18 +109,18 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.ThemeChanged += new C1.Win.C1Themes.ThemeEventHandler(this.c1ThemeController1_ThemeChanged);
+            this.c1ThemeController1.ThemeChanged += new C1.Win.Themes.ThemeEventHandler(this.c1ThemeController1_ThemeChanged);
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
             this.c1FlexGrid1.DataSource = this.carsBindingSource;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 154);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(2094, 653);
             this.c1FlexGrid1.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
@@ -175,8 +175,8 @@
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource carsBindingSource;
         private DataSet1TableAdapters.CarsTableAdapter carsTableAdapter;

@@ -4,7 +4,7 @@ Imports System.Text
 Namespace CustomFilters
 	Partial Public Class DateFilterEditor
 		Inherits UserControl
-		Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor
+		Implements C1.Win.FlexGrid.IC1ColumnFilterEditor
 		'-------------------------------------------------------------------------------
 		#Region "** fields"
 
@@ -24,14 +24,14 @@ Namespace CustomFilters
 		'-------------------------------------------------------------------------------
 		#Region "** IC1ColumnFilterEditor"
 
-		Public Sub Initialize(ByVal grid As C1.Win.C1FlexGrid.C1FlexGridBase, ByVal columnIndex As Integer, ByVal filter As C1.Win.C1FlexGrid.IC1ColumnFilter) Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor.Initialize
+		Public Sub Initialize(ByVal grid As C1.Win.FlexGrid.C1FlexGridBase, ByVal columnIndex As Integer, ByVal filter As C1.Win.FlexGrid.IC1ColumnFilter) Implements C1.Win.FlexGrid.IC1ColumnFilterEditor.Initialize
 			_filter = CType(filter, DateFilter)
 
 			' TODO: 
 			' a really useful editor would set the calendar/checkboxes to match the current
 			' filter values.
 		End Sub
-		Public Sub ApplyChanges() Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor.ApplyChanges
+		Public Sub ApplyChanges() Implements C1.Win.FlexGrid.IC1ColumnFilterEditor.ApplyChanges
 			_filter.Reset()
 			If _chkCalendar.Checked Then
 				_filter.Minimum = _calendar.SelectionRange.Start
@@ -62,7 +62,7 @@ Namespace CustomFilters
 				End If
 			End If
 		End Sub
-		Public ReadOnly Property KeepFormOpen() As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor.KeepFormOpen
+		Public ReadOnly Property KeepFormOpen() As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilterEditor.KeepFormOpen
 			Get
 				Return False
 			End Get

@@ -13,13 +13,14 @@ namespace FlexGridExplorer.Samples
 {
     public partial class ExportOptions: Form
     {
-        C1.Win.FlexGrid.FileFlags _flags;
+        FileFlags _flags;
         public ExportOptions()
         {
             InitializeComponent();
             _flags = new FileFlags();
         }
 
+        [DefaultValue(FileFlags.None)]
         public FileFlags Flags
         {
             get { return _flags; }

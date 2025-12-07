@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.IO;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace MdiTabs
 {
@@ -14,43 +14,43 @@ namespace MdiTabs
 	/// </summary>
 	public class MainForm : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Command.C1MainMenu c1MainMenu1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandMenu mnuFile;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1CommandMenu mnuEdit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1CommandMenu mnuWindow;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1Command cmdExit;
+        private C1.Win.Command.C1MainMenu c1MainMenu1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandMenu mnuFile;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1CommandMenu mnuEdit;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1CommandMenu mnuWindow;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1Command cmdExit;
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1Command cmdFileNew;
-        private C1.Win.C1Command.C1CommandDock dockToolbar;
-        private C1.Win.C1Command.C1CommandDock dockSidebar;
-        private C1.Win.C1Command.C1CommandDock dockTray;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1Command.C1DockingTab tabSidebar;
-        private C1.Win.C1Command.C1DockingTab tabTray;
-        private C1.Win.C1Command.C1DockingTab tabMain;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1Command cmdFileOpen;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1Command cmdFileNew;
+        private C1.Win.Command.C1CommandDock dockToolbar;
+        private C1.Win.Command.C1CommandDock dockSidebar;
+        private C1.Win.Command.C1CommandDock dockTray;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTab tabSidebar;
+        private C1.Win.Command.C1DockingTab tabTray;
+        private C1.Win.Command.C1DockingTab tabMain;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1Command cmdFileOpen;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Command.C1Command cmdFileSave;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
-        private C1.Win.C1Command.C1Command cmdWindowCloseAll;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1Command cmdFileSave;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1Command cmdWindowCloseAll;
         private System.Windows.Forms.TextBox textLog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private MdiTabs.DirView dirView;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
         private System.Windows.Forms.ListBox listOpenFiles;
         private C1CommandMenu c1CommandMenuOptions;
         private C1CommandLink c1CommandLink14;
@@ -95,6 +95,7 @@ namespace MdiTabs
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("...");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("A:", 0, 4, new System.Windows.Forms.TreeNode[] {
             treeNode1});
@@ -122,46 +123,46 @@ namespace MdiTabs
             System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("...");
             System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("X:", 0, 4, new System.Windows.Forms.TreeNode[] {
             treeNode17});
-            this.c1MainMenu1 = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.mnuFile = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdFileNew = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdFileOpen = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdFileSave = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdExit = new C1.Win.C1Command.C1Command();
-            this.mnuEdit = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.mnuWindow = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdWindowCloseAll = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenuOptions = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink14 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandVS2005 = new C1.Win.C1Command.C1Command();
+            this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.mnuFile = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.cmdFileNew = new C1.Win.Command.C1Command();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.cmdFileOpen = new C1.Win.Command.C1Command();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
+            this.cmdFileSave = new C1.Win.Command.C1Command();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.cmdExit = new C1.Win.Command.C1Command();
+            this.mnuEdit = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.mnuWindow = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.cmdWindowCloseAll = new C1.Win.Command.C1Command();
+            this.c1CommandMenuOptions = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink14 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandVS2005 = new C1.Win.Command.C1Command();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink13 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.dockToolbar = new C1.Win.C1Command.C1CommandDock();
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.dockSidebar = new C1.Win.C1Command.C1CommandDock();
-            this.tabSidebar = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink13 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.dockToolbar = new C1.Win.Command.C1CommandDock();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.dockSidebar = new C1.Win.Command.C1CommandDock();
+            this.tabSidebar = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.dirView = new MdiTabs.DirView();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
             this.listOpenFiles = new System.Windows.Forms.ListBox();
-            this.dockTray = new C1.Win.C1Command.C1CommandDock();
-            this.tabTray = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
+            this.dockTray = new C1.Win.Command.C1CommandDock();
+            this.tabTray = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
             this.textLog = new System.Windows.Forms.TextBox();
-            this.tabMain = new C1.Win.C1Command.C1DockingTab();
+            this.tabMain = new C1.Win.Command.C1DockingTab();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
@@ -185,7 +186,7 @@ namespace MdiTabs
             // 
             this.c1MainMenu1.AccessibleName = "Menu Bar";
             this.c1MainMenu1.CommandHolder = this.c1CommandHolder1;
-            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink4,
             this.c1CommandLink13,
@@ -213,7 +214,7 @@ namespace MdiTabs
             // 
             // mnuFile
             // 
-            this.mnuFile.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.mnuFile.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink8,
             this.c1CommandLink9,
             this.c1CommandLink11,
@@ -230,7 +231,7 @@ namespace MdiTabs
             this.cmdFileNew.ImageIndex = 1;
             this.cmdFileNew.Name = "cmdFileNew";
             this.cmdFileNew.Text = "&New";
-            this.cmdFileNew.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdFileNew_Click);
+            this.cmdFileNew.Click += new C1.Win.Command.ClickEventHandler(this.cmdFileNew_Click);
             // 
             // c1CommandLink9
             // 
@@ -241,7 +242,7 @@ namespace MdiTabs
             this.cmdFileOpen.ImageIndex = 0;
             this.cmdFileOpen.Name = "cmdFileOpen";
             this.cmdFileOpen.Text = "&Open";
-            this.cmdFileOpen.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdFileOpen_Click);
+            this.cmdFileOpen.Click += new C1.Win.Command.ClickEventHandler(this.cmdFileOpen_Click);
             // 
             // c1CommandLink11
             // 
@@ -252,8 +253,8 @@ namespace MdiTabs
             this.cmdFileSave.ImageIndex = 2;
             this.cmdFileSave.Name = "cmdFileSave";
             this.cmdFileSave.Text = "&Save";
-            this.cmdFileSave.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(this.cmdFileSave_CommandStateQuery);
-            this.cmdFileSave.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdFileSave_Click);
+            this.cmdFileSave.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(this.cmdFileSave_CommandStateQuery);
+            this.cmdFileSave.Click += new C1.Win.Command.ClickEventHandler(this.cmdFileSave_Click);
             // 
             // c1CommandLink3
             // 
@@ -264,11 +265,11 @@ namespace MdiTabs
             // 
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Text = "E&xit";
-            this.cmdExit.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdExit_Click);
+            this.cmdExit.Click += new C1.Win.Command.ClickEventHandler(this.cmdExit_Click);
             // 
             // mnuEdit
             // 
-            this.mnuEdit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.mnuEdit.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink5});
             this.mnuEdit.HideNonRecentLinks = false;
             this.mnuEdit.Name = "mnuEdit";
@@ -280,7 +281,7 @@ namespace MdiTabs
             // 
             // mnuWindow
             // 
-            this.mnuWindow.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.mnuWindow.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink7});
             this.mnuWindow.HideNonRecentLinks = false;
             this.mnuWindow.Name = "mnuWindow";
@@ -295,12 +296,12 @@ namespace MdiTabs
             // 
             this.cmdWindowCloseAll.Name = "cmdWindowCloseAll";
             this.cmdWindowCloseAll.Text = "Close &All";
-            this.cmdWindowCloseAll.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(this.cmdWindowCloseAll_CommandStateQuery);
-            this.cmdWindowCloseAll.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdWindowCloseAll_Click);
+            this.cmdWindowCloseAll.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(this.cmdWindowCloseAll_CommandStateQuery);
+            this.cmdWindowCloseAll.Click += new C1.Win.Command.ClickEventHandler(this.cmdWindowCloseAll_Click);
             // 
             // c1CommandMenuOptions
             // 
-            this.c1CommandMenuOptions.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1CommandMenuOptions.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink14});
             this.c1CommandMenuOptions.HideNonRecentLinks = false;
             this.c1CommandMenuOptions.Name = "c1CommandMenuOptions";
@@ -316,7 +317,7 @@ namespace MdiTabs
             this.c1CommandVS2005.Checked = true;
             this.c1CommandVS2005.Name = "c1CommandVS2005";
             this.c1CommandVS2005.Text = "VS2005 Docking";
-            this.c1CommandVS2005.CheckedChanged += new C1.Win.C1Command.CheckedChangedEventHandler(this.c1CommandVS2005_CheckedChanged);
+            this.c1CommandVS2005.CheckedChanged += new C1.Win.Command.CheckedChangedEventHandler(this.c1CommandVS2005_CheckedChanged);
             // 
             // imageList1
             // 
@@ -356,7 +357,7 @@ namespace MdiTabs
             // c1ToolBar1
             // 
             this.c1ToolBar1.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink2,
             this.c1CommandLink10,
             this.c1CommandLink12});
@@ -401,7 +402,7 @@ namespace MdiTabs
             this.tabSidebar.ShowCaption = true;
             this.tabSidebar.Size = new System.Drawing.Size(168, 504);
             this.tabSidebar.TabIndex = 0;
-            this.tabSidebar.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.tabSidebar.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.tabSidebar.TabsSpacing = 0;
             // 
             // c1DockingTabPage2
@@ -550,7 +551,7 @@ namespace MdiTabs
             this.tabTray.ShowCaption = true;
             this.tabTray.Size = new System.Drawing.Size(592, 128);
             this.tabTray.TabIndex = 0;
-            this.tabTray.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.tabTray.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.tabTray.TabsSpacing = 0;
             // 
             // c1DockingTabPage3
@@ -585,10 +586,10 @@ namespace MdiTabs
             this.tabMain.Size = new System.Drawing.Size(592, 376);
             this.tabMain.TabIndex = 5;
             this.tabMain.TabsSpacing = 0;
-            this.tabMain.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.tabMain.TabPageClosed += new C1.Win.C1Command.TabPageEventHandler(this.tabMain_TabPageClosed);
+            this.tabMain.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.tabMain.TabPageClosed += new C1.Win.Command.TabPageEventHandler(this.tabMain_TabPageClosed);
             this.tabMain.SelectedIndexChanged += new System.EventHandler(this.tabMain_SelectedIndexChanged);
-            this.tabMain.TabPageClosing += new C1.Win.C1Command.TabPageCancelEventHandler(this.tabMain_TabPageClosing);
+            this.tabMain.TabPageClosing += new C1.Win.Command.TabPageCancelEventHandler(this.tabMain_TabPageClosing);
             this.tabMain.DoubleClick += new System.EventHandler(this.tabMain_DoubleClick);
             // 
             // openFileDialog1
@@ -652,7 +653,7 @@ namespace MdiTabs
             this.textLog.ScrollToCaret();
         }
 
-        private void cmdExit_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdExit_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             this.Close();
         }
@@ -688,12 +689,12 @@ namespace MdiTabs
             }
         }
 
-        private void cmdFileNew_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdFileNew_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             NewEditor(string.Empty);
         }
 
-        private void cmdFileOpen_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdFileOpen_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             try
             {
@@ -707,7 +708,7 @@ namespace MdiTabs
             }
         }
 
-        private void tabMain_TabPageClosed(object sender, C1.Win.C1Command.TabPageEventArgs e)
+        private void tabMain_TabPageClosed(object sender, C1.Win.Command.TabPageEventArgs e)
         {
             // note: C1DockingTab automatically hides when all tabs are removed;
             // this code restores it
@@ -752,18 +753,18 @@ namespace MdiTabs
             }
         }
 
-        private void WindowSelectHandler(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void WindowSelectHandler(object sender, C1.Win.Command.ClickEventArgs e)
         {
             ShowEditor(e.CallerLink.Command.UserData as Editor);
         }
 
-        private void cmdWindowCloseAll_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdWindowCloseAll_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             for (int i = tabMain.TabPages.Count - 1; i >= 0; --i)
                 CloseEditor((Editor)tabMain.TabPages[i].Tag);
         }
 
-        private void tabMain_TabPageClosing(object sender, C1.Win.C1Command.TabPageCancelEventArgs e)
+        private void tabMain_TabPageClosing(object sender, C1.Win.Command.TabPageCancelEventArgs e)
         {
             if (!((Editor)e.TabPage.Tag).Closing())
                 e.Cancel = true;
@@ -819,20 +820,20 @@ namespace MdiTabs
             ShowEditor(ed);
         }
 
-        private void cmdFileSave_CommandStateQuery(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void cmdFileSave_CommandStateQuery(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             Editor ed = SelectedEditor();
             e.Enabled = ed != null && ed.Dirty;
         }
 
-        private void cmdFileSave_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdFileSave_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             Editor ed = SelectedEditor();
             if (ed != null)
                 ed.Save();
         }
 
-        private void cmdWindowCloseAll_CommandStateQuery(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void cmdWindowCloseAll_CommandStateQuery(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             e.Enabled = tabMain.TabPages.Count > 0;
         }

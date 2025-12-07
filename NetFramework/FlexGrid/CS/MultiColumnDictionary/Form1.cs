@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using System.Globalization;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 
 namespace MultiColumnDictionarySample
@@ -16,10 +16,10 @@ namespace MultiColumnDictionarySample
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.ImageList _imgList;
 		private System.Windows.Forms.CheckBox _chkCombo;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexList;
+		private C1.Win.FlexGrid.C1FlexGrid _flexList;
 		private System.Windows.Forms.RadioButton _radioShippers;
 		private System.Windows.Forms.RadioButton _radioProducts;
 		private System.Windows.Forms.Label label1;
@@ -62,10 +62,12 @@ namespace MultiColumnDictionarySample
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._imgList = new System.Windows.Forms.ImageList(this.components);
 			this._chkCombo = new System.Windows.Forms.CheckBox();
-			this._flexList = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flexList = new C1.Win.FlexGrid.C1FlexGrid();
 			this._radioShippers = new System.Windows.Forms.RadioButton();
 			this._radioProducts = new System.Windows.Forms.RadioButton();
 			this.label1 = new System.Windows.Forms.Label();
@@ -87,8 +89,8 @@ namespace MultiColumnDictionarySample
 			this._flex.Size = new System.Drawing.Size(704, 240);
 			this._flex.StyleInfo = @"Normal{}	Alternate{}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Focus{}	Editor{}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	NewRow{}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	";
 			this._flex.TabIndex = 0;
-			this._flex.SetupEditor += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_SetupEditor);
-			this._flex.ValidateEdit += new C1.Win.C1FlexGrid.ValidateEditEventHandler(this._flex_ValidateEdit);
+			this._flex.SetupEditor += new C1.Win.FlexGrid.RowColEventHandler(this._flex_SetupEditor);
+			this._flex.ValidateEdit += new C1.Win.FlexGrid.ValidateEditEventHandler(this._flex_ValidateEdit);
 			// 
 			// _imgList
 			// 
@@ -265,19 +267,19 @@ namespace MultiColumnDictionarySample
 			col = _flex.Cols[colIndex++];
 			col.Caption = "MCD Shippers";
 			col.ImageMap = img;
-			col.DataMap = new C1.Win.C1FlexGrid.MultiColumnDictionary(_dtShippers, "ShipperID", new string[] { "CompanyName","Phone" }, 0);
+			col.DataMap = new C1.Win.FlexGrid.MultiColumnDictionary(_dtShippers, "ShipperID", new string[] { "CompanyName","Phone" }, 0);
 
 			// MultiColumnDictionary 4: bound to Products
 			col = _flex.Cols[colIndex++];
 			col.Caption = "MCD Prods";
 			col.ImageMap = img;
-			col.DataMap = new C1.Win.C1FlexGrid.MultiColumnDictionary(_dtProducts, "ProductID", null, 1);
+			col.DataMap = new C1.Win.FlexGrid.MultiColumnDictionary(_dtProducts, "ProductID", null, 1);
 
 			// MultiColumnDictionary 5: bound to Employees
 			col = _flex.Cols[colIndex++];
 			col.Caption = "MCD Employees";
 			col.ImageMap = img;
-			col.DataMap = new C1.Win.C1FlexGrid.MultiColumnDictionary(_dtEmployees, "EmployeeID", new string[] { "FirstName", "LastName", "Country" }, 0);
+			col.DataMap = new C1.Win.FlexGrid.MultiColumnDictionary(_dtEmployees, "EmployeeID", new string[] { "FirstName", "LastName", "Country" }, 0);
 
 			// MultiColumnDictionary 6: string-based, multicol
 			col = _flex.Cols[colIndex++];
@@ -289,7 +291,7 @@ namespace MultiColumnDictionarySample
 		// Use combo if checked.
 		// By default, maps imply simple dropdowns.
 		// Simple dropdowns also have autosearch, but the combo autosearch looks better.
-		void _flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			ComboBox cb = _flex.Editor as ComboBox;
 			if (cb != null)
@@ -303,7 +305,7 @@ namespace MultiColumnDictionarySample
 		// Allow users to type an ID in addition to the item itself.
 		// To do this, retrieve the editor value, check if it's an integer, and look it up
 		// in the dictionary. If an entry is found, replace the editor contents with it.
-		void _flex_ValidateEdit(object sender, C1.Win.C1FlexGrid.ValidateEditEventArgs e)
+		void _flex_ValidateEdit(object sender, C1.Win.FlexGrid.ValidateEditEventArgs e)
 		{
 			// check that we have a combo and a multi-column dictionary
 			ComboBox cb = _flex.Editor as ComboBox;

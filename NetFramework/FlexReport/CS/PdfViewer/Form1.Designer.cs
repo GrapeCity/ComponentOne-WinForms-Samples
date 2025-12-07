@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.menuFile = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
-            this.c1PdfDocumentSource1 = new C1.Win.C1Document.C1PdfDocumentSource();
+            this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource();
             this.menuFile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexViewer1)).BeginInit();
             this.SuspendLayout();
@@ -110,7 +113,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private C1.Win.C1Document.C1PdfDocumentSource c1PdfDocumentSource1;
+        private C1.Win.Document.C1PdfDocumentSource c1PdfDocumentSource1;
     }
 }
 

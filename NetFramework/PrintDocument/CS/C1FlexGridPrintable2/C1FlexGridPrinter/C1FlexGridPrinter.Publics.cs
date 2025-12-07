@@ -5,7 +5,7 @@ using System.Diagnostics;
 using C1.C1Preview;
 using C1.Win.C1Preview;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     // This file contains the object model exposed by C1FlexGridPrinter - 
     // public ctor, properties and methods.

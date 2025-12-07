@@ -1,4 +1,4 @@
-namespace LogPlots
+﻿namespace LogPlots
 {
 	partial class Form1
 	{
@@ -29,6 +29,7 @@ namespace LogPlots
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();

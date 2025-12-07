@@ -6,7 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace ControlExplorer.DynamicHelp
 {
@@ -57,7 +57,7 @@ namespace ControlExplorer.DynamicHelp
             c1DynamicHelp1.ShowTopic("WordDocuments/icecreamcreationsimulator.htm");
         }
 
-        private void c1CommandHolder1_CommandClick(object sender, C1.Win.C1Command.CommandClickEventArgs e)
+        private void c1CommandHolder1_CommandClick(object sender, C1.Win.Command.CommandClickEventArgs e)
         {   
             if (e.Command == c1CommandNew)
             {
@@ -299,7 +299,7 @@ namespace ControlExplorer.DynamicHelp
             ShowTab(tabNew);
         }
 
-        private void c1SuperLabel1_LinkClicked(object sender, C1.Win.C1SuperTooltip.C1SuperLabelLinkClickedEventArgs e)
+        private void c1SuperLabel1_LinkClicked(object sender, C1.Win.SuperTooltip.C1SuperLabelLinkClickedEventArgs e)
         {
             splitContainer1.Panel2Collapsed = false;
         }   

@@ -16,7 +16,7 @@ namespace ControlExplorer.Themes
             IsThemeable = false;
             InitializeComponent();
             // populate combobox with all available themes
-            this.c1ComboBox2.Items.AddRange(C1.Win.C1Themes.C1ThemeController.GetThemes());
+            this.c1ComboBox2.Items.AddRange(C1.Win.Themes.C1ThemeController.GetThemes());
             this.c1ComboBox2.SelectedItem = "Material";
         }
 
@@ -36,7 +36,7 @@ namespace ControlExplorer.Themes
             Action<Control> setTheme = null;
             setTheme = (c) =>
             {
-                if (C1.Win.C1Themes.C1ThemeController.IsObjectThemeable(c))
+                if (C1.Win.Themes.C1ThemeController.IsObjectThemeable(c))
                     this.c1ThemeController1.SetTheme(c, this.c1ThemeController1.Theme);
                 foreach (Control cc in c.Controls)
                     setTheme(cc);

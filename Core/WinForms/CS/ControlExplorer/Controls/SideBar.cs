@@ -4,6 +4,7 @@ using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -23,6 +24,8 @@ namespace ControlExplorer.Controls
 
         #region Public Methods
         public event EventHandler<SideBarEventArgs> SelectionChanged;
+
+        [DefaultValue(false)]
         public bool Collapsed
         {
             get { return _collapsed; }
@@ -36,6 +39,7 @@ namespace ControlExplorer.Controls
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public List<ItemInfo> Samples
         {
             get { return _samples; }

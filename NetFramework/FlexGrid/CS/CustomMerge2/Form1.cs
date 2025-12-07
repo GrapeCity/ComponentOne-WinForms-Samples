@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomMerge2
 {
@@ -60,107 +60,109 @@ namespace CustomMerge2
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new CustomMerge2.CustomMergeFlex();
-			this._cmb = new System.Windows.Forms.ComboBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this._chkRows = new System.Windows.Forms.CheckBox();
-			this._chkCols = new System.Windows.Forms.CheckBox();
-			this._chkCustom = new System.Windows.Forms.CheckBox();
-			this._btnPrint = new System.Windows.Forms.Button();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
-			this._flex.Anchor = (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-				| System.Windows.Forms.AnchorStyles.Left) 
-				| System.Windows.Forms.AnchorStyles.Right);
-			this._flex.BackColor = System.Drawing.SystemColors.Window;
-			this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:";
-			this._flex.CustomMerging = false;
-			this._flex.Location = new System.Drawing.Point(8, 40);
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(512, 248);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			// 
-			// _cmb
-			// 
-			this._cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this._cmb.Location = new System.Drawing.Point(88, 8);
-			this._cmb.Name = "_cmb";
-			this._cmb.Size = new System.Drawing.Size(112, 21);
-			this._cmb.TabIndex = 1;
-			this._cmb.SelectedIndexChanged += new System.EventHandler(this._cmb_SelectedIndexChanged);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(8, 12);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(72, 13);
-			this.label1.TabIndex = 2;
-			this.label1.Text = "AllowMerging";
-			// 
-			// _chkRows
-			// 
-			this._chkRows.Checked = true;
-			this._chkRows.CheckState = System.Windows.Forms.CheckState.Checked;
-			this._chkRows.Location = new System.Drawing.Point(216, 6);
-			this._chkRows.Name = "_chkRows";
-			this._chkRows.Size = new System.Drawing.Size(56, 24);
-			this._chkRows.TabIndex = 3;
-			this._chkRows.Text = "&Rows";
-			this._chkRows.CheckedChanged += new System.EventHandler(this._chkRowsCols_CheckedChanged);
-			// 
-			// _chkCols
-			// 
-			this._chkCols.Checked = true;
-			this._chkCols.CheckState = System.Windows.Forms.CheckState.Checked;
-			this._chkCols.Location = new System.Drawing.Point(280, 6);
-			this._chkCols.Name = "_chkCols";
-			this._chkCols.Size = new System.Drawing.Size(80, 24);
-			this._chkCols.TabIndex = 3;
-			this._chkCols.Text = "&Columns";
-			this._chkCols.CheckedChanged += new System.EventHandler(this._chkRowsCols_CheckedChanged);
-			// 
-			// _chkCustom
-			// 
-			this._chkCustom.Location = new System.Drawing.Point(368, 6);
-			this._chkCustom.Name = "_chkCustom";
-			this._chkCustom.Size = new System.Drawing.Size(72, 24);
-			this._chkCustom.TabIndex = 3;
-			this._chkCustom.Text = "Custo&m";
-			this._chkCustom.CheckedChanged += new System.EventHandler(this._chkCustom_CheckedChanged);
-			// 
-			// _btnPrint
-			// 
-			this._btnPrint.Location = new System.Drawing.Point(448, 8);
-			this._btnPrint.Name = "_btnPrint";
-			this._btnPrint.Size = new System.Drawing.Size(72, 24);
-			this._btnPrint.TabIndex = 4;
-			this._btnPrint.Text = "&Print";
-			this._btnPrint.Click += new System.EventHandler(this._btnPrint_Click);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(528, 293);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._btnPrint,
-																		  this._chkRows,
-																		  this.label1,
-																		  this._cmb,
-																		  this._flex,
-																		  this._chkCols,
-																		  this._chkCustom});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Custom Merging with override";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new CustomMerge2.CustomMergeFlex();
+            this._cmb = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this._chkRows = new System.Windows.Forms.CheckBox();
+            this._chkCols = new System.Windows.Forms.CheckBox();
+            this._chkCustom = new System.Windows.Forms.CheckBox();
+            this._btnPrint = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+            this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:";
+            this._flex.CustomMerging = false;
+            this._flex.Location = new System.Drawing.Point(16, 74);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(496, 210);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            // 
+            // _cmb
+            // 
+            this._cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cmb.Location = new System.Drawing.Point(176, 15);
+            this._cmb.Name = "_cmb";
+            this._cmb.Size = new System.Drawing.Size(224, 33);
+            this._cmb.TabIndex = 1;
+            this._cmb.SelectedIndexChanged += new System.EventHandler(this._cmb_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "AllowMerging";
+            // 
+            // _chkRows
+            // 
+            this._chkRows.Checked = true;
+            this._chkRows.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._chkRows.Location = new System.Drawing.Point(432, 11);
+            this._chkRows.Name = "_chkRows";
+            this._chkRows.Size = new System.Drawing.Size(112, 44);
+            this._chkRows.TabIndex = 3;
+            this._chkRows.Text = "&Rows";
+            this._chkRows.CheckedChanged += new System.EventHandler(this._chkRowsCols_CheckedChanged);
+            // 
+            // _chkCols
+            // 
+            this._chkCols.Checked = true;
+            this._chkCols.CheckState = System.Windows.Forms.CheckState.Checked;
+            this._chkCols.Location = new System.Drawing.Point(560, 11);
+            this._chkCols.Name = "_chkCols";
+            this._chkCols.Size = new System.Drawing.Size(160, 44);
+            this._chkCols.TabIndex = 3;
+            this._chkCols.Text = "&Columns";
+            this._chkCols.CheckedChanged += new System.EventHandler(this._chkRowsCols_CheckedChanged);
+            // 
+            // _chkCustom
+            // 
+            this._chkCustom.Location = new System.Drawing.Point(736, 11);
+            this._chkCustom.Name = "_chkCustom";
+            this._chkCustom.Size = new System.Drawing.Size(144, 44);
+            this._chkCustom.TabIndex = 3;
+            this._chkCustom.Text = "Custo&m";
+            this._chkCustom.CheckedChanged += new System.EventHandler(this._chkCustom_CheckedChanged);
+            // 
+            // _btnPrint
+            // 
+            this._btnPrint.Location = new System.Drawing.Point(896, 15);
+            this._btnPrint.Name = "_btnPrint";
+            this._btnPrint.Size = new System.Drawing.Size(144, 44);
+            this._btnPrint.TabIndex = 4;
+            this._btnPrint.Text = "&Print";
+            this._btnPrint.Click += new System.EventHandler(this._btnPrint_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(528, 293);
+            this.Controls.Add(this._btnPrint);
+            this.Controls.Add(this._chkRows);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this._cmb);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this._chkCols);
+            this.Controls.Add(this._chkCustom);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Custom Merging with override";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion

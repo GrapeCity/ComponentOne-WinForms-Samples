@@ -1,6 +1,6 @@
 ﻿using C1.CalcEngine;
 using C1.CalcEngine.ExcelEngine;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System;
 using System.Linq;
 using System.Data;

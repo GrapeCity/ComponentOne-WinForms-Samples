@@ -1,16 +1,16 @@
-﻿using System;
+﻿// Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
+
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MultiSelectExplorer.Samples;
+using MultiSelectExplorer.Samples.Designer;
 
 namespace MultiSelectExplorer
 {
-    using MultiSelectExplorer.Samples;
     public partial class Form1 : Form
     {
         private IList<SampleItem> _items = SampleDataSource.AllItems;
@@ -19,36 +19,56 @@ namespace MultiSelectExplorer
             InitializeComponent();
             if (_items != null)
             {
-                lblSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
-                if(_items.Any())
-                    lblSamples.SelectedIndex = 0;
+                lbSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
+                if (_items.Count > 0)
+                    lbSamples.SelectedIndex = 0;
             }
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            this.pnlSample.Controls.Clear();
-            var sampleName = lblSamples.SelectedItem as string;
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            var sampleName = lbSamples.SelectedItem as string;
             if (sampleName == null) return;
 
-            var sample = _items.Where(x => x.Name == sampleName).FirstOrDefault();
-            if (sample == null) return;
+            SampleItem sampleItem = _items.Where(x => x.Name == sampleName).FirstOrDefault();
+            if (sampleItem == null) return;
 
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
 
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
-            this.pnlSample.Controls.Add(control);
+            var sampleItemControl = sampleItem.Sample;
+            sampleItemControl.Dock = DockStyle.Fill;
+            pnlSample.Controls.Add(sampleItemControl);
+
+            //Subscribe to DesignerControl event if applicable
+            if (sampleItemControl is DesignerControl designerControl)
+            {
+                //Unsubscribe: to avoid multiple subscriptions when re-selecting the same sample
+                designerControl.DesignerActionTriggered -= DesignerControl_DesignerActionTriggered;
+                designerControl.DesignerActionTriggered += DesignerControl_DesignerActionTriggered;
+            }
+
             UpdateDescriptionSize();
+        }
+
+        private void DesignerControl_DesignerActionTriggered(object sender, EventArgs e)
+        {
+            lbSamples_SelectedValueChanged(null, EventArgs.Empty);
         }
 
         private void UpdateDescriptionSize()
         {
             Size s = TextRenderer.MeasureText(lblDescription.Text, lblDescription.Font);
             int height = Math.Max(s.Height + 6, (s.Height + 6) * (int)Math.Ceiling((decimal)(s.Width + 20) / lblDescription.Width));
-            this.lblDescription.Size = new Size(lblDescription.Width, height);
+            lblDescription.Size = new Size(lblDescription.Width, height);
         }
+
         private void chkInfo_CheckedChanged(object sender, EventArgs e)
         {
             pnlDescription.Visible = chkInfo.Checked;

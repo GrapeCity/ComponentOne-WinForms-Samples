@@ -1,0 +1,23 @@
+﻿// Create nodes
+var startNode = new Node() { Text = "Start Process" };
+var processNode = new Node() { Text = "Execute", Shape = Shape.RoundedRectangle };
+var endNode = new Node() { Text = "Complete" };
+
+// Add nodes to the diagram
+diagram.Nodes.Add(startNode);
+diagram.Nodes.Add(processNode);
+diagram.Nodes.Add(endNode);
+
+// Create and add edges (links)
+diagram.Edges.Add(new Edge()
+{
+    Source = startNode,
+    Target = processNode,
+    TargetArrow = ArrowStyle.Normal
+});
+diagram.Edges.Add(new Edge()
+{
+    Source = processNode,
+    Target = endNode,
+    TargetArrow = ArrowStyle.Normal
+});

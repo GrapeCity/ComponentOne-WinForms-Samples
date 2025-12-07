@@ -153,7 +153,7 @@
   <data name="c1SplitterPanel4.Text" xml:space="preserve">
     <value>Panel 2</value>
   </data>
-  <assembly alias="C1.Win.C1SplitContainer.4.5.2" name="C1.Win.C1SplitContainer.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.SplitContainer.4.5.2" name="C1.Win.SplitContainer.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <data name="c1SplitterPanel5.Text" xml:space="preserve">
     <value>Panel 3</value>
   </data>

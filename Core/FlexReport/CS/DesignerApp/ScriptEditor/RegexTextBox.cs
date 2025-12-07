@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Runtime.InteropServices;
+using System.ComponentModel;
 
 namespace FlexReportDesignerApp.Util
 {
@@ -82,6 +83,7 @@ namespace FlexReportDesignerApp.Util
 		//------------------------------------------------------------------------
 		#region ** undo/redo
 
+		[DefaultValue(50)]
 		public int MaxUndoRedoSteps 
 		{
 			get { return _maxUndoSteps; }

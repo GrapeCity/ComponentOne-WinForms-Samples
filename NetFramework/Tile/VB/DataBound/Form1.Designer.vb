@@ -22,16 +22,16 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim PanelElement1 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement1 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim TextElement2 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim ImageElement1 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PropertyMapping1 As C1.Win.C1Tile.PropertyMapping = New C1.Win.C1Tile.PropertyMapping
-        Dim PropertyMapping2 As C1.Win.C1Tile.PropertyMapping = New C1.Win.C1Tile.PropertyMapping
-        Dim PropertyMapping3 As C1.Win.C1Tile.PropertyMapping = New C1.Win.C1Tile.PropertyMapping
-        Dim PropertyMapping4 As C1.Win.C1Tile.PropertyMapping = New C1.Win.C1Tile.PropertyMapping
-        Dim PropertyMapping5 As C1.Win.C1Tile.PropertyMapping = New C1.Win.C1Tile.PropertyMapping
-        Dim PropertyMapping6 As C1.Win.C1Tile.PropertyMapping = New C1.Win.C1Tile.PropertyMapping
+        Dim PanelElement1 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement1 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim TextElement2 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim ImageElement1 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PropertyMapping1 As C1.Win.Tile.PropertyMapping = New C1.Win.Tile.PropertyMapping
+        Dim PropertyMapping2 As C1.Win.Tile.PropertyMapping = New C1.Win.Tile.PropertyMapping
+        Dim PropertyMapping3 As C1.Win.Tile.PropertyMapping = New C1.Win.Tile.PropertyMapping
+        Dim PropertyMapping4 As C1.Win.Tile.PropertyMapping = New C1.Win.Tile.PropertyMapping
+        Dim PropertyMapping5 As C1.Win.Tile.PropertyMapping = New C1.Win.Tile.PropertyMapping
+        Dim PropertyMapping6 As C1.Win.Tile.PropertyMapping = New C1.Win.Tile.PropertyMapping
         Me.DataSet11 = New DataBound.DataSet1
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand
         Me.productsConnection = New System.Data.OleDb.OleDbConnection
@@ -40,11 +40,11 @@ Partial Class Form1
         Me.categoriesDataAdapter = New System.Data.OleDb.OleDbDataAdapter
         Me.OleDbSelectCommand3 = New System.Data.OleDb.OleDbCommand
         Me.suppliersDataAdapter = New System.Data.OleDb.OleDbDataAdapter
-        Me.c1TileControl1 = New C1.Win.C1Tile.C1TileControl
-        Me.group1 = New C1.Win.C1Tile.Group
-        Me.tile1 = New C1.Win.C1Tile.Tile
-        Me.tile2 = New C1.Win.C1Tile.Tile
-        Me.tile3 = New C1.Win.C1Tile.Tile
+        Me.c1TileControl1 = New C1.Win.Tile.C1TileControl
+        Me.group1 = New C1.Win.Tile.Group
+        Me.tile1 = New C1.Win.Tile.Tile
+        Me.tile2 = New C1.Win.Tile.Tile
+        Me.tile3 = New C1.Win.Tile.Tile
         Me.dataGridView1 = New System.Windows.Forms.DataGridView
         Me.productIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.productNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
@@ -116,19 +116,19 @@ Partial Class Form1
         '
         '
         PanelElement1.Alignment = System.Drawing.ContentAlignment.TopLeft
-        TextElement1.FontBold = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement1.FontBold = C1.Win.Tile.ThreeStateBoolean.[True]
         PanelElement1.Children.Add(TextElement1)
         PanelElement1.Margin = New System.Windows.Forms.Padding(10, 6, 10, 6)
         TextElement2.Alignment = System.Drawing.ContentAlignment.BottomLeft
-        TextElement2.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement2.FontItalic = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        TextElement2.ForeColorSelector = C1.Win.C1Tile.ForeColorSelector.Unbound
+        TextElement2.ForeColorSelector = C1.Win.Tile.ForeColorSelector.Unbound
         TextElement2.Margin = New System.Windows.Forms.Padding(10, 6, 10, 6)
-        TextElement2.TextSelector = C1.Win.C1Tile.TextSelector.Text1
+        TextElement2.TextSelector = C1.Win.Tile.TextSelector.Text1
         ImageElement1.Alignment = System.Drawing.ContentAlignment.BottomRight
         ImageElement1.Image = Global.DataBound.My.Resources.Resources.flags
         ImageElement1.ImageRows = 17
-        ImageElement1.ImageSelector = C1.Win.C1Tile.ImageSelector.Unbound
+        ImageElement1.ImageSelector = C1.Win.Tile.ImageSelector.Unbound
         Me.c1TileControl1.DefaultTemplate.Elements.Add(PanelElement1)
         Me.c1TileControl1.DefaultTemplate.Elements.Add(TextElement2)
         Me.c1TileControl1.DefaultTemplate.Elements.Add(ImageElement1)
@@ -139,37 +139,37 @@ Partial Class Form1
         Me.c1TileControl1.Name = "c1TileControl1"
         Me.c1TileControl1.Padding = New System.Windows.Forms.Padding(0, 48, 0, 0)
         PropertyMapping1.DataField = "ProductID"
-        PropertyMapping1.TileProperty = C1.Win.C1Tile.TileProperty.Tag
+        PropertyMapping1.TileProperty = C1.Win.Tile.TileProperty.Tag
         PropertyMapping2.DataField = "CategoryID"
         PropertyMapping2.Lookup.DataSource = Me.DataSet11
         PropertyMapping2.Lookup.DisplayMember = "Categories.CategoryName"
         PropertyMapping2.Lookup.ValueMember = "Categories.CategoryID"
-        PropertyMapping2.TileProperty = C1.Win.C1Tile.TileProperty.Group
+        PropertyMapping2.TileProperty = C1.Win.Tile.TileProperty.Group
         PropertyMapping3.DataField = "ProductName"
-        PropertyMapping3.TileProperty = C1.Win.C1Tile.TileProperty.Text
+        PropertyMapping3.TileProperty = C1.Win.Tile.TileProperty.Text
         PropertyMapping4.DataField = "SupplierID"
         PropertyMapping4.Lookup.DataSource = Me.DataSet11
         PropertyMapping4.Lookup.DisplayMember = "Suppliers.Country"
         PropertyMapping4.Lookup.ValueMember = "Suppliers.SupplierID"
-        PropertyMapping4.TileProperty = C1.Win.C1Tile.TileProperty.Text1
+        PropertyMapping4.TileProperty = C1.Win.Tile.TileProperty.Text1
         PropertyMapping5.DataField = "SupplierID"
         PropertyMapping5.Lookup.DataSource = Me.DataSet11
         PropertyMapping5.Lookup.DisplayMember = "Suppliers.Country"
         PropertyMapping5.Lookup.ValueMember = "Suppliers.SupplierID"
-        PropertyMapping5.TileProperty = C1.Win.C1Tile.TileProperty.IntValue
+        PropertyMapping5.TileProperty = C1.Win.Tile.TileProperty.IntValue
         PropertyMapping6.DataField = "Discontinued"
-        PropertyMapping6.TileProperty = C1.Win.C1Tile.TileProperty.BackColor
+        PropertyMapping6.TileProperty = C1.Win.Tile.TileProperty.BackColor
         Me.c1TileControl1.PropertyMappings.Add(PropertyMapping1)
         Me.c1TileControl1.PropertyMappings.Add(PropertyMapping2)
         Me.c1TileControl1.PropertyMappings.Add(PropertyMapping3)
         Me.c1TileControl1.PropertyMappings.Add(PropertyMapping4)
         Me.c1TileControl1.PropertyMappings.Add(PropertyMapping5)
         Me.c1TileControl1.PropertyMappings.Add(PropertyMapping6)
-        Me.c1TileControl1.ScrollBarStyle = C1.Win.C1Tile.ScrollBarStyle.System
+        Me.c1TileControl1.ScrollBarStyle = C1.Win.Tile.ScrollBarStyle.System
         Me.c1TileControl1.Size = New System.Drawing.Size(782, 348)
         Me.c1TileControl1.TabIndex = 1
         Me.c1TileControl1.Text = "Products (by Categories)"
-        Me.c1TileControl1.TextBold = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        Me.c1TileControl1.TextBold = C1.Win.Tile.ThreeStateBoolean.[True]
         Me.c1TileControl1.TextSize = 18.0!
         Me.c1TileControl1.TextY = 14
         '
@@ -313,11 +313,11 @@ Partial Class Form1
     Friend WithEvents OleDbSelectCommand3 As System.Data.OleDb.OleDbCommand
     Friend WithEvents suppliersDataAdapter As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents DataSet11 As DataBound.DataSet1
-    Private WithEvents c1TileControl1 As C1.Win.C1Tile.C1TileControl
-    Private WithEvents group1 As C1.Win.C1Tile.Group
-    Private WithEvents tile1 As C1.Win.C1Tile.Tile
-    Private WithEvents tile2 As C1.Win.C1Tile.Tile
-    Private WithEvents tile3 As C1.Win.C1Tile.Tile
+    Private WithEvents c1TileControl1 As C1.Win.Tile.C1TileControl
+    Private WithEvents group1 As C1.Win.Tile.Group
+    Private WithEvents tile1 As C1.Win.Tile.Tile
+    Private WithEvents tile2 As C1.Win.Tile.Tile
+    Private WithEvents tile3 As C1.Win.Tile.Tile
     Private WithEvents dataGridView1 As System.Windows.Forms.DataGridView
     Private WithEvents productIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Private WithEvents productNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn

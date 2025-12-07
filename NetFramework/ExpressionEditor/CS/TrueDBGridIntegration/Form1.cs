@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using C1.Win.ExpressionEditor;
-using C1.Win.C1TrueDBGrid;
+using C1.Win.TrueDBGrid;
 using System.Data.OleDb;
 
 namespace TrueDBGridIntegration

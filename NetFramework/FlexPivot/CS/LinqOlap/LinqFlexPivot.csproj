@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,6 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

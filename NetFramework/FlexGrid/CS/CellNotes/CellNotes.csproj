@@ -17,10 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="CellNote.resx">
       <DependentUpon>CellNote.cs</DependentUpon>
     </EmbeddedResource>

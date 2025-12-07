@@ -43,7 +43,7 @@ Namespace DBImages
         Friend WithEvents pictureBox1 As System.Windows.Forms.PictureBox
         Friend WithEvents oleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
         Friend WithEvents DataSet11 As BoundImage.DataSet1
-        Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+        Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
         Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
         Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
         Friend WithEvents OleDbUpdateCommand1 As System.Data.OleDb.OleDbCommand
@@ -55,7 +55,7 @@ Namespace DBImages
             Me.pictureBox1 = New System.Windows.Forms.PictureBox()
             Me.oleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
             Me.DataSet11 = New BoundImage.DataSet1()
-            Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+            Me.flex = New C1.Win.FlexGrid.C1FlexGrid()
             Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
             Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
             Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
@@ -98,7 +98,7 @@ Namespace DBImages
             '
             'flex
             '
-            Me.flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both
+            Me.flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both
             Me.flex.AutoResize = False
             Me.flex.BackColor = System.Drawing.SystemColors.Window
             Me.flex.ColumnInfo = "9,1,0,0,0,85,Columns:0{Width:37;}" & Microsoft.VisualBasic.ChrW(9) & "1{Name:""FirstName"";Caption:""FirstName"";DataType" & _
@@ -117,7 +117,7 @@ Namespace DBImages
             Me.flex.Name = "flex"
             Me.flex.Rows.Count = 1
             Me.flex.Size = New System.Drawing.Size(376, 349)
-            Me.flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Normal{ForeColor:ControlText;}" & Microsoft.VisualBasic.ChrW(9) & "Fixed{BackColor:Control;Border:Flat,1,ControlDark," & _
+            Me.flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Normal{ForeColor:ControlText;}" & Microsoft.VisualBasic.ChrW(9) & "Fixed{BackColor:Control;Border:Flat,1,ControlDark," & _
             "Both;}" & Microsoft.VisualBasic.ChrW(9) & "Highlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:" & _
             "Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor" & _
             ":AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;Fo" & _
@@ -235,15 +235,15 @@ Namespace DBImages
             ' initialize styles
             flex.Styles.Normal.Margins.Left = 0
             flex.Styles.Normal.Margins.Right = 0
-            flex.Styles.Normal.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftTop
+            flex.Styles.Normal.TextAlign = C1.Win.FlexGrid.TextAlignEnum.LeftTop
             flex.Styles.Normal.WordWrap = True
-            flex.Styles.Fixed.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter
+            flex.Styles.Fixed.TextAlign = C1.Win.FlexGrid.TextAlignEnum.LeftCenter
             'flex.AutoSizeRows()
         End Sub
 
-        Private Sub flex_AfterRowColChange(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RangeEventArgs) Handles flex.AfterRowColChange
+        Private Sub flex_AfterRowColChange(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RangeEventArgs) Handles flex.AfterRowColChange
             If (flex.Row > -1 AndAlso e.NewRange.r1 <> e.OldRange.r1) Then
-                Dim c As C1.Win.C1FlexGrid.Column = flex.Cols("Photo")
+                Dim c As C1.Win.FlexGrid.Column = flex.Cols("Photo")
                 If Not c Is Nothing Then
                     Me.pictureBox1.Image = LoadImage(CType(flex(flex.Row, "Photo"), Byte()))
                 End If

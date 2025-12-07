@@ -29,29 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1FlexPivotGrid1 = new C1.Win.FlexPivot.C1FlexPivotGrid();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1FlexPivotGrid1
             // 
-            this.c1FlexPivotGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
-            this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Default;
+            this.c1FlexPivotGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
+            this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Default;
             this.c1FlexPivotGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.c1FlexPivotGrid1.BackColor = System.Drawing.Color.White;
             this.c1FlexPivotGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:0{Width:125;}\t";
-            this.c1FlexPivotGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.c1FlexPivotGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexPivotGrid1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1FlexPivotGrid1.Location = new System.Drawing.Point(12, 12);
             this.c1FlexPivotGrid1.Name = "c1FlexPivotGrid1";
-            this.c1FlexPivotGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexPivotGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexPivotGrid1.Size = new System.Drawing.Size(1083, 424);
             this.c1FlexPivotGrid1.StyleInfo = resources.GetString("c1FlexPivotGrid1.StyleInfo");
             this.c1FlexPivotGrid1.SubtotalBackground = System.Drawing.Color.Empty;
@@ -59,7 +60,7 @@
             this.c1FlexPivotGrid1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1FlexPivotGrid1, "(default)");
             this.c1FlexPivotGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.c1FlexPivotGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+            this.c1FlexPivotGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
             // 
             // radioButton1
             // 
@@ -145,7 +146,7 @@
 
         #endregion
 
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.FlexPivot.C1FlexPivotGrid c1FlexPivotGrid1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;

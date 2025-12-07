@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using DashboardModel;
 using C1.Win.Gauge;
+using System.ComponentModel;
 
 namespace DashboardWinForms
 {
@@ -21,6 +22,7 @@ namespace DashboardWinForms
             Layout += (s, ev) => MakeLayout();
         }
 
+        [DefaultValue(null)]
         public List<SaleGoalItem> Source
         {
             set

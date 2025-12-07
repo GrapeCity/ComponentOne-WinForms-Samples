@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
+  </ItemGroup>
+
+</Project>

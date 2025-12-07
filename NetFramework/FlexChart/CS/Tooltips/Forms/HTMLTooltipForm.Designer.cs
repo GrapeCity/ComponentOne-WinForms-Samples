@@ -41,7 +41,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flexChart = new C1.Win.Chart.FlexChart();
             this.flexPie = new C1.Win.Chart.FlexPie();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flexChart)).BeginInit();
             this.SuspendLayout();
@@ -155,6 +155,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private C1.Win.Chart.FlexChart flexChart;
         private C1.Win.Chart.FlexPie flexPie;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
     }
 }

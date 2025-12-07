@@ -1,0 +1,3 @@
+﻿DataGridView Virtualization
+------------------------------------------------------------------------------
+Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library. This demo shows how it works with the standard DataGridView control.

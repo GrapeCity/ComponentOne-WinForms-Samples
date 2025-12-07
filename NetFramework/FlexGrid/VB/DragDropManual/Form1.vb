@@ -29,10 +29,10 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents TreeView1 As System.Windows.Forms.TreeView
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me.TreeView1 = New System.Windows.Forms.TreeView()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,7 +45,7 @@ Public Class Form1
         Me._flex.Name = "_flex"
         Me._flex.Rows.DefaultSize = 17
         Me._flex.Size = New System.Drawing.Size(416, 349)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -87,9 +87,9 @@ Public Class Form1
         Dim intChild As Integer
 
         _flex.AllowEditing = False
-        _flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None
-        _flex.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Manual
-        _flex.DropMode = C1.Win.C1FlexGrid.DropModeEnum.Manual
+        _flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None
+        _flex.DragMode = C1.Win.FlexGrid.DragModeEnum.Manual
+        _flex.DropMode = C1.Win.FlexGrid.DropModeEnum.Manual
 
         _flex.Cols.Fixed = 0
         _flex.Rows.Fixed = 0
@@ -117,7 +117,7 @@ Public Class Form1
 
     Private Sub _flex_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles _flex.DragEnter
 
-        If e.Data.GetDataPresent(GetType(C1.Win.C1FlexGrid.CellRange)) Then
+        If e.Data.GetDataPresent(GetType(C1.Win.FlexGrid.CellRange)) Then
 
             ' user dragging cell
             e.Effect = DragDropEffects.Move
@@ -136,7 +136,7 @@ Public Class Form1
         _cellDrop = Me._flex.GetCellRange(_flex.MouseRow, _flex.MouseCol)
         If _cellDrop.r1 > -1 AndAlso _cellDrop.c1 > -1 Then
 
-            If e.Data.GetDataPresent(GetType(C1.Win.C1FlexGrid.CellRange)) Then
+            If e.Data.GetDataPresent(GetType(C1.Win.FlexGrid.CellRange)) Then
 
                 If _cellDrop.Contains(_cellDrag.r1, _cellDrag.c1) Then
 
@@ -167,8 +167,8 @@ Public Class Form1
     End Sub
 
     Dim _ptDown As Point
-    Dim _cellDrag As C1.Win.C1FlexGrid.CellRange
-    Dim _cellDrop As C1.Win.C1FlexGrid.CellRange
+    Dim _cellDrag As C1.Win.FlexGrid.CellRange
+    Dim _cellDrop As C1.Win.FlexGrid.CellRange
 
     Private Sub _flex_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles _flex.MouseDown
         _ptDown = New Point(e.X, e.Y)

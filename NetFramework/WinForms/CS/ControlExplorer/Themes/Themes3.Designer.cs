@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Themes3));
             C1.Framework.C1PathIcon c1PathIcon10 = new C1.Framework.C1PathIcon();
             C1.Framework.C1CompositeIcon c1CompositeIcon5 = new C1.Framework.C1CompositeIcon();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1DemoDataSet = new ControlExplorer.C1DemoDataSet();
             this.employeesTableAdapter = new ControlExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -79,7 +79,7 @@
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(1036, 503);
             this.c1FlexGrid1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
@@ -318,11 +318,11 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1DemoDataSet c1DemoDataSet;
         private System.Windows.Forms.BindingSource employeesBindingSource;
         private C1DemoDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
         private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;

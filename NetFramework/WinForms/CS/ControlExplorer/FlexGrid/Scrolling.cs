@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +26,7 @@ namespace ControlExplorer.FlexGrid
             SetScrollOptions();
         }
 
-        private void c1FlexGrid1_ShowScrollTip(object sender, C1.Win.C1FlexGrid.ToolTipEventArgs e)
+        private void c1FlexGrid1_ShowScrollTip(object sender, C1.Win.FlexGrid.ToolTipEventArgs e)
         {
             if (c1FlexGrid1.SortColumn != null)
             {
@@ -73,15 +73,15 @@ namespace ControlExplorer.FlexGrid
         {
             if (_delayedScroll && _showScrollTips)
             {
-                this.c1FlexGrid1.ScrollOptions = ((C1.Win.C1FlexGrid.ScrollFlags)((C1.Win.C1FlexGrid.ScrollFlags.DelayedScroll | C1.Win.C1FlexGrid.ScrollFlags.ShowScrollTips)));
+                this.c1FlexGrid1.ScrollOptions = ((C1.Win.FlexGrid.ScrollFlags)((C1.Win.FlexGrid.ScrollFlags.DelayedScroll | C1.Win.FlexGrid.ScrollFlags.ShowScrollTips)));
             }
             else if (_delayedScroll)
             {
-                this.c1FlexGrid1.ScrollOptions = C1.Win.C1FlexGrid.ScrollFlags.DelayedScroll;
+                this.c1FlexGrid1.ScrollOptions = C1.Win.FlexGrid.ScrollFlags.DelayedScroll;
             }
             else if (_showScrollTips)
             {
-                this.c1FlexGrid1.ScrollOptions = C1.Win.C1FlexGrid.ScrollFlags.ShowScrollTips;
+                this.c1FlexGrid1.ScrollOptions = C1.Win.FlexGrid.ScrollFlags.ShowScrollTips;
             }
             else
             {

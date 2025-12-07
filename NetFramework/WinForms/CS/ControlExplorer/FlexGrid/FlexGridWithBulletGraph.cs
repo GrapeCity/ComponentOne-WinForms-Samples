@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
@@ -10,7 +10,7 @@ namespace ControlExplorer.FlexGrid
     {
         #region Fields
         private DataTable _ds;
-        private C1.Win.C1Gauge.C1BulletGraph _graph = new C1.Win.C1Gauge.C1BulletGraph();
+        private C1.Win.Gauge.C1BulletGraph _graph = new C1.Win.Gauge.C1BulletGraph();
         private Random rnd = new Random();
         #endregion Fields
 

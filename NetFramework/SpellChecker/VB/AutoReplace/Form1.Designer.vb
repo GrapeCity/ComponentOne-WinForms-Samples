@@ -26,7 +26,7 @@ Partial Class Form1
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox
-        Me.C1SpellChecker1 = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
+        Me.C1SpellChecker1 = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -89,6 +89,6 @@ Partial Class Form1
     Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
-    Friend WithEvents C1SpellChecker1 As C1.Win.C1SpellChecker.C1SpellChecker
+    Friend WithEvents C1SpellChecker1 As C1.Win.SpellChecker.C1SpellChecker
 
 End Class

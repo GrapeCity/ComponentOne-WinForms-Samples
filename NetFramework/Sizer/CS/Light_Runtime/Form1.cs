@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace Simple
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Sizer.C1SizerLight _sizerLight;
+        private C1.Win.Sizer.C1SizerLight _sizerLight;
         private System.Windows.Forms.Button _btnAddChildGroupBox;
         private System.Windows.Forms.Button _btnMoveButton;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -59,8 +59,11 @@ namespace Simple
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.components = new System.ComponentModel.Container();
-			this._sizerLight = new C1.Win.C1Sizer.C1SizerLight(this.components);
+			this._sizerLight = new C1.Win.Sizer.C1SizerLight(this.components);
 			this._btnAddChildGroupBox = new System.Windows.Forms.Button();
 			this._btnMoveButton = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -75,7 +78,7 @@ namespace Simple
 			// 
 			// _sizerLight
 			// 
-			this._sizerLight.ResizingFont += new C1.Win.C1Sizer.C1SizerLightEventHandler(this._sizerLight_ResizingFont);
+			this._sizerLight.ResizingFont += new C1.Win.Sizer.C1SizerLightEventHandler(this._sizerLight_ResizingFont);
 			// 
 			// _btnAddChildGroupBox
 			// 
@@ -210,7 +213,7 @@ When you add or resize controls at runtime, using code, remember to set the C1Si
 		}
 
 		// disable font resizing for specific controls on the form
-		private void _sizerLight_ResizingFont(object sender, C1.Win.C1Sizer.C1SizerLightEventArgs e)
+		private void _sizerLight_ResizingFont(object sender, C1.Win.Sizer.C1SizerLightEventArgs e)
 		{
 			// do not resize the font for the rich text box
 			if (e.Control == richTextBox1)

@@ -10,7 +10,7 @@ namespace CustomizePage
 {
     public partial class Form1 : Form
     {
-        C1.Win.C1Command.C1Command collapseAllView;
+        C1.Win.Command.C1Command collapseAllView;
         public Form1()
         {
             InitializeComponent();
@@ -46,30 +46,30 @@ namespace CustomizePage
             // build menu with predefined views:
             var doc = new System.Xml.XmlDocument();
             doc.LoadXml(Properties.Resources.FlexPivotViews);
-            var menuView = new C1.Win.C1Command.C1CommandMenu();
+            var menuView = new C1.Win.Command.C1CommandMenu();
             menuView.Text = "&View";
             menuView.Image = Properties.Resources.Views_small;
             foreach (System.Xml.XmlNode nd in doc.SelectNodes("FlexPivotViews/C1FlexPivotPage"))
             {
-                var cmd = new C1.Win.C1Command.C1Command();
+                var cmd = new C1.Win.Command.C1Command();
                 cmd.Text = nd.Attributes["id"].Value;
                 cmd.UserData = nd;
                 cmd.Click += menuView_DropDownItemClicked;
-                var link = new C1.Win.C1Command.C1CommandLink(cmd);
+                var link = new C1.Win.Command.C1CommandLink(cmd);
                 menuView.CommandLinks.Add(link);
             }
             c1FlexPivotPage1.Updated += c1FlexPivotPage1_Updated;
 
             // add new view menu to C1FlexPivotPage toolstrip
-            var menuLink = new C1.Win.C1Command.C1CommandLink(menuView);
+            var menuLink = new C1.Win.Command.C1CommandLink(menuView);
             c1FlexPivotPage1.ToolBar.CommandLinks.Insert(3, menuLink);
 
             // add collapse all menu to C1FlexPivotPage toolstrip
-            collapseAllView = new C1.Win.C1Command.C1Command();
+            collapseAllView = new C1.Win.Command.C1Command();
             collapseAllView.Text = "&CollapseAll";
             collapseAllView.Image = Properties.Resources.CollapseAll;
             collapseAllView.Click += collapseAllView_Click;
-            C1.Win.C1Command.C1CommandLink collapseAllViewLink = new C1.Win.C1Command.C1CommandLink(collapseAllView); 
+            C1.Win.Command.C1CommandLink collapseAllViewLink = new C1.Win.Command.C1CommandLink(collapseAllView); 
             c1FlexPivotPage1.ToolBar.CommandLinks.Add(collapseAllViewLink);
         }
 
@@ -91,7 +91,7 @@ namespace CustomizePage
         }
 
         // select a predefined view
-        void menuView_DropDownItemClicked(object sender, C1.Win.C1Command.ClickEventArgs e)
+        void menuView_DropDownItemClicked(object sender, C1.Win.Command.ClickEventArgs e)
         {
             var nd = e.CallerLink.Command.UserData as System.Xml.XmlNode;
             if (nd != null)

@@ -29,6 +29,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
             c1Map1.Viewport.Zoom = 2.5;
             _layer = new C1.Win.Map.VectorLayer();
             c1Map1.Layers.Add(_layer);

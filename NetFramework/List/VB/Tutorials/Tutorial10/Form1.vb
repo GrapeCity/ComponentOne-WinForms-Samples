@@ -39,7 +39,7 @@ Public Class Form1
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents C1List1 As C1.Win.C1List.C1List
+    Friend WithEvents C1List1 As C1.Win.List.C1List
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.DsCustomers1 = New Tutorial10.DsCustomers()
@@ -52,7 +52,7 @@ Public Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.C1List1 = New C1.Win.C1List.C1List()
+        Me.C1List1 = New C1.Win.List.C1List()
         CType(Me.DsCustomers1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1List1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -187,19 +187,19 @@ Public Class Form1
         Me.C1List1.ColumnCaptionHeight = 17
         Me.C1List1.ColumnFooterHeight = 17
         Me.C1List1.ColumnWidth = 100
-        Me.C1List1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1List1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1List1.DataSource = Me.DsCustomers1.Customer
         Me.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1List1.ItemHeight = 15
         Me.C1List1.Location = New System.Drawing.Point(32, 16)
-        Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List1.MatchEntryTimeout = CType(2000, Long)
         Me.C1List1.Name = "C1List1"
         Me.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List1.ScrollTips = False
         Me.C1List1.Size = New System.Drawing.Size(624, 216)
@@ -249,7 +249,7 @@ Public Class Form1
     End Sub
 
 
-    Private Sub C1List1_FetchRowStyle(ByVal sender As Object, ByVal e As C1.Win.C1List.FetchRowStyleEventArgs) Handles C1List1.FetchRowStyle
+    Private Sub C1List1_FetchRowStyle(ByVal sender As Object, ByVal e As C1.Win.List.FetchRowStyleEventArgs) Handles C1List1.FetchRowStyle
         If (bFlag1 And Me.C1List1.Columns("CustType").CellValue(e.Row) = 1) Then
             Dim fntFont As New Font(e.CellStyle.Font.Name, e.CellStyle.Font.Size, FontStyle.Bold)
             e.CellStyle.Font = fntFont

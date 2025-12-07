@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SelectMdiChildForm
 {
-	public class SelectMdiChildForm : C1.Win.C1Command.C1SelectMdiChildForm
+	public class SelectMdiChildForm : C1.Win.Command.C1SelectMdiChildForm
 	{
         private System.Windows.Forms.Button btnClose;
 		private System.ComponentModel.IContainer components = null;
@@ -48,49 +48,53 @@ namespace SelectMdiChildForm
             // 
             // m_windowsList
             // 
-            this.m_windowsList.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(255)), ((System.Byte)(192)), ((System.Byte)(128)));
-            this.m_windowsList.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((System.Byte)(204)));
-            this.m_windowsList.ForeColor = System.Drawing.Color.FromArgb(((System.Byte)(0)), ((System.Byte)(0)), ((System.Byte)(192)));
-            this.m_windowsList.ItemHeight = 18;
-            this.m_windowsList.Size = new System.Drawing.Size(280, 110);
-            this.m_windowsList.Visible = true;
+            this.m_windowsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.m_windowsList.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.m_windowsList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.m_windowsList.ItemHeight = 32;
+            this.m_windowsList.Size = new System.Drawing.Size(318, 130);
             // 
             // m_btnOK
             // 
-            this.m_btnOK.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(255)), ((System.Byte)(255)), ((System.Byte)(192)));
-            this.m_btnOK.Location = new System.Drawing.Point(8, 144);
-            this.m_btnOK.Visible = true;
+            this.m_btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.m_btnOK.Location = new System.Drawing.Point(-172, 215);
+            this.m_btnOK.Size = new System.Drawing.Size(135, 39);
+            this.m_btnOK.UseVisualStyleBackColor = false;
             // 
             // m_btnCancel
             // 
-            this.m_btnCancel.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(255)), ((System.Byte)(224)), ((System.Byte)(192)));
-            this.m_btnCancel.Location = new System.Drawing.Point(96, 144);
-            this.m_btnCancel.Visible = true;
+            this.m_btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.m_btnCancel.Location = new System.Drawing.Point(-13, 215);
+            this.m_btnCancel.Size = new System.Drawing.Size(135, 39);
+            this.m_btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = (System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right);
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Location = new System.Drawing.Point(184, 144);
+            this.btnClose.Location = new System.Drawing.Point(145, 215);
             this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(135, 39);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // SelectMdiChildForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.BackColor = System.Drawing.Color.FromArgb(((System.Byte)(255)), ((System.Byte)(128)), ((System.Byte)(0)));
-            this.ClientSize = new System.Drawing.Size(280, 179);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this.m_btnCancel,
-                                                                          this.m_btnOK,
-                                                                          this.m_windowsList,
-                                                                          this.btnClose});
+            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ClientSize = new System.Drawing.Size(318, 274);
+            this.Controls.Add(this.btnClose);
+            this.MinimumSize = new System.Drawing.Size(342, 338);
             this.Name = "SelectMdiChildForm";
             this.Text = "Please select a child window";
             this.Load += new System.EventHandler(this.SelectMdiChildForm_Load);
+            this.Controls.SetChildIndex(this.btnClose, 0);
+            this.Controls.SetChildIndex(this.m_windowsList, 0);
+            this.Controls.SetChildIndex(this.m_btnOK, 0);
+            this.Controls.SetChildIndex(this.m_btnCancel, 0);
             this.ResumeLayout(false);
 
         }
@@ -108,12 +112,12 @@ namespace SelectMdiChildForm
         private void btnClose_Click(object sender, System.EventArgs e)
         {
             // provide the ability to close windows from the list.
-            // C1.Win.C1Command.C1SelectMdiChildForm.WindowItem is the type
+            // C1.Win.Command.C1SelectMdiChildForm.WindowItem is the type
             // of items in the m_windowsList. It inherits from object,
             // adds a new member Form referencing the MDI child form,
             // and overrides the ToString() method to show the form caption.
-            C1.Win.C1Command.C1SelectMdiChildForm.WindowItem selectedItem =
-                this.m_windowsList.SelectedItem as C1.Win.C1Command.C1SelectMdiChildForm.WindowItem;
+            C1.Win.Command.C1SelectMdiChildForm.WindowItem selectedItem =
+                this.m_windowsList.SelectedItem as C1.Win.Command.C1SelectMdiChildForm.WindowItem;
             if (selectedItem != null)
             {
                 selectedItem.Form.Close();

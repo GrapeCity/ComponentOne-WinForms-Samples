@@ -28,256 +28,250 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.btnFile = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbFile = new System.Windows.Forms.TextBox();
-            this.tbFindText = new System.Windows.Forms.TextBox();
-            this.cbxCaseSensitive = new System.Windows.Forms.CheckBox();
-            this.cbxWholeWord = new System.Windows.Forms.CheckBox();
-            this.btnFind = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lvFoundPositions = new System.Windows.Forms.ListView();
-            this.chNum = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chPage = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chBounds = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chPosInNearText = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.chNearText = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label3 = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pbFind = new System.Windows.Forms.ProgressBar();
-            this.c1PdfDocumentSource1 = new C1.Document.C1PdfDocumentSource(this.components);
-            this.rbWholeDocument = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rbSinglePage = new System.Windows.Forms.RadioButton();
-            this.nudPageIndex = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPageIndex)).BeginInit();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            btnFile = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            tbFile = new System.Windows.Forms.TextBox();
+            tbFindText = new System.Windows.Forms.TextBox();
+            cbxCaseSensitive = new System.Windows.Forms.CheckBox();
+            cbxWholeWord = new System.Windows.Forms.CheckBox();
+            btnFind = new System.Windows.Forms.Button();
+            label2 = new System.Windows.Forms.Label();
+            lvFoundPositions = new System.Windows.Forms.ListView();
+            chNum = new System.Windows.Forms.ColumnHeader();
+            chPage = new System.Windows.Forms.ColumnHeader();
+            chBounds = new System.Windows.Forms.ColumnHeader();
+            chPosInNearText = new System.Windows.Forms.ColumnHeader();
+            chNearText = new System.Windows.Forms.ColumnHeader();
+            label3 = new System.Windows.Forms.Label();
+            openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            pbFind = new System.Windows.Forms.ProgressBar();
+            rbWholeDocument = new System.Windows.Forms.RadioButton();
+            label4 = new System.Windows.Forms.Label();
+            rbSinglePage = new System.Windows.Forms.RadioButton();
+            nudPageIndex = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)nudPageIndex).BeginInit();
+            SuspendLayout();
             // 
             // btnFile
             // 
-            this.btnFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFile.Location = new System.Drawing.Point(647, 12);
-            this.btnFile.Name = "btnFile";
-            this.btnFile.Size = new System.Drawing.Size(26, 20);
-            this.btnFile.TabIndex = 2;
-            this.btnFile.Text = "...";
-            this.btnFile.UseVisualStyleBackColor = true;
-            this.btnFile.Click += new System.EventHandler(this.btnFile_Click);
+            btnFile.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            btnFile.Location = new System.Drawing.Point(755, 14);
+            btnFile.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnFile.Name = "btnFile";
+            btnFile.Size = new System.Drawing.Size(30, 23);
+            btnFile.TabIndex = 2;
+            btnFile.Text = "...";
+            btnFile.UseVisualStyleBackColor = true;
+            btnFile.Click += btnFile_Click;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PDF file:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            label1.Location = new System.Drawing.Point(14, 14);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(117, 23);
+            label1.TabIndex = 0;
+            label1.Text = "PDF file:";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tbFile
             // 
-            this.tbFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbFile.Location = new System.Drawing.Point(118, 12);
-            this.tbFile.Name = "tbFile";
-            this.tbFile.Size = new System.Drawing.Size(523, 20);
-            this.tbFile.TabIndex = 1;
+            tbFile.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tbFile.Location = new System.Drawing.Point(138, 14);
+            tbFile.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tbFile.Name = "tbFile";
+            tbFile.Size = new System.Drawing.Size(610, 23);
+            tbFile.TabIndex = 1;
             // 
             // tbFindText
             // 
-            this.tbFindText.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbFindText.Location = new System.Drawing.Point(118, 38);
-            this.tbFindText.Name = "tbFindText";
-            this.tbFindText.Size = new System.Drawing.Size(361, 20);
-            this.tbFindText.TabIndex = 4;
-            this.tbFindText.TextChanged += new System.EventHandler(this.tbFindText_TextChanged);
+            tbFindText.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            tbFindText.Location = new System.Drawing.Point(138, 44);
+            tbFindText.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tbFindText.Name = "tbFindText";
+            tbFindText.Size = new System.Drawing.Size(420, 23);
+            tbFindText.TabIndex = 4;
+            tbFindText.TextChanged += tbFindText_TextChanged;
             // 
             // cbxCaseSensitive
             // 
-            this.cbxCaseSensitive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxCaseSensitive.AutoSize = true;
-            this.cbxCaseSensitive.Location = new System.Drawing.Point(485, 40);
-            this.cbxCaseSensitive.Name = "cbxCaseSensitive";
-            this.cbxCaseSensitive.Size = new System.Drawing.Size(96, 17);
-            this.cbxCaseSensitive.TabIndex = 5;
-            this.cbxCaseSensitive.Text = "Case Sensitive";
-            this.cbxCaseSensitive.UseVisualStyleBackColor = true;
+            cbxCaseSensitive.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            cbxCaseSensitive.AutoSize = true;
+            cbxCaseSensitive.Location = new System.Drawing.Point(578, 46);
+            cbxCaseSensitive.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbxCaseSensitive.Name = "cbxCaseSensitive";
+            cbxCaseSensitive.Size = new System.Drawing.Size(100, 19);
+            cbxCaseSensitive.TabIndex = 5;
+            cbxCaseSensitive.Text = "Case Sensitive";
+            cbxCaseSensitive.UseVisualStyleBackColor = true;
             // 
             // cbxWholeWord
             // 
-            this.cbxWholeWord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxWholeWord.AutoSize = true;
-            this.cbxWholeWord.Location = new System.Drawing.Point(587, 40);
-            this.cbxWholeWord.Name = "cbxWholeWord";
-            this.cbxWholeWord.Size = new System.Drawing.Size(86, 17);
-            this.cbxWholeWord.TabIndex = 6;
-            this.cbxWholeWord.Text = "Whole Word";
-            this.cbxWholeWord.UseVisualStyleBackColor = true;
+            cbxWholeWord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            cbxWholeWord.AutoSize = true;
+            cbxWholeWord.Location = new System.Drawing.Point(693, 46);
+            cbxWholeWord.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbxWholeWord.Name = "cbxWholeWord";
+            cbxWholeWord.Size = new System.Drawing.Size(92, 19);
+            cbxWholeWord.TabIndex = 6;
+            cbxWholeWord.Text = "Whole Word";
+            cbxWholeWord.UseVisualStyleBackColor = true;
             // 
             // btnFind
             // 
-            this.btnFind.Location = new System.Drawing.Point(118, 90);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 23);
-            this.btnFind.TabIndex = 11;
-            this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = true;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            btnFind.Location = new System.Drawing.Point(138, 104);
+            btnFind.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnFind.Name = "btnFind";
+            btnFind.Size = new System.Drawing.Size(88, 27);
+            btnFind.TabIndex = 11;
+            btnFind.Text = "Find";
+            btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(12, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Search Params:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            label2.Location = new System.Drawing.Point(14, 44);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(117, 23);
+            label2.TabIndex = 3;
+            label2.Text = "Search Params:";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lvFoundPositions
             // 
-            this.lvFoundPositions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lvFoundPositions.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.chNum,
-            this.chPage,
-            this.chBounds,
-            this.chPosInNearText,
-            this.chNearText});
-            this.lvFoundPositions.FullRowSelect = true;
-            this.lvFoundPositions.Location = new System.Drawing.Point(12, 147);
-            this.lvFoundPositions.Name = "lvFoundPositions";
-            this.lvFoundPositions.Size = new System.Drawing.Size(661, 281);
-            this.lvFoundPositions.TabIndex = 13;
-            this.lvFoundPositions.UseCompatibleStateImageBehavior = false;
-            this.lvFoundPositions.View = System.Windows.Forms.View.Details;
+            lvFoundPositions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lvFoundPositions.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { chNum, chPage, chBounds, chPosInNearText, chNearText });
+            lvFoundPositions.FullRowSelect = true;
+            lvFoundPositions.Location = new System.Drawing.Point(14, 170);
+            lvFoundPositions.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            lvFoundPositions.Name = "lvFoundPositions";
+            lvFoundPositions.Size = new System.Drawing.Size(770, 324);
+            lvFoundPositions.TabIndex = 13;
+            lvFoundPositions.UseCompatibleStateImageBehavior = false;
+            lvFoundPositions.View = System.Windows.Forms.View.Details;
             // 
             // chNum
             // 
-            this.chNum.Text = "#";
-            this.chNum.Width = 50;
+            chNum.Text = "#";
+            chNum.Width = 50;
             // 
             // chPage
             // 
-            this.chPage.Text = "Page";
+            chPage.Text = "Page";
             // 
             // chBounds
             // 
-            this.chBounds.Text = "Bounds";
-            this.chBounds.Width = 100;
+            chBounds.Text = "Bounds";
+            chBounds.Width = 100;
             // 
             // chPosInNearText
             // 
-            this.chPosInNearText.Text = "Pos In Near Text";
+            chPosInNearText.Text = "Pos In Near Text";
             // 
             // chNearText
             // 
-            this.chNearText.Text = "Near Text";
-            this.chNearText.Width = 350;
+            chNearText.Text = "Near Text";
+            chNearText.Width = 350;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Find Results:";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(10, 151);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(73, 15);
+            label3.TabIndex = 12;
+            label3.Text = "Find Results:";
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.DefaultExt = "pdf";
-            this.openFileDialog1.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
+            openFileDialog1.DefaultExt = "pdf";
+            openFileDialog1.Filter = "PDF files (*.pdf)|*.pdf|All files (*.*)|*.*";
             // 
             // pbFind
             // 
-            this.pbFind.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbFind.Location = new System.Drawing.Point(12, 434);
-            this.pbFind.Name = "pbFind";
-            this.pbFind.Size = new System.Drawing.Size(661, 5);
-            this.pbFind.TabIndex = 14;
+            pbFind.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            pbFind.Location = new System.Drawing.Point(14, 501);
+            pbFind.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pbFind.Name = "pbFind";
+            pbFind.Size = new System.Drawing.Size(771, 6);
+            pbFind.TabIndex = 14;
             // 
             // rbWholeDocument
             // 
-            this.rbWholeDocument.AutoSize = true;
-            this.rbWholeDocument.Checked = true;
-            this.rbWholeDocument.Location = new System.Drawing.Point(118, 67);
-            this.rbWholeDocument.Name = "rbWholeDocument";
-            this.rbWholeDocument.Size = new System.Drawing.Size(108, 17);
-            this.rbWholeDocument.TabIndex = 8;
-            this.rbWholeDocument.TabStop = true;
-            this.rbWholeDocument.Text = "Whole Document";
-            this.rbWholeDocument.UseVisualStyleBackColor = true;
+            rbWholeDocument.AutoSize = true;
+            rbWholeDocument.Checked = true;
+            rbWholeDocument.Location = new System.Drawing.Point(138, 77);
+            rbWholeDocument.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            rbWholeDocument.Name = "rbWholeDocument";
+            rbWholeDocument.Size = new System.Drawing.Size(118, 19);
+            rbWholeDocument.TabIndex = 8;
+            rbWholeDocument.TabStop = true;
+            rbWholeDocument.Text = "Whole Document";
+            rbWholeDocument.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(12, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Search Scope:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            label4.Location = new System.Drawing.Point(14, 75);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(117, 23);
+            label4.TabIndex = 7;
+            label4.Text = "Search Scope:";
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // rbSinglePage
             // 
-            this.rbSinglePage.AutoSize = true;
-            this.rbSinglePage.Location = new System.Drawing.Point(232, 67);
-            this.rbSinglePage.Name = "rbSinglePage";
-            this.rbSinglePage.Size = new System.Drawing.Size(85, 17);
-            this.rbSinglePage.TabIndex = 9;
-            this.rbSinglePage.Text = "Single Page:";
-            this.rbSinglePage.UseVisualStyleBackColor = true;
+            rbSinglePage.AutoSize = true;
+            rbSinglePage.Location = new System.Drawing.Point(271, 77);
+            rbSinglePage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            rbSinglePage.Name = "rbSinglePage";
+            rbSinglePage.Size = new System.Drawing.Size(89, 19);
+            rbSinglePage.TabIndex = 9;
+            rbSinglePage.Text = "Single Page:";
+            rbSinglePage.UseVisualStyleBackColor = true;
             // 
             // nudPageIndex
             // 
-            this.nudPageIndex.Location = new System.Drawing.Point(323, 65);
-            this.nudPageIndex.Maximum = new decimal(new int[] {
-            32767,
-            0,
-            0,
-            0});
-            this.nudPageIndex.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudPageIndex.Name = "nudPageIndex";
-            this.nudPageIndex.Size = new System.Drawing.Size(75, 20);
-            this.nudPageIndex.TabIndex = 10;
-            this.nudPageIndex.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            nudPageIndex.Location = new System.Drawing.Point(377, 75);
+            nudPageIndex.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            nudPageIndex.Maximum = new decimal(new int[] { 32767, 0, 0, 0 });
+            nudPageIndex.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudPageIndex.Name = "nudPageIndex";
+            nudPageIndex.Size = new System.Drawing.Size(88, 23);
+            nudPageIndex.TabIndex = 10;
+            nudPageIndex.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 451);
-            this.Controls.Add(this.nudPageIndex);
-            this.Controls.Add(this.rbSinglePage);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.rbWholeDocument);
-            this.Controls.Add(this.pbFind);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lvFoundPositions);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnFind);
-            this.Controls.Add(this.cbxWholeWord);
-            this.Controls.Add(this.cbxCaseSensitive);
-            this.Controls.Add(this.tbFindText);
-            this.Controls.Add(this.btnFile);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbFile);
-            this.Name = "Form1";
-            this.Text = "Search text in PDF file";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.nudPageIndex)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(799, 520);
+            Controls.Add(nudPageIndex);
+            Controls.Add(rbSinglePage);
+            Controls.Add(label4);
+            Controls.Add(rbWholeDocument);
+            Controls.Add(pbFind);
+            Controls.Add(label3);
+            Controls.Add(lvFoundPositions);
+            Controls.Add(label2);
+            Controls.Add(btnFind);
+            Controls.Add(cbxWholeWord);
+            Controls.Add(cbxCaseSensitive);
+            Controls.Add(tbFindText);
+            Controls.Add(btnFile);
+            Controls.Add(label1);
+            Controls.Add(tbFile);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "Search text in PDF file";
+            FormClosing += Form1_FormClosing;
+            ((System.ComponentModel.ISupportInitialize)nudPageIndex).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

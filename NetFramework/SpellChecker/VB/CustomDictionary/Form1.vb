@@ -23,9 +23,9 @@ Public Class Form1
     End Sub
 
     Partial Public Class MySpellDictionary
-        Implements C1.Win.C1SpellChecker.ISpellDictionary
+        Implements C1.Win.SpellChecker.ISpellDictionary
 
-        Public Function Contains(ByVal word As String) As Boolean Implements C1.Win.C1SpellChecker.ISpellDictionary.Contains
+        Public Function Contains(ByVal word As String) As Boolean Implements C1.Win.SpellChecker.ISpellDictionary.Contains
             Return word.StartsWith("z", StringComparison.InvariantCultureIgnoreCase)
         End Function
 

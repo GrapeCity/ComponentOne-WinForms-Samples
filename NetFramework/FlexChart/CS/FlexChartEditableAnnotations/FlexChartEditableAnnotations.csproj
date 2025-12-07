@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +54,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="AnnotationEditor.resx">
       <DependentUpon>AnnotationEditor.cs</DependentUpon>
     </EmbeddedResource>

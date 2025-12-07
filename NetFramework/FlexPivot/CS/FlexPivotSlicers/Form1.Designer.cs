@@ -30,6 +30,7 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
 			this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
 			this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -38,21 +39,21 @@
 			this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
 			this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
 			this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-			this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-			this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+			this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+			this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
 			this.c1DashboardLayout1 = new C1.Win.Layout.C1DashboardLayout();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.chlFields = new C1.Win.TreeView.C1CheckList();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
-			this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-			this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-			this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-			this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+			this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
+			this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
+			this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
+			this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
 			this.c1FlexPivotGrid1 = new C1.Win.FlexPivot.C1FlexPivotGrid();
 			this.c1FlexPivotPanel1 = new C1.Win.FlexPivot.C1FlexPivotPanel();
-			this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+			this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
 			this.ribbonGallery1 = new C1.Win.Ribbon.RibbonGallery();
 			this.ribbonTab2 = new C1.Win.Ribbon.RibbonTab();
 			this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
@@ -158,7 +159,7 @@
 			// 
 			this.c1SplitterPanel1.Collapsible = true;
 			this.c1SplitterPanel1.Controls.Add(this.c1DashboardLayout1);
-			this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+			this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
 			this.c1SplitterPanel1.Height = 540;
 			this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 21);
 			this.c1SplitterPanel1.Name = "c1SplitterPanel1";
@@ -352,7 +353,7 @@
 			this.c1SplitterPanel2.Controls.Add(this.c1FlexPivotChart1);
 			this.c1SplitterPanel2.Controls.Add(this.c1FlexPivotGrid1);
 			this.c1SplitterPanel2.Controls.Add(this.c1FlexPivotPanel1);
-			this.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
+			this.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Right;
 			this.c1SplitterPanel2.Height = 540;
 			this.c1SplitterPanel2.Location = new System.Drawing.Point(425, 21);
 			this.c1SplitterPanel2.Name = "c1SplitterPanel2";
@@ -363,19 +364,19 @@
 			// 
 			// c1FlexPivotGrid1
 			// 
-			this.c1FlexPivotGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
-			this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Default;
+			this.c1FlexPivotGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
+			this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Default;
 			this.c1FlexPivotGrid1.BackColor = System.Drawing.Color.White;
 			this.c1FlexPivotGrid1.ColumnInfo = "1,1,0,0,0,135,Columns:0{Width:95;Caption:\" \";ShowSparkline:False;}\t";
 			this.c1FlexPivotGrid1.DataSource = this.c1FlexPivotPanel1;
 			this.c1FlexPivotGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.c1FlexPivotGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this.c1FlexPivotGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this.c1FlexPivotGrid1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
 			this.c1FlexPivotGrid1.Location = new System.Drawing.Point(0, 0);
 			this.c1FlexPivotGrid1.Name = "c1FlexPivotGrid1";
 			this.c1FlexPivotGrid1.Rows.Count = 1;
 			this.c1FlexPivotGrid1.Rows.DefaultSize = 27;
-			this.c1FlexPivotGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+			this.c1FlexPivotGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
 			this.c1FlexPivotGrid1.Size = new System.Drawing.Size(613, 519);
 			this.c1FlexPivotGrid1.StyleInfo = resources.GetString("c1FlexPivotGrid1.StyleInfo");
 			this.c1FlexPivotGrid1.SubtotalBackground = System.Drawing.Color.Empty;
@@ -383,7 +384,7 @@
 			this.c1FlexPivotGrid1.TabIndex = 0;
 			this.c1ThemeController1.SetTheme(this.c1FlexPivotGrid1, "(default)");
 			this.c1FlexPivotGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-			this.c1FlexPivotGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+			this.c1FlexPivotGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
 			// 
 			// c1FlexPivotPanel1
 			// 
@@ -508,21 +509,21 @@
 		private C1.Win.Ribbon.RibbonTab ribbonTab1;
 		private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
 		private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-		private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-		private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
+		private C1.Win.Themes.C1ThemeController c1ThemeController1;
+		private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+		private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+		private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
 		private C1.Win.FlexPivot.C1FlexPivotGrid c1FlexPivotGrid1;
 		private C1.Win.Layout.C1DashboardLayout c1DashboardLayout1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Panel panel4;
-		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
+		private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+		private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
 		private C1.Win.FlexPivot.C1FlexPivotPanel c1FlexPivotPanel1;
 		private System.Windows.Forms.Panel panel3;
 		private C1.Win.TreeView.C1CheckList chlFields;
 		private System.Windows.Forms.Panel panel5;
-		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
+		private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
 		private C1.Win.Ribbon.RibbonGallery ribbonGallery1;
 		private C1.Win.Ribbon.RibbonButton ribbonButton1;
 		private C1.Win.Ribbon.RibbonTab ribbonTab2;

@@ -41,7 +41,7 @@
             this.c1EditorToolStripStyle1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripStyle();
             this.C1EditorToolStripTable1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripTable();
             this.C1EditorToolStripObjects1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripObjects();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -227,7 +227,7 @@
         private C1.Win.C1Editor.ToolStrips.C1EditorToolStripObjects C1EditorToolStripObjects1;
         private C1.Win.C1Editor.ToolStrips.C1EditorToolStripMain C1EditorToolStripMain1;
         private C1.Win.C1Editor.ToolStrips.C1EditorToolStripTable C1EditorToolStripTable1;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;

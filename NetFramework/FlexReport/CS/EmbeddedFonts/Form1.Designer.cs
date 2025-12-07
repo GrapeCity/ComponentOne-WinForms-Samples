@@ -30,9 +30,10 @@ namespace EmbeddedFonts
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnSaveAs = new System.Windows.Forms.Button();
-            this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
+            this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.c1FlexReport1 = new C1.Win.FlexReport.C1FlexReport();
             this.c1MultiSelect1 = new C1.Win.Input.C1MultiSelect();
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
@@ -67,12 +68,10 @@ namespace EmbeddedFonts
             this.c1ComboBox1.AllowSpinLoop = false;
             this.c1ComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.c1ComboBox1.GapHeight = 0;
-            this.c1ComboBox1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1ComboBox1.Location = new System.Drawing.Point(220, 3);
             this.c1ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1ComboBox1.Name = "c1ComboBox1";
             this.c1ComboBox1.Size = new System.Drawing.Size(249, 26);
-            this.c1ComboBox1.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.c1ComboBox1.TabIndex = 4;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
@@ -133,7 +132,7 @@ namespace EmbeddedFonts
         private C1.Win.FlexReport.C1FlexReport c1FlexReport1;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnSaveAs;
-        private C1.Win.C1Input.C1ComboBox c1ComboBox1;
+        private C1.Win.Input.C1ComboBox c1ComboBox1;
         private C1.Win.Input.C1MultiSelect c1MultiSelect1;
     }
 }

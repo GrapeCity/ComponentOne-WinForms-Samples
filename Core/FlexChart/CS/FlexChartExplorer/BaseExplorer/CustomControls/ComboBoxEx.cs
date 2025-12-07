@@ -2,6 +2,7 @@
 using C1.Win.Input;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ namespace BaseExplorer
 {
     public class ComboBoxEx : C1ComboBox
     {
+        [DefaultValue(typeof(Color), "Empty")]
         public Color BorderColor { get; set; }
 
         public ComboBoxEx(string comboName = null, int width = 130, int height = 21)

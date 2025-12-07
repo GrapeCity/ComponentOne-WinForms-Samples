@@ -66,26 +66,26 @@ namespace ControlExplorer.InputPanel
                 this.inputFlowPanel1.Items.Add(GenerateItemCard(item));
         }
 
-        private C1.Win.C1InputPanel.InputGridPanel GenerateItemCard(CatalogueItem item)
+        private C1.Win.InputPanel.InputGridPanel GenerateItemCard(CatalogueItem item)
         {
-            C1.Win.C1InputPanel.InputGridPanel inputGridPanel1 = new C1.Win.C1InputPanel.InputGridPanel();
-            C1.Win.C1InputPanel.InputImage itemImage = new C1.Win.C1InputPanel.InputImage();
-            C1.Win.C1InputPanel.InputLabel itemBrand = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputHtmlLabel itemLink = new C1.Win.C1InputPanel.InputHtmlLabel();
-            C1.Win.C1InputPanel.InputLabel inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel itemDescription = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel itemCost = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel itemModel = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            C1.Win.C1InputPanel.InputLabel itemCategory = new C1.Win.C1InputPanel.InputLabel();
+            C1.Win.InputPanel.InputGridPanel inputGridPanel1 = new C1.Win.InputPanel.InputGridPanel();
+            C1.Win.InputPanel.InputImage itemImage = new C1.Win.InputPanel.InputImage();
+            C1.Win.InputPanel.InputLabel itemBrand = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputHtmlLabel itemLink = new C1.Win.InputPanel.InputHtmlLabel();
+            C1.Win.InputPanel.InputLabel inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel itemDescription = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel itemCost = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel itemModel = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            C1.Win.InputPanel.InputLabel itemCategory = new C1.Win.InputPanel.InputLabel();
 
             // 
             // inputGridPanel1
             // 
 
-            inputGridPanel1.ColumnDefinitions.Add(new C1.Win.C1InputPanel.ColumnDefinition());
+            inputGridPanel1.ColumnDefinitions.Add(new C1.Win.InputPanel.ColumnDefinition());
             inputGridPanel1.ColumnDefinitions.Add(3);
             inputGridPanel1.ColumnDefinitions[0].Width = 150;
             inputGridPanel1.ColumnDefinitions[0].SizeType = SizeType.Absolute;
@@ -94,7 +94,7 @@ namespace ControlExplorer.InputPanel
 
             inputGridPanel1.RowDefinitions.Add(5);
 
-            inputGridPanel1.Break = C1.Win.C1InputPanel.BreakType.None;
+            inputGridPanel1.Break = C1.Win.InputPanel.BreakType.None;
             inputGridPanel1.Items.Add(itemBrand);
             inputGridPanel1.Items.Add(itemModel);
             inputGridPanel1.Items.Add(itemImage);
@@ -113,9 +113,9 @@ namespace ControlExplorer.InputPanel
             // itemBrand
             // 
             itemBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            itemBrand.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            itemBrand.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             itemBrand.Text = item.Brand;
-            itemBrand.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            itemBrand.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemModel
             // 
@@ -124,47 +124,47 @@ namespace ControlExplorer.InputPanel
             itemModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             itemModel.Name = "itemModel";
             itemModel.Text = item.Model;
-            itemModel.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            itemModel.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemImage
             // 
 
-            itemImage.ImageAlign = C1.Win.C1InputPanel.InputImageAlignment.MiddleCenter;
+            itemImage.ImageAlign = C1.Win.InputPanel.InputImageAlignment.MiddleCenter;
             itemImage.Image = item.ItemImage;
             itemImage.RowIndex = 1;
             itemImage.RowSpan = 4;
-            itemImage.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            itemImage.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             itemImage.Width = 142;
-            itemImage.ImageScaling = C1.Win.C1InputPanel.InputImageScaling.Scale;
+            itemImage.ImageScaling = C1.Win.InputPanel.InputImageScaling.Scale;
             // 
             // inputLabel1
             // 
             inputLabel1.ColumnIndex = 1;
-            inputLabel1.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            inputLabel1.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             inputLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             inputLabel1.Padding = new System.Windows.Forms.Padding(2);
             inputLabel1.RowIndex = 1;
             inputLabel1.Text = "Category:";
-            inputLabel1.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            inputLabel1.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemCategory
             // 
             itemCategory.ColumnIndex = 2;
-            itemCategory.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            itemCategory.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             itemCategory.Padding = new System.Windows.Forms.Padding(2);
             itemCategory.RowIndex = 1;
             itemCategory.Text = item.Category;
-            itemCategory.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            itemCategory.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel2
             // 
             inputLabel2.ColumnIndex = 1;
-            inputLabel2.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            inputLabel2.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             inputLabel2.Padding = new System.Windows.Forms.Padding(2);
             inputLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             inputLabel2.RowIndex = 4;
             inputLabel2.Text = "Description:";
-            inputLabel2.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            inputLabel2.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             // 
             // itemDescription
             // 
@@ -173,37 +173,37 @@ namespace ControlExplorer.InputPanel
             itemDescription.Text = item.Description;
             itemDescription.WordWrap = true;
             itemDescription.RowIndex = 4;
-            itemDescription.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread;
-            itemDescription.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            itemDescription.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Spread;
+            itemDescription.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             // 
             // inputLabel3
             // 
             inputLabel3.ColumnIndex = 1;
-            inputLabel3.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            inputLabel3.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             inputLabel3.Padding = new System.Windows.Forms.Padding(2);
             inputLabel3.RowIndex = 3;
             inputLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             inputLabel3.Text = "Details:";
-            inputLabel3.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            inputLabel3.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemLink
             // 
             itemLink.ColumnIndex = 2;
-            itemLink.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            itemLink.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             itemLink.Padding = new System.Windows.Forms.Padding(2);
             itemLink.RowIndex = 3;
             itemLink.Text = item.Details;
-            itemLink.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            itemLink.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel4
             // 
             inputLabel4.ColumnIndex = 1;
-            inputLabel4.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            inputLabel4.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             inputLabel4.Padding = new System.Windows.Forms.Padding(2);
             inputLabel4.RowIndex = 2;
             inputLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             inputLabel4.Text = "Cost:";
-            inputLabel4.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            inputLabel4.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemCost
             // 
@@ -211,7 +211,7 @@ namespace ControlExplorer.InputPanel
             itemCost.Padding = new System.Windows.Forms.Padding(2);
             itemCost.RowIndex = 2;
             itemCost.Text = item.Cost;
-            itemCost.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            itemCost.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
 
 
             return inputGridPanel1;

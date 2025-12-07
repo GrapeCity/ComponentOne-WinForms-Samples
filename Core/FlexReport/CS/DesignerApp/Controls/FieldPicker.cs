@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 using C1.Win.FlexReport;
 using C1.Report;
+using System.ComponentModel;
 
 namespace FlexReportDesignerApp.Util
 {
@@ -36,6 +37,8 @@ namespace FlexReportDesignerApp.Util
         #endregion
 
         #region Public properties
+
+        [DefaultValue(null)]
         public C1FlexReportDesigner Designer
         {
             get { return _designer; }
@@ -62,6 +65,7 @@ namespace FlexReportDesignerApp.Util
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public new object SelectedItem
 		{
 			get { return base.SelectedItem; }

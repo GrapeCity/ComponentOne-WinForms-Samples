@@ -23,6 +23,8 @@ namespace SampleExplorer
         {
             e.Pointer.UpdateValue(e.NewValue, snapInterval);
         }
+        
+        [DefaultValue(10)]
         public int SnapInterval
         {
             get { return snapInterval; }

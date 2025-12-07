@@ -1,4 +1,4 @@
-Imports C1.Win.C1Gauge
+Imports C1.Win.Gauge
 
 Public Class PageHypotrochoid
 

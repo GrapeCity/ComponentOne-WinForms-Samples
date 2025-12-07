@@ -355,8 +355,7 @@
             // c1de_Time
             // 
             this.c1de_Time.Calendar.DayNameLength = 1;
-            this.c1de_Time.FormatType = C1.Win.C1Input.FormatTypeEnum.MediumTime;
-            this.c1de_Time.ImagePadding = new System.Windows.Forms.Padding(0);
+            this.c1de_Time.FormatType = C1.Win.Input.FormatType.MediumTime;
             this.c1de_Time.Location = new System.Drawing.Point(152, 167);
             this.c1de_Time.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1de_Time.Name = "c1de_Time";
@@ -364,7 +363,6 @@
             this.c1de_Time.TabIndex = 7;
             this.c1de_Time.Tag = null;
             this.c1de_Time.Value = new System.DateTime(2011, 2, 8, 10, 15, 30, 0);
-            this.c1de_Time.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             // 
             // label18
             // 
@@ -409,8 +407,7 @@
             // c1de_General
             // 
             this.c1de_General.Calendar.DayNameLength = 1;
-            this.c1de_General.FormatType = C1.Win.C1Input.FormatTypeEnum.GeneralDate;
-            this.c1de_General.ImagePadding = new System.Windows.Forms.Padding(0);
+            this.c1de_General.FormatType = C1.Win.Input.FormatType.GeneralDate;
             this.c1de_General.Location = new System.Drawing.Point(152, 119);
             this.c1de_General.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1de_General.Name = "c1de_General";
@@ -422,8 +419,7 @@
             // c1de_GMT
             // 
             this.c1de_GMT.Calendar.DayNameLength = 1;
-            this.c1de_GMT.FormatType = C1.Win.C1Input.FormatTypeEnum.GMTSortable;
-            this.c1de_GMT.ImagePadding = new System.Windows.Forms.Padding(0);
+            this.c1de_GMT.FormatType = C1.Win.Input.FormatType.GMTSortable;
             this.c1de_GMT.Location = new System.Drawing.Point(152, 80);
             this.c1de_GMT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1de_GMT.Name = "c1de_GMT";
@@ -435,8 +431,7 @@
             // c1de_LongDate
             // 
             this.c1de_LongDate.Calendar.DayNameLength = 1;
-            this.c1de_LongDate.FormatType = C1.Win.C1Input.FormatTypeEnum.LongDate;
-            this.c1de_LongDate.ImagePadding = new System.Windows.Forms.Padding(0);
+            this.c1de_LongDate.FormatType = C1.Win.Input.FormatType.LongDate;
             this.c1de_LongDate.Location = new System.Drawing.Point(152, 35);
             this.c1de_LongDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1de_LongDate.Name = "c1de_LongDate";

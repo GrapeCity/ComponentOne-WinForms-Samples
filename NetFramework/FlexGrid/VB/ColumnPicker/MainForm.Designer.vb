@@ -38,11 +38,11 @@ Partial Class MainForm
         Me.rbCreateBands = New C1.Win.Ribbon.RibbonButton()
         Me.rbRemoveBands = New C1.Win.Ribbon.RibbonButton()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.OrdersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.C1NWindDataSet = New ColumnPicker.C1NWindDataSet()
-        Me.C1FlexGridBandedView1 = New C1.Win.C1FlexGrid.C1FlexGridBandedView()
+        Me.C1FlexGridBandedView1 = New C1.Win.FlexGrid.C1FlexGridBandedView()
         Me.OrdersTableAdapter = New ColumnPicker.C1NWindDataSetTableAdapters.OrdersTableAdapter()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -135,7 +135,7 @@ Partial Class MainForm
         '
         Me.C1FlexGrid1.ColumnContextMenuEnabled = True
         Me.C1FlexGrid1.ColumnInfo = resources.GetString("C1FlexGrid1.ColumnInfo")
-        Me.C1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.Highlight
+        Me.C1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.Highlight
         Me.C1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = True
         Me.C1FlexGrid1.ColumnPickerInfo.ShowToolButton = True
         Me.C1FlexGrid1.DataSource = Me.OrdersBindingSource
@@ -194,10 +194,10 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGridBandedView1 As C1.Win.C1FlexGrid.C1FlexGridBandedView
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGridBandedView1 As C1.Win.FlexGrid.C1FlexGridBandedView
     Friend WithEvents C1NWindDataSet As C1NWindDataSet
     Friend WithEvents OrdersBindingSource As BindingSource
     Friend WithEvents OrdersTableAdapter As C1NWindDataSetTableAdapters.OrdersTableAdapter

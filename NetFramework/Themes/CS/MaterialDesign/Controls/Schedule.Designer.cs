@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Schedule));
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
             this.splitter1 = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1)).BeginInit();
@@ -104,12 +104,12 @@
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -155,8 +155,8 @@
 
         #endregion
 
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
     }
 }

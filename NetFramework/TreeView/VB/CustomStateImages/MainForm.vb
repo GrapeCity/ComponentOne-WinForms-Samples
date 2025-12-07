@@ -1,6 +1,6 @@
 ﻿Imports System.Reflection
 Imports System.Windows.Forms.VisualStyles
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 
 Public Class MainForm
 

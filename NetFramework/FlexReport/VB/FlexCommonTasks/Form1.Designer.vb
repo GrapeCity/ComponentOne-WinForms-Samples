@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.C1FlexViewer1 = New C1.Win.FlexViewer.C1FlexViewer()
-        Me.tbReports = New C1.Win.C1Command.C1TopicBar()
+        Me.tbReports = New C1.Win.Command.C1TopicBar()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.C1FlexReport1 = New C1.Win.FlexReport.C1FlexReport()
         CType(Me.C1FlexViewer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,7 +51,7 @@ Partial Class Form1
         Me.tbReports.PagePadding = New System.Windows.Forms.Padding(10)
         Me.tbReports.Size = New System.Drawing.Size(242, 511)
         Me.tbReports.TabIndex = 1
-        Me.tbReports.VisualStyle = C1.Win.C1Command.VisualStyle.Custom
+        Me.tbReports.VisualStyle = C1.Win.Command.VisualStyle.Custom
         '
         'Splitter1
         '
@@ -84,7 +84,7 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents C1FlexViewer1 As C1.Win.FlexViewer.C1FlexViewer
-    Friend WithEvents tbReports As C1.Win.C1Command.C1TopicBar
+    Friend WithEvents tbReports As C1.Win.Command.C1TopicBar
     Friend WithEvents Splitter1 As System.Windows.Forms.Splitter
     Friend WithEvents C1FlexReport1 As C1.Win.FlexReport.C1FlexReport
 

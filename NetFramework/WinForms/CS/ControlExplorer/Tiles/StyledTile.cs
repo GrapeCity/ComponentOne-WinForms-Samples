@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using C1.Win.Util;
-using C1.Win.C1Tile;
+using C1.Win.Tile;
 
 namespace ControlExplorer.Tiles
 {

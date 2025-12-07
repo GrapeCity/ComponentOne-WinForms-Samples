@@ -36,7 +36,7 @@ namespace CommandExplorer.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
+        internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CommandExplorer.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace CommandExplorer.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
+        internal static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap AddressBook {
+        internal static System.Drawing.Bitmap AddressBook {
             get {
                 object obj = ResourceManager.GetObject("AddressBook", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap AlignTextCenter {
+        internal static System.Drawing.Bitmap AlignTextCenter {
             get {
                 object obj = ResourceManager.GetObject("AlignTextCenter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap AlignTextJustify {
+        internal static System.Drawing.Bitmap AlignTextJustify {
             get {
                 object obj = ResourceManager.GetObject("AlignTextJustify", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap AlignTextLeft {
+        internal static System.Drawing.Bitmap AlignTextLeft {
             get {
                 object obj = ResourceManager.GetObject("AlignTextLeft", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +103,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap AlignTextRight {
+        internal static System.Drawing.Bitmap AlignTextRight {
             get {
                 object obj = ResourceManager.GetObject("AlignTextRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +113,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap aspLogo_32 {
+        internal static System.Drawing.Bitmap aspLogo_32 {
             get {
                 object obj = ResourceManager.GetObject("aspLogo_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +123,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Bold {
+        internal static System.Drawing.Bitmap Bold {
             get {
                 object obj = ResourceManager.GetObject("Bold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +133,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap bullet_ball_glass_grey {
+        internal static System.Drawing.Bitmap bullet_ball_glass_grey {
             get {
                 object obj = ResourceManager.GetObject("bullet_ball_glass_grey", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +143,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap bullet_ball_glass_red {
+        internal static System.Drawing.Bitmap bullet_ball_glass_red {
             get {
                 object obj = ResourceManager.GetObject("bullet_ball_glass_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +153,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Bullets {
+        internal static System.Drawing.Bitmap Bullets {
             get {
                 object obj = ResourceManager.GetObject("Bullets", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +163,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap c1powersuite_logo_32 {
+        internal static System.Drawing.Bitmap c1powersuite_logo_32 {
             get {
                 object obj = ResourceManager.GetObject("c1powersuite_logo_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +173,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap c1r {
+        internal static System.Drawing.Bitmap c1r {
             get {
                 object obj = ResourceManager.GetObject("c1r", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +183,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap CalendarSchedule {
+        internal static System.Drawing.Bitmap CalendarSchedule {
             get {
                 object obj = ResourceManager.GetObject("CalendarSchedule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +193,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap check2 {
+        internal static System.Drawing.Bitmap check2 {
             get {
                 object obj = ResourceManager.GetObject("check2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -201,9 +201,54 @@ namespace CommandExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attach C1Command to C1ContextMenu.
+        /// </summary>
+        internal static string CheckBox_ContextMenu_Text {
+            get {
+                return ResourceManager.GetString("CheckBox_ContextMenu_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable.
+        /// </summary>
+        internal static string CheckBox_Disable_Text {
+            get {
+                return ResourceManager.GetString("CheckBox_Disable_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach C1Command to C1DockingTab.
+        /// </summary>
+        internal static string CheckBox_DockingTab_Text {
+            get {
+                return ResourceManager.GetString("CheckBox_DockingTab_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach C1Command to C1MainMenu.
+        /// </summary>
+        internal static string CheckBox_MainMenu_Text {
+            get {
+                return ResourceManager.GetString("CheckBox_MainMenu_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach C1Command to C1ToolBar.
+        /// </summary>
+        internal static string CheckBox_ToolBar_Text {
+            get {
+                return ResourceManager.GetString("CheckBox_ToolBar_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Copy {
+        internal static System.Drawing.Bitmap Copy {
             get {
                 object obj = ResourceManager.GetObject("Copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +258,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Cut {
+        internal static System.Drawing.Bitmap Cut {
             get {
                 object obj = ResourceManager.GetObject("Cut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +268,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Database {
+        internal static System.Drawing.Bitmap Database {
             get {
                 object obj = ResourceManager.GetObject("Database", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +278,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap DecreaseIndent {
+        internal static System.Drawing.Bitmap DecreaseIndent {
             get {
                 object obj = ResourceManager.GetObject("DecreaseIndent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +288,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_belgium {
+        internal static System.Drawing.Bitmap flag_belgium {
             get {
                 object obj = ResourceManager.GetObject("flag_belgium", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +298,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_canada {
+        internal static System.Drawing.Bitmap flag_canada {
             get {
                 object obj = ResourceManager.GetObject("flag_canada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +308,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_china {
+        internal static System.Drawing.Bitmap flag_china {
             get {
                 object obj = ResourceManager.GetObject("flag_china", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +318,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_eu {
+        internal static System.Drawing.Bitmap flag_eu {
             get {
                 object obj = ResourceManager.GetObject("flag_eu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -283,7 +328,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_france {
+        internal static System.Drawing.Bitmap flag_france {
             get {
                 object obj = ResourceManager.GetObject("flag_france", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -293,7 +338,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_generic {
+        internal static System.Drawing.Bitmap flag_generic {
             get {
                 object obj = ResourceManager.GetObject("flag_generic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -303,7 +348,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_germany {
+        internal static System.Drawing.Bitmap flag_germany {
             get {
                 object obj = ResourceManager.GetObject("flag_germany", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -313,7 +358,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_india {
+        internal static System.Drawing.Bitmap flag_india {
             get {
                 object obj = ResourceManager.GetObject("flag_india", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -323,7 +368,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_italy {
+        internal static System.Drawing.Bitmap flag_italy {
             get {
                 object obj = ResourceManager.GetObject("flag_italy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -333,7 +378,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_japan {
+        internal static System.Drawing.Bitmap flag_japan {
             get {
                 object obj = ResourceManager.GetObject("flag_japan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -343,7 +388,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_luxembourg {
+        internal static System.Drawing.Bitmap flag_luxembourg {
             get {
                 object obj = ResourceManager.GetObject("flag_luxembourg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -353,7 +398,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_mexico {
+        internal static System.Drawing.Bitmap flag_mexico {
             get {
                 object obj = ResourceManager.GetObject("flag_mexico", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -363,7 +408,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_netherlands {
+        internal static System.Drawing.Bitmap flag_netherlands {
             get {
                 object obj = ResourceManager.GetObject("flag_netherlands", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -373,7 +418,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_south_korea {
+        internal static System.Drawing.Bitmap flag_south_korea {
             get {
                 object obj = ResourceManager.GetObject("flag_south_korea", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -383,7 +428,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap flag_usa {
+        internal static System.Drawing.Bitmap flag_usa {
             get {
                 object obj = ResourceManager.GetObject("flag_usa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -393,7 +438,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap FolderOpen {
+        internal static System.Drawing.Bitmap FolderOpen {
             get {
                 object obj = ResourceManager.GetObject("FolderOpen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -403,7 +448,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap GrowFont {
+        internal static System.Drawing.Bitmap GrowFont {
             get {
                 object obj = ResourceManager.GetObject("GrowFont", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -413,7 +458,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Help {
+        internal static System.Drawing.Bitmap Help {
             get {
                 object obj = ResourceManager.GetObject("Help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -423,7 +468,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap help1 {
+        internal static System.Drawing.Bitmap help1 {
             get {
                 object obj = ResourceManager.GetObject("help1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -433,7 +478,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap IncreaseIndent {
+        internal static System.Drawing.Bitmap IncreaseIndent {
             get {
                 object obj = ResourceManager.GetObject("IncreaseIndent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -443,7 +488,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Italic {
+        internal static System.Drawing.Bitmap Italic {
             get {
                 object obj = ResourceManager.GetObject("Italic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -451,9 +496,102 @@ namespace CommandExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attach C1Command to the Controls:.
+        /// </summary>
+        internal static string Label_CommandDesc {
+            get {
+                return ResourceManager.GetString("Label_CommandDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1ContextMenu:.
+        /// </summary>
+        internal static string Label_ContextMenu {
+            get {
+                return ResourceManager.GetString("Label_ContextMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Right Click here to open Context Menu.
+        /// </summary>
+        internal static string Label_ContextMenuDesc {
+            get {
+                return ResourceManager.GetString("Label_ContextMenuDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Counter:.
+        /// </summary>
+        internal static string Label_Counter {
+            get {
+                return ResourceManager.GetString("Label_Counter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disables ALL controls linked to the c1Command.
+        /// </summary>
+        internal static string Label_DisableDesc {
+            get {
+                return ResourceManager.GetString("Label_DisableDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1MainMenu:.
+        /// </summary>
+        internal static string Label_MainMenu {
+            get {
+                return ResourceManager.GetString("Label_MainMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates how ONE C1Command can be attached to multiple controls.
+        ///All five methods trigger the SAME command, that is incrementing the Counter!
+        ///
+        ///Try the following actions based on where you attached the command:
+        ///
+        ///1. Checkboxes Panel:
+        ///    - Check the boxes on the right side to attach the C1Command to specific controls.
+        ///
+        ///2. C1MainMenu:
+        ///    - If you attached the command to the C1MainMenu, click the CommandLink&apos;s and the C1MainMenu.
+        ///
+        ///3. C1ToolBar:
+        ///    - If you attached the command to t [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Label_SampleDescription {
+            get {
+                return ResourceManager.GetString("Label_SampleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1ToolBar:.
+        /// </summary>
+        internal static string Label_ToolBar {
+            get {
+                return ResourceManager.GetString("Label_ToolBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to C1Command Demo!.
+        /// </summary>
+        internal static string Label_Welcome {
+            get {
+                return ResourceManager.GetString("Label_Welcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap New {
+        internal static System.Drawing.Bitmap New {
             get {
                 object obj = ResourceManager.GetObject("New", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -463,7 +601,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap NewContact {
+        internal static System.Drawing.Bitmap NewContact {
             get {
                 object obj = ResourceManager.GetObject("NewContact", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -473,7 +611,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap NewEmail {
+        internal static System.Drawing.Bitmap NewEmail {
             get {
                 object obj = ResourceManager.GetObject("NewEmail", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -483,7 +621,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap NewNote {
+        internal static System.Drawing.Bitmap NewNote {
             get {
                 object obj = ResourceManager.GetObject("NewNote", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -493,7 +631,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap NewTask {
+        internal static System.Drawing.Bitmap NewTask {
             get {
                 object obj = ResourceManager.GetObject("NewTask", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -503,7 +641,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Numbering {
+        internal static System.Drawing.Bitmap Numbering {
             get {
                 object obj = ResourceManager.GetObject("Numbering", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -513,7 +651,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Open {
+        internal static System.Drawing.Bitmap Open {
             get {
                 object obj = ResourceManager.GetObject("Open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -523,7 +661,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Paste {
+        internal static System.Drawing.Bitmap Paste {
             get {
                 object obj = ResourceManager.GetObject("Paste", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -533,7 +671,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Print {
+        internal static System.Drawing.Bitmap Print {
             get {
                 object obj = ResourceManager.GetObject("Print", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -543,7 +681,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Redo {
+        internal static System.Drawing.Bitmap Redo {
             get {
                 object obj = ResourceManager.GetObject("Redo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -551,9 +689,36 @@ namespace CommandExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This demo shows how a single C1Command links multiple UI controls (C1MainMenu, C1ToolBar, C1DockingTab, C1ContextMenu, and C1CommandLink) to execute a shared action, that is, incrementing a counter whenever any linked control is clicked..
+        /// </summary>
+        internal static string SampleItem_Desc_C1Command {
+            get {
+                return ResourceManager.GetString("SampleItem_Desc_C1Command", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1Command.
+        /// </summary>
+        internal static string SampleItem_Name_C1Command {
+            get {
+                return ResourceManager.GetString("SampleItem_Name_C1Command", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1Command.
+        /// </summary>
+        internal static string SampleItem_Title_C1Command {
+            get {
+                return ResourceManager.GetString("SampleItem_Title_C1Command", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Save {
+        internal static System.Drawing.Bitmap Save {
             get {
                 object obj = ResourceManager.GetObject("Save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -563,7 +728,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap SaveAll {
+        internal static System.Drawing.Bitmap SaveAll {
             get {
                 object obj = ResourceManager.GetObject("SaveAll", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -573,7 +738,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap seLogo_32 {
+        internal static System.Drawing.Bitmap seLogo_32 {
             get {
                 object obj = ResourceManager.GetObject("seLogo_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -583,7 +748,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap shoppingcart_full1 {
+        internal static System.Drawing.Bitmap shoppingcart_full1 {
             get {
                 object obj = ResourceManager.GetObject("shoppingcart_full1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -593,7 +758,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap ShrinkFont {
+        internal static System.Drawing.Bitmap ShrinkFont {
             get {
                 object obj = ResourceManager.GetObject("ShrinkFont", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -603,7 +768,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Spelling {
+        internal static System.Drawing.Bitmap Spelling {
             get {
                 object obj = ResourceManager.GetObject("Spelling", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -613,7 +778,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Strikethrough {
+        internal static System.Drawing.Bitmap Strikethrough {
             get {
                 object obj = ResourceManager.GetObject("Strikethrough", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -623,7 +788,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Subscript {
+        internal static System.Drawing.Bitmap Subscript {
             get {
                 object obj = ResourceManager.GetObject("Subscript", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -633,7 +798,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Superscript {
+        internal static System.Drawing.Bitmap Superscript {
             get {
                 object obj = ResourceManager.GetObject("Superscript", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -641,9 +806,60 @@ namespace CommandExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attaches c1Command to C1ContextualMenu&apos;s CommandLink
+        ///Click on the C1ContextualMenu&apos;s CommandLink to increment the counter.
+        /// </summary>
+        internal static string ToolTip_ContextMenu {
+            get {
+                return ResourceManager.GetString("ToolTip_ContextMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disables ALL controls linked to the c1Command.
+        /// </summary>
+        internal static string ToolTip_Disable {
+            get {
+                return ResourceManager.GetString("ToolTip_Disable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attaches c1Command to C1DockingTab
+        ///Click on the c1DockingTab&apos;s Tab to increment the counter.
+        /// </summary>
+        internal static string ToolTip_DockingTab {
+            get {
+                return ResourceManager.GetString("ToolTip_DockingTab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attaches c1Command to c1MainMenu and its Command Links
+        ///Click on the c1MainMenu and its Command Links to increment the counter
+        ///
+        ///.
+        /// </summary>
+        internal static string ToolTip_MainMenu {
+            get {
+                return ResourceManager.GetString("ToolTip_MainMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attaches c1Command to C1DockingTab
+        ///Click on the c1DockingTab&apos;s Tab to increment the counter.
+        /// </summary>
+        internal static string ToolTip_ToolBar {
+            get {
+                return ResourceManager.GetString("ToolTip_ToolBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap ultLogo_32 {
+        internal static System.Drawing.Bitmap ultLogo_32 {
             get {
                 object obj = ResourceManager.GetObject("ultLogo_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -653,7 +869,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Underline {
+        internal static System.Drawing.Bitmap Underline {
             get {
                 object obj = ResourceManager.GetObject("Underline", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -663,7 +879,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Undo {
+        internal static System.Drawing.Bitmap Undo {
             get {
                 object obj = ResourceManager.GetObject("Undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -673,7 +889,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap winformsLogo_321 {
+        internal static System.Drawing.Bitmap winformsLogo_321 {
             get {
                 object obj = ResourceManager.GetObject("winformsLogo_321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -683,7 +899,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap wpfLogo_32 {
+        internal static System.Drawing.Bitmap wpfLogo_32 {
             get {
                 object obj = ResourceManager.GetObject("wpfLogo_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -693,7 +909,7 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Zoom {
+        internal static System.Drawing.Bitmap Zoom {
             get {
                 object obj = ResourceManager.GetObject("Zoom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

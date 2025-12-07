@@ -1,6 +1,7 @@
 ﻿using C1.Win.Ribbon;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -46,12 +47,14 @@ namespace WordPad.BackstageTabs.Items
             private set;
         }
 
+        [DefaultValue(null)]
         public Form1 Owner
         {
             get;
             set;
         }
 
+        [DefaultValue(null)]
         public C1BackstageView View
         {
             get;

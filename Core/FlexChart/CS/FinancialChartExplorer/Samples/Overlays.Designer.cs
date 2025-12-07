@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinancialChartExplorer.CustomControls;
+using System;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -31,531 +32,520 @@ namespace FinancialChartExplorer.Samples
         private void InitializeComponent()
         {
             C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.overlayType = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.period = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nudMultiplier = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nudSize = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.mvaType = new System.Windows.Forms.ComboBox();
-            this.conversionLabel = new System.Windows.Forms.Label();
-            this.conversionPeriod = new System.Windows.Forms.NumericUpDown();
-            this.baseLabel = new System.Windows.Forms.Label();
-            this.basePeriod = new System.Windows.Forms.NumericUpDown();
-            this.leadingLabel = new System.Windows.Forms.Label();
-            this.leadingPeriod = new System.Windows.Forms.NumericUpDown();
-            this.laggingLabel = new System.Windows.Forms.Label();
-            this.laggingPeriod = new System.Windows.Forms.NumericUpDown();
-            this.jawPeriodLabel = new System.Windows.Forms.Label();
-            this.jawPeriodNumberic = new System.Windows.Forms.NumericUpDown();
-            this.teethPeriodLabel = new System.Windows.Forms.Label();
-            this.teethPeriodNumberic = new System.Windows.Forms.NumericUpDown();
-            this.lipsPeriodLabel = new System.Windows.Forms.Label();
-            this.lipsPeriodNumberic = new System.Windows.Forms.NumericUpDown();
-            this.zigZagDistanceLabel = new System.Windows.Forms.Label();
-            this.zigZagDistanceNumberic = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.period)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMultiplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conversionPeriod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.basePeriod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leadingPeriod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laggingPeriod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jawPeriodNumberic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teethPeriodNumberic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lipsPeriodNumberic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zigZagDistanceNumberic)).BeginInit();
-            this.SuspendLayout();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            label1 = new Label();
+            c1OverlayType = new C1.Win.Input.C1ComboBox();
+            label2 = new Label();
+            period = new C1NumericEditEx();
+            label3 = new Label();
+            nudMultiplier = new C1NumericEditEx();
+            label4 = new Label();
+            nudSize = new C1NumericEditEx();
+            label5 = new Label();
+            c1MvaType = new C1.Win.Input.C1ComboBox();
+            conversionLabel = new Label();
+            conversionPeriod = new C1NumericEditEx();
+            baseLabel = new Label();
+            basePeriod = new C1NumericEditEx();
+            leadingLabel = new Label();
+            leadingPeriod = new C1NumericEditEx();
+            laggingLabel = new Label();
+            laggingPeriod = new C1NumericEditEx();
+            jawPeriodLabel = new Label();
+            jawPeriodNumberic = new C1NumericEditEx();
+            teethPeriodLabel = new Label();
+            teethPeriodNumberic = new C1NumericEditEx();
+            lipsPeriodLabel = new Label();
+            lipsPeriodNumberic = new C1NumericEditEx();
+            zigZagDistanceLabel = new Label();
+            zigZagDistanceNumberic = new C1NumericEditEx();
+            tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)financialChart1).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)c1OverlayType).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)period).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudMultiplier).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudSize).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1MvaType).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)conversionPeriod).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)basePeriod).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)leadingPeriod).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)laggingPeriod).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)jawPeriodNumberic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)teethPeriodNumberic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lipsPeriodNumberic).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)zigZagDistanceNumberic).BeginInit();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.financialChart1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 272);
-            this.tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(financialChart1, 0, 0);
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 1);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(1317, 748);
+            tableLayoutPanel1.TabIndex = 0;
             // 
             // financialChart1
             // 
-            this.financialChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
-            this.financialChart1.AxisX.Chart = this.financialChart1;
-            this.financialChart1.AxisX.DataSource = null;
-            this.financialChart1.AxisX.GroupProvider = null;
-            this.financialChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
-            this.financialChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
-            this.financialChart1.AxisX.GroupVisibilityLevel = 0;
-            this.financialChart1.AxisX.LabelMax = false;
-            this.financialChart1.AxisX.LabelMin = false;
-            this.financialChart1.AxisX.PlotAreaName = null;
-            this.financialChart1.AxisX.Position = C1.Chart.Position.Bottom;
-            this.financialChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
-            this.financialChart1.AxisY.AxisLine = false;
-            this.financialChart1.AxisY.Chart = this.financialChart1;
-            this.financialChart1.AxisY.DataSource = null;
-            this.financialChart1.AxisY.GroupProvider = null;
-            this.financialChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
-            this.financialChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
-            this.financialChart1.AxisY.GroupVisibilityLevel = 0;
-            this.financialChart1.AxisY.LabelMax = false;
-            this.financialChart1.AxisY.LabelMin = false;
-            this.financialChart1.AxisY.MajorGrid = true;
-            this.financialChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
-            this.financialChart1.AxisY.PlotAreaName = null;
-            this.financialChart1.AxisY.Position = C1.Chart.Position.Left;
-            this.financialChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
-            this.financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Column;
-            this.financialChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.financialChart1.Legend.ItemMaxWidth = 0;
-            this.financialChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
-            this.financialChart1.Legend.Position = C1.Chart.Position.Right;
-            this.financialChart1.Legend.Reversed = false;
-            this.financialChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
-            this.financialChart1.Legend.Title = null;
-            this.financialChart1.Location = new System.Drawing.Point(10, 10);
-            this.financialChart1.Margin = new System.Windows.Forms.Padding(10);
-            this.financialChart1.Name = "financialChart1";
-            this.financialChart1.Options.BoxSize = 2D;
+            financialChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            financialChart1.AnimationLoad.Duration = 400;
+            financialChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            financialChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
+            financialChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            financialChart1.AnimationUpdate.Duration = 400;
+            financialChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            financialChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            financialChart1.AxisX.AxisLine = true;
+            financialChart1.AxisX.Chart = financialChart1;
+            financialChart1.AxisX.DataSource = null;
+            financialChart1.AxisX.Formatter = null;
+            financialChart1.AxisX.GroupProvider = null;
+            financialChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            financialChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            financialChart1.AxisX.GroupVisibilityLevel = 0;
+            financialChart1.AxisX.PlotAreaName = null;
+            financialChart1.AxisX.Position = C1.Chart.Position.Bottom;
+            financialChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            financialChart1.AxisY.AxisLine = false;
+            financialChart1.AxisY.Chart = financialChart1;
+            financialChart1.AxisY.DataSource = null;
+            financialChart1.AxisY.Formatter = null;
+            financialChart1.AxisY.GroupProvider = null;
+            financialChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            financialChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            financialChart1.AxisY.GroupVisibilityLevel = 0;
+            financialChart1.AxisY.MajorGrid = true;
+            financialChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
+            financialChart1.AxisY.PlotAreaName = null;
+            financialChart1.AxisY.Position = C1.Chart.Position.Left;
+            financialChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
+            financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Column;
+            financialChart1.DataLabel.Angle = 0;
+            financialChart1.DataLabel.Border = false;
+            financialChart1.DataLabel.ConnectingLine = false;
+            financialChart1.DataLabel.Content = null;
+            financialChart1.DataLabel.ContentOptions = C1.Chart.ContentOptions.WordWrap;
+            financialChart1.DataLabel.MaxAutoLabels = 100;
+            financialChart1.DataLabel.MaxLines = 0;
+            financialChart1.DataLabel.MaxWidth = 0;
+            financialChart1.DataLabel.Offset = 0;
+            financialChart1.DataLabel.Overlapping = C1.Chart.LabelOverlapping.Hide;
+            financialChart1.DataLabel.OverlappingOptions = C1.Chart.LabelOverlappingOptions.OutsidePlotArea;
+            financialChart1.DataLabel.Position = C1.Chart.LabelPosition.None;
+            financialChart1.Dock = DockStyle.Fill;
+            financialChart1.Legend.ItemMaxWidth = 0;
+            financialChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
+            financialChart1.Legend.Position = C1.Chart.Position.Right;
+            financialChart1.Legend.Reversed = false;
+            financialChart1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
+            financialChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
+            financialChart1.Legend.Title = null;
+            financialChart1.Location = new Point(0, 0);
+            financialChart1.Margin = new Padding(0);
+            financialChart1.Name = "financialChart1";
+            financialChart1.Options.BoxSize = 2D;
+            financialChart1.Options.Chart = financialChart1;
             elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
             elementSize2.Value = 70D;
-            this.financialChart1.Options.ClusterSize = elementSize2;
-            this.financialChart1.Options.ReversalAmount = 1D;
-            this.financialChart1.PlotMargin = new System.Windows.Forms.Padding(0);
-            this.financialChart1.SelectedSeries = null;
-            this.financialChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.financialChart1.Size = new System.Drawing.Size(780, 134);
-            this.financialChart1.TabIndex = 0;
-            this.financialChart1.Text = "financialChart1";
+            financialChart1.Options.ClusterSize = elementSize2;
+            financialChart1.Options.ReversalAmount = 1D;
+            financialChart1.PlotMargin = new Padding(0);
+            financialChart1.SelectedSeries = null;
+            financialChart1.SelectionStyle.StrokeColor = Color.Red;
+            financialChart1.Size = new Size(1317, 601);
+            financialChart1.TabIndex = 0;
+            financialChart1.Text = "financialChart1";
             // 
             // 
             // 
-            this.financialChart1.ToolTip.Content = "{value}";
+            financialChart1.ToolTip.Content = "{value}";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.overlayType);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.period);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.nudMultiplier);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.nudSize);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.mvaType);
-            this.flowLayoutPanel1.Controls.Add(this.conversionLabel);
-            this.flowLayoutPanel1.Controls.Add(this.conversionPeriod);
-            this.flowLayoutPanel1.Controls.Add(this.baseLabel);
-            this.flowLayoutPanel1.Controls.Add(this.basePeriod);
-            this.flowLayoutPanel1.Controls.Add(this.leadingLabel);
-            this.flowLayoutPanel1.Controls.Add(this.leadingPeriod);
-            this.flowLayoutPanel1.Controls.Add(this.laggingLabel);
-            this.flowLayoutPanel1.Controls.Add(this.laggingPeriod);
-            this.flowLayoutPanel1.Controls.Add(this.jawPeriodLabel);
-            this.flowLayoutPanel1.Controls.Add(this.jawPeriodNumberic);
-            this.flowLayoutPanel1.Controls.Add(this.teethPeriodLabel);
-            this.flowLayoutPanel1.Controls.Add(this.teethPeriodNumberic);
-            this.flowLayoutPanel1.Controls.Add(this.lipsPeriodLabel);
-            this.flowLayoutPanel1.Controls.Add(this.lipsPeriodNumberic);
-            this.flowLayoutPanel1.Controls.Add(this.zigZagDistanceLabel);
-            this.flowLayoutPanel1.Controls.Add(this.zigZagDistanceNumberic);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 157);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(794, 112);
-            this.flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Controls.Add(c1OverlayType);
+            flowLayoutPanel1.Controls.Add(label2);
+            flowLayoutPanel1.Controls.Add(period);
+            flowLayoutPanel1.Controls.Add(label3);
+            flowLayoutPanel1.Controls.Add(nudMultiplier);
+            flowLayoutPanel1.Controls.Add(label4);
+            flowLayoutPanel1.Controls.Add(nudSize);
+            flowLayoutPanel1.Controls.Add(label5);
+            flowLayoutPanel1.Controls.Add(c1MvaType);
+            flowLayoutPanel1.Controls.Add(conversionLabel);
+            flowLayoutPanel1.Controls.Add(conversionPeriod);
+            flowLayoutPanel1.Controls.Add(baseLabel);
+            flowLayoutPanel1.Controls.Add(basePeriod);
+            flowLayoutPanel1.Controls.Add(leadingLabel);
+            flowLayoutPanel1.Controls.Add(leadingPeriod);
+            flowLayoutPanel1.Controls.Add(laggingLabel);
+            flowLayoutPanel1.Controls.Add(laggingPeriod);
+            flowLayoutPanel1.Controls.Add(jawPeriodLabel);
+            flowLayoutPanel1.Controls.Add(jawPeriodNumberic);
+            flowLayoutPanel1.Controls.Add(teethPeriodLabel);
+            flowLayoutPanel1.Controls.Add(teethPeriodNumberic);
+            flowLayoutPanel1.Controls.Add(lipsPeriodLabel);
+            flowLayoutPanel1.Controls.Add(lipsPeriodNumberic);
+            flowLayoutPanel1.Controls.Add(zigZagDistanceLabel);
+            flowLayoutPanel1.Controls.Add(zigZagDistanceNumberic);
+            flowLayoutPanel1.Location = new Point(0, 601);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Padding = new Padding(0, 15, 0, 0);
+            flowLayoutPanel1.Size = new Size(1317, 147);
+            flowLayoutPanel1.TabIndex = 2;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Overlay Type";
+            label1.Anchor = AnchorStyles.Left;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(3, 23);
+            label1.Margin = new Padding(3, 3, 3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(174, 36);
+            label1.TabIndex = 0;
+            label1.Text = "Overlay Type:";
             // 
-            // overlayType
+            // c1OverlayType
             // 
-            this.overlayType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.overlayType.FormattingEnabled = true;
-            this.overlayType.Location = new System.Drawing.Point(79, 3);
-            this.overlayType.Name = "overlayType";
-            this.overlayType.Size = new System.Drawing.Size(196, 21);
-            this.overlayType.TabIndex = 1;
-            this.overlayType.SelectedIndexChanged += new System.EventHandler(this.overlayType_SelectedIndexChanged);
+            c1OverlayType.Anchor = AnchorStyles.Left;
+            c1OverlayType.DropDownAlign = C1.Framework.DropDownAlignment.Center;
+            c1OverlayType.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
+            c1OverlayType.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            c1OverlayType.GapHeight = 5;
+            c1OverlayType.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
+            c1OverlayType.Location = new Point(183, 18);
+            c1OverlayType.Name = "c1OverlayType";
+            c1OverlayType.ReadOnly = true;
+            c1OverlayType.Size = new Size(242, 44);
+            c1OverlayType.TabIndex = 25;
+            c1OverlayType.TextAlign = HorizontalAlignment.Center;
+            c1OverlayType.SelectedIndexChanged += c1OverlayType_SelectedIndexChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(291, 3);
-            this.label2.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Period";
+            label2.Anchor = AnchorStyles.Left;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(441, 23);
+            label2.Margin = new Padding(13, 3, 3, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(97, 36);
+            label2.TabIndex = 2;
+            label2.Text = "Period:";
             // 
             // period
             // 
-            this.period.Location = new System.Drawing.Point(337, 3);
-            this.period.Maximum = new decimal(new int[] {
-            86,
-            0,
-            0,
-            0});
-            this.period.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.period.Name = "period";
-            this.period.Size = new System.Drawing.Size(52, 22);
-            this.period.TabIndex = 3;
-            this.period.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.period.ValueChanged += new System.EventHandler(this.period_ValueChanged);
+            period.Anchor = AnchorStyles.Left;
+            period.Location = new Point(544, 24);
+            period.Maximum = 86;
+            period.Minimum = 2;
+            period.Name = "period";
+            period.Size = new Size(60, 31);
+            period.TabIndex = 27;
+            period.TextAlign = HorizontalAlignment.Center;
+            period.Value = new decimal(new int[] { 20, 0, 0, 0 });
+            period.ValueChanged += period_ValueChanged_1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(408, 3);
-            this.label3.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Multiplier";
+            label3.Anchor = AnchorStyles.Left;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(623, 23);
+            label3.Margin = new Padding(16, 3, 3, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(134, 36);
+            label3.TabIndex = 4;
+            label3.Text = "Multiplier:";
             // 
             // nudMultiplier
             // 
-            this.nudMultiplier.Location = new System.Drawing.Point(471, 3);
-            this.nudMultiplier.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudMultiplier.Name = "nudMultiplier";
-            this.nudMultiplier.Size = new System.Drawing.Size(52, 22);
-            this.nudMultiplier.TabIndex = 5;
-            this.nudMultiplier.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.nudMultiplier.ValueChanged += new System.EventHandler(this.nudMultiplier_ValueChanged);
+            nudMultiplier.Anchor = AnchorStyles.Left;
+            nudMultiplier.Location = new Point(763, 24);
+            nudMultiplier.Name = "nudMultiplier";
+            nudMultiplier.Size = new Size(60, 31);
+            nudMultiplier.TabIndex = 28;
+            nudMultiplier.TextAlign = HorizontalAlignment.Center;
+            nudMultiplier.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            nudMultiplier.ValueChanged += nudMultiplier_ValueChanged_1;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(542, 3);
-            this.label4.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Size(%)";
+            label4.Anchor = AnchorStyles.Left;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(842, 23);
+            label4.Margin = new Padding(16, 3, 3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(105, 36);
+            label4.TabIndex = 6;
+            label4.Text = "Size(%):";
             // 
             // nudSize
             // 
-            this.nudSize.Location = new System.Drawing.Point(590, 3);
-            this.nudSize.Name = "nudSize";
-            this.nudSize.Size = new System.Drawing.Size(52, 22);
-            this.nudSize.TabIndex = 7;
-            this.nudSize.Value = new decimal(new int[] {
-            25,
-            0,
-            0,
-            65536});
-            this.nudSize.ValueChanged += new System.EventHandler(this.nudSize_ValueChanged);
+            nudSize.Anchor = AnchorStyles.Left;
+            nudSize.Location = new Point(953, 24);
+            nudSize.Name = "nudSize";
+            nudSize.Size = new Size(60, 31);
+            nudSize.TabIndex = 29;
+            nudSize.TextAlign = HorizontalAlignment.Center;
+            nudSize.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            nudSize.ValueChanged += nudSize_ValueChanged_1;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(661, 3);
-            this.label5.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Type";
+            label5.Anchor = AnchorStyles.Left;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(1032, 23);
+            label5.Margin = new Padding(16, 3, 3, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(78, 36);
+            label5.TabIndex = 8;
+            label5.Text = "Type:";
             // 
-            // mvaType
+            // c1MvaType
             // 
-            this.mvaType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mvaType.FormattingEnabled = true;
-            this.mvaType.Location = new System.Drawing.Point(3, 31);
-            this.mvaType.Name = "mvaType";
-            this.mvaType.Size = new System.Drawing.Size(121, 21);
-            this.mvaType.TabIndex = 9;
-            this.mvaType.SelectedIndexChanged += new System.EventHandler(this.mvaType_SelectedIndexChanged);
+            c1MvaType.Anchor = AnchorStyles.Left;
+            c1MvaType.DropDownAlign = C1.Framework.DropDownAlignment.Center;
+            c1MvaType.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
+            c1MvaType.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            c1MvaType.GapHeight = 5;
+            c1MvaType.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
+            c1MvaType.Location = new Point(1116, 18);
+            c1MvaType.Name = "c1MvaType";
+            c1MvaType.ReadOnly = true;
+            c1MvaType.Size = new Size(198, 44);
+            c1MvaType.TabIndex = 26;
+            c1MvaType.TextAlign = HorizontalAlignment.Center;
+            c1MvaType.SelectedIndexChanged += c1MvaType_SelectedIndexChanged;
             // 
             // conversionLabel
             // 
-            this.conversionLabel.AutoSize = true;
-            this.conversionLabel.Location = new System.Drawing.Point(140, 31);
-            this.conversionLabel.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.conversionLabel.Name = "conversionLabel";
-            this.conversionLabel.Size = new System.Drawing.Size(101, 13);
-            this.conversionLabel.TabIndex = 10;
-            this.conversionLabel.Text = "Conversion Period";
+            conversionLabel.Anchor = AnchorStyles.Left;
+            conversionLabel.AutoSize = true;
+            conversionLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            conversionLabel.Location = new Point(13, 69);
+            conversionLabel.Margin = new Padding(13, 3, 3, 0);
+            conversionLabel.Name = "conversionLabel";
+            conversionLabel.Size = new Size(239, 36);
+            conversionLabel.TabIndex = 10;
+            conversionLabel.Text = "Conversion Period:";
             // 
             // conversionPeriod
             // 
-            this.conversionPeriod.Location = new System.Drawing.Point(247, 31);
-            this.conversionPeriod.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.conversionPeriod.Name = "conversionPeriod";
-            this.conversionPeriod.Size = new System.Drawing.Size(52, 22);
-            this.conversionPeriod.TabIndex = 11;
-            this.conversionPeriod.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.conversionPeriod.ValueChanged += new System.EventHandler(this.conversion_ValueChanged);
+            conversionPeriod.Anchor = AnchorStyles.Left;
+            conversionPeriod.Location = new Point(258, 70);
+            conversionPeriod.Name = "conversionPeriod";
+            conversionPeriod.Size = new Size(60, 31);
+            conversionPeriod.TabIndex = 30;
+            conversionPeriod.TextAlign = HorizontalAlignment.Center;
+            conversionPeriod.Value = new decimal(new int[] { 9, 0, 0, 0 });
+            conversionPeriod.ValueChanged += conversionPeriod_ValueChanged;
             // 
             // baseLabel
             // 
-            this.baseLabel.AutoSize = true;
-            this.baseLabel.Location = new System.Drawing.Point(315, 31);
-            this.baseLabel.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.baseLabel.Name = "baseLabel";
-            this.baseLabel.Size = new System.Drawing.Size(67, 13);
-            this.baseLabel.TabIndex = 12;
-            this.baseLabel.Text = "Base Period";
+            baseLabel.Anchor = AnchorStyles.Left;
+            baseLabel.AutoSize = true;
+            baseLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            baseLabel.Location = new Point(334, 69);
+            baseLabel.Margin = new Padding(13, 3, 3, 0);
+            baseLabel.Name = "baseLabel";
+            baseLabel.Size = new Size(157, 36);
+            baseLabel.TabIndex = 12;
+            baseLabel.Text = "Base Period:";
             // 
             // basePeriod
             // 
-            this.basePeriod.Location = new System.Drawing.Point(388, 31);
-            this.basePeriod.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.basePeriod.Name = "basePeriod";
-            this.basePeriod.Size = new System.Drawing.Size(52, 22);
-            this.basePeriod.TabIndex = 13;
-            this.basePeriod.Value = new decimal(new int[] {
-            26,
-            0,
-            0,
-            0});
-            this.basePeriod.ValueChanged += new System.EventHandler(this.base_ValueChanged);
+            basePeriod.Anchor = AnchorStyles.Left;
+            basePeriod.Location = new Point(497, 70);
+            basePeriod.Name = "basePeriod";
+            basePeriod.Size = new Size(60, 31);
+            basePeriod.TabIndex = 31;
+            basePeriod.TextAlign = HorizontalAlignment.Center;
+            basePeriod.Value = new decimal(new int[] { 26, 0, 0, 0 });
+            basePeriod.ValueChanged += basePeriod_ValueChanged;
             // 
             // leadingLabel
             // 
-            this.leadingLabel.AutoSize = true;
-            this.leadingLabel.Location = new System.Drawing.Point(456, 31);
-            this.leadingLabel.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.leadingLabel.Name = "leadingLabel";
-            this.leadingLabel.Size = new System.Drawing.Size(84, 13);
-            this.leadingLabel.TabIndex = 14;
-            this.leadingLabel.Text = "Leading Period";
+            leadingLabel.Anchor = AnchorStyles.Left;
+            leadingLabel.AutoSize = true;
+            leadingLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            leadingLabel.Location = new Point(573, 69);
+            leadingLabel.Margin = new Padding(13, 3, 3, 0);
+            leadingLabel.Name = "leadingLabel";
+            leadingLabel.Size = new Size(195, 36);
+            leadingLabel.TabIndex = 14;
+            leadingLabel.Text = "Leading Period:";
             // 
             // leadingPeriod
             // 
-            this.leadingPeriod.Location = new System.Drawing.Point(546, 31);
-            this.leadingPeriod.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.leadingPeriod.Name = "leadingPeriod";
-            this.leadingPeriod.Size = new System.Drawing.Size(52, 22);
-            this.leadingPeriod.TabIndex = 15;
-            this.leadingPeriod.Value = new decimal(new int[] {
-            52,
-            0,
-            0,
-            0});
-            this.leadingPeriod.ValueChanged += new System.EventHandler(this.leading_ValueChanged);
+            leadingPeriod.Anchor = AnchorStyles.Left;
+            leadingPeriod.Location = new Point(774, 70);
+            leadingPeriod.Name = "leadingPeriod";
+            leadingPeriod.Size = new Size(60, 31);
+            leadingPeriod.TabIndex = 32;
+            leadingPeriod.TextAlign = HorizontalAlignment.Center;
+            leadingPeriod.Value = new decimal(new int[] { 52, 0, 0, 0 });
+            leadingPeriod.ValueChanged += leadingPeriod_ValueChanged;
             // 
             // laggingLabel
             // 
-            this.laggingLabel.AutoSize = true;
-            this.laggingLabel.Location = new System.Drawing.Point(614, 31);
-            this.laggingLabel.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.laggingLabel.Name = "laggingLabel";
-            this.laggingLabel.Size = new System.Drawing.Size(85, 13);
-            this.laggingLabel.TabIndex = 16;
-            this.laggingLabel.Text = "Lagging Period";
+            laggingLabel.Anchor = AnchorStyles.Left;
+            laggingLabel.AutoSize = true;
+            laggingLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            laggingLabel.Location = new Point(850, 69);
+            laggingLabel.Margin = new Padding(13, 3, 3, 0);
+            laggingLabel.Name = "laggingLabel";
+            laggingLabel.Size = new Size(197, 36);
+            laggingLabel.TabIndex = 16;
+            laggingLabel.Text = "Lagging Period:";
             // 
             // laggingPeriod
             // 
-            this.laggingPeriod.Location = new System.Drawing.Point(705, 31);
-            this.laggingPeriod.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.laggingPeriod.Name = "laggingPeriod";
-            this.laggingPeriod.Size = new System.Drawing.Size(52, 22);
-            this.laggingPeriod.TabIndex = 17;
-            this.laggingPeriod.Value = new decimal(new int[] {
-            26,
-            0,
-            0,
-            0});
-            this.laggingPeriod.ValueChanged += new System.EventHandler(this.lagging_ValueChanged);
+            laggingPeriod.Anchor = AnchorStyles.Left;
+            laggingPeriod.Location = new Point(1053, 70);
+            laggingPeriod.Name = "laggingPeriod";
+            laggingPeriod.Size = new Size(60, 31);
+            laggingPeriod.TabIndex = 33;
+            laggingPeriod.TextAlign = HorizontalAlignment.Center;
+            laggingPeriod.Value = new decimal(new int[] { 26, 0, 0, 0 });
+            laggingPeriod.ValueChanged += laggingPeriod_ValueChanged;
             // 
             // jawPeriodLabel
             // 
-            this.jawPeriodLabel.AutoSize = true;
-            this.jawPeriodLabel.Location = new System.Drawing.Point(3, 56);
-            this.jawPeriodLabel.Name = "jawPeriodLabel";
-            this.jawPeriodLabel.Padding = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.jawPeriodLabel.Size = new System.Drawing.Size(68, 18);
-            this.jawPeriodLabel.TabIndex = 15;
-            this.jawPeriodLabel.Text = "Jaw Period";
+            jawPeriodLabel.Anchor = AnchorStyles.Left;
+            jawPeriodLabel.AutoSize = true;
+            jawPeriodLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            jawPeriodLabel.Location = new Point(1119, 65);
+            jawPeriodLabel.Name = "jawPeriodLabel";
+            jawPeriodLabel.Padding = new Padding(3, 5, 3, 0);
+            jawPeriodLabel.Size = new Size(152, 41);
+            jawPeriodLabel.TabIndex = 15;
+            jawPeriodLabel.Text = "Jaw Period:";
             // 
             // jawPeriodNumberic
             // 
-            this.jawPeriodNumberic.Location = new System.Drawing.Point(77, 59);
-            this.jawPeriodNumberic.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.jawPeriodNumberic.Name = "jawPeriodNumberic";
-            this.jawPeriodNumberic.Size = new System.Drawing.Size(120, 22);
-            this.jawPeriodNumberic.TabIndex = 18;
-            this.jawPeriodNumberic.Value = new decimal(new int[] {
-            13,
-            0,
-            0,
-            0});
-            this.jawPeriodNumberic.ValueChanged += new System.EventHandler(this.jawPeriodNumberic_ValueChanged);
+            jawPeriodNumberic.Anchor = AnchorStyles.Left;
+            jawPeriodNumberic.Location = new Point(3, 111);
+            jawPeriodNumberic.Name = "jawPeriodNumberic";
+            jawPeriodNumberic.Size = new Size(60, 31);
+            jawPeriodNumberic.TabIndex = 34;
+            jawPeriodNumberic.TextAlign = HorizontalAlignment.Center;
+            jawPeriodNumberic.Value = new decimal(new int[] { 13, 0, 0, 0 });
+            jawPeriodNumberic.ValueChanged += jawPeriodNumberic_ValueChanged_1;
             // 
             // teethPeriodLabel
             // 
-            this.teethPeriodLabel.AutoSize = true;
-            this.teethPeriodLabel.Location = new System.Drawing.Point(203, 56);
-            this.teethPeriodLabel.Name = "teethPeriodLabel";
-            this.teethPeriodLabel.Padding = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.teethPeriodLabel.Size = new System.Drawing.Size(76, 18);
-            this.teethPeriodLabel.TabIndex = 19;
-            this.teethPeriodLabel.Text = "Teeth Period";
+            teethPeriodLabel.Anchor = AnchorStyles.Left;
+            teethPeriodLabel.AutoSize = true;
+            teethPeriodLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            teethPeriodLabel.Location = new Point(69, 106);
+            teethPeriodLabel.Name = "teethPeriodLabel";
+            teethPeriodLabel.Padding = new Padding(3, 5, 3, 0);
+            teethPeriodLabel.Size = new Size(173, 41);
+            teethPeriodLabel.TabIndex = 19;
+            teethPeriodLabel.Text = "Teeth Period:";
             // 
             // teethPeriodNumberic
             // 
-            this.teethPeriodNumberic.Location = new System.Drawing.Point(285, 59);
-            this.teethPeriodNumberic.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.teethPeriodNumberic.Name = "teethPeriodNumberic";
-            this.teethPeriodNumberic.Size = new System.Drawing.Size(120, 22);
-            this.teethPeriodNumberic.TabIndex = 20;
-            this.teethPeriodNumberic.Value = new decimal(new int[] {
-            8,
-            0,
-            0,
-            0});
-            this.teethPeriodNumberic.ValueChanged += new System.EventHandler(this.teethPeriodNumberic_ValueChanged);
+            teethPeriodNumberic.Anchor = AnchorStyles.Left;
+            teethPeriodNumberic.Location = new Point(248, 111);
+            teethPeriodNumberic.Name = "teethPeriodNumberic";
+            teethPeriodNumberic.Size = new Size(60, 31);
+            teethPeriodNumberic.TabIndex = 36;
+            teethPeriodNumberic.TextAlign = HorizontalAlignment.Center;
+            teethPeriodNumberic.Value = new decimal(new int[] { 8, 0, 0, 0 });
+            teethPeriodNumberic.ValueChanged += teethPeriodNumberic_ValueChanged_1;
             // 
             // lipsPeriodLabel
             // 
-            this.lipsPeriodLabel.AutoSize = true;
-            this.lipsPeriodLabel.Location = new System.Drawing.Point(411, 56);
-            this.lipsPeriodLabel.Name = "lipsPeriodLabel";
-            this.lipsPeriodLabel.Padding = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.lipsPeriodLabel.Size = new System.Drawing.Size(69, 18);
-            this.lipsPeriodLabel.TabIndex = 21;
-            this.lipsPeriodLabel.Text = "Lips Period";
+            lipsPeriodLabel.Anchor = AnchorStyles.Left;
+            lipsPeriodLabel.AutoSize = true;
+            lipsPeriodLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lipsPeriodLabel.Location = new Point(314, 106);
+            lipsPeriodLabel.Name = "lipsPeriodLabel";
+            lipsPeriodLabel.Padding = new Padding(3, 5, 3, 0);
+            lipsPeriodLabel.Size = new Size(155, 41);
+            lipsPeriodLabel.TabIndex = 21;
+            lipsPeriodLabel.Text = "Lips Period:";
             // 
             // lipsPeriodNumberic
             // 
-            this.lipsPeriodNumberic.Location = new System.Drawing.Point(486, 59);
-            this.lipsPeriodNumberic.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.lipsPeriodNumberic.Name = "lipsPeriodNumberic";
-            this.lipsPeriodNumberic.Size = new System.Drawing.Size(120, 22);
-            this.lipsPeriodNumberic.TabIndex = 22;
-            this.lipsPeriodNumberic.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.lipsPeriodNumberic.ValueChanged += new System.EventHandler(this.lipsPeriodNumberic_ValueChanged);
+            lipsPeriodNumberic.Anchor = AnchorStyles.Left;
+            lipsPeriodNumberic.Location = new Point(475, 111);
+            lipsPeriodNumberic.Name = "lipsPeriodNumberic";
+            lipsPeriodNumberic.Size = new Size(60, 31);
+            lipsPeriodNumberic.TabIndex = 35;
+            lipsPeriodNumberic.TextAlign = HorizontalAlignment.Center;
+            lipsPeriodNumberic.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            lipsPeriodNumberic.ValueChanged += lipsPeriodNumberic_ValueChanged_1;
             // 
             // zigZagDistanceLabel
             // 
-            this.zigZagDistanceLabel.AutoSize = true;
-            this.zigZagDistanceLabel.Location = new System.Drawing.Point(612, 56);
-            this.zigZagDistanceLabel.Name = "zigZagDistanceLabel";
-            this.zigZagDistanceLabel.Padding = new System.Windows.Forms.Padding(3, 5, 3, 0);
-            this.zigZagDistanceLabel.Size = new System.Drawing.Size(57, 18);
-            this.zigZagDistanceLabel.TabIndex = 23;
-            this.zigZagDistanceLabel.Text = "Distance";
+            zigZagDistanceLabel.Anchor = AnchorStyles.Left;
+            zigZagDistanceLabel.AutoSize = true;
+            zigZagDistanceLabel.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            zigZagDistanceLabel.Location = new Point(541, 106);
+            zigZagDistanceLabel.Name = "zigZagDistanceLabel";
+            zigZagDistanceLabel.Padding = new Padding(3, 5, 3, 0);
+            zigZagDistanceLabel.Size = new Size(130, 41);
+            zigZagDistanceLabel.TabIndex = 23;
+            zigZagDistanceLabel.Text = "Distance:";
             // 
             // zigZagDistanceNumberic
             // 
-            this.zigZagDistanceNumberic.Location = new System.Drawing.Point(3, 87);
-            this.zigZagDistanceNumberic.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.zigZagDistanceNumberic.Name = "zigZagDistanceNumberic";
-            this.zigZagDistanceNumberic.Size = new System.Drawing.Size(120, 22);
-            this.zigZagDistanceNumberic.TabIndex = 24;
-            this.zigZagDistanceNumberic.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.zigZagDistanceNumberic.ValueChanged += new System.EventHandler(this.zigZagDistanceNumberic_ValueChanged);
+            zigZagDistanceNumberic.Anchor = AnchorStyles.Left;
+            zigZagDistanceNumberic.Location = new Point(677, 111);
+            zigZagDistanceNumberic.Name = "zigZagDistanceNumberic";
+            zigZagDistanceNumberic.Size = new Size(60, 31);
+            zigZagDistanceNumberic.TabIndex = 37;
+            zigZagDistanceNumberic.TextAlign = HorizontalAlignment.Center;
+            zigZagDistanceNumberic.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            zigZagDistanceNumberic.ValueChanged += zigZagDistanceNumberic_ValueChanged_1;
             // 
             // Overlays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Overlays";
-            this.Size = new System.Drawing.Size(800, 272);
-            this.Load += new System.EventHandler(this.OnLoad);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.period)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMultiplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conversionPeriod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.basePeriod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leadingPeriod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laggingPeriod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jawPeriodNumberic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teethPeriodNumberic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lipsPeriodNumberic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zigZagDistanceNumberic)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(tableLayoutPanel1);
+            Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Name = "Overlays";
+            Size = new Size(1317, 748);
+            Load += OnLoad;
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)financialChart1).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)c1OverlayType).EndInit();
+            ((System.ComponentModel.ISupportInitialize)period).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudMultiplier).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudSize).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1MvaType).EndInit();
+            ((System.ComponentModel.ISupportInitialize)conversionPeriod).EndInit();
+            ((System.ComponentModel.ISupportInitialize)basePeriod).EndInit();
+            ((System.ComponentModel.ISupportInitialize)leadingPeriod).EndInit();
+            ((System.ComponentModel.ISupportInitialize)laggingPeriod).EndInit();
+            ((System.ComponentModel.ISupportInitialize)jawPeriodNumberic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)teethPeriodNumberic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lipsPeriodNumberic).EndInit();
+            ((System.ComponentModel.ISupportInitialize)zigZagDistanceNumberic).EndInit();
+            ResumeLayout(false);
 
         }
         #endregion
@@ -564,32 +554,30 @@ namespace FinancialChartExplorer.Samples
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox overlayType;
+        private C1.Win.Input.C1ComboBox c1OverlayType;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown period;
+        private C1NumericEditEx period;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown nudMultiplier;
+        private C1NumericEditEx nudMultiplier;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown nudSize;
+        private C1NumericEditEx nudSize;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox mvaType;
-
+        private C1.Win.Input.C1ComboBox c1MvaType;
         private System.Windows.Forms.Label conversionLabel;
-        private System.Windows.Forms.NumericUpDown conversionPeriod;
+        private C1NumericEditEx conversionPeriod;
         private System.Windows.Forms.Label baseLabel;
-        private System.Windows.Forms.NumericUpDown basePeriod;
+        private C1NumericEditEx basePeriod;
         private System.Windows.Forms.Label leadingLabel;
-        private System.Windows.Forms.NumericUpDown leadingPeriod;
+        private C1NumericEditEx leadingPeriod;
         private System.Windows.Forms.Label laggingLabel;
-        private System.Windows.Forms.NumericUpDown laggingPeriod;
-
+        private C1NumericEditEx laggingPeriod;
         private System.Windows.Forms.Label jawPeriodLabel;
-        private System.Windows.Forms.NumericUpDown jawPeriodNumberic;
+        private C1NumericEditEx jawPeriodNumberic;
         private System.Windows.Forms.Label teethPeriodLabel;
-        private System.Windows.Forms.NumericUpDown teethPeriodNumberic;
+        private C1NumericEditEx teethPeriodNumberic;
         private System.Windows.Forms.Label lipsPeriodLabel;
-        private System.Windows.Forms.NumericUpDown lipsPeriodNumberic;
+        private C1NumericEditEx lipsPeriodNumberic;
         private System.Windows.Forms.Label zigZagDistanceLabel;
-        private System.Windows.Forms.NumericUpDown zigZagDistanceNumberic;
+        private C1NumericEditEx zigZagDistanceNumberic;
     }
 }

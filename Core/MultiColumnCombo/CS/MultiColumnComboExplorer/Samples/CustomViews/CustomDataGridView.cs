@@ -1,8 +1,8 @@
-﻿using C1.Win.FlexGrid;
-using C1.Win.Input.MultiColumnCombo;
+﻿using C1.Win.Input.MultiColumnCombo;
 using C1.Win.Themes;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -26,8 +26,10 @@ namespace MultiColumnComboExplorer.Samples
 
         #region IDropDownView
 
+        [DefaultValue(false)]
         public bool RowTracking { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int SelectedIndex
         {
             get => SelectedRows.Count > 0 ? SelectedRows[0].Index : -1;
@@ -44,17 +46,21 @@ namespace MultiColumnComboExplorer.Samples
 
         public int ItemsCount => Rows.Count;
 
+        [DefaultValue(true)]
         public bool ShowColumnHeaders
         {
             get => ColumnHeadersVisible;
             set => ColumnHeadersVisible = value;
         }
+
+        [DefaultValue(23)]
         public int HeaderHeight
         {
             get => ColumnHeadersHeight;
             set => ColumnHeadersHeight = value;
         }
 
+        [DefaultValue(false)]
         public bool AllowSorting
         {
             get => AllowUserToOrderColumns;
@@ -169,7 +175,7 @@ namespace MultiColumnComboExplorer.Samples
         public int GetHeight(int itemsCount) => HeaderHeight + Rows.Cast<DataGridViewRow>().Take(Math.Min(itemsCount, Rows.Count)).Sum(r => r.Height);
         public object GetValue(int rowIndex, int columnIndex) => Rows[rowIndex].Cells[columnIndex].Value;
         public int GetWidth() => 400;
-        public void Select(object value, string columnName)
+        public void Select(object value, string columnName, int startRowIndex = 0)
         {
             int index = GetColumnIndex(columnName);
             Func<object, object, bool, bool, bool> checkCell = (cellValue, value, caseSensitive, fullMatch) =>
@@ -180,7 +186,11 @@ namespace MultiColumnComboExplorer.Samples
                     return true;
                 return false;
             };
-            int rowIndex = FindRow(value, 0, index, false, false, true, checkCell);
+
+            if (startRowIndex < 0 || startRowIndex >= Rows.Count)
+                startRowIndex = 0;
+
+            int rowIndex = FindRow(value, startRowIndex, index, false, false, true, checkCell);
             if (rowIndex < 0)
                 ClearSelection();
             else
@@ -202,11 +212,20 @@ namespace MultiColumnComboExplorer.Samples
 
         #region not implemented
 
+        [DefaultValue(null)]
         public string AddItemSeparator { get; set; }
+        
+        [DefaultValue(0)]
         public int DefaultColumnWidth { get; set; }
+
+        [DefaultValue(false)]
         public bool ExtendLastColumn { get; set; }
+
+        [DefaultValue(0)]
         public int ItemHeight { get; set; }
-        public IList<GroupDescription> GroupDescriptions { get; set; }
+
+        [DefaultValue(null)]
+        public IList<C1.Win.FlexGrid.GroupDescription> GroupDescriptions { get; set; }
 
         public void AddColumnHeaders(string headers) { }
         public void AddItem(string newItem) { }

@@ -17,6 +17,7 @@ namespace FlexGridAi.Controls
 
         [Category("Appearance")]
         [Description("Text displayed when the textbox is empty")]
+        [DefaultValue("Ask something about the table...")]
         public string PlaceholderText
         {
             get { return _placeholderText; }
@@ -30,6 +31,7 @@ namespace FlexGridAi.Controls
 
         [Browsable(true)]
         [Description("The text entered by the user")]
+        [DefaultValue("")]
         public string InputText
         {
             get { return IsPlaceholder ? string.Empty : textBox.Text; }
@@ -48,6 +50,7 @@ namespace FlexGridAi.Controls
             }
         }
 
+        [DefaultValue(true)]
         public bool AskButtonEnabled
         {
             get => askButton.Enabled;

@@ -39,7 +39,7 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.c1TaskbarButton1 = new C1.Win.C1Win7Pack.C1TaskbarButton(this.components);
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -194,7 +194,7 @@
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton5;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
         private C1.Win.C1Win7Pack.C1TaskbarButton c1TaskbarButton1;
     }
 }

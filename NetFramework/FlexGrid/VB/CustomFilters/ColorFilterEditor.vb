@@ -4,7 +4,7 @@ Imports System.Text
 Namespace CustomFilters
 	Partial Public Class ColorFilterEditor
 		Inherits UserControl
-        Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor
+        Implements C1.Win.FlexGrid.IC1ColumnFilterEditor
 
         '-------------------------------------------------------------------------------
 #Region "** fields"
@@ -26,7 +26,7 @@ Namespace CustomFilters
         '-------------------------------------------------------------------------------
 #Region "** IC1ColumnFilterEditor Members"
 
-        Public Sub Initialize(ByVal grid As C1.Win.C1FlexGrid.C1FlexGridBase, ByVal columnIndex As Integer, ByVal filter As C1.Win.C1FlexGrid.IC1ColumnFilter) Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor.Initialize
+        Public Sub Initialize(ByVal grid As C1.Win.FlexGrid.C1FlexGridBase, ByVal columnIndex As Integer, ByVal filter As C1.Win.FlexGrid.IC1ColumnFilter) Implements C1.Win.FlexGrid.IC1ColumnFilterEditor.Initialize
             ' store reference to filter
             _filter = TryCast(filter, ColorFilter)
 
@@ -34,7 +34,7 @@ Namespace CustomFilters
             _target.BackColor = _filter.TargetColor
             _threshold.Value = _filter.Tolerance
         End Sub
-        Public Sub ApplyChanges() Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor.ApplyChanges
+        Public Sub ApplyChanges() Implements C1.Win.FlexGrid.IC1ColumnFilterEditor.ApplyChanges
             If Validate() Then
                 ' copy editor values back into the filter
                 _filter.TargetColor = _target.BackColor
@@ -44,7 +44,7 @@ Namespace CustomFilters
         '
         ' read-only version required by interface spec
         '
-        Public ReadOnly Property KeepFormOpen() As Boolean Implements C1.Win.C1FlexGrid.IC1ColumnFilterEditor.KeepFormOpen
+        Public ReadOnly Property KeepFormOpen() As Boolean Implements C1.Win.FlexGrid.IC1ColumnFilterEditor.KeepFormOpen
             Get
                 Return _keepFormOpen
             End Get

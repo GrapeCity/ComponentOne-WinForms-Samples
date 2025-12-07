@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Design" />
@@ -22,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,9 +38,6 @@
 
   <ItemGroup>
     <EmbeddedResource Include=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

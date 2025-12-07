@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,18 +39,21 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._flex.ColumnInfo = "10,1,0,0,0,105,Columns:";
-            this._flex.Location = new System.Drawing.Point(12, 12);
+            this._flex.Location = new System.Drawing.Point(16, 18);
+            this._flex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 21;
-            this._flex.Size = new System.Drawing.Size(713, 344);
+            this._flex.Size = new System.Drawing.Size(979, 514);
             this._flex.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(737, 368);
+            this.ClientSize = new System.Drawing.Size(1013, 552);
             this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -60,7 +64,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
     }
 }
 

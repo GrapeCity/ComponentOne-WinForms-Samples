@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace FlexFreezeBottomSample
 {
@@ -29,24 +29,24 @@ namespace FlexFreezeBottomSample
 	/// </summary>
 	internal class FlexFreezeBottom : Panel
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _frz;
-		private C1.Win.C1FlexGrid.C1FlexGrid _main;
+		private C1.Win.FlexGrid.C1FlexGrid _frz;
+		private C1.Win.FlexGrid.C1FlexGrid _main;
 		private int  _rows;
-		internal FlexFreezeBottom(C1.Win.C1FlexGrid.C1FlexGrid main, int rows)
+		internal FlexFreezeBottom(C1.Win.FlexGrid.C1FlexGrid main, int rows)
 		{
 			// save info we'll need later
 			_main = main;
 			_rows = rows;
 
 			// create child grid with frozen bottom rows
-			_frz = new C1.Win.C1FlexGrid.C1FlexGrid();
+			_frz = new C1.Win.FlexGrid.C1FlexGrid();
 			_frz.ScrollBars = ScrollBars.None;
-			_frz.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+			_frz.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 			_frz.DrawMode = DrawModeEnum.OwnerDraw;
-			_frz.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(_frz_OwnerDrawCell);
-			_frz.SetupEditor   += new C1.Win.C1FlexGrid.RowColEventHandler(_frz_SetupEditor);
-			_frz.AfterScroll   += new C1.Win.C1FlexGrid.RangeEventHandler(_frz_AfterScroll);
-			_frz.GridChanged   += new C1.Win.C1FlexGrid.GridChangedEventHandler(_main_GridChanged);
+			_frz.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(_frz_OwnerDrawCell);
+			_frz.SetupEditor   += new C1.Win.FlexGrid.RowColEventHandler(_frz_SetupEditor);
+			_frz.AfterScroll   += new C1.Win.FlexGrid.RangeEventHandler(_frz_AfterScroll);
+			_frz.GridChanged   += new C1.Win.FlexGrid.GridChangedEventHandler(_main_GridChanged);
 			Controls.Add(_frz);
 
 			// bind frozen grid to main grid (share data, layout, styles, selection)
@@ -58,9 +58,9 @@ namespace FlexFreezeBottomSample
 			// hook up the events we need to synchronize with the main grid
 			main.Resize      += new System.EventHandler(_main_Resize);
 			main.VisibleChanged += new System.EventHandler(_main_Resize);
-			main.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(_main_AfterScroll);
+			main.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(_main_AfterScroll);
 			main.SelChange   += new System.EventHandler(_main_SelChange);
-			main.GridChanged += new C1.Win.C1FlexGrid.GridChangedEventHandler(_main_GridChanged);
+			main.GridChanged += new C1.Win.FlexGrid.GridChangedEventHandler(_main_GridChanged);
 
 			// initialize
 			AdjustLayout();
@@ -124,7 +124,7 @@ namespace FlexFreezeBottomSample
 
 		// make normal and scrollable areas look different
 		// (when painting and when editing)
-		private void _frz_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _frz_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (e.Style.BackColor == _frz.Styles.Normal.BackColor)
 			{
@@ -132,7 +132,7 @@ namespace FlexFreezeBottomSample
 				e.DrawCell(DrawCellFlags.Border | DrawCellFlags.Content);
 			}
 		}
-		private void _frz_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _frz_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			_frz.BackColor = Color.Beige;
 		}
@@ -144,11 +144,11 @@ namespace FlexFreezeBottomSample
 		}
 
 		// synchronize scrolling
-		private void _main_AfterScroll(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+		private void _main_AfterScroll(object sender, C1.Win.FlexGrid.RangeEventArgs e)
 		{
 			SynchScrollPosition(false);
 		}
-		private void _frz_AfterScroll(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+		private void _frz_AfterScroll(object sender, C1.Win.FlexGrid.RangeEventArgs e)
 		{
 			// if the frozen grid has the focus and the user selects non-frozen
 			// cells, scroll main grid up.
@@ -182,7 +182,7 @@ namespace FlexFreezeBottomSample
 		}
 
 		// adjust layout after massive changes (resize rows/cols, sort, etc)
-		private void _main_GridChanged(object sender, C1.Win.C1FlexGrid.GridChangedEventArgs e)
+		private void _main_GridChanged(object sender, C1.Win.FlexGrid.GridChangedEventArgs e)
 		{
 			switch (e.GridChangedType)
 			{

@@ -34,7 +34,7 @@ namespace CustomDictionary
     /// Class that implements the ISpellDictionary interface and can be assigned to the
     /// C1SpellChecker's CustomDictionary property.
     /// </summary>
-    public class MySpellDictionary : C1.Win.C1SpellChecker.ISpellDictionary
+    public class MySpellDictionary : C1.Win.SpellChecker.ISpellDictionary
     {
         // ISpellDictionary has a single method:
         // in this case, the dictionary will ignore any words that start with 'z'.

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.C1Gauge.C1GaugeSingleLabel();
-            C1.Win.C1Gauge.C1GaugeRectangle c1GaugeRectangle1 = new C1.Win.C1Gauge.C1GaugeRectangle();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1LinearGauge1 = new C1.Win.C1Gauge.C1LinearGauge();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle1 = new C1.Win.Gauge.C1GaugeRectangle();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1LinearGauge1 = new C1.Win.Gauge.C1LinearGauge();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.gaugePanel.SuspendLayout();
             this.gridPanel.SuspendLayout();
@@ -53,7 +53,7 @@
             this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(3, 3);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -73,11 +73,11 @@
             c1GaugeSingleLabel1.PointerIndex = 100;
             c1GaugeSingleLabel1.Position = 0.8;
             c1GaugeSingleLabel1.ViewTag = ((long)(646977542129652696));
-            this.c1LinearGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
+            this.c1LinearGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
             c1GaugeSingleLabel1});
-            c1GaugeRectangle1.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeRectangle1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeRectangle1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeRectangle1});
             this.c1LinearGauge1.Maximum = 1;
             this.c1LinearGauge1.Name = "c1LinearGauge1";
@@ -114,8 +114,8 @@
 
         #endregion
 
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
         private System.Windows.Forms.TrackBar trackBar1;
     }
 }

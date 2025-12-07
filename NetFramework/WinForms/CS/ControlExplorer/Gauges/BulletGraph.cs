@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 using System.Windows.Forms;
 
 namespace ControlExplorer.Gauges

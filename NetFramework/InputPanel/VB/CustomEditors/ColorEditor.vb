@@ -2,7 +2,7 @@ Imports System.ComponentModel
 Imports System.Drawing.Design
 Imports System.Windows.Forms.Design
 Imports System.Reflection
-Imports C1.Win.C1InputPanel
+Imports C1.Win.InputPanel
 
 ''' <summary>
 ''' The host component for the ColorEditorControl on an input panel.

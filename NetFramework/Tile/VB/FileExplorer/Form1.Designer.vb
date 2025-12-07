@@ -22,50 +22,50 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim PanelElement11 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement6 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement11 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement12 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement7 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement12 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement13 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement8 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement14 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement13 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim TextElement14 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement15 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement9 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement16 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement15 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement17 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement16 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim TextElement17 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement18 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement10 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement19 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement18 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement20 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement19 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim TextElement20 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
+        Dim PanelElement11 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement6 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement11 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement12 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement7 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement12 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement13 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement8 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement14 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement13 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim TextElement14 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement15 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement9 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement16 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement15 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement17 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement16 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim TextElement17 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement18 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement10 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement19 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement18 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement20 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement19 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim TextElement20 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
         Me.topPanel = New System.Windows.Forms.Panel
-        Me.topTiles = New C1.Win.C1Tile.C1TileControl
-        Me.group2 = New C1.Win.C1Tile.Group
-        Me.upLevelTile = New C1.Win.C1Tile.Tile
-        Me.drivesTile = New C1.Win.C1Tile.Tile
-        Me.refreshTile = New C1.Win.C1Tile.Tile
-        Me.newFolderTile = New C1.Win.C1Tile.Tile
-        Me.deleteTile = New C1.Win.C1Tile.Tile
-        Me.renameTile = New C1.Win.C1Tile.Tile
+        Me.topTiles = New C1.Win.Tile.C1TileControl
+        Me.group2 = New C1.Win.Tile.Group
+        Me.upLevelTile = New C1.Win.Tile.Tile
+        Me.drivesTile = New C1.Win.Tile.Tile
+        Me.refreshTile = New C1.Win.Tile.Tile
+        Me.newFolderTile = New C1.Win.Tile.Tile
+        Me.deleteTile = New C1.Win.Tile.Tile
+        Me.renameTile = New C1.Win.Tile.Tile
         Me.bottomPanel = New System.Windows.Forms.Panel
         Me.pathLabel = New System.Windows.Forms.Label
-        Me.itemTiles = New C1.Win.C1Tile.C1TileControl
-        Me.group1 = New C1.Win.C1Tile.Group
-        Me.tile1 = New C1.Win.C1Tile.Tile
-        Me.tempDrive = New C1.Win.C1Tile.Template
-        Me.tile2 = New C1.Win.C1Tile.Tile
-        Me.tempFolder = New C1.Win.C1Tile.Template
-        Me.tile3 = New C1.Win.C1Tile.Tile
-        Me.tempFile = New C1.Win.C1Tile.Template
+        Me.itemTiles = New C1.Win.Tile.C1TileControl
+        Me.group1 = New C1.Win.Tile.Group
+        Me.tile1 = New C1.Win.Tile.Tile
+        Me.tempDrive = New C1.Win.Tile.Template
+        Me.tile2 = New C1.Win.Tile.Tile
+        Me.tempFolder = New C1.Win.Tile.Template
+        Me.tile3 = New C1.Win.Tile.Tile
+        Me.tempFile = New C1.Win.Tile.Template
         Me.topPanel.SuspendLayout()
         Me.bottomPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -130,7 +130,7 @@ Partial Class Form1
         '
         Me.drivesTile.Image = Global.FileExplorer.My.Resources.Resources.drives
         Me.drivesTile.Name = "drivesTile"
-        Me.drivesTile.Symbol = C1.Win.C1Tile.TileSymbol.VerticalDots
+        Me.drivesTile.Symbol = C1.Win.Tile.TileSymbol.VerticalDots
         Me.drivesTile.Text = "Drives"
         '
         'refreshTile
@@ -229,7 +229,7 @@ Partial Class Form1
         Me.tile1.HorizontalSize = 3
         Me.tile1.Image = Global.FileExplorer.My.Resources.Resources.otherDrive
         Me.tile1.Name = "tile1"
-        Me.tile1.Symbol = C1.Win.C1Tile.TileSymbol.Device
+        Me.tile1.Symbol = C1.Win.Tile.TileSymbol.Device
         Me.tile1.Template = Me.tempDrive
         Me.tile1.Text = "WIN7 (C:)"
         Me.tile1.Text1 = "15.3 GB free of 44.0 GB"
@@ -243,12 +243,12 @@ Partial Class Form1
         PanelElement14.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft
         TextElement13.Alignment = System.Drawing.ContentAlignment.TopLeft
         TextElement14.Alignment = System.Drawing.ContentAlignment.BottomLeft
-        TextElement14.TextSelector = C1.Win.C1Tile.TextSelector.Text1
+        TextElement14.TextSelector = C1.Win.Tile.TextSelector.Text1
         PanelElement14.Children.Add(TextElement13)
         PanelElement14.Children.Add(TextElement14)
         PanelElement14.ChildSpacing = 25
         PanelElement14.Dock = System.Windows.Forms.DockStyle.Fill
-        PanelElement14.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical
+        PanelElement14.Orientation = C1.Win.Tile.LayoutOrientation.Vertical
         Me.tempDrive.Elements.Add(PanelElement13)
         Me.tempDrive.Elements.Add(PanelElement14)
         Me.tempDrive.Name = "tempDrive"
@@ -259,7 +259,7 @@ Partial Class Form1
         Me.tile2.HorizontalSize = 3
         Me.tile2.Image = Global.FileExplorer.My.Resources.Resources.folder
         Me.tile2.Name = "tile2"
-        Me.tile2.Symbol = C1.Win.C1Tile.TileSymbol.BrowseByAlbum
+        Me.tile2.Symbol = C1.Win.Tile.TileSymbol.BrowseByAlbum
         Me.tile2.Template = Me.tempFolder
         Me.tile2.Text = "Program Files (x86)"
         Me.tile2.Text1 = "3/24/2013 12:58 PM"
@@ -271,7 +271,7 @@ Partial Class Form1
         PanelElement15.Dock = System.Windows.Forms.DockStyle.Left
         PanelElement15.FixedWidth = 50
         PanelElement16.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft
-        TextElement15.FontBold = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement15.FontBold = C1.Win.Tile.ThreeStateBoolean.[True]
         PanelElement16.Children.Add(TextElement15)
         PanelElement16.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement16.FixedHeight = 33
@@ -279,14 +279,14 @@ Partial Class Form1
         PanelElement17.Alignment = System.Drawing.ContentAlignment.TopLeft
         TextElement16.Alignment = System.Drawing.ContentAlignment.MiddleLeft
         TextElement16.Text = "Folder Last Write Time:"
-        TextElement16.TextSelector = C1.Win.C1Tile.TextSelector.Unbound
+        TextElement16.TextSelector = C1.Win.Tile.TextSelector.Unbound
         TextElement17.Alignment = System.Drawing.ContentAlignment.MiddleLeft
-        TextElement17.TextSelector = C1.Win.C1Tile.TextSelector.Text1
+        TextElement17.TextSelector = C1.Win.Tile.TextSelector.Text1
         PanelElement17.Children.Add(TextElement16)
         PanelElement17.Children.Add(TextElement17)
         PanelElement17.ChildSpacing = 2
         PanelElement17.Dock = System.Windows.Forms.DockStyle.Fill
-        PanelElement17.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical
+        PanelElement17.Orientation = C1.Win.Tile.LayoutOrientation.Vertical
         Me.tempFolder.Elements.Add(PanelElement15)
         Me.tempFolder.Elements.Add(PanelElement16)
         Me.tempFolder.Elements.Add(PanelElement17)
@@ -298,7 +298,7 @@ Partial Class Form1
         Me.tile3.HorizontalSize = 3
         Me.tile3.Image = Global.FileExplorer.My.Resources.Resources.file
         Me.tile3.Name = "tile3"
-        Me.tile3.Symbol = C1.Win.C1Tile.TileSymbol.Files
+        Me.tile3.Symbol = C1.Win.Tile.TileSymbol.Files
         Me.tile3.Template = Me.tempFile
         Me.tile3.Text = "DSC04278.JPG"
         Me.tile3.Text1 = "Updated: 12/31/2012 12:58 PM"
@@ -311,21 +311,21 @@ Partial Class Form1
         PanelElement18.Dock = System.Windows.Forms.DockStyle.Left
         PanelElement18.FixedWidth = 50
         PanelElement19.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft
-        TextElement18.FontBold = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement18.FontBold = C1.Win.Tile.ThreeStateBoolean.[True]
         PanelElement19.Children.Add(TextElement18)
         PanelElement19.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement19.FixedHeight = 33
         PanelElement19.Padding = New System.Windows.Forms.Padding(0, 2, 4, 0)
         PanelElement20.Alignment = System.Drawing.ContentAlignment.TopLeft
         TextElement19.Alignment = System.Drawing.ContentAlignment.MiddleLeft
-        TextElement19.TextSelector = C1.Win.C1Tile.TextSelector.Text1
+        TextElement19.TextSelector = C1.Win.Tile.TextSelector.Text1
         TextElement20.Alignment = System.Drawing.ContentAlignment.MiddleLeft
-        TextElement20.TextSelector = C1.Win.C1Tile.TextSelector.Text2
+        TextElement20.TextSelector = C1.Win.Tile.TextSelector.Text2
         PanelElement20.Children.Add(TextElement19)
         PanelElement20.Children.Add(TextElement20)
         PanelElement20.ChildSpacing = 2
         PanelElement20.Dock = System.Windows.Forms.DockStyle.Fill
-        PanelElement20.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical
+        PanelElement20.Orientation = C1.Win.Tile.LayoutOrientation.Vertical
         Me.tempFile.Elements.Add(PanelElement18)
         Me.tempFile.Elements.Add(PanelElement19)
         Me.tempFile.Elements.Add(PanelElement20)
@@ -348,23 +348,23 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents topPanel As System.Windows.Forms.Panel
-    Private WithEvents topTiles As C1.Win.C1Tile.C1TileControl
-    Private WithEvents group2 As C1.Win.C1Tile.Group
-    Private WithEvents upLevelTile As C1.Win.C1Tile.Tile
-    Private WithEvents drivesTile As C1.Win.C1Tile.Tile
-    Private WithEvents refreshTile As C1.Win.C1Tile.Tile
-    Private WithEvents newFolderTile As C1.Win.C1Tile.Tile
-    Private WithEvents deleteTile As C1.Win.C1Tile.Tile
-    Private WithEvents renameTile As C1.Win.C1Tile.Tile
+    Private WithEvents topTiles As C1.Win.Tile.C1TileControl
+    Private WithEvents group2 As C1.Win.Tile.Group
+    Private WithEvents upLevelTile As C1.Win.Tile.Tile
+    Private WithEvents drivesTile As C1.Win.Tile.Tile
+    Private WithEvents refreshTile As C1.Win.Tile.Tile
+    Private WithEvents newFolderTile As C1.Win.Tile.Tile
+    Private WithEvents deleteTile As C1.Win.Tile.Tile
+    Private WithEvents renameTile As C1.Win.Tile.Tile
     Private WithEvents bottomPanel As System.Windows.Forms.Panel
     Private WithEvents pathLabel As System.Windows.Forms.Label
-    Private WithEvents itemTiles As C1.Win.C1Tile.C1TileControl
-    Private WithEvents group1 As C1.Win.C1Tile.Group
-    Private WithEvents tile1 As C1.Win.C1Tile.Tile
-    Private WithEvents tempDrive As C1.Win.C1Tile.Template
-    Private WithEvents tile2 As C1.Win.C1Tile.Tile
-    Private WithEvents tempFolder As C1.Win.C1Tile.Template
-    Private WithEvents tile3 As C1.Win.C1Tile.Tile
-    Private WithEvents tempFile As C1.Win.C1Tile.Template
+    Private WithEvents itemTiles As C1.Win.Tile.C1TileControl
+    Private WithEvents group1 As C1.Win.Tile.Group
+    Private WithEvents tile1 As C1.Win.Tile.Tile
+    Private WithEvents tempDrive As C1.Win.Tile.Template
+    Private WithEvents tile2 As C1.Win.Tile.Tile
+    Private WithEvents tempFolder As C1.Win.Tile.Template
+    Private WithEvents tile3 As C1.Win.Tile.Tile
+    Private WithEvents tempFile As C1.Win.Tile.Template
 
 End Class

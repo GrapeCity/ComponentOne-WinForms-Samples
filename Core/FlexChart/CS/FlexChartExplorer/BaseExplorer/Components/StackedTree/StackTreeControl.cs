@@ -1,11 +1,10 @@
-﻿using System;
+﻿using BaseExplorer.Core;
+using BaseExplorer.Utilities;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using BaseExplorer.Core;
-using BaseExplorer.Utilities;
 
 namespace BaseExplorer.Components
 {
@@ -37,6 +36,7 @@ namespace BaseExplorer.Components
             set { _imageList = value; }
         }
 
+        [DefaultValue(false)]
         public bool Collapsed 
         {
             get { return _collapsed; }
@@ -64,8 +64,14 @@ namespace BaseExplorer.Components
                 }
             }
         }
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverBackColor { get; set; }
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HoverForeColor { get; set; }
+        
+        [DefaultValue(typeof(Color), "Red")]
         public Color SelectionColor
         {
             get { return _selectionColor; }
@@ -79,6 +85,8 @@ namespace BaseExplorer.Components
                 }
             }
         }
+        
+        [DefaultValue(typeof(Color), "Black")]
         public Color SelectionForeColor
         {
             get { return _selectionForeColor; }
@@ -92,6 +100,8 @@ namespace BaseExplorer.Components
                 }
             }
         }
+
+        [DefaultValue("")]
         public string FilterString
         {
             get { return _filterString; }
@@ -104,6 +114,8 @@ namespace BaseExplorer.Components
                 Filter();
             }
         }
+
+        [DefaultValue(null)]
         public StackNodeControl SelectedNode
         {
             get
@@ -119,6 +131,7 @@ namespace BaseExplorer.Components
             }
         }
 
+        [DefaultValue(null)]
         public StackNodeControl SelectedNodeRoot
         {
             get

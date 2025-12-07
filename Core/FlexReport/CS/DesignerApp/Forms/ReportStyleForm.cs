@@ -47,6 +47,8 @@ namespace FlexReportDesignerApp
 
 		// object model
 		private C1FlexReportDesigner _designer;
+
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		public C1FlexReportDesigner Designer
 		{
 			get { return _designer; }

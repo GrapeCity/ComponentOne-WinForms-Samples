@@ -10,7 +10,7 @@ namespace ControlExplorer.FlexGrid
 
             //Setup FlexGrid
             c1FlexGrid1.ColumnContextMenuEnabled = true;
-            c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.Highlight;
+            c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.Highlight;
             c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = true;
             c1FlexGrid1.ColumnPickerInfo.ShowToolButton = true;
             c1FlexGrid1.DataSource = DemoDataSource("EmployeeOrders");
@@ -25,7 +25,7 @@ namespace ControlExplorer.FlexGrid
             
             c1FlexGrid1.BeginUpdate();
             c1FlexGridBandedView1.FlexGrid = c1FlexGrid1;
-            c1FlexGridBandedView1.BandsColumnsRelation = C1.Win.C1FlexGrid.BandsColumnsRelation.BandsBeforeColumns;
+            c1FlexGridBandedView1.BandsColumnsRelation = C1.Win.FlexGrid.BandsColumnsRelation.BandsBeforeColumns;
             
             c1FlexGridBandedView1.BeginUpdate();
             c1FlexGridBandedView1.Bands.Clear();

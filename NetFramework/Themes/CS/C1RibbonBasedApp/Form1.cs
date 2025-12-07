@@ -1,16 +1,16 @@
 ﻿using System;
-using System.IO;
-using C1.Win.Ribbon;
-using C1.Win.C1Schedule;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1Input;
-using C1.Win.C1Command;
-using C1.Win.C1TrueDBGrid;
-using C1.C1Schedule;
 using System.Drawing;
-using System.Windows.Forms;
-using C1.Win.C1Themes;
 using System.Drawing.Drawing2D;
+using System.IO;
+using System.Windows.Forms;
+using C1.Win.FlexGrid;
+using C1.Win.C1Input;
+using C1.Win.Command;
+using C1.Win.TrueDBGrid;
+using C1.Win.Ribbon;
+using C1.Win.Schedule;
+using C1.Schedule;
+using C1.Win.Themes;
 
 namespace C1RibbonBasedApp
 {
@@ -305,7 +305,7 @@ namespace C1RibbonBasedApp
             _trueGridOptions.ShowCaption = true;
             _trueGridOptions.ShowFilterBar = true;
             _trueGridOptions.ShowGroupByArea = true;
-            _trueGridOptions.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal;
+            _trueGridOptions.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal;
 
             //
             // initialize C1FlexGrid
@@ -320,8 +320,8 @@ namespace C1RibbonBasedApp
             // fill items of C1SplitButton used to select C1FlexGrid view mode
             FillItems(csbSelectionMode, typeof(SelectionModeEnum));
             FillItems(csbFocusRect, typeof(FocusRectEnum));
-            FillItems(rcbCFGSelectionMode, typeof(C1.Win.C1FlexGrid.SelectionModeEnum));
-            FillItems(rcbCFGFocusRect, typeof(C1.Win.C1FlexGrid.FocusRectEnum));
+            FillItems(rcbCFGSelectionMode, typeof(C1.Win.FlexGrid.SelectionModeEnum));
+            FillItems(rcbCFGFocusRect, typeof(C1.Win.FlexGrid.FocusRectEnum));
 
             //
             UpdateControls();

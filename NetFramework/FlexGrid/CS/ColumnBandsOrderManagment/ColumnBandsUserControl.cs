@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1Themes;
+using C1.Win.FlexGrid;
+using C1.Win.Themes;
 
 namespace ColumnBandsOrderManagment
 {
@@ -20,6 +20,7 @@ namespace ColumnBandsOrderManagment
         public ColumnBandsUserControl()
         {
             InitializeComponent();
+            SetUpColSpan();
         }
 
         /// <summary>
@@ -52,6 +53,15 @@ namespace ColumnBandsOrderManagment
             flexGrid1.Cols[1].Width = 300;
             flexGrid1.EndUpdate();
             
+        }
+
+        /// <summary>
+        /// Setup the colSpan property for ColumnBandView
+        /// </summary>
+        private void SetUpColSpan()
+        {
+            band2.ColSpan = 1;
+            band5.ColSpan = 5;
         }
 
         #region DataSource

@@ -18,10 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

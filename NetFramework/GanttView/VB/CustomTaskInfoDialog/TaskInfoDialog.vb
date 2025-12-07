@@ -4,7 +4,7 @@ Imports System.Data
 Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1GanttView
+Imports C1.Win.GanttView
 
 Public Partial Class TaskInfoDialog
 	Inherits Form

@@ -45,13 +45,13 @@ Partial Class MainForm
         Me.ribbonCheckBoxCondition = New C1.Win.Ribbon.RibbonCheckBox()
         Me.ribbonTopToolBar = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.ribbonComboBoxTheme = New C1.Win.Ribbon.RibbonComboBox()
-        Me.commandDock = New C1.Win.C1Command.C1CommandDock()
-        Me.dockingTab = New C1.Win.C1Command.C1DockingTab()
-        Me.dockingTabPageConditionalFormatting = New C1.Win.C1Command.C1DockingTabPage()
+        Me.commandDock = New C1.Win.Command.C1CommandDock()
+        Me.dockingTab = New C1.Win.Command.C1DockingTab()
+        Me.dockingTabPageConditionalFormatting = New C1.Win.Command.C1DockingTabPage()
         Me.rulesManager = New C1.Win.RulesManager.C1RulesManager()
         Me.formattableDataGridView = New DataGridViewConditionalFormatting.FormattableDataGridView()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
-        Me.superTooltip = New C1.Win.C1SuperTooltip.C1SuperTooltip(Me.components)
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
+        Me.superTooltip = New C1.Win.SuperTooltip.C1SuperTooltip(Me.components)
         CType(Me.ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.commandDock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.commandDock.SuspendLayout()
@@ -202,10 +202,10 @@ Partial Class MainForm
         Me.dockingTab.ShowSingleTab = False
         Me.dockingTab.Size = New System.Drawing.Size(300, 675)
         Me.dockingTab.TabIndex = 0
-        Me.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.dockingTab.TabsShowFocusCues = False
         Me.dockingTab.TabsSpacing = 2
-        Me.dockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.themeController.SetTheme(Me.dockingTab, "(default)")
         '
         'dockingTabPageConditionalFormatting
@@ -283,7 +283,7 @@ Partial Class MainForm
         '
         'superTooltip
         '
-        Me.superTooltip.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.None
+        Me.superTooltip.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None
         Me.superTooltip.BorderColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.superTooltip.Font = New System.Drawing.Font("Tahoma", 8.0!)
         Me.superTooltip.RightToLeft = System.Windows.Forms.RightToLeft.Inherit
@@ -323,10 +323,10 @@ Partial Class MainForm
     Friend WithEvents ribbonTab As C1.Win.Ribbon.RibbonTab
     Friend WithEvents ribbonTopToolBar As C1.Win.Ribbon.RibbonTopToolBar
     Friend WithEvents ribbonGroupConditionalFormatting As C1.Win.Ribbon.RibbonGroup
-    Friend WithEvents themeController As C1.Win.C1Themes.C1ThemeController
-    Friend WithEvents commandDock As C1.Win.C1Command.C1CommandDock
-    Friend WithEvents dockingTab As C1.Win.C1Command.C1DockingTab
-    Friend WithEvents dockingTabPageConditionalFormatting As C1.Win.C1Command.C1DockingTabPage
+    Friend WithEvents themeController As C1.Win.Themes.C1ThemeController
+    Friend WithEvents commandDock As C1.Win.Command.C1CommandDock
+    Friend WithEvents dockingTab As C1.Win.Command.C1DockingTab
+    Friend WithEvents dockingTabPageConditionalFormatting As C1.Win.Command.C1DockingTabPage
     Friend WithEvents rulesManager As C1.Win.RulesManager.C1RulesManager
     Friend WithEvents formattableDataGridView As DataGridViewConditionalFormatting.FormattableDataGridView
     Friend WithEvents ribbonComboBoxTheme As C1.Win.Ribbon.RibbonComboBox
@@ -337,5 +337,5 @@ Partial Class MainForm
     Friend WithEvents ribbonCheckBoxRuleName As C1.Win.Ribbon.RibbonCheckBox
     Friend WithEvents ribbonCheckBoxRangeSelector As C1.Win.Ribbon.RibbonCheckBox
     Friend WithEvents ribbonCheckBoxCondition As C1.Win.Ribbon.RibbonCheckBox
-    Friend WithEvents superTooltip As C1.Win.C1SuperTooltip.C1SuperTooltip
+    Friend WithEvents superTooltip As C1.Win.SuperTooltip.C1SuperTooltip
 End Class

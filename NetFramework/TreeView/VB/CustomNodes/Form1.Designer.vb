@@ -28,7 +28,7 @@ Partial Class Form1
         Me.DataSet11 = New CustomNodes.DataSet1()
         Me.CategoriesTableAdapter1 = New CustomNodes.DataSet1TableAdapters.CategoriesTableAdapter()
         Me.ProductsTableAdapter1 = New CustomNodes.DataSet1TableAdapters.ProductsTableAdapter()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.C1TreeView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,5 +98,5 @@ Partial Class Form1
     Friend WithEvents DataSet11 As DataSet1
     Friend WithEvents CategoriesTableAdapter1 As DataSet1TableAdapters.CategoriesTableAdapter
     Friend WithEvents ProductsTableAdapter1 As DataSet1TableAdapters.ProductsTableAdapter
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

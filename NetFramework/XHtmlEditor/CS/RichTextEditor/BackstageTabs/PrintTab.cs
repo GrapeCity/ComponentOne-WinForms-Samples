@@ -68,7 +68,7 @@ namespace RichTextEditor.BackstageTabs
             {
                 if (!textParts[1].StartsWith("*"))
                 {
-                    var toolTip = new C1.Win.C1SuperTooltip.C1SuperTooltip();
+                    var toolTip = new C1.Win.SuperTooltip.C1SuperTooltip();
                     string tipTitle = textParts[1].Trim();
                     string tipBody = string.Join("<br/>", textParts, 2, textParts.Length - 2).Trim();
                     toolTip.SetToolTip(btn, string.IsNullOrEmpty(tipBody)

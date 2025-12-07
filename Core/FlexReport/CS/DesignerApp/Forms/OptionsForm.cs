@@ -5,18 +5,17 @@
 // Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
-using System;
-using System.Reflection;
-using System.Drawing;
-using System.Collections;
-using System.ComponentModel;
-using System.Windows.Forms;
-using System.Data;
-using System.Linq;
-
+using C1.Win.FlexReport.FlexDesigner;
 using C1.Win.Localization;
 using C1.Win.Themes;
-
+using System;
+using System.Collections;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Reflection;
+using System.Windows.Forms;
 using Flex = C1.Win.FlexReport;
 using FlexDesigner = C1.Win.FlexReport;
 
@@ -170,7 +169,11 @@ namespace FlexReportDesignerApp
         #endregion
 
         #region Public properties
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public MainForm MainForm { get; set; }
+
+        [DefaultValue("")]
         public string StartTabName
         {
             get { return tabControl1.SelectedTab.Name; }
@@ -186,6 +189,8 @@ namespace FlexReportDesignerApp
                 }
             }
         }
+        
+        [DefaultValue("")]
         public string Theme
         {
             get
@@ -221,6 +226,8 @@ namespace FlexReportDesignerApp
                 }
             }
         }
+
+        [DefaultValue(FlexDesigner.GridUnits.Auto)]
         public FlexDesigner.GridUnits GridUnits
         {
             get
@@ -252,51 +259,71 @@ namespace FlexReportDesignerApp
             }
         }
         #region Designer control colors
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color RubberBandBaseColor
         {
             get { return _cpRubberBandBase.Color; }
             set { _cpRubberBandBase.Color = (Color)value; }
         }
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color SelectionBaseColor
         {
             get { return _cpSelectionBase.Color; }
             set { _cpSelectionBase.Color = (Color)value; }
         }
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color MouseGuidesBaseColor
         {
             get { return _cpMouseGuidesBase.Color; }
             set { _cpMouseGuidesBase.Color = (Color)value; }
         }
+
+        [DefaultValue(typeof(Color), "Empty")]
         public Color BrickBoundsBaseColor
         {
             get { return _cpBrickBoundsBase.Color; }
             set { _cpBrickBoundsBase.Color = (Color)value; }
         }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color GridBaseColor
         {
             get { return _cpGridBase.Color; }
             set { _cpGridBase.Color = (Color)value; }
         }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color RulerBaseColor
         {
             get { return _cpRulerBase.Color; }
             set { _cpRulerBase.Color = (Color)value; }
         }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color ControlBaseColor
         {
             get { return _cpControlBase.Color; }
             set { _cpControlBase.Color = (Color)value; }
         }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color CaptionBaseColor
         {
             get { return _cpCaptionBase.Color; }
             set { _cpCaptionBase.Color = (Color)value; }
         }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color IndicatorBaseColor
         {
             get { return _cpIndicatorBase.Color; }
             set { _cpIndicatorBase.Color = (Color)value; }
         }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public Color HighlightBaseColor
         {
             get { return _cpHighlightBase.Color; }
@@ -305,16 +332,22 @@ namespace FlexReportDesignerApp
         #endregion
 
         #region Grid
+
+        [DefaultValue(0)]
         public int GridSpacing
         {
             get { return (int)_numSpacing.Value; }
             set { _numSpacing.Value = value; }
         }
+        
+        [DefaultValue(false)]
         public bool ShowGrid
         {
             get { return _chkShowGrid.Checked; }
             set { _chkShowGrid.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool SnapToGrid
         {
             get { return _chkSnapToGrid.Checked; }
@@ -323,32 +356,44 @@ namespace FlexReportDesignerApp
         #endregion
 
         #region More designer options
+        
+        [DefaultValue(false)]
         public bool SnapToSides
         {
             get { return _chkSnapToSides.Checked; }
             set { _chkSnapToSides.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool SnapToPadding
         {
             get { return _chkSnapToPadding.Checked; }
             set { _chkSnapToPadding.Checked = value; }
         }
+        
+        [DefaultValue(0)]
         public int SnapPaddingX
         {
             get { return (int)_numSnapPaddingX.Value; }
             set { _numSnapPaddingX.Value = value; }
         }
+
+        [DefaultValue(0)]
         public int SnapPaddingY
         {
             get { return (int)_numSnapPaddingY.Value; }
             set { _numSnapPaddingY.Value = value; }
         }
+        
+        [DefaultValue(false)]
         public bool UseInPlaceFixedFont
         {
             get { return _cbUseInPlaceFixedFont.Checked; }
             set { _cbUseInPlaceFixedFont.Checked = value; }
         }
-        public C1.Win.FlexReport.FlexDesigner.AutoOnOff IndicatorStripVisibility
+
+        [DefaultValue(AutoOnOff.Off)]
+        public AutoOnOff IndicatorStripVisibility
         {
             get
             {
@@ -381,66 +426,92 @@ namespace FlexReportDesignerApp
         }
         #endregion
 
+        
+        [DefaultValue(false)]
         public bool LoadOnStartup
         {
             get { return _chkReload.Checked; }
             set { _chkReload.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool RestoreEditorSettings
         {
             get { return _chkRestoreEditorSettings.Checked; }
             set { _chkRestoreEditorSettings.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool EmbedImages
         {
             get { return _chkEmbed.Checked; }
             set { _chkEmbed.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool SortReportList
         {
             get { return _chkSortReportList.Checked; }
             set { _chkSortReportList.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool AutoSave
         {
             get { return _chkAutoSave.Checked; }
             set { _chkAutoSave.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool OpenExportedFile
         {
             get { return _chkOpenExportedFile.Checked; }
             set { _chkOpenExportedFile.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool CategorizeProperties
         {
             get { return _chkCategorize.Checked; }
             set { _chkCategorize.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool InsertLegacyField
         {
             get { return _chkInsertLegacyField.Checked; }
             set { _chkInsertLegacyField.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool InsertLegacyChart
         {
             get { return _chkInsertLegacyChart.Checked; }
             set { _chkInsertLegacyChart.Checked = value; }
         }
+        
+        [DefaultValue(false)]
         public bool FileAssociateFLXR
         {
             get { return _chkFileAssociateFLXR.Checked; }
             set { _chkFileAssociateFLXR.Checked = value; }
         }
+
+        [DefaultValue(false)]
         public bool SyntaxCheck
         {
             get { return _chkSyntaxCheck.Checked; }
             set { _chkSyntaxCheck.Checked = value; }
         }
+
+        [DefaultValue(false)]
         public bool SyntaxColoring
         {
             get { return _chkSyntaxColoring.Checked; }
             set { _chkSyntaxColoring.Checked = value; }
         }
+
+        [DefaultValue(null)]
         public Font ScriptEditorFont
         {
             get { return _scriptEditorFont; }
@@ -453,16 +524,22 @@ namespace FlexReportDesignerApp
                 }
             }
         }
+        
+        [DefaultValue(IsolationLevel.Unspecified)]
         public IsolationLevel IsolationLevel
         {
             get { return (IsolationLevel)_cmbIsolationLevel.SelectedItem; }
             set { _cmbIsolationLevel.SelectedItem = value; }
         }
+        
+        [DefaultValue(false)]
         public bool WarnImportCrystalRASNotAvailable
         {
             get { return _chkWarn_ImportCrystalRASNotAvailable.Checked; }
             set { _chkWarn_ImportCrystalRASNotAvailable.Checked = value; }
         }
+
+        [DefaultValue(false)]
         public bool WarnAppIn64bitMode
         {
             get { return _chkWarn_AppIn64bitMode.Checked; }

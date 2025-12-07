@@ -14,7 +14,7 @@ namespace Tutorial09
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
@@ -61,7 +61,7 @@ namespace Tutorial09
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
 
 			this.dsContacts1 = new Tutorial09.DsContacts();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
@@ -81,21 +81,21 @@ namespace Tutorial09
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 8);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(536, 160);
 			this.c1TrueDBGrid1.TabIndex = 0;
 			this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-			this.c1TrueDBGrid1.ButtonClick += new C1.Win.C1TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_ButtonClick);
-			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.C1TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
+			this.c1TrueDBGrid1.ButtonClick += new C1.Win.TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_ButtonClick);
+			this.c1TrueDBGrid1.UnboundColumnFetch += new C1.Win.TrueDBGrid.UnboundColumnFetchEventHandler(this.c1TrueDBGrid1_UnboundColumnFetch);
 			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"Customer Na" +
 				"me\" DataField=\"\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Level=\"" +
 				"0\" Caption=\"FirstName\" DataField=\"FirstName\"><ValueItems /><GroupInfo /></C1Data" +
@@ -110,11 +110,11 @@ namespace Tutorial09
 				"</C1DataColumn><C1DataColumn Level=\"0\" Caption=\"Expr1\" DataField=\"Expr1\"><ValueI" +
 				"tems Presentation=\"ComboBox\" Translate=\"True\"><internalValues><ValueItem type=\"C" +
 				"1.Win.C1TrueDBGrid.ValueItem\" Value=\"1\" dispVal=\"Prospective\" /><ValueItem type=" +
-				"\"C1.Win.C1TrueDBGrid.ValueItem\" Value=\"2\" dispVal=\"Normal\" /><ValueItem type=\"C1" +
+				"\"C1.Win.TrueDBGrid.ValueItem\" Value=\"2\" dispVal=\"Normal\" /><ValueItem type=\"C1" +
 				".Win.C1TrueDBGrid.ValueItem\" Value=\"3\" dispVal=\"Buyer\" /><ValueItem type=\"C1.Win" +
 				".C1TrueDBGrid.ValueItem\" Value=\"4\" dispVal=\"Distributor\" /><ValueItem type=\"C1.W" +
 				"in.C1TrueDBGrid.ValueItem\" Value=\"5\" dispVal=\"Other\" /></internalValues></ValueI" +
-				"tems><GroupInfo /></C1DataColumn></DataCols><Styles type=\"C1.Win.C1TrueDBGrid.De" +
+				"tems><GroupInfo /></C1DataColumn></DataCols><Styles type=\"C1.Win.TrueDBGrid.De" +
 				"sign.ContextWrapper\"><Data>HighlightRow{ForeColor:HighlightText;BackColor:Highli" +
 				"ght;}Inactive{ForeColor:InactiveCaptionText;BackColor:InactiveCaption;}Selected{" +
 				"ForeColor:HighlightText;BackColor:Highlight;}Editor{}FilterBar{}Heading{Wrap:Tru" +
@@ -133,7 +133,7 @@ namespace Tutorial09
 				"yle54{}Style55{}Style56{}Style57{}Caption{AlignHorz:Center;}Style69{}Style68{}St" +
 				"yle63{}Style62{}Style61{}Style60{}Style67{}Style66{}Style65{}Style64{}Group{Alig" +
 				"nVert:Center;Border:None,,0, 0, 0, 0;BackColor:ControlDark;}</Data></Styles><Spl" +
-				"its><C1.Win.C1TrueDBGrid.MergeView Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeigh" +
+				"its><C1.Win.TrueDBGrid.MergeView Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeigh" +
 				"t=\"17\" ColumnFooterHeight=\"17\" MarqueeStyle=\"DottedCellBorder\" RecordSelectorWid" +
 				"th=\"17\" DefRecSelWidth=\"17\" VerticalScrollGroup=\"1\" HorizontalScrollGroup=\"1\"><C" +
 				"lientRect>0, 17, 532, 139</ClientRect><BorderSide>0</BorderSide><CaptionStyle pa" +
@@ -289,14 +289,14 @@ namespace Tutorial09
 			this.c1TrueDBGrid1.Splits[0].DisplayColumns["CustType"].Button = true;
 		}
 
-		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs e)
+		private void c1TrueDBGrid1_UnboundColumnFetch(object sender, C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs e)
 		{
 			if(e.Col == 0 && e.Row < dtCopy.Rows.Count)
 				e.Value = dtCopy.Rows[e.Row].ItemArray.GetValue(0).ToString() + " " + dtCopy.Rows[e.Row].ItemArray.GetValue(1).ToString();
 		}
 
 		
-		private void c1TrueDBGrid1_ButtonClick(object sender, C1.Win.C1TrueDBGrid.ColEventArgs e)
+		private void c1TrueDBGrid1_ButtonClick(object sender, C1.Win.TrueDBGrid.ColEventArgs e)
 		{
 			listBox1.Left = this.c1TrueDBGrid1.Left + this.c1TrueDBGrid1.RecordSelectorWidth + this.c1TrueDBGrid1.Splits[0].DisplayColumns[0].Width + this.c1TrueDBGrid1.Splits[0].DisplayColumns[1].Width;
 			listBox1.Top = this.c1TrueDBGrid1.Top + this.c1TrueDBGrid1.RowTop(this.c1TrueDBGrid1.Row);
@@ -304,7 +304,7 @@ namespace Tutorial09
 			listBox1.Select();
 		}
 
-		private void c1TrueDBGrid1_OnScroll(object sender, C1.Win.C1TrueDBGrid.CancelEventArgs e)
+		private void c1TrueDBGrid1_OnScroll(object sender, C1.Win.TrueDBGrid.CancelEventArgs e)
 		{
 			this.listBox1.Visible = false;
 		}

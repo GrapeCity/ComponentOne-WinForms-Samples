@@ -1,5 +1,5 @@
 Imports System.Data.OleDb
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -34,9 +34,9 @@ Public Class Form1
     'Do not modify it using the code editor.
     Friend WithEvents groupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents _radioShippers As System.Windows.Forms.RadioButton
-    Friend WithEvents _flexList As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flexList As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents _chkCombo As System.Windows.Forms.CheckBox
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents _radioProducts As System.Windows.Forms.RadioButton
     Friend WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents _imgList As System.Windows.Forms.ImageList
@@ -45,9 +45,9 @@ Public Class Form1
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.groupBox1 = New System.Windows.Forms.GroupBox()
         Me._radioShippers = New System.Windows.Forms.RadioButton()
-        Me._flexList = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flexList = New C1.Win.FlexGrid.C1FlexGrid()
         Me._chkCombo = New System.Windows.Forms.CheckBox()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me._radioProducts = New System.Windows.Forms.RadioButton()
         Me.label1 = New System.Windows.Forms.Label()
         Me._imgList = New System.Windows.Forms.ImageList(Me.components)
@@ -239,20 +239,20 @@ Public Class Form1
         col.Caption = "MCD Shippers"
         col.ImageMap = img
         Dim fields As String() = New String() {"CompanyName", "Phone"}
-        col.DataMap = New C1.Win.C1FlexGrid.MultiColumnDictionary(_dtShippers, "ShipperID", fields, 0)
+        col.DataMap = New C1.Win.FlexGrid.MultiColumnDictionary(_dtShippers, "ShipperID", fields, 0)
 
         ' MultiColumnDictionary 4: bound to Products
         col = _flex.Cols(colIndex) : colIndex = colIndex + 1
         col.Caption = "MCD Prods"
         col.ImageMap = img
-        col.DataMap = New C1.Win.C1FlexGrid.MultiColumnDictionary(_dtProducts, "ProductID", Nothing, 1)
+        col.DataMap = New C1.Win.FlexGrid.MultiColumnDictionary(_dtProducts, "ProductID", Nothing, 1)
 
         ' MultiColumnDictionary 5: bound to Employees
         col = _flex.Cols(colIndex) : colIndex = colIndex + 1
         col.Caption = "MCD Employees"
         col.ImageMap = img
         fields = New String() {"FirstName", "LastName", "Country"}
-        col.DataMap = New C1.Win.C1FlexGrid.MultiColumnDictionary(_dtEmployees, "EmployeeID", fields, 0)
+        col.DataMap = New C1.Win.FlexGrid.MultiColumnDictionary(_dtEmployees, "EmployeeID", fields, 0)
 
         ' MultiColumnDictionary 6: string-based, multicol
         col = _flex.Cols(colIndex) : colIndex = colIndex + 1
@@ -264,7 +264,7 @@ Public Class Form1
     ' Use combo if checked.
     ' By default, maps imply simple dropdowns.
     ' Simple dropdowns also have autosearch, but the combo autosearch looks better.
-    Private Sub _flex_SetupEditor(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _flex.SetupEditor
+    Private Sub _flex_SetupEditor(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _flex.SetupEditor
         If _flex.Editor Is GetType(ComboBox) Then
             Dim cb As ComboBox = DirectCast(Me._flex.Editor, ComboBox)
             cb.DropDownStyle = IIf(Me._chkCombo.Checked, ComboBoxStyle.DropDown, ComboBoxStyle.DropDownList)

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -41,7 +43,7 @@
             this.rbCreateBands = new C1.Win.Ribbon.RibbonButton();
             this.rbClearBands = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.rgAdditional = new C1.Win.Ribbon.RibbonGroup();
             this.rbBandsColumnsRelation = new C1.Win.Ribbon.RibbonComboBox();
             this.columnBandsUserControl1 = new ColumnBands.ColumnBandsUserControl();
@@ -191,7 +193,7 @@
         private C1.Win.Ribbon.RibbonGroup rgThemes;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private ColumnBandsUserControl columnBandsUserControl1;
         private C1.Win.Ribbon.RibbonGroup rgBands;
         private C1.Win.Ribbon.RibbonButton rbCreateBands;

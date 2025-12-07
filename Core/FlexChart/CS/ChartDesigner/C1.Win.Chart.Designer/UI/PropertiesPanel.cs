@@ -188,12 +188,14 @@ namespace C1.Win.Chart.Designer.UI
             dropDownChartElements.Image = GetImage(text); //((ToolStripMenuItem)sender).Image;
         }
 
+        [DefaultValue("")]
         public string Header
         {
             get { return lblHeader.Text; }
             set { lblHeader.Text = value; }
         }
 
+        [DefaultValue(null)]
         public object DataSource
         {
             get { return dataSource; }
@@ -233,6 +235,7 @@ namespace C1.Win.Chart.Designer.UI
                 LinkClicked(sender, new LinkClickedEventArgs(text));
         }
 
+        [DefaultValue(null)]
         public FlexChartBase Chart
         {
             get { return chart; }

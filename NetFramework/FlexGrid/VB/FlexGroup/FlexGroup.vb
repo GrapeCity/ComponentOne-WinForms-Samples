@@ -14,7 +14,7 @@
 Imports System.Text
 Imports System.ComponentModel
 Imports System.Reflection
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class FlexGroupControl
     Inherits System.Windows.Forms.PictureBox
@@ -65,7 +65,7 @@ Public Class FlexGroupControl
 
         ' initialize contained Flex control
         _flex = New C1FlexGrid()
-        _flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        _flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         _flex.Dock = DockStyle.Bottom
         _flex.Size = New Size(10, 10)
         _flex.AllowSorting = AllowSortingEnum.None

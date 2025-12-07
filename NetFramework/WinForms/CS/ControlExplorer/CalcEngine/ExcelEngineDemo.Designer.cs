@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExcelEngineDemo));
             this.panel1 = new System.Windows.Forms.Panel();
             this.formula1 = new ControlExplorer.CalcEngine.Formula();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.sheet1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this.sheet1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.sheet2 = new ControlExplorer.CalcEngine.ExcelFlexGrid();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
@@ -100,12 +100,12 @@
             this.sheet1.Location = new System.Drawing.Point(0, 0);
             this.sheet1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.sheet1.Name = "sheet1";
-            this.sheet1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.sheet1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.sheet1.Size = new System.Drawing.Size(965, 514);
             this.sheet1.StyleInfo = resources.GetString("sheet1.StyleInfo");
             this.sheet1.TabIndex = 16;
             this.sheet1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.sheet1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+            this.sheet1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
             this.sheet1.SelChange += new System.EventHandler(this.flexGridSheet1_SelChange);
             // 
             // c1DockingTabPage2
@@ -128,12 +128,12 @@
             this.sheet2.Location = new System.Drawing.Point(0, 0);
             this.sheet2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.sheet2.Name = "sheet2";
-            this.sheet2.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.sheet2.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.sheet2.Size = new System.Drawing.Size(965, 514);
             this.sheet2.StyleInfo = resources.GetString("sheet2.StyleInfo");
             this.sheet2.TabIndex = 21;
             this.sheet2.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this.sheet2.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+            this.sheet2.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
             this.sheet2.SelChange += new System.EventHandler(this.flexGridSheet2_SelChange);
             // 
             // ExcelEngineDemo
@@ -159,10 +159,10 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1FlexGrid.C1FlexGrid sheet1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.FlexGrid.C1FlexGrid sheet1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
         private ExcelFlexGrid sheet2;
         private Formula formula1;
     }

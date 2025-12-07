@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Themes;
+﻿using C1.Win.Themes;
 using C1.Win.Ribbon;
 using C1.Win.RulesManager;
 using C1.DataFilter;
@@ -62,7 +62,7 @@ namespace ColumnContextMenu
 
         }
 
-        private void c1FlexGrid1_ColumnContextMenuOpening(object sender, C1.Win.C1FlexGrid.ColumnContextMenuOpeningEventArgs e)
+        private void c1FlexGrid1_ColumnContextMenuOpening(object sender, C1.Win.FlexGrid.ColumnContextMenuOpeningEventArgs e)
         {
             // Update column context menu only for non-fixed columns
             if (e.Col >= c1FlexGrid1.Cols.Fixed)

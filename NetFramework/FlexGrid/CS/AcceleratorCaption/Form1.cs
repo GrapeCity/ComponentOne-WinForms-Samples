@@ -1,4 +1,4 @@
-using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System;
 using System.Drawing;
 using System.Collections;
@@ -13,7 +13,7 @@ namespace AcceleratorCaption
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		/// <summary>
@@ -55,7 +55,11 @@ namespace AcceleratorCaption
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
@@ -72,7 +76,7 @@ namespace AcceleratorCaption
 			this._flex.Rows.DefaultSize = 17;
 			this._flex.Size = new System.Drawing.Size(464, 224);
 			this._flex.TabIndex = 0;
-			this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+			this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
 			// 
 			// button1
 			// 
@@ -136,7 +140,7 @@ namespace AcceleratorCaption
 		}
 
 		// draw accelerators
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (e.Row < _flex.Rows.Fixed && e.Text.IndexOf("&") > -1)
 			{

@@ -6,8 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1SpellChecker;
-using C1.Win.C1TrueDBGrid;
+using C1.Win.SpellChecker;
+using C1.Win.TrueDBGrid;
 
 namespace WindowsFormsApplication1
 {
@@ -77,7 +77,7 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void c1TrueDBGrid1_BeforeRowColChange(object sender, C1.Win.C1TrueDBGrid.CancelEventArgs e)
+        private void c1TrueDBGrid1_BeforeRowColChange(object sender, C1.Win.TrueDBGrid.CancelEventArgs e)
         {
             // if there is an error, cancel changes until spelling is correct
             if (!allowCommit)

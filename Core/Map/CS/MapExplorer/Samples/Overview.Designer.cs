@@ -29,35 +29,34 @@ namespace MapExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            this._panel = new System.Windows.Forms.TableLayoutPanel();
-            this.SuspendLayout();
+            _panel = new System.Windows.Forms.TableLayoutPanel();
+            SuspendLayout();
             // 
             // _panel
             // 
-            this._panel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this._panel.ColumnCount = 2;
-            this._panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._panel.Location = new System.Drawing.Point(0, 0);
-            this._panel.Name = "_panel";
-            this._panel.RowCount = 2;
-            this._panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this._panel.Size = new System.Drawing.Size(426, 355);
-            this._panel.TabIndex = 3;
-            this._panel.SizeChanged += new System.EventHandler(this._panel_SizeChanged);
+            _panel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            _panel.ColumnCount = 1;
+            _panel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            _panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            _panel.Location = new System.Drawing.Point(0, 0);
+            _panel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            _panel.Name = "_panel";
+            _panel.RowCount = 1;
+            _panel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            _panel.Size = new System.Drawing.Size(487, 473);
+            _panel.TabIndex = 3;
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this._panel);
-            this.Name = "Overview";
-            this.Size = new System.Drawing.Size(426, 355);
-            this.Load += new System.EventHandler(this.Overview_Load);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.Control;
+            Controls.Add(_panel);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "Overview";
+            Size = new System.Drawing.Size(487, 473);
+            Load += Overview_Load;
+            ResumeLayout(false);
 
         }
 

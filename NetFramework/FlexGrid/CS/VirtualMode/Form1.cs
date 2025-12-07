@@ -58,7 +58,7 @@ namespace VirtualMode
         }
 
         // get cell value from the virtual data source
-        void _flex_GetUnboundValue(object sender, C1.Win.C1FlexGrid.UnboundValueEventArgs e)
+        void _flex_GetUnboundValue(object sender, C1.Win.FlexGrid.UnboundValueEventArgs e)
         {
             var row = e.Row - _flex.Rows.Fixed;
             var col = e.Col - _flex.Cols.Fixed;
@@ -69,7 +69,7 @@ namespace VirtualMode
         }
 
         // set cell value in the virtual data source
-        void _flex_SetUnboundValue(object sender, C1.Win.C1FlexGrid.UnboundValueEventArgs e)
+        void _flex_SetUnboundValue(object sender, C1.Win.FlexGrid.UnboundValueEventArgs e)
         {
             var row = e.Row - _flex.Rows.Fixed;
             var col = e.Col - _flex.Cols.Fixed;

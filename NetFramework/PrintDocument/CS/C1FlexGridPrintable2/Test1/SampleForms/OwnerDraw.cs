@@ -12,7 +12,7 @@ namespace OwnerDraw
 	/// </summary>
     public class Form1 : System.Windows.Forms.Form
     {
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
         private System.Windows.Forms.PictureBox _picBkg;
         /// <summary>
         /// Required designer variable.
@@ -54,7 +54,7 @@ namespace OwnerDraw
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this._picBkg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._picBkg)).BeginInit();
@@ -70,7 +70,7 @@ namespace OwnerDraw
             this._flex.Size = new System.Drawing.Size(632, 393);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // _picBkg
             // 
@@ -105,17 +105,17 @@ namespace OwnerDraw
         {
             // initialize grid
             _flex.Cols[0].Width = 22;
-            _flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-            _flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+            _flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            _flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
             _flex.Styles.Normal.WordWrap = true;
-            _flex.Styles.Normal.ImageAlign = C1.Win.C1FlexGrid.ImageAlignEnum.Stretch;
+            _flex.Styles.Normal.ImageAlign = C1.Win.FlexGrid.ImageAlignEnum.Stretch;
 
             // populate grid
             Random rnd = new Random();
             for (int c = 1; c < _flex.Cols.Count; c++)
             {
                 _flex.Cols[c].DataType  = typeof(int);
-                _flex.Cols[c].TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
+                _flex.Cols[c].TextAlign = C1.Win.FlexGrid.TextAlignEnum.LeftCenter;
                 for (int r = 1; r < _flex.Rows.Count; r++)
                     _flex[r, c] = rnd.Next(1000000);
             }
@@ -123,7 +123,7 @@ namespace OwnerDraw
             // autosize first column
             _flex.AutoSizeCol(1);
         }
-        private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             // custom paint cells that contain integers
             if (_flex[e.Row, e.Col] is int)

@@ -3,11 +3,9 @@ using BaseExplorer.Model;
 using BaseExplorer.Utilities;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.ComponentModel;
 using System.Drawing;
-using System.Reflection;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace BaseExplorer.Components
 {
@@ -20,6 +18,7 @@ namespace BaseExplorer.Components
 
         private List<SampleItem> _samples;
 
+        [DefaultValue(null)]
         public List<SampleItem> Samples
         {
             get { return _samples; }
@@ -33,6 +32,7 @@ namespace BaseExplorer.Components
             }
         }
 
+        [DefaultValue(false)]
         public bool Collapsed
         {
             get { return _collapsed; }
@@ -49,6 +49,8 @@ namespace BaseExplorer.Components
                 }
             }
         }
+
+        [DefaultValue("Office365White")]
         public string Theme
         {
             get

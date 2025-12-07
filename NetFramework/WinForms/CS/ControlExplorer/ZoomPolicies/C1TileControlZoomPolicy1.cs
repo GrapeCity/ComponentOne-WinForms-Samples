@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-using C1.Win.C1Tile;
+using C1.Win.Tile;
 using C1.Win.TouchToolKit;
 
 namespace ControlExplorer.ZoomPolicies

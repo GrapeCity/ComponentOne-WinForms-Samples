@@ -1,4 +1,4 @@
-﻿using C1.Win.C1TrueDBGrid;
+﻿using C1.Win.TrueDBGrid;
 
 namespace DashboardLayoutDemo.Controls
 {

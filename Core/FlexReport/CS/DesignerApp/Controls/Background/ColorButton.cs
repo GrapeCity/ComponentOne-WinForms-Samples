@@ -130,7 +130,9 @@ namespace FlexReportDesignerApp.Controls.Background
         #endregion
 
         #region Public properties
+        
         [Browsable(true)]
+        [DefaultValue(typeof(Color), "Empty")]
         public Color Color
         {
             get { return _color; }

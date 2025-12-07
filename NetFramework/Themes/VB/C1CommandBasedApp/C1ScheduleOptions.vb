@@ -1,6 +1,6 @@
 Imports System.Windows.Forms
 
-Imports C1.Win.C1Schedule
+Imports C1.Win.Schedule
 
 ''' <summary>
 ''' Allow change view options of C1Schedule.

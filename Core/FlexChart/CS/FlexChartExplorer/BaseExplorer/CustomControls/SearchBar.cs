@@ -1,5 +1,6 @@
 ﻿using BaseExplorer.Core;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -14,6 +15,7 @@ namespace BaseExplorer.CustomControls
         int diameter = 8;
         int borderWidth = 2;
 
+        [DefaultValue("Office365White")]
         public string Theme 
         {
             get

@@ -12,7 +12,7 @@ namespace Tutorial_22
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
@@ -75,7 +75,7 @@ namespace Tutorial_22
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsCustomer1 = new Tutorial_22.DsCustomer();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -113,20 +113,20 @@ namespace Tutorial_22
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 8);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 40;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(408, 216);
 			this.c1TrueDBGrid1.TabIndex = 0;
 			this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-			this.c1TrueDBGrid1.FetchScrollTips += new C1.Win.C1TrueDBGrid.FetchScrollTipsEventHandler(this.c1TrueDBGrid1_FetchScrollTips);
+			this.c1TrueDBGrid1.FetchScrollTips += new C1.Win.TrueDBGrid.FetchScrollTipsEventHandler(this.c1TrueDBGrid1_FetchScrollTips);
 			this.c1TrueDBGrid1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"Company\" Da" +
 				"taField=\"Company\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Level=" +
 				"\"0\" Caption=\"Contacted\" DataField=\"Contacted\"><ValueItems /><GroupInfo /></C1Dat" +
@@ -135,7 +135,7 @@ namespace Tutorial_22
 				"ataField=\"LastName\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColumn Leve" +
 				"l=\"0\" Caption=\"Phone\" DataField=\"Phone\"><ValueItems /><GroupInfo /></C1DataColum" +
 				"n><C1DataColumn Level=\"0\" Caption=\"UserCode\" DataField=\"UserCode\"><ValueItems />" +
-				"<GroupInfo /></C1DataColumn></DataCols><Styles type=\"C1.Win.C1TrueDBGrid.Design." +
+				"<GroupInfo /></C1DataColumn></DataCols><Styles type=\"C1.Win.TrueDBGrid.Design." +
 				"ContextWrapper\"><Data>RecordSelector{AlignImage:Center;}Style31{AlignHorz:Far;}S" +
 				"tyle51{}Style50{}Caption{AlignHorz:Center;}Normal{}Selected{ForeColor:HighlightT" +
 				"ext;BackColor:Highlight;}Editor{}Style18{AlignHorz:Far;}Style19{AlignHorz:Far;}S" +
@@ -150,7 +150,7 @@ namespace Tutorial_22
 				"lterBar{}Style42{}Style43{}Style4{}Style9{}Style8{}Style39{}Style36{}Style5{}Gro" +
 				"up{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}Style7{}Style" +
 				"6{}Style1{}Style30{AlignHorz:Far;}Style3{}HighlightRow{ForeColor:HighlightText;B" +
-				"ackColor:Highlight;}</Data></Styles><Splits><C1.Win.C1TrueDBGrid.MergeView Name=" +
+				"ackColor:Highlight;}</Data></Styles><Splits><C1.Win.TrueDBGrid.MergeView Name=" +
 				"\"\" CaptionHeight=\"17\" ColumnCaptionHeight=\"17\" ColumnFooterHeight=\"17\" MarqueeSt" +
 				"yle=\"DottedCellBorder\" RecordSelectorWidth=\"17\" DefRecSelWidth=\"17\" VerticalScro" +
 				"llGroup=\"1\" HorizontalScrollGroup=\"1\"><ClientRect>0, 17, 404, 195</ClientRect><B" +
@@ -423,7 +423,7 @@ namespace Tutorial_22
 		DataTable dbTable; //a copy of the data
 		Color borderColor;
 		int borderLeft, borderTop, borderRight, borderBottom;
-		C1.Win.C1TrueDBGrid.BorderTypeEnum borderType;
+		C1.Win.TrueDBGrid.BorderTypeEnum borderType;
 
 		[STAThread]
 		static void Main() 
@@ -485,7 +485,7 @@ namespace Tutorial_22
 
 		private void UpdateBorder()
 		{
-			C1.Win.C1TrueDBGrid.C1DisplayColumn column;
+			C1.Win.TrueDBGrid.C1DisplayColumn column;
 			column = this.c1TrueDBGrid1.Splits[0].DisplayColumns[this.c1TrueDBGrid1.Col];
 			column.Style.Borders.Color = this.colorDialog1.Color;
 			column.Style.Borders.BorderType = borderType;
@@ -501,42 +501,42 @@ namespace Tutorial_22
 			{
 				case 0:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Fillet;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Fillet;
 					break;
 				}
 				case 1:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Flat;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Flat;
 					break;
 				}
 				case 2:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Groove;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Groove;
 					break;
 				}
 				case 3:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Inset;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Inset;
 					break;
 				}
 				case 4:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.InsetBevel;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.InsetBevel;
 					break;
 				}
 				case 5:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.None;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.None;
 					break;
 				}
 				case 6:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.Raised;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.Raised;
 					break;
 				}
 				case 7:
 				{
-					borderType = C1.Win.C1TrueDBGrid.BorderTypeEnum.RaisedBevel;
+					borderType = C1.Win.TrueDBGrid.BorderTypeEnum.RaisedBevel;
 					break;
 				}
 			}
@@ -577,17 +577,17 @@ namespace Tutorial_22
 			c1TrueDBGrid1.ScrollTrack = checkBox2.Checked;
 		}
 
-		private void c1TrueDBGrid1_FetchScrollTips(object sender, C1.Win.C1TrueDBGrid.FetchScrollTipsEventArgs e)
+		private void c1TrueDBGrid1_FetchScrollTips(object sender, C1.Win.TrueDBGrid.FetchScrollTipsEventArgs e)
 		{
 			//set the scrolltip depending on which scroll bar has moved
 			switch(e.ScrollBar)
 			{
-				case C1.Win.C1TrueDBGrid.ScrollBarEnum.Horizontal:
+				case C1.Win.TrueDBGrid.ScrollBarEnum.Horizontal:
 				{
 					e.ScrollTip = c1TrueDBGrid1.Columns[e.ColIndex].Caption;
 					break;
 				}
-				case C1.Win.C1TrueDBGrid.ScrollBarEnum.Vertical:
+				case C1.Win.TrueDBGrid.ScrollBarEnum.Vertical:
 				{
 					long row = e.Row + 1;
 					e.ScrollTip = "Record: " + row.ToString() + " of " +

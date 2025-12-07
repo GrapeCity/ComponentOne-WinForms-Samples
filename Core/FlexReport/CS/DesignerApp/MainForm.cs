@@ -313,6 +313,7 @@ namespace FlexReportDesignerApp
             _errorList.ResetSettings();
         }
 
+        [DefaultValue("")]
         internal string ErrorListSettings
         {
             get { return _errorList.Settings; }
@@ -910,18 +911,21 @@ namespace FlexReportDesignerApp
             get { return _services; }
         }
 
+        [DefaultValue(true)]
         public bool CategorizeProperties
         {
             get { return _propGrid.PropertySort == PropertySort.CategorizedAlphabetical; }
             set { _propGrid.PropertySort = (value) ? PropertySort.CategorizedAlphabetical : PropertySort.Alphabetical; }
         }
 
+        [DefaultValue(false)]
         public bool UseFieldWrappers
         {
             get { return _useFieldWrappers; }
             set { _useFieldWrappers = value; }
         }
 
+        [DefaultValue(SortOrder.None)]
         public bool SortReportList
         {
             get { return _reportList.Sorting != SortOrder.None; }
@@ -933,6 +937,7 @@ namespace FlexReportDesignerApp
         /// - "builtin:" - the theme is one of the built-in themes;
         /// - "custom:" - the theme is loaded from a file in the "Themes" sub-folder.
         /// </summary>
+        [DefaultValue("")]
         public string Theme
         {
             get { return _theme; }
@@ -2413,6 +2418,7 @@ namespace FlexReportDesignerApp
         /// <summary>
         /// True if the current mode is design, false if preview.
         /// </summary>
+        [DefaultValue(true)]
         internal bool ReportDesignMode
         {
             get { return _reportDesignMode; }

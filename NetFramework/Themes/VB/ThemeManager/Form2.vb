@@ -16,7 +16,7 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
-    Private Sub c1ThemeController1_ObjectThemeApplied(sender As C1.Win.C1Themes.C1ThemeController, e As C1.Win.C1Themes.ObjectThemeEventArgs) Handles c1ThemeController1.ObjectThemeApplied
+    Private Sub c1ThemeController1_ObjectThemeApplied(sender As C1.Win.Themes.C1ThemeController, e As C1.Win.Themes.ObjectThemeEventArgs) Handles c1ThemeController1.ObjectThemeApplied
         ScaleForm()
         If e.Object Is Me.c1Label1 Then
             Me.c1Label1.Font = New Font(Me.c1Label1.Font.FontFamily, 12)

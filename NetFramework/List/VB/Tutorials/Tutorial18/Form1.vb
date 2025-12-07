@@ -40,11 +40,11 @@ Public Class Form1
     Friend WithEvents DsCustomers1 As Tutorial18.DsCustomers
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents C1List1 As C1.Win.C1List.C1List
-    Friend WithEvents C1Combo1 As C1.Win.C1List.C1Combo
-    Friend WithEvents C1Combo2 As C1.Win.C1List.C1Combo
-    Friend WithEvents C1Combo3 As C1.Win.C1List.C1Combo
-    Friend WithEvents C1Combo4 As C1.Win.C1List.C1Combo
+    Friend WithEvents C1List1 As C1.Win.List.C1List
+    Friend WithEvents C1Combo1 As C1.Win.List.C1Combo
+    Friend WithEvents C1Combo2 As C1.Win.List.C1Combo
+    Friend WithEvents C1Combo3 As C1.Win.List.C1Combo
+    Friend WithEvents C1Combo4 As C1.Win.List.C1Combo
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.DsCustomers1 = New Tutorial18.DsCustomers()
@@ -58,11 +58,11 @@ Public Class Form1
         Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.C1List1 = New C1.Win.C1List.C1List()
-        Me.C1Combo1 = New C1.Win.C1List.C1Combo()
-        Me.C1Combo2 = New C1.Win.C1List.C1Combo()
-        Me.C1Combo3 = New C1.Win.C1List.C1Combo()
-        Me.C1Combo4 = New C1.Win.C1List.C1Combo()
+        Me.C1List1 = New C1.Win.List.C1List()
+        Me.C1Combo1 = New C1.Win.List.C1Combo()
+        Me.C1Combo2 = New C1.Win.List.C1Combo()
+        Me.C1Combo3 = New C1.Win.List.C1Combo()
+        Me.C1Combo4 = New C1.Win.List.C1Combo()
         CType(Me.DsCustomers1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1List1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1Combo1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,19 +209,19 @@ Public Class Form1
         Me.C1List1.ColumnCaptionHeight = 17
         Me.C1List1.ColumnFooterHeight = 17
         Me.C1List1.ColumnWidth = 100
-        Me.C1List1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1List1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1List1.DataSource = Me.DsCustomers1.Customer
         Me.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1List1.ItemHeight = 15
         Me.C1List1.Location = New System.Drawing.Point(32, 24)
-        Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List1.MatchEntryTimeout = CType(2000, Long)
         Me.C1List1.Name = "C1List1"
         Me.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List1.ScrollTips = False
         Me.C1List1.Size = New System.Drawing.Size(496, 288)
@@ -240,7 +240,7 @@ Public Class Form1
         Me.C1Combo1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.C1Combo1.Caption = ""
         Me.C1Combo1.CaptionHeight = 17
-        Me.C1Combo1.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips
+        Me.C1Combo1.CellTips = C1.Win.List.CellTipEnum.NoCellTips
         Me.C1Combo1.CellTipsDelay = 500
         Me.C1Combo1.CellTipsWidth = 0
         Me.C1Combo1.ColumnCaptionHeight = 17
@@ -248,8 +248,8 @@ Public Class Form1
         Me.C1Combo1.ColumnFooters = False
         Me.C1Combo1.ColumnHeaders = True
         Me.C1Combo1.ColumnWidth = -1
-        Me.C1Combo1.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList
-        Me.C1Combo1.DataMode = C1.Win.C1List.DataModeEnum.AddItem
+        Me.C1Combo1.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList
+        Me.C1Combo1.DataMode = C1.Win.List.DataModeEnum.AddItem
         Me.C1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty
         Me.C1Combo1.DefColWidth = 0
         Me.C1Combo1.EditorBackColor = System.Drawing.SystemColors.Window
@@ -268,7 +268,7 @@ Public Class Form1
         Me.C1Combo1.MaxLength = 32767
         Me.C1Combo1.MouseCursor = System.Windows.Forms.Cursors.Default
         Me.C1Combo1.Name = "C1Combo1"
-        Me.C1Combo1.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.C1List.Design.ContextWrapper""><Da" & _
+        Me.C1Combo1.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.List.Design.ContextWrapper""><Da" & _
         "ta>Group{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}Style2{" & _
         "}Style5{}Style4{}Style7{}Style6{}EvenRow{BackColor:Aqua;}Selected{ForeColor:High" & _
         "lightText;BackColor:Highlight;}Style3{}Inactive{ForeColor:InactiveCaptionText;Ba" & _
@@ -276,7 +276,7 @@ Public Class Form1
         "lightText;}HighlightRow{ForeColor:HighlightText;BackColor:Highlight;}Style9{Alig" & _
         "nHorz:Near;}OddRow{}RecordSelector{AlignImage:Center;}Heading{Wrap:True;AlignVer" & _
         "t:Center;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;BackColor:Control;}Styl" & _
-        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.C1List.ListBoxView" & _
+        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.List.ListBoxView" & _
         " AllowColSelect=""False"" Name="""" CaptionHeight=""17"" ColumnCaptionHeight=""17"" Colu" & _
         "mnFooterHeight=""17"" VerticalScrollGroup=""1"" HorizontalScrollGroup=""1""><ClientRec" & _
         "t>0, 0, 110, 198</ClientRect><CaptionStyle parent=""Style2"" me=""Style9"" /><EvenRo" & _
@@ -285,7 +285,7 @@ Public Class Form1
         "yle2"" /><HighLightRowStyle parent=""HighlightRow"" me=""Style6"" /><InactiveStyle pa" & _
         "rent=""Inactive"" me=""Style4"" /><OddRowStyle parent=""OddRow"" me=""Style8"" /><Record" & _
         "SelectorStyle parent=""RecordSelector"" me=""Style10"" /><SelectedStyle parent=""Sele" & _
-        "cted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.C1List.ListBoxView><" & _
+        "cted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.List.ListBoxView><" & _
         "/Splits><NamedStyles><Style parent="""" me=""Normal"" /><Style parent=""Normal"" me=""H" & _
         "eading"" /><Style parent=""Heading"" me=""Footer"" /><Style parent=""Heading"" me=""Capt" & _
         "ion"" /><Style parent=""Heading"" me=""Inactive"" /><Style parent=""Normal"" me=""Select" & _
@@ -316,7 +316,7 @@ Public Class Form1
         Me.C1Combo2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.C1Combo2.Caption = ""
         Me.C1Combo2.CaptionHeight = 17
-        Me.C1Combo2.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips
+        Me.C1Combo2.CellTips = C1.Win.List.CellTipEnum.NoCellTips
         Me.C1Combo2.CellTipsDelay = 500
         Me.C1Combo2.CellTipsWidth = 0
         Me.C1Combo2.ColumnCaptionHeight = 17
@@ -324,8 +324,8 @@ Public Class Form1
         Me.C1Combo2.ColumnFooters = False
         Me.C1Combo2.ColumnHeaders = True
         Me.C1Combo2.ColumnWidth = -1
-        Me.C1Combo2.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList
-        Me.C1Combo2.DataMode = C1.Win.C1List.DataModeEnum.AddItem
+        Me.C1Combo2.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList
+        Me.C1Combo2.DataMode = C1.Win.List.DataModeEnum.AddItem
         Me.C1Combo2.DeadAreaBackColor = System.Drawing.Color.Empty
         Me.C1Combo2.DefColWidth = 0
         Me.C1Combo2.EditorBackColor = System.Drawing.SystemColors.Window
@@ -344,7 +344,7 @@ Public Class Form1
         Me.C1Combo2.MaxLength = 32767
         Me.C1Combo2.MouseCursor = System.Windows.Forms.Cursors.Default
         Me.C1Combo2.Name = "C1Combo2"
-        Me.C1Combo2.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.C1List.Design.ContextWrapper""><Da" & _
+        Me.C1Combo2.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.List.Design.ContextWrapper""><Da" & _
         "ta>Group{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}Style2{" & _
         "}Style5{}Style4{}Style7{}Style6{}EvenRow{BackColor:Aqua;}Selected{ForeColor:High" & _
         "lightText;BackColor:Highlight;}Style3{}Inactive{ForeColor:InactiveCaptionText;Ba" & _
@@ -352,7 +352,7 @@ Public Class Form1
         "lightText;}HighlightRow{ForeColor:HighlightText;BackColor:Highlight;}Style9{Alig" & _
         "nHorz:Near;}OddRow{}RecordSelector{AlignImage:Center;}Heading{Wrap:True;AlignVer" & _
         "t:Center;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;BackColor:Control;}Styl" & _
-        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.C1List.ListBoxView" & _
+        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.List.ListBoxView" & _
         " AllowColSelect=""False"" Name="""" CaptionHeight=""17"" ColumnCaptionHeight=""17"" Colu" & _
         "mnFooterHeight=""17"" VerticalScrollGroup=""1"" HorizontalScrollGroup=""1""><ClientRec" & _
         "t>0, 0, 86, 198</ClientRect><CaptionStyle parent=""Style2"" me=""Style9"" /><EvenRow" & _
@@ -361,7 +361,7 @@ Public Class Form1
         "le2"" /><HighLightRowStyle parent=""HighlightRow"" me=""Style6"" /><InactiveStyle par" & _
         "ent=""Inactive"" me=""Style4"" /><OddRowStyle parent=""OddRow"" me=""Style8"" /><RecordS" & _
         "electorStyle parent=""RecordSelector"" me=""Style10"" /><SelectedStyle parent=""Selec" & _
-        "ted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.C1List.ListBoxView></" & _
+        "ted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.List.ListBoxView></" & _
         "Splits><NamedStyles><Style parent="""" me=""Normal"" /><Style parent=""Normal"" me=""He" & _
         "ading"" /><Style parent=""Heading"" me=""Footer"" /><Style parent=""Heading"" me=""Capti" & _
         "on"" /><Style parent=""Heading"" me=""Inactive"" /><Style parent=""Normal"" me=""Selecte" & _
@@ -392,7 +392,7 @@ Public Class Form1
         Me.C1Combo3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.C1Combo3.Caption = ""
         Me.C1Combo3.CaptionHeight = 17
-        Me.C1Combo3.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips
+        Me.C1Combo3.CellTips = C1.Win.List.CellTipEnum.NoCellTips
         Me.C1Combo3.CellTipsDelay = 500
         Me.C1Combo3.CellTipsWidth = 0
         Me.C1Combo3.ColumnCaptionHeight = 17
@@ -400,8 +400,8 @@ Public Class Form1
         Me.C1Combo3.ColumnFooters = False
         Me.C1Combo3.ColumnHeaders = True
         Me.C1Combo3.ColumnWidth = -1
-        Me.C1Combo3.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList
-        Me.C1Combo3.DataMode = C1.Win.C1List.DataModeEnum.AddItem
+        Me.C1Combo3.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList
+        Me.C1Combo3.DataMode = C1.Win.List.DataModeEnum.AddItem
         Me.C1Combo3.DeadAreaBackColor = System.Drawing.Color.Empty
         Me.C1Combo3.DefColWidth = 0
         Me.C1Combo3.EditorBackColor = System.Drawing.SystemColors.Window
@@ -420,7 +420,7 @@ Public Class Form1
         Me.C1Combo3.MaxLength = 32767
         Me.C1Combo3.MouseCursor = System.Windows.Forms.Cursors.Default
         Me.C1Combo3.Name = "C1Combo3"
-        Me.C1Combo3.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.C1List.Design.ContextWrapper""><Da" & _
+        Me.C1Combo3.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.List.Design.ContextWrapper""><Da" & _
         "ta>Group{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}Style2{" & _
         "}Style5{}Style4{}Style7{}Style6{}EvenRow{BackColor:Aqua;}Selected{ForeColor:High" & _
         "lightText;BackColor:Highlight;}Style3{}Inactive{ForeColor:InactiveCaptionText;Ba" & _
@@ -428,7 +428,7 @@ Public Class Form1
         "lightText;}HighlightRow{ForeColor:HighlightText;BackColor:Highlight;}Style9{Alig" & _
         "nHorz:Near;}OddRow{}RecordSelector{AlignImage:Center;}Heading{Wrap:True;AlignVer" & _
         "t:Center;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;BackColor:Control;}Styl" & _
-        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.C1List.ListBoxView" & _
+        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.List.ListBoxView" & _
         " AllowColSelect=""False"" Name="""" CaptionHeight=""17"" ColumnCaptionHeight=""17"" Colu" & _
         "mnFooterHeight=""17"" VerticalScrollGroup=""1"" HorizontalScrollGroup=""1""><ClientRec" & _
         "t>0, 0, 78, 198</ClientRect><CaptionStyle parent=""Style2"" me=""Style9"" /><EvenRow" & _
@@ -437,7 +437,7 @@ Public Class Form1
         "le2"" /><HighLightRowStyle parent=""HighlightRow"" me=""Style6"" /><InactiveStyle par" & _
         "ent=""Inactive"" me=""Style4"" /><OddRowStyle parent=""OddRow"" me=""Style8"" /><RecordS" & _
         "electorStyle parent=""RecordSelector"" me=""Style10"" /><SelectedStyle parent=""Selec" & _
-        "ted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.C1List.ListBoxView></" & _
+        "ted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.List.ListBoxView></" & _
         "Splits><NamedStyles><Style parent="""" me=""Normal"" /><Style parent=""Normal"" me=""He" & _
         "ading"" /><Style parent=""Heading"" me=""Footer"" /><Style parent=""Heading"" me=""Capti" & _
         "on"" /><Style parent=""Heading"" me=""Inactive"" /><Style parent=""Normal"" me=""Selecte" & _
@@ -468,7 +468,7 @@ Public Class Form1
         Me.C1Combo4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.C1Combo4.Caption = ""
         Me.C1Combo4.CaptionHeight = 17
-        Me.C1Combo4.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips
+        Me.C1Combo4.CellTips = C1.Win.List.CellTipEnum.NoCellTips
         Me.C1Combo4.CellTipsDelay = 500
         Me.C1Combo4.CellTipsWidth = 0
         Me.C1Combo4.ColumnCaptionHeight = 17
@@ -476,9 +476,9 @@ Public Class Form1
         Me.C1Combo4.ColumnFooters = False
         Me.C1Combo4.ColumnHeaders = True
         Me.C1Combo4.ColumnWidth = -1
-        Me.C1Combo4.ComboStyle = C1.Win.C1List.ComboStyleEnum.DropdownList
+        Me.C1Combo4.ComboStyle = C1.Win.List.ComboStyleEnum.DropdownList
         
-        Me.C1Combo4.DataMode = C1.Win.C1List.DataModeEnum.AddItem
+        Me.C1Combo4.DataMode = C1.Win.List.DataModeEnum.AddItem
         Me.C1Combo4.DeadAreaBackColor = System.Drawing.Color.Empty
         Me.C1Combo4.DefColWidth = 0
         Me.C1Combo4.EditorBackColor = System.Drawing.SystemColors.Window
@@ -497,7 +497,7 @@ Public Class Form1
         Me.C1Combo4.MaxLength = 32767
         Me.C1Combo4.MouseCursor = System.Windows.Forms.Cursors.Default
         Me.C1Combo4.Name = "C1Combo4"
-        Me.C1Combo4.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.C1List.Design.ContextWrapper""><Da" & _
+        Me.C1Combo4.PropBag = "<?xml version=""1.0""?><Blob><Styles type=""C1.Win.List.Design.ContextWrapper""><Da" & _
         "ta>Group{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}Style2{" & _
         "}Style5{}Style4{}Style7{}Style6{}EvenRow{BackColor:Aqua;}Selected{ForeColor:High" & _
         "lightText;BackColor:Highlight;}Style3{}Inactive{ForeColor:InactiveCaptionText;Ba" & _
@@ -505,7 +505,7 @@ Public Class Form1
         "lightText;}HighlightRow{ForeColor:HighlightText;BackColor:Highlight;}Style9{Alig" & _
         "nHorz:Near;}OddRow{}RecordSelector{AlignImage:Center;}Heading{Wrap:True;AlignVer" & _
         "t:Center;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;BackColor:Control;}Styl" & _
-        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.C1List.ListBoxView" & _
+        "e8{}Style10{}Style11{}Style1{}</Data></Styles><Splits><C1.Win.List.ListBoxView" & _
         " AllowColSelect=""False"" Name="""" CaptionHeight=""17"" ColumnCaptionHeight=""17"" Colu" & _
         "mnFooterHeight=""17"" VerticalScrollGroup=""1"" HorizontalScrollGroup=""1""><ClientRec" & _
         "t>0, 0, 102, 198</ClientRect><CaptionStyle parent=""Style2"" me=""Style9"" /><EvenRo" & _
@@ -514,7 +514,7 @@ Public Class Form1
         "yle2"" /><HighLightRowStyle parent=""HighlightRow"" me=""Style6"" /><InactiveStyle pa" & _
         "rent=""Inactive"" me=""Style4"" /><OddRowStyle parent=""OddRow"" me=""Style8"" /><Record" & _
         "SelectorStyle parent=""RecordSelector"" me=""Style10"" /><SelectedStyle parent=""Sele" & _
-        "cted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.C1List.ListBoxView><" & _
+        "cted"" me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.List.ListBoxView><" & _
         "/Splits><NamedStyles><Style parent="""" me=""Normal"" /><Style parent=""Normal"" me=""H" & _
         "eading"" /><Style parent=""Heading"" me=""Footer"" /><Style parent=""Heading"" me=""Capt" & _
         "ion"" /><Style parent=""Heading"" me=""Inactive"" /><Style parent=""Normal"" me=""Select" & _
@@ -593,9 +593,9 @@ Public Class Form1
 
         'Start
         With Me.C1List1
-            .MatchCol = C1.Win.C1List.MatchColEnum.CurrentMousePos
-            .MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-            .MatchEntry = C1.Win.C1List.MatchEntryEnum.Standard
+            .MatchCol = C1.Win.List.MatchColEnum.CurrentMousePos
+            .MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+            .MatchEntry = C1.Win.List.MatchEntryEnum.Standard
             .MatchEntryTimeout = 2000
         End With
     End Sub
@@ -604,33 +604,33 @@ Public Class Form1
     Private Sub C1Combo1_Change(ByVal sender As Object, ByVal e As System.EventArgs) Handles C1Combo1.Change
         Select Case Me.C1Combo1.Text
             Case "Current Mouse Position"
-                Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.CurrentMousePos
+                Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.CurrentMousePos
             Case "ListField"
-                Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
+                Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
             Case "Current Selected Col"
-                Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.CurrentSelectedCol
+                Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.CurrentSelectedCol
         End Select
     End Sub
 
     Private Sub C1Combo2_Change(ByVal sender As Object, ByVal e As System.EventArgs) Handles C1Combo2.Change
         Select Case Me.C1Combo2.Text
             Case "Partial Include"
-                Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
+                Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
             Case "Equal"
-                Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.Equal
+                Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.Equal
             Case "Less Than"
-                Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.LessThan
+                Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.LessThan
             Case "Greater Than"
-                Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.GreaterThan
+                Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.GreaterThan
         End Select
     End Sub
 
     Private Sub C1Combo3_Change(ByVal sender As Object, ByVal e As System.EventArgs) Handles C1Combo3.Change
         Select Case Me.C1Combo3.Text
             Case "Standard"
-                Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.Standard
+                Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.Standard
             Case "Extended"
-                Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.Extended
+                Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.Extended
         End Select
     End Sub
 

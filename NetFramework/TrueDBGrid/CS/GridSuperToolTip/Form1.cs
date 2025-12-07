@@ -44,7 +44,7 @@ namespace GridSuperToolTip
         private void Form1_Load(object sender, EventArgs e)
         {
             // we'll use the grid's celltip eventing to control supertooltip visibility
-            this.c1TrueDBGrid1.CellTips = C1.Win.C1TrueDBGrid.CellTipEnum.Anchored;
+            this.c1TrueDBGrid1.CellTips = C1.Win.TrueDBGrid.CellTipEnum.Anchored;
 
             // no delay for showing, very long time to hide
             c1SuperTooltip1.AutomaticDelay = 0;
@@ -53,11 +53,11 @@ namespace GridSuperToolTip
             FillGrid(this.c1TrueDBGrid1);
         }
         #region populate grid
-        private void FillGrid(C1.Win.C1TrueDBGrid.C1TrueDBGrid grid)
+        private void FillGrid(C1.Win.TrueDBGrid.C1TrueDBGrid grid)
         {
             for(int i=0; i < 10; i++)
             {
-                grid.Columns.Add(new C1.Win.C1TrueDBGrid.C1DataColumn("",typeof(string)));
+                grid.Columns.Add(new C1.Win.TrueDBGrid.C1DataColumn("",typeof(string)));
             }
 
             grid.SetDataBinding();
@@ -71,7 +71,7 @@ namespace GridSuperToolTip
 
         private void c1TrueDBGrid1_MouseMove(object sender, MouseEventArgs e)
         {
-            C1.Win.C1TrueDBGrid.C1TrueDBGrid tdbgrid = sender as C1.Win.C1TrueDBGrid.C1TrueDBGrid;
+            C1.Win.TrueDBGrid.C1TrueDBGrid tdbgrid = sender as C1.Win.TrueDBGrid.C1TrueDBGrid;
 
             // get the row and column index where the mouse is positioned
             Point p = tdbgrid.PointToClient(Control.MousePosition);
@@ -81,13 +81,13 @@ namespace GridSuperToolTip
             if (!this._rowcol.Equals(curRowCol)) this.c1SuperTooltip1.Hide(tdbgrid);
         }
 
-        private void c1TrueDBGrid1_FetchCellTips(object sender, C1.Win.C1TrueDBGrid.FetchCellTipsEventArgs e)
+        private void c1TrueDBGrid1_FetchCellTips(object sender, C1.Win.TrueDBGrid.FetchCellTipsEventArgs e)
         {
             // setting e.CellTip to an empty string disables the built-in celltip
             e.CellTip = string.Empty;
 
             // now use supertooltip
-            C1.Win.C1TrueDBGrid.C1TrueDBGrid tdbgrid = sender as C1.Win.C1TrueDBGrid.C1TrueDBGrid;
+            C1.Win.TrueDBGrid.C1TrueDBGrid tdbgrid = sender as C1.Win.TrueDBGrid.C1TrueDBGrid;
 
             // save the current row and column index, we'll use this in MouseMove
             this._rowcol = new Point(e.ColIndex, e.Row);

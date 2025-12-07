@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
 
         void _superLabel_UpdateHeight(object sender, EventArgs e)
         {
-            var lbl = sender as C1.Win.C1SuperTooltip.C1SuperLabel;
+            var lbl = sender as C1.Win.SuperTooltip.C1SuperLabel;
             var sz = lbl.Measure(lbl.Width - lbl.Padding.Left - lbl.Padding.Right);
             lbl.Height = sz.Height + lbl.Padding.Top + lbl.Padding.Bottom;
         }

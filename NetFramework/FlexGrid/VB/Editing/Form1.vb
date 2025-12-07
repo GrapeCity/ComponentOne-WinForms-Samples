@@ -1,5 +1,5 @@
 Imports System.Collections.Specialized
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -25,7 +25,7 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-    Friend WithEvents fg As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents fg As C1.Win.FlexGrid.C1FlexGrid
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -35,7 +35,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.fg = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.fg = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.fg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,7 +52,7 @@ Public Class Form1
         Me.fg.Rows.MaxSize = 0
         Me.fg.Rows.MinSize = 0
         Me.fg.Size = New System.Drawing.Size(576, 273)
-        Me.fg.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.fg.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:LightBlue;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppW" & _
         "orkspace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeCol" & _
@@ -152,7 +152,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub fg_CellButtonClick(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles fg.CellButtonClick
+    Private Sub fg_CellButtonClick(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles fg.CellButtonClick
 
         Dim clrDlg As New ColorDialog()
 
@@ -166,7 +166,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub fg_ValidateEdit(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.ValidateEditEventArgs) Handles fg.ValidateEdit
+    Private Sub fg_ValidateEdit(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.ValidateEditEventArgs) Handles fg.ValidateEdit
 
         ' validate amounts
         If fg.Cols(e.Col).DataType Is GetType(Decimal) Then

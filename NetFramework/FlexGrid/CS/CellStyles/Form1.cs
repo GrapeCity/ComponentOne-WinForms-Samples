@@ -23,7 +23,7 @@ namespace CellStyles
         }
 
         // update toolbar button state when user selects a new cell range
-        void _flex_AfterRowColChange(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+        void _flex_AfterRowColChange(object sender, C1.Win.FlexGrid.RangeEventArgs e)
         {
             UpdateButtonState();
         }
@@ -62,15 +62,15 @@ namespace CellStyles
                     }
                     else if (e.ClickedItem == _btnLeft)
                     {
-                        newStyle.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
+                        newStyle.TextAlign = C1.Win.FlexGrid.TextAlignEnum.LeftCenter;
                     }
                     else if (e.ClickedItem == _btnRight)
                     {
-                        newStyle.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.RightCenter;
+                        newStyle.TextAlign = C1.Win.FlexGrid.TextAlignEnum.RightCenter;
                     }
                     else if (e.ClickedItem == _btnCenter)
                     {
-                        newStyle.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
+                        newStyle.TextAlign = C1.Win.FlexGrid.TextAlignEnum.CenterCenter;
                     }
                 }
             }
@@ -98,9 +98,9 @@ namespace CellStyles
             _btnUnderline.Checked = s.Font.Underline;
 
             // update alignment buttons
-            _btnLeft.Checked = s.TextAlign == C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
-            _btnCenter.Checked = s.TextAlign == C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
-            _btnRight.Checked = s.TextAlign == C1.Win.C1FlexGrid.TextAlignEnum.RightCenter;
+            _btnLeft.Checked = s.TextAlign == C1.Win.FlexGrid.TextAlignEnum.LeftCenter;
+            _btnCenter.Checked = s.TextAlign == C1.Win.FlexGrid.TextAlignEnum.CenterCenter;
+            _btnRight.Checked = s.TextAlign == C1.Win.FlexGrid.TextAlignEnum.RightCenter;
         }
     }
 }

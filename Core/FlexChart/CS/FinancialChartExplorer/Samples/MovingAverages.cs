@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.Chart;
+﻿using C1.Chart;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
@@ -20,7 +11,6 @@ namespace FinancialChartExplorer.Samples
         {
             InitializeComponent();
         }
-
         DataService dataService;
         MovingAverage ma;
 
@@ -29,6 +19,7 @@ namespace FinancialChartExplorer.Samples
             dataService = DataService.GetService();
 
             var data = dataService.GetSymbolData("box");
+            c1MovingAverage.ItemsDataSource = Enum.GetValues(typeof(MovingAverageType));
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -37,28 +28,26 @@ namespace FinancialChartExplorer.Samples
             financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Line;
 
             ma = new MovingAverage();
-            financialChart1.Series.Add( ma);
+            financialChart1.Series.Add(ma);
 
             financialChart1.DataSource = data;
 
             financialChart1.EndUpdate();
 
-            movingAverage.DataSource = Enum.GetValues(typeof(MovingAverageType));
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
+            {
+                c1MovingAverage.SelectedIndex = 0;
+            }
         }
 
-        private void order_ValueChanged(object sender, EventArgs e)
+        private void c1MovingAverage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // trendLine.Order = (int)order.Value;
+            ma.Type = (MovingAverageType)c1MovingAverage.SelectedValue;
         }
 
-        private void period_ValueChanged(object sender, EventArgs e)
+        private void period_ValueChanged_1(object sender, EventArgs e)
         {
-            ma.Period = (int)period.Value;
-        }
-
-        private void movingAverage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ma.Type = (MovingAverageType)movingAverage.SelectedItem;
+            ma.Period = Convert.ToInt32(period.Value);
         }
     }
 }

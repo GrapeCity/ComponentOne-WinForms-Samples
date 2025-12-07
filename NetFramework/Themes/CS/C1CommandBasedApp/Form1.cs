@@ -7,13 +7,13 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-using C1.Win.C1FlexGrid;
-using C1.Win.C1TrueDBGrid;
-using C1.Win.C1Command;
-using C1.Win.C1Themes;
-using C1.Win.C1Schedule;
+using C1.Win.FlexGrid;
+using C1.Win.TrueDBGrid;
+using C1.Win.Command;
+using C1.Win.Themes;
+using C1.Win.Schedule;
 using C1.Win.C1Input;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace C1CommandBasedApp
 {
@@ -111,7 +111,7 @@ namespace C1CommandBasedApp
             _trueGridOptions.ShowCaption = true;
             _trueGridOptions.ShowFilterBar = true;
             _trueGridOptions.ShowGroupByArea = true;
-            _trueGridOptions.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal;
+            _trueGridOptions.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal;
 
             //
             // initialize C1FlexGrid
@@ -120,8 +120,8 @@ namespace C1CommandBasedApp
             _flexGridOptions.FrozenColCount = 3;
 
             //
-            FillItems(ccmCFGSelectionMode, typeof(C1.Win.C1FlexGrid.SelectionModeEnum), SelectionModeCommandClick, SelectionModeCommandStateQuery);
-            FillItems(ccmCFGFocusRect, typeof(C1.Win.C1FlexGrid.FocusRectEnum), FocusRectCommandClick, FocusRectCommandStateQuery);
+            FillItems(ccmCFGSelectionMode, typeof(C1.Win.FlexGrid.SelectionModeEnum), SelectionModeCommandClick, SelectionModeCommandStateQuery);
+            FillItems(ccmCFGFocusRect, typeof(C1.Win.FlexGrid.FocusRectEnum), FocusRectCommandClick, FocusRectCommandStateQuery);
             FillItems(csbSelectionMode, typeof(SelectionModeEnum));
             FillItems(csbFocusRect, typeof(FocusRectEnum));
 

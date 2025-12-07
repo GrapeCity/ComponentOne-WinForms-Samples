@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -13,7 +13,7 @@ namespace SqlBuilder
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button _btnDataSource;
 		private System.Windows.Forms.Button _btnViewSql;
 		/// <summary>
@@ -55,7 +55,10 @@ namespace SqlBuilder
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._btnDataSource = new System.Windows.Forms.Button();
             this._btnViewSql = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();

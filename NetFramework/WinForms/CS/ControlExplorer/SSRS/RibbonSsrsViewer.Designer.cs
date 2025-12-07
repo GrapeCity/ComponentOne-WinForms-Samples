@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RibbonSsrsViewer));
             this.c1RibbonPreview1 = new C1.Win.RibbonPreview.C1RibbonPreview();
-            this.c1SsrsDocumentSource1 = new C1.Win.C1Document.C1SSRSDocumentSource();
+            this.c1SsrsDocumentSource1 = new C1.Win.Document.C1SSRSDocumentSource();
             this.ilMain = new System.Windows.Forms.ImageList(this.components);
             this.bwListReports = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.c1RibbonPreview1)).BeginInit();
@@ -85,7 +85,7 @@
         #endregion
 
         private C1.Win.RibbonPreview.C1RibbonPreview c1RibbonPreview1;
-        private C1.Win.C1Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
+        private C1.Win.Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
         private System.Windows.Forms.ImageList ilMain;
         private System.ComponentModel.BackgroundWorker bwListReports;
     }

@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.Win.Chart.Finance;
-
+﻿using C1.Win.Chart.Finance;
 using FinancialChartExplorer.Services;
 
 namespace FinancialChartExplorer.Samples
@@ -20,14 +10,18 @@ namespace FinancialChartExplorer.Samples
             InitializeComponent();
         }
 
-        DataService dataService;
+        DataService? _dataService;
 
         private void HeikinAshi_Load(object sender, EventArgs e)
         {
-            dataService = DataService.GetService();
+            _dataService = DataService.GetService();
 
-            comboBoxSymbol.DataSource = dataService.GetCompanies();
-            comboBoxSymbol.DisplayMember = "Name";
+            c1ComboBox1.ItemsDataSource = _dataService.GetCompanies();
+            c1ComboBox1.ItemsDisplayMember = "Name";
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
+            {
+                c1ComboBox1.SelectedValue = DataService.SelectedSymbol;
+            }
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -38,11 +32,16 @@ namespace FinancialChartExplorer.Samples
             financialChart1.EndUpdate();
         }
 
-        private void comboBoxSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var data = dataService.GetSymbolData(comboBoxSymbol.SelectedValue.ToString(), 90);
-            financialChart1.DataSource = data;
-            financialChart1.Rebind();
+            if (c1ComboBox1.SelectedValue != null)
+            {
+                string selectedCompanyName = c1ComboBox1.SelectedValue.ToString();
+                DataService.SelectedSymbol = selectedCompanyName;
+                var data = _dataService.GetSymbolData(selectedCompanyName);
+                financialChart1.DataSource = data;
+                financialChart1.Rebind();
+            }
         }
     }
 }

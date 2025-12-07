@@ -1,10 +1,10 @@
-﻿using C1.Win.FlexGrid;
-using C1.Win.Input.MultiColumnCombo;
+﻿using C1.Win.Input.MultiColumnCombo;
 using C1.Win.Themes;
 using C1.Win.TreeView;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -31,8 +31,10 @@ namespace MultiColumnComboExplorer.Samples
 
         #region IDropDownView
 
+        [DefaultValue(false)]
         public bool RowTracking { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int SelectedIndex
         {
             get => HasSelection ? GetIndexByNode(SelectedNodes.First()) : -1;
@@ -48,6 +50,7 @@ namespace MultiColumnComboExplorer.Samples
 
         public int ItemsCount => Nodes.Sum(n => n.Nodes.Count);
 
+        [DefaultValue(0)]
         public int DefaultColumnWidth
         {
             get => _defaultWidth;
@@ -61,6 +64,7 @@ namespace MultiColumnComboExplorer.Samples
             }
         }
 
+        [DefaultValue(",")]
         public string AddItemSeparator { get; set; } = ",";
 
         DisplayColumnCollection IDropDownView.Columns
@@ -86,8 +90,10 @@ namespace MultiColumnComboExplorer.Samples
             }
         }
 
-        private IList<GroupDescription> _groupDescriptions;
-        public IList<GroupDescription> GroupDescriptions
+        private IList<C1.Win.FlexGrid.GroupDescription> _groupDescriptions;
+
+        [DefaultValue(null)]
+        public IList<C1.Win.FlexGrid.GroupDescription> GroupDescriptions
         {
             get => _groupDescriptions;
             set
@@ -156,7 +162,7 @@ namespace MultiColumnComboExplorer.Samples
 
         public void ScrollToCell(int columnIndex, int rowIndex) => ScrollToCell(columnIndex, rowIndex);
 
-        public void Select(object value, string columnName)
+        public void Select(object value, string columnName, int startRowIndex = 0)
         {
             Func<C1TreeNode, int, object, bool, bool, bool> checkNode = (node, columnIndex, value, caseSensitive, fullMatch) =>
             {
@@ -167,7 +173,7 @@ namespace MultiColumnComboExplorer.Samples
             };
             var column = Columns.FirstOrDefault(c => c.DisplayFieldName == columnName);
             int columnIndex = Columns.IndexOf(column);
-            int nodeIndex = FindNode(checkNode, value, 0, columnIndex, true, true, false);
+            int nodeIndex = FindNode(checkNode, value, startRowIndex, columnIndex, true, true, false);
             if (nodeIndex > 0)
                 GetNodeByIndex(nodeIndex).Selected = true;
         }        
@@ -230,8 +236,13 @@ namespace MultiColumnComboExplorer.Samples
 
         #region not implemented
 
+        [DefaultValue(0)]
         public int HeaderHeight { get; set; }
+
+        [DefaultValue(0)]
         public int ItemHeight { get; set; }
+
+        [DefaultValue(false)]
         public bool AllowSorting { get; set; }
 
         public event EventHandler Sorted;

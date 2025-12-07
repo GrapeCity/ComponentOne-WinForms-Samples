@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomEditors
 {
@@ -13,7 +13,7 @@ namespace CustomEditors
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.ImageList imageList1;
 		private System.Windows.Forms.ComboBox comboBox1;
@@ -61,7 +61,7 @@ namespace CustomEditors
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -77,30 +77,31 @@ namespace CustomEditors
             // 
             // _flex
             // 
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
             this._flex.ColumnInfo = "10,1,0,0,0,105,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this._flex.Location = new System.Drawing.Point(0, 85);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 21;
             this._flex.Size = new System.Drawing.Size(656, 320);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 11;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
-            this._flex.ComboCloseUp += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_ComboCloseUp);
-            this._flex.ChangeEdit += new System.EventHandler(this._flex_ChangeEdit);
-            this._flex.KeyPressEdit += new C1.Win.C1FlexGrid.KeyPressEditEventHandler(this._flex_KeyPressEdit);
-            this._flex.ComboDropDown += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_ComboDropDown);
-            this._flex.StartEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_StartEdit);
-            this._flex.AfterEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_AfterEdit);
-            this._flex.KeyDown += new System.Windows.Forms.KeyEventHandler(this._flex_KeyDown);
-            this._flex.CellButtonClick += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_CellButtonClick);
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             this._flex.SelChange += new System.EventHandler(this._flex_SelChange);
-            this._flex.KeyDownEdit += new C1.Win.C1FlexGrid.KeyEditEventHandler(this._flex_KeyDownEdit);
-            this._flex.SetupEditor += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_SetupEditor);
-            this._flex.KeyUpEdit += new C1.Win.C1FlexGrid.KeyEditEventHandler(this._flex_KeyUpEdit);
-            this._flex.BeforeEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
+            this._flex.BeforeEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
+            this._flex.StartEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_StartEdit);
+            this._flex.AfterEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_AfterEdit);
+            this._flex.CellButtonClick += new C1.Win.FlexGrid.RowColEventHandler(this._flex_CellButtonClick);
+            this._flex.SetupEditor += new C1.Win.FlexGrid.RowColEventHandler(this._flex_SetupEditor);
+            this._flex.ChangeEdit += new System.EventHandler(this._flex_ChangeEdit);
+            this._flex.ComboDropDown += new C1.Win.FlexGrid.RowColEventHandler(this._flex_ComboDropDown);
+            this._flex.ComboCloseUp += new C1.Win.FlexGrid.RowColEventHandler(this._flex_ComboCloseUp);
+            this._flex.KeyDownEdit += new C1.Win.FlexGrid.KeyEditEventHandler(this._flex_KeyDownEdit);
+            this._flex.KeyUpEdit += new C1.Win.FlexGrid.KeyEditEventHandler(this._flex_KeyUpEdit);
+            this._flex.KeyPressEdit += new C1.Win.FlexGrid.KeyPressEditEventHandler(this._flex_KeyPressEdit);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.KeyDown += new System.Windows.Forms.KeyEventHandler(this._flex_KeyDown);
             this._flex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._flex_KeyPress);
             this._flex.KeyUp += new System.Windows.Forms.KeyEventHandler(this._flex_KeyUp);
             // 
@@ -111,9 +112,9 @@ namespace CustomEditors
             this.textBox1.BackColor = System.Drawing.Color.MistyRose;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(11, 146);
+            this.textBox1.Location = new System.Drawing.Point(17, 232);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(101, 17);
+            this.textBox1.Size = new System.Drawing.Size(159, 27);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "textBox1";
             this.textBox1.Visible = false;
@@ -141,7 +142,7 @@ namespace CustomEditors
             this.comboBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.DarkBlue;
             this.comboBox1.IntegralHeight = false;
-            this.comboBox1.ItemHeight = 17;
+            this.comboBox1.ItemHeight = 27;
             this.comboBox1.Items.AddRange(new object[] {
             "Hello",
             "There",
@@ -152,24 +153,24 @@ namespace CustomEditors
             "Is",
             "A",
             "Regular ComboBox"});
-            this.comboBox1.Location = new System.Drawing.Point(11, 117);
+            this.comboBox1.Location = new System.Drawing.Point(17, 186);
             this.comboBox1.MaxDropDownItems = 55;
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(101, 25);
+            this.comboBox1.Size = new System.Drawing.Size(159, 35);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.Text = "comboBox1";
             this.comboBox1.Visible = false;
-            this.comboBox1.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox1_Validating);
             this.comboBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox1_KeyPress);
+            this.comboBox1.Validating += new System.ComponentModel.CancelEventHandler(this.comboBox1_Validating);
             this.comboBox1.Validated += new System.EventHandler(this.comboBox1_Validated);
             // 
             // _btnBorders
             // 
             this._btnBorders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._btnBorders.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this._btnBorders.Location = new System.Drawing.Point(496, 8);
+            this._btnBorders.Location = new System.Drawing.Point(404, 13);
             this._btnBorders.Name = "_btnBorders";
-            this._btnBorders.Size = new System.Drawing.Size(145, 29);
+            this._btnBorders.Size = new System.Drawing.Size(228, 46);
             this._btnBorders.TabIndex = 4;
             this._btnBorders.Text = "Borders";
             this._btnBorders.Click += new System.EventHandler(this._btnBorders_Click);
@@ -186,9 +187,9 @@ namespace CustomEditors
             this.domainUpDown1.Items.Add("This");
             this.domainUpDown1.Items.Add("DomainUpDown");
             this.domainUpDown1.Items.Add("Control.");
-            this.domainUpDown1.Location = new System.Drawing.Point(11, 175);
+            this.domainUpDown1.Location = new System.Drawing.Point(17, 278);
             this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(101, 20);
+            this.domainUpDown1.Size = new System.Drawing.Size(159, 30);
             this.domainUpDown1.TabIndex = 6;
             this.domainUpDown1.Text = "domainUpDown1";
             this.domainUpDown1.Visible = false;
@@ -197,9 +198,9 @@ namespace CustomEditors
             // 
             this.numericUpDown1.BackColor = System.Drawing.Color.MistyRose;
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDown1.Location = new System.Drawing.Point(11, 204);
+            this.numericUpDown1.Location = new System.Drawing.Point(17, 324);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(101, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(159, 30);
             this.numericUpDown1.TabIndex = 7;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Visible = false;
@@ -207,36 +208,36 @@ namespace CustomEditors
             // _chkSetHandled
             // 
             this._chkSetHandled.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._chkSetHandled.Location = new System.Drawing.Point(496, 37);
+            this._chkSetHandled.Location = new System.Drawing.Point(404, 59);
             this._chkSetHandled.Name = "_chkSetHandled";
-            this._chkSetHandled.Size = new System.Drawing.Size(145, 23);
+            this._chkSetHandled.Size = new System.Drawing.Size(228, 36);
             this._chkSetHandled.TabIndex = 8;
             this._chkSetHandled.Text = "e.Handled";
             // 
             // _rtfHelp
             // 
-            this._rtfHelp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this._rtfHelp.Location = new System.Drawing.Point(7, 8);
+            this._rtfHelp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._rtfHelp.Location = new System.Drawing.Point(11, 13);
             this._rtfHelp.Name = "_rtfHelp";
             this._rtfHelp.ReadOnly = true;
-            this._rtfHelp.Size = new System.Drawing.Size(477, 71);
+            this._rtfHelp.Size = new System.Drawing.Size(375, 112);
             this._rtfHelp.TabIndex = 9;
             this._rtfHelp.Text = "richTextBox1";
             // 
             // _chkShowButtons
             // 
             this._chkShowButtons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this._chkShowButtons.Location = new System.Drawing.Point(496, 57);
+            this._chkShowButtons.Location = new System.Drawing.Point(404, 91);
             this._chkShowButtons.Name = "_chkShowButtons";
-            this._chkShowButtons.Size = new System.Drawing.Size(145, 24);
+            this._chkShowButtons.Size = new System.Drawing.Size(228, 38);
             this._chkShowButtons.TabIndex = 10;
             this._chkShowButtons.Text = "ShowButtons";
             this._chkShowButtons.CheckedChanged += new System.EventHandler(this._chkShowButtons_CheckedChanged);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(7, 17);
+            this.AutoScaleBaseSize = new System.Drawing.Size(11, 27);
             this.ClientSize = new System.Drawing.Size(656, 405);
             this.Controls.Add(this._chkShowButtons);
             this.Controls.Add(this._rtfHelp);
@@ -248,6 +249,7 @@ namespace CustomEditors
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this._flex);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 85, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -547,52 +549,52 @@ namespace CustomEditors
 		}
 
 		// trace events
-		void _flex_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_BeforeEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			//Console.WriteLine("_flex_BeforeEdit {0} {1}", e.Row, e.Col);
 		}
-		void _flex_StartEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_StartEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			//_flex.Editor = _flex.Cols[e.Col].UserData as Control;
 			Console.WriteLine("_flex_StartEdit {0} {1}", e.Row, e.Col);
 		}
-		void _flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_SetupEditor {0} {1}", e.Row, e.Col);
 		}
-		void _flex_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_AfterEdit {0} {1}", e.Row, e.Col);
 		}
-		void _flex_CellButtonClick(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_CellButtonClick(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			MessageBox.Show(string.Format("_flex_CellButtonClick {0} {1}", e.Row, e.Col));
 			Console.WriteLine("_flex_CellButtonClick {0} {1}", e.Row, e.Col);
 		}
-		void _flex_ComboCloseUp(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_ComboCloseUp(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_ComboCloseUp {0} {1}", e.Row, e.Col);
 		}
-		void _flex_ComboDropDown(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_ComboDropDown(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_ComboDropDown {0} {1}", e.Row, e.Col);
 		}
-		void _flex_KeyDownEdit(object sender, C1.Win.C1FlexGrid.KeyEditEventArgs e)
+		void _flex_KeyDownEdit(object sender, C1.Win.FlexGrid.KeyEditEventArgs e)
 		{
 			//e.Handled = true;
 			Console.WriteLine("_flex_KeyDownEdit {0} {1} {2}", e.Row, e.Col, e.KeyCode);
 		}
-		void _flex_KeyPressEdit(object sender, C1.Win.C1FlexGrid.KeyPressEditEventArgs e)
+		void _flex_KeyPressEdit(object sender, C1.Win.FlexGrid.KeyPressEditEventArgs e)
 		{
 			if (_chkSetHandled.Checked)
 				e.Handled = true;
 			Console.WriteLine("_flex_KeyPressEdit {0} {1} {2}", e.Row, e.Col, (int)e.KeyChar);
 		}
-		void _flex_KeyUpEdit(object sender, C1.Win.C1FlexGrid.KeyEditEventArgs e)
+		void _flex_KeyUpEdit(object sender, C1.Win.FlexGrid.KeyEditEventArgs e)
 		{
 			Console.WriteLine("_flex_KeyUpEdit {0} {1} {2}", e.Row, e.Col, e.KeyCode);
 		}
-		void _flex_ValidateEdit(object sender, C1.Win.C1FlexGrid.ValidateEditEventArgs e)
+		void _flex_ValidateEdit(object sender, C1.Win.FlexGrid.ValidateEditEventArgs e)
 		{
 			//e.Cancel = true;
 			Console.WriteLine("_flex_ValidateEdit {0} {1}", e.Row, e.Col, e.Cancel);
@@ -642,7 +644,7 @@ namespace CustomEditors
 			if (e.KeyChar == 13)
 				e.Handled = true;
 		}
-		void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (_flex[e.Row, e.Col] is Image)
 				e.Image = _flex[e.Row, e.Col] as Image;

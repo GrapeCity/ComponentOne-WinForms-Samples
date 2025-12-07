@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Collections;
@@ -64,6 +64,7 @@ namespace CustomBrushes
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
 			this.panel2 = new System.Windows.Forms.Panel();

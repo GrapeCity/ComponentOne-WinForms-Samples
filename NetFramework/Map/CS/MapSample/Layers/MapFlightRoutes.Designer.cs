@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.Map.VirtualEarthRoadSource virtualEarthRoadSource5 = new C1.Win.Map.VirtualEarthRoadSource();
             this.radRoutesKiev = new System.Windows.Forms.RadioButton();
             this.radRoutesBern = new System.Windows.Forms.RadioButton();
             this.c1Map1 = new C1.Win.Map.C1Map();
@@ -46,10 +45,10 @@
             this.radRoutesKiev.AutoSize = true;
             this.radRoutesKiev.Checked = true;
             this.radRoutesKiev.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.radRoutesKiev.Location = new System.Drawing.Point(7, 2);
-            this.radRoutesKiev.Margin = new System.Windows.Forms.Padding(10, 3, 1, 1);
+            this.radRoutesKiev.Location = new System.Drawing.Point(13, 4);
+            this.radRoutesKiev.Margin = new System.Windows.Forms.Padding(13, 4, 1, 1);
             this.radRoutesKiev.Name = "radRoutesKiev";
-            this.radRoutesKiev.Size = new System.Drawing.Size(147, 25);
+            this.radRoutesKiev.Size = new System.Drawing.Size(181, 32);
             this.radRoutesKiev.TabIndex = 0;
             this.radRoutesKiev.TabStop = true;
             this.radRoutesKiev.Text = "Routes from Kiev";
@@ -60,10 +59,10 @@
             // 
             this.radRoutesBern.AutoSize = true;
             this.radRoutesBern.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.radRoutesBern.Location = new System.Drawing.Point(106, 2);
-            this.radRoutesBern.Margin = new System.Windows.Forms.Padding(1, 3, 1, 1);
+            this.radRoutesBern.Location = new System.Drawing.Point(196, 4);
+            this.radRoutesBern.Margin = new System.Windows.Forms.Padding(1, 4, 1, 1);
             this.radRoutesBern.Name = "radRoutesBern";
-            this.radRoutesBern.Size = new System.Drawing.Size(150, 25);
+            this.radRoutesBern.Size = new System.Drawing.Size(183, 32);
             this.radRoutesBern.TabIndex = 1;
             this.radRoutesBern.Text = "Routes from Bern";
             this.radRoutesBern.UseVisualStyleBackColor = true;
@@ -86,11 +85,9 @@
             this.c1Map1.PanTool.PanStyle.Stroke.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.c1Map1.PanTool.PanStyle.Stroke.Width = 1F;
             this.c1Map1.Proxy = null;
-            this.c1Map1.Size = new System.Drawing.Size(513, 512);
+            this.c1Map1.Size = new System.Drawing.Size(684, 630);
             this.c1Map1.TabIndex = 2;
             this.c1Map1.Text = "c1Map1";
-            virtualEarthRoadSource5.ApplicationId = null;
-            this.c1Map1.TileLayer.TileSource = virtualEarthRoadSource5;
             this.c1Map1.ZoomTool.ButtonStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.c1Map1.ZoomTool.ButtonStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.c1Map1.ZoomTool.ButtonStyle.Border.Bottom.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -147,20 +144,20 @@
             this.tableLayoutMap.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutMap.Name = "tableLayoutMap";
             this.tableLayoutMap.RowCount = 2;
-            this.tableLayoutMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutMap.Size = new System.Drawing.Size(513, 532);
+            this.tableLayoutMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutMap.Size = new System.Drawing.Size(684, 655);
             this.tableLayoutMap.TabIndex = 3;
             // 
             // panelMap
             // 
             this.panelMap.Controls.Add(this.c1Map1);
             this.panelMap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMap.Location = new System.Drawing.Point(0, 20);
+            this.panelMap.Location = new System.Drawing.Point(0, 25);
             this.panelMap.Margin = new System.Windows.Forms.Padding(0);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(513, 512);
+            this.panelMap.Size = new System.Drawing.Size(684, 630);
             this.panelMap.TabIndex = 4;
             // 
             // flowLayoutRb
@@ -171,16 +168,17 @@
             this.flowLayoutRb.Location = new System.Drawing.Point(1, 1);
             this.flowLayoutRb.Margin = new System.Windows.Forms.Padding(1);
             this.flowLayoutRb.Name = "flowLayoutRb";
-            this.flowLayoutRb.Size = new System.Drawing.Size(511, 18);
+            this.flowLayoutRb.Size = new System.Drawing.Size(682, 23);
             this.flowLayoutRb.TabIndex = 4;
             // 
             // MapFlightRoutes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutMap);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "MapFlightRoutes";
-            this.Size = new System.Drawing.Size(513, 532);
+            this.Size = new System.Drawing.Size(684, 655);
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).EndInit();
             this.tableLayoutMap.ResumeLayout(false);
             this.panelMap.ResumeLayout(false);

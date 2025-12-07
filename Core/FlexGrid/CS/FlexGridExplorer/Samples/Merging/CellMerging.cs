@@ -7,7 +7,7 @@ namespace FlexGridExplorer.Samples
     {
         public CellMerging()
         {
-            propertiesTsCbox.SelectedItem = "None";
+            propertiesTsCbox.SelectedItem = "Free";
         }
 
         protected override void OnLoad(EventArgs e)

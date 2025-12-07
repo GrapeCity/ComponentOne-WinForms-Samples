@@ -1,7 +1,7 @@
 ﻿using C1.DataCollection;
 using C1.DataFilter;
 using C1.Win.C1Input;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Win.DataFilter;
 using System;
 using System.Collections.Generic;

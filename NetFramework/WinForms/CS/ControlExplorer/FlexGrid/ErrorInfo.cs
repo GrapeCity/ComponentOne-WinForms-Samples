@@ -54,7 +54,7 @@ namespace ControlExplorer.FlexGrid
         }
 
         // provide custom error information in addition to the IDataErrorInfo stuff
-        void _flex_GetCellErrorInfo(object sender, C1.Win.C1FlexGrid.GetErrorInfoEventArgs e)
+        void _flex_GetCellErrorInfo(object sender, C1.Win.FlexGrid.GetErrorInfoEventArgs e)
         {
             if (flexGrid.Cols[e.Col].Name == "UnitPrice")
             {
@@ -66,7 +66,7 @@ namespace ControlExplorer.FlexGrid
                 }
             }
         }
-        void _flex_GetRowErrorInfo(object sender, C1.Win.C1FlexGrid.GetErrorInfoEventArgs e)
+        void _flex_GetRowErrorInfo(object sender, C1.Win.FlexGrid.GetErrorInfoEventArgs e)
         {
             if (object.Equals(flexGrid[e.Row, "Discontinued"], true))
             {

@@ -37,7 +37,7 @@ namespace DataFilterAndDataEngine
             this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.SamplePanel = new System.Windows.Forms.Panel();
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -409,7 +409,7 @@ namespace DataFilterAndDataEngine
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Panel SamplePanel;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
         private System.Windows.Forms.Panel LeftPanel;

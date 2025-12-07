@@ -13,7 +13,7 @@ namespace ErrorInfo
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -53,33 +53,36 @@ namespace ErrorInfo
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.Name = "_flex";
-			this._flex.Size = new System.Drawing.Size(472, 285);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			this._flex.GetRowErrorInfo += new C1.Win.C1FlexGrid.GetErrorInfoEventHandler(this._flex_GetRowErrorInfo);
-			this._flex.GetCellErrorInfo += new C1.Win.C1FlexGrid.GetErrorInfoEventHandler(this._flex_GetCellErrorInfo);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(472, 285);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._flex});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Display Error Information";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Name = "_flex";
+            this._flex.Size = new System.Drawing.Size(472, 285);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.GetCellErrorInfo += new C1.Win.FlexGrid.GetErrorInfoEventHandler(this._flex_GetCellErrorInfo);
+            this._flex.GetRowErrorInfo += new C1.Win.FlexGrid.GetErrorInfoEventHandler(this._flex_GetRowErrorInfo);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(472, 285);
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Display Error Information";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -130,7 +133,7 @@ namespace ErrorInfo
 		}
 
 		// provide custom error information in addition to the IDataErrorInfo stuff
-		void _flex_GetCellErrorInfo(object sender, C1.Win.C1FlexGrid.GetErrorInfoEventArgs e)
+		void _flex_GetCellErrorInfo(object sender, C1.Win.FlexGrid.GetErrorInfoEventArgs e)
 		{
 			if (_flex.Cols[e.Col].Name == "UnitPrice")
 			{
@@ -142,7 +145,7 @@ namespace ErrorInfo
 				}
 			}
 		}
-		void _flex_GetRowErrorInfo(object sender, C1.Win.C1FlexGrid.GetErrorInfoEventArgs e)
+		void _flex_GetRowErrorInfo(object sender, C1.Win.FlexGrid.GetErrorInfoEventArgs e)
 		{
 			if (object.Equals(_flex[e.Row, "Discontinued"], true))
 			{

@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.TreeView.C1TreeColumn c1TreeColumn1 = new C1.Win.TreeView.C1TreeColumn();
             C1.Win.TreeView.C1TreeColumn c1TreeColumn2 = new C1.Win.TreeView.C1TreeColumn();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             this.dataSet11 = new CustomNodes.DataSet1();
             this.productsTableAdapter1 = new CustomNodes.DataSet1TableAdapters.ProductsTableAdapter();
             this.categoriesTableAdapter1 = new CustomNodes.DataSet1TableAdapters.CategoriesTableAdapter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1TreeView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -113,7 +116,7 @@
         private DataSet1 dataSet11;
         private DataSet1TableAdapters.ProductsTableAdapter productsTableAdapter1;
         private DataSet1TableAdapters.CategoriesTableAdapter categoriesTableAdapter1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }
 

@@ -22,22 +22,22 @@ Partial Class PageDataBound
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim C1GaugeLabels4 As C1.Win.C1Gauge.C1GaugeLabels = New C1.Win.C1Gauge.C1GaugeLabels
-        Dim C1GaugeMarks4 As C1.Win.C1Gauge.C1GaugeMarks = New C1.Win.C1Gauge.C1GaugeMarks
-        Dim C1GaugeRange10 As C1.Win.C1Gauge.C1GaugeRange = New C1.Win.C1Gauge.C1GaugeRange
-        Dim C1GaugeRange11 As C1.Win.C1Gauge.C1GaugeRange = New C1.Win.C1Gauge.C1GaugeRange
-        Dim C1GaugeRange12 As C1.Win.C1Gauge.C1GaugeRange = New C1.Win.C1Gauge.C1GaugeRange
-        Dim C1GaugeSingleLabel10 As C1.Win.C1Gauge.C1GaugeSingleLabel = New C1.Win.C1Gauge.C1GaugeSingleLabel
-        Dim C1GaugeSingleLabel11 As C1.Win.C1Gauge.C1GaugeSingleLabel = New C1.Win.C1Gauge.C1GaugeSingleLabel
-        Dim C1GaugeSingleLabel12 As C1.Win.C1Gauge.C1GaugeSingleLabel = New C1.Win.C1Gauge.C1GaugeSingleLabel
-        Dim C1GaugeCaption13 As C1.Win.C1Gauge.C1GaugeCaption = New C1.Win.C1Gauge.C1GaugeCaption
-        Dim C1GaugeCaption14 As C1.Win.C1Gauge.C1GaugeCaption = New C1.Win.C1Gauge.C1GaugeCaption
-        Dim C1GaugeCaption15 As C1.Win.C1Gauge.C1GaugeCaption = New C1.Win.C1Gauge.C1GaugeCaption
-        Dim C1GaugeCaption16 As C1.Win.C1Gauge.C1GaugeCaption = New C1.Win.C1Gauge.C1GaugeCaption
-        Dim C1GaugePointer7 As C1.Win.C1Gauge.C1GaugePointer = New C1.Win.C1Gauge.C1GaugePointer
-        Dim C1GaugePointer8 As C1.Win.C1Gauge.C1GaugePointer = New C1.Win.C1Gauge.C1GaugePointer
-        Me.c1Gauge1 = New C1.Win.C1Gauge.C1Gauge
-        Me.c1LinearGauge1 = New C1.Win.C1Gauge.C1LinearGauge
+        Dim C1GaugeLabels4 As C1.Win.Gauge.C1GaugeLabels = New C1.Win.Gauge.C1GaugeLabels
+        Dim C1GaugeMarks4 As C1.Win.Gauge.C1GaugeMarks = New C1.Win.Gauge.C1GaugeMarks
+        Dim C1GaugeRange10 As C1.Win.Gauge.C1GaugeRange = New C1.Win.Gauge.C1GaugeRange
+        Dim C1GaugeRange11 As C1.Win.Gauge.C1GaugeRange = New C1.Win.Gauge.C1GaugeRange
+        Dim C1GaugeRange12 As C1.Win.Gauge.C1GaugeRange = New C1.Win.Gauge.C1GaugeRange
+        Dim C1GaugeSingleLabel10 As C1.Win.Gauge.C1GaugeSingleLabel = New C1.Win.Gauge.C1GaugeSingleLabel
+        Dim C1GaugeSingleLabel11 As C1.Win.Gauge.C1GaugeSingleLabel = New C1.Win.Gauge.C1GaugeSingleLabel
+        Dim C1GaugeSingleLabel12 As C1.Win.Gauge.C1GaugeSingleLabel = New C1.Win.Gauge.C1GaugeSingleLabel
+        Dim C1GaugeCaption13 As C1.Win.Gauge.C1GaugeCaption = New C1.Win.Gauge.C1GaugeCaption
+        Dim C1GaugeCaption14 As C1.Win.Gauge.C1GaugeCaption = New C1.Win.Gauge.C1GaugeCaption
+        Dim C1GaugeCaption15 As C1.Win.Gauge.C1GaugeCaption = New C1.Win.Gauge.C1GaugeCaption
+        Dim C1GaugeCaption16 As C1.Win.Gauge.C1GaugeCaption = New C1.Win.Gauge.C1GaugeCaption
+        Dim C1GaugePointer7 As C1.Win.Gauge.C1GaugePointer = New C1.Win.Gauge.C1GaugePointer
+        Dim C1GaugePointer8 As C1.Win.Gauge.C1GaugePointer = New C1.Win.Gauge.C1GaugePointer
+        Me.c1Gauge1 = New C1.Win.Gauge.C1Gauge
+        Me.c1LinearGauge1 = New C1.Win.Gauge.C1LinearGauge
         Me.label1 = New System.Windows.Forms.Label
         Me.dataGridView1 = New System.Windows.Forms.DataGridView
         Me.gaugePanel.SuspendLayout()
@@ -61,7 +61,7 @@ Partial Class PageDataBound
         Me.c1Gauge1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.c1Gauge1.Gauges.AddRange(New C1.Win.C1Gauge.C1GaugeBase() {Me.c1LinearGauge1})
+        Me.c1Gauge1.Gauges.AddRange(New C1.Win.Gauge.C1GaugeBase() {Me.c1LinearGauge1})
         Me.c1Gauge1.Location = New System.Drawing.Point(9, 225)
         Me.c1Gauge1.Name = "c1Gauge1"
         Me.c1Gauge1.Size = New System.Drawing.Size(371, 204)
@@ -76,28 +76,28 @@ Partial Class PageDataBound
         C1GaugeLabels4.Interval = 25
         C1GaugeLabels4.Location = 0
         C1GaugeLabels4.ViewTag = CType(641069907430065399, Long)
-        C1GaugeMarks4.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out
+        C1GaugeMarks4.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out
         C1GaugeMarks4.Border.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        C1GaugeMarks4.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.None
+        C1GaugeMarks4.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.None
         C1GaugeMarks4.Interval = 25
         C1GaugeMarks4.Length = 95
         C1GaugeMarks4.Location = 5
         C1GaugeMarks4.ViewTag = CType(643884661361599274, Long)
         C1GaugeMarks4.Width = 0.01
-        C1GaugeRange10.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out
+        C1GaugeRange10.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out
         C1GaugeRange10.Border.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         C1GaugeRange10.Filling.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         C1GaugeRange10.Location = 15
         C1GaugeRange10.ToPointerIndex = 100
         C1GaugeRange10.ViewTag = CType(638536618060574778, Long)
         C1GaugeRange10.Width = 20
-        C1GaugeRange11.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out
+        C1GaugeRange11.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out
         C1GaugeRange11.Border.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         C1GaugeRange11.Filling.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         C1GaugeRange11.ToPointerIndex = 0
         C1GaugeRange11.ViewTag = CType(639099568095428233, Long)
         C1GaugeRange11.Width = 20
-        C1GaugeRange12.Alignment = C1.Win.C1Gauge.C1GaugeAlignment.Out
+        C1GaugeRange12.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out
         C1GaugeRange12.Border.Color = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         C1GaugeRange12.Filling.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         C1GaugeRange12.Location = 75
@@ -122,7 +122,7 @@ Partial Class PageDataBound
         C1GaugeSingleLabel12.Position = -0.15
         C1GaugeSingleLabel12.TextAngle = -30
         C1GaugeSingleLabel12.ViewTag = CType(655706618222616595, Long)
-        Me.c1LinearGauge1.Decorators.AddRange(New C1.Win.C1Gauge.C1GaugeDecorator() {C1GaugeLabels4, C1GaugeMarks4, C1GaugeRange10, C1GaugeRange11, C1GaugeRange12, C1GaugeSingleLabel10, C1GaugeSingleLabel11, C1GaugeSingleLabel12})
+        Me.c1LinearGauge1.Decorators.AddRange(New C1.Win.Gauge.C1GaugeDecorator() {C1GaugeLabels4, C1GaugeMarks4, C1GaugeRange10, C1GaugeRange11, C1GaugeRange12, C1GaugeSingleLabel10, C1GaugeSingleLabel11, C1GaugeSingleLabel12})
         C1GaugeCaption13.CenterPointY = 0.2
         C1GaugeCaption13.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         C1GaugeCaption13.RotateAngle = -30
@@ -147,13 +147,13 @@ Partial Class PageDataBound
         C1GaugeCaption16.CenterPointY = 1.07
         C1GaugeCaption16.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         C1GaugeCaption16.Text = "fixed viewport size"
-        Me.c1LinearGauge1.FaceShapes.AddRange(New C1.Win.C1Gauge.C1GaugeBaseShape() {C1GaugeCaption13, C1GaugeCaption14, C1GaugeCaption15, C1GaugeCaption16})
+        Me.c1LinearGauge1.FaceShapes.AddRange(New C1.Win.Gauge.C1GaugeBaseShape() {C1GaugeCaption13, C1GaugeCaption14, C1GaugeCaption15, C1GaugeCaption16})
         Me.c1LinearGauge1.Maximum = 125
         C1GaugePointer7.ViewTag = CType(635440368798580392, Long)
         C1GaugePointer7.Visible = False
         C1GaugePointer8.ViewTag = CType(635158893673981477, Long)
         C1GaugePointer8.Visible = False
-        Me.c1LinearGauge1.MorePointers.AddRange(New C1.Win.C1Gauge.C1GaugePointer() {C1GaugePointer7, C1GaugePointer8})
+        Me.c1LinearGauge1.MorePointers.AddRange(New C1.Win.Gauge.C1GaugePointer() {C1GaugePointer7, C1GaugePointer8})
         Me.c1LinearGauge1.Name = "c1LinearGauge1"
         Me.c1LinearGauge1.Pointer.Visible = False
         Me.c1LinearGauge1.Viewport.Height = -200
@@ -195,8 +195,8 @@ Partial Class PageDataBound
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents c1Gauge1 As C1.Win.C1Gauge.C1Gauge
-    Private WithEvents c1LinearGauge1 As C1.Win.C1Gauge.C1LinearGauge
+    Private WithEvents c1Gauge1 As C1.Win.Gauge.C1Gauge
+    Private WithEvents c1LinearGauge1 As C1.Win.Gauge.C1LinearGauge
     Private WithEvents label1 As System.Windows.Forms.Label
     Private WithEvents dataGridView1 As System.Windows.Forms.DataGridView
 

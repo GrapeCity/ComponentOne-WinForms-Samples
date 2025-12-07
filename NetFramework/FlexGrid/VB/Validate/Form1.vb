@@ -29,11 +29,11 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents _errorProvider As System.Windows.Forms.ErrorProvider
     Friend WithEvents Label1 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me._errorProvider = New System.Windows.Forms.ErrorProvider()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,7 +50,7 @@ Public Class Form1
         Me._flex.Location = New System.Drawing.Point(32, 40)
         Me._flex.Name = "_flex"
         Me._flex.Size = New System.Drawing.Size(384, 272)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -88,7 +88,7 @@ Public Class Form1
 
 #End Region
 
-    Private Sub _flex_ValidateEdit(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.ValidateEditEventArgs) Handles _flex.ValidateEdit
+    Private Sub _flex_ValidateEdit(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.ValidateEditEventArgs) Handles _flex.ValidateEdit
 
         ' clear error provider
         _errorProvider.SetError(_flex, "")

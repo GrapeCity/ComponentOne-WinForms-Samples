@@ -30,7 +30,7 @@ namespace DataFilterAndDataEngine.UI
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -59,7 +59,7 @@ namespace DataFilterAndDataEngine.UI
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
@@ -103,6 +103,6 @@ namespace DataFilterAndDataEngine.UI
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private C1.Win.DataFilter.C1DataFilter c1DataFilter1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

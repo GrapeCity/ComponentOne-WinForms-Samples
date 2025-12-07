@@ -22,51 +22,51 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim PanelElement1 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement1 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement1 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim Slide1 As C1.Win.C1Tile.Slide = New C1.Win.C1Tile.Slide
-        Dim ImageElement2 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement2 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement2 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim Slide2 As C1.Win.C1Tile.Slide = New C1.Win.C1Tile.Slide
-        Dim ImageElement3 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement3 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement3 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim Slide3 As C1.Win.C1Tile.Slide = New C1.Win.C1Tile.Slide
-        Dim ImageElement4 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement4 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement4 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim Slide4 As C1.Win.C1Tile.Slide = New C1.Win.C1Tile.Slide
-        Dim ImageElement5 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement5 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement5 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim Slide5 As C1.Win.C1Tile.Slide = New C1.Win.C1Tile.Slide
-        Dim ImageElement6 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement6 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement6 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement7 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement7 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Me.C1TileControl1 = New C1.Win.C1Tile.C1TileControl
-        Me.group1 = New C1.Win.C1Tile.Group
-        Me.tile1 = New C1.Win.C1Tile.Tile
-        Me.tile2 = New C1.Win.C1Tile.Tile
-        Me.tile3 = New C1.Win.C1Tile.Tile
-        Me.tile4 = New C1.Win.C1Tile.Tile
-        Me.tile5 = New C1.Win.C1Tile.Tile
-        Me.tile6 = New C1.Win.C1Tile.Tile
-        Me.tile7 = New C1.Win.C1Tile.Tile
-        Me.tile8 = New C1.Win.C1Tile.Tile
-        Me.tile9 = New C1.Win.C1Tile.Tile
-        Me.tile10 = New C1.Win.C1Tile.Tile
-        Me.tile11 = New C1.Win.C1Tile.Tile
-        Me.tile12 = New C1.Win.C1Tile.Tile
-        Me.tile13 = New C1.Win.C1Tile.Tile
-        Me.tile14 = New C1.Win.C1Tile.Tile
-        Me.tile15 = New C1.Win.C1Tile.Tile
-        Me.tile16 = New C1.Win.C1Tile.Tile
-        Me.tile17 = New C1.Win.C1Tile.Tile
-        Me.tile18 = New C1.Win.C1Tile.Tile
+        Dim PanelElement1 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement1 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement1 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim Slide1 As C1.Win.Tile.Slide = New C1.Win.Tile.Slide
+        Dim ImageElement2 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement2 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement2 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim Slide2 As C1.Win.Tile.Slide = New C1.Win.Tile.Slide
+        Dim ImageElement3 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement3 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement3 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim Slide3 As C1.Win.Tile.Slide = New C1.Win.Tile.Slide
+        Dim ImageElement4 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement4 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement4 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim Slide4 As C1.Win.Tile.Slide = New C1.Win.Tile.Slide
+        Dim ImageElement5 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement5 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement5 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim Slide5 As C1.Win.Tile.Slide = New C1.Win.Tile.Slide
+        Dim ImageElement6 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement6 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement6 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement7 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement7 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Me.C1TileControl1 = New C1.Win.Tile.C1TileControl
+        Me.group1 = New C1.Win.Tile.Group
+        Me.tile1 = New C1.Win.Tile.Tile
+        Me.tile2 = New C1.Win.Tile.Tile
+        Me.tile3 = New C1.Win.Tile.Tile
+        Me.tile4 = New C1.Win.Tile.Tile
+        Me.tile5 = New C1.Win.Tile.Tile
+        Me.tile6 = New C1.Win.Tile.Tile
+        Me.tile7 = New C1.Win.Tile.Tile
+        Me.tile8 = New C1.Win.Tile.Tile
+        Me.tile9 = New C1.Win.Tile.Tile
+        Me.tile10 = New C1.Win.Tile.Tile
+        Me.tile11 = New C1.Win.Tile.Tile
+        Me.tile12 = New C1.Win.Tile.Tile
+        Me.tile13 = New C1.Win.Tile.Tile
+        Me.tile14 = New C1.Win.Tile.Tile
+        Me.tile15 = New C1.Win.Tile.Tile
+        Me.tile16 = New C1.Win.Tile.Tile
+        Me.tile17 = New C1.Win.Tile.Tile
+        Me.tile18 = New C1.Win.Tile.Tile
         Me.SuspendLayout()
         '
         'C1TileControl1
@@ -81,14 +81,14 @@ Partial Class Form1
         PanelElement1.Margin = New System.Windows.Forms.Padding(10, 6, 10, 6)
         Me.C1TileControl1.DefaultTemplate.Elements.Add(PanelElement1)
         Slide1.Description = "from bottom"
-        ImageElement2.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch
-        ImageElement2.ImageSelector = C1.Win.C1Tile.ImageSelector.Image1
+        ImageElement2.ImageLayout = C1.Win.Tile.ForeImageLayout.Stretch
+        ImageElement2.ImageSelector = C1.Win.Tile.ImageSelector.Image1
         PanelElement2.AlignmentOfContents = System.Drawing.ContentAlignment.TopRight
         PanelElement2.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        TextElement2.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
-        TextElement2.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement2.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
+        TextElement2.FontItalic = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement2.FontSize = 20.0!
-        TextElement2.TextSelector = C1.Win.C1Tile.TextSelector.Text1
+        TextElement2.TextSelector = C1.Win.Tile.TextSelector.Text1
         PanelElement2.Children.Add(TextElement2)
         PanelElement2.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement2.FixedHeight = 42
@@ -97,73 +97,73 @@ Partial Class Form1
         Slide1.Elements.Add(PanelElement2)
         Slide1.TransitionDuration = 1500
         Slide2.Description = "fade 1"
-        ImageElement3.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch
-        ImageElement3.ImageSelector = C1.Win.C1Tile.ImageSelector.Image3
+        ImageElement3.ImageLayout = C1.Win.Tile.ForeImageLayout.Stretch
+        ImageElement3.ImageSelector = C1.Win.Tile.ImageSelector.Image3
         PanelElement3.AlignmentOfContents = System.Drawing.ContentAlignment.TopRight
         PanelElement3.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        TextElement3.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
-        TextElement3.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement3.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
+        TextElement3.FontItalic = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement3.FontSize = 20.0!
-        TextElement3.TextSelector = C1.Win.C1Tile.TextSelector.Text3
+        TextElement3.TextSelector = C1.Win.Tile.TextSelector.Text3
         PanelElement3.Children.Add(TextElement3)
         PanelElement3.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement3.FixedHeight = 42
         PanelElement3.Padding = New System.Windows.Forms.Padding(0, 0, 12, 0)
         Slide2.Elements.Add(ImageElement3)
         Slide2.Elements.Add(PanelElement3)
-        Slide2.Transition = C1.Win.C1Tile.SlideTransition.Fade
+        Slide2.Transition = C1.Win.Tile.SlideTransition.Fade
         Slide2.TransitionDuration = 1500
         Slide3.Description = "from top"
-        ImageElement4.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch
-        ImageElement4.ImageSelector = C1.Win.C1Tile.ImageSelector.Image2
+        ImageElement4.ImageLayout = C1.Win.Tile.ForeImageLayout.Stretch
+        ImageElement4.ImageSelector = C1.Win.Tile.ImageSelector.Image2
         PanelElement4.AlignmentOfContents = System.Drawing.ContentAlignment.TopRight
         PanelElement4.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        TextElement4.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
-        TextElement4.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement4.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
+        TextElement4.FontItalic = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement4.FontSize = 20.0!
-        TextElement4.TextSelector = C1.Win.C1Tile.TextSelector.Text2
+        TextElement4.TextSelector = C1.Win.Tile.TextSelector.Text2
         PanelElement4.Children.Add(TextElement4)
         PanelElement4.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement4.FixedHeight = 42
         PanelElement4.Padding = New System.Windows.Forms.Padding(0, 0, 12, 0)
         Slide3.Elements.Add(ImageElement4)
         Slide3.Elements.Add(PanelElement4)
-        Slide3.Transition = C1.Win.C1Tile.SlideTransition.PushFromTop
+        Slide3.Transition = C1.Win.Tile.SlideTransition.PushFromTop
         Slide3.TransitionAcceleration = 2
         Slide3.TransitionDuration = 1500
         Slide4.Description = "fade 2"
-        ImageElement5.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch
-        ImageElement5.ImageSelector = C1.Win.C1Tile.ImageSelector.Image5
+        ImageElement5.ImageLayout = C1.Win.Tile.ForeImageLayout.Stretch
+        ImageElement5.ImageSelector = C1.Win.Tile.ImageSelector.Image5
         PanelElement5.AlignmentOfContents = System.Drawing.ContentAlignment.TopRight
         PanelElement5.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        TextElement5.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
-        TextElement5.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement5.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
+        TextElement5.FontItalic = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement5.FontSize = 20.0!
-        TextElement5.TextSelector = C1.Win.C1Tile.TextSelector.Text5
+        TextElement5.TextSelector = C1.Win.Tile.TextSelector.Text5
         PanelElement5.Children.Add(TextElement5)
         PanelElement5.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement5.FixedHeight = 42
         PanelElement5.Padding = New System.Windows.Forms.Padding(0, 0, 12, 0)
         Slide4.Elements.Add(ImageElement5)
         Slide4.Elements.Add(PanelElement5)
-        Slide4.Transition = C1.Win.C1Tile.SlideTransition.Fade
+        Slide4.Transition = C1.Win.Tile.SlideTransition.Fade
         Slide4.TransitionDuration = 1500
         Slide5.Description = "from left"
-        ImageElement6.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch
-        ImageElement6.ImageSelector = C1.Win.C1Tile.ImageSelector.Image4
+        ImageElement6.ImageLayout = C1.Win.Tile.ForeImageLayout.Stretch
+        ImageElement6.ImageSelector = C1.Win.Tile.ImageSelector.Image4
         PanelElement6.AlignmentOfContents = System.Drawing.ContentAlignment.TopRight
         PanelElement6.BackColor = System.Drawing.Color.FromArgb(CType(CType(176, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        TextElement6.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
-        TextElement6.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement6.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
+        TextElement6.FontItalic = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement6.FontSize = 20.0!
-        TextElement6.TextSelector = C1.Win.C1Tile.TextSelector.Text4
+        TextElement6.TextSelector = C1.Win.Tile.TextSelector.Text4
         PanelElement6.Children.Add(TextElement6)
         PanelElement6.Dock = System.Windows.Forms.DockStyle.Top
         PanelElement6.FixedHeight = 42
         PanelElement6.Padding = New System.Windows.Forms.Padding(0, 0, 12, 0)
         Slide5.Elements.Add(ImageElement6)
         Slide5.Elements.Add(PanelElement6)
-        Slide5.Transition = C1.Win.C1Tile.SlideTransition.PushFromLeft
+        Slide5.Transition = C1.Win.Tile.SlideTransition.PushFromLeft
         Slide5.TransitionAcceleration = 2
         Slide5.TransitionDuration = 1500
         Me.C1TileControl1.DefaultTemplate.Slides.Add(Slide1)
@@ -173,7 +173,7 @@ Partial Class Form1
         Me.C1TileControl1.DefaultTemplate.Slides.Add(Slide5)
         PanelElement7.Alignment = System.Drawing.ContentAlignment.BottomLeft
         PanelElement7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        TextElement7.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        TextElement7.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         TextElement7.FontSize = 12.0!
         PanelElement7.Children.Add(TextElement7)
         PanelElement7.Margin = New System.Windows.Forms.Padding(6, 0, 0, 6)
@@ -352,25 +352,25 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents C1TileControl1 As C1.Win.C1Tile.C1TileControl
-    Friend WithEvents group1 As C1.Win.C1Tile.Group
-    Friend WithEvents tile1 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile2 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile3 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile4 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile5 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile6 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile7 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile8 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile9 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile10 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile11 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile12 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile13 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile14 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile15 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile16 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile17 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile18 As C1.Win.C1Tile.Tile
+    Friend WithEvents C1TileControl1 As C1.Win.Tile.C1TileControl
+    Friend WithEvents group1 As C1.Win.Tile.Group
+    Friend WithEvents tile1 As C1.Win.Tile.Tile
+    Friend WithEvents tile2 As C1.Win.Tile.Tile
+    Friend WithEvents tile3 As C1.Win.Tile.Tile
+    Friend WithEvents tile4 As C1.Win.Tile.Tile
+    Friend WithEvents tile5 As C1.Win.Tile.Tile
+    Friend WithEvents tile6 As C1.Win.Tile.Tile
+    Friend WithEvents tile7 As C1.Win.Tile.Tile
+    Friend WithEvents tile8 As C1.Win.Tile.Tile
+    Friend WithEvents tile9 As C1.Win.Tile.Tile
+    Friend WithEvents tile10 As C1.Win.Tile.Tile
+    Friend WithEvents tile11 As C1.Win.Tile.Tile
+    Friend WithEvents tile12 As C1.Win.Tile.Tile
+    Friend WithEvents tile13 As C1.Win.Tile.Tile
+    Friend WithEvents tile14 As C1.Win.Tile.Tile
+    Friend WithEvents tile15 As C1.Win.Tile.Tile
+    Friend WithEvents tile16 As C1.Win.Tile.Tile
+    Friend WithEvents tile17 As C1.Win.Tile.Tile
+    Friend WithEvents tile18 As C1.Win.Tile.Tile
 
 End Class

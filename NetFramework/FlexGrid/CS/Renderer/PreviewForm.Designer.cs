@@ -30,7 +30,7 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
-            this.CustomGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.CustomGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -68,7 +68,7 @@
             // 
             // CustomGrid
             // 
-            this.CustomGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.CustomGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.CustomGrid.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:24;}\t";
             this.CustomGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CustomGrid.Location = new System.Drawing.Point(0, 0);
@@ -99,6 +99,6 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
-        public C1.Win.C1FlexGrid.C1FlexGrid CustomGrid;
+        public C1.Win.FlexGrid.C1FlexGrid CustomGrid;
     }
 }

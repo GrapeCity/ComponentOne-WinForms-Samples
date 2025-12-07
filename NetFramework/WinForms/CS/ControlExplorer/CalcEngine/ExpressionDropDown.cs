@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.CalcEngine;
 using C1.CalcEngine.ExcelEngine;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.CalcEngine.ExpressionEngine;
 using C1.Win.C1Input;
 using C1.Win.Ribbon;

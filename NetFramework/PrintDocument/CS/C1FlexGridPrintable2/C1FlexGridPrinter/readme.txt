@@ -14,6 +14,6 @@ The C1FlexGridPrinter sample includes:
  - Hyperlinks in the resulting C1PrintDocument (see the Hyperlink sample).
  - Easy customization of the printout via the rich C1PrintDocument object model.
 This project references the following NuGet packages:
-  - C1.Win.C1FlexGrid;
+  - C1.Win.FlexGrid;
   - C1.Win.Printing.
 For details and maintenance log, please see readme-more.txt.

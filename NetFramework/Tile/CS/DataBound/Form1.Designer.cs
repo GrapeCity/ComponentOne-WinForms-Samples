@@ -28,16 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1Tile.PanelElement panelElement1 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.TextElement textElement1 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.TextElement textElement2 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement1 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.PropertyMapping propertyMapping1 = new C1.Win.C1Tile.PropertyMapping();
-            C1.Win.C1Tile.PropertyMapping propertyMapping2 = new C1.Win.C1Tile.PropertyMapping();
-            C1.Win.C1Tile.PropertyMapping propertyMapping3 = new C1.Win.C1Tile.PropertyMapping();
-            C1.Win.C1Tile.PropertyMapping propertyMapping4 = new C1.Win.C1Tile.PropertyMapping();
-            C1.Win.C1Tile.PropertyMapping propertyMapping5 = new C1.Win.C1Tile.PropertyMapping();
-            C1.Win.C1Tile.PropertyMapping propertyMapping6 = new C1.Win.C1Tile.PropertyMapping();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            C1.Win.Tile.PanelElement panelElement1 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.TextElement textElement1 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.TextElement textElement2 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement1 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.PropertyMapping propertyMapping1 = new C1.Win.Tile.PropertyMapping();
+            C1.Win.Tile.PropertyMapping propertyMapping2 = new C1.Win.Tile.PropertyMapping();
+            C1.Win.Tile.PropertyMapping propertyMapping3 = new C1.Win.Tile.PropertyMapping();
+            C1.Win.Tile.PropertyMapping propertyMapping4 = new C1.Win.Tile.PropertyMapping();
+            C1.Win.Tile.PropertyMapping propertyMapping5 = new C1.Win.Tile.PropertyMapping();
+            C1.Win.Tile.PropertyMapping propertyMapping6 = new C1.Win.Tile.PropertyMapping();
             this.dataSet11 = new DataBound.DataSet1();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
             this.productsConnection = new System.Data.OleDb.OleDbConnection();
@@ -46,11 +49,11 @@
             this.categoriesDataAdapter = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbSelectCommand3 = new System.Data.OleDb.OleDbCommand();
             this.suppliersDataAdapter = new System.Data.OleDb.OleDbDataAdapter();
-            this.c1TileControl1 = new C1.Win.C1Tile.C1TileControl();
-            this.group1 = new C1.Win.C1Tile.Group();
-            this.tile1 = new C1.Win.C1Tile.Tile();
-            this.tile2 = new C1.Win.C1Tile.Tile();
-            this.tile3 = new C1.Win.C1Tile.Tile();
+            this.c1TileControl1 = new C1.Win.Tile.C1TileControl();
+            this.group1 = new C1.Win.Tile.Group();
+            this.tile1 = new C1.Win.Tile.Tile();
+            this.tile2 = new C1.Win.Tile.Tile();
+            this.tile3 = new C1.Win.Tile.Tile();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -151,19 +154,19 @@
             // 
             // 
             panelElement1.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            textElement1.FontBold = C1.Win.C1Tile.ThreeStateBoolean.True;
+            textElement1.FontBold = C1.Win.Tile.ThreeStateBoolean.True;
             panelElement1.Children.Add(textElement1);
             panelElement1.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
             textElement2.Alignment = System.Drawing.ContentAlignment.BottomLeft;
-            textElement2.FontItalic = C1.Win.C1Tile.ThreeStateBoolean.True;
+            textElement2.FontItalic = C1.Win.Tile.ThreeStateBoolean.True;
             textElement2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            textElement2.ForeColorSelector = C1.Win.C1Tile.ForeColorSelector.Unbound;
+            textElement2.ForeColorSelector = C1.Win.Tile.ForeColorSelector.Unbound;
             textElement2.Margin = new System.Windows.Forms.Padding(10, 6, 10, 6);
-            textElement2.TextSelector = C1.Win.C1Tile.TextSelector.Text1;
+            textElement2.TextSelector = C1.Win.Tile.TextSelector.Text1;
             imageElement1.Alignment = System.Drawing.ContentAlignment.BottomRight;
             imageElement1.Image = global::DataBound.Properties.Resources.flags;
             imageElement1.ImageRows = 17;
-            imageElement1.ImageSelector = C1.Win.C1Tile.ImageSelector.Unbound;
+            imageElement1.ImageSelector = C1.Win.Tile.ImageSelector.Unbound;
             this.c1TileControl1.DefaultTemplate.Elements.Add(panelElement1);
             this.c1TileControl1.DefaultTemplate.Elements.Add(textElement2);
             this.c1TileControl1.DefaultTemplate.Elements.Add(imageElement1);
@@ -174,41 +177,41 @@
             this.c1TileControl1.Name = "c1TileControl1";
             this.c1TileControl1.Padding = new System.Windows.Forms.Padding(0, 48, 0, 0);
             propertyMapping1.DataField = "ProductID";
-            propertyMapping1.TileProperty = C1.Win.C1Tile.TileProperty.Tag;
+            propertyMapping1.TileProperty = C1.Win.Tile.TileProperty.Tag;
             propertyMapping2.DataField = "CategoryID";
             propertyMapping2.Lookup.DataSource = this.dataSet11;
             propertyMapping2.Lookup.DisplayMember = "Categories.CategoryName";
             propertyMapping2.Lookup.ValueMember = "Categories.CategoryID";
-            propertyMapping2.TileProperty = C1.Win.C1Tile.TileProperty.Group;
+            propertyMapping2.TileProperty = C1.Win.Tile.TileProperty.Group;
             propertyMapping3.DataField = "ProductName";
-            propertyMapping3.TileProperty = C1.Win.C1Tile.TileProperty.Text;
+            propertyMapping3.TileProperty = C1.Win.Tile.TileProperty.Text;
             propertyMapping4.DataField = "SupplierID";
             propertyMapping4.Lookup.DataSource = this.dataSet11;
             propertyMapping4.Lookup.DisplayMember = "Suppliers.Country";
             propertyMapping4.Lookup.ValueMember = "Suppliers.SupplierID";
-            propertyMapping4.TileProperty = C1.Win.C1Tile.TileProperty.Text1;
+            propertyMapping4.TileProperty = C1.Win.Tile.TileProperty.Text1;
             propertyMapping5.DataField = "SupplierID";
             propertyMapping5.Lookup.DataSource = this.dataSet11;
             propertyMapping5.Lookup.DisplayMember = "Suppliers.Country";
             propertyMapping5.Lookup.ValueMember = "Suppliers.SupplierID";
-            propertyMapping5.TileProperty = C1.Win.C1Tile.TileProperty.IntValue;
+            propertyMapping5.TileProperty = C1.Win.Tile.TileProperty.IntValue;
             propertyMapping6.DataField = "Discontinued";
-            propertyMapping6.TileProperty = C1.Win.C1Tile.TileProperty.BackColor;
+            propertyMapping6.TileProperty = C1.Win.Tile.TileProperty.BackColor;
             this.c1TileControl1.PropertyMappings.Add(propertyMapping1);
             this.c1TileControl1.PropertyMappings.Add(propertyMapping2);
             this.c1TileControl1.PropertyMappings.Add(propertyMapping3);
             this.c1TileControl1.PropertyMappings.Add(propertyMapping4);
             this.c1TileControl1.PropertyMappings.Add(propertyMapping5);
             this.c1TileControl1.PropertyMappings.Add(propertyMapping6);
-            this.c1TileControl1.ScrollBarStyle = C1.Win.C1Tile.ScrollBarStyle.System;
+            this.c1TileControl1.ScrollBarStyle = C1.Win.Tile.ScrollBarStyle.System;
             this.c1TileControl1.Size = new System.Drawing.Size(782, 348);
             this.c1TileControl1.TabIndex = 0;
             this.c1TileControl1.Text = "Products (by Categories)";
-            this.c1TileControl1.TextBold = C1.Win.C1Tile.ThreeStateBoolean.True;
+            this.c1TileControl1.TextBold = C1.Win.Tile.ThreeStateBoolean.True;
             this.c1TileControl1.TextSize = 18F;
             this.c1TileControl1.TextY = 14;
-            this.c1TileControl1.TileClicked += new System.EventHandler<C1.Win.C1Tile.TileEventArgs>(this.c1TileControl1_TileClicked);
-            this.c1TileControl1.FormatValue += new System.EventHandler<C1.Win.C1Tile.FormatValueEventArgs>(this.c1TileControl1_FormatValue);
+            this.c1TileControl1.TileClicked += new System.EventHandler<C1.Win.Tile.TileEventArgs>(this.c1TileControl1_TileClicked);
+            this.c1TileControl1.FormatValue += new System.EventHandler<C1.Win.Tile.FormatValueEventArgs>(this.c1TileControl1_FormatValue);
             // 
             // group1
             // 
@@ -364,11 +367,11 @@
         private System.Data.OleDb.OleDbCommand oleDbSelectCommand3;
         private System.Data.OleDb.OleDbDataAdapter suppliersDataAdapter;
         private DataSet1 dataSet11;
-        private C1.Win.C1Tile.C1TileControl c1TileControl1;
-        private C1.Win.C1Tile.Group group1;
-        private C1.Win.C1Tile.Tile tile1;
-        private C1.Win.C1Tile.Tile tile2;
-        private C1.Win.C1Tile.Tile tile3;
+        private C1.Win.Tile.C1TileControl c1TileControl1;
+        private C1.Win.Tile.Group group1;
+        private C1.Win.Tile.Tile tile1;
+        private C1.Win.Tile.Tile tile2;
+        private C1.Win.Tile.Tile tile3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;

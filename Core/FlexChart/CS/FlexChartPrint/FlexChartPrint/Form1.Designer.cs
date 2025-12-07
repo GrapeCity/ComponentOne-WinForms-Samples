@@ -103,7 +103,6 @@
             this.baseSample1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.baseSample1.Location = new System.Drawing.Point(0, 0);
             this.baseSample1.Name = "baseSample1";
-            this.baseSample1.PanelControl = null;
             this.baseSample1.Size = new System.Drawing.Size(684, 708);
             this.baseSample1.TabIndex = 0;
             this.baseSample1.Title = "Title";

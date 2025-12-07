@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1FlexGrid
+﻿Imports C1.Win.FlexGrid
 
 Public Class CustomSample
     Private Sub CustomSample_Load(sender As Object, e As EventArgs) Handles MyBase.Load

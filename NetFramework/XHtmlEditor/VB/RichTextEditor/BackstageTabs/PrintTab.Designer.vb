@@ -26,7 +26,7 @@ Partial Class PrintTab
         Me.lblCaption = New System.Windows.Forms.Label()
         Me.btnQPrint = New System.Windows.Forms.Button()
         Me.btnPrint = New System.Windows.Forms.Button()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.C1PrintPreviewControl1 = New C1.Win.C1Preview.C1PrintPreviewControl()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1PrintPreviewControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,6 +110,6 @@ Partial Class PrintTab
     Friend WithEvents lblCaption As System.Windows.Forms.Label
     Friend WithEvents btnQPrint As System.Windows.Forms.Button
     Friend WithEvents btnPrint As System.Windows.Forms.Button
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Private WithEvents C1PrintPreviewControl1 As C1.Win.C1Preview.C1PrintPreviewControl
 End Class

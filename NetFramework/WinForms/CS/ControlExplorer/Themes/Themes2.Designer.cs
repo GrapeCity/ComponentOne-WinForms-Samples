@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1RangeSlider1 = new C1.Win.C1Input.C1RangeSlider();
             this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
             this.c1Label10 = new C1.Win.C1Input.C1Label();
@@ -300,10 +300,6 @@
             this.c1DateEdit1.AllowSpinLoop = false;
             this.c1DateEdit1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1DateEdit1.Calendar.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
-            this.c1DateEdit1.Calendar.VisualStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
-            this.c1DateEdit1.Calendar.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
-            this.c1DateEdit1.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.c1DateEdit1.ImageTransparentColor = System.Drawing.Color.Empty;
             this.c1DateEdit1.Location = new System.Drawing.Point(125, 65);
             this.c1DateEdit1.Margin = new System.Windows.Forms.Padding(5);
             this.c1DateEdit1.Name = "c1DateEdit1";
@@ -312,8 +308,6 @@
             this.c1DateEdit1.Tag = null;
             this.c1ThemeController1.SetTheme(this.c1DateEdit1, "(default)");
             this.c1ThemeController1.SetThemeSettings(this.c1DateEdit1, null);
-            this.c1DateEdit1.VisualStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
-            this.c1DateEdit1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             // 
             // c1Button1
             // 
@@ -624,7 +618,7 @@
 
         #endregion
 
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Input.C1Button c1Button1;
         private C1.Win.C1Input.C1TextBox c1TextBox1;
         private C1.Win.C1Input.C1Label c1Label1;

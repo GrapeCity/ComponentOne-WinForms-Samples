@@ -17,10 +17,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -41,9 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FinancialChart" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FinancialChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -105,6 +101,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,7 +151,6 @@
     <EmbeddedResource Update="Samples\HeikinAshi.resx">
       <DependentUpon>HeikinAshi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\box-annotations.json" />
     <EmbeddedResource Include="Resources\box.json" />
     <EmbeddedResource Include="Resources\config.xml" />

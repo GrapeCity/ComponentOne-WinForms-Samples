@@ -1,7 +1,7 @@
-﻿Imports C1.Win.C1Schedule
-Imports C1.C1Schedule
+﻿Imports C1.Win.Schedule
+Imports C1.Schedule
 Imports C1.Win.Ribbon
-Imports C1.Win.C1Schedule.Forms
+Imports C1.Win.Schedule.Forms
 
 Public Class AppointmentForm
 
@@ -155,7 +155,7 @@ Public Class AppointmentForm
     End Sub
     Private Sub label_BindingComplete(ByVal sender As Object, ByVal e As BindingCompleteEventArgs)
         RemoveHandler _cmbLabel.SelectedValueChanged, AddressOf _cmbLabel_SelectedValueChanged
-        _appEdited.Label = CType(_cmbLabel.SelectedItem, C1.C1Schedule.Label)
+        _appEdited.Label = CType(_cmbLabel.SelectedItem, C1.Schedule.Label)
         AddHandler _cmbLabel.SelectedValueChanged, AddressOf _cmbLabel_SelectedValueChanged
     End Sub
     Private Sub start_BindingComplete(ByVal sender As Object, ByVal e As BindingCompleteEventArgs)
@@ -190,7 +190,7 @@ Public Class AppointmentForm
 #Region "Public interface"
     Private _appointment As Appointment
     ''' <summary>
-    ''' The <see cref="C1.C1Schedule.Appointment"/> object which is currently edited with the form.
+    ''' The <see cref="C1.Schedule.Appointment"/> object which is currently edited with the form.
     ''' </summary>
     Public Property Appointment() As Appointment
         Get
@@ -230,7 +230,7 @@ Public Class AppointmentForm
             _saving = True
             SaveAppointment()
             _scheduler.Export(Appointment, _
-     C1.Win.C1Schedule.Localization.Strings.AppointmentFormStrings.Item("SaveAppointment", _scheduler.CalendarInfo.CultureInfo))
+     C1.Win.Schedule.Localization.Strings.AppointmentFormStrings.Item("SaveAppointment", _scheduler.CalendarInfo.CultureInfo))
         Finally
             _saving = False
         End Try
@@ -374,7 +374,7 @@ Public Class AppointmentForm
 
 #Region "Tags"
     Private Sub _cmbLabel_SelectedValueChanged(ByVal sender As Object, ByVal e As EventArgs) Handles _cmbLabel.SelectedValueChanged
-        _appEdited.Label = CType(_cmbLabel.SelectedItem, C1.C1Schedule.Label)
+        _appEdited.Label = CType(_cmbLabel.SelectedItem, C1.Schedule.Label)
     End Sub
     Private Sub _togglePrivate_Click(ByVal sender As Object, ByVal e As EventArgs) Handles _togglePrivate.Click
         _appEdited.Private = _togglePrivate.Pressed
@@ -433,7 +433,7 @@ Public Class AppointmentForm
             Using pen As Pen = New Pen(Color.Black, 1)
                 e.Graphics.DrawRectangle(pen, e.Bounds.X + 2, e.Bounds.Y + 2, e.Bounds.Height - 4, e.Bounds.Height - 4)
             End Using
-            e.Graphics.FillRectangle(bo.Brush.Brush, e.Bounds.X + 3, e.Bounds.Y + 3, e.Bounds.Height - 5, e.Bounds.Height - 5)
+            e.Graphics.FillRectangle(CType(bo.Brush, C1.Win.Schedule.C1Brush).Brush, e.Bounds.X + 3, e.Bounds.Y + 3, e.Bounds.Height - 5, e.Bounds.Height - 5)
 
             ' draw the current item text based on the current Font
             Using brush As Brush = New SolidBrush(e.ForeColor)

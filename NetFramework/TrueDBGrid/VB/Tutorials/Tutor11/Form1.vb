@@ -25,7 +25,7 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
@@ -42,7 +42,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.DsCustomer1 = New Tutor11.dsCustomer()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
@@ -57,21 +57,21 @@ Public Class Form1
         'C1TrueDBGrid1
         '
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Caption = "C1TrueDBGrid.Net"
         Me.C1TrueDBGrid1.CaptionHeight = 17
         Me.C1TrueDBGrid1.CollapseColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.DataMember = "Contacts"
         Me.C1TrueDBGrid1.DataSource = Me.DsCustomer1
-        Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+        Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images1"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images2"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images3"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(8, 8)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.RecordSelectorWidth = 16
         Me.C1TrueDBGrid1.RowHeight = 20
@@ -162,7 +162,7 @@ Public Class Form1
 
     End Sub
  
-    Private Sub C1TrueDBGrid1_UnboundColumnFetch(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.UnboundColumnFetchEventArgs) Handles C1TrueDBGrid1.UnboundColumnFetch
+    Private Sub C1TrueDBGrid1_UnboundColumnFetch(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.UnboundColumnFetchEventArgs) Handles C1TrueDBGrid1.UnboundColumnFetch
         e.Value = Me.DsCustomer1.Contacts.Rows(e.Row).Item("FirstName") & " " & Me.DsCustomer1.Contacts.Rows(e.Row).Item("LastName")
 
     End Sub
@@ -189,7 +189,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub C1TrueDBGrid1_FetchRowStyle(ByVal sender As Object, ByVal e As C1.Win.C1TrueDBGrid.FetchRowStyleEventArgs) Handles C1TrueDBGrid1.FetchRowStyle
+    Private Sub C1TrueDBGrid1_FetchRowStyle(ByVal sender As Object, ByVal e As C1.Win.TrueDBGrid.FetchRowStyleEventArgs) Handles C1TrueDBGrid1.FetchRowStyle
         If bFlag = 1 And Me.C1TrueDBGrid1.Columns("CustType").CellValue(e.Row) = 1 Then
             Dim fntFont As New Font(e.CellStyle.Font.Name, e.CellStyle.Font.Size, FontStyle.Bold)
             e.CellStyle.Font = fntFont

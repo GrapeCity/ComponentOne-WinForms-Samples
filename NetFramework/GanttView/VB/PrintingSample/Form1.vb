@@ -12,8 +12,8 @@ Imports System.Windows.Forms
 Imports C1.C1Preview
 Imports C1.C1Report
 Imports C1.Framework
-Imports C1.Win.C1GanttView
-Imports C1.Win.C1GanttView.Printing
+Imports C1.Win.GanttView
+Imports C1.Win.GanttView.Printing
 Imports C1.Win.C1Preview
 
 Public Partial Class Form1

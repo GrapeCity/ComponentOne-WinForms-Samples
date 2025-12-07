@@ -52,7 +52,7 @@ namespace FlexGridExplorer.Samples
             C1.Win.FlexGrid.Band band21 = new C1.Win.FlexGrid.Band();
             C1.Win.FlexGrid.Band band22 = new C1.Win.FlexGrid.Band();
             C1.Win.FlexGrid.Band band23 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band24 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band24 = new C1.Win.FlexGrid.Band(); 
             C1.Win.FlexGrid.Band band25 = new C1.Win.FlexGrid.Band();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsLayout));
             this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();

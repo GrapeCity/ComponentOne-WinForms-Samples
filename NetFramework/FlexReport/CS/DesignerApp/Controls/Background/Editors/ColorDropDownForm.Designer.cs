@@ -35,12 +35,12 @@ namespace FlexReportDesignerApp.Controls.Background.Editors
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtMain = new C1.Win.C1Command.C1DockingTab();
-            this.dtpWebColors = new C1.Win.C1Command.C1DockingTabPage();
+            this.dtMain = new C1.Win.Command.C1DockingTab();
+            this.dtpWebColors = new C1.Win.Command.C1DockingTabPage();
             this.clbWebColors = new FlexReportDesignerApp.Controls.Background.ColorListBox();
-            this.dtpSystemColors = new C1.Win.C1Command.C1DockingTabPage();
+            this.dtpSystemColors = new C1.Win.Command.C1DockingTabPage();
             this.clbSystemColors = new FlexReportDesignerApp.Controls.Background.ColorListBox();
-            this.dtpCustom = new C1.Win.C1Command.C1DockingTabPage();
+            this.dtpCustom = new C1.Win.Command.C1DockingTabPage();
             this.customColorEditor1 = new FlexReportDesignerApp.Controls.Background.CustomColorEditor();
             ((System.ComponentModel.ISupportInitialize)(this.dtMain)).BeginInit();
             this.dtMain.SuspendLayout();
@@ -149,11 +149,11 @@ namespace FlexReportDesignerApp.Controls.Background.Editors
 
         #endregion
 
-        private C1.Win.C1Command.C1DockingTab dtMain;
-        private C1.Win.C1Command.C1DockingTabPage dtpWebColors;
+        private C1.Win.Command.C1DockingTab dtMain;
+        private C1.Win.Command.C1DockingTabPage dtpWebColors;
         private ColorListBox clbWebColors;
-        private C1.Win.C1Command.C1DockingTabPage dtpSystemColors;
-        private C1.Win.C1Command.C1DockingTabPage dtpCustom;
+        private C1.Win.Command.C1DockingTabPage dtpSystemColors;
+        private C1.Win.Command.C1DockingTabPage dtpCustom;
         // private System.Windows.Forms.Panel pnlCustomColors;
         private ColorListBox clbSystemColors;
         private CustomColorEditor customColorEditor1;

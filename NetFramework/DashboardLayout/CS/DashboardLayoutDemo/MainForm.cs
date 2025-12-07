@@ -69,7 +69,7 @@ namespace DashboardLayoutDemo
         private SampleHelper Helper => SampleHelper.Instance;
 
         // Apply theme
-        private void MainForm_DemoThemeChanged(object sender, C1.Win.C1Themes.ThemeEventArgs e)
+        private void MainForm_DemoThemeChanged(object sender, C1.Win.Themes.ThemeEventArgs e)
         {
             switch (e.ThemeName)
             {

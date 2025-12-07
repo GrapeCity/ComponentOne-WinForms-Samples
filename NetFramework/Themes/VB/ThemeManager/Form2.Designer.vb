@@ -22,7 +22,7 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.c1Label1 = New C1.Win.C1Input.C1Label()
         Me.btnSetAsApplicationTheme = New C1.Win.C1Input.C1Button()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,7 +80,7 @@ Partial Class Form2
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents c1Label1 As C1.Win.C1Input.C1Label
     Friend WithEvents btnSetAsApplicationTheme As C1.Win.C1Input.C1Button
 End Class

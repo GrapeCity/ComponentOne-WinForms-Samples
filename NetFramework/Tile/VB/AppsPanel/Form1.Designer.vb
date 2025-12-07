@@ -23,41 +23,41 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim PanelElement1 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement1 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement1 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement2 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim PanelElement3 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement2 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement4 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement2 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement3 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
+        Dim PanelElement1 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement1 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement1 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement2 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim PanelElement3 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement2 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement4 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement2 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement3 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
         Me.Panel1 = New System.Windows.Forms.Panel
-        Me.C1TileControl1 = New C1.Win.C1Tile.C1TileControl
-        Me.group0 = New C1.Win.C1Tile.Group
-        Me.tile5 = New C1.Win.C1Tile.Tile
-        Me.tile17 = New C1.Win.C1Tile.Tile
-        Me.tile6 = New C1.Win.C1Tile.Tile
-        Me.tile10 = New C1.Win.C1Tile.Tile
-        Me.tile8 = New C1.Win.C1Tile.Tile
-        Me.group1 = New C1.Win.C1Tile.Group
-        Me.tile2 = New C1.Win.C1Tile.Tile
-        Me.subgroupTemplate = New C1.Win.C1Tile.Template
-        Me.tile1 = New C1.Win.C1Tile.Tile
-        Me.mapImgTemplate = New C1.Win.C1Tile.Template
-        Me.tile12 = New C1.Win.C1Tile.Tile
-        Me.tile13 = New C1.Win.C1Tile.Tile
-        Me.tile7 = New C1.Win.C1Tile.Tile
-        Me.tile14 = New C1.Win.C1Tile.Tile
-        Me.tile15 = New C1.Win.C1Tile.Tile
-        Me.tile16 = New C1.Win.C1Tile.Tile
-        Me.tile3 = New C1.Win.C1Tile.Tile
-        Me.tile4 = New C1.Win.C1Tile.Tile
-        Me.tile9 = New C1.Win.C1Tile.Tile
-        Me.tile11 = New C1.Win.C1Tile.Tile
-        Me.tile18 = New C1.Win.C1Tile.Tile
-        Me.tile19 = New C1.Win.C1Tile.Tile
-        Me.tile20 = New C1.Win.C1Tile.Tile
+        Me.C1TileControl1 = New C1.Win.Tile.C1TileControl
+        Me.group0 = New C1.Win.Tile.Group
+        Me.tile5 = New C1.Win.Tile.Tile
+        Me.tile17 = New C1.Win.Tile.Tile
+        Me.tile6 = New C1.Win.Tile.Tile
+        Me.tile10 = New C1.Win.Tile.Tile
+        Me.tile8 = New C1.Win.Tile.Tile
+        Me.group1 = New C1.Win.Tile.Group
+        Me.tile2 = New C1.Win.Tile.Tile
+        Me.subgroupTemplate = New C1.Win.Tile.Template
+        Me.tile1 = New C1.Win.Tile.Tile
+        Me.mapImgTemplate = New C1.Win.Tile.Template
+        Me.tile12 = New C1.Win.Tile.Tile
+        Me.tile13 = New C1.Win.Tile.Tile
+        Me.tile7 = New C1.Win.Tile.Tile
+        Me.tile14 = New C1.Win.Tile.Tile
+        Me.tile15 = New C1.Win.Tile.Tile
+        Me.tile16 = New C1.Win.Tile.Tile
+        Me.tile3 = New C1.Win.Tile.Tile
+        Me.tile4 = New C1.Win.Tile.Tile
+        Me.tile9 = New C1.Win.Tile.Tile
+        Me.tile11 = New C1.Win.Tile.Tile
+        Me.tile18 = New C1.Win.Tile.Tile
+        Me.tile19 = New C1.Win.Tile.Tile
+        Me.tile20 = New C1.Win.Tile.Tile
         Me.SuspendLayout()
         '
         'Panel1
@@ -86,9 +86,9 @@ Partial Class Form1
         PanelElement1.Alignment = System.Drawing.ContentAlignment.MiddleLeft
         ImageElement1.FixedHeight = 40
         ImageElement1.FixedWidth = 40
-        ImageElement1.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch
+        ImageElement1.ImageLayout = C1.Win.Tile.ForeImageLayout.Stretch
         TextElement1.Alignment = System.Drawing.ContentAlignment.TopLeft
-        TextElement1.TextTrimming = C1.Win.C1Tile.TextTrimming.WordEllipsis
+        TextElement1.TextTrimming = C1.Win.Tile.TextTrimming.WordEllipsis
         PanelElement1.Children.Add(ImageElement1)
         PanelElement1.Children.Add(TextElement1)
         PanelElement1.ChildSpacing = 10
@@ -188,7 +188,7 @@ Partial Class Form1
         PanelElement3.Dock = System.Windows.Forms.DockStyle.Bottom
         PanelElement3.FixedHeight = 2
         TextElement2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(255, Byte), Integer))
-        TextElement2.ForeColorSelector = C1.Win.C1Tile.ForeColorSelector.Unbound
+        TextElement2.ForeColorSelector = C1.Win.Tile.ForeColorSelector.Unbound
         TextElement2.Margin = New System.Windows.Forms.Padding(0, 0, 0, 6)
         TextElement2.SingleLine = True
         PanelElement2.Children.Add(PanelElement3)
@@ -210,10 +210,10 @@ Partial Class Form1
         Me.mapImgTemplate.Description = "Win32"
         PanelElement4.Alignment = System.Drawing.ContentAlignment.MiddleLeft
         ImageElement2.ColumnIndex = 10
-        ImageElement2.ColumnIndexSelector = C1.Win.C1Tile.IntValueSelector.Unbound
-        ImageElement2.ImageSelector = C1.Win.C1Tile.ImageSelector.CommonImage1
+        ImageElement2.ColumnIndexSelector = C1.Win.Tile.IntValueSelector.Unbound
+        ImageElement2.ImageSelector = C1.Win.Tile.ImageSelector.CommonImage1
         TextElement3.Alignment = System.Drawing.ContentAlignment.TopLeft
-        TextElement3.TextTrimming = C1.Win.C1Tile.TextTrimming.WordEllipsis
+        TextElement3.TextTrimming = C1.Win.Tile.TextTrimming.WordEllipsis
         PanelElement4.Children.Add(ImageElement2)
         PanelElement4.Children.Add(TextElement3)
         PanelElement4.ChildSpacing = 10
@@ -326,30 +326,30 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents C1TileControl1 As C1.Win.C1Tile.C1TileControl
-    Friend WithEvents group0 As C1.Win.C1Tile.Group
-    Friend WithEvents tile5 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile17 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile6 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile10 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile8 As C1.Win.C1Tile.Tile
-    Friend WithEvents group1 As C1.Win.C1Tile.Group
-    Friend WithEvents tile2 As C1.Win.C1Tile.Tile
-    Friend WithEvents subgroupTemplate As C1.Win.C1Tile.Template
-    Friend WithEvents tile1 As C1.Win.C1Tile.Tile
-    Friend WithEvents mapImgTemplate As C1.Win.C1Tile.Template
-    Friend WithEvents tile12 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile13 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile7 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile14 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile15 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile16 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile3 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile4 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile9 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile11 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile18 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile19 As C1.Win.C1Tile.Tile
-    Friend WithEvents tile20 As C1.Win.C1Tile.Tile
+    Friend WithEvents C1TileControl1 As C1.Win.Tile.C1TileControl
+    Friend WithEvents group0 As C1.Win.Tile.Group
+    Friend WithEvents tile5 As C1.Win.Tile.Tile
+    Friend WithEvents tile17 As C1.Win.Tile.Tile
+    Friend WithEvents tile6 As C1.Win.Tile.Tile
+    Friend WithEvents tile10 As C1.Win.Tile.Tile
+    Friend WithEvents tile8 As C1.Win.Tile.Tile
+    Friend WithEvents group1 As C1.Win.Tile.Group
+    Friend WithEvents tile2 As C1.Win.Tile.Tile
+    Friend WithEvents subgroupTemplate As C1.Win.Tile.Template
+    Friend WithEvents tile1 As C1.Win.Tile.Tile
+    Friend WithEvents mapImgTemplate As C1.Win.Tile.Template
+    Friend WithEvents tile12 As C1.Win.Tile.Tile
+    Friend WithEvents tile13 As C1.Win.Tile.Tile
+    Friend WithEvents tile7 As C1.Win.Tile.Tile
+    Friend WithEvents tile14 As C1.Win.Tile.Tile
+    Friend WithEvents tile15 As C1.Win.Tile.Tile
+    Friend WithEvents tile16 As C1.Win.Tile.Tile
+    Friend WithEvents tile3 As C1.Win.Tile.Tile
+    Friend WithEvents tile4 As C1.Win.Tile.Tile
+    Friend WithEvents tile9 As C1.Win.Tile.Tile
+    Friend WithEvents tile11 As C1.Win.Tile.Tile
+    Friend WithEvents tile18 As C1.Win.Tile.Tile
+    Friend WithEvents tile19 As C1.Win.Tile.Tile
+    Friend WithEvents tile20 As C1.Win.Tile.Tile
 
 End Class

@@ -1,4 +1,4 @@
-﻿using C1.Win.C1FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System.Drawing;
 
 namespace MaterialDesign.Controls
@@ -40,7 +40,7 @@ namespace MaterialDesign.Controls
             Styles.Focus.BackColor = Styles.Highlight.BackColor;
             Styles.Focus.ForeColor = Styles.Highlight.ForeColor;
             Styles.Focus.Border.Style = BorderStyleEnum.None;
-            BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
 
             Rows.DefaultSize = 40;
         }

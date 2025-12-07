@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.Chart.Finance;
+﻿using C1.Chart.Finance;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
@@ -21,17 +12,24 @@ namespace FinancialChartExplorer.Samples
             InitializeComponent();
         }
 
-        DataService dataService;
-
+        DataService _dataService;
         private void OnLoad(object sender, EventArgs e)
         {
-            dataService = DataService.GetService();
+            _dataService = DataService.GetService();
 
-            comboBoxSymbol.DataSource = dataService.GetCompanies();
-            comboBoxSymbol.DisplayMember = "Name";
+            c1ComboBox1.ItemsDataSource = _dataService.GetCompanies();
+            c1ComboBox1.ItemsDisplayMember = "Name";
 
-            rangeMode.DataSource = Enum.GetValues(typeof(RangeMode));
-            dataFields.DataSource = Enum.GetValues(typeof(DataFields));
+            c1RangeMode.ItemsDataSource = Enum.GetValues(typeof(RangeMode));
+            c1DataFields.ItemsDataSource = Enum.GetValues(typeof(DataFields));
+
+
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
+            {
+                c1ComboBox1.SelectedValue = DataService.SelectedSymbol;
+                c1RangeMode.SelectedIndex = 0;
+                c1DataFields.SelectedIndex = 0;
+            }
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -41,27 +39,30 @@ namespace FinancialChartExplorer.Samples
             financialChart1.EndUpdate();
         }
 
-        private void comboBoxSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var data = dataService.GetSymbolData(comboBoxSymbol.SelectedValue.ToString());
-            financialChart1.DataSource = data;
-            financialChart1.Rebind();
+            if (c1ComboBox1.SelectedValue != null)
+            {
+                string selectedCompanyName = c1ComboBox1.SelectedValue.ToString();
+                DataService.SelectedSymbol = selectedCompanyName;
+                var data = _dataService.GetSymbolData(selectedCompanyName);
+                financialChart1.DataSource = data;
+                financialChart1.Rebind();
+            }
         }
 
-
-        private void rangeMode_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1RangeMode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.RangeMode = (RangeMode)rangeMode.SelectedValue;
+            financialChart1.Options.RangeMode = (RangeMode)c1RangeMode.SelectedIndex;
         }
 
-        private void dataFields_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1DataFields_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.DataFields = (DataFields)dataFields.SelectedValue;
+            financialChart1.Options.DataFields = (DataFields)c1DataFields.SelectedIndex;
         }
-
         private void boxSize_ValueChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.BoxSize = (int)boxSize.Value;
+            financialChart1.Options.BoxSize = Convert.ToInt32(boxSize.Value);
         }
     }
 }

@@ -86,14 +86,14 @@ namespace ControlExplorer.Map
         private void MarkControl_Load(object sender, EventArgs e)
         {
             // Init map.
-            _mapControl = new MapUserControl(new VirtualEarthAerialSource())
+            _mapControl = new MapUserControl(new OpenStreetTileSource())
             {
                 Dock = DockStyle.Fill
             };
             _panel.Controls.Add(_mapControl);
 
             _map = _mapControl.Map;
-            _map.Viewport.Zoom = 1;
+            _map.Viewport.Zoom = 2.5;
 
             // Create layer.
             _layer = new C1.Win.Map.VectorLayer();

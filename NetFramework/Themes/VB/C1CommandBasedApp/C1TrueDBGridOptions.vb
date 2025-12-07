@@ -1,6 +1,6 @@
 Imports System.Windows.Forms
 
-Imports C1.Win.C1TrueDBGrid
+Imports C1.Win.TrueDBGrid
 
 Public Class C1TrueDBGridOptions
 	Private _trueGrid As C1TrueDBGrid

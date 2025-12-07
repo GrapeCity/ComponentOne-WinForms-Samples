@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VBAEngineDemo));
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.formula3 = new ControlExplorer.CalcEngine.Formula();
             this.formula2 = new ControlExplorer.CalcEngine.Formula();
@@ -47,8 +47,8 @@
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 90);
             this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Cell;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Cell;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(967, 477);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 14;
@@ -127,7 +127,7 @@
         }
 
         #endregion
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Formula formula3;
         private Formula formula2;

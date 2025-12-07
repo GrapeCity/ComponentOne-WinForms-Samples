@@ -22,6 +22,21 @@ namespace FlexGridExplorer.Samples
         }
 
         #region Component Designer generated code
+        private C1.Win.FlexGrid.Band band1;
+        private C1.Win.FlexGrid.Band band2;
+        private C1.Win.FlexGrid.Band band3;
+        private C1.Win.FlexGrid.Band band4;
+        private C1.Win.FlexGrid.Band band5;
+        private C1.Win.FlexGrid.Band band6;
+        private C1.Win.FlexGrid.Band band7;
+        private C1.Win.FlexGrid.Band band8;
+        private C1.Win.FlexGrid.Band band9;
+        private C1.Win.FlexGrid.Band band10;
+        private C1.Win.FlexGrid.Band band11;
+        private C1.Win.FlexGrid.Band band12;
+        private C1.Win.FlexGrid.Band band13;
+        private C1.Win.FlexGrid.Band band14;
+        private C1.Win.FlexGrid.Band band15;
 
         /// <summary> 
         /// Required method for Designer support - do not modify 
@@ -30,21 +45,21 @@ namespace FlexGridExplorer.Samples
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsGrouping));
-            C1.Win.FlexGrid.Band band1 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band2 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band3 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band4 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band5 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band6 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band7 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band8 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band9 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band10 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band11 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band12 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band13 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band14 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band15 = new C1.Win.FlexGrid.Band();
+            band1 = new C1.Win.FlexGrid.Band();
+            band2 = new C1.Win.FlexGrid.Band();
+            band3 = new C1.Win.FlexGrid.Band();
+            band4 = new C1.Win.FlexGrid.Band();
+            band5 = new C1.Win.FlexGrid.Band();
+            band6 = new C1.Win.FlexGrid.Band();
+            band7 = new C1.Win.FlexGrid.Band();
+            band8 = new C1.Win.FlexGrid.Band();
+            band9 = new C1.Win.FlexGrid.Band();
+            band10 = new C1.Win.FlexGrid.Band();
+            band11 = new C1.Win.FlexGrid.Band();
+            band12 = new C1.Win.FlexGrid.Band();
+            band13 = new C1.Win.FlexGrid.Band();
+            band14 = new C1.Win.FlexGrid.Band();
+            band15 = new C1.Win.FlexGrid.Band();
             this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -77,7 +92,6 @@ namespace FlexGridExplorer.Samples
             band4.Name = "ProductName";
             band2.Children.Add(band3);
             band2.Children.Add(band4);
-            band2.ColSpan = 1;
             band2.Name = "Product";
             band6.Name = "UnitPrice";
             band7.Name = "Quantity";
@@ -99,7 +113,6 @@ namespace FlexGridExplorer.Samples
             band5.Children.Add(band13);
             band5.Children.Add(band14);
             band5.Children.Add(band15);
-            band5.ColSpan = 5;
             band5.Name = "Details";
             this.c1FlexGridBandedView1.Bands.Add(band1);
             this.c1FlexGridBandedView1.Bands.Add(band2);
@@ -117,9 +130,9 @@ namespace FlexGridExplorer.Samples
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowCount = 2; 
+            this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(650, 585);
             this.tableLayoutPanel1.TabIndex = 1;
             // 

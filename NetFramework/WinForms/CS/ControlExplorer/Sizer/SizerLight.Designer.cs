@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.c1SizerLight1 = new C1.Win.C1Sizer.C1SizerLight(this.components);
+            this.c1SizerLight1 = new C1.Win.Sizer.C1SizerLight(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.c1SizerLight1)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +60,7 @@
 
         #endregion
 
-        private C1.Win.C1Sizer.C1SizerLight c1SizerLight1;
+        private C1.Win.Sizer.C1SizerLight c1SizerLight1;
         private System.Windows.Forms.Panel panel1;
     }
 }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Runtime.InteropServices;
 using System.Xml;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using System.Xml.Linq;
 using System.Diagnostics;
 
@@ -113,7 +113,7 @@ namespace ControlExplorer
 
             foreach (ControlInfo control in ControlInfo.Controls)
             {
-                C1.Win.C1Tile.Tile controlTile = new C1.Win.C1Tile.Tile();
+                C1.Win.Tile.Tile controlTile = new C1.Win.Tile.Tile();
                 controlTile.Text = control.Name;
                 controlTile.Template = template2;
                 controlTile.Tag = control;
@@ -121,14 +121,14 @@ namespace ControlExplorer
                 {
                     controlTile.Image1 = _icons["ControlOverlay"].Image;
 
-                    C1.Win.C1Tile.Tile newTile = new C1.Win.C1Tile.Tile();
+                    C1.Win.Tile.Tile newTile = new C1.Win.Tile.Tile();
                     newTile.Text = control.Name;
                     newTile.Tag = control;
                     tilesNew.Groups[0].Tiles.Add(newTile);
                 }
                 if (control.IsPopular)
                 {
-                    C1.Win.C1Tile.Tile newTile = new C1.Win.C1Tile.Tile();
+                    C1.Win.Tile.Tile newTile = new C1.Win.Tile.Tile();
                     newTile.Text = control.Name;
                     newTile.Tag = control;
                     tilesPopular.Groups[0].Tiles.Add(newTile);
@@ -196,8 +196,8 @@ namespace ControlExplorer
                     {
                         tileColumns = noofCols;
                         int i = 0;
-                        Dictionary<C1.Win.C1Tile.C1TileControl, ControlTreeExpander> tiles 
-                            = new Dictionary<C1.Win.C1Tile.C1TileControl, ControlTreeExpander>()
+                        Dictionary<C1.Win.Tile.C1TileControl, ControlTreeExpander> tiles 
+                            = new Dictionary<C1.Win.Tile.C1TileControl, ControlTreeExpander>()
                         {
                             { tilesControlUtil,cteUtil },
                             { tilesControlDV,ctelDV},
@@ -207,7 +207,7 @@ namespace ControlExplorer
                             { tilesControlGDM,cteGDM },
                             { tilesControlSch,cteSch }
                         };
-                        foreach (KeyValuePair<C1.Win.C1Tile.C1TileControl, ControlTreeExpander> tileControl in tiles)
+                        foreach (KeyValuePair<C1.Win.Tile.C1TileControl, ControlTreeExpander> tileControl in tiles)
                         {
                             tileControl.Value.ChildCollapsedHeight = 20;
                             i = 0;
@@ -354,7 +354,7 @@ namespace ControlExplorer
             get
             {
                 if (!string.IsNullOrEmpty(ThemeName))
-                    return C1.Win.C1Themes.C1ThemeController.GetThemeByName(ThemeName, false);
+                    return C1.Win.Themes.C1ThemeController.GetThemeByName(ThemeName, false);
                 else
                     return null;
             }
@@ -424,7 +424,7 @@ namespace ControlExplorer
             }
         }
 
-         private static void ApplyTileImages(C1.Win.C1Tile.TileCollection tiles)
+         private static void ApplyTileImages(C1.Win.Tile.TileCollection tiles)
         {
             for (int i = 0; i < tiles.Count; ++i)
             {
@@ -712,7 +712,7 @@ namespace ControlExplorer
             LoadControlTiles();
 
             // set initial theme
-            thpThemePicker.SelectedItem = "Office365White";
+            thpThemePicker.SelectedValue = "Office365White";
         }
 
         private void LoadDefaultString()
@@ -789,7 +789,7 @@ namespace ControlExplorer
             }
         }
 
-        private void tiles_TileClicked(object sender, C1.Win.C1Tile.TileEventArgs e)
+        private void tiles_TileClicked(object sender, C1.Win.Tile.TileEventArgs e)
         {
             var control = ControlInfo.Controls.First(ct => ct.Name == e.Tile.Text);
             if (control != null)

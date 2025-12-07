@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 Imports System.IO
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 Imports C1.Win.Ribbon
 Partial Public Class MainForm
     Inherits C1RibbonForm
@@ -12,17 +12,17 @@ Partial Public Class MainForm
 
     Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs)
         FillFlexGrid(c1FlexGrid1)
-        c1FlexGrid1.AllowPinning = C1.Win.C1FlexGrid.AllowPinning.SingleColumn
-        c1FlexGrid1.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Columns
+        c1FlexGrid1.AllowPinning = C1.Win.FlexGrid.AllowPinning.SingleColumn
+        c1FlexGrid1.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Columns
         c1FlexGrid1.Cols.Frozen = 3
         FillFlexGrid(c1FlexGrid2)
-        c1FlexGrid2.AllowPinning = C1.Win.C1FlexGrid.AllowPinning.ColumnRange
-        c1FlexGrid2.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Columns
+        c1FlexGrid2.AllowPinning = C1.Win.FlexGrid.AllowPinning.ColumnRange
+        c1FlexGrid2.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Columns
         c1FlexGrid2.Cols.Frozen = 4
         InitThemes()
     End Sub
 
-    Private Sub FillFlexGrid(ByVal c1FlexGrid As C1.Win.C1FlexGrid.C1FlexGrid)
+    Private Sub FillFlexGrid(ByVal c1FlexGrid As C1.Win.FlexGrid.C1FlexGrid)
         c1FlexGrid.DataSource = DemoDataSource()
 
         If c1FlexGrid.Cols.Contains("Product") Then

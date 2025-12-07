@@ -1,4 +1,4 @@
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class frmSheet
     Inherits System.Windows.Forms.Form
@@ -28,7 +28,7 @@ Public Class frmSheet
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents chkWallpaper As System.Windows.Forms.CheckBox
     Friend WithEvents picDraft As System.Windows.Forms.PictureBox
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents pctBlank As System.Windows.Forms.PictureBox
     Friend WithEvents picLeftArrow As System.Windows.Forms.PictureBox
@@ -46,7 +46,7 @@ Public Class frmSheet
         Me.Label1 = New System.Windows.Forms.Label
         Me.chkWallpaper = New System.Windows.Forms.CheckBox
         Me.picDraft = New System.Windows.Forms.PictureBox
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.pctBlank = New System.Windows.Forms.PictureBox
         Me.picLeftArrow = New System.Windows.Forms.PictureBox
@@ -349,7 +349,7 @@ Public Class frmSheet
 
     End Sub
 
-    Private Sub flex_BeforeScrollTip(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles flex.BeforeScrollTip
+    Private Sub flex_BeforeScrollTip(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles flex.BeforeScrollTip
 
         If e.Row < 3 Or flex(e.Row, 3) = "" Then Exit Sub
         flex.ScrollTipText = " " & Trim$(flex(e.Row, 3)) & " "
@@ -446,8 +446,8 @@ Public Class frmSheet
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim printer As C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable
-        printer = New C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable(flex)
+        Dim printer As C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable
+        printer = New C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable(flex)
         printer.PrintPreview()
     End Sub
 End Class

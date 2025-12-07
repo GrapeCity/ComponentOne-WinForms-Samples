@@ -1,0 +1,6 @@
+﻿// Read text from the file
+var text = File.ReadAllText(@"Resources\pizza.txt");
+
+// Load Mermaid.js graph to the diagram
+// https://mermaid.js.org/syntax/flowchart.html
+diagram.LoadMermaidGraph(text);

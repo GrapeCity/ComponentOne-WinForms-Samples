@@ -4,7 +4,7 @@ Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Data
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Namespace ColumnEditor
     Public Class UserControl1
@@ -40,11 +40,11 @@ Namespace ColumnEditor
         'It can be modified using the Windows Form Designer.  
         'Do not modify it using the code editor.
         Friend WithEvents label1 As System.Windows.Forms.Label
-        Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+        Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
         <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserControl1))
             Me.label1 = New System.Windows.Forms.Label()
-            Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+            Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
             CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             '
@@ -91,11 +91,11 @@ Namespace ColumnEditor
         'expose grid columns as a property so user can edit them at design time
         'must be get/set property, although the set will only be used during 
         'initialization
-        Public Property GridColumns() As C1.Win.C1FlexGrid.ColumnCollection
+        Public Property GridColumns() As C1.Win.FlexGrid.ColumnCollection
             Get
                 Return _flex.Cols
             End Get
-            Set(ByVal Value As C1.Win.C1FlexGrid.ColumnCollection)
+            Set(ByVal Value As C1.Win.FlexGrid.ColumnCollection)
                 _flex.Cols = Value
             End Set
         End Property

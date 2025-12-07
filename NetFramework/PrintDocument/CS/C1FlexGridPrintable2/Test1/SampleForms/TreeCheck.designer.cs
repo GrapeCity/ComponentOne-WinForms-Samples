@@ -32,7 +32,7 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -85,7 +85,7 @@
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexGrid1.ColumnInfo = "1,0,0,0,0,110,Columns:0{Width:84;}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.ExtendLastCol = true;
@@ -99,7 +99,7 @@
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
             this.c1FlexGrid1.Tree.Column = 0;
-            this.c1FlexGrid1.CellChecked += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_CellChecked);
+            this.c1FlexGrid1.CellChecked += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_CellChecked);
             // 
             // label2
             // 
@@ -138,7 +138,7 @@
 
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

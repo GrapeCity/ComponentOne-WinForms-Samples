@@ -23,6 +23,7 @@ namespace ControlExplorer.List
             //call HoldFields to preserve all design-time settings before setting datasource
             c1List1.HoldFields();
             c1List1.DataSource = DemoDataSource("Suppliers");
+            c1List1.ItemHeight = 22;
 
             c1Combo1.HoldFields();
             c1Combo1.DataSource = DemoDataSource("Suppliers");
@@ -43,7 +44,7 @@ namespace ControlExplorer.List
             c1List1.ItemHeight = c1List1.CaptionHeight * 2;
         }
 
-        private void c1List1_UnboundColumnFetch(object sender, C1.Win.C1List.UnboundColumnFetchEventArgs e)
+        private void c1List1_UnboundColumnFetch(object sender, C1.Win.List.UnboundColumnFetchEventArgs e)
         {
             //fill random unbound column data
             if (e.Col == 3)
@@ -62,15 +63,15 @@ namespace ControlExplorer.List
             c1List1.InsertVerticalSplit(0);
         }
 
-        private void c1List1_FetchScrollTips(object sender, C1.Win.C1List.FetchScrollTipsEventArgs e)
+        private void c1List1_FetchScrollTips(object sender, C1.Win.List.FetchScrollTipsEventArgs e)
         {
             //set the ScrollTip depending on which scroll bar was moved
             switch (e.ScrollBar)
             {
-                case C1.Win.C1List.ScrollBarEnum.Horizontal:
+                case C1.Win.List.ScrollBarEnum.Horizontal:
                     e.ScrollTip = this.c1List1.Columns[e.ColIndex].Caption;
                     break;
-                case C1.Win.C1List.ScrollBarEnum.Vertical:
+                case C1.Win.List.ScrollBarEnum.Vertical:
                     e.ScrollTip = "Record: " + (e.Row + 1) + " of " +
                         this.c1List1.ListCount + "\n";
                     e.ScrollTip += "Company: " + this.c1List1.Columns["CompanyName"].CellText(e.Row) + "\n";

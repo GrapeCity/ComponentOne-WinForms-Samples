@@ -4,7 +4,7 @@ using System.IO;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace MaterialDesign
 {

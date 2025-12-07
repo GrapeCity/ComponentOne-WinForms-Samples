@@ -29,7 +29,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1Combo1 As C1.Win.C1List.C1Combo
+    Friend WithEvents C1Combo1 As C1.Win.List.C1Combo
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
@@ -46,7 +46,7 @@ Public Class Form1
     Friend WithEvents MenuItem3 As System.Windows.Forms.MenuItem
     Friend WithEvents Label1 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.C1Combo1 = New C1.Win.C1List.C1Combo()
+        Me.C1Combo1 = New C1.Win.List.C1Combo()
         Me.ContextMenu1 = New System.Windows.Forms.ContextMenu()
         Me.MenuItem1 = New System.Windows.Forms.MenuItem()
         Me.MenuItem2 = New System.Windows.Forms.MenuItem()
@@ -75,7 +75,7 @@ Public Class Form1
         Me.C1Combo1.AlternatingRows = False
         Me.C1Combo1.Caption = ""
         Me.C1Combo1.CaptionHeight = 17
-        Me.C1Combo1.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips
+        Me.C1Combo1.CellTips = C1.Win.List.CellTipEnum.NoCellTips
         Me.C1Combo1.CellTipsWidth = 0
         Me.C1Combo1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.C1Combo1.ColumnCaptionHeight = 17
@@ -83,7 +83,7 @@ Public Class Form1
         Me.C1Combo1.ColumnWidth = 100
         Me.C1Combo1.ContentHeight = 17
         Me.C1Combo1.ContextMenu = Me.ContextMenu1
-        Me.C1Combo1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1Combo1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1Combo1.DataSource = Me.DataSet11.Composer
         Me.C1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty
         Me.C1Combo1.DefColWidth = 0
@@ -107,7 +107,7 @@ Public Class Form1
         "ption=""Death"" DataField=""Death""><ValueItems /></C1DataColumn><C1DataColumn Level" & _
         "=""0"" Caption=""First"" DataField=""First""><ValueItems /></C1DataColumn><C1DataColum" & _
         "n Level=""0"" Caption=""Last"" DataField=""Last""><ValueItems /></C1DataColumn></DataC" & _
-        "ols><Styles type=""C1.Win.C1List.Design.ContextWrapper""><Data>Caption{AlignHorz:C" & _
+        "ols><Styles type=""C1.Win.List.Design.ContextWrapper""><Data>Caption{AlignHorz:C" & _
         "enter;}Normal{BackColor:Window;}Style25{AlignHorz:Near;}Selected{ForeColor:Highl" & _
         "ightText;BackColor:Highlight;}Style18{AlignHorz:Far;}Style19{AlignHorz:Far;}Styl" & _
         "e14{}Style15{AlignHorz:Near;}Style16{AlignHorz:Near;}Style17{}Style10{}Style11{}" & _
@@ -118,7 +118,7 @@ Public Class Form1
         "venRow{BackColor:Aqua;}Heading{Wrap:True;AlignVert:Center;Border:Raised,,1, 1, 1" & _
         ", 1;ForeColor:ControlText;BackColor:Control;}Style4{}Style9{AlignHorz:Near;}Styl" & _
         "e8{}Style5{}Group{BackColor:ControlDark;Border:None,,0, 0, 0, 0;AlignVert:Center" & _
-        ";}Style7{}Style6{}Style1{}Style3{}Style2{}</Data></Styles><Splits><C1.Win.C1List" & _
+        ";}Style7{}Style6{}Style1{}Style3{}Style2{}</Data></Styles><Splits><C1.Win.List" & _
         ".ListBoxView AllowColSelect=""False"" Name="""" CaptionHeight=""17"" ColumnCaptionHeig" & _
         "ht=""17"" ColumnFooterHeight=""17"" VerticalScrollGroup=""1"" HorizontalScrollGroup=""1" & _
         """><ClientRect>0, 0, 116, 156</ClientRect><internalCols><C1DisplayColumn><Heading" & _
@@ -146,7 +146,7 @@ Public Class Form1
         """ /><HighLightRowStyle parent=""HighlightRow"" me=""Style6"" /><InactiveStyle parent" & _
         "=""Inactive"" me=""Style4"" /><OddRowStyle parent=""OddRow"" me=""Style8"" /><RecordSele" & _
         "ctorStyle parent=""RecordSelector"" me=""Style10"" /><SelectedStyle parent=""Selected" & _
-        """ me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.C1List.ListBoxView></Spl" & _
+        """ me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.List.ListBoxView></Spl" & _
         "its><NamedStyles><Style parent="""" me=""Normal"" /><Style parent=""Normal"" me=""Headi" & _
         "ng"" /><Style parent=""Heading"" me=""Footer"" /><Style parent=""Heading"" me=""Caption""" & _
         " /><Style parent=""Heading"" me=""Inactive"" /><Style parent=""Normal"" me=""Selected"" " & _
@@ -156,7 +156,7 @@ Public Class Form1
         "ts><horzSplits>1</horzSplits><Layout>Modified</Layout><DefaultRecSelWidth>16</De" & _
         "faultRecSelWidth></Blob>"
         Me.C1Combo1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1Combo1.ScrollTips = False
         Me.C1Combo1.SelectionStart = 0

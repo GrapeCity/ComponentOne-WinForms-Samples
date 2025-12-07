@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.c1Label1 = new C1.Win.C1Input.C1Label();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.btnCloneForm = new C1.Win.C1Input.C1Button();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -55,7 +55,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.ObjectThemeApplied += new C1.Win.C1Themes.ObjectThemeEventHandler(this.c1ThemeController1_ObjectThemeApplied);
+            this.c1ThemeController1.ObjectThemeApplied += new C1.Win.Themes.ObjectThemeEventHandler(this.c1ThemeController1_ObjectThemeApplied);
             // 
             // btnCloneForm
             // 
@@ -92,7 +92,7 @@
         #endregion
 
         private C1.Win.C1Input.C1Label c1Label1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Input.C1Button btnCloneForm;
     }
 }

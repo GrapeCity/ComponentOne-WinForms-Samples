@@ -27,7 +27,7 @@ Public Class Form1
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbUpdateCommand1 As System.Data.OleDb.OleDbCommand
@@ -42,7 +42,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbConnection2 = New System.Data.OleDb.OleDbConnection()
@@ -59,7 +59,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.AllowAddNew = True
         Me.C1TrueDBGrid1.AllowArrows = False
         Me.C1TrueDBGrid1.AllowFilter = True
-        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows
+        Me.C1TrueDBGrid1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows
         Me.C1TrueDBGrid1.AllowSort = True
         Me.C1TrueDBGrid1.Anchor = (System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right)
         Me.C1TrueDBGrid1.Caption = "C1True DBGrid .Net"
@@ -69,7 +69,7 @@ Public Class Form1
         Me.C1TrueDBGrid1.ExpandColor = System.Drawing.Color.Black
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(40, 64)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
@@ -224,7 +224,7 @@ Public Class Form1
         dt1 = ds1.Tables(0)
 
         Me.C1TrueDBGrid1.DataSource = dt1
-        Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+        Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
         Me.ComboBox1.SelectedIndex = 0
     End Sub
 
@@ -233,18 +233,18 @@ Public Class Form1
         Dim sel As String = Me.ComboBox1.SelectedItem
         Select Case sel
             Case "Normal"
-                Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Normal
+                Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Normal
             Case "Inverted"
-                Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Inverted
+                Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Inverted
             Case "Form"
-                Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Form
+                Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Form
             Case "GroupBy"
-                Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy
+                Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy
             Case "MultipleLines"
-                Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.MultipleLines
+                Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.MultipleLines
             Case "Hierarchical"
                 MsgBox("This only has an affect if the grid is displaying a hierarchical data set")
-                Me.C1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Hierarchical
+                Me.C1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Hierarchical
         End Select
     End Sub
     Private Function GetModifiedConnectionString(ByVal connstring As String) As String

@@ -112,25 +112,52 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Ford_Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Ford_Ranger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Jaguar_F_type1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Jaguar-F-type1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lexus_ES_VI_Sedan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\lexus ES VI Sedan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mercedes_Benz_SLK_250" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Mercedes-Benz_SLK_250.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="navEmployees.EditImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.EditImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.MoveFirstImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.MoveFirstImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.ApplyImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.ApplyImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rolls_roys_Wraith" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\rolls-roys-Wraith.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navIBindingList.AddNewImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navIBindingList.AddNewImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.DeleteImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.DeleteImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jaguar_F_type1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jaguar-F-type1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.MoveLastImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.MoveLastImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ford_Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ford_Ranger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.CancelImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.CancelImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.MoveNextImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.MoveNextImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navEmployees.MovePreviousImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\navEmployees.MovePreviousImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

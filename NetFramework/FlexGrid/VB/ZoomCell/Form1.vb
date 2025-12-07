@@ -29,12 +29,12 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -51,7 +51,7 @@ Public Class Form1
         Me._flex.Location = New System.Drawing.Point(8, 8)
         Me._flex.Name = "_flex"
         Me._flex.Size = New System.Drawing.Size(392, 244)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Normal{Font:Microsoft Sans Serif, 8.25pt;}" & Microsoft.VisualBasic.ChrW(9) & "Fixed{BackColor:Control;ForeColor:Cont" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Normal{Font:Microsoft Sans Serif, 8.25pt;}" & Microsoft.VisualBasic.ChrW(9) & "Fixed{BackColor:Control;ForeColor:Cont" & _
         "rolText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Highlight{BackColor:Highlight;ForeColor" & _
         ":HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{Bac" & _
         "kColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Bo" & _
@@ -150,7 +150,7 @@ Public Class Form1
 
     ' helper
     Private Sub AddColumn(ByVal name As String, ByVal type As Type)
-        Dim col As C1.Win.C1FlexGrid.Column = _flex.Cols.Add()
+        Dim col As C1.Win.FlexGrid.Column = _flex.Cols.Add()
         col.Name = name
         col.Caption = name
         col.DataType = type

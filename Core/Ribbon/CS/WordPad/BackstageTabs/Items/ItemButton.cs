@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -21,12 +22,15 @@ namespace WordPad.BackstageTabs.Items
         #endregion
 
         #region properties
+
+        [DefaultValue(null)]
         public Image ItemImage
         {
             get { return pbImage.Image; }
             set { pbImage.Image = value; }
         }
 
+        [DefaultValue("")]
         public string ItemText
         {
             get { return lblText.Text; }

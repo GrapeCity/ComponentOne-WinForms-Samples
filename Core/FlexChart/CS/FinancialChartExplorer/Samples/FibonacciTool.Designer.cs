@@ -1,4 +1,6 @@
-﻿namespace FinancialChartExplorer.Samples
+﻿using FinancialChartExplorer.CustomControls;
+
+namespace FinancialChartExplorer.Samples
 {
     partial class FibonacciTool
     {
@@ -28,302 +30,351 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmdToolType = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cmbLabelPosition = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nudStartX = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nudEndX = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nudStartY = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.nudEndY = new System.Windows.Forms.NumericUpDown();
-            this.cbUptrend = new System.Windows.Forms.CheckBox();
-            this.cbRangeSelector = new System.Windows.Forms.CheckBox();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStartX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEndX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStartY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEndY)).BeginInit();
-            this.SuspendLayout();
+            C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            label1 = new Label();
+            c1CmdToolType = new C1.Win.Input.C1ComboBox();
+            label6 = new Label();
+            c1CmbLabelPosition = new C1.Win.Input.C1ComboBox();
+            label2 = new Label();
+            nudStartX = new C1NumericEditEx();
+            label3 = new Label();
+            nudEndX = new C1NumericEditEx();
+            label4 = new Label();
+            nudStartY = new C1NumericEditEx();
+            label5 = new Label();
+            nudEndY = new C1NumericEditEx();
+            c1CbUptrend = new C1.Win.Input.C1CheckBox();
+            c1CbRangeSelector = new C1.Win.Input.C1CheckBox();
+            tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)financialChart1).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)c1CmdToolType).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1CmbLabelPosition).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudStartX).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudEndX).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudStartY).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)nudEndY).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1CbUptrend).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1CbRangeSelector).BeginInit();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.financialChart1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 272);
-            this.tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(financialChart1, 0, 0);
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 1);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new Size(1168, 560);
+            tableLayoutPanel1.TabIndex = 0;
             // 
             // financialChart1
             // 
-            this.financialChart1.AxisX.Chart = this.financialChart1;
-            this.financialChart1.AxisX.Position = C1.Chart.Position.Bottom;
-            this.financialChart1.AxisY.AxisLine = false;
-            this.financialChart1.AxisY.Chart = this.financialChart1;
-            this.financialChart1.AxisY.MajorGrid = true;
-            this.financialChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
-            this.financialChart1.AxisY.Position = C1.Chart.Position.Left;
-            this.financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Column;
-            this.financialChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.financialChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
-            this.financialChart1.Legend.Position = C1.Chart.Position.Right;
-            this.financialChart1.Legend.Reversed = false;
-            this.financialChart1.Legend.Title = null;
-            this.financialChart1.Location = new System.Drawing.Point(10, 10);
-            this.financialChart1.Margin = new System.Windows.Forms.Padding(10);
-            this.financialChart1.Name = "financialChart1";
-            elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize2.Value = 70D;
-            this.financialChart1.Options.ClusterSize = elementSize2;
-            this.financialChart1.Options.ReversalAmount = 1D;
-            this.financialChart1.PlotMargin = new System.Windows.Forms.Padding(0);
-            this.financialChart1.SelectedSeries = null;
-            this.financialChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.financialChart1.Size = new System.Drawing.Size(780, 195);
-            this.financialChart1.TabIndex = 0;
-            this.financialChart1.Text = "financialChart1";
+            financialChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            financialChart1.AnimationLoad.Duration = 400;
+            financialChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            financialChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
+            financialChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            financialChart1.AnimationUpdate.Duration = 400;
+            financialChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            financialChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            financialChart1.AxisX.AxisLine = true;
+            financialChart1.AxisX.Chart = financialChart1;
+            financialChart1.AxisX.DataSource = null;
+            financialChart1.AxisX.Formatter = null;
+            financialChart1.AxisX.GroupProvider = null;
+            financialChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            financialChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            financialChart1.AxisX.GroupVisibilityLevel = 0;
+            financialChart1.AxisX.PlotAreaName = null;
+            financialChart1.AxisX.Position = C1.Chart.Position.Bottom;
+            financialChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            financialChart1.AxisY.AxisLine = false;
+            financialChart1.AxisY.Chart = financialChart1;
+            financialChart1.AxisY.DataSource = null;
+            financialChart1.AxisY.Formatter = null;
+            financialChart1.AxisY.GroupProvider = null;
+            financialChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            financialChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            financialChart1.AxisY.GroupVisibilityLevel = 0;
+            financialChart1.AxisY.MajorGrid = true;
+            financialChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
+            financialChart1.AxisY.PlotAreaName = null;
+            financialChart1.AxisY.Position = C1.Chart.Position.Left;
+            financialChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
+            financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Column;
+            financialChart1.DataLabel.Angle = 0;
+            financialChart1.DataLabel.Border = false;
+            financialChart1.DataLabel.ConnectingLine = false;
+            financialChart1.DataLabel.Content = null;
+            financialChart1.DataLabel.ContentOptions = C1.Chart.ContentOptions.WordWrap;
+            financialChart1.DataLabel.MaxAutoLabels = 100;
+            financialChart1.DataLabel.MaxLines = 0;
+            financialChart1.DataLabel.MaxWidth = 0;
+            financialChart1.DataLabel.Offset = 0;
+            financialChart1.DataLabel.Overlapping = C1.Chart.LabelOverlapping.Hide;
+            financialChart1.DataLabel.OverlappingOptions = C1.Chart.LabelOverlappingOptions.OutsidePlotArea;
+            financialChart1.DataLabel.Position = C1.Chart.LabelPosition.None;
+            financialChart1.Dock = DockStyle.Fill;
+            financialChart1.Legend.ItemMaxWidth = 0;
+            financialChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
+            financialChart1.Legend.Position = C1.Chart.Position.Right;
+            financialChart1.Legend.Reversed = false;
+            financialChart1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
+            financialChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
+            financialChart1.Legend.Title = null;
+            financialChart1.Location = new Point(0, 0);
+            financialChart1.Margin = new Padding(0);
+            financialChart1.Name = "financialChart1";
+            financialChart1.Options.BoxSize = 2D;
+            financialChart1.Options.Chart = financialChart1;
+            elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize1.Value = 70D;
+            financialChart1.Options.ClusterSize = elementSize1;
+            financialChart1.Options.ReversalAmount = 1D;
+            financialChart1.PlotMargin = new Padding(0);
+            financialChart1.SelectedSeries = null;
+            financialChart1.SelectionStyle.StrokeColor = Color.Red;
+            financialChart1.Size = new Size(1168, 452);
+            financialChart1.TabIndex = 0;
+            financialChart1.Text = "financialChart1";
             // 
             // 
             // 
-            this.financialChart1.ToolTip.Content = "{value}";
+            financialChart1.ToolTip.Content = "{value}";
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.cmdToolType);
-            this.flowLayoutPanel1.Controls.Add(this.label6);
-            this.flowLayoutPanel1.Controls.Add(this.cmbLabelPosition);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.nudStartX);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.nudEndX);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.nudStartY);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.nudEndY);
-            this.flowLayoutPanel1.Controls.Add(this.cbUptrend);
-            this.flowLayoutPanel1.Controls.Add(this.cbRangeSelector);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 218);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(794, 51);
-            this.flowLayoutPanel1.TabIndex = 2;
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Controls.Add(label1);
+            flowLayoutPanel1.Controls.Add(c1CmdToolType);
+            flowLayoutPanel1.Controls.Add(label6);
+            flowLayoutPanel1.Controls.Add(c1CmbLabelPosition);
+            flowLayoutPanel1.Controls.Add(label2);
+            flowLayoutPanel1.Controls.Add(nudStartX);
+            flowLayoutPanel1.Controls.Add(label3);
+            flowLayoutPanel1.Controls.Add(nudEndX);
+            flowLayoutPanel1.Controls.Add(label4);
+            flowLayoutPanel1.Controls.Add(nudStartY);
+            flowLayoutPanel1.Controls.Add(label5);
+            flowLayoutPanel1.Controls.Add(nudEndY);
+            flowLayoutPanel1.Controls.Add(c1CbUptrend);
+            flowLayoutPanel1.Controls.Add(c1CbRangeSelector);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 452);
+            flowLayoutPanel1.Margin = new Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Padding = new Padding(0, 15, 0, 0);
+            flowLayoutPanel1.Size = new Size(1168, 108);
+            flowLayoutPanel1.TabIndex = 2;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Type";
+            label1.Anchor = AnchorStyles.Left;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(3, 23);
+            label1.Margin = new Padding(3, 3, 3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(78, 36);
+            label1.TabIndex = 0;
+            label1.Text = "Type:";
             // 
-            // cmdToolType
+            // c1CmdToolType
             // 
-            this.cmdToolType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmdToolType.FormattingEnabled = true;
-            this.cmdToolType.Location = new System.Drawing.Point(38, 3);
-            this.cmdToolType.Name = "cmdToolType";
-            this.cmdToolType.Size = new System.Drawing.Size(100, 21);
-            this.cmdToolType.TabIndex = 1;
-            this.cmdToolType.SelectedIndexChanged += new System.EventHandler(this.cmbToolType_SelectedIndexChanged);
+            c1CmdToolType.Anchor = AnchorStyles.Left;
+            c1CmdToolType.DropDownAlign = C1.Framework.DropDownAlignment.Center;
+            c1CmdToolType.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
+            c1CmdToolType.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            c1CmdToolType.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
+            c1CmdToolType.Location = new Point(87, 18);
+            c1CmdToolType.Name = "c1CmdToolType";
+            c1CmdToolType.ReadOnly = true;
+            c1CmdToolType.Size = new Size(215, 44);
+            c1CmdToolType.TabIndex = 14;
+            c1CmdToolType.TextAlign = HorizontalAlignment.Center;
+            c1CmdToolType.SelectedIndexChanged += c1CmdToolType_SelectedIndexChanged;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(154, 3);
-            this.label6.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Label Position";
+            label6.Anchor = AnchorStyles.Left;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(318, 23);
+            label6.Margin = new Padding(13, 3, 3, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(183, 36);
+            label6.TabIndex = 11;
+            label6.Text = "Label Position:";
             // 
-            // cmbLabelPosition
+            // c1CmbLabelPosition
             // 
-            this.cmbLabelPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLabelPosition.FormattingEnabled = true;
-            this.cmbLabelPosition.Location = new System.Drawing.Point(239, 3);
-            this.cmbLabelPosition.Name = "cmbLabelPosition";
-            this.cmbLabelPosition.Size = new System.Drawing.Size(80, 21);
-            this.cmbLabelPosition.TabIndex = 9;
-            this.cmbLabelPosition.SelectedIndexChanged += new System.EventHandler(this.cmbLabelPosition_SelectedIndexChanged);
+            c1CmbLabelPosition.Anchor = AnchorStyles.Left;
+            c1CmbLabelPosition.DropDownAlign = C1.Framework.DropDownAlignment.Center;
+            c1CmbLabelPosition.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
+            c1CmbLabelPosition.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            c1CmbLabelPosition.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
+            c1CmbLabelPosition.Location = new Point(507, 18);
+            c1CmbLabelPosition.Name = "c1CmbLabelPosition";
+            c1CmbLabelPosition.ReadOnly = true;
+            c1CmbLabelPosition.Size = new Size(174, 44);
+            c1CmbLabelPosition.TabIndex = 15;
+            c1CmbLabelPosition.TextAlign = HorizontalAlignment.Center;
+            c1CmbLabelPosition.SelectedItemChanged += c1CmbLabelPosition_SelectedItemChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(335, 3);
-            this.label2.Margin = new System.Windows.Forms.Padding(13, 3, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "StartX";
+            label2.Anchor = AnchorStyles.Left;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(697, 23);
+            label2.Margin = new Padding(13, 3, 3, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(94, 36);
+            label2.TabIndex = 2;
+            label2.Text = "StartX:";
             // 
             // nudStartX
             // 
-            this.nudStartX.DecimalPlaces = 2;
-            this.nudStartX.Location = new System.Drawing.Point(378, 3);
-            this.nudStartX.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.nudStartX.Name = "nudStartX";
-            this.nudStartX.Size = new System.Drawing.Size(52, 22);
-            this.nudStartX.TabIndex = 3;
-            this.nudStartX.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.nudStartX.ValueChanged += new System.EventHandler(this.nudStartX_ValueChanged);
+            nudStartX.Anchor = AnchorStyles.Left;
+            nudStartX.Location = new Point(797, 24);
+            nudStartX.Minimum = -100;
+            nudStartX.Name = "nudStartX";
+            nudStartX.Size = new Size(77, 31);
+            nudStartX.TabIndex = 18;
+            nudStartX.TextAlign = HorizontalAlignment.Center;
+            nudStartX.Value = new decimal(new int[] { 20, 0, 0, 0 });
+            nudStartX.ValueChanged += nudStartX_ValueChanged_1;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(449, 3);
-            this.label3.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "EndX";
+            label3.Anchor = AnchorStyles.Left;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(893, 23);
+            label3.Margin = new Padding(16, 3, 3, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(81, 36);
+            label3.TabIndex = 4;
+            label3.Text = "EndX:";
             // 
             // nudEndX
             // 
-            this.nudEndX.DecimalPlaces = 2;
-            this.nudEndX.Location = new System.Drawing.Point(488, 3);
-            this.nudEndX.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.nudEndX.Name = "nudEndX";
-            this.nudEndX.Size = new System.Drawing.Size(52, 22);
-            this.nudEndX.TabIndex = 5;
-            this.nudEndX.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.nudEndX.ValueChanged += new System.EventHandler(this.nudEndX_ValueChanged);
+            nudEndX.Anchor = AnchorStyles.Left;
+            nudEndX.Location = new Point(980, 24);
+            nudEndX.Minimum = -100;
+            nudEndX.Name = "nudEndX";
+            nudEndX.Size = new Size(80, 31);
+            nudEndX.TabIndex = 19;
+            nudEndX.TextAlign = HorizontalAlignment.Center;
+            nudEndX.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            nudEndX.ValueChanged += nudEndX_ValueChanged_1;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(559, 3);
-            this.label4.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "StartY";
+            label4.Anchor = AnchorStyles.Left;
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(16, 70);
+            label4.Margin = new Padding(16, 3, 3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(93, 36);
+            label4.TabIndex = 6;
+            label4.Text = "StartY:";
             // 
             // nudStartY
             // 
-            this.nudStartY.DecimalPlaces = 2;
-            this.nudStartY.Location = new System.Drawing.Point(601, 3);
-            this.nudStartY.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.nudStartY.Name = "nudStartY";
-            this.nudStartY.Size = new System.Drawing.Size(52, 22);
-            this.nudStartY.TabIndex = 7;
-            this.nudStartY.Value = new decimal(new int[] {
-            25,
-            0,
-            0,
-            65536});
-            this.nudStartY.ValueChanged += new System.EventHandler(this.nudStartY_ValueChanged);
+            nudStartY.Anchor = AnchorStyles.Left;
+            nudStartY.Location = new Point(115, 71);
+            nudStartY.Minimum = -100;
+            nudStartY.Name = "nudStartY";
+            nudStartY.Size = new Size(79, 31);
+            nudStartY.TabIndex = 21;
+            nudStartY.TextAlign = HorizontalAlignment.Center;
+            nudStartY.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            nudStartY.ValueChanged += nudStartY_ValueChanged_1;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(672, 3);
-            this.label5.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "EndY";
+            label5.Anchor = AnchorStyles.Left;
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(213, 70);
+            label5.Margin = new Padding(16, 3, 3, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(80, 36);
+            label5.TabIndex = 8;
+            label5.Text = "EndY:";
             // 
             // nudEndY
             // 
-            this.nudEndY.DecimalPlaces = 2;
-            this.nudEndY.Location = new System.Drawing.Point(710, 3);
-            this.nudEndY.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.nudEndY.Name = "nudEndY";
-            this.nudEndY.Size = new System.Drawing.Size(52, 22);
-            this.nudEndY.TabIndex = 10;
-            this.nudEndY.Value = new decimal(new int[] {
-            25,
-            0,
-            0,
-            65536});
-            this.nudEndY.ValueChanged += new System.EventHandler(this.nudEndY_ValueChanged);
+            nudEndY.Anchor = AnchorStyles.Left;
+            nudEndY.Location = new Point(299, 71);
+            nudEndY.Minimum = -100;
+            nudEndY.Name = "nudEndY";
+            nudEndY.Size = new Size(82, 31);
+            nudEndY.TabIndex = 20;
+            nudEndY.TextAlign = HorizontalAlignment.Center;
+            nudEndY.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            nudEndY.ValueChanged += nudEndY_ValueChanged_1;
             // 
-            // cbUptrend
+            // c1CbUptrend
             // 
-            this.cbUptrend.AutoSize = true;
-            this.cbUptrend.Location = new System.Drawing.Point(3, 31);
-            this.cbUptrend.Name = "cbUptrend";
-            this.cbUptrend.Size = new System.Drawing.Size(69, 17);
-            this.cbUptrend.TabIndex = 12;
-            this.cbUptrend.Text = "Uptrend";
-            this.cbUptrend.UseVisualStyleBackColor = true;
-            this.cbUptrend.CheckedChanged += new System.EventHandler(this.cbUptrend_CheckedChanged);
+            c1CbUptrend.Anchor = AnchorStyles.Left;
+            c1CbUptrend.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            c1CbUptrend.Location = new Point(387, 69);
+            c1CbUptrend.Name = "c1CbUptrend";
+            c1CbUptrend.Size = new Size(104, 35);
+            c1CbUptrend.TabIndex = 16;
+            c1CbUptrend.Text = "Uptrend";
+            c1CbUptrend.Value = null;
+            c1CbUptrend.CheckedChanged += c1CbUptrend_CheckedChanged;
             // 
-            // cbRangeSelector
+            // c1CbRangeSelector
             // 
-            this.cbRangeSelector.AutoSize = true;
-            this.cbRangeSelector.Location = new System.Drawing.Point(78, 31);
-            this.cbRangeSelector.Name = "cbRangeSelector";
-            this.cbRangeSelector.Size = new System.Drawing.Size(103, 17);
-            this.cbRangeSelector.TabIndex = 13;
-            this.cbRangeSelector.Text = "Range Selector";
-            this.cbRangeSelector.UseVisualStyleBackColor = true;
-            this.cbRangeSelector.CheckedChanged += new System.EventHandler(this.cbRangeSelector_CheckedChanged);
+            c1CbRangeSelector.Anchor = AnchorStyles.None;
+            c1CbRangeSelector.Font = new Font("Segoe UI Variable Display", 13.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            c1CbRangeSelector.Location = new Point(497, 68);
+            c1CbRangeSelector.Name = "c1CbRangeSelector";
+            c1CbRangeSelector.Size = new Size(104, 37);
+            c1CbRangeSelector.TabIndex = 17;
+            c1CbRangeSelector.Text = "Range Selector";
+            c1CbRangeSelector.Value = null;
+            c1CbRangeSelector.CheckedChanged += c1CbRangeSelector_CheckedChanged;
             // 
             // FibonacciTool
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "FibonacciTool";
-            this.Size = new System.Drawing.Size(800, 272);
-            this.Load += new System.EventHandler(this.OnLoad);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStartX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEndX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStartY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEndY)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            Controls.Add(tableLayoutPanel1);
+            Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Name = "FibonacciTool";
+            Size = new Size(1168, 560);
+            Load += OnLoad;
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)financialChart1).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)c1CmdToolType).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1CmbLabelPosition).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudStartX).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudEndX).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudStartY).EndInit();
+            ((System.ComponentModel.ISupportInitialize)nudEndY).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1CbUptrend).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1CbRangeSelector).EndInit();
+            ResumeLayout(false);
 
         }
 
@@ -333,18 +384,18 @@
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmdToolType;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown nudStartX;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown nudEndX;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown nudStartY;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cmbLabelPosition;
-        private System.Windows.Forms.NumericUpDown nudEndY;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.CheckBox cbUptrend;
-        private System.Windows.Forms.CheckBox cbRangeSelector;
+        private C1.Win.Input.C1ComboBox c1CmdToolType;
+        private C1.Win.Input.C1ComboBox c1CmbLabelPosition;
+        private C1.Win.Input.C1CheckBox c1CbUptrend;
+        private C1.Win.Input.C1CheckBox c1CbRangeSelector;
+        private C1NumericEditEx nudStartX;
+        private C1NumericEditEx nudEndX;
+        private C1NumericEditEx nudStartY;
+        private C1NumericEditEx nudEndY;
     }
 }

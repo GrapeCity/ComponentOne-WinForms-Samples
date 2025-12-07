@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C1TopicBar));
-            C1.Win.C1Command.C1TopicPage c1TopicPage1 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink1 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink2 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink3 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicPage c1TopicPage2 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink4 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink5 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink6 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicPage c1TopicPage3 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink7 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink8 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink9 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink10 = new C1.Win.C1Command.C1TopicLink();
+            C1.Win.Command.C1TopicPage c1TopicPage1 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink1 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink2 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink3 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicPage c1TopicPage2 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink4 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink5 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink6 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicPage c1TopicPage3 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink7 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink8 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink9 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink10 = new C1.Win.Command.C1TopicLink();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.c1TopicBar1 = new C1.Win.C1Command.C1TopicBar();
+            this.c1TopicBar1 = new C1.Win.Command.C1TopicBar();
             this.splitter1 = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.c1TopicBar1)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +85,7 @@
             c1TopicPage1.Links.Add(c1TopicLink1);
             c1TopicPage1.Links.Add(c1TopicLink2);
             c1TopicPage1.Links.Add(c1TopicLink3);
-            c1TopicPage1.Text = "System Tasks";
+            c1TopicPage1.Text = "   System Tasks";
             c1TopicPage2.ImageIndex = 4;
             c1TopicPage2.ImageList = this.imageList1;
             c1TopicLink4.ImageIndex = 5;
@@ -97,7 +97,7 @@
             c1TopicPage2.Links.Add(c1TopicLink4);
             c1TopicPage2.Links.Add(c1TopicLink5);
             c1TopicPage2.Links.Add(c1TopicLink6);
-            c1TopicPage2.Text = "Other Places";
+            c1TopicPage2.Text = "   Other Places";
             c1TopicPage3.ImageList = this.imageList1;
             c1TopicLink7.ImageIndex = 8;
             c1TopicLink7.Text = "Rename this file";
@@ -117,8 +117,8 @@
             this.c1TopicBar1.Pages.Add(c1TopicPage2);
             this.c1TopicBar1.Pages.Add(c1TopicPage3);
             this.c1TopicBar1.Size = new System.Drawing.Size(281, 549);
-            this.c1TopicBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1TopicBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Classic;
+            this.c1TopicBar1.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.c1TopicBar1.VisualStyleBase = C1.Win.Command.VisualStyle.Classic;
             // 
             // splitter1
             // 
@@ -147,7 +147,7 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1TopicBar c1TopicBar1;
+        private C1.Win.Command.C1TopicBar c1TopicBar1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Splitter splitter1;
     }

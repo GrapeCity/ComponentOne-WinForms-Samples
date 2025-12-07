@@ -55,7 +55,7 @@ namespace CustomColumns
                     {
                         var col = cols[cols.Count - 1 - i];
                         col.Format = "n2";
-                        col.TextAlignFixed = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter;
+                        col.TextAlignFixed = C1.Win.FlexGrid.TextAlignEnum.CenterCenter;
                     }
                 }
             }

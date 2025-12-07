@@ -508,7 +508,7 @@
             this.Controls.Add(this.c1Ribbon1);
             this.Controls.Add(this.c1StatusBar1);
             this.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.Name = "Form1";
             this.Text = "C1Icon Demo";            
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();

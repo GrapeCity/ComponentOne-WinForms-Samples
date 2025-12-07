@@ -40,13 +40,13 @@
             this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
             this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).BeginInit();
             this.c1CommandDock1.SuspendLayout();
@@ -148,10 +148,10 @@
             this.c1DockingTab1.ShowCaption = true;
             this.c1DockingTab1.Size = new System.Drawing.Size(300, 409);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this.c1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.Office2010Blue;
             // 
             // c1DockingTabPage1
             // 
@@ -239,11 +239,11 @@
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
         private C1.Win.DataFilter.C1DataFilter c1DataFilter1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;

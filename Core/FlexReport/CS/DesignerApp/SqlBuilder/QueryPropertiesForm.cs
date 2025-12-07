@@ -162,8 +162,9 @@ namespace SqlBuilder
 		// ** fields
 		private QueryBuilder _qb;
 
-		// ** object model
-		public QueryBuilder QueryBuilder 
+        // ** object model
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public QueryBuilder QueryBuilder 
 		{
 			get { return _qb; }
 			set 

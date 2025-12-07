@@ -128,7 +128,7 @@
   <data name="hdrCategories.Text" xml:space="preserve">
     <value>&amp;Categories</value>
   </data>
-  <assembly alias="C1.Win.C1InputPanel.4.5.2" name="C1.Win.C1InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.InputPanel.4.5.2" name="C1.Win.InputPanel.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblCategoryID.Text" xml:space="preserve">
     <value>Category &amp;ID:</value>

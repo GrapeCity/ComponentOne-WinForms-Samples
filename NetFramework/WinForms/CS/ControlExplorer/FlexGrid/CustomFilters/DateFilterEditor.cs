@@ -10,7 +10,7 @@ namespace ControlExplorer.FlexGrid.CustomFilters
 {
     public partial class DateFilterEditor : 
         UserControl,
-        C1.Win.C1FlexGrid.IC1ColumnFilterEditor
+        C1.Win.FlexGrid.IC1ColumnFilterEditor
     {
         //-------------------------------------------------------------------------------
         #region ** fields
@@ -45,7 +45,7 @@ namespace ControlExplorer.FlexGrid.CustomFilters
 		//-------------------------------------------------------------------------------
 		#region ** IC1ColumnFilterEditor
 
-		public void Initialize(C1.Win.C1FlexGrid.C1FlexGridBase grid, int columnIndex, C1.Win.C1FlexGrid.IC1ColumnFilter filter)
+		public void Initialize(C1.Win.FlexGrid.C1FlexGridBase grid, int columnIndex, C1.Win.FlexGrid.IC1ColumnFilter filter)
         {
             _filter = (DateFilter)filter;
 

@@ -30,37 +30,37 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TreeView));
-            this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1CommandSortAsc = new C1.Win.C1Command.C1Command();
-            this.c1CommandSortDesc = new C1.Win.C1Command.C1Command();
-            this.c1CommandAddChild = new C1.Win.C1Command.C1Command();
-            this.c1CommandDelete = new C1.Win.C1Command.C1Command();
-            this.c1CommandInsertItem = new C1.Win.C1Command.C1Command();
-            this.c1CommandAppendItem = new C1.Win.C1Command.C1Command();
-            this.c1CommandMoveLeft = new C1.Win.C1Command.C1Command();
-            this.c1CommandMoveUp = new C1.Win.C1Command.C1Command();
-            this.c1CommandMoveDown = new C1.Win.C1Command.C1Command();
-            this.c1CommandMoveRight = new C1.Win.C1Command.C1Command();
-            this.c1CommandPrint = new C1.Win.C1Command.C1Command();
-            this.c1CommandInsertBelow = new C1.Win.C1Command.C1Command();
-            this.c1CommandExpand = new C1.Win.C1Command.C1Command();
-            this.c1CommandCollapse = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink13 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink14 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
+            this.flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1CommandSortAsc = new C1.Win.Command.C1Command();
+            this.c1CommandSortDesc = new C1.Win.Command.C1Command();
+            this.c1CommandAddChild = new C1.Win.Command.C1Command();
+            this.c1CommandDelete = new C1.Win.Command.C1Command();
+            this.c1CommandInsertItem = new C1.Win.Command.C1Command();
+            this.c1CommandAppendItem = new C1.Win.Command.C1Command();
+            this.c1CommandMoveLeft = new C1.Win.Command.C1Command();
+            this.c1CommandMoveUp = new C1.Win.Command.C1Command();
+            this.c1CommandMoveDown = new C1.Win.Command.C1Command();
+            this.c1CommandMoveRight = new C1.Win.Command.C1Command();
+            this.c1CommandPrint = new C1.Win.Command.C1Command();
+            this.c1CommandInsertBelow = new C1.Win.Command.C1Command();
+            this.c1CommandExpand = new C1.Win.Command.C1Command();
+            this.c1CommandCollapse = new C1.Win.Command.C1Command();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink13 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink14 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
@@ -68,7 +68,7 @@
             // 
             // flex
             // 
-            this.flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.flex.ColumnInfo = "4,1,0,0,0,85,Columns:";
             this.flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flex.Location = new System.Drawing.Point(0, 26);
@@ -87,7 +87,7 @@
             this.c1ToolBar1.AccessibleName = "Tool Bar";
             this.c1ToolBar1.AutoSize = false;
             this.c1ToolBar1.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink8,
             this.c1CommandLink9,
             this.c1CommandLink7,
@@ -108,7 +108,7 @@
             this.c1ToolBar1.Name = "c1ToolBar1";
             this.c1ToolBar1.Size = new System.Drawing.Size(592, 26);
             this.c1ToolBar1.Text = "c1ToolBar1";
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1ToolBar1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1CommandHolder1
             // 
@@ -127,7 +127,7 @@
             this.c1CommandHolder1.Commands.Add(this.c1CommandExpand);
             this.c1CommandHolder1.Commands.Add(this.c1CommandCollapse);
             this.c1CommandHolder1.Owner = this;
-            this.c1CommandHolder1.CommandClick += new C1.Win.C1Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
+            this.c1CommandHolder1.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
             // 
             // c1CommandSortAsc
             // 
@@ -315,37 +315,37 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flex;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1Command c1CommandSortAsc;
-        private C1.Win.C1Command.C1Command c1CommandSortDesc;
-        private C1.Win.C1Command.C1Command c1CommandAddChild;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1Command c1CommandDelete;
-        private C1.Win.C1Command.C1Command c1CommandInsertItem;
-        private C1.Win.C1Command.C1Command c1CommandAppendItem;
-        private C1.Win.C1Command.C1Command c1CommandMoveLeft;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1Command c1CommandMoveUp;
-        private C1.Win.C1Command.C1Command c1CommandMoveDown;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1Command c1CommandMoveRight;
-        private C1.Win.C1Command.C1Command c1CommandPrint;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Command.C1Command c1CommandInsertBelow;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
-        private C1.Win.C1Command.C1Command c1CommandExpand;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink13;
-        private C1.Win.C1Command.C1Command c1CommandCollapse;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink14;
+        private C1.Win.FlexGrid.C1FlexGrid flex;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1Command c1CommandSortAsc;
+        private C1.Win.Command.C1Command c1CommandSortDesc;
+        private C1.Win.Command.C1Command c1CommandAddChild;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1Command c1CommandDelete;
+        private C1.Win.Command.C1Command c1CommandInsertItem;
+        private C1.Win.Command.C1Command c1CommandAppendItem;
+        private C1.Win.Command.C1Command c1CommandMoveLeft;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1Command c1CommandMoveUp;
+        private C1.Win.Command.C1Command c1CommandMoveDown;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1Command c1CommandMoveRight;
+        private C1.Win.Command.C1Command c1CommandPrint;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1Command c1CommandInsertBelow;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1Command c1CommandExpand;
+        private C1.Win.Command.C1CommandLink c1CommandLink13;
+        private C1.Win.Command.C1Command c1CommandCollapse;
+        private C1.Win.Command.C1CommandLink c1CommandLink14;
         private System.Windows.Forms.ImageList imageList1;
     }
 }

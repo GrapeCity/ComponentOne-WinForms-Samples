@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ namespace Tutorial20
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1Combo c1Combo1;
+		private C1.Win.List.C1Combo c1Combo1;
 		private System.Windows.Forms.Button button1;
 		private bool				m_allowDelete = false;
 		private System.Windows.Forms.ContextMenu contextMenu1;
@@ -63,16 +63,18 @@ namespace Tutorial20
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
-			this.c1Combo1 = new C1.Win.C1List.C1Combo();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
+			this.c1Combo1 = new C1.Win.List.C1Combo();
 			this.contextMenu1 = new System.Windows.Forms.ContextMenu();
 			this.menuItem1 = new System.Windows.Forms.MenuItem();
 			this.menuItem2 = new System.Windows.Forms.MenuItem();
@@ -108,7 +110,7 @@ namespace Tutorial20
 			this.c1Combo1.EditorForeColor = System.Drawing.SystemColors.WindowText;
 			this.c1Combo1.EditorHeight = 15;
 			this.c1Combo1.EvenRowStyle = style2;
-			this.c1Combo1.FlatStyle = C1.Win.C1List.FlatModeEnum.Standard;
+			this.c1Combo1.FlatStyle = C1.Win.List.FlatModeEnum.Standard;
 			this.c1Combo1.FooterStyle = style3;
 			this.c1Combo1.GapHeight = 2;
 			this.c1Combo1.HeadingStyle = style4;
@@ -123,7 +125,7 @@ namespace Tutorial20
 			this.c1Combo1.Name = "c1Combo1";
 			this.c1Combo1.OddRowStyle = style6;
 			this.c1Combo1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.c1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.c1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1Combo1.SelectedStyle = style7;
 			this.c1Combo1.Size = new System.Drawing.Size(184, 21);

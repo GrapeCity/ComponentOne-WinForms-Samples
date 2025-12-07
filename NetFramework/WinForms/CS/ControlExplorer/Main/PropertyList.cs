@@ -6,14 +6,14 @@ using System.Drawing;
 using System.Text;
 using System.Reflection;
 using System.Windows.Forms;
-using C1.Win.C1InputPanel;
+using C1.Win.InputPanel;
 
 namespace ControlExplorer
 {
     public class PropertyList: C1InputPanel
     {
-        private static int unitHeight = 26;
-        private static int labelWidth = 92;
+        private static int unitHeight = 30;
+        private static int labelWidth = 150;
         public PropertyList(ArrayList properties)
         {
             this.ChildSpacing = new Size(2, 2);

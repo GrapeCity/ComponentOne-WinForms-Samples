@@ -7,10 +7,6 @@
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
- 
-  <ItemGroup>
-    <EmbeddedResource Include="readme.txt" />
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
@@ -31,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +50,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include="readme.txt" />
     <EmbeddedResource Update="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

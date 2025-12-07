@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace WindowsApplication8
 {
@@ -55,6 +55,7 @@ namespace WindowsApplication8
 		{
             this.components = new System.ComponentModel.Container();
             System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -131,32 +132,32 @@ namespace WindowsApplication8
                 cmdCut.Text = "C&ut";
                 cmdCut.Shortcut = Shortcut.CtrlX;
                 cmdCut.ImageIndex = 0;
-                cmdCut.Click += new C1.Win.C1Command.ClickEventHandler(clickCut);
-                cmdCut.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(queryCut);
+                cmdCut.Click += new C1.Win.Command.ClickEventHandler(clickCut);
+                cmdCut.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(queryCut);
 
                 // Create and set up the Copy command
                 C1Command cmdCopy = ch.CreateCommand();
                 cmdCopy.Text = "&Copy";
                 cmdCopy.Shortcut = Shortcut.CtrlC;
                 cmdCopy.ImageIndex = 1;
-                cmdCopy.Click += new C1.Win.C1Command.ClickEventHandler(clickCopy);
-                cmdCopy.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(queryCopy);
+                cmdCopy.Click += new C1.Win.Command.ClickEventHandler(clickCopy);
+                cmdCopy.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(queryCopy);
 
                 // Create and set up the Paste command
                 C1Command cmdPaste = ch.CreateCommand();
                 cmdPaste.Text = "&Paste";
                 cmdPaste.Shortcut = Shortcut.CtrlV;
                 cmdPaste.ImageIndex = 2;
-                cmdPaste.Click += new C1.Win.C1Command.ClickEventHandler(clickPaste);
-                cmdPaste.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(queryPaste);
+                cmdPaste.Click += new C1.Win.Command.ClickEventHandler(clickPaste);
+                cmdPaste.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(queryPaste);
 
                 // Create and set up the Undo command
                 C1Command cmdUndo = ch.CreateCommand();
                 cmdUndo.Text = "&Undo";
                 cmdUndo.Shortcut = Shortcut.CtrlZ;
                 cmdUndo.ImageIndex = -1;
-                cmdUndo.Click += new C1.Win.C1Command.ClickEventHandler(clickUndo);
-                cmdUndo.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(queryUndo);
+                cmdUndo.Click += new C1.Win.Command.ClickEventHandler(clickUndo);
+                cmdUndo.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(queryUndo);
 
                 // Create the context menu to hold other commands
                 C1ContextMenu cm = ch.CreateCommand(typeof(C1ContextMenu)) as C1ContextMenu;
@@ -183,44 +184,44 @@ namespace WindowsApplication8
         }
 
         // The click* methods handle corresponding command actions
-        private void clickCut(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void clickCut(object sender, C1.Win.Command.ClickEventArgs e)
         {
             this.textBox1.Cut();
         }
 
         // The query methods are automatically called to provide the current state of
         // corresponding commnads.
-        private void queryCut(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void queryCut(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             e.Enabled = this.textBox1.SelectionLength > 0;
         }
 
-        private void clickCopy(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void clickCopy(object sender, C1.Win.Command.ClickEventArgs e)
         {
             this.textBox1.Copy();
         }
 
-        private void queryCopy(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void queryCopy(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             e.Enabled = this.textBox1.SelectionLength > 0;
         }
 
-        private void clickPaste(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void clickPaste(object sender, C1.Win.Command.ClickEventArgs e)
         {
             this.textBox1.Paste();
         }
 
-        private void queryPaste(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void queryPaste(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             e.Enabled = Clipboard.GetDataObject().GetDataPresent(DataFormats.Text);
         }
 
-        private void clickUndo(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void clickUndo(object sender, C1.Win.Command.ClickEventArgs e)
         {
             this.textBox1.Undo();
         }
 
-        private void queryUndo(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void queryUndo(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             e.Enabled = this.textBox1.CanUndo;
         }

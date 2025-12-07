@@ -1,5 +1,5 @@
 ﻿Imports System.Linq
-Imports C1.Win.C1InputPanel
+Imports C1.Win.InputPanel
 Imports C1.Win.Ribbon
 
 Public Class BackstageTab

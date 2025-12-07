@@ -25,7 +25,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox
-        Me.C1SpellChecker1 = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
+        Me.C1SpellChecker1 = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
         CType(Me.C1SpellChecker1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,6 +53,6 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
-    Friend WithEvents C1SpellChecker1 As C1.Win.C1SpellChecker.C1SpellChecker
+    Friend WithEvents C1SpellChecker1 As C1.Win.SpellChecker.C1SpellChecker
 
 End Class

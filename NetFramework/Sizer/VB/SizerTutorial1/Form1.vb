@@ -29,7 +29,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1Sizer1 As C1.Win.C1Sizer.C1Sizer
+    Friend WithEvents C1Sizer1 As C1.Win.Sizer.C1Sizer
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
@@ -47,7 +47,8 @@ Public Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.C1Sizer1 = New C1.Win.C1Sizer.C1Sizer()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Me.C1Sizer1 = New C1.Win.Sizer.C1Sizer()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -71,13 +72,25 @@ Public Class Form1
         'C1Sizer1
         '
         Me.C1Sizer1.AllowDrop = True
-        Me.C1Sizer1.Controls.AddRange(New System.Windows.Forms.Control() {Me.Label1, Me.TextBox1, Me.TextBox2, Me.TextBox3, Me.TextBox4, Me.TextBox5, Me.TextBox6, Me.TextBox7, Me.TextBox8, Me.Label2, Me.Label3, Me.Label4, Me.Label5, Me.Label6, Me.Label7, Me.Label8})
+        Me.C1Sizer1.Controls.Add(Me.Label1)
+        Me.C1Sizer1.Controls.Add(Me.TextBox1)
+        Me.C1Sizer1.Controls.Add(Me.TextBox2)
+        Me.C1Sizer1.Controls.Add(Me.TextBox3)
+        Me.C1Sizer1.Controls.Add(Me.TextBox4)
+        Me.C1Sizer1.Controls.Add(Me.TextBox5)
+        Me.C1Sizer1.Controls.Add(Me.TextBox6)
+        Me.C1Sizer1.Controls.Add(Me.TextBox7)
+        Me.C1Sizer1.Controls.Add(Me.TextBox8)
+        Me.C1Sizer1.Controls.Add(Me.Label2)
+        Me.C1Sizer1.Controls.Add(Me.Label3)
+        Me.C1Sizer1.Controls.Add(Me.Label4)
+        Me.C1Sizer1.Controls.Add(Me.Label5)
+        Me.C1Sizer1.Controls.Add(Me.Label6)
+        Me.C1Sizer1.Controls.Add(Me.Label7)
+        Me.C1Sizer1.Controls.Add(Me.Label8)
         Me.C1Sizer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.C1Sizer1.GridDefinition = "9.94475138121547:False:True;9.39226519337017:False:True;10.4972375690608:False:Tr" & _
-        "ue;9.94475138121547:False:True;10.4972375690608:False:True;9.39226519337017:Fals" & _
-        "e:True;14.3646408839779:False:False;13.8121546961326:False:False;" & Microsoft.VisualBasic.ChrW(9) & "24.43181818181" & _
-        "82:True:False;11.3636363636364:False:False;11.3636363636364:False:False;11.93181" & _
-        "81818182:False:False;24.4318181818182:False:False;11.3636363636364:False:False;"
+        Me.C1Sizer1.GridDefinition = resources.GetString("C1Sizer1.GridDefinition")
+        Me.C1Sizer1.Location = New System.Drawing.Point(0, 0)
         Me.C1Sizer1.Name = "C1Sizer1"
         Me.C1Sizer1.Size = New System.Drawing.Size(352, 181)
         Me.C1Sizer1.SplitterWidth = 2
@@ -98,7 +111,7 @@ Public Class Form1
         Me.TextBox1.Location = New System.Drawing.Point(92, 4)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(82, 18)
+        Me.TextBox1.Size = New System.Drawing.Size(126, 18)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Text = "TextBox1"
         '
@@ -107,7 +120,7 @@ Public Class Form1
         Me.TextBox2.Location = New System.Drawing.Point(92, 24)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(214, 17)
+        Me.TextBox2.Size = New System.Drawing.Size(256, 17)
         Me.TextBox2.TabIndex = 0
         Me.TextBox2.Text = "TextBox1"
         '
@@ -116,7 +129,7 @@ Public Class Form1
         Me.TextBox3.Location = New System.Drawing.Point(92, 43)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(214, 19)
+        Me.TextBox3.Size = New System.Drawing.Size(256, 19)
         Me.TextBox3.TabIndex = 0
         Me.TextBox3.Text = "TextBox1"
         '
@@ -125,7 +138,7 @@ Public Class Form1
         Me.TextBox4.Location = New System.Drawing.Point(92, 64)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(214, 18)
+        Me.TextBox4.Size = New System.Drawing.Size(256, 18)
         Me.TextBox4.TabIndex = 0
         Me.TextBox4.Text = "TextBox1"
         '
@@ -134,7 +147,7 @@ Public Class Form1
         Me.TextBox5.Location = New System.Drawing.Point(92, 84)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(214, 19)
+        Me.TextBox5.Size = New System.Drawing.Size(256, 19)
         Me.TextBox5.TabIndex = 0
         Me.TextBox5.Text = "TextBox1"
         '
@@ -143,7 +156,7 @@ Public Class Form1
         Me.TextBox6.Location = New System.Drawing.Point(92, 105)
         Me.TextBox6.Multiline = True
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(40, 17)
+        Me.TextBox6.Size = New System.Drawing.Size(82, 17)
         Me.TextBox6.TabIndex = 0
         Me.TextBox6.Text = "TextBox1"
         '
@@ -152,7 +165,7 @@ Public Class Form1
         Me.TextBox7.Location = New System.Drawing.Point(92, 124)
         Me.TextBox7.Multiline = True
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(214, 53)
+        Me.TextBox7.Size = New System.Drawing.Size(256, 53)
         Me.TextBox7.TabIndex = 0
         Me.TextBox7.Text = "TextBox1"
         '
@@ -161,7 +174,7 @@ Public Class Form1
         Me.TextBox8.Location = New System.Drawing.Point(220, 105)
         Me.TextBox8.Multiline = True
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(86, 17)
+        Me.TextBox8.Size = New System.Drawing.Size(128, 17)
         Me.TextBox8.TabIndex = 0
         Me.TextBox8.Text = "TextBox1"
         '
@@ -214,29 +227,30 @@ Public Class Form1
         '
         Me.Label7.Location = New System.Drawing.Point(4, 124)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(86, 26)
+        Me.Label7.Size = New System.Drawing.Size(86, 53)
         Me.Label7.TabIndex = 1
         Me.Label7.Text = "&Notes"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(134, 105)
+        Me.Label8.Location = New System.Drawing.Point(176, 105)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(84, 17)
+        Me.Label8.Size = New System.Drawing.Size(42, 17)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "&Zip"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Form1
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
         Me.ClientSize = New System.Drawing.Size(352, 181)
-        Me.Controls.AddRange(New System.Windows.Forms.Control() {Me.C1Sizer1})
+        Me.Controls.Add(Me.C1Sizer1)
         Me.Name = "Form1"
         Me.Text = "C1Sizer: Tutorial 1"
         CType(Me.C1Sizer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.C1Sizer1.ResumeLayout(False)
+        Me.C1Sizer1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

@@ -24,11 +24,11 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.epInfo = New C1.Win.C1SuperTooltip.C1SuperErrorProvider(Me.components)
-        Me.c1SuperTooltip1 = New C1.Win.C1SuperTooltip.C1SuperTooltip(Me.components)
-        Me.epWarning = New C1.Win.C1SuperTooltip.C1SuperErrorProvider(Me.components)
-        Me.epComplete = New C1.Win.C1SuperTooltip.C1SuperErrorProvider(Me.components)
-        Me.epError = New C1.Win.C1SuperTooltip.C1SuperErrorProvider(Me.components)
+        Me.epInfo = New C1.Win.SuperTooltip.C1SuperErrorProvider(Me.components)
+        Me.c1SuperTooltip1 = New C1.Win.SuperTooltip.C1SuperTooltip(Me.components)
+        Me.epWarning = New C1.Win.SuperTooltip.C1SuperErrorProvider(Me.components)
+        Me.epComplete = New C1.Win.SuperTooltip.C1SuperErrorProvider(Me.components)
+        Me.epError = New C1.Win.SuperTooltip.C1SuperErrorProvider(Me.components)
         Me.navigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.bs = New System.Windows.Forms.BindingSource(Me.components)
         Me.ds = New System.Data.DataSet
@@ -41,7 +41,7 @@ Partial Class Form1
         Me.bindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton
         Me.bindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton
         Me.bindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator
-        Me.epDataBound = New C1.Win.C1SuperTooltip.C1SuperErrorProvider(Me.components)
+        Me.epDataBound = New C1.Win.SuperTooltip.C1SuperErrorProvider(Me.components)
         Me.TabControl1 = New System.Windows.Forms.TabControl
         Me.TabPage1 = New System.Windows.Forms.TabPage
         Me.TabPage2 = New System.Windows.Forms.TabPage
@@ -92,8 +92,8 @@ Partial Class Form1
         'c1SuperTooltip1
         '
         Me.c1SuperTooltip1.Font = New System.Drawing.Font("Tahoma", 8.0!)
-        Me.c1SuperTooltip1.Images.Add(New C1.Win.C1SuperTooltip.ImageEntry("Info2.png", CType(resources.GetObject("c1SuperTooltip1.Images"), System.Drawing.Image)))
-        Me.c1SuperTooltip1.Images.Add(New C1.Win.C1SuperTooltip.ImageEntry("Cancel2.png", CType(resources.GetObject("c1SuperTooltip1.Images1"), System.Drawing.Image)))
+        Me.c1SuperTooltip1.Images.Add(New C1.Win.SuperTooltip.ImageEntry("Info2.png", CType(resources.GetObject("c1SuperTooltip1.Images"), System.Drawing.Image)))
+        Me.c1SuperTooltip1.Images.Add(New C1.Win.SuperTooltip.ImageEntry("Cancel2.png", CType(resources.GetObject("c1SuperTooltip1.Images1"), System.Drawing.Image)))
         '
         'epWarning
         '
@@ -504,7 +504,7 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents epInfo As C1.Win.C1SuperTooltip.C1SuperErrorProvider
+    Private WithEvents epInfo As C1.Win.SuperTooltip.C1SuperErrorProvider
     Private WithEvents navigator As System.Windows.Forms.BindingNavigator
     Private WithEvents bs As System.Windows.Forms.BindingSource
     Private WithEvents ds As System.Data.DataSet
@@ -517,11 +517,11 @@ Partial Class Form1
     Private WithEvents bindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
     Private WithEvents bindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
     Private WithEvents bindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Private WithEvents c1SuperTooltip1 As C1.Win.C1SuperTooltip.C1SuperTooltip
-    Private WithEvents epWarning As C1.Win.C1SuperTooltip.C1SuperErrorProvider
-    Private WithEvents epComplete As C1.Win.C1SuperTooltip.C1SuperErrorProvider
-    Private WithEvents epError As C1.Win.C1SuperTooltip.C1SuperErrorProvider
-    Private WithEvents epDataBound As C1.Win.C1SuperTooltip.C1SuperErrorProvider
+    Private WithEvents c1SuperTooltip1 As C1.Win.SuperTooltip.C1SuperTooltip
+    Private WithEvents epWarning As C1.Win.SuperTooltip.C1SuperErrorProvider
+    Private WithEvents epComplete As C1.Win.SuperTooltip.C1SuperErrorProvider
+    Private WithEvents epError As C1.Win.SuperTooltip.C1SuperErrorProvider
+    Private WithEvents epDataBound As C1.Win.SuperTooltip.C1SuperErrorProvider
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage

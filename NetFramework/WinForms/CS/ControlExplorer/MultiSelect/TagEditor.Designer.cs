@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.c1TagEditor1 = new C1.Win.Input.C1TagEditor();
-            this.c1SuperErrorProvider1 = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperErrorProvider1 = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1SuperErrorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +70,7 @@
         #endregion
 
         private C1.Win.Input.C1TagEditor c1TagEditor1;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider c1SuperErrorProvider1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider c1SuperErrorProvider1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
     }
 }

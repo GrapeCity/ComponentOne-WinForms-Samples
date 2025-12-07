@@ -5,20 +5,20 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Schedule;
-using C1.C1Schedule;
+using C1.Win.Schedule;
+using C1.Win.Schedule.UI;
+using C1.Schedule;
 using System.Globalization;
 using System.Threading;
-using C1.Win.C1Schedule.UI;
 using C1.Win.Ribbon;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace TableViews
 {
     public partial class Form1 : C1RibbonForm
     {
         private const string USHolidaysFile = "US32Holidays.ics";
-        private const string USHolidaysDownloadUri = "http://ical.mac.com/ical/US32Holidays.ics";
+        private const string USHolidaysDownloadUri = "https://ics.calendarlabs.com/76/ef4c45ee/US_Holidays.ics";
 
         //----------------------------------------
         #region ** Initializing
@@ -161,7 +161,7 @@ namespace TableViews
         // change application theme
         private void themeCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Text;
+            C1.Win.Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Text;
         }
 
         // show/hide agenda

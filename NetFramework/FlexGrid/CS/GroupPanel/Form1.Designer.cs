@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.groupPanel = new C1.Win.C1FlexGrid.C1FlexGridGroupPanel();
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.groupPanel = new C1.Win.FlexGrid.C1FlexGridGroupPanel();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.themeController = new C1.Win.C1Themes.C1ThemeController();
+            this.themeController = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.themeController)).BeginInit();
@@ -50,13 +52,13 @@
             // flexGrid
             // 
             this.flexGrid.BackColor = System.Drawing.Color.White;
-            this.flexGrid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.flexGrid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.flexGrid.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.Rows.DefaultSize = 23;
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.flexGrid.TabIndex = 0;
             this.themeController.SetTheme(this.flexGrid, "(default)");
@@ -103,10 +105,10 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridGroupPanel groupPanel;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.FlexGrid.C1FlexGridGroupPanel groupPanel;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel;
-        private C1.Win.C1Themes.C1ThemeController themeController;
+        private C1.Win.Themes.C1ThemeController themeController;
     }
 }
 

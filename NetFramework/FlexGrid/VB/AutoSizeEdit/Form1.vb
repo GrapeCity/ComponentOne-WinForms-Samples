@@ -4,7 +4,7 @@ Imports System.Collections
 Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -37,21 +37,21 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'flex
         '
-        Me.flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both
+        Me.flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both
         Me.flex.BackColor = System.Drawing.SystemColors.Window
         Me.flex.ColumnInfo = "10,1,0,0,0,85,Columns:"
         Me.flex.Dock = System.Windows.Forms.DockStyle.Fill
         Me.flex.Name = "flex"
         Me.flex.Size = New System.Drawing.Size(432, 273)
-        Me.flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _
@@ -82,7 +82,7 @@ Public Class Form1
         flex.Styles.Normal.WordWrap = True
     End Sub
 
-    Private Sub flex_AfterEdit(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles flex.AfterEdit
+    Private Sub flex_AfterEdit(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles flex.AfterEdit
         flex.AutoSizeRow(e.Row)
     End Sub
 
