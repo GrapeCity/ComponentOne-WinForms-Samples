@@ -1,6 +1,0 @@
-﻿<Project>
-
-  <Import Project="Common.targets" />
-  <Import Project="Deploy.targets" />
-
-</Project>

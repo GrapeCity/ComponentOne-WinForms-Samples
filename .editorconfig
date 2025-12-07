@@ -1,5 +1,0 @@
-[*]
-end_of_line = crlf
-
-[*.{cs,vb}]
-file_header_template = Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
