@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Model1.edmx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework.SqlServer" />
     <Reference Include="Microsoft.CSharp" />
@@ -128,6 +132,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include=".gclicx" />
+    <EntityDeploy Include="Model1.edmx" />
     <EmbeddedResource Update="LiveViews\ClientSideQuerying.resx">
       <DependentUpon>ClientSideQuerying.cs</DependentUpon>
     </EmbeddedResource>

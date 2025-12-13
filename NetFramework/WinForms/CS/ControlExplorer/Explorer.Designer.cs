@@ -62,7 +62,6 @@ namespace ControlExplorer
             C1.Win.Tile.TextElement textElement11 = new C1.Win.Tile.TextElement();
             C1.Win.Tile.ImageElement imageElement12 = new C1.Win.Tile.ImageElement();
             C1.Win.Tile.TextElement textElement12 = new C1.Win.Tile.TextElement();
-            C1.Win.TreeView.C1TreeColumn c1TreeColumn1 = new C1.Win.TreeView.C1TreeColumn();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlHeaderBottom = new System.Windows.Forms.Panel();
             this.breadCrumb = new ControlExplorer.Main.BreadCrumb();
@@ -156,7 +155,6 @@ namespace ControlExplorer
             this.pnlLeftPopular.SuspendLayout();
             this.pnlLeftNew.SuspendLayout();
             this.pnlLeftSamples.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.featureStack)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -382,18 +380,19 @@ namespace ControlExplorer
             this.lblThemeLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
             this.lblThemeLabel.Location = new System.Drawing.Point(8, 26);
             this.lblThemeLabel.Name = "lblThemeLabel";
-            this.lblThemeLabel.Size = new System.Drawing.Size(93, 32);
+            this.lblThemeLabel.Size = new System.Drawing.Size(47, 15);
             this.lblThemeLabel.TabIndex = 2;
             this.lblThemeLabel.Text = "Theme:";
             // 
             // thpThemePicker
             // 
+            this.thpThemePicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.thpThemePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.thpThemePicker.Location = new System.Drawing.Point(60, 22);
             this.thpThemePicker.Name = "thpThemePicker";
-            this.thpThemePicker.ReadOnly = true;
-            this.thpThemePicker.Size = new System.Drawing.Size(160, 40);
-            this.thpThemePicker.Styles.Default.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.thpThemePicker.Size = new System.Drawing.Size(160, 21);
             this.thpThemePicker.TabIndex = 9;
+            this.thpThemePicker.ThemeApplying += this.ThpThemePicker_ThemeApplying;
             // 
             // C1Logo
             // 
@@ -427,11 +426,12 @@ namespace ControlExplorer
             this.pnlFooterLogo.Size = new System.Drawing.Size(240, 48);
             this.pnlFooterLogo.TabIndex = 2;
             // 
-            // companyLogoBox
+            // mesciusLogo
             // 
             this.companyLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.companyLogoBox.Image = ResourceLoader.GetImage("companyLogoPictureBox.png");
             this.companyLogoBox.Location = new System.Drawing.Point(73, 6);
-            this.companyLogoBox.Name = "companyLogoBox";
+            this.companyLogoBox.Name = "mesciusLogo";
             this.companyLogoBox.Size = new System.Drawing.Size(164, 36);
             this.companyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.companyLogoBox.TabIndex = 0;
@@ -1108,7 +1108,7 @@ namespace ControlExplorer
             this.lblLeftDescriptionControls.MinimumSize = new System.Drawing.Size(0, 112);
             this.lblLeftDescriptionControls.Name = "lblLeftDescriptionControls";
             this.lblLeftDescriptionControls.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
-            this.lblLeftDescriptionControls.Size = new System.Drawing.Size(196, 112);
+            this.lblLeftDescriptionControls.Size = new System.Drawing.Size(115, 112);
             this.lblLeftDescriptionControls.TabIndex = 14;
             this.lblLeftDescriptionControls.Text = "Suite Description";
             // 
@@ -1126,42 +1126,23 @@ namespace ControlExplorer
             // 
             // featureStack
             // 
-            this.featureStack.AllowUserToResizeColumns = false;
-            this.featureStack.BackColor = System.Drawing.Color.Transparent;
-            this.featureStack.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            // 
-            // 
-            // 
-            this.featureStack.ButtonImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.featureStack.ButtonImageList.ImageSize = new System.Drawing.Size(16, 16);
-            // 
-            // 
-            // 
-            this.featureStack.CheckImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.featureStack.CheckImageList.ImageSize = new System.Drawing.Size(16, 16);
-            c1TreeColumn1.HeaderText = "Column1";
-            c1TreeColumn1.Name = "Column1";
-            c1TreeColumn1.Styles.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
-            this.featureStack.Columns.Add(c1TreeColumn1);
             this.featureStack.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.featureStack.HoverBackColor = System.Drawing.SystemColors.Control;
-            this.featureStack.HoverForeColor = System.Drawing.SystemColors.ControlText;
-            this.featureStack.Location = new System.Drawing.Point(0, 190);
+            this.featureStack.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.featureStack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
+            this.featureStack.Location = new System.Drawing.Point(0, 186);
             this.featureStack.Name = "featureStack";
             this.featureStack.Padding = new System.Windows.Forms.Padding(20, 0, 40, 0);
-            this.featureStack.SelectedBackColor = System.Drawing.SystemColors.Highlight;
-            this.featureStack.SelectedForeColor = System.Drawing.SystemColors.HighlightText;
-            this.featureStack.ShowColumnHeaders = false;
-            this.featureStack.Size = new System.Drawing.Size(400, 339);
-            this.featureStack.Styles.Default.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(87)))), ((int)(((byte)(87)))));
+            this.featureStack.Size = new System.Drawing.Size(400, 329);
             this.featureStack.TabIndex = 17;
+            this.featureStack.Text = "featureStack1";
+            this.featureStack.ItemClicked += this.featureStack_ItemClicked;
             // 
             // lblLeftSamplesListTitle
             // 
             this.lblLeftSamplesListTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblLeftSamplesListTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblLeftSamplesListTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblLeftSamplesListTitle.Location = new System.Drawing.Point(0, 157);
+            this.lblLeftSamplesListTitle.Location = new System.Drawing.Point(0, 153);
             this.lblLeftSamplesListTitle.Name = "lblLeftSamplesListTitle";
             this.lblLeftSamplesListTitle.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.lblLeftSamplesListTitle.Size = new System.Drawing.Size(400, 33);
@@ -1178,7 +1159,7 @@ namespace ControlExplorer
             this.lblLeftDescriptionSamples.MinimumSize = new System.Drawing.Size(100, 124);
             this.lblLeftDescriptionSamples.Name = "lblLeftDescriptionSamples";
             this.lblLeftDescriptionSamples.Padding = new System.Windows.Forms.Padding(10, 0, 8, 0);
-            this.lblLeftDescriptionSamples.Size = new System.Drawing.Size(232, 124);
+            this.lblLeftDescriptionSamples.Size = new System.Drawing.Size(134, 120);
             this.lblLeftDescriptionSamples.TabIndex = 15;
             this.lblLeftDescriptionSamples.Text = "{Control Description}";
             // 
@@ -1206,7 +1187,7 @@ namespace ControlExplorer
             // 
             // Explorer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1122, 767);
@@ -1218,7 +1199,7 @@ namespace ControlExplorer
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "Explorer";
-            this.Text = "ComponentOne WinForms Edition Control Explorer";
+            this.Text = "ComponentOne WinForms Edition Control Explorer";            
             this.Load += new System.EventHandler(this.Explorer_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeaderBottom.ResumeLayout(false);
@@ -1247,7 +1228,6 @@ namespace ControlExplorer
             this.pnlLeftNew.ResumeLayout(false);
             this.pnlLeftSamples.ResumeLayout(false);
             this.pnlLeftSamples.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.featureStack)).EndInit();
             this.ResumeLayout(false);
 
         }
