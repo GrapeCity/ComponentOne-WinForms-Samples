@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C1.Win.Themes;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -9,6 +10,14 @@ namespace ControlExplorer.Themes
         public Themes4()
         {
             InitializeComponent();
+
+            // apply theme to the c1ThemeController/c1themepicker 
+            c1ThemePicker1.ThemeApplying += C1ThemePicker1_ThemeApplying;
+        }
+
+        private void C1ThemePicker1_ThemeApplying(object sender, ThemeApplyingEventArgs e)
+        {
+            c1ThemeController1.SetTheme(this, e.ThemeName);
         }
 
         private void Themes4_Load(object sender, EventArgs e)
