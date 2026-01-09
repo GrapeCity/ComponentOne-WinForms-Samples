@@ -26,12 +26,32 @@ namespace ControlExplorer.FlexGrid.CustomFilters
         public ColorFilterEditor()
         {
             InitializeComponent();
+            SetPanelBackgroundColor();
         }
 
         #endregion
 
         //-------------------------------------------------------------------------------
         #region ** IC1ColumnFilterEditor Members
+
+        // immediately set the background color of the Panel by letting it pick the color from the tag.
+        private void SetPanelBackgroundColor()
+        {
+            // list of panel names in the filter box
+            Panel[] panels = { panel1, panel2, panel3, panel4, panel5, panel6, panel7, panel8, panel9, panel10, panel11, panel12 };
+           
+            foreach (Panel p in panels)
+            {
+                p.Tag = p.BackColor;
+                p.Paint += (s, e) =>
+                {
+                    var pnl = s as Panel;
+                    using (var br = new SolidBrush((Color)pnl.Tag))
+                        e.Graphics.FillRectangle(br, pnl.ClientRectangle);
+                };
+            }
+        }
+
 
         public void Initialize(C1.Win.FlexGrid.C1FlexGridBase grid, int columnIndex, C1.Win.FlexGrid.IC1ColumnFilter filter)
         {
@@ -65,10 +85,8 @@ namespace ControlExplorer.FlexGrid.CustomFilters
         // pick target color from panel in the palette
         void panel1_Click(object sender, EventArgs e)
         {
-            // copy color to target
-            _target.BackColor = ((Panel)sender).BackColor;
+            _target.BackColor = (Color)((Panel)sender).Tag;
 
-            // apply changes and close parent form (optional)
             ApplyChanges();
             Form f = TopLevelControl as Form;
             f.DialogResult = DialogResult.OK;
