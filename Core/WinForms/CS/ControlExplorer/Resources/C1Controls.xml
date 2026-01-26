@@ -109,7 +109,7 @@
 
 			<item name="FlexPivot" icon="FlexPivot">
 				<items>
-					<item name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview" short="Explore FlexPivot’s essential features." description="The control shows FlexPivot's basic features. FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."/>
+					<item name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview" short="Explore FlexPivot’s essential features." description="The control shows FlexPivot's basic features. FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a &#xA;chart."/>
 
 					<item name="Cube Analysis" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.CubeAnalysis" short="Shows how to use C1FlexPivot to analyze Cube data." description="Shows how to use C1FlexPivot to analyze Cube data."/>
 
@@ -551,7 +551,7 @@
 
 					<item name="Filter" assembly="GanttViewExplorer" type="FilterSample.Form1"
 								  short="Demonstrates a few examples of using custom filters with C1GanttView."
-								  description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions. To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in separation."/>
+								  description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions. To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in &#xA;separation."/>
 				</items>
 			</item>
 
