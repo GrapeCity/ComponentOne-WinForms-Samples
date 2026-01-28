@@ -95,7 +95,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Update="Controls\FindOptions.resx">
       <DependentUpon>FindOptions.cs</DependentUpon>
     </EmbeddedResource>

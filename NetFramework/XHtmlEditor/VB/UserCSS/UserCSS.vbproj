@@ -60,7 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Update="Controls\CSSChooser.resx">
       <DependentUpon>CSSChooser.vb</DependentUpon>
     </EmbeddedResource>
