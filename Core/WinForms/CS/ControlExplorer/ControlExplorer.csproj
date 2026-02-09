@@ -87,4 +87,19 @@
     <EmbeddedResource Include="Resources\ContactInfo.xml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resources\StringEN.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>StringEN.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\StringEN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringEN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,6 @@
-﻿using C1.Win.Ribbon;
+﻿// Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
+
+using C1.Win.Ribbon;
 using ControlExplorer.Controls;
 using ControlExplorer.Core;
 using System;
@@ -10,17 +12,16 @@ using System.Windows.Forms;
 
 namespace ControlExplorer
 {
-    public partial class Explorer : C1RibbonForm
+    public partial class Explorer : Form
     {
         #region Static Variables
-        public static string HomeTitle = "Control Explorer";
-        public static string HomeControlTitle = "New Controls && Features";
-        public static string SuiteDescription = "Deliver complete desktop applications in less time with 120+ UI controls. ComponentOne WinForms controls come packed with lightning-fast data management and data visualization controls, easy-to-use designers, and modern themes to help you build beautiful Windows applications.";
+        public static string HomeTitle = Resources.StringEN.HomeTitle;
+        public static string HomeControlTitle = Resources.StringEN.HomeControlTitle;
+        public static string SuiteDescription = Resources.StringEN.SuiteDescription;
         #endregion
 
         #region Private Variables
-        private bool _isExpanded = true;
-        private List<ItemInfo> _samples;
+        private readonly List<ItemInfo> _samples;
         private ItemInfo _selectedSample;
         #endregion
         public static Explorer TheExplorer { get; private set; }
@@ -28,15 +29,17 @@ namespace ControlExplorer
         {
             InitializeComponent();
             TheExplorer = this;
+            Text = Resources.StringEN.Text;
             SampleManager sampleManager = new SampleManager();
             _samples = sampleManager.ItemCollection.Items.ToList();
-            sidebar.SelectionChanged += OnSideBarSelectionChanged;
-            sidebar.Samples = _samples;
+            sideBar1.SelectionChanged += OnSideBarSelectionChanged;
+            sideBar1.Samples = _samples;
             homePageControl1.Samples = _samples;
-            panel1.Paint += Panel1_Paint;
+            panel1.Resize += Panel1_Resize;
             panel1.BackColor = SkinManager.HomeBackColor;
             ShowHomePage();
-            Application.AddMessageFilter(new ClickOutsideFilter(sidebar));
+            Application.AddMessageFilter(new ClickOutsideFilter(sideBar1));
+            ApplyRoundedCorners(panel1);
         }
         public void ShowControl(ItemInfo info, Boolean isSidebarEvent)
         {
@@ -58,7 +61,7 @@ namespace ControlExplorer
 
         public void ChangeSideBarSelection(ItemInfo info)
         {
-            var treeView = sidebar.Controls.Find("treeView", true).First() as StackTreeControl;
+            var treeView = sideBar1.Controls.Find("treeView", true).First() as StackTreeControl;
             treeView.SelectedNode = treeView.FindNode(info.Guid.ToString());
         }
 
@@ -108,31 +111,26 @@ namespace ControlExplorer
                 ShowControl(_selectedSample, true);
             }
         }
-        private void Panel1_Paint(object sender, PaintEventArgs e)
+        private void Panel1_Resize(object sender, EventArgs e)
         {
-            int cornerRadius = 15;
-            int borderThickness = 1;
-            Color borderColor = Color.White;
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-            using (GraphicsPath path = new GraphicsPath())
-            {
-                path.AddArc(borderThickness / 2, borderThickness / 2, cornerRadius * 2, cornerRadius * 2, 180, 90);
-
-                path.AddLine(cornerRadius + borderThickness / 2, borderThickness / 2, panel1.Width - borderThickness, borderThickness / 2);
-                path.AddLine(panel1.Width - borderThickness, borderThickness / 2, panel1.Width - borderThickness, panel1.Height - borderThickness);
-                path.AddLine(panel1.Width - borderThickness, panel1.Height - borderThickness, borderThickness / 2, panel1.Height - borderThickness);
-                path.AddLine(borderThickness / 2, panel1.Height - borderThickness, borderThickness / 2, cornerRadius + borderThickness / 2);
-
-                panel1.Region = new Region(path);
-
-                using (Pen borderPen = new Pen(borderColor, borderThickness))
-                {
-                    borderPen.Alignment = PenAlignment.Center;
-                    e.Graphics.DrawPath(borderPen, path);
-                }
-            }
+            ApplyRoundedCorners(panel1);
         }
 
+        private void ApplyRoundedCorners(Control ctrl)
+        {
+            int borderThickness = 1;
+            int radius = 15;
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                path.AddArc(borderThickness / 2, borderThickness / 2, radius * 2, radius * 2, 180, 90);
+                path.AddLine(radius + borderThickness / 2, borderThickness / 2, ctrl.Width - borderThickness, borderThickness / 2);
+                path.AddLine(ctrl.Width - borderThickness, borderThickness / 2, ctrl.Width - borderThickness, ctrl.Height - borderThickness);
+                path.AddLine(ctrl.Width - borderThickness, ctrl.Height - borderThickness, borderThickness / 2, ctrl.Height - borderThickness);
+                path.AddLine(borderThickness / 2, ctrl.Height - borderThickness, borderThickness / 2, radius + borderThickness / 2);
+                path.CloseFigure();
+                ctrl.Region = new Region(path);
+            }
+        }
         #endregion
 
         [System.Runtime.InteropServices.DllImport("user32.dll", ExactSpelling = true)]

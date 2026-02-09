@@ -178,7 +178,7 @@ namespace ControlExplorer.Controls
             {
                 if (control is MenuControl menuControl)
                 {
-                    menuControl.UpdateCodeButtonText(_codeViewer.Visible ? "View Demo" : "View Code");
+                    menuControl.UpdateCodeButtonText(_codeViewer.Visible ? Resources.StringEN.ViewDemo : Resources.StringEN.ViewCode);
                 }
             }
         }

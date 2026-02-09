@@ -30,6 +30,7 @@ namespace ControlExplorer.Controls
         {
             InitializeComponent();
             btnSearch.Icon = ControlIcons.Search;
+            textBoxExSearch.Placeholder = Resources.StringEN.Placeholder;
             tableLayoutPanel1.Paint += TableLayoutPanel1_Paint;
             ToggleIcon();
             ToggleFocus();
