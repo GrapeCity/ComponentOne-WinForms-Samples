@@ -585,13 +585,17 @@
 
 			<item name="FlexViewer" icon="FlexViewer">
 				<items>
-					<item name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
-								  short="Uses FlexReport/EmbeddedFonts to load and generate reports with embedded fonts"
-								  description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed. This sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
+					<item name="PdfView" assembly="PdfViewer" type="PdfViewer.Form1"
+								  short="Use C1PdfDocumentSource to create a PDF document viewer"
+								  description="Shows how to leverage the various features of FlexViewer by connecting it to a C1PdfDocumentSource to create a powerful PDF viewer with just a few lines of code."/>
 
 					<item name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
 								  short="Uses FlexReport/FlexViewer to load and generate common reports"
 								  description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). This sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+					
+					<item name="SSRS Reports in FlexViewer" assembly="SsrsViewer" type="SsrsViewer.MainForm"
+								  short="Demonstrates the ability of FlexViewer control to show SSRS reports"
+								  description="FlexViewer control can connect to C1SSRSDocumentSource to access a Report Server and view SSRS reports. This sample shows a few sample reports with parameters, bookmarks, outlines, and other features of SSRS reports."/>
 				</items>
 			</item>
 

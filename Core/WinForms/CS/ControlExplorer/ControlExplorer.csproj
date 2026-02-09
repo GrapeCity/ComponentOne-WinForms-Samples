@@ -21,6 +21,8 @@
     <ProjectReference Include="..\..\..\DataCollection\CS\DataGridViewVirtualization\DataGridViewVirtualization.csproj" />
     <ProjectReference Include="..\..\..\DataCollection\CS\FlexGridVirtualization\FlexGridVirtualization.csproj" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Document\CS\PdfViewer\PdfViewer.csproj" />
+    <ProjectReference Include="..\..\..\Document\CS\SsrsViewer\SsrsViewer.csproj" />
     <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
@@ -29,6 +31,7 @@
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridCheckboxSelection\FlexGridCheckboxSelection.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridSelection\FlexGridSelection\FlexGridSelection.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\ScrollBarAnnotations\ScrollBarAnnotations\ScrollBarAnnotations.csproj" />
