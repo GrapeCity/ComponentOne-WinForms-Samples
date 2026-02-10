@@ -16,4 +16,8 @@
     <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".sa3licx" />
+  </ItemGroup>
+
 </Project>
