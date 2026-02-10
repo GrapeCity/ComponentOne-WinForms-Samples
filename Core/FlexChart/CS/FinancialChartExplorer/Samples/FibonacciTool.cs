@@ -1,6 +1,10 @@
 ﻿using C1.Win.Chart;
 using C1.Win.Chart.Finance;
 using FinancialChartExplorer.Services;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace FinancialChartExplorer.Samples
 {

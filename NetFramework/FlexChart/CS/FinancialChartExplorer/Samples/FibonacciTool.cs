@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
+﻿using C1.Win.Chart;
 using C1.Win.Chart.Finance;
-
 using FinancialChartExplorer.Services;
-using C1.Chart;
-using C1.Win.Chart;
-using C1.Win.Themes;
-using C1.Win.Input;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -47,7 +38,7 @@ namespace FinancialChartExplorer.Samples
 
             c1CmdToolType.ItemsDataSource = new string[]
             {
-               "Acrs",
+               "Arcs",
                "Fans",
                "Retracements",
                "Time Zone"
@@ -209,7 +200,7 @@ namespace FinancialChartExplorer.Samples
         private void c1CmbLabelPosition_SelectedItemChanged(object sender, EventArgs e)
         {
             if (currentFibonacciTool == null) return;
-            var position = (C1.Chart.LabelPosition)Enum.Parse(typeof(C1.Chart.LabelPosition), c1CmbLabelPosition.SelectedItem.ToString());
+            var position = (C1.Chart.LabelPosition)Enum.Parse(typeof(C1.Chart.LabelPosition), c1CmbLabelPosition.SelectedValue.ToString());
             if (currentFibonacciTool is Fibonacci)
             {
                 ((Fibonacci)currentFibonacciTool).LabelPosition = position;
