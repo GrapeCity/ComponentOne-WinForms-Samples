@@ -58,7 +58,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Update="ColorFilterEditor.resx">
       <DependentUpon>ColorFilterEditor.vb</DependentUpon>
     </EmbeddedResource>

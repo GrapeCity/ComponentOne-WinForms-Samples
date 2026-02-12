@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,7 @@ namespace DiagramExplorer.Controls
             SelectedIndex = DropDownItems.IndexOf(sender as ToolStripItem);
         }
 
+        [DefaultValue(-1)]
         public int SelectedIndex
         {
             get => selectedIndex;
