@@ -1,6 +1,0 @@
-﻿<Project>
-
-  <Import Project="Common.props" />
-  <Import Project="Deploy.props" />
-
-</Project>
