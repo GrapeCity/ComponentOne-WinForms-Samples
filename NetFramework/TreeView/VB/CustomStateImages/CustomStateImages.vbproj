@@ -68,7 +68,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Update="ImageEditor.resx">
       <DependentUpon>ImageEditor.vb</DependentUpon>
     </EmbeddedResource>

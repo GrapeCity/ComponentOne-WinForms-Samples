@@ -41,8 +41,8 @@
             panelCalendar = new Panel();
             splitContainer1 = new SplitContainer();
             tableLayoutPanel1 = new TableLayoutPanel();
-            resetLabel = new Label();
             listBoxRanges = new ListBox();
+            resetLabel = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
             btnApply = new C1.Win.Input.C1Button();
             labelTotalDays = new C1.Win.Input.C1Label();
@@ -126,10 +126,11 @@
             // 
             panelCalendar.BackColor = Color.FromArgb(229, 229, 229);
             panelCalendar.Controls.Add(splitContainer1);
-            panelCalendar.Location = new Point(206, 330);
+            panelCalendar.Location = new Point(177, 333);
+            panelCalendar.Margin = new Padding(2);
             panelCalendar.Name = "panelCalendar";
             panelCalendar.Padding = new Padding(1);
-            panelCalendar.Size = new Size(1112, 458);
+            panelCalendar.Size = new Size(1133, 455);
             panelCalendar.TabIndex = 1;
             panelCalendar.Paint += Panel1_Paint;
             // 
@@ -137,8 +138,7 @@
             // 
             splitContainer1.BackColor = SystemColors.ControlLight;
             splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(2, 2);
-            splitContainer1.Margin = new Padding(5, 5, 5, 5);
+            splitContainer1.Location = new Point(1, 1);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -150,8 +150,8 @@
             // 
             splitContainer1.Panel2.BackColor = Color.White;
             splitContainer1.Panel2.Controls.Add(tableLayoutPanel2);
-            splitContainer1.Size = new Size(1110, 456);
-            splitContainer1.SplitterDistance = 219;
+            splitContainer1.Size = new Size(1131, 453);
+            splitContainer1.SplitterDistance = 222;
             splitContainer1.SplitterWidth = 1;
             splitContainer1.TabIndex = 0;
             splitContainer1.Paint += Panel1_Paint;
@@ -160,34 +160,16 @@
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Controls.Add(resetLabel, 0, 1);
             tableLayoutPanel1.Controls.Add(listBoxRanges, 0, 0);
+            tableLayoutPanel1.Controls.Add(resetLabel, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(5, 5, 5, 5);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 61F));
-            tableLayoutPanel1.Size = new Size(219, 456);
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 53F));
+            tableLayoutPanel1.Size = new Size(222, 453);
             tableLayoutPanel1.TabIndex = 1;
-            // 
-            // resetLabel
-            // 
-            resetLabel.Anchor = AnchorStyles.None;
-            resetLabel.BackColor = Color.Transparent;
-            resetLabel.Cursor = Cursors.Hand;
-            resetLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            resetLabel.ForeColor = Color.FromArgb(40, 90, 120);
-            resetLabel.Location = new Point(69, 406);
-            resetLabel.Name = "resetLabel";
-            resetLabel.Size = new Size(132, 62);
-            resetLabel.TabIndex = 1;
-            resetLabel.Text = "Reset";
-            resetLabel.TextAlign = ContentAlignment.MiddleCenter;
-            resetLabel.Click += resetLabel_Click;
-            resetLabel.MouseLeave += resetLabel_MouseLeave;
-            resetLabel.MouseHover += resetLabel_MouseHover;
             // 
             // listBoxRanges
             // 
@@ -198,41 +180,59 @@
             listBoxRanges.FormattingEnabled = true;
             listBoxRanges.ItemHeight = 25;
             listBoxRanges.Items.AddRange(new object[] { "Custom Range", "This Week", "Last Week", "Next Week", "This Month", "Last Month", "Next Month", "This Year", "Last Year", "Next Year" });
-            listBoxRanges.Location = new Point(49, 72);
+            listBoxRanges.Location = new Point(25, 37);
+            listBoxRanges.Margin = new Padding(2);
             listBoxRanges.Name = "listBoxRanges";
-            listBoxRanges.Size = new Size(156, 350);
+            listBoxRanges.Size = new Size(171, 325);
             listBoxRanges.TabIndex = 0;
             listBoxRanges.DrawItem += listBoxRanges_DrawItem;
             listBoxRanges.SelectedIndexChanged += listBoxRanges_SelectedIndexChanged;
+            // 
+            // resetLabel
+            // 
+            resetLabel.Anchor = AnchorStyles.None;
+            resetLabel.BackColor = Color.Transparent;
+            resetLabel.Cursor = Cursors.Hand;
+            resetLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            resetLabel.ForeColor = Color.FromArgb(40, 90, 120);
+            resetLabel.Location = new Point(70, 407);
+            resetLabel.Margin = new Padding(2, 0, 2, 0);
+            resetLabel.Name = "resetLabel";
+            resetLabel.Size = new Size(81, 38);
+            resetLabel.TabIndex = 1;
+            resetLabel.Text = "Reset";
+            resetLabel.TextAlign = ContentAlignment.MiddleCenter;
+            resetLabel.Click += resetLabel_Click;
+            resetLabel.MouseLeave += resetLabel_MouseLeave;
+            resetLabel.MouseHover += resetLabel_MouseHover;
             // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.BackColor = Color.Transparent;
             tableLayoutPanel2.ColumnCount = 4;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 210F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 129F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 156F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 187F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 96F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 115F));
             tableLayoutPanel2.Controls.Add(btnApply, 3, 1);
             tableLayoutPanel2.Controls.Add(labelTotalDays, 0, 1);
             tableLayoutPanel2.Controls.Add(btnCancel, 2, 1);
             tableLayoutPanel2.Controls.Add(panel2, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(0, 0);
-            tableLayoutPanel2.Margin = new Padding(5, 5, 5, 5);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 61F));
-            tableLayoutPanel2.Size = new Size(890, 456);
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 52F));
+            tableLayoutPanel2.Size = new Size(908, 453);
             tableLayoutPanel2.TabIndex = 3;
             // 
             // btnApply
             // 
             btnApply.Anchor = AnchorStyles.None;
-            btnApply.Location = new Point(791, 407);
+            btnApply.Location = new Point(809, 410);
             btnApply.Name = "btnApply";
-            btnApply.Size = new Size(133, 59);
+            btnApply.Size = new Size(82, 34);
             btnApply.Styles.Corners = new C1.Framework.Corners(8, 8, 8, 8);
             btnApply.Styles.Default.BackColor = Color.FromArgb(61, 142, 165);
             btnApply.Styles.Default.BorderColor = Color.FromArgb(61, 142, 165);
@@ -244,9 +244,9 @@
             // labelTotalDays
             // 
             labelTotalDays.Anchor = AnchorStyles.None;
-            labelTotalDays.Location = new Point(18, 412);
+            labelTotalDays.Location = new Point(18, 414);
             labelTotalDays.Name = "labelTotalDays";
-            labelTotalDays.Size = new Size(150, 42);
+            labelTotalDays.Size = new Size(92, 26);
             labelTotalDays.TabIndex = 3;
             labelTotalDays.Text = "0 Days Selected";
             labelTotalDays.TextAlign = ContentAlignment.MiddleCenter;
@@ -254,9 +254,9 @@
             // btnCancel
             // 
             btnCancel.Anchor = AnchorStyles.None;
-            btnCancel.Location = new Point(686, 407);
+            btnCancel.Location = new Point(704, 410);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(133, 59);
+            btnCancel.Size = new Size(82, 34);
             btnCancel.Styles.Corners = new C1.Framework.Corners(8, 8, 8, 8);
             btnCancel.Styles.Default.BackColor = Color.FromArgb(250, 250, 250);
             btnCancel.Styles.Default.BorderColor = Color.FromArgb(104, 118, 130);
@@ -270,10 +270,10 @@
             tableLayoutPanel2.SetColumnSpan(panel2, 4);
             panel2.Controls.Add(c1CalendarView1);
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(16, 16);
-            panel2.Margin = new Padding(16, 16, 16, 16);
+            panel2.Location = new Point(10, 10);
+            panel2.Margin = new Padding(10);
             panel2.Name = "panel2";
-            panel2.Size = new Size(870, 375);
+            panel2.Size = new Size(888, 381);
             panel2.TabIndex = 4;
             panel2.Paint += Panel1_Paint;
             // 
@@ -290,7 +290,7 @@
             c1CalendarView1.ScrollBars = ScrollBars.None;
             c1CalendarView1.ShowToday = false;
             c1CalendarView1.ShowWeekNumbers = false;
-            c1CalendarView1.Size = new Size(870, 375);
+            c1CalendarView1.Size = new Size(888, 381);
             c1CalendarView1.Styles.Common.BackColor = Color.FromArgb(250, 251, 251);
             c1CalendarView1.Styles.Common.BackImageAlignment = C1.Framework.ImageAlignment.CenterCenter;
             c1CalendarView1.Styles.Common.Border = new C1.Framework.Thickness(0, 0, 0, 0);
@@ -314,18 +314,18 @@
             // samplesTitle
             // 
             samplesTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            samplesTitle.Location = new Point(923, 94);
+            samplesTitle.Location = new Point(566, 48);
             samplesTitle.Name = "samplesTitle";
-            samplesTitle.Size = new Size(362, 67);
+            samplesTitle.Size = new Size(407, 73);
             samplesTitle.TabIndex = 3;
             samplesTitle.Text = "Input Date Range";
             // 
             // sampleDescriptionLabel
             // 
             sampleDescriptionLabel.Font = new Font("Segoe UI", 10F);
-            sampleDescriptionLabel.Location = new Point(710, 200);
+            sampleDescriptionLabel.Location = new Point(437, 116);
             sampleDescriptionLabel.Name = "sampleDescriptionLabel";
-            sampleDescriptionLabel.Size = new Size(1064, 136);
+            sampleDescriptionLabel.Size = new Size(655, 94);
             sampleDescriptionLabel.Styles.Default.ForeColor = Color.FromArgb(157, 157, 157);
             sampleDescriptionLabel.TabIndex = 4;
             sampleDescriptionLabel.Text = "This sample demonstrates an interactive date range picker using C1CalendarView \r\nwith multi-cultural support. Select date ranges using predefined options or the calendar interface. \r\n\r\n\r\n\r\n\r\n";
@@ -334,11 +334,10 @@
             // 
             dropDownPanel.BackColor = Color.FromArgb(216, 232, 237);
             dropDownPanel.Controls.Add(dateSelectedLabel);
-            dropDownPanel.Location = new Point(2, 2);
-            dropDownPanel.Margin = new Padding(5, 5, 5, 5);
+            dropDownPanel.Location = new Point(1, 1);
             dropDownPanel.Name = "dropDownPanel";
-            dropDownPanel.Padding = new Padding(2, 2, 2, 2);
-            dropDownPanel.Size = new Size(1362, 246);
+            dropDownPanel.Padding = new Padding(1);
+            dropDownPanel.Size = new Size(838, 154);
             dropDownPanel.TabIndex = 5;
             dropDownPanel.Paint += Panel1_Paint;
             // 
@@ -346,9 +345,9 @@
             // 
             dateSelectedLabel.Icon = new C1.Framework.C1BitmapIcon(null, new Size(16, 16), Color.Transparent, Properties.Resources.calendar);
             dateSelectedLabel.ImageAlign = ContentAlignment.MiddleRight;
-            dateSelectedLabel.Location = new Point(401, 93);
+            dateSelectedLabel.Location = new Point(271, 65);
             dateSelectedLabel.Name = "dateSelectedLabel";
-            dateSelectedLabel.Size = new Size(345, 34);
+            dateSelectedLabel.Size = new Size(330, 36);
             dateSelectedLabel.Styles.Border = new C1.Framework.Thickness(1, 1, 1, 1);
             dateSelectedLabel.Styles.Corners = new C1.Framework.Corners(4, 4, 4, 4);
             dateSelectedLabel.Styles.Default.BackColor = SystemColors.Control;
@@ -362,11 +361,10 @@
             // 
             featurePanel.BackColor = Color.FromArgb(99, 112, 125);
             featurePanel.Controls.Add(splitContainer2);
-            featurePanel.Location = new Point(525, 622);
-            featurePanel.Margin = new Padding(5, 5, 5, 5);
+            featurePanel.Location = new Point(323, 389);
             featurePanel.Name = "featurePanel";
-            featurePanel.Padding = new Padding(2, 2, 2, 2);
-            featurePanel.Size = new Size(1365, 557);
+            featurePanel.Padding = new Padding(1);
+            featurePanel.Size = new Size(840, 348);
             featurePanel.TabIndex = 6;
             featurePanel.Paint += Panel1_Paint;
             // 
@@ -374,8 +372,7 @@
             // 
             splitContainer2.BackColor = Color.FromArgb(99, 112, 125);
             splitContainer2.Dock = DockStyle.Fill;
-            splitContainer2.Location = new Point(2, 2);
-            splitContainer2.Margin = new Padding(5, 5, 5, 5);
+            splitContainer2.Location = new Point(1, 1);
             splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -402,9 +399,9 @@
             splitContainer2.Panel2.Controls.Add(DateLimitLabel);
             splitContainer2.Panel2.Controls.Add(cultureSelectionLabel);
             splitContainer2.Panel2.Controls.Add(featureLabel);
-            splitContainer2.Size = new Size(1361, 553);
-            splitContainer2.SplitterDistance = 805;
-            splitContainer2.SplitterWidth = 2;
+            splitContainer2.Size = new Size(838, 346);
+            splitContainer2.SplitterDistance = 495;
+            splitContainer2.SplitterWidth = 1;
             splitContainer2.TabIndex = 0;
             splitContainer2.Paint += Panel1_Paint;
             // 
@@ -415,9 +412,10 @@
             panel3.Controls.Add(endDateTextLabel);
             panel3.Controls.Add(endDateLabel);
             panel3.Controls.Add(startDateTextLabel);
-            panel3.Location = new Point(51, 145);
+            panel3.Location = new Point(33, 145);
+            panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(408, 131);
+            panel3.Size = new Size(434, 121);
             panel3.TabIndex = 1;
             panel3.Paint += Panel1_Paint;
             // 
@@ -425,9 +423,9 @@
             // 
             startDateLabel.AutoSize = true;
             startDateLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            startDateLabel.Location = new Point(231, 30);
+            startDateLabel.Location = new Point(142, 19);
             startDateLabel.Name = "startDateLabel";
-            startDateLabel.Size = new Size(355, 57);
+            startDateLabel.Size = new Size(219, 34);
             startDateLabel.TabIndex = 3;
             startDateLabel.Text = "No selected start date";
             // 
@@ -435,9 +433,9 @@
             // 
             endDateTextLabel.AutoSize = true;
             endDateTextLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            endDateTextLabel.Location = new Point(31, 112);
+            endDateTextLabel.Location = new Point(19, 70);
             endDateTextLabel.Name = "endDateTextLabel";
-            endDateTextLabel.Size = new Size(173, 57);
+            endDateTextLabel.Size = new Size(105, 34);
             endDateTextLabel.TabIndex = 2;
             endDateTextLabel.Text = "End Date:";
             // 
@@ -445,9 +443,9 @@
             // 
             endDateLabel.AutoSize = true;
             endDateLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            endDateLabel.Location = new Point(231, 112);
+            endDateLabel.Location = new Point(142, 70);
             endDateLabel.Name = "endDateLabel";
-            endDateLabel.Size = new Size(342, 57);
+            endDateLabel.Size = new Size(213, 34);
             endDateLabel.TabIndex = 1;
             endDateLabel.Text = "No selected end date";
             // 
@@ -455,18 +453,18 @@
             // 
             startDateTextLabel.AutoSize = true;
             startDateTextLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            startDateTextLabel.Location = new Point(31, 30);
+            startDateTextLabel.Location = new Point(19, 19);
             startDateTextLabel.Name = "startDateTextLabel";
-            startDateTextLabel.Size = new Size(188, 57);
+            startDateTextLabel.Size = new Size(113, 34);
             startDateTextLabel.TabIndex = 0;
             startDateTextLabel.Text = "Start Date:";
             // 
             // yourDateSelectionLabel
             // 
             yourDateSelectionLabel.AutoSize = true;
-            yourDateSelectionLabel.Location = new Point(180, 91);
+            yourDateSelectionLabel.Location = new Point(111, 57);
             yourDateSelectionLabel.Name = "yourDateSelectionLabel";
-            yourDateSelectionLabel.Size = new Size(468, 77);
+            yourDateSelectionLabel.Size = new Size(291, 47);
             yourDateSelectionLabel.Styles.Default.ForeColor = Color.FromArgb(61, 142, 165);
             yourDateSelectionLabel.Styles.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             yourDateSelectionLabel.TabIndex = 0;
@@ -475,9 +473,10 @@
             // c1PictureBox3
             // 
             c1PictureBox3.Image = Properties.Resources.c1PictureBox3_Image;
-            c1PictureBox3.Location = new Point(109, 253);
+            c1PictureBox3.Location = new Point(114, 262);
+            c1PictureBox3.Margin = new Padding(2);
             c1PictureBox3.Name = "c1PictureBox3";
-            c1PictureBox3.Size = new Size(18, 18);
+            c1PictureBox3.Size = new Size(20, 20);
             c1PictureBox3.TabIndex = 18;
             c1PictureBox3.TabStop = false;
             toolTip1.SetToolTip(c1PictureBox3, "Controls the maximum number of days that can be selected at once.\r\nPrevents selecting more dates than the specified");
@@ -485,10 +484,9 @@
             // c1PictureBox2
             // 
             c1PictureBox2.Image = Properties.Resources.c1PictureBox2_Image;
-            c1PictureBox2.Location = new Point(161, 242);
-            c1PictureBox2.Margin = new Padding(5, 5, 5, 5);
+            c1PictureBox2.Location = new Point(103, 146);
             c1PictureBox2.Name = "c1PictureBox2";
-            c1PictureBox2.Size = new Size(18, 18);
+            c1PictureBox2.Size = new Size(20, 20);
             c1PictureBox2.TabIndex = 17;
             c1PictureBox2.TabStop = false;
             toolTip1.SetToolTip(c1PictureBox2, "Sets the minimum and maximum selectable dates in the calendar. \r\nDates outside this range will be disabled");
@@ -496,10 +494,9 @@
             // c1PictureBox1
             // 
             c1PictureBox1.Image = Properties.Resources.c1PictureBox1_Image;
-            c1PictureBox1.Location = new Point(237, 122);
-            c1PictureBox1.Margin = new Padding(5, 5, 5, 5);
+            c1PictureBox1.Location = new Point(146, 73);
             c1PictureBox1.Name = "c1PictureBox1";
-            c1PictureBox1.Size = new Size(18, 18);
+            c1PictureBox1.Size = new Size(20, 20);
             c1PictureBox1.TabIndex = 8;
             c1PictureBox1.TabStop = false;
             toolTip1.SetToolTip(c1PictureBox1, "Changes the display language and date format. \r\nSwitch between English, Korean, and Japanese");
@@ -507,9 +504,9 @@
             // jpRadioButton
             // 
             jpRadioButton.AutoSize = true;
-            jpRadioButton.Location = new Point(158, 165);
+            jpRadioButton.Location = new Point(102, 103);
             jpRadioButton.Name = "jpRadioButton";
-            jpRadioButton.Size = new Size(106, 38);
+            jpRadioButton.Size = new Size(64, 22);
             jpRadioButton.TabIndex = 16;
             jpRadioButton.TabStop = true;
             jpRadioButton.Text = "ja-JP";
@@ -518,9 +515,9 @@
             // krRadioButton
             // 
             krRadioButton.AutoSize = true;
-            krRadioButton.Location = new Point(271, 165);
+            krRadioButton.Location = new Point(172, 103);
             krRadioButton.Name = "krRadioButton";
-            krRadioButton.Size = new Size(120, 38);
+            krRadioButton.Size = new Size(73, 22);
             krRadioButton.TabIndex = 15;
             krRadioButton.TabStop = true;
             krRadioButton.Text = "ko-KR";
@@ -529,9 +526,9 @@
             // usRadioButton
             // 
             usRadioButton.AutoSize = true;
-            usRadioButton.Location = new Point(32, 165);
+            usRadioButton.Location = new Point(25, 103);
             usRadioButton.Name = "usRadioButton";
-            usRadioButton.Size = new Size(122, 38);
+            usRadioButton.Size = new Size(73, 22);
             usRadioButton.TabIndex = 13;
             usRadioButton.TabStop = true;
             usRadioButton.Text = "en-US";
@@ -539,10 +536,10 @@
             // 
             // rangeLimitNumericEditEx
             // 
-            rangeLimitNumericEditEx.Location = new Point(23, 280);
+            rangeLimitNumericEditEx.Location = new Point(18, 301);
             rangeLimitNumericEditEx.Maximum = 99999;
             rangeLimitNumericEditEx.Name = "rangeLimitNumericEditEx";
-            rangeLimitNumericEditEx.Size = new Size(195, 40);
+            rangeLimitNumericEditEx.Size = new Size(120, 28);
             rangeLimitNumericEditEx.TabIndex = 12;
             rangeLimitNumericEditEx.Value = new decimal(new int[] { 366, 0, 0, 0 });
             rangeLimitNumericEditEx.ValueChanged += RangeLimit_ValueChanged;
@@ -551,9 +548,9 @@
             // 
             rangeLimitLabel.AutoSize = true;
             rangeLimitLabel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            rangeLimitLabel.Location = new Point(18, 248);
+            rangeLimitLabel.Location = new Point(18, 258);
             rangeLimitLabel.Name = "rangeLimitLabel";
-            rangeLimitLabel.Size = new Size(156, 44);
+            rangeLimitLabel.Size = new Size(95, 26);
             rangeLimitLabel.TabIndex = 11;
             rangeLimitLabel.Text = "Range Limit";
             // 
@@ -561,9 +558,9 @@
             // 
             maxDateLabel.AutoSize = true;
             maxDateLabel.Font = new Font("Segoe UI", 7F);
-            maxDateLabel.Location = new Point(306, 277);
+            maxDateLabel.Location = new Point(188, 173);
             maxDateLabel.Name = "maxDateLabel";
-            maxDateLabel.Size = new Size(104, 37);
+            maxDateLabel.Size = new Size(62, 21);
             maxDateLabel.Styles.Default.ForeColor = Color.FromArgb(157, 157, 157);
             maxDateLabel.TabIndex = 10;
             maxDateLabel.Text = "Max Date";
@@ -572,9 +569,9 @@
             // 
             minDateLabel.AutoSize = true;
             minDateLabel.Font = new Font("Segoe UI", 7F);
-            minDateLabel.Location = new Point(29, 277);
+            minDateLabel.Location = new Point(18, 173);
             minDateLabel.Name = "minDateLabel";
-            minDateLabel.Size = new Size(101, 37);
+            minDateLabel.Size = new Size(61, 21);
             minDateLabel.Styles.Default.ForeColor = Color.FromArgb(157, 157, 157);
             minDateLabel.TabIndex = 9;
             minDateLabel.Text = "Min Date";
@@ -593,9 +590,9 @@
             maxDateDateEdit.EditFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
             maxDateDateEdit.EditFormat.Inherit = C1.Win.Input.FormatInfoInheritProperties.CustomFormat | C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull | C1.Win.Input.FormatInfoInheritProperties.TrimStart | C1.Win.Input.FormatInfoInheritProperties.TrimEnd | C1.Win.Input.FormatInfoInheritProperties.CalendarType;
             maxDateDateEdit.FormatType = C1.Win.Input.FormatType.CustomFormat;
-            maxDateDateEdit.Location = new Point(196, 202);
+            maxDateDateEdit.Location = new Point(188, 198);
             maxDateDateEdit.Name = "maxDateDateEdit";
-            maxDateDateEdit.Size = new Size(193, 40);
+            maxDateDateEdit.Size = new Size(119, 28);
             maxDateDateEdit.TabIndex = 8;
             maxDateDateEdit.ValueChanged += DateLimit_ValueChanged;
             // 
@@ -613,27 +610,27 @@
             minDateDateEdit.EditFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
             minDateDateEdit.EditFormat.Inherit = C1.Win.Input.FormatInfoInheritProperties.CustomFormat | C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull | C1.Win.Input.FormatInfoInheritProperties.TrimStart | C1.Win.Input.FormatInfoInheritProperties.TrimEnd | C1.Win.Input.FormatInfoInheritProperties.CalendarType;
             minDateDateEdit.FormatType = C1.Win.Input.FormatType.CustomFormat;
-            minDateDateEdit.Location = new Point(24, 202);
+            minDateDateEdit.Location = new Point(20, 201);
             minDateDateEdit.Name = "minDateDateEdit";
-            minDateDateEdit.Size = new Size(193, 40);
+            minDateDateEdit.Size = new Size(119, 28);
             minDateDateEdit.TabIndex = 7;
             minDateDateEdit.ValueChanged += DateLimit_ValueChanged;
             // 
             // DateLimitLabel
             // 
             DateLimitLabel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            DateLimitLabel.Location = new Point(29, 232);
+            DateLimitLabel.Location = new Point(18, 143);
             DateLimitLabel.Name = "DateLimitLabel";
-            DateLimitLabel.Size = new Size(153, 42);
+            DateLimitLabel.Size = new Size(94, 26);
             DateLimitLabel.TabIndex = 6;
             DateLimitLabel.Text = "Date Limit";
             // 
             // cultureSelectionLabel
             // 
             cultureSelectionLabel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cultureSelectionLabel.Location = new Point(29, 114);
+            cultureSelectionLabel.Location = new Point(18, 71);
             cultureSelectionLabel.Name = "cultureSelectionLabel";
-            cultureSelectionLabel.Size = new Size(219, 42);
+            cultureSelectionLabel.Size = new Size(135, 26);
             cultureSelectionLabel.TabIndex = 1;
             cultureSelectionLabel.Text = "Culture Selection";
             // 
@@ -641,10 +638,9 @@
             // 
             featureLabel.AutoSize = true;
             featureLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            featureLabel.Location = new Point(29, 29);
-            featureLabel.Margin = new Padding(5, 0, 5, 0);
+            featureLabel.Location = new Point(18, 18);
             featureLabel.Name = "featureLabel";
-            featureLabel.Size = new Size(130, 45);
+            featureLabel.Size = new Size(80, 28);
             featureLabel.TabIndex = 0;
             featureLabel.Text = "Feature";
             // 
@@ -652,11 +648,10 @@
             // 
             borderPanel.BackColor = Color.FromArgb(99, 112, 125);
             borderPanel.Controls.Add(dropDownPanel);
-            borderPanel.Location = new Point(533, 346);
-            borderPanel.Margin = new Padding(5, 5, 5, 5);
+            borderPanel.Location = new Point(328, 216);
             borderPanel.Name = "borderPanel";
-            borderPanel.Padding = new Padding(2, 2, 2, 2);
-            borderPanel.Size = new Size(1365, 250);
+            borderPanel.Padding = new Padding(1);
+            borderPanel.Size = new Size(840, 156);
             borderPanel.TabIndex = 7;
             borderPanel.Paint += Panel1_Paint;
             // 
@@ -669,16 +664,17 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1543, 956);
+            ClientSize = new Size(1425, 915);
             Controls.Add(samplesTitle);
             Controls.Add(sampleDescriptionLabel);
             Controls.Add(panelCalendar);
             Controls.Add(borderPanel);
             Controls.Add(featurePanel);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";

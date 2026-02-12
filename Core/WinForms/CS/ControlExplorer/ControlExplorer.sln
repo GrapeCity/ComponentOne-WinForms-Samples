@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11121.172 d18.0
+VisualStudioVersion = 18.0.11121.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlExplorer", "ControlExplorer.csproj", "{A79AD86D-8A11-4292-B9FD-6B11F30838D9}"
 EndProject
@@ -96,6 +96,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBarAnnotations", "..\..\..\FlexGrid\CS\ScrollBarAnnotations\ScrollBarAnnotations\ScrollBarAnnotations.csproj", "{B5257C2A-2687-32BB-A080-BA61EBBDEE41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransposedGrid", "..\..\..\FlexGrid\CS\TransposedGrid\TransposedGrid.csproj", "{9A239452-71AB-900B-59F1-A6085E2B2164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridCheckboxSelection", "..\..\..\FlexGrid\CS\FlexGridCheckboxSelection\FlexGridCheckboxSelection.csproj", "{FEACA4CE-45DF-3B32-D917-837E2D2EDA77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -287,6 +289,10 @@ Global
 		{9A239452-71AB-900B-59F1-A6085E2B2164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A239452-71AB-900B-59F1-A6085E2B2164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A239452-71AB-900B-59F1-A6085E2B2164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEACA4CE-45DF-3B32-D917-837E2D2EDA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEACA4CE-45DF-3B32-D917-837E2D2EDA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEACA4CE-45DF-3B32-D917-837E2D2EDA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEACA4CE-45DF-3B32-D917-837E2D2EDA77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -337,6 +343,7 @@ Global
 		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{B5257C2A-2687-32BB-A080-BA61EBBDEE41} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{9A239452-71AB-900B-59F1-A6085E2B2164} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{FEACA4CE-45DF-3B32-D917-837E2D2EDA77} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}

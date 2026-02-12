@@ -86,7 +86,7 @@ namespace CreatingDiagram.Controls
             webView21.NavigateToString(fullHtml);
         }
 
-
+        [DefaultValue("")]
         public string Code
         {
             get => code;

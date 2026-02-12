@@ -7,12 +7,17 @@
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+	<ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".sa3licx" />
   </ItemGroup>
 
 </Project>

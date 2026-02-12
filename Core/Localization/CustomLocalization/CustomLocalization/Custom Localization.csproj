@@ -47,6 +47,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Custom Localization.gclicx" />
+    <EmbeddedResource Include="Custom Localization.sa3licx" />
   </ItemGroup>
 </Project>

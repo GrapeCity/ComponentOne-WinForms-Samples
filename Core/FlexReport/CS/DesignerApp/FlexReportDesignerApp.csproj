@@ -229,7 +229,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include=".sa3licx" />
     <EmbeddedResource Update="Controls\Background\BackgroundEditor\BackgroundEditorControl.resx">
       <DependentUpon>BackgroundEditorControl.cs</DependentUpon>
     </EmbeddedResource>

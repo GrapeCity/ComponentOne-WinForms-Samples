@@ -9,11 +9,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove=".gclicx" />
+	  <None Remove=".sa3licx" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include=".gclicx" />
+	  <EmbeddedResource Include=".sa3licx" />
 	</ItemGroup>
 
 	<ItemGroup>

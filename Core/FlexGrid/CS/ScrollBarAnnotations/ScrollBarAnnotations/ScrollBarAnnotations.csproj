@@ -8,14 +8,17 @@
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
     <PlatformTarget>x86</PlatformTarget>
+	<ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
+    <None Remove=".sa3licx" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include=".gclicx"></EmbeddedResource>
+    <EmbeddedResource Include=".sa3licx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
