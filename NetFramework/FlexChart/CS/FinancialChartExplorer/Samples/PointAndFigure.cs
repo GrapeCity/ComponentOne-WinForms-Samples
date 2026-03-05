@@ -56,10 +56,16 @@ namespace FinancialChartExplorer.Samples
                 c1Scaling.SelectedIndex = 0;
             }
 
-            boxSize.Enabled = false;
-            period.Enabled = false;
+            boxSize.Enabled = true;
+            period.Enabled = true;
+
+            this.BeginInvoke((MethodInvoker)(() =>
+            {
+                boxSize.Enabled = false;
+                period.Enabled = false;
+            }));
         }
-        
+
         private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedCompanyName = c1ComboBox1.SelectedValue.ToString();

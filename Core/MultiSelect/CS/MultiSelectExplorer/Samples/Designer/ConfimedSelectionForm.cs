@@ -24,7 +24,10 @@ namespace MultiSelectExplorer.Samples.Designer
         {
             int memberCount = _selectedMember.Split(',').Length;
             lblSelectedMemberTitle.Text = string.Format(Resources.SelectedMemberTitle, memberCount);
-            lblSelectedMember.Text = Text = "✓ " + _selectedMember;
+            richTextBox1.Text = Text = "✓ " + _selectedMember;
+            richTextBox1.SelectAll();
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+            richTextBox1.DeselectAll();
             btnCancel.Text = Resources.Cancel;
             btnAddMember.Text = Resources.AddToTeam;
         }

@@ -40,19 +40,66 @@ namespace StockChart.Data
             {
                 var items = s.Split(',');
                 var len = items != null ? items.Length : 0;
-                if (len >= 1)
-                    Date = DateTime.Parse(items[0], CultureInfo.InvariantCulture);
-                if (len >= 2)
-                    Open = Convert.ToDouble(items[1], CultureInfo.InvariantCulture);
-                if (len >= 3)
-                    High = Convert.ToDouble(items[2], CultureInfo.InvariantCulture);
-                if (len >= 4)
-                    Low = Convert.ToDouble(items[3], CultureInfo.InvariantCulture);
-                if (len >= 5)
-                    Close = Convert.ToDouble(items[4], CultureInfo.InvariantCulture);
-                if (len >= 6)
-                    Volume = Convert.ToDouble(items[5], CultureInfo.InvariantCulture);
+                var culture = CultureInfo.InvariantCulture;
+
+                // Parses a single record (e.g., CSV row) into market data fields.
+                // Each field is optional and parsed only if present and valid.
+                if (TryGet(items, 0, out DateTime parsedDate))
+                {
+                    Date = parsedDate;
+                }
+
+                if (TryGet(items, 1, out double open))
+                {
+                    Open = open;
+                }
+
+                if (TryGet(items, 2, out double high))
+                {
+                    High = high;
+                }
+
+                if (TryGet(items, 3, out double low))
+                {
+                    Low = low;
+                }
+
+                if (TryGet(items, 4, out double close))
+                {
+                    Close = close;
+                }
+
+                if (TryGet(items, 5, out double volume))
+                {
+                    Volume = volume;
+                }
+
             }
+        }
+        /// Attempts to parse a DateTime value from the specified index if present.
+        /// Returns false if the index is out of range or parsing fails.
+        private static bool TryGet(string[] items, int index, out DateTime value)
+        {
+            value = default;
+            return items.Length > index &&
+                   DateTime.TryParse(
+                       items[index],
+                       CultureInfo.InvariantCulture,
+                       DateTimeStyles.None,
+                       out value);
+        }
+
+        /// Attempts to parse a double value from the specified index if present.
+        /// Returns false if the index is out of range or parsing fails.
+        private static bool TryGet(string[] items, int index, out double value)
+        {
+            value = default;
+            return items.Length > index &&
+                   double.TryParse(
+                       items[index],
+                       NumberStyles.Any,
+                       CultureInfo.InvariantCulture,
+                       out value);
         }
     }
 

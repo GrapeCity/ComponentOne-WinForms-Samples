@@ -16,6 +16,7 @@ using C1.Chart.Finance;
 using C1.Win.Chart.Finance;
 using C1.Win.Chart;
 using C1.Win.Chart.Interaction;
+using System.Diagnostics;
 
 namespace StockChart
 {
@@ -80,7 +81,13 @@ namespace StockChart
                     UpdateTitleBar();
                 }));
 
-                GetSymbolData("USNQX", new Action<string, SymbolData>((s, d) => InitializeBottomChart(d)), false, false);
+                // handle not valid date
+                GetSymbolData("USNQX", new Action<string, SymbolData>((s, d) =>
+                {
+                    if (d == null) d = _quoteData;
+                    InitializeBottomChart(d);
+                }), false, false);
+
                 CreateMarker();
                 InitializeControls();
             };
@@ -214,34 +221,35 @@ namespace StockChart
                 });
             };
 
+            // Updates the visible date range based on the selected toolbar option.
             ucToolbar.OnSelectedIndexChanged += (o, e) =>
             {
-                if (rs == null)
-                    return;
+                if (rs == null) return;
 
-                DateTime lowValue = DateTime.Now;
+                DateTime maxDate = (_quoteData != null && _quoteData.Any()) ? _quoteData.Max(x => x.Date) : DateTime.Now;
+                DateTime lowValue = maxDate;
                 switch (e.Value)
                 {
                     case 0:
-                        lowValue = DateTime.Now.AddMonths(-1);
+                        lowValue = maxDate.AddMonths(-1);
                         break;
                     case 1:
-                        lowValue = DateTime.Now.AddMonths(-3);
+                        lowValue = maxDate.AddMonths(-3);
                         break;
                     case 2:
-                        lowValue = DateTime.Now.AddMonths(-6);
+                        lowValue = maxDate.AddMonths(-6);
                         break;
                     case 3:
-                        lowValue = new DateTime(DateTime.Now.Year, 1, 1);
+                        lowValue = new DateTime(maxDate.Year, 1, 1);
                         break;
                     case 4:
-                        lowValue = DateTime.Now.AddYears(-1);
+                        lowValue = maxDate.AddYears(-1);
                         break;
                     case 5:
-                        lowValue = DateTime.Now.AddYears(-3);
+                        lowValue = maxDate.AddYears(-3);
                         break;
                     case 6:
-                        lowValue = DateTime.Now.AddYears(-6);
+                        lowValue = maxDate.AddYears(-6);
                         break;
                     case 7:
                         lowValue = _quoteData.Min(p => p.Date);
@@ -249,10 +257,10 @@ namespace StockChart
                     default:
                         break;
                 }
-                rs.UpperValue = DateTime.Now.ToOADate();
+                rs.UpperValue = maxDate.ToOADate();
                 rs.LowerValue = lowValue.ToOADate();
 
-                ucToolbar.RangeText = FormatRange(lowValue, DateTime.Today);
+                ucToolbar.RangeText = FormatRange(lowValue, maxDate);
             };
 
             ucToolbar.OnReseted += (o, e) =>
@@ -517,79 +525,88 @@ namespace StockChart
         private void FinancialChart1_MouseMove(object sender, MouseEventArgs e)
         {
             var ht = financialChart1.HitTest(e.Location);
-            if (ht != null)
+
+            try
             {
-                var result = new StringBuilder();
-                if (ht.PointIndex >= 0)
+                if (ht != null)
                 {
-                    DateTime currDate = DateTime.MaxValue;
-                    if (ht.Series != null && ht.Item is Quote)
-                        currDate = Convert.ToDateTime(((Quote)ht.Item).Date);
-
-                    if (ht.Series is MovingAverage)
-                        currDate = currDate.AddDays(0 - (ht.Series as MovingAverage).Period);
-
-                    if (currDate == DateTime.MaxValue)
-                        return;
-
-                    Stack<QuoteInfo> quotes = new Stack<QuoteInfo>();
-
-                    if (_quoteData != null)
+                    var result = new StringBuilder();
+                    if (ht.PointIndex >= 0)
                     {
-                        result.Append(string.Format("{0}: ", Symbol));
-                        var quote = (from p in _quoteData where (p.Date >= currDate) select p).FirstOrDefault();
+                        DateTime currDate = DateTime.MaxValue;
+                        if (ht.Series != null && ht.Item is Quote)
+                            currDate = Convert.ToDateTime(((Quote)ht.Item).Date);
 
-                        if (quote != null)
+                        if (ht.Series is MovingAverage)
+                            currDate = currDate.AddDays(0 - (ht.Series as MovingAverage).Period);
+
+                        if (currDate == DateTime.MaxValue)
+                            return;
+
+                        Stack<QuoteInfo> quotes = new Stack<QuoteInfo>();
+
+                        if (_quoteData != null)
                         {
-                            double dd = _isConfrontation ? quote.Percentage : quote.Close;// quote.GetValue(this.Binding);
+                            result.Append(string.Format("{0}: ", Symbol));
+                            var quote = (from p in _quoteData where (p.Date >= currDate) select p).FirstOrDefault();
 
-                            quotes.Push(new QuoteInfo()
+                            if (quote != null)
                             {
-                                Symbol = Symbol,
-                                Color = _baseSeriesColor,
-                                Value = dd,
-                                Volume = Convert.ToInt64(quote.Volume),
-                                Date = Convert.ToDateTime(quote.Date)
-                            });
-                        }
-                    }
+                                double dd = _isConfrontation ? quote.Percentage : quote.Close;// quote.GetValue(this.Binding);
 
-                    if (_comparisonSymbols != null)
-                    {
-                        foreach (var series in financialChart1.Series)
-                        {
-                            if (series.Visibility == SeriesVisibility.Visible && !(series is MovingAverage) && !string.IsNullOrEmpty(series.Name))
-                            {
-                                var currSeries = (from p in (from kv in _comparisonSymbols.Values select kv) where p.Series == series select p).FirstOrDefault();
-
-                                if (currSeries != null)
+                                quotes.Push(new QuoteInfo()
                                 {
-                                    var quote = (from p in currSeries.DataSource where (p.Date >= currDate) select p).FirstOrDefault();
+                                    Symbol = Symbol,
+                                    Color = _baseSeriesColor,
+                                    Value = dd,
+                                    Volume = Convert.ToInt64(quote.Volume),
+                                    Date = Convert.ToDateTime(quote.Date)
+                                });
+                            }
+                        }
 
-                                    if (quote != null)
+                        if (_comparisonSymbols != null)
+                        {
+                            foreach (var series in financialChart1.Series)
+                            {
+                                if (series.Visibility == SeriesVisibility.Visible && !(series is MovingAverage) && !string.IsNullOrEmpty(series.Name))
+                                {
+                                    var currSeries = (from p in (from kv in _comparisonSymbols.Values select kv) where p.Series == series select p).FirstOrDefault();
+
+                                    if (currSeries != null)
                                     {
-                                        System.Diagnostics.Debug.WriteLine(currDate.ToShortDateString());
-                                        double dd = _isConfrontation ? quote.Percentage : quote.Close;// quote.GetValue(this.Binding);
+                                        var quote = (from p in currSeries.DataSource where (p.Date >= currDate) select p).FirstOrDefault();
 
-                                        quotes.Push(new QuoteInfo()
+                                        if (quote != null)
                                         {
-                                            Symbol = currSeries.Code,
-                                            Color = currSeries.Color,
-                                            Value = dd,
-                                            Volume = Convert.ToInt64(quote.Volume),
-                                            Date = Convert.ToDateTime(quote.Date)
-                                        });
+                                            System.Diagnostics.Debug.WriteLine(currDate.ToShortDateString());
+                                            double dd = _isConfrontation ? quote.Percentage : quote.Close;// quote.GetValue(this.Binding);
+
+                                            quotes.Push(new QuoteInfo()
+                                            {
+                                                Symbol = currSeries.Code,
+                                                Color = currSeries.Color,
+                                                Value = dd,
+                                                Volume = Convert.ToInt64(quote.Volume),
+                                                Date = Convert.ToDateTime(quote.Date)
+                                            });
+                                        }
                                     }
                                 }
+
                             }
-
                         }
+                        ucToolbar.QuotesInfoDisplayMode = this.Binding == _comparisonBinding ? DisplayMode.Comparison : DisplayMode.Independent;
+                        ucToolbar.QuotesInfo = quotes;
                     }
-                    ucToolbar.QuotesInfoDisplayMode = this.Binding == _comparisonBinding ? DisplayMode.Comparison : DisplayMode.Independent;
-                    ucToolbar.QuotesInfo = quotes;
-                }
 
+                }
             }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+           
         }
 
         void RefreshRangeSelector()
