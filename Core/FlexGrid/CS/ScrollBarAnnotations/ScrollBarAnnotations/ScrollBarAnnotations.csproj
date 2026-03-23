@@ -22,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
     <PackageReference Include="System.Data.OleDb" Version="9.0.9" />
   </ItemGroup>
 

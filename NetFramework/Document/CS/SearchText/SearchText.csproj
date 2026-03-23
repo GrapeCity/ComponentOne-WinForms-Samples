@@ -21,10 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Document" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Document" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20261.*" />
   </ItemGroup>
 
   <ItemGroup>

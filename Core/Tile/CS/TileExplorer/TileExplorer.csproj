@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.TileControl" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.TileControl" Version="10.0.20261.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

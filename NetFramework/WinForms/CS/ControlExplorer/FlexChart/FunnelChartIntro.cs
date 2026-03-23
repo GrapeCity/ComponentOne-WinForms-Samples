@@ -115,7 +115,7 @@ namespace ControlExplorer.FlexChart
                 Top = startTop,
                 Width = labWidth,
                 Height = labHeight,
-                TextAlign = ContentAlignment.MiddleLeft
+                TextAlign = System.Drawing.ContentAlignment.MiddleLeft
             });
             this.Controls.Add(nudNeckWidth);
             nudNeckWidth.Top = startTop;
@@ -128,7 +128,7 @@ namespace ControlExplorer.FlexChart
                 Top = startTop,
                 Width = labWidth,
                 Height = labHeight,
-                TextAlign = ContentAlignment.MiddleLeft
+                TextAlign = System.Drawing.ContentAlignment.MiddleLeft
             });
             this.Controls.Add(nudNeckHeight);
             nudNeckHeight.Top = startTop;
@@ -141,7 +141,7 @@ namespace ControlExplorer.FlexChart
                 Top = startTop,
                 Width = labWidth,
                 Height = labHeight,
-                TextAlign = ContentAlignment.MiddleLeft
+                TextAlign = System.Drawing.ContentAlignment.MiddleLeft
             });
             this.Controls.Add(cbFunnelType);
             cbFunnelType.Top = startTop;

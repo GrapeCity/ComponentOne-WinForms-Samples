@@ -385,7 +385,7 @@
     <value>flxViewer</value>
   </data>
   <data name="&gt;&gt;flxViewer.Type" xml:space="preserve">
-    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4.8, Version=4.8.20252.741, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
+    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4.8, Version=4.8.20261.741, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
   </data>
   <data name="&gt;&gt;flxViewer.Parent" xml:space="preserve">
     <value>splitContainer2.Panel2</value>
@@ -3404,12 +3404,12 @@
     <value>c1ThemeController1</value>
   </data>
   <data name="&gt;&gt;c1ThemeController1.Type" xml:space="preserve">
-    <value>C1.Win.Themes.C1ThemeController, C1.Win.Themes.4.8, Version=4.8.20252.741, Culture=neutral, PublicKeyToken=594a0605db190bb9</value>
+    <value>C1.Win.Themes.C1ThemeController, C1.Win.Themes.4.8, Version=4.8.20261.741, Culture=neutral, PublicKeyToken=594a0605db190bb9</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>C1.Win.Ribbon.C1RibbonForm, C1.Win.Ribbon.4.8, Version=4.8.20252.741, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
+    <value>C1.Win.Ribbon.C1RibbonForm, C1.Win.Ribbon.4.8, Version=4.8.20261.741, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
   </data>
 </root>

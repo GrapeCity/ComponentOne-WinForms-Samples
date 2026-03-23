@@ -11,9 +11,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20261.*" />
   </ItemGroup>
 
   <ItemGroup>

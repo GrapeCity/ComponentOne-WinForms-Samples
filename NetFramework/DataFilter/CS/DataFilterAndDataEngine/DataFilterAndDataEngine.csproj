@@ -26,14 +26,14 @@
   <ItemGroup>
     <PackageReference Include="C1.DataEngine.Api" Version="10.0.20252.*" />
     <PackageReference Include="C1.DataEngine.Collection" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Gauge" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Calendar" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="10.0.20261.*" />
     <PackageReference Include="System.Text.Json" Version="5.0.2" />
     <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
   </ItemGroup>
