@@ -1,14 +1,8 @@
 ﻿<Project Sdk="Microsoft.Build.Traversal">
 
   <ItemGroup>
-    <ProjectReference Include="Core\**\*.csproj" />
-	  <ProjectReference Include="Core\**\*.vbproj" />
-    <ProjectReference Include="NetFramework\**\*.csproj" />
-    <ProjectReference Include="NetFramework\**\*.vbproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Remove="NetFramework\XHtmlEditor\CS\WordImport\**\*.csproj" />
+    <ProjectReference Include="Samples.NETFramework.csproj" />
+    <ProjectReference Include="Samples.NET.csproj" />
   </ItemGroup>
 
 </Project>
