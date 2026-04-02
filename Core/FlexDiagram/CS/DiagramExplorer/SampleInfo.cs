@@ -149,6 +149,13 @@ namespace DiagramExplorer
                                    Sample = SamplesStore.CreateCountriesDiagram,
                                    Controls = "Direction,EdgeRouting,Palette"
                                },
+                               new ()
+                               {
+                                   Name = "💧 Custom Shape",
+                                   Info = "FlexDiagram with custom shape node.",
+                                   Sample = SamplesStore.CreateCustomShapeDiagram,
+                                   Controls = "Direction,EdgeRouting"
+                               },
                             }
                         },
                     ];
