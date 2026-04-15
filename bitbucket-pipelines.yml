@@ -1,34 +1,39 @@
-image: atlassian/default-image:3
+definitions:
+  steps:
+    - step: &ai-review-step
+        clone:
+          depth: full
+          lfs: true
+        name: AI Code Review
+        max-time: 60
+        image: code.wynenterprise.io/docker/bitbucket-ai-review:c1
+        runs-on: [kodo]
+        script:
+          - curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
+          - apt-get install -y git-lfs
+
+          - |
+            COMMIT_MSG=$(git log --format=%B -n 1 "$BITBUCKET_COMMIT")
+
+            if [[ "$COMMIT_MSG" == *"[no ai]"* ]]; then
+              echo "Skip pipeline: [no ai] found in commit message."
+              exit 0
+            fi
+
+            export CC_BASE_URL=$C1_CC_BASE_URL
+            export CC_API_KEY=$C1_CC_API_KEY
+            export CC_MODEL=$C1_CC_MODEL
+            export VCS_ACCESS_TOKEN=$BBATOKEN
+            export ATLASSIAN_USER_EMAIL=$BBAEMAIL
+            export TEAM_NAME="C1"
+
+            /pipe.sh
 
 pipelines:
   pull-requests:
     "{feature/*,bugfix/*}":
-      - step:
-          name: AI Code Review
-          clone:
-            depth: full
-            lfs: true
-          max-time: 60
-          image: efimchikaa/bitbucket-ai-review:c1
-          caches:
-            - dotnetcore
-            - node
-          runs-on: [kodo]
-          script:
-            - curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
-            - apt-get install -y git-lfs
+      - step: *ai-review-step
 
-            - export CC_BASE_URL=$C1_CC_BASE_URL
-            - export CC_API_KEY=$C1_CC_API_KEY
-            - export CC_MODEL=$C1_CC_MODEL
-            - export VCS_ACCESS_TOKEN=$BBATOKEN
-            - export WORKSPACE=$BITBUCKET_WORKSPACE
-            - export REPO_SLUG=$BITBUCKET_REPO_SLUG
-            - export SOURCE_BRANCH=$BITBUCKET_BRANCH
-            - export PR_ID=$BITBUCKET_PR_ID
-            - export SOURCE_COMMIT=$BITBUCKET_COMMIT
-            - export PR_DESTINATION_BRANCH=$BITBUCKET_PR_DESTINATION_BRANCH
-            - export PR_DESTINATION_COMMIT=$BITBUCKET_PR_DESTINATION_COMMIT
-            - export ATLASSIAN_USER_EMAIL=$BBAEMAIL
-            - export TEAM_NAME="C1"
-            - /pipe.sh
+  custom:
+    ai-review:
+      - step: *ai-review-step
