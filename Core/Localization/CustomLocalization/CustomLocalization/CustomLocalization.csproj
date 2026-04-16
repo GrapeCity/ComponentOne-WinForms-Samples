@@ -14,12 +14,12 @@
     <Content Include="C1-ball.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Calendar" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.List" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.List" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="10.0.20261.*" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="CustomResources\C1.Win.Schedule.Localization.Strings.dz.resx">
@@ -47,6 +47,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Custom Localization.sa3licx" />
+    <EmbeddedResource Include=".sa3licx" />
   </ItemGroup>
 </Project>
