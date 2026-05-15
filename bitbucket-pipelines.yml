@@ -3,15 +3,14 @@ definitions:
     - step: &ai-review-step
         clone:
           depth: full
-          lfs: true
+          lfs: false
         name: AI Code Review
-        max-time: 60
+        max-time: 40
         image: code.wynenterprise.io/docker/bitbucket-ai-review:c1
         runs-on: [kodo]
         script:
-          - curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
-          - apt-get install -y git-lfs
-
+          - git config --global core.hooksPath /dev/null
+          - rm -rf .git/hooks/*
           - |
             COMMIT_MSG=$(git log --format=%B -n 1 "$BITBUCKET_COMMIT")
 
@@ -25,7 +24,8 @@ definitions:
             export CC_MODEL=$C1_CC_MODEL
             export VCS_ACCESS_TOKEN=$BBATOKEN
             export ATLASSIAN_USER_EMAIL=$BBAEMAIL
-            export TEAM_NAME="C1"
+            export TEAM_NAME="C1" 
+            export GIT_LFS_SKIP_SMUDGE=1
 
             /pipe.sh
 
