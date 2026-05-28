@@ -1,7 +1,7 @@
-using C1.Win.Calendar;
+﻿using C1.Win.Calendar;
 using C1.Win.Input;
-using InputDateRange.Constants;
 using InputDateRange.Helpers;
+using InputDateRange.Properties;
 using InputDateRange.Services;
 using System.Globalization;
 
@@ -9,196 +9,78 @@ namespace InputDateRange
 {
     public partial class Form1 : Form
     {
-        private List<DateTime> lastConfirmedDates = new();
-        private DateTime? startDate;
-        private DateTime? endDate;
-
-        private readonly ILocalizationService _localizationService;
-        private readonly IDateFormattingService _dateFormattingService;
-        private readonly IDateRangeService _dateRangeService;
+        private readonly LocalizationService _localizationService;
+        private readonly CalendarViewHighlighter _calendarViewHighlighter;
+        private readonly CustomDrawingHelper _customDrawingHelper;
+        private readonly DateFormatterFactory _dateFormatterFactory;
 
         public Form1()
         {
             InitializeComponent();
 
-            // Initialize services
             _localizationService = new LocalizationService();
-            _dateFormattingService = new DateFormattingService();
-            _dateRangeService = new DateRangeService();
-
+            _calendarViewHighlighter = new CalendarViewHighlighter();
+            _customDrawingHelper = new CustomDrawingHelper();
+            _dateFormatterFactory = new DateFormatterFactory();
 
             InitializeCalendarDropdown();
         }
 
+        #region Initialization
+
         private void InitializeCalendarDropdown()
         {
-            //set this value to allow selecting multiple ranges of date in c1CalendarView
-            c1CalendarView1.MaxSelectionCount = 366;
-            panelCalendar.Visible = true;
-            usRadioButton.Checked = true;
+            //set this value to allow selecting multiple ranges of date in c1DateRangeEdit
+            c1DateRangeEdit1.Calendar.MaxSelectionCount = 366;
 
+            InitializePredefinedRanges();
+            //set this value to show predefined ranges in the dropdown of c1DateRangeEdit
+            //Note that if you have a custom predefinedRanges, the default predefinedRanges will not be shown
+            c1DateRangeEdit1.Calendar.ShowPredefinedRanges = true;
+            usRadioButton.Checked = true; 
+
+            c1DateRangeEdit1.ValueChanged += (s, e) => UpdateLabels();
             SetDefaultDateLimits();
         }
 
-        private void listBoxRanges_SelectedIndexChanged(object sender, EventArgs e)
+        private void SetDefaultDateLimits()
         {
-            if (listBoxRanges.SelectedItem is not string option) return;
-
-            // Map the localized display text back to the English key
-            string rangeKey = _localizationService.GetRangeKeyFromDisplayText(option);
-            var dateRange = _dateRangeService.GetPredefinedRange(rangeKey);
-            if (dateRange == null) return;
-
-            startDate = dateRange.Value.StartDate;
-            endDate = dateRange.Value.EndDate;
-
-            c1CalendarView1.SelectedDates = dateRange.Value.GetDatesInRange().ToArray();
-            UpdateLabels();
+            var today = DateTime.Today;
+            minDateDateEdit.Value = today.AddYears(-10);
+            maxDateDateEdit.Value = today.AddYears(10);
+            DateLimit_ValueChanged(null, EventArgs.Empty);
         }
 
-        private void c1CalendarView1_SelectionChanged(object sender, EventArgs e) => UpdateLabels();
-
-        private void C1CalendarView1_DayFormatting(object sender, DayFormattingEventArgs e)
+        private void InitializePredefinedRanges()
         {
-            var selectedDates = c1CalendarView1.SelectedDates.Cast<DateTime>();
-            CalendarViewHighlighter.HighlightSelectedRange(e, selectedDates);
-        }
+            var today = DateTime.Today;
+            int diff = (7 + (int)(today.DayOfWeek - DayOfWeek.Sunday)) % 7;
+            var startOfWeek = today.AddDays(-diff).Date;
+            var startOfMonth = new DateTime(today.Year, today.Month, 1);
 
-        private void btnApply_Click(object sender, EventArgs e)
-        {
-            lastConfirmedDates = c1CalendarView1.SelectedDates.ToList();
-            UpdateLabels();
-            panelCalendar.Visible = false;
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            c1CalendarView1.SelectedDates = lastConfirmedDates.ToArray();
-            UpdateLabels();
-            panelCalendar.Visible = false;
-        }
-
-        private void UpdateLabels()
-        {
-            var selectedDates = c1CalendarView1.SelectedDates.Cast<DateTime>().OrderBy(d => d).ToList();
-            if (selectedDates.Any())
+            c1DateRangeEdit1.Calendar.PredefinedRanges.AddRange(new[]
             {
-                startDate = selectedDates.First();
-                endDate = selectedDates.Last();
-                labelTotalDays.Text = $"{selectedDates.Count} Days";
-
-                dateSelectedLabel.Text = _dateFormattingService.FormatDateRangeForLabel(startDate.Value, endDate.Value, _localizationService.CurrentCulture);
-                dateSelectedLabel.Styles.Default.ForeColor = SystemColors.ControlText;
-                startDateLabel.Text = _dateFormattingService.FormatDateWithOrdinal(startDate.Value, _localizationService.CurrentCulture);
-                endDateLabel.Text = _dateFormattingService.FormatDateWithOrdinal(endDate.Value, _localizationService.CurrentCulture);
-
-                string? matchedRange = _dateRangeService.MatchPredefinedRange(startDate.Value, endDate.Value, selectedDates.Count);
-                string displayText = _localizationService.GetDisplayTextFromRangeKey(matchedRange ?? DateRangeConstants.CustomRange);
-                listBoxRanges.SelectedItem = displayText;
-            }
-            else
-            {
-                startDate = null;
-                endDate = null;
-                labelTotalDays.Text = "0 Days";
-                dateSelectedLabel.Text = _localizationService.GetString("Label_Placeholder_DateSelected", DateRangeConstants.StartEndDatePlaceholder);
-                dateSelectedLabel.Styles.Default.ForeColor = SystemColors.GrayText;
-                startDateLabel.Text = _localizationService.GetString("Label_NoStartDate", "No selected start date");
-                endDateLabel.Text = _localizationService.GetString("Label_NoEndDate", "No selected end date");
-            }
-        }
-
-
-        #region Reset and Hover UI
-        private void resetLabel_MouseHover(object sender, EventArgs e)
-        {
-            resetLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Underline);
-        }
-
-        private void resetLabel_MouseLeave(object sender, EventArgs e)
-        {
-            resetLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-        }
-
-        private void resetLabel_Click(object sender, EventArgs e)
-        {
-            panelCalendar.Visible = false;
-            c1CalendarView1.SelectedDates = Array.Empty<DateTime>();
-            dateSelectedLabel.Text = _localizationService.GetString("dateSelectedPlaceholder", DateRangeConstants.StartEndDatePlaceholder);
-            dateSelectedLabel.Styles.Default.ForeColor = SystemColors.GrayText;
-            startDate = null;
-            endDate = null;
-            lastConfirmedDates.Clear();
-            labelTotalDays.Text = "0 Days";
-        }
-        #endregion
-
-        #region ListBox Custom Drawing
-        private void listBoxRanges_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            CustomDrawingHelper.DrawListBoxItem(e, listBoxRanges);
+                new PredefinedRange(startOfWeek,                 startOfWeek.AddDays(6),                 Resources.ListBoxItem_ThisWeek),
+                new PredefinedRange(startOfWeek.AddDays(-7),     startOfWeek.AddDays(-1),                Resources.ListBoxItem_LastWeek),
+                new PredefinedRange(startOfWeek.AddDays(7),      startOfWeek.AddDays(13),                Resources.ListBoxItem_NextWeek),
+                new PredefinedRange(startOfMonth,                startOfMonth.AddMonths(1).AddDays(-1),  Resources.ListBoxItem_ThisMonth),
+                new PredefinedRange(startOfMonth.AddMonths(-1),  startOfMonth.AddDays(-1),               Resources.ListBoxItem_LastMonth),
+                new PredefinedRange(startOfMonth.AddMonths(1),   startOfMonth.AddMonths(2).AddDays(-1),  Resources.ListBoxItem_NextMonth),
+            });
         }
 
         #endregion
 
-        #region Rounded Corner
-        private void Panel1_Paint(object sender, PaintEventArgs e)
+        #region Calendar Configuration
+
+        private void calendarDimensionNumericEditEx_TextChanged(object sender, EventArgs e)
         {
-            if (sender is Control control)
+            if (int.TryParse(calendarDimensionNumericEditEx.Text, out int value) &&
+                value >= calendarDimensionNumericEditEx.Minimum &&
+                value <= calendarDimensionNumericEditEx.Maximum)
             {
-                CustomDrawingHelper.ApplyRoundedCorners(control, e, DateRangeConstants.DefaultCornerRadius);
+                c1DateRangeEdit1.Calendar.CalendarDimensions = value;
             }
-        }
-        #endregion
-
-        #region Event Handlers and Methods
-
-        private void DateSelectedLabel_Click(object? sender, EventArgs e)
-        {
-            panelCalendar.Visible = !panelCalendar.Visible;
-        }
-
-        private void RadioButton_CheckedChanged(object? sender, EventArgs e)
-        {
-            if (sender is C1RadioButton radioButton && radioButton.Checked)
-            {
-                var newCulture = radioButton.Name switch
-                {
-                    "usRadioButton" => new CultureInfo("en-US"),
-                    "krRadioButton" => new CultureInfo("ko-KR"),
-                    "jpRadioButton" => new CultureInfo("ja-JP"),
-                    _ => new CultureInfo("en-US")
-                };
-
-                _localizationService.SetCulture(newCulture);
-
-                ApplyCultureToControls();
-                ApplyLocalizedText();
-                UpdateLabels();
-            }
-        }
-
-        private void ApplyCultureToControls()
-        {
-            var culture = _localizationService.CurrentCulture;
-
-            // Set the CurrentCulture for the calendar
-            c1CalendarView1.CurrentCulture = culture;
-            maxDateDateEdit.CultureInfo = culture;
-            minDateDateEdit.CultureInfo = culture;
-
-            var formatPattern = culture.Name switch
-            {
-                "en-US" => "MM/dd/yyyy",
-                "ko-KR" => "yyyy-MM-dd",
-                "ja-JP" => "yyyy/MM/dd",
-                _ => "MM/dd/yyyy"
-            };
-
-            minDateDateEdit.CustomFormat = formatPattern;
-            maxDateDateEdit.CustomFormat = formatPattern;
-            minDateDateEdit.DisplayFormat.CustomFormat = formatPattern;
-            maxDateDateEdit.DisplayFormat.CustomFormat = formatPattern;
         }
 
         private void DateLimit_ValueChanged(object? sender, EventArgs e)
@@ -211,8 +93,8 @@ namespace InputDateRange
                 {
                     if (minDate <= maxDate)
                     {
-                        c1CalendarView1.MinDate = minDate;
-                        c1CalendarView1.MaxDate = maxDate;
+                        c1DateRangeEdit1.Calendar.MinDate = minDate;
+                        c1DateRangeEdit1.Calendar.MaxDate = maxDate;
                     }
                 }
             }
@@ -239,7 +121,7 @@ namespace InputDateRange
                     int maxSelectionCount = Convert.ToInt32(rangeLimitNumericEditEx.Value);
                     if (maxSelectionCount > 0)
                     {
-                        c1CalendarView1.MaxSelectionCount = maxSelectionCount;
+                        c1DateRangeEdit1.Calendar.MaxSelectionCount = maxSelectionCount;
                     }
                 }
             }
@@ -261,61 +143,140 @@ namespace InputDateRange
             }
         }
 
-        private void SetDefaultDateLimits()
+        #endregion
+
+        #region Culture & Localization
+
+        private void RadioButton_CheckedChanged(object? sender, EventArgs e)
         {
-            var today = DateTime.Today;
-            minDateDateEdit.Value = today.AddYears(-10);
-            maxDateDateEdit.Value = today.AddYears(10);
-            DateLimit_ValueChanged(null, EventArgs.Empty);
+            if (sender is C1RadioButton radioButton && radioButton.Checked)
+            {
+                var newCulture = radioButton.Name switch
+                {
+                    "usRadioButton" => new CultureInfo("en-US"),
+                    "krRadioButton" => new CultureInfo("ko-KR"),
+                    "jpRadioButton" => new CultureInfo("ja-JP"),
+                    _ => new CultureInfo("en-US")
+                };
+
+                _localizationService.SetCulture(newCulture);
+
+                ApplyCultureToControls();
+                ApplyLocalizedText();
+                UpdatePredefinedRanges();
+                UpdateLabels();
+            }
+        }
+
+        private void ApplyCultureToControls()
+        {
+            var culture = _localizationService.CurrentCulture;
+
+            // Set the CurrentCulture for the calendar
+            c1DateRangeEdit1.CultureInfo = culture;
+            maxDateDateEdit.CultureInfo = culture;
+            minDateDateEdit.CultureInfo = culture;
+
+            var formatPattern = _dateFormatterFactory.CreateDateFormat(culture).ShortDatePattern;
+            
+            c1DateRangeEdit1.CustomFormat = formatPattern;
+            c1DateRangeEdit1.DisplayFormat.CustomFormat = formatPattern;
+            c1DateRangeEdit1.SetFormat(formatPattern);
+
+            minDateDateEdit.CustomFormat = formatPattern;
+            minDateDateEdit.DisplayFormat.CustomFormat = formatPattern;
+
+            maxDateDateEdit.CustomFormat = formatPattern;
+            maxDateDateEdit.DisplayFormat.CustomFormat = formatPattern;
         }
 
         private void ApplyLocalizedText()
         {
-            samplesTitle.Text = _localizationService.GetString("Label_SamplesTitle", "Input Date Range");
-            sampleDescriptionLabel.Text = _localizationService.GetString("Label_SampleDescription", "This sample demonstrates an interactive date range picker using C1CalendarView \r\nwith multi-cultural support. Select date ranges using predefined options or the calendar interface. \r\n\r\n\r\n\r\n");
-            yourDateSelectionLabel.Text = _localizationService.GetString("Label_YourDateSelection", "Your Date Selection");
-            featureLabel.Text = _localizationService.GetString("Label_Feature", "Feature");
-            cultureSelectionLabel.Text = _localizationService.GetString("Label_CultureSelection", "Culture Selection");
-            DateLimitLabel.Text = _localizationService.GetString("Label_DateLimit", "Date Limit");
-            startDateTextLabel.Text = _localizationService.GetString("Label_StartDate", "Start Date:");
-            endDateTextLabel.Text = _localizationService.GetString("Label_EndDate", "End Date:");
-            minDateLabel.Text = _localizationService.GetString("Label_MinDate", "Min Date");
-            maxDateLabel.Text = _localizationService.GetString("Label_MaxDate", "Max Date");
-            rangeLimitLabel.Text = _localizationService.GetString("Label_RangeLimit", "Range Limit");
-            resetLabel.Text = _localizationService.GetString("Label_Reset", "Reset");
-            btnApply.Text = _localizationService.GetString("Button_Apply", "Apply");
-            btnCancel.Text = _localizationService.GetString("Button_Cancel", "Cancel");
-            startDateLabel.Text = _localizationService.GetString("Label_StartDateText", "No selected start date");
-            endDateLabel.Text = _localizationService.GetString("Label_EndDateText", "No selected end date");
+            samplesTitle.Text = Resources.Label_SamplesTitle;
+            sampleDescriptionLabel.Text = Resources.Label_SampleDescription;
+            yourDateSelectionLabel.Text = Resources.Label_YourDateSelection;
+            featureLabel.Text = Resources.Label_Feature;
+            cultureSelectionLabel.Text = Resources.Label_CultureSelection;
+            DateLimitLabel.Text = Resources.Label_DateLimit;
+            startDateTextLabel.Text = Resources.Label_StartDate;
+            endDateTextLabel.Text = Resources.Label_EndDate;
+            minDateLabel.Text = Resources.Label_MinDate;
+            maxDateLabel.Text = Resources.Label_MaxDate;
+            rangeLimitLabel.Text = Resources.Label_RangeLimit;
+            startDateLabel.Text = Resources.Label_NoStartDate;
+            endDateLabel.Text = Resources.Label_NoEndDate;
+            calendarDimensionLabel.Text = Resources.Label_CalendarDimension;
 
             UpdateTooltips();
-            // Update listBoxRanges items
-            UpdateListBoxRangesItems();
         }
 
         private void UpdateTooltips()
         {
-            toolTip1.SetToolTip(c1PictureBox1, _localizationService.GetString("ToolTip_CultureSelection", "Changes the display language and date format. \r\nSwitch between English, Korean, and Japanese"));
-            toolTip1.SetToolTip(c1PictureBox2, _localizationService.GetString("ToolTip_DateLimit", "Sets the minimum and maximum selectable dates in the calendar. \r\nDates outside this range will be disabled"));
-            toolTip1.SetToolTip(c1PictureBox3, _localizationService.GetString("ToolTip_RangeLimit", "Controls the maximum number of days that can be selected at once.\r\nPrevents selecting more dates than the specified limit"));
+            toolTip1.SetToolTip(c1PictureBox1, Resources.ToolTip_CultureSelection);
+            toolTip1.SetToolTip(c1PictureBox2, Resources.ToolTip_DateLimit);
+            toolTip1.SetToolTip(c1PictureBox3, Resources.ToolTip_RangeLimit);
+            toolTip1.SetToolTip(c1PictureBox4, Resources.ToolTip_CalendarDimension);
         }
-        private void UpdateListBoxRangesItems()
+
+        private void UpdatePredefinedRanges()
         {
-            var selectedIndex = listBoxRanges.SelectedIndex;
-            listBoxRanges.Items.Clear();
+            var ranges = c1DateRangeEdit1.Calendar.PredefinedRanges;
+            if (ranges.Count < 6) return;
 
-            var rangeKeys = _dateRangeService.GetAllRangeKeys();
-            foreach (var rangeKey in rangeKeys)
-            {
-                var displayText = _localizationService.GetDisplayTextFromRangeKey(rangeKey);
-                listBoxRanges.Items.Add(displayText);
-            }
+            ranges[0].Name = Resources.ListBoxItem_ThisWeek;
+            ranges[1].Name = Resources.ListBoxItem_LastWeek;
+            ranges[2].Name = Resources.ListBoxItem_NextWeek;
+            ranges[3].Name = Resources.ListBoxItem_ThisMonth;
+            ranges[4].Name = Resources.ListBoxItem_LastMonth;
+            ranges[5].Name = Resources.ListBoxItem_NextMonth;
 
-            if (selectedIndex >= 0 && selectedIndex < listBoxRanges.Items.Count)
+            if (c1DateRangeEdit1.Calendar.ShowPredefinedRanges)
             {
-                listBoxRanges.SelectedIndex = selectedIndex;
+                c1DateRangeEdit1.Calendar.ShowPredefinedRanges = false;
+                c1DateRangeEdit1.Calendar.ShowPredefinedRanges = true;
             }
         }
+
+        #endregion
+
+        #region Date Selection Display
+
+        private void c1DateRangeEdit1_DayFormatting(object sender, DayFormattingEventArgs e)
+        {
+            if (c1DateRangeEdit1.MinValue.HasValue && c1DateRangeEdit1.MaxValue.HasValue)
+            {
+                _calendarViewHighlighter.HighlightSelectedRange(e, c1DateRangeEdit1.MinValue.Value, c1DateRangeEdit1.MaxValue.Value);
+            }
+        }
+
+        private void UpdateLabels()
+        {
+            var rangeStart = c1DateRangeEdit1.MinValue;
+            var rangeEnd = c1DateRangeEdit1.MaxValue;
+            if (rangeStart.HasValue && rangeEnd.HasValue)
+            {
+                startDateLabel.Text = _dateFormatterFactory.CreateDateFormat(_localizationService.CurrentCulture).FormatDateLabel(rangeStart.Value);
+                endDateLabel.Text = _dateFormatterFactory.CreateDateFormat(_localizationService.CurrentCulture).FormatDateLabel(rangeEnd.Value);
+            }
+            else
+            {
+                c1DateRangeEdit1.Placeholder = Resources.Label_Placeholder_DateSelected;
+                c1DateRangeEdit1.Refresh();
+                startDateLabel.Text = Resources.Label_NoStartDate;
+                endDateLabel.Text = Resources.Label_NoEndDate;
+            }
+        }
+
+        #endregion
+
+        #region Custom Drawing
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            if (sender is Control control)
+                _customDrawingHelper.ApplyRoundedCorners(control, e);
+        }
+
         #endregion
     }
 }

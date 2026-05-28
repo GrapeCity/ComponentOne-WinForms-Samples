@@ -119,11 +119,11 @@ namespace InputDateRange.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feature.
+        ///   Looks up a localized string similar to Calendar Dimension.
         /// </summary>
-        internal static string Laabel_Feature {
+        internal static string Label_CalendarDimension {
             get {
-                return ResourceManager.GetString("Laabel_Feature", resourceCulture);
+                return ResourceManager.GetString("Label_CalendarDimension", resourceCulture);
             }
         }
         
@@ -151,6 +151,15 @@ namespace InputDateRange.Properties {
         internal static string Label_EndDate {
             get {
                 return ResourceManager.GetString("Label_EndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feature.
+        /// </summary>
+        internal static string Label_Feature {
+            get {
+                return ResourceManager.GetString("Label_Feature", resourceCulture);
             }
         }
         
@@ -218,7 +227,7 @@ namespace InputDateRange.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This sample demonstrates an interactive date range picker using C1CalendarView 
+        ///   Looks up a localized string similar to This sample demonstrates an interactive date range picker using C1DateRangeEdit
         ///with multi-cultural support. Select date ranges using predefined options or the calendar interface. 
         ///.
         /// </summary>
@@ -342,6 +351,15 @@ namespace InputDateRange.Properties {
         internal static string ListBoxItem_ThisYear {
             get {
                 return ResourceManager.GetString("ListBoxItem_ThisYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sets the number of calendars displayed at once when the dropdown opens..
+        /// </summary>
+        internal static string ToolTip_CalendarDimension {
+            get {
+                return ResourceManager.GetString("ToolTip_CalendarDimension", resourceCulture);
             }
         }
         
