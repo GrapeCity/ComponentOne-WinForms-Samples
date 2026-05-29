@@ -109,7 +109,7 @@
 
 			<item name="FlexPivot" icon="FlexPivot">
 				<items>
-					<item name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview" short="Explore FlexPivot’s essential features." description="The control shows FlexPivot's basic features. FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."/>
+					<item name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview" short="Explore FlexPivot’s essential features." description="The control shows FlexPivot's basic features. FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a &#xA;chart."/>
 
 					<item name="Cube Analysis" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.CubeAnalysis" short="Shows how to use C1FlexPivot to analyze Cube data." description="Shows how to use C1FlexPivot to analyze Cube data."/>
 
@@ -551,7 +551,7 @@
 
 					<item name="Filter" assembly="GanttViewExplorer" type="FilterSample.Form1"
 								  short="Demonstrates a few examples of using custom filters with C1GanttView."
-								  description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions. To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in separation."/>
+								  description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions. To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in &#xA;separation."/>
 				</items>
 			</item>
 
@@ -585,13 +585,17 @@
 
 			<item name="FlexViewer" icon="FlexViewer">
 				<items>
-					<item name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
-								  short="Uses FlexReport/EmbeddedFonts to load and generate reports with embedded fonts"
-								  description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed. This sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
+					<item name="PdfView" assembly="PdfViewer" type="PdfViewer.Form1"
+								  short="Use C1PdfDocumentSource to create a PDF document viewer"
+								  description="Shows how to leverage the various features of FlexViewer by connecting it to a C1PdfDocumentSource to create a powerful PDF viewer with just a few lines of code."/>
 
 					<item name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
 								  short="Uses FlexReport/FlexViewer to load and generate common reports"
 								  description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). This sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+					
+					<item name="SSRS Reports in FlexViewer" assembly="SsrsViewer" type="SsrsViewer.MainForm"
+								  short="Demonstrates the ability of FlexViewer control to show SSRS reports"
+								  description="FlexViewer control can connect to C1SSRSDocumentSource to access a Report Server and view SSRS reports. This sample shows a few sample reports with parameters, bookmarks, outlines, and other features of SSRS reports."/>
 				</items>
 			</item>
 

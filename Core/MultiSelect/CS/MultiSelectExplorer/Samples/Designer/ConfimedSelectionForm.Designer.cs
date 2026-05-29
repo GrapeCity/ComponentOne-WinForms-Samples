@@ -31,11 +31,10 @@ namespace MultiSelectExplorer.Samples.Designer
         private void InitializeComponent()
         {
             lblSelectedMemberTitle = new C1.Win.Input.C1Label();
-            lblSelectedMember = new C1.Win.Input.C1Label();
             btnCancel = new C1.Win.Input.C1Button();
             btnAddMember = new C1.Win.Input.C1Button();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)lblSelectedMemberTitle).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)lblSelectedMember).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCancel).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnAddMember).BeginInit();
             SuspendLayout();
@@ -44,27 +43,17 @@ namespace MultiSelectExplorer.Samples.Designer
             // 
             lblSelectedMemberTitle.AutoSize = true;
             lblSelectedMemberTitle.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            lblSelectedMemberTitle.Location = new System.Drawing.Point(43, 25);
+            lblSelectedMemberTitle.Location = new System.Drawing.Point(30, 15);
             lblSelectedMemberTitle.Name = "lblSelectedMemberTitle";
-            lblSelectedMemberTitle.Size = new System.Drawing.Size(94, 33);
+            lblSelectedMemberTitle.Size = new System.Drawing.Size(62, 21);
             lblSelectedMemberTitle.TabIndex = 0;
             lblSelectedMemberTitle.Text = "c1Label1";
             // 
-            // lblSelectedMember
-            // 
-            lblSelectedMember.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            lblSelectedMember.Location = new System.Drawing.Point(49, 81);
-            lblSelectedMember.Name = "lblSelectedMember";
-            lblSelectedMember.Size = new System.Drawing.Size(307, 58);
-            lblSelectedMember.Styles.Default.ForeColor = System.Drawing.Color.FromArgb(30, 144, 235);
-            lblSelectedMember.TabIndex = 1;
-            lblSelectedMember.Text = "c1Label2";
-            // 
             // btnCancel
             // 
-            btnCancel.Location = new System.Drawing.Point(49, 172);
+            btnCancel.Location = new System.Drawing.Point(34, 103);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new System.Drawing.Size(126, 47);
+            btnCancel.Size = new System.Drawing.Size(88, 28);
             btnCancel.Styles.Corners = new C1.Framework.Corners(1, 1, 1, 1);
             btnCancel.Styles.Default.BackColor = System.Drawing.Color.White;
             btnCancel.Styles.Default.BorderColor = System.Drawing.SystemColors.Highlight;
@@ -80,9 +69,9 @@ namespace MultiSelectExplorer.Samples.Designer
             // 
             // btnAddMember
             // 
-            btnAddMember.Location = new System.Drawing.Point(230, 172);
+            btnAddMember.Location = new System.Drawing.Point(161, 103);
             btnAddMember.Name = "btnAddMember";
-            btnAddMember.Size = new System.Drawing.Size(126, 47);
+            btnAddMember.Size = new System.Drawing.Size(88, 28);
             btnAddMember.Styles.Corners = new C1.Framework.Corners(1, 1, 1, 1);
             btnAddMember.Styles.Default.BackColor = System.Drawing.SystemColors.Highlight;
             btnAddMember.Styles.Default.BorderColor = System.Drawing.SystemColors.Highlight;
@@ -94,21 +83,33 @@ namespace MultiSelectExplorer.Samples.Designer
             btnAddMember.Text = "c1Button2";
             btnAddMember.Click += btnConfirmSelection_Click;
             // 
+            // richTextBox1
+            // 
+            richTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            richTextBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            richTextBox1.Location = new System.Drawing.Point(30, 51);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(219, 35);
+            richTextBox1.TabIndex = 4;
+            richTextBox1.Text = "";
+            // 
             // ConfimedSelectionForm
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(409, 263);
+            ClientSize = new System.Drawing.Size(286, 158);
+            Controls.Add(richTextBox1);
             Controls.Add(btnAddMember);
             Controls.Add(btnCancel);
-            Controls.Add(lblSelectedMember);
             Controls.Add(lblSelectedMemberTitle);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             Name = "ConfimedSelectionForm";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             Text = "ConfimedSelectionForm";
             ((System.ComponentModel.ISupportInitialize)lblSelectedMemberTitle).EndInit();
-            ((System.ComponentModel.ISupportInitialize)lblSelectedMember).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnCancel).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnAddMember).EndInit();
             ResumeLayout(false);
@@ -118,8 +119,8 @@ namespace MultiSelectExplorer.Samples.Designer
         #endregion
 
         private C1.Win.Input.C1Label lblSelectedMemberTitle;
-        private C1.Win.Input.C1Label lblSelectedMember;
         private C1.Win.Input.C1Button btnCancel;
         private C1.Win.Input.C1Button btnAddMember;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

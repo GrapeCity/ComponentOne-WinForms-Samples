@@ -24,12 +24,13 @@ namespace DiagramExplorer.Controls
                 DropDownItems.Add( n, null, OnClick);
         }
 
-        protected void OnClick(object sender, EventArgs args)
+        protected void OnClick(object? sender, EventArgs args)
         {
             foreach (ToolStripMenuItem item in DropDownItems)
                 item.Checked = item == sender;
 
-            SelectedIndex = DropDownItems.IndexOf(sender as ToolStripItem);
+            if(sender is ToolStripItem toolStripItem)
+                SelectedIndex = DropDownItems.IndexOf(toolStripItem);
         }
 
         [DefaultValue(-1)]
@@ -38,7 +39,7 @@ namespace DiagramExplorer.Controls
             get => selectedIndex;
             set
             {
-                if ((selectedIndex != value))
+                if (selectedIndex != value)
                 {
                     selectedIndex = value;
                     foreach (ToolStripMenuItem item in DropDownItems)
@@ -49,7 +50,6 @@ namespace DiagramExplorer.Controls
             }
         }
 
-        public event EventHandler SelectionChanged;
-
+        public event EventHandler? SelectionChanged;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Windows.Forms;
 
 namespace ControlExplorer.ExpressionEditor
 {
@@ -7,6 +8,7 @@ namespace ControlExplorer.ExpressionEditor
     {
         C1.Win.ExpressionEditor.ExpressionEditorForm _dialog;
         DataView _dv;
+        string _lastValidFilter;
 
         public ChartIntegration()
         {
@@ -17,6 +19,7 @@ namespace ControlExplorer.ExpressionEditor
         {
             _dv = DemoDataSource("Products").DefaultView;
             _dv.RowFilter = "[UnitsInStock] > 100";
+            _lastValidFilter = _dv.RowFilter;
 
             _dialog = new C1.Win.ExpressionEditor.ExpressionEditorForm();
             _dialog.Apply += _dialog_Apply;
@@ -27,16 +30,29 @@ namespace ControlExplorer.ExpressionEditor
             productChart.ChartGroups[0].ChartData.SeriesList[0].X.DataField = "Products.ProductName";
         }
 
-        private void ApplyExpression()
+        private bool ApplyExpression()
         {
             try
             {
                 if (_dialog != null)
+                {
                     _dv.RowFilter = _dialog.Expression;
+                }
+                _lastValidFilter = _dv.RowFilter;
+                return true;
             }
             catch (EvaluateException)
             {
+                return false;
             }
+            catch (SyntaxErrorException)
+            {
+                MessageBox.Show("The expression contains a syntax error. Please correct the expression and try again. \neg. [ProductID]  +  [UnitsInStock] > 100 ", "Invalid Expression", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                _dv.RowFilter = _lastValidFilter;
+                _dialog.Expression = _lastValidFilter;
+                return false;
+            }
+
         }
 
         private void _dialog_Apply(object sender, EventArgs e)
@@ -48,7 +64,7 @@ namespace ControlExplorer.ExpressionEditor
         {
             _dialog.Expression = _dv.RowFilter;
             _dialog.ShowDialog();
-            if(_dialog.DialogResult == System.Windows.Forms.DialogResult.OK)
+            if (_dialog.DialogResult == System.Windows.Forms.DialogResult.OK)
                 ApplyExpression();
         }
 

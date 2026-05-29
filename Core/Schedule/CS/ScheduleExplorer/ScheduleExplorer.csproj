@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.BarCode" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Printing" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20261.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

@@ -45,19 +45,14 @@ namespace ControlExplorer.Controls
             // 
             treeView.AutoSize = true;
             treeView.BackColor = System.Drawing.Color.Transparent;
-            treeView.Collapsed = false;
             treeView.Dock = System.Windows.Forms.DockStyle.Fill;
-            treeView.FilterString = "";
             treeView.HoverBackColor = System.Drawing.Color.Transparent;
             treeView.HoverForeColor = System.Drawing.Color.Empty;
             treeView.Location = new System.Drawing.Point(0, 103);
             treeView.Margin = new System.Windows.Forms.Padding(0);
             treeView.Name = "treeView";
-            treeView.SelectedNode = null;
-            treeView.SelectedNodeRoot = null;
             treeView.SelectionColor = System.Drawing.Color.FromArgb(233, 232, 232);
-            treeView.SelectionForeColor = System.Drawing.Color.Black;
-            treeView.Size = new System.Drawing.Size(415, 447);
+            treeView.Size = new System.Drawing.Size(400, 447);
             treeView.TabIndex = 0;
             // 
             // panel2
@@ -76,7 +71,6 @@ namespace ControlExplorer.Controls
             searchBar1.Location = new System.Drawing.Point(13, 4);
             searchBar1.Margin = new System.Windows.Forms.Padding(0);
             searchBar1.Name = "searchBar1";
-            searchBar1.SearchText = "";
             searchBar1.Size = new System.Drawing.Size(375, 40);
             searchBar1.TabIndex = 0;
             // 
@@ -89,7 +83,7 @@ namespace ControlExplorer.Controls
             panel3.Location = new System.Drawing.Point(0, 0);
             panel3.Margin = new System.Windows.Forms.Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(415, 103);
+            panel3.Size = new System.Drawing.Size(400, 103);
             panel3.TabIndex = 1;
             // 
             // btnHambur
@@ -114,8 +108,9 @@ namespace ControlExplorer.Controls
             Controls.Add(treeView);
             Controls.Add(panel3);
             Margin = new System.Windows.Forms.Padding(2);
+            MaximumSize = new System.Drawing.Size(400, 0);
             Name = "SideBar";
-            Size = new System.Drawing.Size(415, 550);
+            Size = new System.Drawing.Size(400, 550);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnHambur).EndInit();

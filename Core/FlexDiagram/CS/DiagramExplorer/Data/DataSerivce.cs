@@ -7,31 +7,31 @@ using System.Threading.Tasks;
 
 namespace DiagramExplorer.Data
 {
+    #region Sample Data Classes
+
     // Simple hierarchical organization node
     public class OrgNode
     {
-        Image image = null;
+        Image? image = null;
         bool imageLoaded = false;
 
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
 
-        public string Department { get; set; }
+        public required string Department { get; set; }
 
-        public string JobTitle { get; set; }
-        public List<OrgNode> Childs { get; set; } = new List<OrgNode>();
+        public string? JobTitle { get; set; }
+        public List<OrgNode> Childs { get; set; } = [];
 
-        public Image Image
+        public Image? Image
         {
             get
             {
                 if (!imageLoaded)
                 {
-                    var stream = GetResourceStream(Name.Replace(' ', '_') + ".png");
-                    //if(stream == null) 
-                    //    stream = GetResourceStream("David_Chen.png");//  Name.Replace(' ', '_') + ".png");
+                    var stream = DataService.GetResourceStream(Name.Replace(' ', '_') + ".png");
                     if(stream != null)
                         image = Image.FromStream(stream);
                     imageLoaded = true;
@@ -40,342 +40,367 @@ namespace DiagramExplorer.Data
                 return image;
             }
         }
+    }
 
-        static Stream? GetResourceStream(string name)
+    public class Country
+    {
+        public required string World { get; set; }
+        public required string Continent { get; set; }
+        public required string Region { get; set; }
+
+        public required string Name { get; set; }
+        public required string Code { get; set; }
+
+        Image? flag;
+
+        public Image? Flag
+        {
+            get
+            {
+                if (flag == null)
+                {
+                    var stream = DataService.GetResourceStream($"flags.{Code}.png");
+                    if (stream != null)
+                        flag = Image.FromStream(stream);
+                }
+
+                return flag;
+            }
+        }
+    }
+
+    public class Animal
+    {
+        Image? image = null;
+
+        public required string Name { get; set; }
+        public required string NameScientific { get; set; }
+
+        public required string Phylum { get; set; }
+
+        public required string Class { get; set; }
+
+        public required string Order { get; set; }
+
+        public Image? Image
+        {
+            get
+            {
+                if (image == null)
+                {
+                    var stream = DataService.GetResourceStream(Name.Replace(' ', '_') + ".png");
+                    if (stream != null)
+                        image = Image.FromStream(stream);
+                }
+
+                return image;
+            }
+        }
+    }
+    #endregion
+
+    public class DataService
+    {
+        public static Stream? GetResourceStream(string name)
         {
             var asm = Assembly.GetExecutingAssembly();
             return asm.GetManifestResourceStream($"{asm.GetName().Name}.Resources.{name}");
         }
-    }
 
-    public class DataService
-    {
+        readonly List<OrgNode> orgData = [];
+
         public List<OrgNode> GetOrgChartData()
         {
-            var company = new OrgNode
+            if (orgData.Count == 0)
             {
-                Name = "Acme Corporation",
-                Department = "CEO",
-                Childs = new List<OrgNode>
+                var company = new OrgNode
                 {
-                    new OrgNode
+                    Name = "Acme Corporation",
+                    Department = "CEO",
+                    Childs =
+                    [
+                        new()
                     {
                         FirstName = "Sarah",
                         LastName = "Mitchell",
                         Department = "CEO",
                         Name = "Sarah Mitchell",
                         JobTitle = "CEO",
-                        Childs = new List<OrgNode>
-                        {
-                            new OrgNode
+                        Childs =
+                        [
+                            new()
                             {
                                 FirstName = "David",
                                 LastName = "Chen",
                                 Name = "David Chen",
                                 Department = "Engineering",
                                 JobTitle = "VP Engineering",
-                                Childs = new List<OrgNode>
-                                {
-                                    new OrgNode
+                                Childs =
+                                [
+                                    new()
                                     {
                                         FirstName = "Amanda",
                                         LastName = "Rodriguez",
                                         Department = "Engineering",
                                         Name = "Amanda Rodriguez",
                                         JobTitle = "Engineering Manager",
-                                        Childs = new List<OrgNode>
-                                        {
-                                            new OrgNode 
+                                        Childs =
+                                        [
+                                            new()
                                             {
                                                 FirstName = "John",
                                                 LastName = "Smith",
                                                 Department = "Engineering",
-                                                Name = "John Smith", 
-                                                JobTitle = "Senior Software Engineer" 
+                                                Name = "John Smith",
+                                                JobTitle = "Senior Software Engineer"
                                             },
-                                            new OrgNode 
+                                            new()
                                             {
                                                 FirstName = "Lisa",
                                                 LastName = "Wang",
                                                 Department = "Engineering",
-                                                Name = "Lisa Wang", 
-                                                JobTitle = "Software Engineer" 
+                                                Name = "Lisa Wang",
+                                                JobTitle = "Software Engineer"
                                             },
-                                            new OrgNode 
+                                            new()
                                             {
                                                 FirstName = "Michael",
                                                 LastName = "Brown",
                                                 Department = "Engineering",
-                                                Name = "Michael Brown", 
-                                                JobTitle = "Software Engineer" 
+                                                Name = "Michael Brown",
+                                                JobTitle = "Software Engineer"
                                             }
-                                        }
+                                        ]
                                     },
-                                    new OrgNode
+                                    new()
                                     {
                                         FirstName = "Robert",
                                         LastName = "Taylor",
                                         Department = "Engineering",
                                         Name = "Robert Taylor",
                                         JobTitle = "QA Manager",
-                                        Childs = new List<OrgNode>
-                                        {
-                                            new OrgNode 
-                                            { 
+                                        Childs =
+                                        [
+                                            new()
+                                            {
                                                 FirstName = "Emma",
                                                 LastName = "Wilson",
                                                 Department = "Engineering",
-                                                Name = "Emma Wilson", 
-                                                JobTitle = "QA Engineer" 
+                                                Name = "Emma Wilson",
+                                                JobTitle = "QA Engineer"
                                             },
-                                            new OrgNode 
+                                            new()
                                             {
                                                 FirstName = "Chris",
                                                 LastName = "Anderson",
                                                 Department = "Engineering",
-                                                Name = "Chris Anderson", 
-                                                JobTitle = "QA Engineer" 
+                                                Name = "Chris Anderson",
+                                                JobTitle = "QA Engineer"
                                             }
-                                        }
+                                        ]
                                     }
-                                }
+                                ]
                             },
-                            new OrgNode
+                            new()
                             {
                                 FirstName = "Jennifer",
                                 LastName = "Williams",
                                 Name = "Jennifer Williams",
                                 JobTitle = "VP Product",
                                 Department = "Product",
-                                Childs = new List<OrgNode>
-                                {
-                                    new OrgNode
+                                Childs =
+                                [
+                                    new()
                                     {
                                         FirstName = "Andrew",
                                         LastName = "Miller",
                                         Department = "Product",
                                         Name = "Andrew Miller",
                                         JobTitle = "Senior Product Manager",
-                                        Childs = new List<OrgNode>
-                                        {
-                                            new OrgNode 
+                                        Childs =
+                                        [
+                                            new()
                                             {
                                                 FirstName = "Nicole",
                                                 LastName = "Harris",
                                                 Department = "Product",
                                                 Name = "Nicole Harris",
-                                                JobTitle = "Product Manager" 
+                                                JobTitle = "Product Manager"
                                             },
-                                            new OrgNode 
+                                            new()
                                             {
                                                 FirstName = "Brian",
                                                 LastName = "Clark",
                                                 Department = "Product",
-                                                Name = "Brian Clark", 
-                                                JobTitle = "Product Manager" 
+                                                Name = "Brian Clark",
+                                                JobTitle = "Product Manager"
                                             }
-                                        }
+                                        ]
                                     },
-                                    new OrgNode
+                                    new()
                                     {
                                         FirstName = "Sophia",
                                         LastName = "Lewis",
                                         Department = "Product",
                                         Name = "Sophia Lewis",
                                         JobTitle = "Design Lead",
-                                        Childs = new List<OrgNode>
-                                        {
-                                            new OrgNode 
+                                        Childs =
+                                        [
+                                            new()
                                             {
                                                 FirstName = "Mark",
                                                 LastName = "Robinson",
                                                 Department = "Product",
-                                                Name = "Mark Robinson", 
-                                                JobTitle = "UX Designer" 
+                                                Name = "Mark Robinson",
+                                                JobTitle = "UX Designer"
                                             },
-                                            new OrgNode 
-                                            { 
+                                            new()
+                                            {
                                                 FirstName = "Laura",
                                                 LastName = "Walker",
                                                 Department = "Product",
-                                                Name = "Laura Walker", 
-                                                JobTitle = "UI Designer" 
+                                                Name = "Laura Walker",
+                                                JobTitle = "UI Designer"
                                             }
-                                        }
+                                        ]
                                     }
-                                }
+                                ]
                             },
-                            new OrgNode
+                            new()
                             {
                                 FirstName = "Thomas",
                                 LastName = "Anderson",
                                 Name = "Thomas Anderson",
                                 JobTitle = "VP Sales & Marketing",
                                 Department = "Sales",
-                                Childs = new List<OrgNode>
-                                {
-                                    new OrgNode
+                                Childs =
+                                [
+                                    new()
                                     {
                                         FirstName = "Karen",
                                         LastName = "White",
                                         Name = "Karen White",
                                         Department = "Sales",
                                         JobTitle = "Sales Director",
-                                        Childs = new List<OrgNode>
-                                        {
-                                            new OrgNode 
+                                        Childs =
+                                        [
+                                            new()
                                             {
                                                 FirstName = "Paul",
                                                 LastName = "Martinez",
                                                 Department = "Sales",
-                                                Name = "Paul Martinez", 
-                                                JobTitle = "Account Executive" 
+                                                Name = "Paul Martinez",
+                                                JobTitle = "Account Executive"
                                             },
-                                            new OrgNode 
-                                            { 
+                                            new()
+                                            {
                                                 FirstName = "Rebecca",
                                                 LastName = "Young",
                                                 Department = "Sales",
-                                                Name = "Rebecca Young", 
-                                                JobTitle = "Account Executive" 
+                                                Name = "Rebecca Young",
+                                                JobTitle = "Account Executive"
                                             },
-                                            new OrgNode 
-                                            { 
+                                            new()
+                                            {
                                                 FirstName = "Frank",
                                                 LastName = "Adams",
                                                 Department = "Sales",
-                                                Name = "Frank Adams", 
-                                                JobTitle = "Sales Engineer" 
+                                                Name = "Frank Adams",
+                                                JobTitle = "Sales Engineer"
                                             }
-                                        }
+                                        ]
                                     },
-                                    new OrgNode
+                                    new()
                                     {
                                         FirstName = "Linda",
                                         LastName = "Campbell",
                                         Department = "Sales",
                                         Name = "Linda Campbell",
                                         JobTitle = "Marketing Director",
-                                        Childs = new List<OrgNode>
-                                        {
-                                            new OrgNode 
+                                        Childs =
+                                        [
+                                            new()
                                             {
                                                 FirstName = "Eric",
                                                 LastName = "Baker",
                                                 Department = "Sales",
-                                                Name = "Eric Baker", 
-                                                JobTitle = "Content Manager" 
+                                                Name = "Eric Baker",
+                                                JobTitle = "Content Manager"
                                             },
-                                            new OrgNode 
+                                            new()
                                             {
                                                 FirstName = "Hannah",
                                                 LastName = "Collins",
                                                 Department = "Sales",
-                                                Name = "Hannah Collins", 
+                                                Name = "Hannah Collins",
                                                 JobTitle = "Marketing Specialist"
                                             }
-                                        }
+                                        ]
                                     }
-                                }
-                            },
-                            //new OrgNode
-                            //{
-                            //    Name = "Richard Foster",
-                            //    JobTitle = "CFO",
-                            //    Childs = new List<OrgNode>
-                            //    {
-                            //        new OrgNode { Name = "Margaret Hughes", JobTitle = "Controller" },
-                            //        new OrgNode { Name = "Peter Gray", JobTitle = "Senior Accountant" }
-                            //    }
-                            //},
-                            //new OrgNode
-                            //{
-                            //    Name = "Catherine Brooks",
-                            //    JobTitle = "VP Human Resources",
-                            //    Childs = new List<OrgNode>
-                            //    {
-                            //        new OrgNode { Name = "Donald Ward", JobTitle = "HR Manager" },
-                            //        new OrgNode { Name = "Monica Rivera", JobTitle = "Recruiter" }
-                            //    }
-                            //}
-                        }
+                                ]
+                            }
+                        ]
                     }
-                }
-            };
+                    ]
+                };
 
-            return new List<OrgNode> { company };
+                orgData.Add(company);
+            }
+
+            return orgData;
         }
-    }
 
-    public class Animal
-    {
-        Image image = null;
-        bool imageLoaded = false;
+        readonly List<Country> countryData = [];
 
-        public string Name { get; set; }
-        public string NameScientific { get; set; }
-
-        public string Phylum { get; set; }
-
-        public string Class { get; set; }
-
-        public string Order { get; set; }
-
-        public Image Image
+        public List<Country> GetCountryData()
         {
-            get
+            if (countryData.Count == 0)
             {
-                if (!imageLoaded)
+                var stream = GetResourceStream("countries.csv");
+
+                var text = "";
+                if (stream != null)
                 {
-                    var stream = GetResourceStream(Name.Replace(' ', '_') + ".png");
-                    //if(stream == null) 
-                    //    stream = GetResourceStream("David_Chen.png");//  Name.Replace(' ', '_') + ".png");
-                    if (stream != null)
-                        image = Image.FromStream(stream);
-                    imageLoaded = true;
+                    using var sr = new StreamReader(stream);
+                    text = sr.ReadToEnd();
                 }
 
-                return image;
+                var ss = text.Split([Environment.NewLine], StringSplitOptions.RemoveEmptyEntries);
+                for (int i = 0; i < ss.Length; i++)
+                {
+                    var values = ss[i].Split(',');
+                    countryData.Add(new Country { World = "World", Continent = values[0], Region = values[1], Name = values[2], Code = values[3] });
+                }
             }
+
+            return countryData;
         }
 
-        static Stream GetResourceStream(string name)
+        readonly List<Animal> animalData = [];
+
+        public List<Animal> GetAnimals()
         {
-            var asm = Assembly.GetExecutingAssembly();
-            return asm.GetManifestResourceStream($"{asm.GetName().Name}.Resources.{name}");
-        }
-
-    }
-
-    public class AnimalData
-    {
-        public static List<Animal> GetAnimals()
-        {
-            var list = new List<Animal>();
-
-            var stream = GetResourceStream("animals10.csv");
-
-            var text = "";
-            if (stream != null)
+            if (animalData.Count == 0)
             {
-                using (var sr = new StreamReader(stream))
+                var stream = DataService.GetResourceStream("animals10.csv");
+
+                var text = "";
+                if (stream != null)
+                {
+                    using var sr = new StreamReader(stream);
                     text = sr.ReadToEnd();
+                }
+
+                var ss = text.Split([Environment.NewLine], StringSplitOptions.RemoveEmptyEntries);
+                for (int i = 0; i < ss.Length; i++)
+                {
+                    var values = ss[i].Split(',');
+                    animalData.Add(new Animal { Name = values[0], NameScientific = values[1], Phylum = values[2], Class = values[3], Order = values[4] });
+                }
             }
 
-            var ss = text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            for (int i = 0; i < ss.Length; i++)
-            {
-                var values = ss[i].Split(',');
-                list.Add(new Animal { Name = values[0], NameScientific = values[1], Phylum = values[2], Class = values[3], Order = values[4] });
-            }
-
-            return list;
-        }
-
-        static Stream GetResourceStream(string name)
-        {
-            var asm = Assembly.GetExecutingAssembly();
-            return asm.GetManifestResourceStream($"{asm.GetName().Name}.Resources.{name}");
+            return animalData;
         }
     }
+
 }

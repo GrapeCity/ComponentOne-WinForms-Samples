@@ -20,8 +20,6 @@ namespace DiagramExplorer.Samples
             diagram.ForeColor = foreColor;
             diagram.BackColor = backColor;
 
-            var animals = Data.AnimalData.GetAnimals();
-
             diagram.NodeCreated += (s, args) =>
             {
                 var node = (C1.Win.Diagram.Node)args.Node;
@@ -40,7 +38,7 @@ namespace DiagramExplorer.Samples
                 node.LegendItem = args.ParentNode == null ? args.Data?.ToString() : args.ParentNode.LegendItem;
             };
 
-            diagram.DataSource = animals;
+            diagram.DataSource = dataService.GetAnimals();
             diagram.Binding = "Phylum,Class,Order,Name";
             diagram.Legend.Position = C1.Chart.Position.None;
             diagram.ScaleMode = ScaleMode.ScaleToFit;

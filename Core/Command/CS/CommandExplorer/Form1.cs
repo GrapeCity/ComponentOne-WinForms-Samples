@@ -1,5 +1,6 @@
 ﻿using C1.Win.Themes;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -10,6 +11,7 @@ namespace CommandExplorer
     {
         private Control _selectedControl;
         private readonly string _defaultTheme = "Office365White";
+        private Dictionary<string, Control> _sampleCache = new();
 
         public Form1()
         {
@@ -41,19 +43,32 @@ namespace CommandExplorer
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            if (_selectedControl is CommandExplorer.Samples.ToolbarsOverview prevToolbar)
             {
-                Control control = pnlSample.Controls[i];
-                pnlSample.Controls.RemoveAt(i);
-                control.Dispose();
+                prevToolbar.Enabled = false;
             }
+            pnlSample.Controls.Clear();
             if (lbSamples.SelectedItem is not SampleItem sampleItem)
             {
                 return;
             }
+
             lblTitle.Text = sampleItem.Title;
             lblDescription.Text = sampleItem.Description;
-            _selectedControl = sampleItem.Sample;
+
+            if (_sampleCache.TryGetValue(sampleItem.Title, out Control cachedControl))
+            {
+                _selectedControl = cachedControl;
+            }
+            else
+            {
+                _selectedControl = sampleItem.Sample;
+                _sampleCache[sampleItem.Title] = _selectedControl; 
+            }
+            if (_selectedControl is CommandExplorer.Samples.ToolbarsOverview toolbar)
+            {
+                toolbar.Enabled = true;
+            }
 
             _selectedControl.Dock = DockStyle.Fill;
             pnlSample.Controls.Add(_selectedControl);

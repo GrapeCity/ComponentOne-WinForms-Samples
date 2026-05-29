@@ -23,10 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20261.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20261.*" />
   </ItemGroup>
 
   <ItemGroup>

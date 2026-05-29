@@ -15,12 +15,13 @@ namespace DiagramExplorer.Samples
     {
         public static Control CreateTimeDiagram(Color foreColor, Color backColor)
         {
-            var diagram = new FlexDiagram();
-            diagram.ForeColor = foreColor;
-            diagram.BackColor = backColor;
-            diagram.ScaleMode = ScaleMode.ScaleToFit;
-            diagram.Direction = DiagramDirection.LeftRight;
-
+            var diagram = new FlexDiagram() 
+            { 
+                ForeColor = foreColor, 
+                BackColor = backColor,
+                ScaleMode = ScaleMode.ScaleToFit,
+                Direction = DiagramDirection.LeftRight
+            };
             UpdateTimeDiagram(diagram);
 
             var timer = new System.Windows.Forms.Timer() { Interval = 1000 };
@@ -69,7 +70,7 @@ namespace DiagramExplorer.Samples
             diagram.EndUpdate();
         }
 
-        private static void AddTimeNode(FlexDiagram diagram, Node from, Node to, DateTime time, Func<DateTime,int> getValue, 
+        private static void AddTimeNode(FlexDiagram diagram, Node? from, Node? to, DateTime time, Func<DateTime,int> getValue, 
             string suffix, int i, ChartStyle styleActive)
         {
             var val = getValue(time);

@@ -61,12 +61,12 @@ namespace FinancialChartExplorer.Samples
             tableLayoutPanel1.Controls.Add(financialChart1, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(5, 6, 5, 6);
+            tableLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(1640, 821);
+            tableLayoutPanel1.Size = new Size(1312, 657);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -82,11 +82,11 @@ namespace FinancialChartExplorer.Samples
             flowLayoutPanel1.Controls.Add(label4);
             flowLayoutPanel1.Controls.Add(numBackwardPeriods);
             flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(0, 744);
+            flowLayoutPanel1.Location = new Point(0, 597);
             flowLayoutPanel1.Margin = new Padding(0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new Padding(0, 23, 0, 0);
-            flowLayoutPanel1.Size = new Size(1640, 77);
+            flowLayoutPanel1.Padding = new Padding(0, 18, 0, 0);
+            flowLayoutPanel1.Size = new Size(1312, 60);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -94,10 +94,10 @@ namespace FinancialChartExplorer.Samples
             label1.Anchor = AnchorStyles.Left;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Variable Display", 13F);
-            label1.Location = new Point(5, 32);
-            label1.Margin = new Padding(5, 6, 5, 6);
+            label1.Location = new Point(4, 24);
+            label1.Margin = new Padding(4, 5, 4, 5);
             label1.Name = "label1";
-            label1.Size = new Size(107, 35);
+            label1.Size = new Size(92, 30);
             label1.TabIndex = 0;
             label1.Text = "Fit Type:";
             // 
@@ -109,10 +109,10 @@ namespace FinancialChartExplorer.Samples
             c1FitType.Font = new Font("Segoe UI Variable Display", 13F);
             c1FitType.GapHeight = 5;
             c1FitType.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
-            c1FitType.Location = new Point(120, 28);
+            c1FitType.Location = new Point(102, 20);
             c1FitType.Name = "c1FitType";
             c1FitType.ReadOnly = true;
-            c1FitType.Size = new Size(253, 43);
+            c1FitType.Size = new Size(202, 38);
             c1FitType.TabIndex = 10;
             c1FitType.TextAlign = HorizontalAlignment.Center;
             c1FitType.SelectedIndexChanged += c1FitType_SelectedIndexChanged;
@@ -122,21 +122,21 @@ namespace FinancialChartExplorer.Samples
             label2.Anchor = AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Variable Display", 13F);
-            label2.Location = new Point(381, 32);
-            label2.Margin = new Padding(5, 6, 5, 6);
+            label2.Location = new Point(310, 24);
+            label2.Margin = new Padding(4, 5, 4, 5);
             label2.Name = "label2";
-            label2.Size = new Size(86, 35);
+            label2.Size = new Size(74, 30);
             label2.TabIndex = 2;
             label2.Text = "Order:";
             // 
             // order
             // 
             order.Anchor = AnchorStyles.Left;
-            order.Location = new Point(475, 33);
+            order.Location = new Point(390, 25);
             order.Maximum = 10;
             order.Minimum = 2;
             order.Name = "order";
-            order.Size = new Size(79, 33);
+            order.Size = new Size(63, 28);
             order.TabIndex = 12;
             order.TextAlign = HorizontalAlignment.Center;
             order.Value = new decimal(new int[] { 2, 0, 0, 0 });
@@ -146,9 +146,9 @@ namespace FinancialChartExplorer.Samples
             // 
             c1ChkForecast.Anchor = AnchorStyles.Left;
             c1ChkForecast.Font = new Font("Segoe UI Variable Display", 13F);
-            c1ChkForecast.Location = new Point(560, 26);
+            c1ChkForecast.Location = new Point(457, 20);
             c1ChkForecast.Name = "c1ChkForecast";
-            c1ChkForecast.Size = new Size(150, 48);
+            c1ChkForecast.Size = new Size(185, 38);
             c1ChkForecast.TabIndex = 11;
             c1ChkForecast.Text = "Forecast Enable";
             c1ChkForecast.Value = null;
@@ -159,19 +159,19 @@ namespace FinancialChartExplorer.Samples
             label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Variable Display", 13F);
-            label3.Location = new Point(713, 32);
-            label3.Margin = new Padding(0, 6, 5, 6);
+            label3.Location = new Point(644, 24);
+            label3.Margin = new Padding(0, 5, 4, 5);
             label3.Name = "label3";
-            label3.Size = new Size(112, 35);
+            label3.Size = new Size(98, 30);
             label3.TabIndex = 6;
             label3.Text = "Forward:";
             // 
             // numForwardPeriods
             // 
             numForwardPeriods.Anchor = AnchorStyles.Left;
-            numForwardPeriods.Location = new Point(833, 33);
+            numForwardPeriods.Location = new Point(748, 25);
             numForwardPeriods.Name = "numForwardPeriods";
-            numForwardPeriods.Size = new Size(91, 33);
+            numForwardPeriods.Size = new Size(73, 28);
             numForwardPeriods.TabIndex = 13;
             numForwardPeriods.TextAlign = HorizontalAlignment.Center;
             numForwardPeriods.Value = new decimal(new int[] { 30, 0, 0, 0 });
@@ -182,19 +182,19 @@ namespace FinancialChartExplorer.Samples
             label4.Anchor = AnchorStyles.Left;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Variable Display", 13F);
-            label4.Location = new Point(932, 32);
-            label4.Margin = new Padding(5, 6, 5, 6);
+            label4.Location = new Point(827, 24);
+            label4.Margin = new Padding(4, 5, 4, 5);
             label4.Name = "label4";
-            label4.Size = new Size(130, 35);
+            label4.Size = new Size(111, 30);
             label4.TabIndex = 8;
             label4.Text = "Backward:";
             // 
             // numBackwardPeriods
             // 
             numBackwardPeriods.Anchor = AnchorStyles.Left;
-            numBackwardPeriods.Location = new Point(1070, 33);
+            numBackwardPeriods.Location = new Point(944, 25);
             numBackwardPeriods.Name = "numBackwardPeriods";
-            numBackwardPeriods.Size = new Size(91, 33);
+            numBackwardPeriods.Size = new Size(73, 28);
             numBackwardPeriods.TabIndex = 14;
             numBackwardPeriods.TextAlign = HorizontalAlignment.Center;
             numBackwardPeriods.Value = new decimal(new int[] { 0, 0, 0, 0 });
@@ -268,7 +268,7 @@ namespace FinancialChartExplorer.Samples
             financialChart1.PlotMargin = new Padding(0);
             financialChart1.SelectedSeries = null;
             financialChart1.SelectionStyle.StrokeColor = Color.Red;
-            financialChart1.Size = new Size(1640, 744);
+            financialChart1.Size = new Size(1312, 597);
             financialChart1.TabIndex = 1;
             financialChart1.Text = "financialChart1";
             // 
@@ -278,12 +278,12 @@ namespace FinancialChartExplorer.Samples
             // 
             // TrendLines
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(tableLayoutPanel1);
-            Margin = new Padding(5, 6, 5, 6);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "TrendLines";
-            Size = new Size(1640, 821);
+            Size = new Size(1312, 657);
             Load += OnLoad;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
