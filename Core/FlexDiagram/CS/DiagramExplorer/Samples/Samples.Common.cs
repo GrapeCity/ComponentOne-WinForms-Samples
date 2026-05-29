@@ -14,7 +14,9 @@ namespace DiagramExplorer.Samples
 {
     internal partial class Samples
     {
-        static Random rnd = new Random(1);
+        static Data.DataService dataService = new Data.DataService();
+
+        static readonly Random rnd = new (1);
 
         static void SetHeaderStyle(FlexDiagram diagram)
         {
@@ -35,8 +37,8 @@ namespace DiagramExplorer.Samples
             var text = "";
             if (stream != null)
             {
-                using (var sr = new StreamReader(stream))
-                    text = sr.ReadToEnd();
+                using var sr = new StreamReader(stream);
+                text = sr.ReadToEnd();
             }
 
             var diagram = new FlexDiagram();

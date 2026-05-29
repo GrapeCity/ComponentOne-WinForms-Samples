@@ -17,7 +17,6 @@ namespace RichTextEditor
     /// <summary>
     /// Extends C1Ribbon to provide a Word-style ribbon for a text editor.
     /// </summary>
-    [LicenseProvider(typeof(LicenseProvider))]
     public class ExtendedC1Ribbon : C1Ribbon
     {
         //------------------------------------------------------------

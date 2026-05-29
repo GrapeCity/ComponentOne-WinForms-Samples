@@ -21,16 +21,22 @@ namespace ControlExplorer.Input.DropDowns
         {
             Image img = pictureBox1.Image;
             Bitmap bm = new Bitmap(img);
-            Color c = bm.GetPixel(e.X, e.Y);
-            if(ht.ContainsKey(c))
+
+            // Check if click coordinates are within bitmap bounds and get the color
+            if (e.X >= 0 && e.X < bm.Width && e.Y >= 0 && e.Y < bm.Height)
             {
-                OwnerControl.Value = ht[c].ToString();
-                CloseDropDown();
+                Color c = bm.GetPixel(e.X, e.Y);
+                if (ht.ContainsKey(c))
+                {
+                    OwnerControl.Value = ht[c].ToString();
+                    CloseDropDown();
+                    return;
+                }
             }
-            else
-            {
-                OwnerControl.Value = "None Selected";
-            }
+
+            // Default to "None Selected" for out of bounds or unrecognized colors
+            OwnerControl.Value = "None Selected";
+            CloseDropDown();
         }
 
         private void ImageMapping_Load(object sender, EventArgs e)

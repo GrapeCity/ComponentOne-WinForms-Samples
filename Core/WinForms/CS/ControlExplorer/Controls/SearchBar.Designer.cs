@@ -66,7 +66,6 @@ namespace ControlExplorer.Controls
             textBoxExSearch.Location = new System.Drawing.Point(9, 8);
             textBoxExSearch.Margin = new Padding(9, 8, 2, 2);
             textBoxExSearch.Name = "textBoxExSearch";
-            textBoxExSearch.Placeholder = "Search";
             textBoxExSearch.Size = new System.Drawing.Size(364, 22);
             textBoxExSearch.TabIndex = 1;
             // 

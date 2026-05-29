@@ -13,15 +13,11 @@ namespace DiagramExplorer.Samples
 {
     internal partial class Samples
     {
-        static Data.DataService dataService = new Data.DataService();
-
         public static Control CreateOrgChart(Color foreColor, Color backColor)
         {
             var diagram = new FlexDiagram();
             diagram.ForeColor = foreColor;
             diagram.BackColor = backColor;
-
-            var data = dataService.GetOrgChartData();
 
             var nodeStyle = new ChartStyle() { Font = new Font("Segoe UI", 12), };
             var nodeContentStyle = new ChartStyle()
@@ -65,7 +61,7 @@ namespace DiagramExplorer.Samples
                 node.Shape = C1.Diagram.Shape.RoundedRectangle;
             };
 
-            diagram.DataSource = data;
+            diagram.DataSource = dataService.GetOrgChartData();
             diagram.Binding = "Name";
             diagram.ChildItemsPath = "Childs";
             diagram.ScaleMode = C1.Diagram.ScaleMode.ScaleToFit;

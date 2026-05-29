@@ -26,7 +26,7 @@ It provides a utility to scan a project, view and edit resource (`.resx`) files,
 ---
 
 ## C1 Controls Used
-Version used: `10.0.20252.*`
+Version used: `10.0.20261.*`
 
 - `C1 Schedule`
 - `C1 FlexGrid`

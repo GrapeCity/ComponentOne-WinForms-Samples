@@ -18,7 +18,6 @@ Namespace RichTextEditor
     ''' <summary>
     ''' Extends C1Ribbon to provide a Word-style ribbon for a text editor.
     ''' </summary>
-    <LicenseProvider(GetType(LicenseProvider))>
     Public Class C1TextEditorRibbon
         Inherits C1.Win.Ribbon.C1Ribbon
         '------------------------------------------------------------

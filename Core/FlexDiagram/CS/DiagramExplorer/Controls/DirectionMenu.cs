@@ -11,8 +11,6 @@ namespace DiagramExplorer.Controls
 {
     class DirectionMenu : EnumMenu<DiagramDirection>
     {
-        int selectedIndex = -1;
-
         public DirectionMenu() : base("Direction") { }
 
         protected override void Init(string name)

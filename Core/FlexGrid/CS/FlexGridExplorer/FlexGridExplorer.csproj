@@ -27,26 +27,26 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+	  <PackageReference Include="C1.Win.Input" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-	  <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
+	  <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20261.*" />
 
-	  <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.ExpressionEditor" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" /> 
-	  <PackageReference Include="C1.Win.FlexGrid.BandedView" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="10.0.20252.*" />
- 	  <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.List" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.Pdf" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+	  <PackageReference Include="C1.DataCollection.BindingList" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.Command" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.ExpressionEditor" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.FlexChart" Version="10.0.20261.*" /> 
+	  <PackageReference Include="C1.Win.FlexGrid.BandedView" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="10.0.20261.*" />
+ 	  <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.InputPanel" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.List" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.Pdf" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.Ribbon" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20261.*" />
+	  <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
 	  <PackageReference Include="CsvHelper" Version="33.1.0" />
 	  <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.0" />
 

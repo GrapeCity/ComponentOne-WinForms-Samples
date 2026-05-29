@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20261.*" />
   </ItemGroup>
 
   <ItemGroup>
