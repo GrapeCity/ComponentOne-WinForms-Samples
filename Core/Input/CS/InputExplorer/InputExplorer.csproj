@@ -11,16 +11,16 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Calendar" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20261.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
     <PackageReference Include="C1.Win.Input" Version="10.0.20261.*" />
     <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20261.*" />
     <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20261.*" />
     <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.TouchToolKit" Version="10.0.20261.*" />
     <PackageReference Include="C1.Win.TreeView" Version="10.0.20261.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.10" />
     <PackageReference Include="System.Data.OleDb" Version="9.0.10" />
-	<PackageReference Include="C1.Win.Command" Version="10.0.20261.*" />
-	<PackageReference Include="C1.Win.TouchToolKit" Version="10.0.20261.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,8 +47,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="C1Demo.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Properties\Resources.resx">
+    </EmbeddedResource>    <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
