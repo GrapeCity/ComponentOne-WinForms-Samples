@@ -29,7 +29,6 @@ namespace SparklineExplorer
             {
                 Control control = pnlSample.Controls[i];
                 pnlSample.Controls.RemoveAt(i);
-                control.Dispose();
             }
             if (lbSamples.SelectedItem is not SampleItem sampleItem)
             {
