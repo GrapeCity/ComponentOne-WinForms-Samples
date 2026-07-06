@@ -103,10 +103,10 @@ namespace SelectionMode
             this.c1FlexGrid1.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid1.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid1.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid1.Location = new System.Drawing.Point(14, 41);
+            this.c1FlexGrid1.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid1.Location = new System.Drawing.Point(8, 24);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Size = new System.Drawing.Size(461, 216);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
             this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -125,11 +125,11 @@ namespace SelectionMode
             this.c1FlexGrid2.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid2.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid2.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid2.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid2.Location = new System.Drawing.Point(490, 41);
+            this.c1FlexGrid2.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid2.Location = new System.Drawing.Point(272, 24);
             this.c1FlexGrid2.Name = "c1FlexGrid2";
             this.c1FlexGrid2.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Cell;
-            this.c1FlexGrid2.Size = new System.Drawing.Size(460, 216);
+            this.c1FlexGrid2.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid2.StyleInfo = resources.GetString("c1FlexGrid2.StyleInfo");
             this.c1FlexGrid2.TabIndex = 0;
             this.c1FlexGrid2.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -148,11 +148,11 @@ namespace SelectionMode
             this.c1FlexGrid3.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid3.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid3.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid3.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid3.Location = new System.Drawing.Point(490, 298);
+            this.c1FlexGrid3.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid3.Location = new System.Drawing.Point(272, 176);
             this.c1FlexGrid3.Name = "c1FlexGrid3";
             this.c1FlexGrid3.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.RowRange;
-            this.c1FlexGrid3.Size = new System.Drawing.Size(460, 216);
+            this.c1FlexGrid3.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid3.StyleInfo = resources.GetString("c1FlexGrid3.StyleInfo");
             this.c1FlexGrid3.TabIndex = 0;
             this.c1FlexGrid3.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -171,11 +171,11 @@ namespace SelectionMode
             this.c1FlexGrid4.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid4.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid4.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid4.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid4.Location = new System.Drawing.Point(14, 298);
+            this.c1FlexGrid4.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid4.Location = new System.Drawing.Point(8, 176);
             this.c1FlexGrid4.Name = "c1FlexGrid4";
             this.c1FlexGrid4.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
-            this.c1FlexGrid4.Size = new System.Drawing.Size(461, 216);
+            this.c1FlexGrid4.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid4.StyleInfo = resources.GetString("c1FlexGrid4.StyleInfo");
             this.c1FlexGrid4.TabIndex = 0;
             this.c1FlexGrid4.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -194,11 +194,11 @@ namespace SelectionMode
             this.c1FlexGrid5.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid5.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid5.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid5.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid5.Location = new System.Drawing.Point(490, 555);
+            this.c1FlexGrid5.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid5.Location = new System.Drawing.Point(272, 328);
             this.c1FlexGrid5.Name = "c1FlexGrid5";
             this.c1FlexGrid5.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.ColumnRange;
-            this.c1FlexGrid5.Size = new System.Drawing.Size(460, 217);
+            this.c1FlexGrid5.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid5.StyleInfo = resources.GetString("c1FlexGrid5.StyleInfo");
             this.c1FlexGrid5.TabIndex = 0;
             this.c1FlexGrid5.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -217,11 +217,11 @@ namespace SelectionMode
             this.c1FlexGrid6.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid6.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid6.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid6.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid6.Location = new System.Drawing.Point(14, 555);
+            this.c1FlexGrid6.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid6.Location = new System.Drawing.Point(8, 328);
             this.c1FlexGrid6.Name = "c1FlexGrid6";
             this.c1FlexGrid6.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Column;
-            this.c1FlexGrid6.Size = new System.Drawing.Size(461, 217);
+            this.c1FlexGrid6.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid6.StyleInfo = resources.GetString("c1FlexGrid6.StyleInfo");
             this.c1FlexGrid6.TabIndex = 0;
             this.c1FlexGrid6.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -238,45 +238,45 @@ namespace SelectionMode
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 14);
+            this.label1.Location = new System.Drawing.Point(8, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 27);
+            this.label1.Size = new System.Drawing.Size(160, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Default";
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(490, 14);
+            this.label2.Location = new System.Drawing.Point(272, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 27);
+            this.label2.Size = new System.Drawing.Size(160, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cell";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 271);
+            this.label3.Location = new System.Drawing.Point(8, 160);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(288, 27);
+            this.label3.Size = new System.Drawing.Size(160, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Row";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(490, 271);
+            this.label4.Location = new System.Drawing.Point(272, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(288, 27);
+            this.label4.Size = new System.Drawing.Size(160, 16);
             this.label4.TabIndex = 1;
             this.label4.Text = "RowRange";
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(965, 14);
+            this.label5.Location = new System.Drawing.Point(536, 8);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(288, 27);
+            this.label5.Size = new System.Drawing.Size(160, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "CellRange";
             // 
@@ -285,11 +285,11 @@ namespace SelectionMode
             this.c1FlexGrid7.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid7.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid7.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid7.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid7.Location = new System.Drawing.Point(965, 41);
+            this.c1FlexGrid7.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid7.Location = new System.Drawing.Point(536, 24);
             this.c1FlexGrid7.Name = "c1FlexGrid7";
             this.c1FlexGrid7.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.CellRange;
-            this.c1FlexGrid7.Size = new System.Drawing.Size(461, 216);
+            this.c1FlexGrid7.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid7.StyleInfo = resources.GetString("c1FlexGrid7.StyleInfo");
             this.c1FlexGrid7.TabIndex = 0;
             this.c1FlexGrid7.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -306,9 +306,9 @@ namespace SelectionMode
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(965, 271);
+            this.label6.Location = new System.Drawing.Point(536, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(288, 27);
+            this.label6.Size = new System.Drawing.Size(160, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "ListBox";
             // 
@@ -317,11 +317,11 @@ namespace SelectionMode
             this.c1FlexGrid8.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this.c1FlexGrid8.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
             this.c1FlexGrid8.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid8.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1FlexGrid8.Location = new System.Drawing.Point(965, 298);
+            this.c1FlexGrid8.Font = new System.Drawing.Font("Arial", 6F);
+            this.c1FlexGrid8.Location = new System.Drawing.Point(536, 176);
             this.c1FlexGrid8.Name = "c1FlexGrid8";
             this.c1FlexGrid8.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.ListBox;
-            this.c1FlexGrid8.Size = new System.Drawing.Size(461, 216);
+            this.c1FlexGrid8.Size = new System.Drawing.Size(256, 128);
             this.c1FlexGrid8.StyleInfo = resources.GetString("c1FlexGrid8.StyleInfo");
             this.c1FlexGrid8.TabIndex = 0;
             this.c1FlexGrid8.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -338,42 +338,43 @@ namespace SelectionMode
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 528);
+            this.label7.Location = new System.Drawing.Point(8, 312);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(288, 27);
+            this.label7.Size = new System.Drawing.Size(160, 16);
             this.label7.TabIndex = 1;
             this.label7.Text = "Col";
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(490, 528);
+            this.label8.Location = new System.Drawing.Point(272, 312);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(288, 27);
+            this.label8.Size = new System.Drawing.Size(160, 16);
             this.label8.TabIndex = 1;
             this.label8.Text = "ColRange";
             // 
             // checkBox1
             // 
-            this.checkBox1.Location = new System.Drawing.Point(979, 555);
+            this.checkBox1.Location = new System.Drawing.Point(544, 328);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(403, 54);
+            this.checkBox1.Size = new System.Drawing.Size(224, 32);
             this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "No Rows";
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
-            this.checkBox2.Location = new System.Drawing.Point(979, 623);
+            this.checkBox2.Location = new System.Drawing.Point(544, 368);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(403, 54);
+            this.checkBox2.Size = new System.Drawing.Size(224, 32);
             this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "No Cols";
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
