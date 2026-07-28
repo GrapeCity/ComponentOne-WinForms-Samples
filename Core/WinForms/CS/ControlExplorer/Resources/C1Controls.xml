@@ -102,8 +102,11 @@
 							<item name="Custom" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.CustomSample" short="This demo shows how to create custom row detail control and use it" description="Drill into a row of data to show more details inside a collapsible panel. You can display an input form, a child data grid, or anything else within the detail row."/>
 						</menus>
 					</item>
+					
 					<item name="Scroll Bar Annotations" assembly="ScrollBarAnnotations" type="ScrollBarAnnotations.Form1" short="See it in action" description="The FlexGrid Scrollbar Annotation feature enhances data visualization by adding contextual markers directly onto the grid’s scrollbar."/>
-
+					
+					<item name="Transpose Grid" assembly="TransposedGrid" type="TransposedGrid.Form1" short="This demo shows how to use the Transposed property in C1FlexGrid." description="The Transposed property flips rows and columns to display data in a transposed layout. This demo shows how to switch between transposed and non-transposed views and update the chart by selecting data in the transposed grid."/>
+					
 				</items>
 			</item>
 
