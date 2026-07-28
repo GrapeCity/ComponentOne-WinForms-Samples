@@ -172,6 +172,7 @@
             this.homeTab1.Groups.Add(this.fontGroup1);
             this.homeTab1.Groups.Add(this.paragraphGroup1);
             this.homeTab1.Groups.Add(this.insertGroup1);
+            this.homeTab1.Groups.Add(this.devGroup1);
             this.homeTab1.Name = "homeTab1";
             // 
             // viewModeGroup1
