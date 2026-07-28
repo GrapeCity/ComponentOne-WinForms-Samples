@@ -36,6 +36,7 @@
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridSelection\FlexGridSelection\FlexGridSelection.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\ScrollBarAnnotations\ScrollBarAnnotations\ScrollBarAnnotations.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\TransposedGrid\TransposedGrid.csproj" />
     <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
