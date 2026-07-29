@@ -267,7 +267,7 @@
 
     <PropertyGroup>
       <TeamCityBuildId Condition="'$(TeamCityBuildId)'==''">0</TeamCityBuildId>
-      <EmailProductVersion>$([System.Text.RegularExpressions.Regex]::Replace('$(AssemblyVersion)', '^\d+\.', ''))</EmailProductVersion>
+      <EmailProductVersion>$([System.Text.RegularExpressions.Regex]::Replace('$(AssemblyVersion)', '^(?:\d+\.){2}', ''))</EmailProductVersion>
     </PropertyGroup>
 
     <ItemGroup>
