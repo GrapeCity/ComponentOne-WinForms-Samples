@@ -23,7 +23,7 @@ namespace ScrollBarAnnotations.Manager
         /// <returns>A formatted connection string pointing to the sample MDB file.</returns>
         internal static string GetConnectionString()
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
+            string path = Application.StartupPath;
             string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
             return string.Format(conn, path);
         }
