@@ -41,7 +41,7 @@ It provides visual indicators for various row states such as selection, focus, e
 ---
 
 ## C1 Controls Used
-Version used: `10.0.20261.*`
+Version used: `10.0.20262.*`
 
 - `C1 Input`  
 - `C1 FlexGrid` (with Scrollbar Annotations)  

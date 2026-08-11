@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20262.*" />
     <PackageReference Include="System.Data.OleDb" Version="10.0.1" />
   </ItemGroup>
 

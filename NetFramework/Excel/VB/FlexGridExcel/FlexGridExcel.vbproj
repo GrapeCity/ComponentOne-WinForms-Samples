@@ -32,7 +32,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Excel" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20262.*" />
   </ItemGroup>
 
   <ItemGroup>
