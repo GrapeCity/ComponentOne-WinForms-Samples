@@ -65,6 +65,11 @@ namespace FlexGridExplorer.Samples
                 _flags = _flags | FileFlags.VisibleOnly;
                 none = false;
             }
+            if (c1CheckBoxExcludeFooters.Checked)
+            {
+                _flags = _flags | FileFlags.ExcludeFooters;
+                none = false;
+            }
             if (none) _flags = FileFlags.None;
         }
     }

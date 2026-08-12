@@ -106,7 +106,9 @@
 					<item name="Scroll Bar Annotations" assembly="ScrollBarAnnotations" type="ScrollBarAnnotations.Form1" short="See it in action" description="The FlexGrid Scrollbar Annotation feature enhances data visualization by adding contextual markers directly onto the grid’s scrollbar."/>
 					
 					<item name="Transpose Grid" assembly="TransposedGrid" type="TransposedGrid.Form1" short="This demo shows how to use the Transposed property in C1FlexGrid." description="The Transposed property flips rows and columns to display data in a transposed layout. This demo shows how to switch between transposed and non-transposed views and update the chart by selecting data in the transposed grid."/>
-					
+
+					<item name="Exporting And Printing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ExportAndPrint" short="This demo shows how to export and import C1FlexGrid to/from Excel, how to print the FlexGrid." description="Working with Excel: Save and load data directly to/from Microsoft Excel. FlexGrid supports many different exporting options, such as formatting, fixed cells, merged cells, mapped values, and more. Printing: Directly print FlexGrid while optionally showing preview and progress dialogs. For more control over printing, FlexGrid has a custom Printable class which can be used to combine multiple grids in one document to add surrounding content."/>
+
 				</items>
 			</item>
 
