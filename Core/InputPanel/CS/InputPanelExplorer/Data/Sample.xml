@@ -47,4 +47,12 @@
 		</Description>
 		<SampleType>Samples.QueryBuilder</SampleType>
 	</SampleItem>
+	<SampleItem>
+		<Name>UIA scenarios</Name>
+		<Title>UI Automation scenarios</Title>
+		<Description>
+			InputPanel supports UI Automation. The sample using the UIA API to demonstrate scenarios simulating user usage of UI.
+		</Description>
+		<SampleType>Samples.UIAScenarios</SampleType>
+	</SampleItem>
 </SampleItems>
