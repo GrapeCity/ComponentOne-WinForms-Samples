@@ -10,6 +10,7 @@ The sample shows how to:
 * Design data bound complex business forms with validations.
 * Manually design complex flexible layouts where fields are populated with data at runtime.
 * UIA API Test Scenarios.
+* Design CommandBinding with InputPanel items.
 
 The InputPanel connecting to the SQLite database and binding data from Employees table. The Catalogue example uses data from Cars table.
 
