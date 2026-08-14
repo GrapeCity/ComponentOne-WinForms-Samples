@@ -48,6 +48,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Update="Resources\PageForInserts.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Resources\Syntax.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

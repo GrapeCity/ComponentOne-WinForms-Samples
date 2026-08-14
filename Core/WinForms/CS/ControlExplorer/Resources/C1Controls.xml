@@ -350,7 +350,7 @@
 		<items>
 			<item name="Editor" icon="Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
-					<item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
+					<item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control. You can load/save HTML, HTM, RTF and DOCX files."
 						description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way. C1Editor supports the rich Xhtml format."/>
 
 					<item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
@@ -364,6 +364,14 @@
 					<item name="Syntax Highlight" assembly="EditorExplorer" type="EditorExplorer.Samples.SyntaxHighlight"
 							short="This demo shows how to implement syntax-highlighting."
 							description="This sample shows how to implement a syntax-highlighting editor using a C1Editor. The sample keeps track of any changes made to the document, and applies a list of regular expressions/style definitions to highlight the document. The content colors are the same as seen in a Visual Studio C# file (blue reserved words, green comments, red strings, and so on). The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules."/>
+					
+					<item name="Events" assembly="EditorExplorer" type="EditorExplorer.Samples.Events"
+							short="This view shows how the C1Editor control raises drag-and-drop, mouse, and DocumentChanged events."
+							description="This interface visualizes how the editor responds to user behavior by logging drag-and-drop movements, mouse clicks, and automatic text updates through the DocumentChanged event."/>
+
+					<item name="Inserts" assembly="EditorExplorer" type="EditorExplorer.Samples.Inserts"
+					   short="This view demonstrates different ways to insert content into the C1Editor using the API."
+					   description="This view demonstrates different ways to insert content into the C1Editor using the API. Users can explore how to add elements using InsertBeforeElementAsync, InsertAfterElementAsync. Also it shows how to use InsertIntoElementAsync with various modes: ContentInsertMode.First to prepend, ContentInsertMode.Last to append, or ContentInsertMode.Replace to completely overwrite the content."/>
 
 				</items>
 			</item>
