@@ -17,12 +17,9 @@ namespace EditorExplorer
         public Form1()
         {
             InitializeComponent();
-            if (_items != null)
-            {
-                lbSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
-                if(_items.Any())
-                    lbSamples.SelectedIndex = 0;
-            }
+            lbSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
+            if(_items.Any())
+                lbSamples.SelectedIndex = 0;
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)

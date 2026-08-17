@@ -6,7 +6,6 @@ using Microsoft.Web.WebView2.WinForms;
 using System;
 using System.IO;
 using System.Threading.Tasks;
-//using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace EditorExplorer.Samples

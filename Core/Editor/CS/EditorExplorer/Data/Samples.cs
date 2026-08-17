@@ -84,7 +84,7 @@ namespace EditorExplorer.Samples
                new SampleItem()
                {
                    Name = "SyntaxHighlight",
-                   Description = "This view shows how to implement a text editor with syntex highlighting using the Editor control.",
+                   Description = "This view shows how to implement a text editor with syntax highlighting using the Editor control.",
                    Title = "Syntax Highlighting",
                    SampleType = typeof(SyntaxHighlight)
                },
