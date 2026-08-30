@@ -4,7 +4,7 @@
 
     <ItemGroup>
       <PackageReferenceReplaceWith Include="C1.Excel.Cn" Version="10.0.20262.*" />
-      <PackageReferenceReplaceWith Include="C1.Pdf.Cn" Version="10.0.20261.*" />
+      <PackageReferenceReplaceWith Include="C1.Pdf.Cn" Version="10.0.20262.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Accordion.Cn" Version="10.0.20262.*" />
       <PackageReferenceReplaceWith Include="C1.Win.BarCode.Cn" Version="10.0.20262.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Bitmap.Cn" Version="10.0.20262.*" />
