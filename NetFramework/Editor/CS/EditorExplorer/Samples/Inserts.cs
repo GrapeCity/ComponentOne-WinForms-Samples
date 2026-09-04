@@ -36,25 +36,25 @@ namespace EditorExplorer.Samples
             }
         }
 
-        private void btnInsertBefore_Click(object sender, EventArgs e)
+        private async void btnInsertBefore_Click(object sender, EventArgs e)
         {
-            c1Editor1.InsertBeforeElementAsync("InsertTextBefore", "insert-before-target", null, null);
+            await c1Editor1.InsertBeforeElementAsync("InsertTextBefore", elementId: "insert-before-target");
         }
-        private void btnInsertAfter_Click(object sender, EventArgs e)
+        private async void btnInsertAfter_Click(object sender, EventArgs e)
         {
-            c1Editor1.InsertAfterElementAsync("InsertTextAfter", "insert-after-target", null, null);
+            await c1Editor1.InsertAfterElementAsync("InsertTextAfter", elementId: "insert-after-target");
         }
-        private void btnInsertIntoFirst_Click(object sender, EventArgs e)
+        private async void btnInsertIntoFirst_Click(object sender, EventArgs e)
         {
-            c1Editor1.InsertIntoElementAsync("InsertTextInto_First", C1.Win.Editor.ContentInsertMode.First, "sentence-3", null, null);
+            await c1Editor1.InsertIntoElementAsync("InsertTextInto_First", C1.Win.Editor.ContentInsertMode.First, elementId: "sentence-3");
         }
-        private void btnInsertIntoLast_Click(object sender, EventArgs e)
+        private async void btnInsertIntoLast_Click(object sender, EventArgs e)
         {
-            c1Editor1.InsertIntoElementAsync("InsertTextInto_Last", C1.Win.Editor.ContentInsertMode.Last, "sentence-4", null, null);
+            await c1Editor1.InsertIntoElementAsync("InsertTextInto_Last", C1.Win.Editor.ContentInsertMode.Last, elementId: "sentence-4");
         }
-        private void btnInsertIntoReplace_Click(object sender, EventArgs e)
+        private async void btnInsertIntoReplace_Click(object sender, EventArgs e)
         {
-            c1Editor1.InsertIntoElementAsync("InsertTextInto_Replace", C1.Win.Editor.ContentInsertMode.Replace, "replace-target", null, null);
+            await c1Editor1.InsertIntoElementAsync("InsertTextInto_Replace", C1.Win.Editor.ContentInsertMode.Replace, elementId: "replace-target");
         }
     }
 }
