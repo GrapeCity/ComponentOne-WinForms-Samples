@@ -1,0 +1,27 @@
+﻿---
+title: Decision Flow
+---
+graph TD
+    start(["Start"])
+    s1["Step 1"]
+    d1{"Condition?"}
+    yes["Action A"]
+    no["Action B"]
+    s2["Step 2"]
+    done(["End"])
+ 
+    start --> s1
+    s1 --> d1
+    d1 -- Yes --> yes
+    d1 -- No --> no
+    yes --> s2
+    no --> s2
+    s2 --> done
+ 
+    classDef terminal fill:#2d6a4f,stroke:#1b4332,color:#ffffff
+    classDef decision fill:#fff3cd,stroke:#8a6d1f,color:#1a1a1a
+    classDef step fill:#e8eef6,stroke:#1f3a5f,color:#1a1a1a
+ 
+    class start,done terminal
+    class d1 decision
+    class s1,s2,yes,no step

@@ -1,0 +1,38 @@
+﻿---
+title: Org Chart
+---
+graph TD
+    L1["Top Level"]
+    L2A["Division A"]
+    L2B["Division B"]
+    L2C["Division C"]
+    L3A["Team A1"]
+    L3B["Team A2"]
+    L3C["Team A3"]
+    L3D["Team B1"]
+    L3E["Team B2"]
+    L3F["Team B3"]
+    L3G["Team C1"]
+    L3H["Team C2"]
+    L3I["Team C3"]
+ 
+    L1 --> L2A
+    L1 --> L2B
+    L1 --> L2C
+    L2A --> L3A
+    L2A --> L3B
+    L2A --> L3C
+    L2B --> L3D
+    L2B --> L3E
+    L2B --> L3F
+    L2C --> L3G
+    L2C --> L3H
+    L2C --> L3I
+ 
+    classDef top fill:#1f3a5f,stroke:#0d1f33,color:#ffffff
+    classDef mid fill:#4a6fa5,stroke:#1f3a5f,color:#ffffff
+    classDef leaf fill:#e8eef6,stroke:#1f3a5f,color:#1a1a1a
+ 
+    class L1 top
+    class L2A,L2B,L2C mid
+    class L3A,L3B,L3C,L3D,L3E,L3F,L3G,L3H,L3I leaf
