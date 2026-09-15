@@ -58,6 +58,7 @@
     <ProjectReference Include="..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj" />
     <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" />
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" />
+    <ProjectReference Include="..\..\..\HamburgerMenu\CS\HamburgerMenuExplorer\HamburgerMenuExplorer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -547,6 +547,16 @@
 								  description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
 				</items>
 			</item>
+
+			<item name="HamburgerMenu" icon="HamburgerMenu">
+				<items>
+					<item name="Overview" assembly="HamburgerMenuExplorer" type="HamburgerMenuExplorer.Samples.Overview" short="This demo shows the basic C1HamburgerMenu features." description="This sample demonstrates how to initialize and configure the basic features of the C1HamburgerMenu control."/>
+
+					<item name="Layout" assembly="HamburgerMenuExplorer" type="HamburgerMenuExplorer.Samples.Layout" short="This demo shows different Layout options for C1HamburgerMenu control." description="C1HamburgerMenu has different layout types which defines some behavior and appearance features."/>
+
+					<item name="SearchPanel" assembly="HamburgerMenuExplorer" type="HamburgerMenuExplorer.Samples.SearchPanel" short="This demo shows how to integrate a search panel into C1HamburgerMenu." description="Demonstrates how to embed and configure a search interface of the C1HamburgerMenu control."/>
+				</items>
+			</item>						
 		</items>
 	</item>
 
