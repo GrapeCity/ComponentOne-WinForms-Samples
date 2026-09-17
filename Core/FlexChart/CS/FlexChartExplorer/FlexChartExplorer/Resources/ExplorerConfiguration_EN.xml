@@ -12,54 +12,20 @@
 
 	<item name="What's New" icon="iconWhatsNew" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
 		<items>
-			<item name="Animation" title="" status="" type="FlexChartExplorer.Samples.Animation">
-				<summary></summary>
-				<description>
-					Add animation when FlexChart is loaded or when data points are updated. Choose an easing function and how to animate the data points.
-				</description>
-			</item>
-			<item name="Pie Animation" title="" status="" type="FlexChartExplorer.Samples.PieAnimation">
-				<summary></summary>
-				<description>
-					Add animation when FlexPie is loaded or when data points are updated. Choose an easing function and how to animate the data points.
-				</description>
-			</item>
-			<item name="Legend Scrolling" title="" status="" type="FlexChartExplorer.Samples.LegendScrolling">
-				<summary></summary>
-				<description>
-					The FlexChart legend supports scrolling when there are too many items in view.
-				</description>
-			</item>
-			<item name="Auto Pie Labels" title="" status="" type="FlexChartExplorer.Samples.PieAutoLabels">
-				<summary></summary>
-				<description>
-					The sample shows automatic positioning of data labels in pie chart.
-				</description>
-			</item>
-			<item name="MultiPie" title="" status="" type="FlexChartExplorer.Samples.MultiPie">
+			<item name="Range Zones" title="" status="New" type="FlexChartExplorer.Samples.RangeZones" >
 				<summary>
-					Create multiple pie charts by listing properties in FlexPie's Binding.
+					The demo shows how to use RangeZone to highlight rectangular regions of plot.
 				</summary>
 				<description>
-					Use FlexPie to visualize more data in a single chart by creating multiple pie chart series. This demo shows how to create multiple pie charts based on the same data source.
-
-					To create multiple pie charts, just specify several comma-separated properties in FlexPie's Binding.
+					A network ping chart that plots round-trip latency against three RangeZone bands — Good, Fair, Poor. The RangeZone bands act as a shared quality backdrop for multiple data series.
 				</description>
 			</item>
-			<item name="FlexChart Toolbar" title="" status="" type="FlexChartExplorer.Samples.Toolbar" >
+			<item name="Quadrants" title="" status="New" type="FlexChartExplorer.Samples.Quadrants" >
 				<summary>
-					Use FlexChartToolbar for quick access to chart settings at runtime.
+					The demo shows how to use RangeZone to create quadrants on the plot.
 				</summary>
 				<description>
-					Allow the end-user to edit aspects of the chart using run-time chart editors. The toolbar enables users to modify basic features of the chart.
-				</description>
-			</item>
-			<item name="Axis Break" title="" status="" type="FlexChartExplorer.Samples.AxisBreak">
-				<summary>
-					FlexChart with axis break.
-				</summary>
-				<description>
-					Display the same data series on two plot areas simulating axis break. Custom axis appearance and 'break area' are drawn in chart Rendered event handler.
+					A scatter chart placing popular programming languages by runtime performance and ease of use, over four RangeZone quadrants: Fast and Friendly, Approachable, Bare Metal, and Niche. Each language is a bubble sized by adoption, positioned within the zone that characterizes its trade-offs. Demonstrates two-axis (XY-bounded) RangeZone regions used as a classification backdrop.
 				</description>
 			</item>
 		</items>
@@ -560,6 +526,23 @@
 									Display hierarchical information combined with relative quantity using the ComponentOne TreeMap control. Highlight hierarchical, tree-structured data as a set of nested rectangles and help to analyze the anomalies in the data set.
 								</description>
 							</item>
+							<item name="Range Zones" title="" status="New" type="FlexChartExplorer.Samples.RangeZones" >
+								<summary>
+									The demo shows how to use RangeZone to highlight rectangular regions of plot.
+								</summary>
+								<description>
+									A network ping chart that plots round-trip latency against three RangeZone bands — Good, Fair, Poor. The RangeZone bands act as a shared quality backdrop for multiple data series.
+								</description>
+							</item>
+							<item name="Quadrants" title="" status="New" type="FlexChartExplorer.Samples.Quadrants" >
+								<summary>
+									The demo shows how to use RangeZone to create quadrants on the plot.
+								</summary>
+								<description>
+									A scatter chart placing popular programming languages by runtime performance and ease of use, over four RangeZone quadrants: Fast and Friendly, Approachable, Bare Metal, and Niche. Each language is a bubble sized by adoption, positioned within the zone that characterizes its trade-offs. Demonstrates two-axis (XY-bounded) RangeZone regions used as a classification backdrop.
+								</description>
+							</item>
+
 						</items>
 					</item>
 

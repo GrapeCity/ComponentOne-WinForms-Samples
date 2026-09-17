@@ -724,5 +724,46 @@ namespace FlexChartExplorer.Data
             return temperatureDiffs;
         }
 
+        public static List<PingSample> GeneratePingData(PingSampleProfile profile, DateTime start, TimeSpan duration, TimeSpan interval)
+        {
+            var random = new Random(123);
+            var result = new List<PingSample>();
+
+            for (var time = start; time <= start + duration; time += interval)
+            {
+                double? latency = GenerateLatency(random, profile, time, start);
+                result.Add(new PingSample { Timestamp = time, LatencyMs = latency });
+            }
+
+            return result;
+        }
+
+        private static double? GenerateLatency(Random random, PingSampleProfile profile, DateTime timestamp, DateTime start)
+        {
+            if (random.NextDouble() < profile.PacketLossChance)
+                return null;
+
+            var minutes = (timestamp - start).TotalMinutes;
+            var latency = profile.BaseLatencyMs + RandomNormal(random, 0, profile.JitterMs);
+
+            latency += Math.Sin(minutes / 30.0) * profile.JitterMs * 0.5;
+
+            if (random.NextDouble() < profile.SpikeChance)
+                latency += random.Next(80, 400);
+
+            return Math.Max(1, Math.Round(latency, 1));
+        }
+
+        private static double RandomNormal(Random random, double mean, double stdDev)
+        {
+            var u1 = 1.0 - random.NextDouble();
+            var u2 = 1.0 - random.NextDouble();
+
+            var randStdNormal =
+                Math.Sqrt(-2.0 * Math.Log(u1)) *
+                Math.Sin(2.0 * Math.PI * u2);
+
+            return mean + stdDev * randStdNormal;
+        }
     }
 }
