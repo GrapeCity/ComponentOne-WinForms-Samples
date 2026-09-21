@@ -3,6 +3,8 @@ using C1.Diagram;
 using C1.Diagram.Parser;
 using C1.Diagram.Serialization;
 using C1.Win.Chart;
+using DiagramEditor.Controls;
+using DiagramEditor.Helpers;
 
 
 namespace DiagramEditor;
@@ -20,7 +22,7 @@ public class MainForm : Form
     private readonly ToolStripStatusLabel statusLabel = new();
     private readonly ToolStripStatusLabel statusLabel2 = new();
 
-    private readonly DiagramEditor diagramEditor = new();
+    private readonly Controls.DiagramEditor diagramEditor = new();
     private readonly NodeEditor nodeEditor = new();
     private readonly EdgeEditor edgeEditor = new();
 
@@ -28,7 +30,7 @@ public class MainForm : Form
 
     public MainForm()
     {
-        ToolStripManager.Renderer = new ToolStripProfessionalRenderer(new ModernColorTable());
+        ToolStripManager.Renderer = new ToolStripProfessionalRenderer(new AppStyles.ModernColorTable());
 
         Text = "Diagram Editor";
         Width = 1180;
@@ -64,32 +66,34 @@ public class MainForm : Form
         toolStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
         toolStrip.ImageScalingSize = new Size(24, 24);
 
-        ToolStripSplitButton btnNew = new("New", Properties.Resources.new_diagram_32);
+        ToolStripSplitButton btnNew = new("New", Properties.Resources.new_diagram_24);
         btnNew.ButtonClick += (_, _) => canvas.ClearAll();
 
-        btnNew.DropDownItems.Add("New Linear Process", btnNew.Image, (_, _) => LoadFromResource("Templates.linear-process.mermaid"));
-        btnNew.DropDownItems.Add("New Decision Process", btnNew.Image, (_, _) => LoadFromResource("Templates.process-decision.mermaid"));
-        btnNew.DropDownItems.Add("New Org Chart", btnNew.Image, (_, _) => LoadFromResource("Templates.org-chart.mermaid"));
-        btnNew.DropDownItems.Add("New Breakdown Structure", btnNew.Image, (_, _) => LoadFromResource("Templates.breakdown-structure.mermaid"));
-        btnNew.DropDownItems.Add("New Milestone Chain", btnNew.Image, (_, _) => LoadFromResource("Templates.milestones.mermaid"));
+        var img = Properties.Resources.new_template_24;
+
+        btnNew.DropDownItems.Add("New Linear Process", img, (_, _) => LoadFromResource("Templates.linear-process.mermaid"));
+        btnNew.DropDownItems.Add("New Decision Process", img, (_, _) => LoadFromResource("Templates.process-decision.mermaid"));
+        btnNew.DropDownItems.Add("New Org Chart", img, (_, _) => LoadFromResource("Templates.org-chart.mermaid"));
+        btnNew.DropDownItems.Add("New Breakdown Structure", img, (_, _) => LoadFromResource("Templates.breakdown-structure.mermaid"));
+        btnNew.DropDownItems.Add("New Milestone Chain", img, (_, _) => LoadFromResource("Templates.milestones.mermaid"));
 
         btnNew.DropDownItems.Add(new ToolStripSeparator());
-        btnNew.DropDownItems.Add("Import Mermaid.js ..", Properties.Resources.import_mermaid_graph_32, (_, _) => ImportMermaid());
+        btnNew.DropDownItems.Add("Import Mermaid.js ..", Properties.Resources.import_mermaid_graph_24, (_, _) => ImportMermaid());
 
         toolStrip.Items.Add(btnNew);
 
-        var btnOpen = new ToolStripButton("Open", Properties.Resources.open_diagram_32, (_, _) => Open());
+        var btnOpen = new ToolStripButton("Open", Properties.Resources.open_diagram_24, (_, _) => Open());
         toolStrip.Items.Add(btnOpen);
 
         toolStrip.Items.Add(new ToolStripSeparator());
 
-        var btnSave = new ToolStripButton("Save", Properties.Resources.save_diagram_32, (_, _) => Save());
+        var btnSave = new ToolStripButton("Save", Properties.Resources.save_diagram_24, (_, _) => Save());
         toolStrip.Items.Add(btnSave);
 
-        var exportSplit = new ToolStripSplitButton("Export", Properties.Resources.export_diagram_32);
-        exportSplit.DropDownItems.Add("Export as SVG", Properties.Resources.export_svg_32, (_, _) => Export(ImageFormat.Svg));
-        exportSplit.DropDownItems.Add("Export as JPG", Properties.Resources.export_jpg_32, (_, _) => Export(ImageFormat.Jpg));
-        exportSplit.DropDownItems.Add("Export as PNG", Properties.Resources.export_png_32, (_, _) => Export(ImageFormat.Png));
+        var exportSplit = new ToolStripSplitButton("Export", Properties.Resources.export_diagram_24);
+        exportSplit.DropDownItems.Add("Export as SVG", Properties.Resources.export_svg_24, (_, _) => Export(ImageFormat.Svg));
+        exportSplit.DropDownItems.Add("Export as JPG", Properties.Resources.export_jpg_24, (_, _) => Export(ImageFormat.Jpg));
+        exportSplit.DropDownItems.Add("Export as PNG", Properties.Resources.export_png_24, (_, _) => Export(ImageFormat.Png));
         exportSplit.ButtonClick += (_, _) => Export(ImageFormat.Png);
         toolStrip.Items.Add(exportSplit);
     }
@@ -213,8 +217,9 @@ public class MainForm : Form
     private void UpdateStatus()
     {
         statusLabel.Text = $"{canvas.Diagram.Nodes.Count} node(s) | {canvas.Diagram.Edges.Count} edge(s)";
-
-        statusLabel2.Text = canvas.SelectedNode != null ? "Ctrl + Click to create a link" : "";
+        statusLabel2.Text = canvas.SelectedNode != null
+            ? "Ctrl+Click another node to connect them"
+            : "Select a node, then Ctrl+Click another to connect them";
     }
 
     private void Export(ImageFormat format)
@@ -236,6 +241,7 @@ public class MainForm : Form
             diagram.SaveImage(stream, format, (int)size.Width, (int)size.Height);
         }
     }
+
 
     private void Save()
     {
@@ -271,7 +277,7 @@ public class MainForm : Form
     private void ImportMermaid()
     {
         var dlg = new OpenFileDialog() { Filter = $"MermaidJS graph|*.mermaid" };
-        if (dlg.ShowDialog() == DialogResult.OK)
+        if (dlg.ShowDialog(this) == DialogResult.OK)
         {
             var text = File.ReadAllText(dlg.FileName);
             canvas.Diagram.LoadMermaidGraph(text);

@@ -63,9 +63,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap add_edge_32 {
+        internal static System.Drawing.Bitmap add_edge_24 {
             get {
-                object obj = ResourceManager.GetObject("add_edge_32", resourceCulture);
+                object obj = ResourceManager.GetObject("add_edge_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap export_diagram_32 {
+        internal static System.Drawing.Bitmap export_diagram_24 {
             get {
-                object obj = ResourceManager.GetObject("export_diagram_32", resourceCulture);
+                object obj = ResourceManager.GetObject("export_diagram_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap export_jpg_32 {
+        internal static System.Drawing.Bitmap export_jpg_24 {
             get {
-                object obj = ResourceManager.GetObject("export_jpg_32", resourceCulture);
+                object obj = ResourceManager.GetObject("export_jpg_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap export_png_32 {
+        internal static System.Drawing.Bitmap export_png_24 {
             get {
-                object obj = ResourceManager.GetObject("export_png_32", resourceCulture);
+                object obj = ResourceManager.GetObject("export_png_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap export_svg_32 {
+        internal static System.Drawing.Bitmap export_svg_24 {
             get {
-                object obj = ResourceManager.GetObject("export_svg_32", resourceCulture);
+                object obj = ResourceManager.GetObject("export_svg_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap import_mermaid_graph_32 {
+        internal static System.Drawing.Bitmap import_mermaid_graph_24 {
             get {
-                object obj = ResourceManager.GetObject("import_mermaid_graph_32", resourceCulture);
+                object obj = ResourceManager.GetObject("import_mermaid_graph_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap new_diagram_32 {
+        internal static System.Drawing.Bitmap new_diagram_24 {
             get {
-                object obj = ResourceManager.GetObject("new_diagram_32", resourceCulture);
+                object obj = ResourceManager.GetObject("new_diagram_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap open_diagram_32 {
+        internal static System.Drawing.Bitmap new_template_24 {
             get {
-                object obj = ResourceManager.GetObject("open_diagram_32", resourceCulture);
+                object obj = ResourceManager.GetObject("new_template_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap remove_all_edges_32 {
+        internal static System.Drawing.Bitmap open_diagram_24 {
             get {
-                object obj = ResourceManager.GetObject("remove_all_edges_32", resourceCulture);
+                object obj = ResourceManager.GetObject("open_diagram_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap remove_node_32 {
+        internal static System.Drawing.Bitmap remove_all_edges_24 {
             get {
-                object obj = ResourceManager.GetObject("remove_node_32", resourceCulture);
+                object obj = ResourceManager.GetObject("remove_all_edges_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,29 @@ namespace DiagramEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap save_diagram_32 {
+        internal static System.Drawing.Bitmap remove_edge_24 {
             get {
-                object obj = ResourceManager.GetObject("save_diagram_32", resourceCulture);
+                object obj = ResourceManager.GetObject("remove_edge_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_node_24 {
+            get {
+                object obj = ResourceManager.GetObject("remove_node_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_diagram_24 {
+            get {
+                object obj = ResourceManager.GetObject("save_diagram_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

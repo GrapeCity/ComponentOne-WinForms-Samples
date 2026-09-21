@@ -1,7 +1,7 @@
 using C1.Diagram;
 using System.Drawing.Drawing2D;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Helpers;
 
 public static class ShapeRenderer
 {

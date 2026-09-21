@@ -118,37 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="add_edge_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_edge_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_edge_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_edge_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_diagram_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_diagram_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_diagram_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_diagram_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_jpg_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_jpg_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_jpg_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_jpg_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_png_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_png_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_png_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_png_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="export_svg_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\export_svg_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="export_svg_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\export_svg_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="import_mermaid_graph_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\import_mermaid_graph_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="import_mermaid_graph_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\import_mermaid_graph_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="new_diagram_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\new_diagram_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="new_diagram_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_diagram_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="open_diagram_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\open_diagram_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="new_template_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new_template_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove_all_edges_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove_all_edges_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="open_diagram_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open_diagram_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove_node_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove_node_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove_all_edges_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_all_edges_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save_diagram_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_diagram_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove_edge_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_edge_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove_node_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_node_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_diagram_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_diagram_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

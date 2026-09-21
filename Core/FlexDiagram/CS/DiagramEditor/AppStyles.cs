@@ -1,6 +1,4 @@
-﻿// Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
-
-namespace DiagramEditor
+﻿namespace DiagramEditor
 {
     public class AppStyles
     {
@@ -24,5 +22,25 @@ namespace DiagramEditor
         public static Color SelectionFill = Color.FromArgb(0xDA, 0xE8, 0xFC);
         public static Color SelectionStroke = Color.FromArgb(0x6C, 0x8E, 0xBF);
         public static Color SelectionStroke2 = Color.FromArgb(0x20, 0x1A, 0x73, 0xE8);
+
+        public sealed class ModernColorTable : ProfessionalColorTable
+        {
+            public override Color ToolStripGradientBegin => Color.FromArgb(248, 249, 250);
+            public override Color ToolStripGradientMiddle => Color.FromArgb(248, 249, 250);
+            public override Color ToolStripGradientEnd => Color.FromArgb(248, 249, 250);
+
+            public override Color MenuStripGradientBegin => Color.White;
+            public override Color MenuStripGradientEnd => Color.White;
+
+            public override Color ToolStripBorder => Color.FromArgb(220, 220, 220);
+
+            public override Color ButtonSelectedGradientBegin => Color.FromArgb(235, 239, 244);
+            public override Color ButtonSelectedGradientMiddle => Color.FromArgb(235, 239, 244);
+            public override Color ButtonSelectedGradientEnd => Color.FromArgb(235, 239, 244);
+
+            public override Color ButtonPressedGradientBegin => Color.FromArgb(220, 230, 240);
+            public override Color ButtonPressedGradientMiddle => Color.FromArgb(220, 230, 240);
+            public override Color ButtonPressedGradientEnd => Color.FromArgb(220, 230, 240);
+        }
     }
 }

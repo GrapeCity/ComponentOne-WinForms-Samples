@@ -1,16 +1,15 @@
-﻿using System;
+﻿using DiagramEditor.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing.Drawing2D;
 using System.Text;
 using System.Xml.Linq;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Controls;
 
 public class ElementEditor<T> : UserControl
 {
-    protected bool _updating;
-
     T? _target;
     protected const int FieldWidth = 188;
     protected Padding FieldMargin = new Padding(0, 2, 0, 12);
@@ -27,8 +26,6 @@ public class ElementEditor<T> : UserControl
 
         BuildBody();
     }
-
-    public event EventHandler? PropertiesChanged;
 
     [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public T? Target
@@ -124,7 +121,6 @@ public class ElementEditor<T> : UserControl
                 setColor(color);
                 swatch.BackColor = color;
                 hex.Text = ToHex(color);
-                RaiseChanged();
             };
             popup.Show(swatch, new Point(0, swatch.Height + 2));
         }
@@ -147,13 +143,6 @@ public class ElementEditor<T> : UserControl
     }
 
     protected static string ToHex(Color c) => c.IsEmpty ? "Auto" : $"#{c.R:X2}{c.G:X2}{c.B:X2}";
-
-    virtual protected void RaiseChanged()
-    {
-        //preview.Invalidate();
-        PropertiesChanged?.Invoke(this, EventArgs.Empty);
-    }
-
 
     protected ComboBox AddComboBox<TEnum>(Panel panel, Func<TEnum> getValue, Action<TEnum> setValue) where TEnum : struct, Enum
     {
@@ -283,7 +272,6 @@ public class ElementEditor<T> : UserControl
                 var bytes = File.ReadAllBytes(dlg.FileName);
                 setValue( Image.FromStream(new MemoryStream(bytes)));
                 imagePanel.Invalidate();
-                RaiseChanged();
                 clearButton.Visible = true;
                 RefreshFromTarget();
             }

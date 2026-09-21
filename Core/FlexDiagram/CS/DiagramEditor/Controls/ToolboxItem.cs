@@ -1,5 +1,6 @@
 using C1.Diagram;
-namespace DiagramEditor;
+using DiagramEditor.Helpers;
+namespace DiagramEditor.Controls;
 
 public class ToolboxItem : Panel
 {

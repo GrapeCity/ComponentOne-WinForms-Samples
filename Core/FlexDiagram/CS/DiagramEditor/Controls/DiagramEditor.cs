@@ -1,7 +1,7 @@
 ﻿using C1.Diagram;
 using C1.Win.Diagram;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Controls;
 
 public class DiagramEditor : ElementEditor<FlexDiagram>
 {

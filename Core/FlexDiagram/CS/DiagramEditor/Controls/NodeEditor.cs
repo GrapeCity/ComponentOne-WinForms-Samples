@@ -2,7 +2,7 @@
 using C1.Diagram;
 using C1.Win.Diagram;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Controls;
 
 public class NodeEditor : ElementEditor<Node>
 {
@@ -74,8 +74,6 @@ public class NodeEditor : ElementEditor<Node>
 
     public override void RefreshFromTarget()
     {
-        _updating = true;
-
         bool hasTarget = HasTarget;
         body.Visible = hasTarget;
         lblEmpty.Visible = !hasTarget;
@@ -108,7 +106,5 @@ public class NodeEditor : ElementEditor<Node>
         }
 
         labelDirection.Visible = comboBoxDirection.Visible = labelOrder.Visible = comboBoxOrder.Visible = hasImage;
-
-        _updating = false;
     }
 }

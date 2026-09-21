@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Controls;
 
 public class EdgeEditor : ElementEditor<Edge>
 {

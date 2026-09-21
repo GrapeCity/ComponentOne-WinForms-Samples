@@ -1,8 +1,11 @@
-﻿using C1.Diagram;
+﻿using C1.Chart;
+using C1.Chart.Serialization;
+using C1.Diagram;
 using C1.Diagram.Parser;
+using System.Diagnostics;
 using System.Reflection;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Helpers;
 
 public static class DiagramExtensions
 {
@@ -41,5 +44,4 @@ public static class DiagramExtensions
 
         diagram.LoadMermaidGraph(text);
     }
-
 }

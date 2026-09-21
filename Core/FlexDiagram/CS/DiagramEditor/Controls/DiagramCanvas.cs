@@ -2,13 +2,14 @@ using C1.Chart;
 using C1.Diagram;
 using C1.Win.Chart;
 using C1.Win.Diagram;
+using DiagramEditor.Helpers;
 
-namespace DiagramEditor;
+namespace DiagramEditor.Controls;
 
 public class DiagramCanvas : Control
 {
     private FlexDiagram _diagram;
-    private ContextMenuStrip _contextMenu;
+    private ContextMenuStrip _contextMenu = new() { ImageScalingSize = new Size(24, 24) };
     private Node? _selectedNode = null;
     private Edge? _selectedEdge = null;
 
@@ -22,12 +23,36 @@ public class DiagramCanvas : Control
 
         _diagram = new FlexDiagram() { Dock = DockStyle.Fill, Font = new Font("Segoe UI Emoji", 12) };
 
+        _diagram.Rendering += DiagramRendering;
         _diagram.Rendered += DiagramRendered;
         _diagram.NodeRendered += NodeRendered;
 
         _diagram.MouseDown += DiagramMouseDown;
 
+        ContextMenuStrip = _contextMenu;
         Controls.Add(_diagram);
+    }
+
+    private void DiagramRendering(object? sender, RenderEventArgs e)
+    {
+        DrawGrid(e.Graphics);
+        if (_diagram.Nodes.Count == 0)
+        {
+            using var textBrush = new SolidBrush(AppStyles.HeaderColor);
+            using var format = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
+            e.Graphics.DrawString("Click a shape on the left to add your first node", AppStyles.ItalicFont, textBrush, _diagram.ClientRectangle, format);
+        }
+    }
+
+    private void DrawGrid(Graphics g)
+    {
+        var step = 20f;
+        if (step < 4) return;
+        using var pen = new Pen(Color.FromArgb(0x80, 0xEE, 0xEE, 0xEE));
+        for (float x = 0; x < Width; x += step)
+            g.DrawLine(pen, x, 0, x, Height);
+        for (float y = 0; y < Height; y += step)
+            g.DrawLine(pen, 0, y, Width, y);
     }
 
     private void DiagramRendered(object? sender, RenderEventArgs e)
@@ -100,19 +125,16 @@ public class DiagramCanvas : Control
 
     private void UpdateContextMenu()
     {
-        if (_contextMenu == null)
-            ContextMenuStrip = _contextMenu = new ContextMenuStrip() { ImageScalingSize = new Size(24,24) };
-
         _contextMenu.Items.Clear();
 
         var selectedNode = SelectedNode;
 
         if (selectedNode != null)
         {
-            _contextMenu.Items.Add("Remove node", Properties.Resources.remove_node_32, (_, _) => _diagram.Nodes.Remove(selectedNode));
+            _contextMenu.Items.Add("Remove node", Properties.Resources.remove_node_24, (_, _) => _diagram.Nodes.Remove(selectedNode));
 
             if (selectedNode.GetEdges().Count > 0)
-                _contextMenu.Items.Add("Remove all edges", Properties.Resources.remove_all_edges_32, (_, _) =>
+                _contextMenu.Items.Add("Remove all edges", Properties.Resources.remove_all_edges_24, (_, _) =>
                 {
                     var edges = selectedNode.GetEdges();
 
@@ -126,13 +148,13 @@ public class DiagramCanvas : Control
                 foreach (Node node in _diagram.Nodes)
                 {
                     if (node != selectedNode)
-                        _contextMenu.Items.Add($"Add Edge to {node.Text}", Properties.Resources.add_edge_32, (_, _) => _diagram.Edges.Add(new Edge { Source = selectedNode, Target = node }));
+                        _contextMenu.Items.Add($"Add Edge to {node.Text}", Properties.Resources.add_edge_24, (_, _) => _diagram.Edges.Add(new Edge { Source = selectedNode, Target = node }));
                 }
             }
         }
         else if (SelectedEdge != null)
         {
-            _contextMenu.Items.Add($"Delete Edge {SelectedEdge.ToString()}", Properties.Resources.remove_all_edges_32, (_, _) =>
+            _contextMenu.Items.Add($"Delete Edge {SelectedEdge.ToString()}", Properties.Resources.remove_edge_24, (_, _) =>
             {
                 _diagram.Edges.Remove(SelectedEdge);
                 SelectedEdge = null;
@@ -180,12 +202,16 @@ public class DiagramCanvas : Control
 
     public void DeleteSelected()
     {
-        //if (Selected == null) return;
-        //Shapes.Remove(Selected);
-        //Selected = null;
-
-        SelectionChanged?.Invoke(this, EventArgs.Empty);
-        Invalidate();
+        if (SelectedNode != null)
+        {
+            Diagram.Nodes.Remove(SelectedNode);
+            SelectedNode = null;
+        }
+        else if (SelectedEdge != null)
+        {
+            Diagram.Edges.Remove(SelectedEdge);
+            SelectedEdge = null;
+        }
     }
 
     public void ClearAll()
