@@ -33,8 +33,11 @@ namespace DashboardLayoutDemo
         {
             list1.Clear();
             var layouts = _helper.GetLayouts();
-            foreach (string item in layouts)
-                list1.Items.Add(item);
+            if (layouts != null)
+            {
+                foreach (string item in layouts)
+                    list1.Items.Add(item);
+            }
             AllowButtons(false);
         }
 
