@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using C1.Win.FlexGrid;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -26,6 +27,7 @@ namespace FlexGridShowcase
         public Form1()
         {
             InitializeComponent();
+            InitExportButtons();
             cbDataSize.SelectedIndex = 0;
             InitThemes();
         }
@@ -45,6 +47,90 @@ namespace FlexGridShowcase
                 c1FlexGrid1.DataSource = list;
             }
         }
+        #endregion
+
+        #region ** Export
+
+        private void InitExportButtons()
+        {
+            AddExportButton("Excel", exportToExcel_Click);
+            AddExportButton("CSV", exportToCsv_Click);
+            AddExportButton("PDF", exportToPdf_Click);
+        }
+
+        private void AddExportButton(string text, EventHandler clickHandler)
+        {
+            var button = new C1.Win.Ribbon.RibbonButton
+            {
+                Text = text
+            };
+            button.Click += clickHandler;
+            ribbonGroup2.Items.Add(button);
+        }
+
+        private void exportToExcel_Click(object sender, EventArgs e)
+        {
+            ExportGrid("xls", "Untitled.xls", FileFormatEnum.Excel);
+        }
+
+        private void exportToCsv_Click(object sender, EventArgs e)
+        {
+            ExportGrid(
+                "csv",
+                "Untitled.csv",
+                FileFormatEnum.TextComma,
+                FileFlags.None,
+                Encoding.UTF8);
+        }
+
+        private void ExportGrid(
+            string extension,
+            string fileName,
+            FileFormatEnum format,
+            FileFlags flags = FileFlags.None,
+            Encoding encoding = null)
+        {
+            using (SaveFileDialog dlg = new SaveFileDialog())
+            {
+                dlg.DefaultExt = extension;
+                dlg.FileName = fileName;
+                dlg.InitialDirectory = Application.StartupPath;
+                if (dlg.ShowDialog() != DialogResult.OK)
+                    return;
+
+                try
+                {
+                    c1FlexGrid1.SaveGrid(dlg.FileName, format, flags, encoding);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void exportToPdf_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var printDocument = c1FlexGrid1.PrintParameters.PrintDocument;
+                printDocument.DocumentName = "Export to PDF";
+                printDocument.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+                if (!printDocument.PrinterSettings.IsValid)
+                {
+                    MessageBox.Show("Microsoft Print to PDF is not available. Please enable it to export to PDF.");
+                    return;
+                }
+
+                // Print document into Microsoft PDF printer
+                printDocument.Print();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         #endregion
 
         #region ** Themes
