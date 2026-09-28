@@ -25,12 +25,20 @@ namespace GanttViewEvents
         private void Gv_PaintDay(object sender, PaintDayEventArgs e)
         {
             if (e.Task == c1GanttView1.SelectedTask)
-                e.BackColor = Color.LightYellow;
+            {
+                using (Brush brush = new SolidBrush(Color.LightYellow))
+                {
+                    e.Graphics.FillRectangle(brush, e.Rectangle);
+                }
+            }
             else if (e.Task == null)
             {
                 if (e.Tier == c1GanttView1.Timescale.BottomTier)
                 {
-                    e.BackColor = Color.LightGray;
+                    using (Brush brush = new SolidBrush(Color.LightGray))
+                    {
+                        e.Graphics.FillRectangle(brush, e.Rectangle);
+                    }
                     e.ForeColor = Color.Blue;
                 }
                 else if (e.Tier == c1GanttView1.Timescale.MiddleTier)
