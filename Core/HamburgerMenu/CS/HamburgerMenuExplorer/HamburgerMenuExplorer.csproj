@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <UseWPF>false</UseWPF>
+    <UseWPF>true</UseWPF>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
 
