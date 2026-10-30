@@ -169,7 +169,7 @@
     <value>リセット</value>
   </data>
   <data name="Label_SampleDescription" xml:space="preserve">
-    <value>このサンプルは、多文化対応のC1CalendarViewを使用したインタラクティブな日付範囲ピッカーの例です。
+    <value>このサンプルは、多文化対応のC1DateRangeEditを使用したインタラクティブな日付範囲ピッカーの例です。
 定義済みのオプションまたはカレンダーインターフェースを使用して日付範囲を選択します。</value>
   </data>
   <data name="Label_SamplesTitle" xml:space="preserve">
@@ -190,7 +190,7 @@
   <data name="Label_YourDateSelection" xml:space="preserve">
     <value>選択した日付</value>
   </data>
-  <data name="Laabel_Feature" xml:space="preserve">
+  <data name="Label_Feature" xml:space="preserve">
     <value>機能</value>
   </data>
   <data name="ToolTip_CultureSelection" xml:space="preserve">
@@ -210,5 +210,11 @@
   </data>
   <data name="Label_NoEndDate" xml:space="preserve">
     <value>終了日が選択されていません</value>
+  </data>
+  <data name="Label_CalendarDimension" xml:space="preserve">
+    <value>カレンダーのサイズ</value>
+  </data>
+  <data name="ToolTip_CalendarDimension" xml:space="preserve">
+    <value>ドロップダウンを開いたときに一度に表示されるカレンダーの数を設定します。</value>
   </data>
 </root>

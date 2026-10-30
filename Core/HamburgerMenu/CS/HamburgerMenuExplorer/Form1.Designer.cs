@@ -1,0 +1,227 @@
+﻿namespace HamburgerMenuExplorer
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            splitContainer1 = new System.Windows.Forms.SplitContainer();
+            lbSamples = new System.Windows.Forms.ListBox();
+            pnlSample = new System.Windows.Forms.Panel();
+            pnlDescription = new System.Windows.Forms.Panel();
+            lblDescription = new System.Windows.Forms.Label();
+            pnlTitle = new System.Windows.Forms.Panel();
+            cmbThemes = new C1.Win.Input.C1ComboBox();
+            panel1 = new System.Windows.Forms.Panel();
+            chkInfo = new System.Windows.Forms.CheckBox();
+            lblTitle = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            pnlDescription.SuspendLayout();
+            pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)cmbThemes).BeginInit();
+            SuspendLayout();
+            // 
+            // splitContainer1
+            // 
+            splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer1.Location = new System.Drawing.Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.AutoScroll = true;
+            splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
+            splitContainer1.Panel1.Controls.Add(lbSamples);
+            splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(12, 6, 0, 0);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(pnlSample);
+            splitContainer1.Panel2.Controls.Add(pnlDescription);
+            splitContainer1.Panel2.Controls.Add(pnlTitle);
+            splitContainer1.Size = new System.Drawing.Size(1000, 680);
+            splitContainer1.SplitterDistance = 272;
+            splitContainer1.TabIndex = 0;
+            splitContainer1.Text = "splitContainer1";
+            // 
+            // lbSamples
+            // 
+            lbSamples.BackColor = System.Drawing.SystemColors.Window;
+            lbSamples.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            lbSamples.DisplayMember = "Title";
+            lbSamples.Dock = System.Windows.Forms.DockStyle.Fill;
+            lbSamples.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            lbSamples.ForeColor = System.Drawing.Color.DimGray;
+            lbSamples.FormattingEnabled = true;
+            lbSamples.HorizontalScrollbar = true;
+            lbSamples.Location = new System.Drawing.Point(12, 6);
+            lbSamples.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            lbSamples.Name = "lbSamples";
+            lbSamples.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            lbSamples.Size = new System.Drawing.Size(260, 674);
+            lbSamples.TabIndex = 0;
+            lbSamples.SelectedValueChanged += lbSamples_SelectedValueChanged;
+            // 
+            // pnlSample
+            // 
+            pnlSample.BackColor = System.Drawing.SystemColors.Window;
+            pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlSample.Location = new System.Drawing.Point(0, 96);
+            pnlSample.Name = "pnlSample";
+            pnlSample.Size = new System.Drawing.Size(724, 584);
+            pnlSample.TabIndex = 2;
+            // 
+            // pnlDescription
+            // 
+            pnlDescription.AutoSize = true;
+            pnlDescription.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            pnlDescription.BackColor = System.Drawing.SystemColors.Window;
+            pnlDescription.Controls.Add(lblDescription);
+            pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            pnlDescription.Location = new System.Drawing.Point(0, 48);
+            pnlDescription.Name = "pnlDescription";
+            pnlDescription.Size = new System.Drawing.Size(724, 48);
+            pnlDescription.TabIndex = 1;
+            // 
+            // lblDescription
+            // 
+            lblDescription.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lblDescription.Font = new System.Drawing.Font("Calibri", 14.25F);
+            lblDescription.Location = new System.Drawing.Point(0, 0);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(724, 48);
+            lblDescription.TabIndex = 0;
+            lblDescription.Text = "label1";
+            lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pnlTitle
+            // 
+            pnlTitle.BackColor = System.Drawing.SystemColors.Window;
+            pnlTitle.Controls.Add(cmbThemes);
+            pnlTitle.Controls.Add(panel1);
+            pnlTitle.Controls.Add(chkInfo);
+            pnlTitle.Controls.Add(lblTitle);
+            pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            pnlTitle.Location = new System.Drawing.Point(0, 0);
+            pnlTitle.Name = "pnlTitle";
+            pnlTitle.Size = new System.Drawing.Size(724, 48);
+            pnlTitle.TabIndex = 0;
+            // 
+            // cmbThemes
+            // 
+            cmbThemes.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            cmbThemes.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
+            cmbThemes.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
+            cmbThemes.ItemsDisplayMember = "DisplayText";
+            cmbThemes.Location = new System.Drawing.Point(464, 12);
+            cmbThemes.Name = "cmbThemes";
+            cmbThemes.ReadOnly = true;
+            cmbThemes.Size = new System.Drawing.Size(200, 23);
+            cmbThemes.TabIndex = 2;
+            cmbThemes.SelectedIndexChanged += cmbThemes_SelectedIndexChanged;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = System.Drawing.Color.SkyBlue;
+            panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            panel1.Location = new System.Drawing.Point(0, 47);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(724, 1);
+            panel1.TabIndex = 1;
+            // 
+            // chkInfo
+            // 
+            chkInfo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            chkInfo.Appearance = System.Windows.Forms.Appearance.Button;
+            chkInfo.AutoSize = true;
+            chkInfo.BackColor = System.Drawing.SystemColors.Window;
+            chkInfo.Checked = true;
+            chkInfo.CheckState = System.Windows.Forms.CheckState.Checked;
+            chkInfo.FlatAppearance.BorderSize = 0;
+            chkInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
+            chkInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F);
+            chkInfo.Location = new System.Drawing.Point(670, 1);
+            chkInfo.Name = "chkInfo";
+            chkInfo.Size = new System.Drawing.Size(54, 47);
+            chkInfo.TabIndex = 1;
+            chkInfo.Text = "❔";
+            chkInfo.UseVisualStyleBackColor = false;
+            chkInfo.CheckedChanged += chkInfo_CheckedChanged;
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F);
+            lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
+            lblTitle.Location = new System.Drawing.Point(26, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new System.Drawing.Size(110, 45);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "label1";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            ClientSize = new System.Drawing.Size(1000, 680);
+            Controls.Add(splitContainer1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Name = "Form1";
+            Text = "HamburgerMenu Sample Explorer";
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            pnlDescription.ResumeLayout(false);
+            pnlTitle.ResumeLayout(false);
+            pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)cmbThemes).EndInit();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.ListBox lbSamples;
+        private System.Windows.Forms.Panel pnlTitle;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Panel pnlDescription;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.CheckBox chkInfo;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlSample;
+        private C1.Win.Input.C1ComboBox cmbThemes;
+    }
+}
+

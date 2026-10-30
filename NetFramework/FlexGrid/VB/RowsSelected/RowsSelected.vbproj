@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <StartupObject>RowsSelected.MainForm</StartupObject>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MigrationBackup\**" />
+    <Compile Remove="packages\**" />
+    <EmbeddedResource Remove="MigrationBackup\**" />
+    <EmbeddedResource Remove="packages\**" />
+    <None Remove="MigrationBackup\**" />
+    <None Remove="packages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20262.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".sa3licx" />
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

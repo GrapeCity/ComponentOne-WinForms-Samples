@@ -11,7 +11,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="C1.Win.TouchToolKit" Version="10.0.20261.*" />
+		<PackageReference Include="C1.Win.TouchToolKit" Version="10.0.20262.*" />
 		<PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.10" />
 	</ItemGroup>
 

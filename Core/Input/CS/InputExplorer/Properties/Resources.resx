@@ -121,6 +121,14 @@
     <value>Add Task</value>
     <comment>Text displayed on the Add Task button.</comment>
   </data>
+  <data name="Button_C1Button" xml:space="preserve">
+    <value>c1Button1</value>
+    <comment>Text displayed on the C1Button in the CommandBinding sample.</comment>
+  </data>
+  <data name="Button_C1SplitButton" xml:space="preserve">
+    <value>c1SplitButton1</value>
+    <comment>Text displayed on the main C1SplitButton in the CommandBinding sample.</comment>
+  </data>
   <data name="Button_ClearCompleted" xml:space="preserve">
     <value>Clear Completed</value>
     <comment>Text displayed on the Clear Completed button.</comment>
@@ -132,6 +140,14 @@
   <data name="Button_MarkComplete" xml:space="preserve">
     <value>Mark Complete</value>
     <comment>Text displayed on the Mark Complete button.</comment>
+  </data>
+  <data name="CheckBox_C1CheckBox" xml:space="preserve">
+    <value>c1CheckBox1</value>
+    <comment>Text displayed on the C1CheckBox in the CommandBinding sample.</comment>
+  </data>
+  <data name="CheckBox_EnableCommands" xml:space="preserve">
+    <value>Enable Commands</value>
+    <comment>Text for the checkbox that enables or disables all command bindings, demonstrating CanExecute behaviour.</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Date" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -158,7 +174,7 @@
   <data name="GcLogo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAFxCAIAAAAgT0HoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAP+NSURBVHheJJ2F
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAP+NSURBVHheJJ2F
         myTl9bbf9nJ36a5qd+9pmZked3fdWZ11d1ZYYFnc3UOQQHBZWCBo8OAuwQMEtwQSYvtd8/uuq/6Dt+o9
         dc7zPPcBaglx1yFyxUFmgNFIe+s5lwowzUIqCMI7nLSFdmNKiFXDnBSiIBEIXk7wcriMwryLUDDGTbEe
         mtZJSsUJGSVFhOAQkkdJEUN5DOFQgscxFsU5DKFhjEVJgcBYFKFhUgaCB1H9pBHhKAkHVgeEobKH5iN2
@@ -10289,9 +10305,49 @@
         z19PTq5Ep7bSAntFvhKZ2EjyDiuSXYz/f3JH7ZGZN//ZAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="Label_C1Buttonlb" xml:space="preserve">
+    <value>C1Button:</value>
+    <comment>Row label identifying the C1Button control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1CheckBoxlb" xml:space="preserve">
+    <value>C1CheckBox:</value>
+    <comment>Row label identifying the C1CheckBox control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1ComboBoxlb" xml:space="preserve">
+    <value>C1ComboBox:</value>
+    <comment>Row label identifying the C1ComboBox control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1DropDownControllb" xml:space="preserve">
+    <value>C1DropDownControl:</value>
+    <comment>Row label identifying the C1DropDownControl in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1MaskedTextBoxlb" xml:space="preserve">
+    <value>C1MaskedTextBox:</value>
+    <comment>Row label identifying the C1MaskedTextBox control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1RangeSliderlb" xml:space="preserve">
+    <value>C1RangeSlider:</value>
+    <comment>Row label identifying the C1RangeSlider control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1SplitButtonlb" xml:space="preserve">
+    <value>C1SplitButton:</value>
+    <comment>Row label identifying the C1SplitButton control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1TextBoxlb" xml:space="preserve">
+    <value>C1TextBox:</value>
+    <comment>Row label identifying the C1TextBox control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_InputControlsPanelHeading" xml:space="preserve">
+    <value>C1Input Controls</value>
+    <comment>Heading label for the left panel listing all C1Input controls in the CommandBinding sample.</comment>
+  </data>
   <data name="Label_NewTask" xml:space="preserve">
     <value>Add New Task:</value>
     <comment>Label used to guide where to add new task</comment>
+  </data>
+  <data name="Label_OutputPanelHeading" xml:space="preserve">
+    <value>Command Output</value>
+    <comment>Heading label for the right panel showing live command output in the CommandBinding sample.</comment>
   </data>
   <data name="Label_Tasks" xml:space="preserve">
     <value>Tasks:</value>
@@ -10334,7 +10390,7 @@
   <data name="ok" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAA29JREFUOE+t0/1PU1ccx3H/i/3khlswgI6BtcAttaNYHoSBgKxFpCLYIg+OlFHk
+        vAAADrwBlbxySQAAA29JREFUOE+t0/1PU1ccx3H/i/3khlswgI6BtcAttaNYHoSBgKxFpCLYIg+OlFHk
         mZQWKhBaihgg6EKRajp5iKwSFtNgFzMMxsniQgjJfnCSLMYImUoshNH3wl20YfOnZT98bs69J9/Xuefk
         fPcAe/6P/OvD8uoSZk8DmpEv0LgzKJw4wZmxXDTD6RzvT+Kip5WVF0/5Z92ulztL02idWfQ8MHN3w8Nk
         wMnoWj+2J2Ysi0bqfqwkz52BwiLFdd+5C3s38C7NUOxWc+ePmzwK+Bj/c5ih5510LDXS9FM1dXMVGHx6
@@ -10352,17 +10408,37 @@
         NwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="RadioButton_C1RadioButton1" xml:space="preserve">
+    <value>c1RadioButton1</value>
+    <comment>Text displayed on the first C1RadioButton in the CommandBinding sample.</comment>
+  </data>
+  <data name="RadioButton_C1RadioButton2" xml:space="preserve">
+    <value>c1RadioButton2</value>
+    <comment>Text displayed on the second C1RadioButton in the CommandBinding sample.</comment>
+  </data>
   <data name="SampleItem_Desc_C1ButtonCommandBinding" xml:space="preserve">
     <value>This view shows how to use the Command property of C1Button using the MVVM pattern</value>
     <comment>Brief description of the C1ButtonCommandBinding Sample</comment>
+  </data>
+  <data name="SampleItem_Desc_CommandBinding" xml:space="preserve">
+    <value>This demo shows how a single ICommand can be shared across all C1Input controls. Interact with any control to see it fire the command</value>
+    <comment>Description of the CommandBinding sample shown in the sample browser.</comment>
   </data>
   <data name="SampleItem_Name_C1ButtonCommandBinding" xml:space="preserve">
     <value>C1ButtonCommandBinding</value>
     <comment>Name of the C1ButtonCommandBindingSample</comment>
   </data>
+  <data name="SampleItem_Name_CommandBinding" xml:space="preserve">
+    <value>CommandBinding</value>
+    <comment>Name of the CommandBinding sample.</comment>
+  </data>
   <data name="SampleItem_Title_C1ButtonCommandBinding" xml:space="preserve">
     <value>C1ButtonCommandBinding</value>
     <comment>Title of the C1ButtonCommandBinding Sample</comment>
+  </data>
+  <data name="SampleItem_Title_CommandBinding" xml:space="preserve">
+    <value>Command Binding</value>
+    <comment>Title of the CommandBinding sample shown in the sample browser.</comment>
   </data>
   <data name="search" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10396,5 +10472,21 @@
   </data>
   <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_C1NumericEditlb" xml:space="preserve">
+    <value>C1NumericEdit:</value>
+    <comment>Row label identifying the C1NumericEdit control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1RadioButtonlb" xml:space="preserve">
+    <value>C1RadioButton:</value>
+    <comment>Row label identifying the C1RadioButton pair in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_C1ToggleSwitchlb" xml:space="preserve">
+    <value>C1ToggleSwitch:</value>
+    <comment>Row label identifying the C1ToggleSwitch control in the CommandBinding sample.</comment>
+  </data>
+  <data name="Label_CommandOutputlb" xml:space="preserve">
+    <value>Interact with a control to see output here ...</value>
+    <comment>Placeholder text shown in the command output label before any control has been interacted with.</comment>
   </data>
 </root>

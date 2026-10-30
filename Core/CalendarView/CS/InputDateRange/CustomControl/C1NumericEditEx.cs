@@ -1,11 +1,7 @@
-﻿using C1.Win.Input;
-using System;
-using System.Collections.Generic;
+﻿// Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
+
+using C1.Win.Input;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InputDateRange.CustomControl
 {
@@ -27,7 +23,7 @@ namespace InputDateRange.CustomControl
             get => _minimum;
             set
             {
-                _minimum = 0; // Always keep minimum at 0
+                _minimum = value;
                 ClampNumericValue(this, EventArgs.Empty);
             }
         }

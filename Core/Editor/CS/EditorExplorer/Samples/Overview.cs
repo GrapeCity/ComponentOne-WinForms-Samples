@@ -45,9 +45,10 @@ namespace EditorExplorer.Samples
                 themeBox.TextAreaWidth = 200;
                 themeBox.SelectedIndexChanged += (o, e) =>
                 {
-                    if (themeBox is not null)
+                    var selectedItem = themeBox.SelectedItem;
+                    if (selectedItem != null)
                     {
-                        var theme = C1ThemeController.GetThemeByName(themeBox.SelectedItem.Text, false);
+                        var theme = C1ThemeController.GetThemeByName(selectedItem.Text, false);
                         if (theme is null)
                             C1ThemeController.ApplyThemeToControlTree(editorRibbon.Parent, null);
                         else

@@ -48,7 +48,6 @@ namespace WordPad
                 View = c1BackstageView1
             };
             SaveDocumentAsTab.Control = saveAsTab;
-
         }
 
         #region Clipboard Group
@@ -445,7 +444,7 @@ namespace WordPad
         /// <summary>
         /// The file name of the document, such as "Document.rtf"
         /// </summary>
-        string _documentName = @"Readme.rtf";
+        string _documentName;
 
         private void NewDocumentButton_Click(object sender, EventArgs e)
         {
@@ -506,7 +505,7 @@ namespace WordPad
         private void CreateNewDocument()
         {
             richTextBox1.Clear();
-            _documentName = "Document";
+            _documentName = null;
 
             RaiseRichTextBoxSelectionChanged();
         }
@@ -522,6 +521,7 @@ namespace WordPad
                 //this.SetDocumentProperties(filePathName, streamType);
                 //this.recentDocuments.Update(filePathName);
                 this.RaiseRichTextBoxSelectionChanged();
+                _documentName = filePathName;
             }
             catch (IOException e)
             {

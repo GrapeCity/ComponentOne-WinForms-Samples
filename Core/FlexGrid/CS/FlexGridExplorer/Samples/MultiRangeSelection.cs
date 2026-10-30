@@ -31,15 +31,28 @@ namespace FlexGridExplorer.Samples
             c1FlexGrid1.MergedRanges.Add(cellRange);
             c1FlexGrid1.AfterSelChange += C1FlexGrid1_AfterSelChange;
             c1FlexGrid1.EndUpdate();
+            foreach (SelectionModeEnum mode in Enum.GetValues(typeof(SelectionModeEnum)))
+            {
+                toolStripComboBoxSelMode.Items.Add(mode.ToString());
+            }
+            toolStripComboBoxSelMode.SelectedIndex = 0;
         }
 
         private void C1FlexGrid1_AfterSelChange(object sender, RangeEventArgs e)
         {
             toolStripLabel1.Text = $"Selection statistic: Count={c1FlexGrid1.Aggregate(AggregateEnum.Count)}; Sum={c1FlexGrid1.Aggregate(AggregateEnum.Sum)}";
+            c1FlexGridRowsSelected.BeginUpdate();
+            c1FlexGridRowsSelected.Rows.Count = 1;
+            foreach (Row row in c1FlexGrid1.Rows.Selected)
+            {
+                c1FlexGridRowsSelected.AddItem($"row: {row.Index}");
+            }
+            c1FlexGridRowsSelected.EndUpdate();
         }
 
         private void btnSelectRanges_Click(object sender, EventArgs e)
         {
+            toolStripComboBoxSelMode.SelectedIndex = (int)SelectionModeEnum.MultiRange;
             var ranges = new List<CellRange>
             {
                 c1FlexGrid1.GetCellRange(1, 1, 4, 2),
@@ -70,6 +83,11 @@ namespace FlexGridExplorer.Samples
                     MessageBox.Show("Data exported to Excel.", "FlexGrid MultiRange Selection Sample", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void toolStripComboBoxSelMode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            c1FlexGrid1.SelectionMode = (SelectionModeEnum)Enum.Parse(typeof(SelectionModeEnum), toolStripComboBoxSelMode.Text);
         }
     }
 }

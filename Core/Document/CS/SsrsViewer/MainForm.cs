@@ -34,6 +34,12 @@ namespace SsrsViewer
             // design initialize
             InitializeComponent();
 
+            c1SsrsDocumentSource1 = new C1SSRSDocumentSource();
+            c1SsrsDocumentSource1.Language = new System.Globalization.CultureInfo("en-US");
+            c1SsrsDocumentSource1.BusyStateChanged += SsrsDocumentSource_BusyStateChanged;
+            c1SsrsDocumentSource1.PageCountChanged += SsrsDocumentSource_PageCountChanged;
+            c1SsrsDocumentSource1.SecurityError += SsrsDocumentSource_SecurityError;
+
             // set window coordinates and state
             object wl = Properties.Settings.Default["WindowLocation"];
             object ws = Properties.Settings.Default["WindowSize"];

@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Editor" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.Themes" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Editor" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20262.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +47,9 @@
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Resources\PageForInserts.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\Syntax.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20262.*" />
   </ItemGroup>
 
   <ItemGroup>

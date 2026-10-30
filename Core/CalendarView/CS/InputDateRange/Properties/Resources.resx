@@ -190,7 +190,7 @@
     <comment>Label text for reset button</comment>
   </data>
   <data name="Label_SampleDescription" xml:space="preserve">
-    <value>This sample demonstrates an interactive date range picker using C1CalendarView 
+    <value>This sample demonstrates an interactive date range picker using C1DateRangeEdit
 with multi-cultural support. Select date ranges using predefined options or the calendar interface. 
 </value>
     <comment>Description text explaining the sample's functionality</comment>
@@ -219,7 +219,7 @@ with multi-cultural support. Select date ranges using predefined options or the 
     <value>Your Date Selection</value>
     <comment>Label text for date selection panel header</comment>
   </data>
-  <data name="Laabel_Feature" xml:space="preserve">
+  <data name="Label_Feature" xml:space="preserve">
     <value>Feature</value>
     <comment>Label text for Feature section header </comment>
   </data>
@@ -276,5 +276,13 @@ Prevents selecting more dates than the specified</value>
   <data name="Label_NoEndDate" xml:space="preserve">
     <value>No selected end date</value>
     <comment>Label text for end date field </comment>
+  </data>
+  <data name="Label_CalendarDimension" xml:space="preserve">
+    <value>Calendar Dimension</value>
+    <comment>Label text for calendar dimension selection section</comment>
+  </data>
+  <data name="ToolTip_CalendarDimension" xml:space="preserve">
+    <value>Sets the number of calendars displayed at once when the dropdown opens.</value>
+    <comment>Tooltip for calendar dimension picture box</comment>
   </data>
 </root>

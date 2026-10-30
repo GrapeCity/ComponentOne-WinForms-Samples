@@ -1,0 +1,30 @@
+﻿---
+title: Breakdown
+---
+graph LR
+    R["Root"]
+    B1["Branch 1"]
+    B2["Branch 2"]
+    B3["Branch 3"]
+    L1["Item 1.1"]
+    L2["Item 1.2"]
+    L3["Item 2.1"]
+    L4["Item 2.2"]
+    L5["Item 3.1"]
+ 
+    R --> B1
+    R --> B2
+    R --> B3
+    B1 --> L1
+    B1 --> L2
+    B2 --> L3
+    B2 --> L4
+    B3 --> L5
+ 
+    classDef root fill:#1f3a5f,stroke:#0d1f33,color:#ffffff
+    classDef branch fill:#4a6fa5,stroke:#1f3a5f,color:#ffffff
+    classDef item fill:#e8eef6,stroke:#1f3a5f,color:#1a1a1a
+ 
+    class R root
+    class B1,B2,B3 branch
+    class L1,L2,L3,L4,L5 item

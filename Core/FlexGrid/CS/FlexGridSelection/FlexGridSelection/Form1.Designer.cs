@@ -30,11 +30,11 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Framework.C1PathIcon c1PathIcon1 = new C1.Framework.C1PathIcon();
-            C1.Framework.C1PathIcon c1PathIcon2 = new C1.Framework.C1PathIcon();
-            C1.Framework.C1PathIcon c1PathIcon3 = new C1.Framework.C1PathIcon();
-            C1.Framework.C1PathIcon c1PathIcon4 = new C1.Framework.C1PathIcon();
-            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Framework.C1PathIcon c1PathIcon5 = new C1.Framework.C1PathIcon();
+            C1.Framework.C1PathIcon c1PathIcon6 = new C1.Framework.C1PathIcon();
+            C1.Framework.C1PathIcon c1PathIcon7 = new C1.Framework.C1PathIcon();
+            C1.Framework.C1PathIcon c1PathIcon8 = new C1.Framework.C1PathIcon();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.Themes.C1Office365ThemeSettings();
             c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -101,6 +101,7 @@
             splitContainer1 = new SplitContainer();
             splitContainer2 = new SplitContainer();
             sourceTableLayoutPanel = new TableLayoutPanel();
+            c1FlexGridRowsSelected = new C1.Win.FlexGrid.C1FlexGrid();
             sourceFlexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             sourceLabel = new C1.Win.Input.C1Label();
             destinationTableLayoutPanel = new TableLayoutPanel();
@@ -119,6 +120,7 @@
             splitContainer2.Panel2.SuspendLayout();
             splitContainer2.SuspendLayout();
             sourceTableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)c1FlexGridRowsSelected).BeginInit();
             ((System.ComponentModel.ISupportInitialize)sourceFlexGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)sourceLabel).BeginInit();
             destinationTableLayoutPanel.SuspendLayout();
@@ -132,9 +134,10 @@
             c1Ribbon1.BottomToolBarHolder = ribbonBottomToolBar1;
             c1Ribbon1.ConfigToolBarHolder = ribbonConfigToolBar1;
             c1Ribbon1.Location = new Point(0, 0);
+            c1Ribbon1.Margin = new Padding(3, 2, 3, 2);
             c1Ribbon1.Name = "c1Ribbon1";
             c1Ribbon1.QatHolder = ribbonQat1;
-            c1Ribbon1.Size = new Size(1522, 165);
+            c1Ribbon1.Size = new Size(1332, 133);
             c1Ribbon1.Tabs.Add(homeTab);
             c1Ribbon1.Tabs.Add(AggregateTab);
             c1ThemeController1.SetTheme(c1Ribbon1, "(default)");
@@ -143,6 +146,7 @@
             // ribbonApplicationMenu1
             // 
             ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
+            ribbonApplicationMenu1.TabIndex = 0;
             ribbonApplicationMenu1.Visible = false;
             // 
             // ribbonBottomToolBar1
@@ -159,6 +163,7 @@
             // 
             aboutBtn.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(32, 32), Color.Transparent, (Image)resources.GetObject("aboutBtn.IconSet")));
             aboutBtn.Name = "aboutBtn";
+            aboutBtn.TabIndex = 0;
             aboutBtn.Text = "About";
             aboutBtn.Click += aboutBtn_Click;
             // 
@@ -173,12 +178,14 @@
             homeTab.Groups.Add(CopyModeGroup);
             homeTab.Groups.Add(selectionGroup);
             homeTab.Name = "homeTab";
+            homeTab.TabIndex = 0;
             homeTab.Text = "Home";
             // 
             // clipboardGroup
             // 
             clipboardGroup.Items.Add(ribbonToolBar1);
             clipboardGroup.Items.Add(ribbonToolBar2);
+            clipboardGroup.LauncherTabIndex = 0;
             clipboardGroup.Name = "clipboardGroup";
             clipboardGroup.Text = "Clipboard";
             // 
@@ -193,14 +200,15 @@
             // 
             // copyBtn
             // 
-            c1PathIcon1.Color = Color.Black;
-            c1PathIcon1.Data = resources.GetString("c1PathIcon1.Data");
-            c1PathIcon1.Key = "";
-            c1PathIcon1.Size = new Size(12, 16);
-            c1PathIcon1.Stroke = Color.Empty;
-            c1PathIcon1.ViewBox = new Rectangle(0, 0, 12, 17);
-            copyBtn.IconSet.Add(c1PathIcon1);
+            c1PathIcon5.Color = Color.Black;
+            c1PathIcon5.Data = resources.GetString("c1PathIcon5.Data");
+            c1PathIcon5.Key = "";
+            c1PathIcon5.Size = new Size(12, 16);
+            c1PathIcon5.Stroke = Color.Empty;
+            c1PathIcon5.ViewBox = new Rectangle(0, 0, 12, 17);
+            copyBtn.IconSet.Add(c1PathIcon5);
             copyBtn.Name = "copyBtn";
+            copyBtn.TabIndex = 0;
             copyBtn.Text = "Copy";
             // 
             // ribbonLabel1
@@ -210,14 +218,15 @@
             // 
             // selectAllBtn
             // 
-            c1PathIcon2.Color = Color.Black;
-            c1PathIcon2.Data = resources.GetString("c1PathIcon2.Data");
-            c1PathIcon2.Key = "";
-            c1PathIcon2.Size = new Size(17, 16);
-            c1PathIcon2.Stroke = Color.Empty;
-            c1PathIcon2.ViewBox = new Rectangle(0, 0, 18, 16);
-            selectAllBtn.IconSet.Add(c1PathIcon2);
+            c1PathIcon6.Color = Color.Black;
+            c1PathIcon6.Data = resources.GetString("c1PathIcon6.Data");
+            c1PathIcon6.Key = "";
+            c1PathIcon6.Size = new Size(17, 16);
+            c1PathIcon6.Stroke = Color.Empty;
+            c1PathIcon6.ViewBox = new Rectangle(0, 0, 18, 16);
+            selectAllBtn.IconSet.Add(c1PathIcon6);
             selectAllBtn.Name = "selectAllBtn";
+            selectAllBtn.TabIndex = 0;
             selectAllBtn.Text = "Select All";
             selectAllBtn.Click += selectAllBtn_Click;
             // 
@@ -228,14 +237,15 @@
             // 
             // clearBtn
             // 
-            c1PathIcon3.Color = Color.Black;
-            c1PathIcon3.Data = resources.GetString("c1PathIcon3.Data");
-            c1PathIcon3.Key = "";
-            c1PathIcon3.Size = new Size(11, 11);
-            c1PathIcon3.Stroke = Color.Empty;
-            c1PathIcon3.ViewBox = new Rectangle(0, 0, 11, 11);
-            clearBtn.IconSet.Add(c1PathIcon3);
+            c1PathIcon7.Color = Color.Black;
+            c1PathIcon7.Data = resources.GetString("c1PathIcon7.Data");
+            c1PathIcon7.Key = "";
+            c1PathIcon7.Size = new Size(11, 11);
+            c1PathIcon7.Stroke = Color.Empty;
+            c1PathIcon7.ViewBox = new Rectangle(0, 0, 11, 11);
+            clearBtn.IconSet.Add(c1PathIcon7);
             clearBtn.Name = "clearBtn";
+            clearBtn.TabIndex = 0;
             clearBtn.Text = "Clear";
             clearBtn.Click += ClearBtn_Click;
             // 
@@ -248,14 +258,15 @@
             // pasteBtn
             // 
             pasteBtn.Enabled = false;
-            c1PathIcon4.Color = Color.Black;
-            c1PathIcon4.Data = resources.GetString("c1PathIcon4.Data");
-            c1PathIcon4.Key = "";
-            c1PathIcon4.Size = new Size(14, 16);
-            c1PathIcon4.Stroke = Color.Empty;
-            c1PathIcon4.ViewBox = new Rectangle(0, 0, 14, 17);
-            pasteBtn.IconSet.Add(c1PathIcon4);
+            c1PathIcon8.Color = Color.Black;
+            c1PathIcon8.Data = resources.GetString("c1PathIcon8.Data");
+            c1PathIcon8.Key = "";
+            c1PathIcon8.Size = new Size(14, 16);
+            c1PathIcon8.Stroke = Color.Empty;
+            c1PathIcon8.ViewBox = new Rectangle(0, 0, 14, 17);
+            pasteBtn.IconSet.Add(c1PathIcon8);
             pasteBtn.Name = "pasteBtn";
+            pasteBtn.TabIndex = 0;
             pasteBtn.Text = "Paste";
             // 
             // tbSearch
@@ -263,11 +274,13 @@
             tbSearch.CueBanner = "Search...";
             tbSearch.Label = "  ";
             tbSearch.Name = "tbSearch";
+            tbSearch.TabIndex = 0;
             tbSearch.TextAreaWidth = 128;
             // 
             // CopyModeGroup
             // 
             CopyModeGroup.Items.Add(copyModeGallery);
+            CopyModeGroup.LauncherTabIndex = 0;
             CopyModeGroup.Name = "CopyModeGroup";
             CopyModeGroup.Text = "Copy Mode";
             // 
@@ -280,6 +293,7 @@
             copyModeGallery.Items.Add(Disabled);
             copyModeGallery.ItemSize = new Size(95, 70);
             copyModeGallery.Name = "copyModeGallery";
+            copyModeGallery.TabIndex = 0;
             copyModeGallery.Text = "Gallery";
             copyModeGallery.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
             copyModeGallery.VisibleItems = 5;
@@ -318,6 +332,7 @@
             // 
             selectionGroup.Items.Add(ribbonToolBar3);
             selectionGroup.Items.Add(ribbonToolBar4);
+            selectionGroup.LauncherTabIndex = 0;
             selectionGroup.Name = "selectionGroup";
             selectionGroup.Text = "Selection Mode";
             // 
@@ -332,6 +347,7 @@
             // 
             // rbSelectionMod
             // 
+            rbSelectionMod.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             rbSelectionMod.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, Properties.Resources._default));
             rbSelectionMod.Items.Add(Default);
             rbSelectionMod.Items.Add(Cell);
@@ -343,66 +359,77 @@
             rbSelectionMod.Items.Add(ListBox);
             rbSelectionMod.Items.Add(MultiRange);
             rbSelectionMod.Name = "rbSelectionMod";
+            rbSelectionMod.TabIndex = 0;
             rbSelectionMod.TextAreaWidth = 120;
             // 
             // Default
             // 
             Default.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("Default.IconSet")));
             Default.Name = "Default";
+            Default.TabIndex = 0;
             Default.Text = "Default";
             // 
             // Cell
             // 
             Cell.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("Cell.IconSet")));
             Cell.Name = "Cell";
+            Cell.TabIndex = 0;
             Cell.Text = "Cell";
             // 
             // CellRange
             // 
             CellRange.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("CellRange.IconSet")));
             CellRange.Name = "CellRange";
+            CellRange.TabIndex = 0;
             CellRange.Text = "CellRange";
             // 
             // Row
             // 
             Row.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("Row.IconSet")));
             Row.Name = "Row";
+            Row.TabIndex = 0;
             Row.Text = "Row";
             // 
             // RowRange
             // 
             RowRange.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("RowRange.IconSet")));
             RowRange.Name = "RowRange";
+            RowRange.TabIndex = 0;
             RowRange.Text = "RowRange";
             // 
             // Column
             // 
             Column.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("Column.IconSet")));
             Column.Name = "Column";
+            Column.TabIndex = 0;
             Column.Text = "Column";
             // 
             // ColumnRange
             // 
             ColumnRange.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("ColumnRange.IconSet")));
             ColumnRange.Name = "ColumnRange";
+            ColumnRange.TabIndex = 0;
             ColumnRange.Text = "ColumnRange";
             // 
             // ListBox
             // 
             ListBox.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("ListBox.IconSet")));
             ListBox.Name = "ListBox";
+            ListBox.TabIndex = 0;
             ListBox.Text = "ListBox";
             // 
             // MultiRange
             // 
             MultiRange.IconSet.Add(new C1.Framework.C1BitmapIcon("", new Size(16, 16), Color.Transparent, (Image)resources.GetObject("MultiRange.IconSet")));
             MultiRange.Name = "MultiRange";
+            MultiRange.TabIndex = 0;
             MultiRange.Text = "MultiRange";
             // 
             // AggregateTab
             // 
             AggregateTab.Groups.Add(ribbonGroup1);
             AggregateTab.Name = "AggregateTab";
+            AggregateTab.TabIndex = 0;
             AggregateTab.Text = "Aggregate Function";
             // 
             // ribbonGroup1
@@ -429,6 +456,7 @@
             ribbonGroup1.Items.Add(ribbonLabel41);
             ribbonGroup1.Items.Add(cbPopulationVariance);
             ribbonGroup1.Items.Add(cbPopulationStandardDeviation);
+            ribbonGroup1.LauncherTabIndex = 0;
             ribbonGroup1.Name = "ribbonGroup1";
             // 
             // ribbonLabel3
@@ -439,11 +467,13 @@
             // cbCheckAll
             // 
             cbCheckAll.Name = "cbCheckAll";
+            cbCheckAll.TabIndex = 0;
             cbCheckAll.Text = "Check All";
             // 
             // cbUncheckAll
             // 
             cbUncheckAll.Name = "cbUncheckAll";
+            cbUncheckAll.TabIndex = 0;
             cbUncheckAll.Text = "Uncheck All";
             // 
             // ribbonLabel4
@@ -454,11 +484,13 @@
             // cbSum
             // 
             cbSum.Name = "cbSum";
+            cbSum.TabIndex = 0;
             cbSum.Text = "Sum";
             // 
             // cbAverage
             // 
             cbAverage.Name = "cbAverage";
+            cbAverage.TabIndex = 0;
             cbAverage.Text = "Average";
             // 
             // ribbonSeparator1111
@@ -474,11 +506,13 @@
             // cbCount
             // 
             cbCount.Name = "cbCount";
+            cbCount.TabIndex = 0;
             cbCount.Text = "Count";
             // 
             // cbCountDistinct
             // 
             cbCountDistinct.Name = "cbCountDistinct";
+            cbCountDistinct.TabIndex = 0;
             cbCountDistinct.Text = "Count Distinct";
             // 
             // ribbonSeparator111
@@ -494,11 +528,13 @@
             // cbMax
             // 
             cbMax.Name = "cbMax";
+            cbMax.TabIndex = 0;
             cbMax.Text = "Max";
             // 
             // cbMin
             // 
             cbMin.Name = "cbMin";
+            cbMin.TabIndex = 0;
             cbMin.Text = "Min";
             // 
             // ribbonSeparator11
@@ -514,11 +550,13 @@
             // cbSampleVariance
             // 
             cbSampleVariance.Name = "cbSampleVariance";
+            cbSampleVariance.TabIndex = 0;
             cbSampleVariance.Text = "Sample Variance";
             // 
             // cbSampleStandardDeviation
             // 
             cbSampleStandardDeviation.Name = "cbSampleStandardDeviation";
+            cbSampleStandardDeviation.TabIndex = 0;
             cbSampleStandardDeviation.Text = "Sample Standard Deviation";
             // 
             // ribbonSeparator1
@@ -534,11 +572,13 @@
             // cbPopulationVariance
             // 
             cbPopulationVariance.Name = "cbPopulationVariance";
+            cbPopulationVariance.TabIndex = 0;
             cbPopulationVariance.Text = "Population Variance";
             // 
             // cbPopulationStandardDeviation
             // 
             cbPopulationStandardDeviation.Name = "cbPopulationStandardDeviation";
+            cbPopulationStandardDeviation.TabIndex = 0;
             cbPopulationStandardDeviation.Text = "Population Standard Deviation";
             // 
             // ribbonTopToolBar1
@@ -549,10 +589,10 @@
             // c1ThemeController1
             // 
             c1ThemeController1.Theme = "Office365White";
-            c1Office365ThemeSettings1.AccentColor = Color.FromArgb(0, 95, 184);
-            c1Office365ThemeSettings1.Background = Color.White;
-            c1Office365ThemeSettings1.ForeColor = Color.FromArgb(50, 50, 50);
-            c1ThemeController1.ThemeSettings = c1Office365ThemeSettings1;
+            c1Office365ThemeSettings2.AccentColor = Color.FromArgb(0, 95, 184);
+            c1Office365ThemeSettings2.Background = Color.White;
+            c1Office365ThemeSettings2.ForeColor = Color.FromArgb(50, 50, 50);
+            c1ThemeController1.ThemeSettings = c1Office365ThemeSettings2;
             // 
             // splitContainer1
             // 
@@ -560,7 +600,8 @@
             splitContainer1.Dock = DockStyle.Fill;
             splitContainer1.Font = new Font("Segoe UI", 14F);
             splitContainer1.ForeColor = Color.FromArgb(32, 32, 32);
-            splitContainer1.Location = new Point(0, 165);
+            splitContainer1.Location = new Point(0, 133);
+            splitContainer1.Margin = new Padding(3, 2, 3, 2);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -569,7 +610,7 @@
             splitContainer1.Panel1.Controls.Add(splitContainer2);
             splitContainer1.Panel1.Font = new Font("Segoe UI", 14F);
             splitContainer1.Panel1.ForeColor = Color.FromArgb(32, 32, 32);
-            splitContainer1.Panel1.Padding = new Padding(8, 8, 8, 20);
+            splitContainer1.Panel1.Padding = new Padding(7, 6, 7, 15);
             c1ThemeController1.SetTheme(splitContainer1.Panel1, "(default)");
             // 
             // splitContainer1.Panel2
@@ -578,11 +619,11 @@
             splitContainer1.Panel2.Controls.Add(aggregatePanel);
             splitContainer1.Panel2.Font = new Font("Segoe UI", 14F);
             splitContainer1.Panel2.ForeColor = Color.FromArgb(32, 32, 32);
-            splitContainer1.Panel2.Padding = new Padding(8, 8, 8, 20);
+            splitContainer1.Panel2.Padding = new Padding(7, 6, 7, 15);
             c1ThemeController1.SetTheme(splitContainer1.Panel2, "(default)");
             splitContainer1.Panel2Collapsed = true;
-            splitContainer1.Size = new Size(1522, 713);
-            splitContainer1.SplitterDistance = 1124;
+            splitContainer1.Size = new Size(1332, 525);
+            splitContainer1.SplitterDistance = 984;
             splitContainer1.TabIndex = 1;
             c1ThemeController1.SetTheme(splitContainer1, "(default)");
             // 
@@ -592,7 +633,8 @@
             splitContainer2.Dock = DockStyle.Fill;
             splitContainer2.Font = new Font("Segoe UI", 14F);
             splitContainer2.ForeColor = Color.FromArgb(32, 32, 32);
-            splitContainer2.Location = new Point(8, 8);
+            splitContainer2.Location = new Point(7, 6);
+            splitContainer2.Margin = new Padding(3, 2, 3, 2);
             splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
@@ -612,16 +654,18 @@
             splitContainer2.Panel2.ForeColor = Color.FromArgb(32, 32, 32);
             splitContainer2.Panel2.Padding = new Padding(4, 0, 0, 0);
             c1ThemeController1.SetTheme(splitContainer2.Panel2, "(default)");
-            splitContainer2.Size = new Size(1506, 685);
-            splitContainer2.SplitterDistance = 716;
+            splitContainer2.Size = new Size(1318, 504);
+            splitContainer2.SplitterDistance = 626;
             splitContainer2.TabIndex = 1;
             c1ThemeController1.SetTheme(splitContainer2, "(default)");
             // 
             // sourceTableLayoutPanel
             // 
             sourceTableLayoutPanel.BackColor = Color.White;
-            sourceTableLayoutPanel.ColumnCount = 1;
-            sourceTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            sourceTableLayoutPanel.ColumnCount = 2;
+            sourceTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
+            sourceTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            sourceTableLayoutPanel.Controls.Add(c1FlexGridRowsSelected, 1, 1);
             sourceTableLayoutPanel.Controls.Add(sourceFlexGrid, 0, 1);
             sourceTableLayoutPanel.Controls.Add(sourceLabel, 0, 0);
             sourceTableLayoutPanel.Dock = DockStyle.Fill;
@@ -629,14 +673,38 @@
             sourceTableLayoutPanel.Location = new Point(0, 0);
             sourceTableLayoutPanel.Margin = new Padding(0);
             sourceTableLayoutPanel.Name = "sourceTableLayoutPanel";
-            sourceTableLayoutPanel.Padding = new Padding(5);
+            sourceTableLayoutPanel.Padding = new Padding(4);
             sourceTableLayoutPanel.RowCount = 2;
-            sourceTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 31F));
+            sourceTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
             sourceTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            sourceTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            sourceTableLayoutPanel.Size = new Size(712, 685);
+            sourceTableLayoutPanel.Size = new Size(622, 504);
             sourceTableLayoutPanel.TabIndex = 0;
             sourceTableLayoutPanel.Paint += Panel1_Paint;
+            // 
+            // c1FlexGridRowsSelected
+            // 
+            c1FlexGridRowsSelected.BackColor = Color.White;
+            c1FlexGridRowsSelected.ColumnInfo = "1,0,0,0,0,-1,Columns:0{Name:\"colRowsSelected\";Caption:\"Rows.Selected:\";AllowDragging:False;AllowResizing:False;AllowEditing:False;}\t";
+            c1FlexGridRowsSelected.Dock = DockStyle.Right;
+            c1FlexGridRowsSelected.ExtendLastCol = true;
+            c1FlexGridRowsSelected.FocusRect = C1.Win.FlexGrid.FocusRectEnum.Background;
+            c1FlexGridRowsSelected.Font = new Font("Segoe UI", 12F);
+            c1FlexGridRowsSelected.ForeColor = Color.FromArgb(32, 32, 32);
+            c1FlexGridRowsSelected.IconsStyle = C1.Win.FlexGrid.IconsStyle.Office365;
+            c1FlexGridRowsSelected.Location = new Point(498, 30);
+            c1FlexGridRowsSelected.MarqueeStyle.BackgroundPadding = new Padding(1);
+            c1FlexGridRowsSelected.MarqueeStyle.BackgroundPaddingColor = Color.White;
+            c1FlexGridRowsSelected.MarqueeStyle.BorderAlign = C1.Win.FlexGrid.BorderAlign.Outside;
+            c1FlexGridRowsSelected.MarqueeStyle.BorderMode = C1.Win.FlexGrid.MarqueeBorderMode.CellRange;
+            c1FlexGridRowsSelected.MarqueeStyle.Color = Color.FromArgb(33, 132, 72);
+            c1FlexGridRowsSelected.MarqueeStyle.Width = 2;
+            c1FlexGridRowsSelected.Name = "c1FlexGridRowsSelected";
+            c1FlexGridRowsSelected.Rows.Count = 1;
+            c1FlexGridRowsSelected.Size = new Size(117, 467);
+            c1FlexGridRowsSelected.StyleInfo = resources.GetString("c1FlexGridRowsSelected.StyleInfo");
+            c1FlexGridRowsSelected.TabIndex = 0;
+            c1FlexGridRowsSelected.Tree.Indent = 25;
+            c1FlexGridRowsSelected.Tree.LineColor = Color.FromArgb(141, 141, 141);
             // 
             // sourceFlexGrid
             // 
@@ -647,7 +715,8 @@
             sourceFlexGrid.FocusRect = C1.Win.FlexGrid.FocusRectEnum.Background;
             sourceFlexGrid.ForeColor = Color.FromArgb(32, 32, 32);
             sourceFlexGrid.IconsStyle = C1.Win.FlexGrid.IconsStyle.Office365;
-            sourceFlexGrid.Location = new Point(8, 39);
+            sourceFlexGrid.Location = new Point(7, 29);
+            sourceFlexGrid.Margin = new Padding(3, 2, 3, 2);
             sourceFlexGrid.MarqueeStyle.BackgroundPadding = new Padding(1);
             sourceFlexGrid.MarqueeStyle.BackgroundPaddingColor = Color.White;
             sourceFlexGrid.MarqueeStyle.BorderAlign = C1.Win.FlexGrid.BorderAlign.Outside;
@@ -655,7 +724,7 @@
             sourceFlexGrid.MarqueeStyle.Color = Color.FromArgb(0, 95, 184);
             sourceFlexGrid.MarqueeStyle.Width = 2;
             sourceFlexGrid.Name = "sourceFlexGrid";
-            sourceFlexGrid.Size = new Size(696, 638);
+            sourceFlexGrid.Size = new Size(485, 469);
             sourceFlexGrid.StyleInfo = resources.GetString("sourceFlexGrid.StyleInfo");
             sourceFlexGrid.TabIndex = 2;
             c1ThemeController1.SetTheme(sourceFlexGrid, "(default)");
@@ -666,10 +735,11 @@
             // 
             sourceLabel.AutoSize = true;
             sourceLabel.Dock = DockStyle.Fill;
-            sourceLabel.Location = new Point(8, 8);
+            sourceLabel.Location = new Point(7, 7);
             sourceLabel.Name = "sourceLabel";
-            sourceLabel.Size = new Size(696, 25);
-            sourceLabel.Styles.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            sourceLabel.Size = new Size(485, 17);
+            sourceLabel.Styles.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            sourceLabel.Styles.Padding = new C1.Framework.Thickness(0, 0, 0, 0);
             sourceLabel.TabIndex = 3;
             sourceLabel.Text = "Source:";
             c1ThemeController1.SetTheme(sourceLabel, "(default)");
@@ -683,14 +753,14 @@
             destinationTableLayoutPanel.Controls.Add(destinationFlexGrid, 0, 1);
             destinationTableLayoutPanel.Dock = DockStyle.Fill;
             destinationTableLayoutPanel.Location = new Point(4, 0);
-            destinationTableLayoutPanel.Margin = new Padding(8);
+            destinationTableLayoutPanel.Margin = new Padding(7, 6, 7, 6);
             destinationTableLayoutPanel.Name = "destinationTableLayoutPanel";
-            destinationTableLayoutPanel.Padding = new Padding(5);
+            destinationTableLayoutPanel.Padding = new Padding(4);
             destinationTableLayoutPanel.RowCount = 2;
-            destinationTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 31F));
+            destinationTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
             destinationTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100.000008F));
-            destinationTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            destinationTableLayoutPanel.Size = new Size(782, 685);
+            destinationTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
+            destinationTableLayoutPanel.Size = new Size(684, 504);
             destinationTableLayoutPanel.TabIndex = 0;
             destinationTableLayoutPanel.Paint += Panel1_Paint;
             // 
@@ -698,10 +768,11 @@
             // 
             destinationLabel.AutoSize = true;
             destinationLabel.Dock = DockStyle.Fill;
-            destinationLabel.Location = new Point(8, 8);
+            destinationLabel.Location = new Point(7, 7);
             destinationLabel.Name = "destinationLabel";
-            destinationLabel.Size = new Size(766, 25);
+            destinationLabel.Size = new Size(670, 17);
             destinationLabel.Styles.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            destinationLabel.Styles.Padding = new C1.Framework.Thickness(0, 0, 0, 0);
             destinationLabel.TabIndex = 4;
             destinationLabel.Text = "Destination:";
             c1ThemeController1.SetTheme(destinationLabel, "(default)");
@@ -715,7 +786,8 @@
             destinationFlexGrid.FocusRect = C1.Win.FlexGrid.FocusRectEnum.Background;
             destinationFlexGrid.ForeColor = Color.FromArgb(32, 32, 32);
             destinationFlexGrid.IconsStyle = C1.Win.FlexGrid.IconsStyle.Office365;
-            destinationFlexGrid.Location = new Point(8, 39);
+            destinationFlexGrid.Location = new Point(7, 29);
+            destinationFlexGrid.Margin = new Padding(3, 2, 3, 2);
             destinationFlexGrid.MarqueeStyle.BackgroundPadding = new Padding(1);
             destinationFlexGrid.MarqueeStyle.BackgroundPaddingColor = Color.White;
             destinationFlexGrid.MarqueeStyle.BorderAlign = C1.Win.FlexGrid.BorderAlign.Outside;
@@ -723,7 +795,7 @@
             destinationFlexGrid.MarqueeStyle.Color = Color.FromArgb(0, 95, 184);
             destinationFlexGrid.MarqueeStyle.Width = 2;
             destinationFlexGrid.Name = "destinationFlexGrid";
-            destinationFlexGrid.Size = new Size(766, 638);
+            destinationFlexGrid.Size = new Size(670, 469);
             destinationFlexGrid.StyleInfo = resources.GetString("destinationFlexGrid.StyleInfo");
             destinationFlexGrid.TabIndex = 1;
             c1ThemeController1.SetTheme(destinationFlexGrid, "(default)");
@@ -732,12 +804,13 @@
             // 
             // aggregatePanel
             // 
+            aggregatePanel.AutoScroll = true;
             aggregatePanel.BackColor = Color.White;
             aggregatePanel.Dock = DockStyle.Fill;
-            aggregatePanel.Location = new Point(8, 8);
-            aggregatePanel.Margin = new Padding(5);
+            aggregatePanel.Location = new Point(7, 6);
+            aggregatePanel.Margin = new Padding(4);
             aggregatePanel.Name = "aggregatePanel";
-            aggregatePanel.Size = new Size(80, 72);
+            aggregatePanel.Size = new Size(82, 79);
             aggregatePanel.TabIndex = 0;
             aggregatePanel.Paint += Panel1_Paint;
             // 
@@ -759,13 +832,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1522, 878);
+            ClientSize = new Size(1332, 658);
             Controls.Add(splitContainer1);
             Controls.Add(c1Ribbon1);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "FlexGrid Selection";
             WindowState = FormWindowState.Maximized;
@@ -781,6 +855,7 @@
             splitContainer2.ResumeLayout(false);
             sourceTableLayoutPanel.ResumeLayout(false);
             sourceTableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)c1FlexGridRowsSelected).EndInit();
             ((System.ComponentModel.ISupportInitialize)sourceFlexGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)sourceLabel).EndInit();
             destinationTableLayoutPanel.ResumeLayout(false);
@@ -866,5 +941,6 @@
         private C1.Win.Ribbon.RibbonCheckBox cbUncheckAll;
         private C1.Win.Ribbon.RibbonLabel ribbonLabel44;
         private userControl.AggregatePanel aggregatePanel;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGridRowsSelected;
     }
 }

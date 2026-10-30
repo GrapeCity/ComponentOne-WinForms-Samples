@@ -36,6 +36,7 @@
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridSelection\FlexGridSelection\FlexGridSelection.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\ScrollBarAnnotations\ScrollBarAnnotations\ScrollBarAnnotations.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\TransposedGrid\TransposedGrid.csproj" />
     <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
@@ -57,6 +58,7 @@
     <ProjectReference Include="..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj" />
     <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" />
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" />
+    <ProjectReference Include="..\..\..\HamburgerMenu\CS\HamburgerMenuExplorer\HamburgerMenuExplorer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

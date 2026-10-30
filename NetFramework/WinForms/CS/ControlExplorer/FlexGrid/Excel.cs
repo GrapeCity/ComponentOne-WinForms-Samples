@@ -14,6 +14,7 @@ namespace ControlExplorer.FlexGrid
         public Excel()
         {
             InitializeComponent();
+            c1FlexGrid1.AutoResize = true;
         }
 
         private void Printing_Load(object sender, EventArgs e)
@@ -35,6 +36,16 @@ namespace ControlExplorer.FlexGrid
                 if (u < 20)
                     c1FlexGrid1.SetCellStyle(r.Index, c1FlexGrid1.Cols["UnitsInStock"].Index, c1FlexGrid1.Styles["LowStock"]);
             }
+            //add footer
+            var footer = new FooterDescription();
+            var agg = new AggregateDefinition()
+            {
+                Aggregate = AggregateEnum.Count,
+                Column = 1
+            };
+            footer.Aggregates.Add(agg);
+            c1FlexGrid1.Footers.Descriptions.Add(footer);
+            c1FlexGrid1.Footers.Fixed = true;
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -47,6 +58,7 @@ namespace ControlExplorer.FlexGrid
             //This function saves and launches Excel file from FlexGrid
             //Diplay custom ExportOptions dialog first to select FileFlags
             ExportOptions options = new ExportOptions();
+            options.c1ThemeController1.Theme = Explorer.Theme.Name;
             if (options.ShowDialog() == DialogResult.OK)
             {
                 SaveFileDialog sfd = new SaveFileDialog();

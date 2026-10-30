@@ -169,7 +169,7 @@
     <value>다시 놓기</value>
   </data>
   <data name="Label_SampleDescription" xml:space="preserve">
-    <value>이 샘플은 다문화 지원을 갖춘 C1CalendarView를 사용한 대화형 날짜 범위 선택기를 보여줍니다.
+    <value>이 샘플은 다문화 지원을 갖춘 C1DateRangeEdit를 사용한 대화형 날짜 범위 선택기를 보여줍니다.
 미리 정의된 옵션 또는 캘린더 인터페이스를 사용하여 날짜 범위를 선택하세요.</value>
   </data>
   <data name="Label_SamplesTitle" xml:space="preserve">
@@ -190,7 +190,7 @@
   <data name="Label_YourDateSelection" xml:space="preserve">
     <value>선택한 날짜</value>
   </data>
-  <data name="Laabel_Feature" xml:space="preserve">
+  <data name="Label_Feature" xml:space="preserve">
     <value>기능</value>
   </data>
   <data name="ToolTip_CultureSelection" xml:space="preserve">
@@ -210,5 +210,11 @@
   </data>
   <data name="Label_NoEndDate" xml:space="preserve">
     <value>선택한 종료일이 없습니다.</value>
+  </data>
+  <data name="Label_CalendarDimension" xml:space="preserve">
+    <value>캘린더 크기</value>
+  </data>
+  <data name="ToolTip_CalendarDimension" xml:space="preserve">
+    <value>드롭다운이 열릴 때 한 번에 표시되는 캘린더의 개수를 설정합니다.</value>
   </data>
 </root>

@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20261.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="10.0.20261.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="10.0.20262.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
   </ItemGroup>

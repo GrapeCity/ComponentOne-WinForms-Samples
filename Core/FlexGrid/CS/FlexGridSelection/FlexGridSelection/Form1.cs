@@ -44,6 +44,19 @@ namespace FlexGridSelection
 
             _clipboardManager.UpdateClipboardCopyModeText();
             copyModeGallery.SelectedIndex = 0;
+
+            sourceFlexGrid.AfterSelChange += SourceFlexGrid_AfterSelChange;
+        }
+
+        private void SourceFlexGrid_AfterSelChange(object sender, RangeEventArgs e)
+        {
+            c1FlexGridRowsSelected.BeginUpdate();
+            c1FlexGridRowsSelected.Rows.Count = 1;
+            foreach (Row row in sourceFlexGrid.Rows.Selected)
+            {
+                c1FlexGridRowsSelected.AddItem($"row: {row.Index}");
+            }
+            c1FlexGridRowsSelected.EndUpdate();
         }
 
         #region Helper Methods for Icon Update 

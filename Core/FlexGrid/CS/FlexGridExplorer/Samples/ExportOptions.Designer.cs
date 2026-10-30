@@ -38,7 +38,8 @@
             chkVisibleOnly = new C1.Win.Input.C1CheckBox();
             chkNoFreezing = new C1.Win.Input.C1CheckBox();
             chkOpenXml = new C1.Win.Input.C1CheckBox();
-            toolTip1 = new System.Windows.Forms.ToolTip(components);
+            toolTip1 = new ToolTip(components);
+            c1CheckBoxExcludeFooters = new C1.Win.Input.C1CheckBox();
             ((System.ComponentModel.ISupportInitialize)btnOK).BeginInit();
             ((System.ComponentModel.ISupportInitialize)button1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chkAsDisplayed).BeginInit();
@@ -48,33 +49,34 @@
             ((System.ComponentModel.ISupportInitialize)chkVisibleOnly).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chkNoFreezing).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chkOpenXml).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1CheckBoxExcludeFooters).BeginInit();
             SuspendLayout();
             // 
             // btnOK
             // 
-            btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            btnOK.Location = new System.Drawing.Point(163, 145);
+            btnOK.DialogResult = DialogResult.OK;
+            btnOK.Location = new Point(143, 109);
             btnOK.Name = "btnOK";
-            btnOK.Size = new System.Drawing.Size(94, 29);
+            btnOK.Size = new Size(82, 22);
             btnOK.TabIndex = 0;
             btnOK.Text = "OK";
             btnOK.Click += btnOK_Click;
             // 
             // button1
             // 
-            button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            button1.Location = new System.Drawing.Point(271, 145);
+            button1.DialogResult = DialogResult.Cancel;
+            button1.Location = new Point(237, 109);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 1;
             button1.Text = "Cancel";
             // 
             // chkAsDisplayed
             // 
             chkAsDisplayed.AutoSize = true;
-            chkAsDisplayed.Location = new System.Drawing.Point(17, 16);
+            chkAsDisplayed.Location = new Point(15, 12);
             chkAsDisplayed.Name = "chkAsDisplayed";
-            chkAsDisplayed.Size = new System.Drawing.Size(119, 22);
+            chkAsDisplayed.Size = new Size(95, 19);
             chkAsDisplayed.TabIndex = 2;
             chkAsDisplayed.Text = "As Displayed";
             toolTip1.SetToolTip(chkAsDisplayed, "Save values as displayed (including formatting and mapping where available). ");
@@ -82,9 +84,9 @@
             // chkSaveMergedRanges
             // 
             chkSaveMergedRanges.AutoSize = true;
-            chkSaveMergedRanges.Location = new System.Drawing.Point(196, 16);
+            chkSaveMergedRanges.Location = new Point(172, 12);
             chkSaveMergedRanges.Name = "chkSaveMergedRanges";
-            chkSaveMergedRanges.Size = new System.Drawing.Size(172, 22);
+            chkSaveMergedRanges.Size = new Size(137, 19);
             chkSaveMergedRanges.TabIndex = 3;
             chkSaveMergedRanges.Text = "Save Merged Ranges";
             toolTip1.SetToolTip(chkSaveMergedRanges, "Save merged ranges when exporting to Excel.");
@@ -92,9 +94,9 @@
             // chkSelectedRowsOnly
             // 
             chkSelectedRowsOnly.AutoSize = true;
-            chkSelectedRowsOnly.Location = new System.Drawing.Point(196, 44);
+            chkSelectedRowsOnly.Location = new Point(172, 33);
             chkSelectedRowsOnly.Name = "chkSelectedRowsOnly";
-            chkSelectedRowsOnly.Size = new System.Drawing.Size(163, 22);
+            chkSelectedRowsOnly.Size = new Size(131, 19);
             chkSelectedRowsOnly.TabIndex = 5;
             chkSelectedRowsOnly.Text = "Selected Rows Only";
             toolTip1.SetToolTip(chkSelectedRowsOnly, "Save only selected rows.");
@@ -102,9 +104,9 @@
             // chkIncludeFixedCells
             // 
             chkIncludeFixedCells.AutoSize = true;
-            chkIncludeFixedCells.Location = new System.Drawing.Point(17, 46);
+            chkIncludeFixedCells.Location = new Point(15, 34);
             chkIncludeFixedCells.Name = "chkIncludeFixedCells";
-            chkIncludeFixedCells.Size = new System.Drawing.Size(155, 22);
+            chkIncludeFixedCells.Size = new Size(126, 19);
             chkIncludeFixedCells.TabIndex = 4;
             chkIncludeFixedCells.Text = "Include Fixed Cells";
             toolTip1.SetToolTip(chkIncludeFixedCells, "Include fixed cells when loading or saving the grid. ");
@@ -112,9 +114,9 @@
             // chkVisibleOnly
             // 
             chkVisibleOnly.AutoSize = true;
-            chkVisibleOnly.Location = new System.Drawing.Point(196, 74);
+            chkVisibleOnly.Location = new Point(172, 56);
             chkVisibleOnly.Name = "chkVisibleOnly";
-            chkVisibleOnly.Size = new System.Drawing.Size(111, 22);
+            chkVisibleOnly.Size = new Size(90, 19);
             chkVisibleOnly.TabIndex = 7;
             chkVisibleOnly.Text = "Visible Only";
             toolTip1.SetToolTip(chkVisibleOnly, "Save only visible rows and columns.");
@@ -122,9 +124,9 @@
             // chkNoFreezing
             // 
             chkNoFreezing.AutoSize = true;
-            chkNoFreezing.Location = new System.Drawing.Point(16, 74);
+            chkNoFreezing.Location = new Point(14, 56);
             chkNoFreezing.Name = "chkNoFreezing";
-            chkNoFreezing.Size = new System.Drawing.Size(113, 22);
+            chkNoFreezing.Size = new Size(91, 19);
             chkNoFreezing.TabIndex = 6;
             chkNoFreezing.Text = "No Freezing";
             toolTip1.SetToolTip(chkNoFreezing, "Do not freeze rows and columns when exporting to or importing from Excel.");
@@ -132,19 +134,30 @@
             // chkOpenXml
             // 
             chkOpenXml.AutoSize = true;
-            chkOpenXml.Location = new System.Drawing.Point(16, 103);
+            chkOpenXml.Location = new Point(14, 77);
             chkOpenXml.Name = "chkOpenXml";
-            chkOpenXml.Size = new System.Drawing.Size(148, 22);
+            chkOpenXml.Size = new Size(119, 19);
             chkOpenXml.TabIndex = 8;
             chkOpenXml.Text = "Save as OpenXml";
             toolTip1.SetToolTip(chkOpenXml, "Load or save file in OpenXml (Office 2007) format. ");
             // 
+            // c1CheckBoxExcludeFooters
+            // 
+            c1CheckBoxExcludeFooters.AutoSize = true;
+            c1CheckBoxExcludeFooters.Location = new Point(172, 77);
+            c1CheckBoxExcludeFooters.Name = "c1CheckBoxExcludeFooters";
+            c1CheckBoxExcludeFooters.Size = new Size(111, 19);
+            c1CheckBoxExcludeFooters.TabIndex = 9;
+            c1CheckBoxExcludeFooters.Text = "Exclude Footers";
+            toolTip1.SetToolTip(c1CheckBoxExcludeFooters, "Exclude footer rows when exporting to Excel.");
+            // 
             // ExportOptions
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(387, 188);
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(339, 141);
             Controls.Add(chkOpenXml);
+            Controls.Add(c1CheckBoxExcludeFooters);
             Controls.Add(chkVisibleOnly);
             Controls.Add(chkNoFreezing);
             Controls.Add(chkSelectedRowsOnly);
@@ -153,12 +166,13 @@
             Controls.Add(chkAsDisplayed);
             Controls.Add(button1);
             Controls.Add(btnOK);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ExportOptions";
-            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Export Option";
             ((System.ComponentModel.ISupportInitialize)btnOK).EndInit();
             ((System.ComponentModel.ISupportInitialize)button1).EndInit();
@@ -169,6 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)chkVisibleOnly).EndInit();
             ((System.ComponentModel.ISupportInitialize)chkNoFreezing).EndInit();
             ((System.ComponentModel.ISupportInitialize)chkOpenXml).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1CheckBoxExcludeFooters).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,5 +200,6 @@
         private C1.Win.Input.C1CheckBox chkNoFreezing;
         private C1.Win.Input.C1CheckBox chkOpenXml;
         private System.Windows.Forms.ToolTip toolTip1;
+        private C1.Win.Input.C1CheckBox c1CheckBoxExcludeFooters;
     }
 }
