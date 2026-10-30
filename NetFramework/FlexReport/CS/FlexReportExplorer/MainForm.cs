@@ -97,6 +97,11 @@ namespace FlexReportExplorer
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+
+            splitContainer2.SplitterDistance = 350;
+
+            foreach (Control node in accordionArea1.Controls)
+                node.Invalidate();
             // load default report
             try
             {

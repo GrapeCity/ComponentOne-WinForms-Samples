@@ -169,6 +169,12 @@ namespace SampleExplorer
                 Resources.SampleItem_Title_C1ButtonCommandBinding,
                 Resources.SampleItem_Desc_C1ButtonCommandBinding,
                 typeof(InputExplorer.Samples.C1ButtonCommandBinding.View.TaskManager)));
+
+            _allItems.Add(new SampleItem(Resources.SampleItem_Name_CommandBinding,
+                Resources.SampleItem_Title_CommandBinding,
+                Resources.SampleItem_Desc_CommandBinding,
+                typeof(InputExplorer.Samples.CommandBinding)));
+
             // todo:
             // samples for individual controls with PropertyGrid
             // sample which shows all control with themes (and ability to switch)

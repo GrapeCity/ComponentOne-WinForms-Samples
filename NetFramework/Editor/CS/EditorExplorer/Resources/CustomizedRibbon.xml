@@ -1,0 +1,369 @@
+﻿<ribbon hideTabHeaderRow="True" viewMode="Simplified">
+  <moreButton />
+  <toolTipSettings />
+  <appMenu id="ribbonApplicationMenu1" visible="False" showInSimplified="False" />
+  <qat id="ribbonQat1" visible="False" />
+  <topToolBar id="ribbonTopToolBar1" visible="False" showInSimplified="False" />
+  <configToolBar id="ribbonConfigToolBar1" visible="False" showInSimplified="False" />
+  <bottomToolBar id="ribbonBottomToolBar1" visible="False" showInSimplified="False" />
+  <qatItems>
+    <button id="newDocumentButton1" toolTip="New Document" qatIndex="0" hotIndex="0">
+      <iconSet>
+        <bitmapIcon imageList="Preset_SmallImages" imageIndex="265" key="New" sizeWidth="16" sizeHeight="16" />
+      </iconSet>
+    </button>
+    <button id="openDocumentButton1" toolTip="Open Document" qatIndex="1" hotIndex="1">
+      <iconSet>
+        <pathIcon data="M426.667,85.333 L228.417,85.333 188.875,45.791 C186.875,43.791 184.167,42.666 181.333,42.666 L42.667,42.666 C19.146,42.667 0,61.802 0,85.333 L0,384 C0,407.531 19.146,426.667 42.667,426.667 L426.667,426.667 C450.188,426.667 469.334,407.532 469.334,384 L469.334,128 C469.333,104.469 450.188,85.333 426.667,85.333 z M441.72717,377.72717 C441.72717,389.48717 432.16417,399.06017 420.39417,399.06017 L51.159584,399.06017 C39.388584,399.06017 29.826584,389.48717 29.826584,377.72717 L29.826584,91.605835 C29.825584,79.845835 39.388584,70.272835 51.159584,70.272835 L176.917,70.272835 216.459,109.81483 C218.459,111.81483 221.167,112.93983 224.001,112.93983 L420.39517,112.93983 C432.16517,112.93983 441.72717,122.51283 441.72717,134.27283 L441.72717,377.72717 z" key="Folder" sizeWidth="16" sizeHeight="16" />
+      </iconSet>
+    </button>
+    <button id="saveDocumentButton1" toolTip="Save Document" qatIndex="2" hotIndex="2">
+      <iconSet>
+        <pathIcon data="M35,1 L0,1 0,45 46,45 46,12 35,1 z M19.002,4.0781495 L27.92285,4.0781495 27.92285,13.92185 19.002,13.92185 19.002,4.0781495 z M10,4.0781495 L15.92285,4.0781495 15.92285,13.92185 10,13.92185 10,4.0781495 z M33.92185,41.92185 L11.07815,41.92185 11.07815,28.07815 33.92185,28.07815 33.92185,41.92185 z M42.92185,41.92185 L37,41.92185 37,25 8,25 8,41.92185 2.8984538,41.92185 2.8984538,4.0781495 6.9218505,4.0781495 6.9218505,17 31,17 31,4.0781495 34,4.0781495 42.92185,13 42.92185,41.92185 z" key="Save" sizeWidth="16" sizeHeight="16" />
+      </iconSet>
+    </button>
+  </qatItems>
+  <contextMenuItems />
+  <tabs>
+    <tab id="homeTab1" text="&amp;Home">
+      <group id="viewModeGroup1" text="Mode" visible="False">
+        <iconSet>
+          <bitmapIcon imageList="Preset_LargeImages" key="PrintPreview" sizeWidth="32" sizeHeight="32" />
+          <bitmapIcon imageList="Preset_MediumImages" key="PrintPreview" sizeWidth="20" sizeHeight="20" />
+          <bitmapIcon imageList="Preset_SmallImages" key="PrintPreview" sizeWidth="16" sizeHeight="16" />
+        </iconSet>
+        <toggleButton id="designModeButton1" toolTip="Design View" pressed="True" textImageRelation="ImageAboveText">
+          <iconSet>
+            <bitmapIcon imageList="Preset_MediumImages" imageIndex="316" key="Position" sizeWidth="20" sizeHeight="20" />
+            <bitmapIcon imageList="Preset_SmallImages" imageIndex="316" key="Position" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </toggleButton>
+        <toggleButton id="previewButton1" toolTip="Preview" textImageRelation="ImageAboveText">
+          <iconSet>
+            <bitmapIcon imageList="Preset_MediumImages" imageIndex="325" key="PrintPreview" sizeWidth="20" sizeHeight="20" />
+            <bitmapIcon imageList="Preset_SmallImages" imageIndex="325" key="PrintPreview" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </toggleButton>
+      </group>
+      <group id="editGroup1" text="Edit">
+        <iconSet>
+          <bitmapIcon imageList="Preset_LargeImages" key="Edit" sizeWidth="32" sizeHeight="32" />
+          <bitmapIcon imageList="Preset_MediumImages" key="Edit" sizeWidth="20" sizeHeight="20" />
+          <bitmapIcon imageList="Preset_SmallImages" key="Edit" sizeWidth="16" sizeHeight="16" />
+        </iconSet>
+        <button id="pasteButton1" toolTip="Paste" visible="False" textImageRelation="ImageAboveText">
+          <iconSet>
+            <bitmapIcon imageList="Preset_LargeImages" imageIndex="200" key="Paste" sizeWidth="32" sizeHeight="32" />
+            <bitmapIcon imageList="Preset_SmallImages" imageIndex="260" key="Paste" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </button>
+        <separator id="ribbonSeparator1" visible="False" showInSimplified="False" hiddenMode="True" />
+        <button id="cutButton1" toolTip="Cut" visible="False">
+          <iconSet>
+            <bitmapIcon imageList="Preset_SmallImages" imageIndex="86" key="Cut" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </button>
+        <button id="copyButton1" toolTip="Copy" visible="False">
+          <iconSet>
+            <bitmapIcon imageList="Preset_SmallImages" imageIndex="80" key="Copy" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </button>
+        <separator id="ribbonSeparator5" visible="False" showInSimplified="False" />
+        <button id="btnFind" toolTip="Find Text" textImageRelation="ImageAboveText">
+          <iconSet>
+            <bitmapIcon imageList="Preset_LargeImages" key="Find" sizeWidth="32" sizeHeight="32" />
+            <bitmapIcon imageList="Preset_MediumImages" key="Find" sizeWidth="20" sizeHeight="20" />
+            <bitmapIcon imageList="Preset_SmallImages" key="Find" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </button>
+      </group>
+      <group id="fontGroup1" text="Font" launcher="True">
+        <iconSet>
+          <bitmapIcon imageList="Preset_LargeImages" key="Styles" sizeWidth="32" sizeHeight="32" />
+          <bitmapIcon imageList="Preset_MediumImages" key="FontColor" sizeWidth="20" sizeHeight="20" />
+          <bitmapIcon imageList="Preset_SmallImages" key="FontColor" sizeWidth="16" sizeHeight="16" />
+        </iconSet>
+        <toolBar id="ribbonToolBar1" showInSimplified="False">
+          <comboBox id="fontFamilyComboBox1" toolTip="Font" maxDropDownItems="20" gripHandleVisible="True">
+            <items>
+              <button text="Arial" />
+              <button text="Arial Black" />
+              <button text="Bahnschrift" />
+              <button text="Bahnschrift Condensed" />
+              <button text="Bahnschrift Light" />
+              <button text="Bahnschrift Light Condensed" />
+              <button text="Bahnschrift Light SemiCondensed" />
+              <button text="Bahnschrift SemiBold" />
+              <button text="Bahnschrift SemiBold Condensed" />
+              <button text="Bahnschrift SemiBold SemiConden" />
+              <button text="Bahnschrift SemiCondensed" />
+              <button text="Bahnschrift SemiLight" />
+              <button text="Bahnschrift SemiLight Condensed" />
+              <button text="Bahnschrift SemiLight SemiConde" />
+              <button text="Calibri" />
+              <button text="Calibri Light" />
+              <button text="Cambria" />
+              <button text="Cambria Math" />
+              <button text="Candara" />
+              <button text="Candara Light" />
+              <button text="Cascadia Code" />
+              <button text="Cascadia Code ExtraLight" />
+              <button text="Cascadia Code Light" />
+              <button text="Cascadia Code SemiBold" />
+              <button text="Cascadia Code SemiLight" />
+              <button text="Cascadia Mono" />
+              <button text="Cascadia Mono ExtraLight" />
+              <button text="Cascadia Mono Light" />
+              <button text="Cascadia Mono SemiBold" />
+              <button text="Cascadia Mono SemiLight" />
+              <button text="Comic Sans MS" />
+              <button text="Consolas" />
+              <button text="Constantia" />
+              <button text="Corbel" />
+              <button text="Corbel Light" />
+              <button text="Courier New" />
+              <button text="Ebrima" />
+              <button text="Franklin Gothic Medium" />
+              <button text="Gabriola" />
+              <button text="Gadugi" />
+              <button text="Georgia" />
+              <button text="HoloLens MDL2 Assets" />
+              <button text="HP Simplified" />
+              <button text="HP Simplified Hans" />
+              <button text="HP Simplified Hans Light" />
+              <button text="HP Simplified Jpan" />
+              <button text="HP Simplified Jpan Light" />
+              <button text="HP Simplified Light" />
+              <button text="Impact" />
+              <button text="Ink Free" />
+              <button text="Javanese Text" />
+              <button text="Leelawadee UI" />
+              <button text="Leelawadee UI Semilight" />
+              <button text="Lucida Console" />
+              <button text="Lucida Sans Unicode" />
+              <button text="Malgun Gothic" />
+              <button text="Malgun Gothic Semilight" />
+              <button text="Marlett" />
+              <button text="Microsoft Himalaya" />
+              <button text="Microsoft JhengHei" />
+              <button text="Microsoft JhengHei Light" />
+              <button text="Microsoft JhengHei UI" />
+              <button text="Microsoft JhengHei UI Light" />
+              <button text="Microsoft New Tai Lue" />
+              <button text="Microsoft PhagsPa" />
+              <button text="Microsoft Sans Serif" />
+              <button text="Microsoft Tai Le" />
+              <button text="Microsoft YaHei" />
+              <button text="Microsoft YaHei Light" />
+              <button text="Microsoft YaHei UI" />
+              <button text="Microsoft YaHei UI Light" />
+              <button text="Microsoft Yi Baiti" />
+              <button text="MingLiU-ExtB" />
+              <button text="MingLiU_HKSCS-ExtB" />
+              <button text="Mongolian Baiti" />
+              <button text="MS Gothic" />
+              <button text="MS PGothic" />
+              <button text="MS UI Gothic" />
+              <button text="MV Boli" />
+              <button text="Myanmar Text" />
+              <button text="Nirmala UI" />
+              <button text="Nirmala UI Semilight" />
+              <button text="NSimSun" />
+              <button text="Palatino Linotype" />
+              <button text="PMingLiU-ExtB" />
+              <button text="Sans Serif Collection" />
+              <button text="Segoe Fluent Icons" />
+              <button text="Segoe MDL2 Assets" />
+              <button text="Segoe Print" />
+              <button text="Segoe Script" />
+              <button text="Segoe UI" />
+              <button text="Segoe UI Black" />
+              <button text="Segoe UI Emoji" />
+              <button text="Segoe UI Historic" />
+              <button text="Segoe UI Light" />
+              <button text="Segoe UI Semibold" />
+              <button text="Segoe UI Semilight" />
+              <button text="Segoe UI Symbol" />
+              <button text="Segoe UI Variable Display" />
+              <button text="Segoe UI Variable Display Light" />
+              <button text="Segoe UI Variable Display Semib" />
+              <button text="Segoe UI Variable Display Semil" />
+              <button text="Segoe UI Variable Small" />
+              <button text="Segoe UI Variable Small Light" />
+              <button text="Segoe UI Variable Small Semibol" />
+              <button text="Segoe UI Variable Small Semilig" />
+              <button text="Segoe UI Variable Text" />
+              <button text="Segoe UI Variable Text Light" />
+              <button text="Segoe UI Variable Text Semibold" />
+              <button text="Segoe UI Variable Text Semiligh" />
+              <button text="SimSun" />
+              <button text="SimSun-ExtB" />
+              <button text="Sitka Banner" />
+              <button text="Sitka Banner Semibold" />
+              <button text="Sitka Display" />
+              <button text="Sitka Display Semibold" />
+              <button text="Sitka Heading" />
+              <button text="Sitka Heading Semibold" />
+              <button text="Sitka Small" />
+              <button text="Sitka Small Semibold" />
+              <button text="Sitka Subheading" />
+              <button text="Sitka Subheading Semibold" />
+              <button text="Sitka Text" />
+              <button text="Sitka Text Semibold" />
+              <button text="Sylfaen" />
+              <button text="Symbol" />
+              <button text="Tahoma" />
+              <button text="Times New Roman" />
+              <button text="Trebuchet MS" />
+              <button text="Verdana" />
+              <button text="Webdings" />
+              <button text="Wingdings" />
+              <button text="Yu Gothic" />
+              <button text="Yu Gothic Light" />
+              <button text="Yu Gothic Medium" />
+              <button text="Yu Gothic UI" />
+              <button text="Yu Gothic UI Light" />
+              <button text="Yu Gothic UI Semibold" />
+              <button text="Yu Gothic UI Semilight" />
+            </items>
+          </comboBox>
+          <comboBox id="fontSizeComboBox1" toolTip="Font Size" textAreaWidth="21" maxLength="3" text="12" maxDropDownItems="100" gripHandleVisible="True">
+            <items>
+              <button text="8" />
+              <button text="9" />
+              <button text="10" />
+              <button text="11" />
+              <button text="12" />
+              <button text="14" />
+              <button text="16" />
+              <button text="18" />
+              <button text="20" />
+              <button text="22" />
+              <button text="24" />
+              <button text="26" />
+              <button text="28" />
+              <button text="36" />
+              <button text="48" />
+              <button text="72" />
+            </items>
+          </comboBox>
+          <button id="increaseFontSizeButton1" toolTip="Increase Font Size" visible="False">
+            <iconSet>
+              <pathIcon data="M7.4970145,2.1403799 L4.1504855,9.4415856 10.843558,9.4415856 z M13.434122,0.00033855756 C13.572473,-0.0052229784 13.725244,0.058104155 13.830254,0.16311431 L15.496998,1.8293145 14.711415,2.6148977 13.993057,1.8965404 13.993057,5 12.881894,5 12.881894,1.9187579 12.187417,2.6298909 11.392374,1.8537395 13.040227,0.16755771 C13.144118,0.061458283 13.285795,0.00088325932 13.434122,0.00033855756 z M7.4970145,3.1677896E-09 C7.7431393,3.1677896E-09 7.9666233,0.14354308 8.0692377,0.36702706 L14.993996,15.475592 13.849517,16 11.420199,10.700665 3.5731792,10.700665 1.1444788,16 0,15.475592 6.9247909,0.36702706 C7.0274053,0.14354308 7.2508893,3.1677896E-09 7.4970145,3.1677896E-09 z" key="Grow Font" sizeWidth="16" sizeHeight="16" />
+            </iconSet>
+          </button>
+          <button id="decreaseFontSizeButton1" toolTip="Decrease Font Size" visible="False">
+            <iconSet>
+              <pathIcon data="M5.6227608,6.0560567 L3.4992347,10.888023 7.7462864,10.887998 z M5.6227608,4 C5.8073545,4 5.9749675,4.1076573 6.051928,4.2752705 L11.245497,15.606693 10.065153,16 8.2431641,12.025498 3.0018699,12.025498 1.1803446,16 0,15.606693 5.193593,4.2752705 C5.2705541,4.1076573 5.4381671,4 5.6227608,4 z M11.007645,0 L12.118808,0 12.118808,3.1034596 12.837166,2.3851023 13.622748,3.1706855 11.956004,4.8368857 C11.850994,4.9418958 11.698223,5.005223 11.559873,4.9996614 11.411545,4.9991168 11.269869,4.9385417 11.165977,4.8324423 L9.5181246,3.1462607 10.313168,2.3701091 11.007645,3.0812421 z" key="Shrink Font" sizeWidth="16" sizeHeight="16" />
+            </iconSet>
+          </button>
+          <separator id="ribbonSeparator2" showInSimplified="False" />
+          <button id="clearFormattingButton1" toolTip="Clear All Formatting">
+            <iconSet>
+              <pathIcon data="M594.464,534.414H344.219L606.866,271.77c6.848-6.851,6.848-17.953,0-24.8L407.547,47.65   c-3.291-3.288-7.749-5.135-12.401-5.135c-4.65,0-9.11,1.847-12.398,5.135L5.138,425.262c-6.851,6.848-6.851,17.95,0,24.8   l114.29,114.287c3.288,3.291,7.749,5.138,12.398,5.138h462.638c9.684,0,17.536-7.852,17.536-17.536   C612,542.265,604.148,534.414,594.464,534.414z M395.145,84.851L569.664,259.37L363.27,465.763L188.753,291.245L395.145,84.851z    M294.618,534.414H139.09L42.336,437.66l121.617-121.617l174.519,174.519L294.618,534.414z" key="Erase" sizeWidth="16" sizeHeight="16" />
+            </iconSet>
+          </button>
+        </toolBar>
+        <toolBar id="ribbonToolBar2" showInSimplified="False">
+          <toggleButton id="boldFontStyleButton1" toolTip="&lt;b&gt;Bold&lt;/b&gt;&lt;p&gt;Make selected text Bold&lt;/p&gt;">
+            <iconSet>
+              <fontIcon font="Arial, 9.75pt, style=Bold" sizeWidth="16" sizeHeight="16" paddingTop="0" paddingLeft="2" paddingRight="0" paddingBottom="0" text="B" />
+            </iconSet>
+          </toggleButton>
+          <toggleButton id="italicFontStyleButton1" toolTip="&lt;b&gt;Italic&lt;/b&gt;&lt;p&gt;Italicize selected text&lt;/p&gt;">
+            <iconSet>
+              <fontIcon font="Arial, 9.75pt, style=Bold, Italic" sizeWidth="16" sizeHeight="16" paddingTop="0" paddingLeft="2" paddingRight="0" paddingBottom="0" text="I" />
+            </iconSet>
+          </toggleButton>
+          <toggleButton id="underlineFontStyleButton1" toolTip="&lt;b&gt;Underline&lt;/b&gt;&lt;p&gt;Underline selected text&lt;/p&gt;">
+            <iconSet>
+              <fontIcon font="Arial, 9.75pt, style=Bold, Underline" sizeWidth="16" sizeHeight="16" paddingTop="0" paddingLeft="2" paddingRight="0" paddingBottom="0" text="U" />
+            </iconSet>
+          </toggleButton>
+          <toggleButton id="strikethroughFontStyleButton1" toolTip="&lt;b&gt;Strikethrough&lt;/b&gt;&lt;p&gt;Cross selected text by drawing a line throught it&lt;/p&gt;">
+            <iconSet>
+              <fontIcon font="Microsoft Sans Serif, 9.75pt, style=Bold, Strikeout" sizeWidth="20" sizeHeight="20" text="abc" />
+              <fontIcon font="Microsoft Sans Serif, 8.25pt, style=Bold, Strikeout" sizeWidth="16" sizeHeight="16" text="abc" />
+            </iconSet>
+          </toggleButton>
+          <separator id="ribbonSeparator3" visible="False" showInSimplified="False" />
+          <toggleButton id="subscriptFontStyleButton1" toolTip="&lt;b&gt;Subscript&lt;/b&gt;&lt;p&gt;Make selected text small and just below the line of text&lt;/p&gt;" visible="False">
+            <iconSet>
+              <bitmapIcon imageList="Preset_MediumImages" imageIndex="446" key="Subscript" sizeWidth="20" sizeHeight="20" />
+              <bitmapIcon imageList="Preset_SmallImages" imageIndex="446" key="Subscript" sizeWidth="16" sizeHeight="16" />
+            </iconSet>
+          </toggleButton>
+          <toggleButton id="superscriptFontStyleButton1" toolTip="&lt;b&gt;Superscript&lt;/b&gt;&lt;p&gt;Make selected text small and just above the line of text&lt;/p&gt;" visible="False">
+            <iconSet>
+              <bitmapIcon imageList="Preset_MediumImages" imageIndex="448" key="Superscript" sizeWidth="20" sizeHeight="20" />
+              <bitmapIcon imageList="Preset_SmallImages" imageIndex="448" key="Superscript" sizeWidth="16" sizeHeight="16" />
+            </iconSet>
+          </toggleButton>
+          <separator id="ribbonSeparator4" visible="False" showInSimplified="False" />
+          <colorPicker id="textHighlightButton1" toolTip="&lt;b&gt;Text Highlight Color&lt;/b&gt;&lt;p&gt;Highlight selected text&lt;/p&gt;" visible="False">
+            <iconSet>
+              <compositeIcon sizeWidth="16" sizeHeight="16">
+                <icons>
+                  <pathIcon color0x="FFFFFF00" data="M-2.7755575615628892e-17,18.89795939167988 h24 v5.142857098579968 h-24 z" sizeWidth="16" sizeHeight="16" viewBoxX="0" viewBoxY="0" viewBoxWidth="24" viewBoxHeight="24" />
+                  <bitmapIcon sizeWidth="16" sizeHeight="16" imageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAALlJREFUOE+dkMENwjAMRTMHSMyBekEdoJMhBmAnONEhOHLOxfhHNjjJp2o5PKV1/V6rJhHpGIbjpIgxsR2nG6gAIKZxPO3teof7dhd0AyxCCrJDI90ASy7N86M6lRIBvl/JwN8MKedcRJweOZzv4Ob7i3IMkIgqIcBkRhO5fgJ/yIXVX+Ay9kLgEr/gZyTK2DX5qXz/AQIsEmU8t8ALb6cBECM4XQYWKHIVYEBuZy10uAU63AIdrkfSG+/6mLqdWdeIAAAAAElFTkSuQmCC" />
+                </icons>
+              </compositeIcon>
+            </iconSet>
+          </colorPicker>
+          <colorPicker id="fontColorButton1" toolTip="&lt;b&gt;Font Color&lt;/b&gt;&lt;p&gt;Change the color of selected text&lt;/p&gt;" visible="False">
+            <iconSet>
+              <compositeIcon sizeWidth="16" sizeHeight="16">
+                <icons>
+                  <pathIcon color0x="FFFF0000" data="M-2.7755575615628892e-17,18.89795939167988 h24 v5.142857098579968 h-24 z" sizeWidth="16" sizeHeight="16" viewBoxX="0" viewBoxY="0" viewBoxWidth="24" viewBoxHeight="24" />
+                  <bitmapIcon sizeWidth="16" sizeHeight="16" imageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAAMNJREFUOE/tkjEKwkAQRbextNcTiK3LsrMTcgjP4AXszBUED2Ibcoicwc7W3sJC0PnmEwSNbmnhg0+GN7PsLMT9Lqo6TknOCGrqfIpCVqpyQ1BT52M3t5YD01LnEWOc4+aU4gZBDcf2d+zAzg5eQwgTBDUc25/x3o9U48nWrqnwnBoOPaphRGTZrS97q9cIajj0ODaM3dTYyhf7Hp9D13DsPWW5mOK9li1VDxx6mKF6xQYqrGo/zoyqB657Wqyo/jxw7g4WTkpHX6+7QwAAAABJRU5ErkJggg==" />
+                </icons>
+              </compositeIcon>
+            </iconSet>
+          </colorPicker>
+        </toolBar>
+      </group>
+      <group id="paragraphGroup1" text="Paragraph">
+        <iconSet>
+          <pathIcon data="M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z" key="Justify" sizeWidth="32" sizeHeight="32" />
+          <pathIcon data="M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z" key="Justify" sizeWidth="20" sizeHeight="20" />
+          <pathIcon data="M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z" key="Justify" sizeWidth="16" sizeHeight="16" />
+        </iconSet>
+        <toggleButton id="alignLeftButton1" toolTip="&lt;b&gt;Align Left&lt;/b&gt;&lt;p&gt;Align content with the left margin&lt;/p&gt;">
+          <iconSet>
+            <pathIcon data="M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text left" sizeWidth="32" sizeHeight="32" />
+            <pathIcon data="M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text left" sizeWidth="20" sizeHeight="20" />
+            <pathIcon data="M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text left" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </toggleButton>
+        <toggleButton id="alignCenterButton1" toolTip="&lt;b&gt;Align Center&lt;/b&gt;&lt;p&gt;Center content on the page&lt;/p&gt;">
+          <iconSet>
+            <pathIcon data="M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2,3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text Center" sizeWidth="32" sizeHeight="32" />
+            <pathIcon data="M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2,3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text Center" sizeWidth="20" sizeHeight="20" />
+            <pathIcon data="M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2,3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text Center" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </toggleButton>
+        <toggleButton id="alignRightButton1" toolTip="&lt;b&gt;Align Right&lt;/b&gt;&lt;p&gt;Align content with the right margin&lt;/p&gt;">
+          <iconSet>
+            <pathIcon data="M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4,3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text Right" sizeWidth="32" sizeHeight="32" />
+            <pathIcon data="M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4,3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text Right" sizeWidth="20" sizeHeight="20" />
+            <pathIcon data="M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4,3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z" key="Align Text Right" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </toggleButton>
+      </group>
+      <group id="insertGroup1" text="Insert" visible="False">
+        <iconSet>
+          <bitmapIcon imageList="Preset_LargeImages" key="Table" sizeWidth="32" sizeHeight="32" />
+          <bitmapIcon imageList="Preset_MediumImages" key="Table" sizeWidth="20" sizeHeight="20" />
+          <bitmapIcon imageList="Preset_SmallImages" key="Table" sizeWidth="16" sizeHeight="16" />
+        </iconSet>
+        <button id="insertTableButton1" toolTip="&lt;b&gt;Insert Table&lt;/b&gt;&lt;p&gt;Insert a table into the current position&lt;/p&gt;" textImageRelation="ImageAboveText">
+          <iconSet>
+            <bitmapIcon imageList="Preset_MediumImages" imageIndex="106" key="Datatable" sizeWidth="20" sizeHeight="20" />
+            <bitmapIcon imageList="Preset_SmallImages" imageIndex="106" key="Datatable" sizeWidth="16" sizeHeight="16" />
+          </iconSet>
+        </button>
+      </group>
+    </tab>
+  </tabs>
+  <tabGroups />
+</ribbon>

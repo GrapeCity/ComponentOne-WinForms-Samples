@@ -28,5 +28,6 @@ Other included samples:
 * Themes. Shows how controls look with different C1Themes applied.
 * FloatingPlaceholder. Shows how to use a floating placeholder.
 * c1ButtonCommandBinding. Shows how to use the new Command property in C1Button using the MVVM pattern.
+* CommandBinding. Shows how to use the new Command property in the Controls Under C1.Win.Input
 
 ![screenshot](screenshot.png)

@@ -42,7 +42,12 @@ namespace FlexChartExplorer.Samples
 
             if(Chart!=null)
                 pnlMain.Controls.Add(Chart);
-            C1ThemeController.ApplyThemeToControlTree(this, C1ThemeController.GetThemeByName(Theme, false), null, true);
+
+            try
+            {
+                C1ThemeController.ApplyThemeToControlTree(this, C1ThemeController.GetThemeByName(Theme, false), null, true);
+            }
+            catch { }
 
             Disposed += OnDisposed;
         }

@@ -87,7 +87,7 @@
             // 
             // pnlSample
             // 
-            pnlSample.BackColor = System.Drawing.SystemColors.Window;
+            pnlSample.BackColor = System.Drawing.Color.Transparent;
             pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
             pnlSample.Location = new System.Drawing.Point(0, 120);
             pnlSample.Margin = new System.Windows.Forms.Padding(4);
@@ -99,7 +99,7 @@
             // 
             pnlDescription.AutoSize = true;
             pnlDescription.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            pnlDescription.BackColor = System.Drawing.SystemColors.Window;
+            pnlDescription.BackColor = System.Drawing.Color.White;
             pnlDescription.Controls.Add(lblDescription);
             pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
             pnlDescription.Location = new System.Drawing.Point(0, 60);
@@ -111,6 +111,7 @@
             // lblDescription
             // 
             lblDescription.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lblDescription.BackColor = System.Drawing.Color.White;
             lblDescription.Font = new System.Drawing.Font("Calibri", 14.25F);
             lblDescription.Location = new System.Drawing.Point(0, 0);
             lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -122,7 +123,7 @@
             // 
             // pnlTitle
             // 
-            pnlTitle.BackColor = System.Drawing.SystemColors.Window;
+            pnlTitle.BackColor = System.Drawing.Color.White;
             pnlTitle.Controls.Add(panel1);
             pnlTitle.Controls.Add(chkInfo);
             pnlTitle.Controls.Add(lblTitle);

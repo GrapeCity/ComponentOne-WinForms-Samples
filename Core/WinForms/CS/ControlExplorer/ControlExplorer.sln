@@ -103,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfViewer", "..\..\..\Docum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SsrsViewer", "..\..\..\Document\CS\SsrsViewer\SsrsViewer.csproj", "{DD53E627-26DB-BFAC-4CC4-0619E11690E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamburgerMenuExplorer", "..\..\..\HamburgerMenu\CS\HamburgerMenuExplorer\HamburgerMenuExplorer.csproj", "{B5C99F24-0840-7910-D7AD-C35CCD09EAD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -305,6 +307,10 @@ Global
 		{DD53E627-26DB-BFAC-4CC4-0619E11690E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD53E627-26DB-BFAC-4CC4-0619E11690E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD53E627-26DB-BFAC-4CC4-0619E11690E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C99F24-0840-7910-D7AD-C35CCD09EAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C99F24-0840-7910-D7AD-C35CCD09EAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C99F24-0840-7910-D7AD-C35CCD09EAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C99F24-0840-7910-D7AD-C35CCD09EAD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -358,6 +364,7 @@ Global
 		{FEACA4CE-45DF-3B32-D917-837E2D2EDA77} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{EF3D2457-62C6-F2B3-719B-766ADB6D8FA6} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{DD53E627-26DB-BFAC-4CC4-0619E11690E8} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{B5C99F24-0840-7910-D7AD-C35CCD09EAD8} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}

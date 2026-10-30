@@ -70,7 +70,7 @@ namespace EditorExplorer.Samples
                new SampleItem()
                {
                    Name = "Overview", 
-                   Description = "This view shows how to implement a basic text editor application using the Editor control.", 
+                   Description = "This view shows how to implement a basic text editor application using the Editor control. You can load/save HTML, HTM, RTF and DOCX files.", 
                    Title = "Overview", 
                    SampleType = typeof(Overview)
                },
@@ -84,7 +84,7 @@ namespace EditorExplorer.Samples
                new SampleItem()
                {
                    Name = "SyntaxHighlight",
-                   Description = "This view shows how to implement a text editor with syntex highlighting using the Editor control.",
+                   Description = "This view shows how to implement a text editor with syntax highlighting using the Editor control.",
                    Title = "Syntax Highlighting",
                    SampleType = typeof(SyntaxHighlight)
                },
@@ -94,6 +94,20 @@ namespace EditorExplorer.Samples
                    Description = "This view shows how to create a simple Chat using the C1Editor control.",
                    Title = "Chat",
                    SampleType = typeof(Chat)
+               },
+               new SampleItem()
+               {
+                   Name = "Events",
+                   Description = "This view shows how the C1Editor control raises drag-and-drop, mouse, and DocumentChanged events.",
+                   Title = "Events",
+                   SampleType = typeof(Events)
+               },
+               new SampleItem()
+               {
+                   Name = "Inserts",
+                   Description = "This view demonstrates different ways to insert content into the C1Editor using the API.",
+                   Title = "Inserts",
+                   SampleType = typeof(Inserts)
                }
             };
         }

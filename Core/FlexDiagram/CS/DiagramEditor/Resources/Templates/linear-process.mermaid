@@ -1,0 +1,17 @@
+﻿---
+title: Process
+---
+graph LR
+    start(["Start"])
+    s1["Step 1"]
+    s2["Step 2"]
+    s3["Step 3"]
+    done(["End"])
+ 
+    start --> s1 --> s2 --> s3 --> done
+ 
+    classDef terminal fill:#2d6a4f,stroke:#1b4332,color:#ffffff
+    classDef step fill:#e8eef6,stroke:#1f3a5f,color:#1a1a1a
+ 
+    class start,done terminal
+    class s1,s2,s3 step

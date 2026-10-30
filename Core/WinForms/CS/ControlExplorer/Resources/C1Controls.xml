@@ -102,7 +102,12 @@
 							<item name="Custom" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.CustomSample" short="This demo shows how to create custom row detail control and use it" description="Drill into a row of data to show more details inside a collapsible panel. You can display an input form, a child data grid, or anything else within the detail row."/>
 						</menus>
 					</item>
+					
 					<item name="Scroll Bar Annotations" assembly="ScrollBarAnnotations" type="ScrollBarAnnotations.Form1" short="See it in action" description="The FlexGrid Scrollbar Annotation feature enhances data visualization by adding contextual markers directly onto the grid’s scrollbar."/>
+					
+					<item name="Transpose Grid" assembly="TransposedGrid" type="TransposedGrid.Form1" short="This demo shows how to use the Transposed property in C1FlexGrid." description="The Transposed property flips rows and columns to display data in a transposed layout. This demo shows how to switch between transposed and non-transposed views and update the chart by selecting data in the transposed grid."/>
+
+					<item name="Exporting And Printing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ExportAndPrint" short="This demo shows how to export and import C1FlexGrid to/from Excel, how to print the FlexGrid." description="Working with Excel: Save and load data directly to/from Microsoft Excel. FlexGrid supports many different exporting options, such as formatting, fixed cells, merged cells, mapped values, and more. Printing: Directly print FlexGrid while optionally showing preview and progress dialogs. For more control over printing, FlexGrid has a custom Printable class which can be used to combine multiple grids in one document to add surrounding content."/>
 
 				</items>
 			</item>
@@ -345,7 +350,7 @@
 		<items>
 			<item name="Editor" icon="Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
-					<item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
+					<item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control. You can load/save HTML, HTM, RTF and DOCX files."
 						description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way. C1Editor supports the rich Xhtml format."/>
 
 					<item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
@@ -359,6 +364,14 @@
 					<item name="Syntax Highlight" assembly="EditorExplorer" type="EditorExplorer.Samples.SyntaxHighlight"
 							short="This demo shows how to implement syntax-highlighting."
 							description="This sample shows how to implement a syntax-highlighting editor using a C1Editor. The sample keeps track of any changes made to the document, and applies a list of regular expressions/style definitions to highlight the document. The content colors are the same as seen in a Visual Studio C# file (blue reserved words, green comments, red strings, and so on). The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules."/>
+					
+					<item name="Events" assembly="EditorExplorer" type="EditorExplorer.Samples.Events"
+							short="This view shows how the C1Editor control raises drag-and-drop, mouse, and DocumentChanged events."
+							description="This interface visualizes how the editor responds to user behavior by logging drag-and-drop movements, mouse clicks, and automatic text updates through the DocumentChanged event."/>
+
+					<item name="Inserts" assembly="EditorExplorer" type="EditorExplorer.Samples.Inserts"
+					   short="This view demonstrates different ways to insert content into the C1Editor using the API."
+					   description="This view demonstrates different ways to insert content into the C1Editor using the API. Users can explore how to add elements using InsertBeforeElementAsync, InsertAfterElementAsync. Also it shows how to use InsertIntoElementAsync with various modes: ContentInsertMode.First to prepend, ContentInsertMode.Last to append, or ContentInsertMode.Replace to completely overwrite the content."/>
 
 				</items>
 			</item>
@@ -534,6 +547,16 @@
 								  description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
 				</items>
 			</item>
+
+			<item name="HamburgerMenu" icon="HamburgerMenu">
+				<items>
+					<item name="Overview" assembly="HamburgerMenuExplorer" type="HamburgerMenuExplorer.Samples.Overview" short="This demo shows the basic C1HamburgerMenu features." description="This sample demonstrates how to initialize and configure the basic features of the C1HamburgerMenu control."/>
+
+					<item name="Layout" assembly="HamburgerMenuExplorer" type="HamburgerMenuExplorer.Samples.Layout" short="This demo shows different Layout options for C1HamburgerMenu control." description="C1HamburgerMenu has different layout types which defines some behavior and appearance features."/>
+
+					<item name="SearchPanel" assembly="HamburgerMenuExplorer" type="HamburgerMenuExplorer.Samples.SearchPanel" short="This demo shows how to integrate a search panel into C1HamburgerMenu." description="Demonstrates how to embed and configure a search interface of the C1HamburgerMenu control."/>
+				</items>
+			</item>						
 		</items>
 	</item>
 

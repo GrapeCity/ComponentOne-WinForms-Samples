@@ -74,19 +74,19 @@ namespace StockChart
             Load += (se, ar) =>
             {
                 DataService.NewsLoaded += (s, e) => SetupAnnotations(ucToolbar.IsShowNews);
-                GetSymbolData("MSFT", new Action<string, SymbolData>((s, d) =>
+                GetSymbolData("MSFT", new Action<string, SymbolData>((sym, data) =>
                 {
-                    _quoteData = d;
+                    _quoteData = data;
                     InitializeTopChart();
                     UpdateTitleBar();
-                }));
 
-                // handle not valid date
-                GetSymbolData("USNQX", new Action<string, SymbolData>((s, d) =>
-                {
-                    if (d == null) d = _quoteData;
-                    InitializeBottomChart(d);
-                }), false, false);
+                    // handle not valid date
+                    GetSymbolData("USNQX", new Action<string, SymbolData>((s, d) =>
+                    {
+                        if (d == null) d = _quoteData;
+                        InitializeBottomChart(d);
+                    }), false, false);
+                }));
 
                 CreateMarker();
                 InitializeControls();
@@ -157,9 +157,10 @@ namespace StockChart
             financialChart2.ChartType = FinancialChartType.Line;
             financialChart2.DataSource = data;
             financialChart2.ToolTip.Content = null;
-            financialChart2.AxisX.Min = new DateTime(2007, 12, 31, 0, 0, 0).ToOADate();
-            financialChart2.EndUpdate();
+            financialChart2.AxisX.Min = new DateTime(2007, 12, 31).ToOADate();
+
             financialChart2.Rendered += (s1, e1) => RefreshRangeSelector();
+            financialChart2.EndUpdate();
         }
 
         private void InitializeControls()
@@ -611,6 +612,9 @@ namespace StockChart
 
         void RefreshRangeSelector()
         {
+            if (_quoteData == null || !_quoteData.Any())
+                return;
+
             if (rs == null && financialChart2.AxisX.ActualMin != financialChart2.AxisX.ActualMax && !double.IsNaN(financialChart2.AxisX.ActualMax) )
             {
                 rs = new RangeSelector(financialChart2);
@@ -621,11 +625,15 @@ namespace StockChart
                     ucToolbar.RangeText = FormatRange(DateTime.FromOADate(rs.LowerValue), DateTime.FromOADate(rs.UpperValue));
                 };
 
-                var lowValue = new DateTime(DateTime.Now.Year, 1, 1);
-                rs.LowerValue = lowValue.ToOADate();
-                rs.UpperValue = DateTime.Now.ToOADate();
+                DateTime maxDate = _quoteData.Max(x => x.Date);
+                DateTime lowValue = new DateTime(maxDate.Year, 1, 1);
 
-                ucToolbar.RangeText = FormatRange(lowValue, DateTime.Now);
+                rs.LowerValue = lowValue.ToOADate();
+                rs.UpperValue = maxDate.ToOADate();
+
+                UpdateDataRange();
+
+                ucToolbar.RangeText = FormatRange(lowValue, maxDate);
             }
         }
 

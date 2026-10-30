@@ -64,9 +64,9 @@ namespace xltest
 			//
 			InitializeComponent();
 
-			//
-			// TODO: Add any constructor code after InitializeComponent call
-			//
+			// create the book here rather than in InitializeComponent so the
+			// designer does not drop it when the form is re-serialized
+			c1XLBook1 = new C1XLBook();
 		}
 
 		/// <summary>

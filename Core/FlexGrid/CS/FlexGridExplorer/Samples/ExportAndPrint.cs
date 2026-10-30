@@ -36,6 +36,16 @@ namespace FlexGridExplorer.Samples
                 if (u < 20)
                     c1FlexGrid1.SetCellStyle(r.Index, c1FlexGrid1.Cols["UnitsInStock"].Index, c1FlexGrid1.Styles["LowStock"]);
             }
+            //add footer
+            var footer = new FooterDescription();
+            var agg = new AggregateDefinition()
+            {
+                Aggregate = AggregateEnum.Count,
+                Column = 1
+            };
+            footer.Aggregates.Add(agg);
+            c1FlexGrid1.Footers.Descriptions.Add(footer);
+            c1FlexGrid1.Footers.Fixed = true;
         }
 
         void ConvertDiscontinuedColumn(DataTable dt)

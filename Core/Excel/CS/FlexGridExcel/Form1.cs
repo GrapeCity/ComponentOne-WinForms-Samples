@@ -38,9 +38,9 @@ namespace FlexGrid
 			//
 			InitializeComponent();
 
-			//
-			// TODO: Add any constructor code after InitializeComponent call
-			//
+			// create the book here rather than in InitializeComponent so the
+			// designer does not drop it when the form is re-serialized
+			_book = new C1XLBook();
 		}
 
 		/// <summary>

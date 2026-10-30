@@ -2,23 +2,28 @@
 
 namespace InputDateRange.Helpers
 {
-    public static class CalendarViewHighlighter
+    /// <summary>
+    /// Helper class for highlighting selected  date ranges in the CalendarView.
+    /// </summary>
+    public class CalendarViewHighlighter
     {
-        public static void HighlightSelectedRange(DayFormattingEventArgs e, IEnumerable<DateTime> selectedDates)
+        private readonly Color StartAndEndColor = ColorTranslator.FromHtml("#3c8ea4");
+        private readonly Color MiddleColor = ColorTranslator.FromHtml("#e6eff0");
+
+        public void HighlightSelectedRange(DayFormattingEventArgs e, DateTime first, DateTime last)
         {
-            var ordered = selectedDates.OrderBy(d => d).ToList();
             var day = e.Day.Date;
 
-            if (!ordered.Contains(day)) return;
+            if (day < first || day > last) return;
 
-            if (day == ordered.First() && day == ordered.Last())
+            if (day == first || day == last)
             {
-                e.DayStyle.BackColor = ColorTranslator.FromHtml("#3c8ea4");
+                e.DayStyle.BackColor = StartAndEndColor;
                 e.DayStyle.ForeColor = Color.White;
             }
-            else if (day > ordered.First() && day < ordered.Last())
+            else
             {
-                e.DayStyle.BackColor = ColorTranslator.FromHtml("#e6eff0");
+                e.DayStyle.BackColor = MiddleColor;
                 e.DayStyle.ForeColor = Color.Black;
             }
         }

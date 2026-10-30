@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <StartupObject>Excel.MainForm</StartupObject>
+    <MyType>WindowsForms</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20262.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20262.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".sa3licx" />
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

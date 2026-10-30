@@ -7,7 +7,6 @@ Public Class Form1
     Public Sub New()
         InitializeComponent()
         Me.C1XLBook1 = New C1XLBook
-        Me.button1 = New Button
     End Sub
 
     Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click

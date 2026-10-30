@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../WordPad/WordPad.csproj" />
+  <Project Path="WordPad.UiTest/WordPad.UiTest.csproj" />
+</Solution>

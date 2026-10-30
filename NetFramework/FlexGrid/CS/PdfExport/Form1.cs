@@ -79,14 +79,14 @@ namespace PdfExport
             this._flex.Location = new System.Drawing.Point(0, 45);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
-            this._flex.Size = new System.Drawing.Size(511, 326);
+            this._flex.Size = new System.Drawing.Size(711, 451);
             this._flex.TabIndex = 0;
             // 
             // _btnPrint
             // 
-            this._btnPrint.Location = new System.Drawing.Point(585, 11);
+            this._btnPrint.Location = new System.Drawing.Point(292, 6);
             this._btnPrint.Name = "_btnPrint";
-            this._btnPrint.Size = new System.Drawing.Size(205, 42);
+            this._btnPrint.Size = new System.Drawing.Size(103, 23);
             this._btnPrint.TabIndex = 1;
             this._btnPrint.Text = "Export to Pdf";
             this._btnPrint.Click += new System.EventHandler(this._btnPrint_Click);
@@ -94,9 +94,9 @@ namespace PdfExport
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 19);
+            this.label1.Location = new System.Drawing.Point(6, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 25);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Rows/page:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -104,26 +104,26 @@ namespace PdfExport
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 19);
+            this.label2.Location = new System.Drawing.Point(159, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 25);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Cols/page:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _rpp
             // 
-            this._rpp.Location = new System.Drawing.Point(160, 14);
+            this._rpp.Location = new System.Drawing.Point(80, 8);
             this._rpp.Name = "_rpp";
-            this._rpp.Size = new System.Drawing.Size(73, 31);
+            this._rpp.Size = new System.Drawing.Size(36, 20);
             this._rpp.TabIndex = 3;
             this._rpp.Text = "20";
             // 
             // _cpp
             // 
-            this._cpp.Location = new System.Drawing.Point(453, 14);
+            this._cpp.Location = new System.Drawing.Point(226, 8);
             this._cpp.Name = "_cpp";
-            this._cpp.Size = new System.Drawing.Size(74, 31);
+            this._cpp.Size = new System.Drawing.Size(38, 20);
             this._cpp.TabIndex = 3;
             this._cpp.Text = "3";
             // 
@@ -156,8 +156,8 @@ namespace PdfExport
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
-            this.ClientSize = new System.Drawing.Size(511, 371);
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(1066, 721);
             this.Controls.Add(this._rpp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._btnPrint);

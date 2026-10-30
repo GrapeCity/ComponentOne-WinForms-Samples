@@ -19,7 +19,7 @@ namespace InputPanelExplorer {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resource1 {
@@ -196,6 +196,16 @@ namespace InputPanelExplorer {
         internal static System.Drawing.Bitmap rolls_roys_Wraith {
             get {
                 object obj = ResourceManager.GetObject("rolls_roys_Wraith", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Run {
+            get {
+                object obj = ResourceManager.GetObject("Run", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

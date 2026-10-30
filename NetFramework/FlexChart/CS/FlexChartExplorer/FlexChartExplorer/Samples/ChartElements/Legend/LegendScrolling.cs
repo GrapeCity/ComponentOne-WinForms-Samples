@@ -31,6 +31,15 @@ namespace FlexChartExplorer.Samples
             cbY.SelectedIndex = 2;
         }
 
+        public override Image GetImage(int width = 200, int height = 200)
+        {
+            using (var bmp = new Bitmap(Width, Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb))
+            {
+                DrawToBitmap(bmp, DisplayRectangle);
+                return bmp.GetThumbnailImage(width, height, null, IntPtr.Zero);
+            }
+        }
+
         protected override void SetupChart()
         {
             var chart = (FlexChart)Chart;

@@ -30,6 +30,7 @@ namespace FlexReportExplorer
         private Color hoverBackColor = ColorTranslator.FromHtml("#F5F5F5");
         private Color chevronColor = ColorTranslator.FromHtml("#646464");
 
+        public const int NodeWidthPadding = 85;
         public int TextLeftSpace { get => textLeftSpace; set => textLeftSpace = value; }
         public bool IsSelected
         {
@@ -397,7 +398,7 @@ namespace FlexReportExplorer
                 if (node.Role == Helper.Roles.parent)
                 {
                     node.SizeChanged += ParentNodeSizeChanged;
-                    node.Size = new Size(node.Parent.Width, nodeCollapseHeight);
+                    node.Size = new Size(node.Parent.Width - AccordionNode.NodeWidthPadding, nodeCollapseHeight);
                     node.Font = new Font("Segoe UI Variable Display", 11F, FontStyle.Regular, GraphicsUnit.Point);
                     foreach (AccordionNode childNode in node.Controls)
                     {

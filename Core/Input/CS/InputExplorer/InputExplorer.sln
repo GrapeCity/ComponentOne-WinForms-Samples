@@ -1,18 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11716.220 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputExplorer", "InputExplorer.csproj", "{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_OBFUSCATION|Any CPU = Debug_OBFUSCATION|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		Release_OBFUSCATION|Any CPU = Release_OBFUSCATION|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug_OBFUSCATION|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug_OBFUSCATION|Any CPU.Build.0 = Debug|Any CPU
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release_OBFUSCATION|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release_OBFUSCATION|Any CPU.Build.0 = Release|Any CPU
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

@@ -70,6 +70,24 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to c1Button1.
+        /// </summary>
+        internal static string Button_C1Button {
+            get {
+                return ResourceManager.GetString("Button_C1Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to c1SplitButton1.
+        /// </summary>
+        internal static string Button_C1SplitButton {
+            get {
+                return ResourceManager.GetString("Button_C1SplitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear Completed.
         /// </summary>
         internal static string Button_ClearCompleted {
@@ -93,6 +111,24 @@ namespace InputExplorer.Properties {
         internal static string Button_MarkComplete {
             get {
                 return ResourceManager.GetString("Button_MarkComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to c1CheckBox1.
+        /// </summary>
+        internal static string CheckBox_C1CheckBox {
+            get {
+                return ResourceManager.GetString("CheckBox_C1CheckBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable Commands.
+        /// </summary>
+        internal static string CheckBox_EnableCommands {
+            get {
+                return ResourceManager.GetString("CheckBox_EnableCommands", resourceCulture);
             }
         }
         
@@ -137,11 +173,137 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to C1Button:.
+        /// </summary>
+        internal static string Label_C1Buttonlb {
+            get {
+                return ResourceManager.GetString("Label_C1Buttonlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1CheckBox:.
+        /// </summary>
+        internal static string Label_C1CheckBoxlb {
+            get {
+                return ResourceManager.GetString("Label_C1CheckBoxlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1ComboBox:.
+        /// </summary>
+        internal static string Label_C1ComboBoxlb {
+            get {
+                return ResourceManager.GetString("Label_C1ComboBoxlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1DropDownControl:.
+        /// </summary>
+        internal static string Label_C1DropDownControllb {
+            get {
+                return ResourceManager.GetString("Label_C1DropDownControllb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1MaskedTextBox:.
+        /// </summary>
+        internal static string Label_C1MaskedTextBoxlb {
+            get {
+                return ResourceManager.GetString("Label_C1MaskedTextBoxlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1NumericEdit:.
+        /// </summary>
+        internal static string Label_C1NumericEditlb {
+            get {
+                return ResourceManager.GetString("Label_C1NumericEditlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1RadioButton:.
+        /// </summary>
+        internal static string Label_C1RadioButtonlb {
+            get {
+                return ResourceManager.GetString("Label_C1RadioButtonlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1RangeSlider:.
+        /// </summary>
+        internal static string Label_C1RangeSliderlb {
+            get {
+                return ResourceManager.GetString("Label_C1RangeSliderlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1SplitButton:.
+        /// </summary>
+        internal static string Label_C1SplitButtonlb {
+            get {
+                return ResourceManager.GetString("Label_C1SplitButtonlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1TextBox:.
+        /// </summary>
+        internal static string Label_C1TextBoxlb {
+            get {
+                return ResourceManager.GetString("Label_C1TextBoxlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1ToggleSwitch:.
+        /// </summary>
+        internal static string Label_C1ToggleSwitchlb {
+            get {
+                return ResourceManager.GetString("Label_C1ToggleSwitchlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Interact with a control to see output here ....
+        /// </summary>
+        internal static string Label_CommandOutputlb {
+            get {
+                return ResourceManager.GetString("Label_CommandOutputlb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C1Input Controls.
+        /// </summary>
+        internal static string Label_InputControlsPanelHeading {
+            get {
+                return ResourceManager.GetString("Label_InputControlsPanelHeading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add New Task:.
         /// </summary>
         internal static string Label_NewTask {
             get {
                 return ResourceManager.GetString("Label_NewTask", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command Output.
+        /// </summary>
+        internal static string Label_OutputPanelHeading {
+            get {
+                return ResourceManager.GetString("Label_OutputPanelHeading", resourceCulture);
             }
         }
         
@@ -185,11 +347,38 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to c1RadioButton1.
+        /// </summary>
+        internal static string RadioButton_C1RadioButton1 {
+            get {
+                return ResourceManager.GetString("RadioButton_C1RadioButton1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to c1RadioButton2.
+        /// </summary>
+        internal static string RadioButton_C1RadioButton2 {
+            get {
+                return ResourceManager.GetString("RadioButton_C1RadioButton2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This view shows how to use the Command property of C1Button using the MVVM pattern.
         /// </summary>
         internal static string SampleItem_Desc_C1ButtonCommandBinding {
             get {
                 return ResourceManager.GetString("SampleItem_Desc_C1ButtonCommandBinding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This demo shows how a single ICommand can be shared across all C1Input controls. Interact with any control to see it fire the command.
+        /// </summary>
+        internal static string SampleItem_Desc_CommandBinding {
+            get {
+                return ResourceManager.GetString("SampleItem_Desc_CommandBinding", resourceCulture);
             }
         }
         
@@ -203,11 +392,29 @@ namespace InputExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CommandBinding.
+        /// </summary>
+        internal static string SampleItem_Name_CommandBinding {
+            get {
+                return ResourceManager.GetString("SampleItem_Name_CommandBinding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to C1ButtonCommandBinding.
         /// </summary>
         internal static string SampleItem_Title_C1ButtonCommandBinding {
             get {
                 return ResourceManager.GetString("SampleItem_Title_C1ButtonCommandBinding", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Command Binding.
+        /// </summary>
+        internal static string SampleItem_Title_CommandBinding {
+            get {
+                return ResourceManager.GetString("SampleItem_Title_CommandBinding", resourceCulture);
             }
         }
         

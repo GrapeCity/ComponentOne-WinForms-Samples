@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.8.12023.21
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RowsSelected", "RowsSelected.csproj", "{145EC0E8-97C7-46FF-8191-7943BAB50A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.8", "..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.4.8.csproj", "{CE4999E5-77E0-6ECB-A1A3-95A4911D9D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.FlexGrid.4.8", "..\..\..\..\..\c1-winforms\Controls\FlexGrid\C1.Win.FlexGrid.4.8.csproj", "{CBD19F17-5B1D-B073-453C-29FE88232C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Ribbon.4.8", "..\..\..\..\..\c1-winforms\Controls\Ribbon\C1.Win.Ribbon.4.8.csproj", "{A3E2D7D7-F0DD-E557-4998-FC7C7FBB421A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Themes.4.8", "..\..\..\..\..\c1-winforms\Controls\Themes\C1.Win.Themes.4.8.csproj", "{D0876B20-C74C-D4AB-DAD4-F57A607D636D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE4999E5-77E0-6ECB-A1A3-95A4911D9D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4999E5-77E0-6ECB-A1A3-95A4911D9D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4999E5-77E0-6ECB-A1A3-95A4911D9D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4999E5-77E0-6ECB-A1A3-95A4911D9D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD19F17-5B1D-B073-453C-29FE88232C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD19F17-5B1D-B073-453C-29FE88232C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD19F17-5B1D-B073-453C-29FE88232C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD19F17-5B1D-B073-453C-29FE88232C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E2D7D7-F0DD-E557-4998-FC7C7FBB421A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E2D7D7-F0DD-E557-4998-FC7C7FBB421A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E2D7D7-F0DD-E557-4998-FC7C7FBB421A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E2D7D7-F0DD-E557-4998-FC7C7FBB421A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0876B20-C74C-D4AB-DAD4-F57A607D636D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0876B20-C74C-D4AB-DAD4-F57A607D636D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0876B20-C74C-D4AB-DAD4-F57A607D636D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0876B20-C74C-D4AB-DAD4-F57A607D636D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49794199-B4C0-4EDF-8792-4A858BE7414B}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\..\..\..\c1-winforms\Controls\Ribbon\C1.Win.Ribbon.projitems*{a3e2d7d7-f0dd-e557-4998-fc7c7fbb421a}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Shared\SA3\SA3WFLicensing.projitems*{a3e2d7d7-f0dd-e557-4998-fc7c7fbb421a}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Controls\FlexGrid\C1.Win.FlexGrid.projitems*{cbd19f17-5b1d-b073-453c-29fe88232c49}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Shared\SA3\SA3WFLicensing.projitems*{cbd19f17-5b1d-b073-453c-29fe88232c49}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.projitems*{ce4999e5-77e0-6ecb-a1a3-95a4911d9d4b}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Shared\SA3\SA3WFLicensing.projitems*{ce4999e5-77e0-6ecb-a1a3-95a4911d9d4b}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Controls\Themes\C1.Win.Themes.projitems*{d0876b20-c74c-d4ab-dad4-f57a607d636d}*SharedItemsImports = 5
+		..\..\..\..\..\c1-winforms\Shared\SA3\SA3WFLicensing.projitems*{d0876b20-c74c-d4ab-dad4-f57a607d636d}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

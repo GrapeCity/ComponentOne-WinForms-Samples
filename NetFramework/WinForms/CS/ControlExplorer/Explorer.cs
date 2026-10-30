@@ -403,7 +403,23 @@ namespace ControlExplorer
                     {
                         TheExplorer.pnlInputPanel,
                     };
-                    C1ThemeController.ApplyThemeToControlTree(control, theme, (c) => !noTheming.Contains(c) && (!(c is C1DemoForm) || ((C1DemoForm)c).IsThemeable));
+
+                    Font formFontBefore = TheExplorer.Font;
+                    AutoScaleMode savedScaleMode = TheExplorer.AutoScaleMode;
+                    TheExplorer.AutoScaleMode = AutoScaleMode.None;
+
+                    try
+                    {
+                        C1ThemeController.ApplyThemeToControlTree(control, theme,
+                            (c) => !noTheming.Contains(c) && (!(c is C1DemoForm) || ((C1DemoForm)c).IsThemeable));
+
+                        // Keep the layout's font size stable regardless of what the theme sets.
+                        TheExplorer.Font = formFontBefore;
+                    } 
+                    finally
+                    {
+                        TheExplorer.AutoScaleMode = savedScaleMode;
+                    }
                 }
                 else
                 {

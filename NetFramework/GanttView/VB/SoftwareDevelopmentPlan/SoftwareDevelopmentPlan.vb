@@ -14,6 +14,7 @@ Public Partial Class SoftwareDevelopmentPlan
 
 	Public Sub New()
 		InitializeComponent()
+		AddHandler rbTimescale2.Click, New EventHandler(AddressOf rbTimeScale_Click)
 
 		rcbTimeline.Items.Add("15 Minutes")
 		rcbTimeline.Items.Add("2 Hours")
